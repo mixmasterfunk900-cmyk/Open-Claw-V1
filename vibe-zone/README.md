@@ -21,7 +21,23 @@ npm install
 npm run dev
 ```
 
-Local URL: <http://localhost:5173>
+Local URL on the VPS: <http://localhost:5173>
+
+Default YouTube channel for scanner work: <https://www.youtube.com/@ModernResponsibility>
+
+### Viewing from your own machine
+
+Because this runs on a VPS, `localhost` means “inside the VPS”, not your laptop. Safest option is an SSH tunnel:
+
+```bash
+ssh -L 5173:127.0.0.1:5173 root@YOUR_VPS_IP
+```
+
+Then open this on your machine:
+
+<http://localhost:5173>
+
+Do not expose the dev server publicly unless you intentionally accept that anyone with the URL/IP could view the dashboard. For a temporary public preview, use a protected tunnel or ask Rex to set one up explicitly.
 
 ## Verification commands
 

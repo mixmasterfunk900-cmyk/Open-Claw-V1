@@ -19,6 +19,8 @@ Vibe Zone is a local multi-page dashboard for Masala's livestream and product-bu
 
 ## Current MVP
 
+Default creator channel: <https://www.youtube.com/@ModernResponsibility>
+
 A Vite + React dashboard with mock data and page navigation:
 
 1. Dashboard: mission summary, run-of-show, stats, quick actions.
@@ -60,7 +62,7 @@ A Vite + React dashboard with mock data and page navigation:
 
 - Preferred persistent store: local JSON, SQLite, or both?
 - Should Vibe Zone run as purely frontend, or include a small local Node API?
-- Which streaming platform/chat source comes first?
+- YouTube comes first for stream/video discovery, using `@ModernResponsibility` as the default channel.
 - What does a “clip score” mean: retention prediction, hook strength, chat reaction, or manual rating?
 
 ## Non-goals for now

@@ -31,6 +31,8 @@ const navItems: NavItem[] = [
   { id: 'settings', label: 'Settings', icon: '⚙️', kicker: 'Local-first' },
 ]
 
+const youtubeChannel = 'https://www.youtube.com/@ModernResponsibility'
+
 const stats = [
   { label: 'Clips ready', value: '12', detail: '+4 from last stream', tone: 'green' },
   { label: 'Ideas queued', value: '37', detail: '8 strong hooks', tone: 'purple' },
@@ -105,6 +107,7 @@ const jobs: Array<{ name: string; status: JobStatus; owner: string; detail: stri
 ]
 
 const settings = [
+  { key: 'Default YouTube channel', value: youtubeChannel, safe: true },
   { key: 'Storage mode', value: 'Local JSON / browser state first', safe: true },
   { key: 'Posting mode', value: 'Draft-only; manual approval required', safe: true },
   { key: 'Secrets policy', value: 'Use .env.local, never commit keys', safe: true },
