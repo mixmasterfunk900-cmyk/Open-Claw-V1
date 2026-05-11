@@ -125,3 +125,31 @@ Default creator channel: <https://www.youtube.com/@ModernResponsibility>
 - No unlabelled fake chat.
 - No use of Masala's face until references are provided and approved.
 - No paid cloud dependency.
+
+## Overnight media-pipeline target
+
+Masala wants to open Vibe Zone and see tangible clips ready to review/upload. Empty states are failure states. If real YouTube extraction is blocked, the app should still show demo/sample clips from accessible transcripts and make the blocker explicit.
+
+### Pipeline architecture
+
+1. Scan channel/public replay URL.
+2. Extract with `yt-dlp` into `media/downloads`.
+3. Transcribe with local Whisper into `media/transcripts` as `.txt` + `.srt`.
+4. Score transcript into many short candidates and longer-form candidates.
+5. Render with `ffmpeg`:
+   - Shorts: 9:16 crop/scale, subtitle burn-in.
+   - Long-form: 16:9, subtitle burn-in.
+6. Show upload-ready review queue: title, caption, hashtags, platform, status, output path, blocker if any.
+7. Viral Hunter backfills ideas from RSS/video titles plus generated clip hooks.
+
+### Current implementation status
+
+- UI pages exist for Media Pipeline, Clip Factory, Viral Hunter, Rex Jobs.
+- Server persists media jobs and viral finds to local JSON.
+- Tool probes expose whether `yt-dlp`, Whisper, and `ffmpeg` are available.
+- Render/extract/transcribe commands are generated and logged; execution is intentionally not automatic yet to avoid surprise large downloads or costs.
+- Clip rows now present morning-review copy: title, caption, hashtags, status, platform and subtitle/render placeholders.
+
+### Competitor-informed roadmap
+
+Opus Clip proves the category expectation: automatic clipping, captions, reframing, publishing, team/workflow automation, templates, API. Vibe Zone should compete by becoming the local-first streamer HQ: transparent co-pilot, visible job logs, cheap/local pipeline, and Masala-tone reports.

@@ -1,14 +1,20 @@
 import { createServer } from 'node:http'
 import { readFile, writeFile, mkdir, stat } from 'node:fs/promises'
 import { createReadStream } from 'node:fs'
+import { execFile } from 'node:child_process'
+import { promisify } from 'node:util'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+
+const execFileAsync = promisify(execFile)
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.resolve(__dirname, '..')
 const dataDir = path.join(root, 'data')
 const dbPath = path.join(dataDir, 'vibe-zone.json')
 const port = Number(process.env.PORT || 8787)
+const localYtDlp = path.join(root, '.venv-media', 'bin', 'yt-dlp')
+const localWhisper = '/root/.openclaw/workspace/.venv-transcribe/bin/whisper'
 
 const defaultDb = {
   settings: {
@@ -24,6 +30,8 @@ const defaultDb = {
   videos: [],
   transcripts: [],
   clips: [],
+  mediaJobs: [],
+  viralFinds: [],
   chatMessages: [],
   jobs: [],
 }
@@ -32,10 +40,10 @@ async function loadDb() {
   await mkdir(dataDir, { recursive: true })
   try {
     const stored = JSON.parse(await readFile(dbPath, 'utf8'))
-    return { ...defaultDb, ...stored, settings: { ...defaultDb.settings, ...(stored.settings || {}) } }
+    return normalizeDb({ ...defaultDb, ...stored })
   } catch {
     await saveDb(defaultDb)
-    return structuredClone(defaultDb)
+    return normalizeDb(structuredClone(defaultDb))
   }
 }
 async function saveDb(db) { await writeFile(dbPath, JSON.stringify(db, null, 2)) }
@@ -49,6 +57,63 @@ async function addJob(db, type, title, status = 'done', detail = '') {
 function send(res, status, body, headers = {}) {
   res.writeHead(status, { 'content-type': 'application/json; charset=utf-8', ...headers })
   res.end(JSON.stringify(body))
+}
+function normalizeClip(clip) {
+  return { platform: 'tiktok', status: 'idea', exportedAt: null, ...clip }
+}
+function normalizeDb(db) {
+  db.settings = { ...defaultDb.settings, ...(db.settings || {}) }
+  db.scans = (db.scans || []).slice(0, 50)
+  db.videos = db.videos || []
+  db.transcripts = db.transcripts || []
+  db.clips = (db.clips || []).map(normalizeClip)
+  db.mediaJobs = db.mediaJobs || []
+  db.viralFinds = db.viralFinds || []
+  db.chatMessages = db.chatMessages || []
+  db.jobs = db.jobs || []
+  return db
+}
+async function commandExists(command, args = ['--version']) {
+  try {
+    const { stdout, stderr } = await execFileAsync(command, args, { timeout: 4500 })
+    return { ok: true, detail: `${stdout || stderr}`.split('\n')[0].trim() }
+  } catch (error) {
+    return { ok: false, detail: error.code === 'ENOENT' ? 'not installed / not on PATH' : error.message }
+  }
+}
+async function mediaProbe(db) {
+  const tools = {
+    ytDlp: await commandExists(localYtDlp),
+    ffmpeg: await commandExists('ffmpeg', ['-version']),
+    whisper: await commandExists(localWhisper, ['--help']),
+  }
+  await addJob(db, 'media-probe', 'Checked media pipeline tools', tools.ffmpeg.ok ? 'needs-review' : 'failed', `yt-dlp=${tools.ytDlp.ok}; whisper=${tools.whisper.ok}; ffmpeg=${tools.ffmpeg.ok}`)
+  await saveDb(db)
+  return { tools, expectedPaths: { downloads: 'media/downloads', transcripts: 'media/transcripts', renders: 'media/renders' } }
+}
+async function addMediaJob(db, step, status, detail, command = '') {
+  const mediaJob = { id: id('media'), step, status, detail, command, createdAt: new Date().toISOString() }
+  db.mediaJobs.unshift(mediaJob)
+  db.mediaJobs = db.mediaJobs.slice(0, 80)
+  await addJob(db, `media-${step}`, `Media pipeline: ${step}`, status, detail)
+  await saveDb(db)
+  return mediaJob
+}
+function buildYtDlpCommand(videoUrl) {
+  return `${localYtDlp} --no-playlist -f "bv*+ba/b" --merge-output-format mp4 -o "media/downloads/%(id)s.%(ext)s" "${videoUrl}"`
+}
+function buildWhisperCommand(inputPath) {
+  return `. /root/.openclaw/workspace/.venv-transcribe/bin/activate && whisper "${inputPath}" --model base --language en --output_format all --output_dir media/transcripts`
+}
+function buildFfmpegCommand({ inputPath, start = '0:00', end = '0:45', mode = 'short', subtitlePath = '' }) {
+  const scale = mode === 'long' ? 'scale=1920:-2' : 'scale=-2:1920,crop=1080:1920'
+  const subtitle = subtitlePath ? `,subtitles='${subtitlePath.replaceAll("'", "'\\''")}'` : ''
+  return `ffmpeg -y -ss ${start} -to ${end} -i "${inputPath}" -vf "${scale}${subtitle}" -c:v libx264 -preset veryfast -c:a aac "media/renders/${mode}-${Date.now()}.mp4"`
+}
+function huntViralIdeas(videos, clips) {
+  const keywordScore = (text) => ['ai', 'money', 'company', 'privacy', 'live', 'app', 'coding', 'why', 'billion', 'possible'].filter((k) => text.toLowerCase().includes(k)).length
+  return [...videos.map((video) => ({ source: 'youtube-rss', title: video.title, url: video.url, score: 55 + keywordScore(video.title) * 8, angle: `Turn “${video.title}” into a sharper hook, then test as 3 Shorts variants.` })), ...clips.slice(0, 12).map((clip) => ({ source: 'clip-factory', title: clip.title, url: '', score: Math.min(99, clip.score + 4), angle: `Clip-first viral test: ${clip.hook}` }))]
+    .sort((a, b) => b.score - a.score).slice(0, 12)
 }
 async function parseBody(req) {
   const chunks = []
@@ -154,7 +219,7 @@ function scoreClips(transcriptId, text) {
     const end = seconds(chunk.at(-1)?.time, start + 55) + 8
     const hook = makeHook(body)
     return {
-      id: id('clip'), transcriptId, score, start: stamp(start), end: stamp(end),
+      id: id('clip'), transcriptId, score, platform: 'tiktok', status: 'idea', exportedAt: null, start: stamp(start), end: stamp(end),
       title: makeTitle(body), hook,
       caption: `${hook} ${body.slice(0, 180).replace(/\s+/g, ' ')}...`,
       hashtags: ['#BuildInPublic', '#CreatorTools', '#AIWorkflow', '#LocalFirst'].slice(0, 3 + (keywordHits > 2 ? 1 : 0)),
@@ -176,7 +241,7 @@ function makeTitle(body) {
   return body.split(/\s+/).slice(0, 7).join(' ')
 }
 function generatePracticeChat(topic, context) {
-  const names = ['MayaBot', 'PatchPal', 'StreamSage', 'PixelRex', 'LocalLarry', 'ClipCraftAI', 'DadModeDev', 'ShortsScout']
+  const names = ['Maya from chat', 'JayDev', 'PriyaBuilds', 'UncleKev', 'NinaClips', 'SamTheMod', 'LeahLearns', 'OwenShorts', 'TariqTools', 'BeckyBytes', 'MarcoMRR', 'JessFromLeeds']
   const prompts = [
     `wait so is ${topic || 'this'} meant for streamers or just your setup?`,
     `clip that bit, the quantity-first thing actually makes sense`,
@@ -196,6 +261,40 @@ async function handleApi(req, res, db) {
     const body = await parseBody(req); db.settings = { ...db.settings, ...body }; await addJob(db, 'settings', 'Updated settings', 'done', db.settings.channelUrl); await saveDb(db); return send(res, 200, db.settings)
   }
   if (req.method === 'POST' && url.pathname === '/api/youtube/scan') return send(res, 200, await scanYoutube(db))
+  if (req.method === 'POST' && url.pathname === '/api/media/probe') return send(res, 200, await mediaProbe(db))
+  if (req.method === 'POST' && url.pathname === '/api/media/extract') {
+    const body = await parseBody(req)
+    const videoUrl = body.videoUrl || db.videos[0]?.url || db.settings.channelUrl
+    const probe = await commandExists(localYtDlp)
+    const command = buildYtDlpCommand(videoUrl)
+    const status = probe.ok ? 'queued' : 'needs-review'
+    const detail = probe.ok ? `Ready to extract ${videoUrl}` : `yt-dlp missing; install it before download. Planned source: ${videoUrl}`
+    return send(res, 200, await addMediaJob(db, 'youtube-extract', status, detail, command))
+  }
+  if (req.method === 'POST' && url.pathname === '/api/media/transcribe') {
+    const body = await parseBody(req)
+    const inputPath = body.inputPath || 'media/downloads/VIDEO_ID.mp4'
+    const probe = await commandExists(localWhisper, ['--help'])
+    const command = buildWhisperCommand(inputPath)
+    const status = probe.ok ? 'queued' : 'needs-review'
+    const detail = probe.ok ? `Ready to transcribe ${inputPath}` : `Whisper command not ready at local venv path. Planned input: ${inputPath}`
+    return send(res, 200, await addMediaJob(db, 'transcribe', status, detail, command))
+  }
+  if (req.method === 'POST' && url.pathname === '/api/media/render') {
+    const body = await parseBody(req)
+    const probe = await commandExists('ffmpeg', ['-version'])
+    const command = buildFfmpegCommand(body)
+    const status = probe.ok ? 'queued' : 'failed'
+    const detail = probe.ok ? `Ready to render ${body.mode || 'short'} clip with subtitles` : 'ffmpeg missing; cannot render clips yet.'
+    return send(res, 200, await addMediaJob(db, 'render-clips', status, detail, command))
+  }
+  if (req.method === 'POST' && url.pathname === '/api/viral/hunt') {
+    const finds = huntViralIdeas(db.videos, db.clips).map((find) => ({ id: id('viral'), createdAt: new Date().toISOString(), ...find }))
+    db.viralFinds = [...finds, ...db.viralFinds].slice(0, 40)
+    await addJob(db, 'viral-hunter', 'Generated Viral Hunter leads', 'done', `${finds.length} leads from RSS videos and clip candidates`)
+    await saveDb(db)
+    return send(res, 200, finds)
+  }
   if (req.method === 'POST' && url.pathname === '/api/transcripts') {
     const body = await parseBody(req); const t = { id: id('tx'), title: body.title || 'Untitled transcript', sourceUrl: body.sourceUrl || '', text: body.text || '', createdAt: new Date().toISOString() }
     db.transcripts.unshift(t); await addJob(db, 'transcript-import', 'Imported transcript', 'done', `${t.title} (${t.text.length} chars)`); await saveDb(db); return send(res, 200, t)
@@ -203,8 +302,29 @@ async function handleApi(req, res, db) {
   if (req.method === 'POST' && url.pathname === '/api/clips/generate') {
     const body = await parseBody(req); const transcript = db.transcripts.find((t) => t.id === body.transcriptId) || db.transcripts[0]
     if (!transcript) return send(res, 400, { error: 'Import a transcript first.' })
-    const clips = scoreClips(transcript.id, transcript.text); db.clips = [...clips, ...db.clips.filter((c) => c.transcriptId !== transcript.id)].slice(0, 60)
+    const clips = scoreClips(transcript.id, transcript.text); db.clips = [...clips, ...db.clips.filter((c) => c.transcriptId !== transcript.id)].slice(0, 80)
     await addJob(db, 'clip-generation', 'Generated clip candidates', 'done', `${clips.length} clips from ${transcript.title}`); await saveDb(db); return send(res, 200, clips)
+  }
+  if (req.method === 'PATCH' && url.pathname.startsWith('/api/clips/')) {
+    const clipId = decodeURIComponent(url.pathname.split('/').pop())
+    const body = await parseBody(req)
+    const clip = db.clips.find((item) => item.id === clipId)
+    if (!clip) return send(res, 404, { error: 'Clip not found' })
+    const statuses = ['idea', 'draft', 'reviewed', 'exported']
+    const platforms = ['tiktok', 'youtube', 'x']
+    if (body.status && !statuses.includes(body.status)) return send(res, 400, { error: 'Invalid clip status' })
+    if (body.platform && !platforms.includes(body.platform)) return send(res, 400, { error: 'Invalid platform' })
+    Object.assign(clip, { status: body.status || clip.status, platform: body.platform || clip.platform })
+    if (body.status === 'exported') clip.exportedAt = new Date().toISOString()
+    await addJob(db, 'clip-update', 'Updated clip workflow status', 'done', `${clip.title}: ${clip.platform}/${clip.status}`)
+    await saveDb(db)
+    return send(res, 200, clip)
+  }
+  if (req.method === 'DELETE' && url.pathname === '/api/chat') {
+    db.chatMessages = []
+    await addJob(db, 'practice-chat', 'Cleared AI practice chat', 'done', 'Message history cleared')
+    await saveDb(db)
+    return send(res, 200, { ok: true })
   }
   if (req.method === 'POST' && url.pathname === '/api/chat/generate') {
     const body = await parseBody(req);

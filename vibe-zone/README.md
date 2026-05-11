@@ -103,3 +103,67 @@ The app currently calls Ollama for practice-chat drafts if `http://127.0.0.1:114
 - Learn Masala's X/Twitter tone from transcripts over time.
 - Add thumbnail concept board: hyper-realistic face-led style, GothamChess-inspired contrast/composition.
 - Split UI into smaller components once the workflow stabilizes.
+
+## Media pipeline scaffold added
+
+Masala's target is not just a dashboard: wake up to clips ready to review/upload. Current concrete progress:
+
+- **YouTube extraction architecture:** Media Pipeline page stores planned `yt-dlp` jobs for public video/live replay URLs.
+- **Transcript workflow:** planned local Whisper command uses `/root/.openclaw/workspace/.venv-transcribe/bin/whisper` and outputs `.txt`/`.srt` under `media/transcripts`.
+- **Clip rendering scaffold:** planned `ffmpeg` commands for both 9:16 Shorts and 16:9 longer-form clips, with subtitle burn-in placeholders.
+- **Morning output:** Clip Factory shows upload-ready draft placeholders with titles, captions, hashtags, platform/status, subtitles planned, and short-form framing.
+- **Viral Hunter MVP:** generates hook leads from public YouTube RSS titles and existing clip candidates.
+- **Checker visibility:** Rex Jobs and Media Pipeline show every media job with status, detail, timestamp, and exact command.
+
+Known blockers on this VPS right now:
+
+- `ffmpeg` is installed.
+- `yt-dlp` is not currently installed/on PATH, so real YouTube download jobs are marked `needs-review` until installed.
+- Whisper exists in the local transcription venv per workspace notes, but the app probes that exact path and logs if unavailable.
+
+## Competitor notes: Opus Clip gap check
+
+Opus Clip positions around long-video-to-viral-shorts, one-click publishing, AI understanding of arbitrary video genres, auto-reframing/object tracking, brand templates, team workspaces, workflow/API automation, captions, and fast editing control.
+
+Vibe Zone's opportunity is different:
+
+- Local-first/private by default for livestream builders.
+- Transparent AI practice chat alongside clipping, not fake engagement.
+- Quantity-first clip factory tied to Masala's TikTok → YouTube → X reporting funnel.
+- Inspectable agent/job history so stream viewers can see what Rex did and what blocked.
+- Cheaper/local fallback path with yt-dlp, Whisper, ffmpeg, and Ollama before paid APIs.
+
+Next feature gaps to close:
+
+1. Install/integrate `yt-dlp` and run actual public replay extraction.
+2. Run Whisper end-to-end and auto-import generated transcript text/SRT.
+3. Execute ffmpeg render jobs and attach output file paths to clip rows.
+4. Add auto-reframe/crop controls and subtitle style presets.
+5. Add upload checklist/export bundle per platform, still manual approval only.
+
+## Safe YouTube extraction tooling update
+
+A local project venv now holds the reputable open-source `yt-dlp` package:
+
+```text
+.venv-media/bin/yt-dlp
+```
+
+Policy for Vibe Zone:
+
+- Use public URLs/RSS first.
+- Use `yt-dlp` without cookies by default.
+- Do not ask for or store browser cookies unless Masala separately confirms a specific private/member-only use case.
+- If a VPS download fails, support local companion flow: download/transcribe on Masala's own machine, then upload/import video, transcript, and SRT files into Vibe Zone/HQ.
+- Prefer local Whisper and ffmpeg before paid APIs.
+- Optional reputable APIs can be considered only when they need no secrets/payments for the current workflow.
+
+### Local companion fallback
+
+If YouTube blocks VPS extraction:
+
+1. On user machine: run `yt-dlp` against the public replay URL.
+2. Run Whisper locally or upload the video/audio to Vibe Zone when upload endpoints are added.
+3. Import transcript/SRT into Clip Factory.
+4. Let Vibe Zone generate clip rows, captions, hashtags, and ffmpeg render commands.
+
