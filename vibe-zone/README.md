@@ -1,31 +1,53 @@
 # Vibe Zone
 
-Vibe Zone is Masala's local-first livestream/product control room. The first version is a Vite + React single-page app with page-style navigation, mock data, and no external write actions.
+Vibe Zone is Masala's local-first livestream/product control room. It now has a React frontend plus a tiny local Node API that persists workflow data to JSON.
 
-## Pages included
+The product direction is **quantity-first creator operations**: produce as many clips as possible, let TikTok performance filter winners, move winners to YouTube, then turn proven YouTube winners into frequent X/Twitter reports/posts in Masala's tone.
 
-- Dashboard
-- Clip Factory
-- Viral Research
-- Studio Feedback
-- Social Dashboard
-- Live Chat Co-Pilot
-- Rex Activity / Jobs
-- Settings
+## What works now
+
+- Dashboard with real local state counts.
+- YouTube Scanner using public RSS discovery for `@ModernResponsibility` — no login/API key.
+- Clip Factory that imports/pastes transcripts and generates many overlapping clip candidates.
+- Social Dashboard with draft-only TikTok → YouTube → X/Twitter funnel copy.
+- Live Chat Co-Pilot that simulates natural chat pop-ups while clearly labelling them as AI practice chat.
+- Rex Activity / Jobs backed by persisted local job history.
+- Settings with channel URL, stream-safe guardrails, thumbnail direction, and productization notes.
 
 ## Quick start
 
 ```bash
 cd vibe-zone
 npm install
-npm run dev
+npm run dev:full
 ```
 
-Local URL on the VPS: <http://localhost:5173>
+Open: <http://127.0.0.1:5173>
 
-Default YouTube channel for scanner work: <https://www.youtube.com/@ModernResponsibility>
+`npm run dev:full` starts:
 
-### Viewing from your own machine
+- Vite frontend on `127.0.0.1:5173`
+- Local API on `127.0.0.1:8787`
+
+For API/static production smoke testing:
+
+```bash
+npm run build
+npm run api
+# then open http://127.0.0.1:8787
+```
+
+## Data
+
+Local state is stored in:
+
+```text
+data/vibe-zone.json
+```
+
+This file is intentionally ignored by git. It can contain stream notes/transcripts, so treat it as private working data.
+
+## Viewing from your own machine
 
 Because this runs on a VPS, `localhost` means “inside the VPS”, not your laptop. Safest option is an SSH tunnel:
 
@@ -37,50 +59,35 @@ Then open this on your machine:
 
 <http://localhost:5173>
 
-Do not expose the dev server publicly unless you intentionally accept that anyone with the URL/IP could view the dashboard. For a temporary public preview, use a protected tunnel or ask Rex to set one up explicitly.
+Do not expose the dev server publicly unless you intentionally accept that anyone with the URL/IP could view the dashboard.
 
 ## Verification commands
 
 ```bash
 npm run lint
 npm run build
-npm run dev -- --host 127.0.0.1
+node --check server/server.mjs
 ```
 
 ## Architecture
 
-- `src/App.tsx` contains the current mock data, navigation model, and page components.
+- `src/App.tsx` contains the current UI, state wiring, and page components.
 - `src/App.css` contains the dashboard layout and responsive UI styling.
-- `src/index.css` contains global browser defaults.
-- No backend yet. The prototype is intentionally local/static so it is cheap to run and stream-safe.
+- `server/server.mjs` contains the local JSON API, YouTube RSS scanner, transcript clip scorer, and AI-practice-chat simulator.
+- `scripts/dev-full.mjs` runs frontend and API together for local development.
 
-## Environment variables
+## Stream-safe rules
 
-No environment variables are required for this version.
-
-Planned examples for later:
-
-```bash
-VITE_APP_MODE=local
-VITE_ENABLE_MOCKS=true
-VITE_API_BASE_URL=http://localhost:8787
-```
-
-Keep real API keys in `.env.local`; never commit secrets. External posting/login integrations should stay draft-only until explicit human approval workflows exist.
-
-## Cheap/local-first direction
-
-Start with mock data and browser/local files. Add persistent storage only when the workflow is proven:
-
-1. JSON files or SQLite for local state.
-2. Small local API for transcript/clip processing.
-3. Optional integrations for OBS, Twitch/YouTube chat, GitHub issues, and social draft exports.
-4. Cloud services only when a specific workflow needs them.
+- No auto-posting.
+- No external login flows.
+- No secrets displayed or committed.
+- AI practice chat must stay labelled as simulation, not fake audience activity.
+- Thumbnails using Masala's face wait until reference images are provided and approved.
 
 ## Next steps
 
-- Split mock data into `src/data`.
-- Add local persistence for jobs, clips, and draft posts.
-- Add transcript import and clip candidate scoring.
-- Add stream-safe redaction warnings around logs/config screens.
-- Add automated tests once interactions become stateful.
+- Add optional local transcription/import pipeline from video/audio files.
+- Add performance fields for TikTok/YouTube/X and promote clips through the funnel.
+- Learn Masala's X/Twitter tone from transcripts over time.
+- Add thumbnail concept board: hyper-realistic face-led style, GothamChess-inspired contrast/composition.
+- Split UI into smaller components once the workflow stabilizes.

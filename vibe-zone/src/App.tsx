@@ -1,372 +1,139 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import './App.css'
 
-type PageId =
-  | 'dashboard'
-  | 'clip-factory'
-  | 'viral-research'
-  | 'studio-feedback'
-  | 'social-dashboard'
-  | 'live-chat'
-  | 'rex-jobs'
-  | 'settings'
+type PageId = 'dashboard' | 'clip-factory' | 'viral-research' | 'studio-feedback' | 'social-dashboard' | 'live-chat' | 'rex-jobs' | 'settings'
+type JobStatus = 'running' | 'queued' | 'done' | 'needs-review' | 'failed'
+type Settings = { channelUrl: string; streamSafeMode: boolean; clipStrategy?: string; thumbnailStyle?: string; productAngle?: string; guardrails: string[] }
+type Video = { id: string; title: string; url: string; published: string; author: string }
+type Scan = { id: string; channelUrl: string; channelId?: string; status: JobStatus; startedAt: string; finishedAt: string; count: number; error?: string | null }
+type Transcript = { id: string; title: string; sourceUrl: string; text: string; createdAt: string }
+type Clip = { id: string; transcriptId: string; score: number; start: string; end: string; title: string; hook: string; caption: string; hashtags: string[]; reason: string; createdAt: string }
+type Job = { id: string; type: string; title: string; status: JobStatus; detail: string; createdAt: string }
+type PracticeChat = { id: string; name: string; text: string; label: string; createdAt: string }
+type AppState = { settings: Settings; scans: Scan[]; videos: Video[]; transcripts: Transcript[]; clips: Clip[]; chatMessages: PracticeChat[]; jobs: Job[] }
 
-type NavItem = {
-  id: PageId
-  label: string
-  icon: string
-  kicker: string
-}
-
-type JobStatus = 'running' | 'queued' | 'done' | 'needs-review'
-
-const navItems: NavItem[] = [
+const navItems = [
   { id: 'dashboard', label: 'Dashboard', icon: '🏠', kicker: 'Today' },
-  { id: 'clip-factory', label: 'Clip Factory', icon: '🎬', kicker: 'Video ops' },
-  { id: 'viral-research', label: 'Viral Research', icon: '📈', kicker: 'Ideas' },
+  { id: 'clip-factory', label: 'Clip Factory', icon: '🎬', kicker: 'Transcript ops' },
+  { id: 'viral-research', label: 'YouTube Scanner', icon: '📡', kicker: 'Public RSS' },
   { id: 'studio-feedback', label: 'Studio Feedback', icon: '🎙️', kicker: 'Stream quality' },
   { id: 'social-dashboard', label: 'Social Dashboard', icon: '📣', kicker: 'Drafts only' },
-  { id: 'live-chat', label: 'Live Chat Co-Pilot', icon: '💬', kicker: 'Assist mode' },
-  { id: 'rex-jobs', label: 'Rex Activity / Jobs', icon: '🦖', kicker: 'Agent work' },
+  { id: 'live-chat', label: 'Live Chat Co-Pilot', icon: '💬', kicker: 'Practice chat' },
+  { id: 'rex-jobs', label: 'Rex Activity / Jobs', icon: '🦖', kicker: 'Real history' },
   { id: 'settings', label: 'Settings', icon: '⚙️', kicker: 'Local-first' },
-]
+] as const
 
-const youtubeChannel = 'https://www.youtube.com/@ModernResponsibility'
+const emptyState: AppState = { settings: { channelUrl: 'https://www.youtube.com/@ModernResponsibility', streamSafeMode: true, guardrails: [] }, scans: [], videos: [], transcripts: [], clips: [], chatMessages: [], jobs: [] }
 
-const stats = [
-  { label: 'Clips ready', value: '12', detail: '+4 from last stream', tone: 'green' },
-  { label: 'Ideas queued', value: '37', detail: '8 strong hooks', tone: 'purple' },
-  { label: 'Draft posts', value: '9', detail: '0 auto-posting', tone: 'amber' },
-  { label: 'Agent jobs', value: '5', detail: '2 running locally', tone: 'blue' },
-]
-
-const streamPlan = [
-  { time: '19:45', title: 'Warm-up + roadmap recap', status: 'ready' },
-  { time: '20:05', title: 'Build Vibe Zone settings schema', status: 'next' },
-  { time: '21:10', title: 'Clip review: 5 strongest moments', status: 'queued' },
-  { time: '21:30', title: 'Ship notes + tomorrow plan', status: 'queued' },
-]
-
-const clips = [
-  {
-    title: '“Cheap-first dashboard stack”',
-    source: 'Stream 012 • 00:14:22-00:15:09',
-    score: 92,
-    hook: 'Stop overbuilding your creator tools.',
-    platforms: ['TikTok', 'Shorts', 'Reels'],
-  },
-  {
-    title: 'Rex explains local-first agents',
-    source: 'Stream 012 • 01:03:18-01:04:01',
-    score: 88,
-    hook: 'Your AI assistant should not need the cloud for everything.',
-    platforms: ['YouTube', 'LinkedIn'],
-  },
-  {
-    title: 'Debugging live without panicking',
-    source: 'Stream 011 • 00:48:05-00:49:12',
-    score: 81,
-    hook: 'The stream-safe way to handle broken builds.',
-    platforms: ['TikTok', 'X'],
-  },
-]
-
-const trends = [
-  { topic: 'AI agents that actually do work', heat: 'High', angle: 'Show a real local workflow, not a demo prompt.' },
-  { topic: 'Build in public dashboards', heat: 'Rising', angle: 'From messy stream notes to product roadmap.' },
-  { topic: 'Creator automation boundaries', heat: 'Medium', angle: 'Draft everything, auto-post nothing.' },
-  { topic: 'Cheap SaaS architecture', heat: 'High', angle: 'Start SQLite/local JSON before buying platforms.' },
-]
-
-const feedback = [
-  { area: 'Audio', grade: 'A-', note: 'Voice clear. Add peak warning if music overlaps mic.' },
-  { area: 'Pacing', grade: 'B+', note: 'Strong build momentum; add chapter cards every 20 minutes.' },
-  { area: 'Privacy', grade: 'A', note: 'Keep stream-safe warning banner near secret/env surfaces.' },
-  { area: 'Chat', grade: 'B', note: 'Add “question parking lot” for catch-up moments.' },
-]
-
-const posts = [
-  { platform: 'YouTube Shorts', status: 'Draft', copy: 'I built a local-first control room for my livestream workflow.' },
-  { platform: 'X', status: 'Needs review', copy: 'Tiny product idea: one dashboard for clips, research, chat, and agent jobs.' },
-  { platform: 'LinkedIn', status: 'Draft', copy: 'Local-first tooling is underrated for creators building in public.' },
-]
-
-const chatPrompts = [
-  'Summarize the last 10 minutes for a new viewer.',
-  'Turn this bug into a teachable moment.',
-  'Ask chat which feature should ship next.',
-  'Create a privacy-safe explanation of the config screen.',
-]
-
-const jobs: Array<{ name: string; status: JobStatus; owner: string; detail: string }> = [
-  { name: 'Scan transcript for clip candidates', status: 'running', owner: 'Rex', detail: 'Chunking local transcript files.' },
-  { name: 'Draft tomorrow stream outline', status: 'queued', owner: 'Rex', detail: 'Waiting for product priorities.' },
-  { name: 'Build Vibe Zone scaffold', status: 'running', owner: 'Rex', detail: 'Creating first usable version.' },
-  { name: 'Check social post wording', status: 'needs-review', owner: 'Masala', detail: 'Human approval required before anything external.' },
-  { name: 'Export 3 vertical clip drafts', status: 'done', owner: 'Local tool', detail: 'Mock export complete.' },
-]
-
-const settings = [
-  { key: 'Default YouTube channel', value: youtubeChannel, safe: true },
-  { key: 'Storage mode', value: 'Local JSON / browser state first', safe: true },
-  { key: 'Posting mode', value: 'Draft-only; manual approval required', safe: true },
-  { key: 'Secrets policy', value: 'Use .env.local, never commit keys', safe: true },
-  { key: 'Future integrations', value: 'GitHub, OBS, YouTube, Twitch, local clipper', safe: false },
-]
+async function api<T>(path: string, options?: RequestInit): Promise<T> {
+  const response = await fetch(path, { headers: { 'content-type': 'application/json' }, ...options })
+  const data = await response.json()
+  if (!response.ok) throw new Error(data.error || 'Request failed')
+  return data
+}
 
 function App() {
   const [activePage, setActivePage] = useState<PageId>('dashboard')
+  const [state, setState] = useState<AppState>(emptyState)
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState('')
   const current = useMemo(() => navItems.find((item) => item.id === activePage) ?? navItems[0], [activePage])
+  const refresh = async () => {
+    const next = await api<AppState>('/api/state')
+    setState(next)
+  }
+  useEffect(() => {
+    let ignore = false
+    api<AppState>('/api/state')
+      .then((next) => { if (!ignore) setState(next) })
+      .catch((err: Error) => { if (!ignore) setError(err.message) })
+      .finally(() => { if (!ignore) setLoading(false) })
+    return () => { ignore = true }
+  }, [])
 
   return (
     <div className="app-shell">
       <aside className="sidebar" aria-label="Vibe Zone navigation">
-        <div className="brand-card">
-          <div className="brand-mark">VZ</div>
-          <div>
-            <p className="eyebrow">Masala's local control room</p>
-            <h1>Vibe Zone</h1>
-          </div>
-        </div>
-        <nav>
-          {navItems.map((item) => (
-            <button
-              className={item.id === activePage ? 'nav-item active' : 'nav-item'}
-              key={item.id}
-              onClick={() => setActivePage(item.id)}
-              type="button"
-            >
-              <span className="nav-icon" aria-hidden="true">{item.icon}</span>
-              <span>
-                <strong>{item.label}</strong>
-                <small>{item.kicker}</small>
-              </span>
-            </button>
-          ))}
-        </nav>
-        <div className="stream-safe">
-          <strong>Stream-safe mode</strong>
-          <span>No secrets, no logins, no external posting from this UI.</span>
-        </div>
+        <div className="brand-card"><div className="brand-mark">VZ</div><div><p className="eyebrow">Masala's local control room</p><h1>Vibe Zone</h1></div></div>
+        <nav>{navItems.map((item) => <button className={item.id === activePage ? 'nav-item active' : 'nav-item'} key={item.id} onClick={() => setActivePage(item.id)} type="button"><span className="nav-icon">{item.icon}</span><span><strong>{item.label}</strong><small>{item.kicker}</small></span></button>)}</nav>
+        <div className="stream-safe"><strong>Stream-safe mode</strong><span>No secrets, no logins, no external posting. API binds to 127.0.0.1.</span></div>
       </aside>
-
       <main className="main-panel">
-        <header className="topbar">
-          <div>
-            <p className="eyebrow">{current.kicker}</p>
-            <h2>{current.icon} {current.label}</h2>
-          </div>
-          <div className="status-pill"><span /> Local-first prototype</div>
-        </header>
-        <Page page={activePage} />
+        <header className="topbar"><div><p className="eyebrow">{current.kicker}</p><h2>{current.icon} {current.label}</h2></div><div className="status-pill"><span /> {loading ? 'Loading local data' : 'Local JSON connected'}</div></header>
+        {error && <div className="notice danger">API error: {error}. Run <code>npm run dev:full</code> or <code>npm run api</code>.</div>}
+        <Page page={activePage} state={state} refresh={refresh} setError={setError} />
       </main>
     </div>
   )
 }
 
-function Page({ page }: { page: PageId }) {
+function Page({ page, state, refresh, setError }: { page: PageId; state: AppState; refresh: () => Promise<void>; setError: (value: string) => void }) {
+  const props = { state, refresh, setError }
   switch (page) {
-    case 'clip-factory':
-      return <ClipFactory />
-    case 'viral-research':
-      return <ViralResearch />
-    case 'studio-feedback':
-      return <StudioFeedback />
-    case 'social-dashboard':
-      return <SocialDashboard />
-    case 'live-chat':
-      return <LiveChat />
-    case 'rex-jobs':
-      return <RexJobs />
-    case 'settings':
-      return <Settings />
-    default:
-      return <Dashboard />
+    case 'clip-factory': return <ClipFactory {...props} />
+    case 'viral-research': return <YouTubeScanner {...props} />
+    case 'studio-feedback': return <StudioFeedback />
+    case 'social-dashboard': return <SocialDashboard clips={state.clips} />
+    case 'live-chat': return <LiveChat {...props} />
+    case 'rex-jobs': return <RexJobs jobs={state.jobs} scans={state.scans} />
+    case 'settings': return <SettingsPage {...props} />
+    default: return <Dashboard state={state} setPage={() => undefined} />
   }
 }
 
-function Dashboard() {
-  return (
-    <section className="page-grid">
-      <div className="hero-card full-span">
-        <div>
-          <p className="eyebrow">Today's mission</p>
-          <h3>Turn livestream chaos into a product-building cockpit.</h3>
-          <p>Track clips, research, social drafts, chat help, and Rex's local jobs without paying for a pile of SaaS before the workflow earns it.</p>
-        </div>
-        <button type="button">Plan next stream</button>
-      </div>
-      <div className="stat-grid full-span">
-        {stats.map((stat) => <MetricCard key={stat.label} {...stat} />)}
-      </div>
-      <Card title="Run of show" eyebrow="Next stream">
-        <ol className="timeline">
-          {streamPlan.map((item) => (
-            <li key={item.title}>
-              <time>{item.time}</time>
-              <span><strong>{item.title}</strong><small>{item.status}</small></span>
-            </li>
-          ))}
-        </ol>
-      </Card>
-      <Card title="Quick actions" eyebrow="Low-friction">
-        <div className="action-list">
-          <button type="button">Import transcript</button>
-          <button type="button">Review best clips</button>
-          <button type="button">Draft social pack</button>
-          <button type="button">Create Rex job</button>
-        </div>
-      </Card>
-    </section>
-  )
+function Dashboard({ state }: { state: AppState; setPage: (page: PageId) => void }) {
+  const lastScan = state.scans[0]
+  const stats = [
+    { label: 'Recent videos', value: String(state.videos.length), detail: lastScan ? `Last scan ${lastScan.status}` : 'Run YouTube scanner', tone: 'blue' },
+    { label: 'Transcripts', value: String(state.transcripts.length), detail: 'Imported locally', tone: 'purple' },
+    { label: 'Clip candidates', value: String(state.clips.length), detail: 'Heuristic scored', tone: 'green' },
+    { label: 'Jobs logged', value: String(state.jobs.length), detail: 'Persisted history', tone: 'amber' },
+  ]
+  return <section className="page-grid"><div className="hero-card full-span"><div><p className="eyebrow">Working local MVP</p><h3>Not just cards anymore: scanner, transcript import, clip scoring, practice chat, settings, and job history now persist to local JSON.</h3><p>Everything is local-first and draft-only. Strategy is quantity-first: make lots of clips, test on TikTok, move winners to YouTube, then turn proven winners into X/Twitter posts in Masala's tone.</p></div></div><div className="stat-grid full-span">{stats.map((stat) => <MetricCard key={stat.label} {...stat} />)}</div><Card title="Morning demo path" eyebrow="5 minutes"><ol className="timeline"><li><time>1</time><span><strong>Settings</strong><small>Confirm channel URL</small></span></li><li><time>2</time><span><strong>YouTube Scanner</strong><small>Run public RSS scan</small></span></li><li><time>3</time><span><strong>Clip Factory</strong><small>Paste transcript and generate clips</small></span></li><li><time>4</time><span><strong>Rex Jobs</strong><small>Show persisted activity</small></span></li></ol></Card><Card title="Productization angle" eyebrow="Vibe Zone / HQ"><p>Built for Masala first, but shaped as a monthly product for upcoming streamers: clip factory, simulated practice chat, stream-safe assistant work, reports, and social drafting.</p></Card></section>
 }
 
-function ClipFactory() {
-  return (
-    <section className="page-grid">
-      <Card title="Candidate clips" eyebrow="Mock scoring" className="full-span">
-        <div className="clip-list">
-          {clips.map((clip) => (
-            <article className="clip-card" key={clip.title}>
-              <div className="clip-score">{clip.score}</div>
-              <div>
-                <h3>{clip.title}</h3>
-                <p>{clip.source}</p>
-                <blockquote>{clip.hook}</blockquote>
-                <div className="tag-row">{clip.platforms.map((platform) => <span key={platform}>{platform}</span>)}</div>
-              </div>
-            </article>
-          ))}
-        </div>
-      </Card>
-    </section>
-  )
+function YouTubeScanner({ state, refresh, setError }: { state: AppState; refresh: () => Promise<void>; setError: (value: string) => void }) {
+  const [busy, setBusy] = useState(false)
+  const scan = async () => { setBusy(true); setError(''); try { await api<Scan>('/api/youtube/scan', { method: 'POST', body: '{}' }); await refresh() } catch (err) { setError((err as Error).message) } finally { setBusy(false) } }
+  const last = state.scans[0]
+  return <section className="page-grid"><Card title="Public YouTube channel scan" eyebrow="No login / no API key" className="full-span"><p>Channel: <a href={state.settings.channelUrl}>{state.settings.channelUrl}</a></p><button className="primary" type="button" onClick={scan} disabled={busy}>{busy ? 'Scanning…' : 'Scan recent videos'}</button>{last && <div className={last.status === 'failed' ? 'notice danger' : 'notice'}>Last scan: {last.status} • {last.count} videos • {new Date(last.finishedAt).toLocaleString()}{last.error ? ` • ${last.error}` : ''}</div>}</Card><Card title="Recent videos / streams" eyebrow={`${state.videos.length} stored`} className="full-span"><div className="table-list">{state.videos.map((video) => <div className="table-row" key={video.id}><strong>{video.title}</strong><span>{new Date(video.published).toLocaleDateString()} • {video.author}</span><a href={video.url}>{video.url}</a></div>)}{!state.videos.length && <p>No scan results yet.</p>}</div></Card></section>
 }
 
-function ViralResearch() {
-  return (
-    <section className="page-grid">
-      {trends.map((trend) => (
-        <Card key={trend.topic} title={trend.topic} eyebrow={`Heat: ${trend.heat}`}>
-          <p>{trend.angle}</p>
-        </Card>
-      ))}
-    </section>
-  )
+function ClipFactory({ state, refresh, setError }: { state: AppState; refresh: () => Promise<void>; setError: (value: string) => void }) {
+  const [title, setTitle] = useState('Stream transcript')
+  const [sourceUrl, setSourceUrl] = useState('')
+  const [text, setText] = useState('00:00 Why local-first tools matter for creators\n00:18 Stop overbuilding before the workflow earns it\n00:35 How we can turn livestream chaos into repeatable clips\n01:02 The mistake is pretending fake demos are finished products')
+  const [busy, setBusy] = useState(false)
+  const importAndScore = async () => { setBusy(true); setError(''); try { const transcript = await api<Transcript>('/api/transcripts', { method: 'POST', body: JSON.stringify({ title, sourceUrl, text }) }); await api<Clip[]>('/api/clips/generate', { method: 'POST', body: JSON.stringify({ transcriptId: transcript.id }) }); await refresh() } catch (err) { setError((err as Error).message) } finally { setBusy(false) } }
+  return <section className="page-grid"><Card title="Import/paste transcript" eyebrow="Timestamp-aware" className="full-span"><div className="form-grid"><input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Transcript title" /><input value={sourceUrl} onChange={(e) => setSourceUrl(e.target.value)} placeholder="Optional source video URL" /><textarea value={text} onChange={(e) => setText(e.target.value)} rows={8} placeholder="Paste transcript lines with optional timestamps like 00:42 text…" /></div><button className="primary" type="button" onClick={importAndScore} disabled={busy || !text.trim()}>{busy ? 'Scoring…' : 'Import and generate clip candidates'}</button><small>Quantity-first scoring uses overlapping transcript windows to create more candidates. Optional download/transcribe is intentionally not automatic yet; this MVP avoids surprise bandwidth/cost.</small></Card><Card title="Quantity-first candidate clips" eyebrow="Make many, let platforms filter" className="full-span"><div className="clip-list">{state.clips.map((clip) => <article className="clip-card" key={clip.id}><div className="clip-score">{clip.score}</div><div><h3>{clip.title}</h3><p>{clip.start}–{clip.end}</p><blockquote>{clip.hook}</blockquote><p>{clip.caption}</p><div className="tag-row">{clip.hashtags.map((tag) => <span key={tag}>{tag}</span>)}</div><small>{clip.reason}</small></div></article>)}{!state.clips.length && <p>No clips yet. Import a transcript above.</p>}</div></Card></section>
 }
 
-function StudioFeedback() {
-  return (
-    <section className="page-grid">
-      {feedback.map((item) => (
-        <Card key={item.area} title={item.area} eyebrow={`Grade ${item.grade}`}>
-          <p>{item.note}</p>
-        </Card>
-      ))}
-    </section>
-  )
+function LiveChat({ state, refresh, setError }: { state: AppState; refresh: () => Promise<void>; setError: (value: string) => void }) {
+  const [topic, setTopic] = useState('building Vibe Zone local-first')
+  const [context, setContext] = useState('We are turning a visual scaffold into real local workflows.')
+  const generate = async () => { setError(''); try { await api<PracticeChat[]>('/api/chat/generate', { method: 'POST', body: JSON.stringify({ topic, context }) }); await refresh() } catch (err) { setError((err as Error).message) } }
+  return <section className="page-grid"><Card title="Transparent AI practice chat simulator" eyebrow="Natural pop-up style" className="full-span"><div className="notice">These simulate chat messages popping up naturally, but stay clearly labelled as AI practice chat — never fake viewers.</div><div className="form-grid"><input value={topic} onChange={(e) => setTopic(e.target.value)} placeholder="Current topic" /><textarea value={context} onChange={(e) => setContext(e.target.value)} rows={4} placeholder="Stream context" /></div><button className="primary" type="button" onClick={generate}>Generate AI practice questions</button></Card><Card title="Practice questions" eyebrow="Generated locally" className="full-span"><div className="job-list">{state.chatMessages.map((message) => <article className="job-row" key={message.id}><span className="dot done" /><div><h3>{message.name}</h3><p>{message.text}</p><small>{message.label}</small></div></article>)}{!state.chatMessages.length && <p>No practice questions yet.</p>}</div></Card></section>
 }
 
-function SocialDashboard() {
-  return (
-    <section className="page-grid">
-      <Card title="Draft queue" eyebrow="Manual approval only" className="full-span">
-        <div className="table-list">
-          {posts.map((post) => (
-            <div className="table-row" key={post.platform}>
-              <strong>{post.platform}</strong>
-              <span>{post.status}</span>
-              <p>{post.copy}</p>
-            </div>
-          ))}
-        </div>
-      </Card>
-    </section>
-  )
+function RexJobs({ jobs, scans }: { jobs: Job[]; scans: Scan[] }) {
+  return <section className="page-grid"><Card title="Actual persisted job history" eyebrow="Local JSON" className="full-span"><div className="job-list">{jobs.map((job) => <article className="job-row" key={job.id}><span className={`dot ${job.status}`} /><div><h3>{job.title}</h3><p>{job.detail}</p><small>{job.type} • {new Date(job.createdAt).toLocaleString()}</small></div><small>{job.status}</small></article>)}{!jobs.length && <p>No jobs logged yet. Run a scan, import transcript, or generate practice chat.</p>}</div></Card><Card title="Scan runs" eyebrow="Status"><div className="table-list">{scans.map((scan) => <div className="table-row" key={scan.id}><strong>{scan.status} • {scan.count} videos</strong><span>{new Date(scan.finishedAt).toLocaleString()}</span><p>{scan.error || scan.channelId || scan.channelUrl}</p></div>)}</div></Card></section>
 }
 
-function LiveChat() {
-  return (
-    <section className="page-grid">
-      <Card title="Co-pilot prompts" eyebrow="Copy/paste helpers" className="full-span">
-        <div className="prompt-grid">
-          {chatPrompts.map((prompt) => <button type="button" key={prompt}>{prompt}</button>)}
-        </div>
-      </Card>
-      <Card title="Question parking lot" eyebrow="Mock inbox">
-        <p>“Can you explain why local-first matters for stream tools?”</p>
-      </Card>
-      <Card title="Chat pulse" eyebrow="Sentiment">
-        <p>Curious, technical, wants more visuals and fewer setup details.</p>
-      </Card>
-    </section>
-  )
+function SettingsPage({ state, refresh, setError }: { state: AppState; refresh: () => Promise<void>; setError: (value: string) => void }) {
+  const channelRef = useRef<HTMLInputElement>(null)
+  const save = async () => {
+    setError('')
+    try {
+      await api<Settings>('/api/settings', { method: 'POST', body: JSON.stringify({ channelUrl: channelRef.current?.value || state.settings.channelUrl }) })
+      await refresh()
+    } catch (err) { setError((err as Error).message) }
+  }
+  return <section className="page-grid"><Card title="Channel settings" eyebrow="Persisted"><div className="form-grid"><input key={state.settings.channelUrl} ref={channelRef} defaultValue={state.settings.channelUrl} /></div><button className="primary" type="button" onClick={save}>Save channel URL</button></Card><Card title="Growth strategy" eyebrow="Masala preference"><p>{state.settings.clipStrategy || 'Quantity-first: TikTok filters winners, YouTube scales them, X reports proven lessons.'}</p></Card><Card title="Thumbnail direction" eyebrow="Needs approved refs"><p>{state.settings.thumbnailStyle || 'Hyper-realistic Masala face thumbnails once reference images are approved; GothamChess-inspired composition.'}</p></Card><Card title="Product angle" eyebrow="Vibe Zone / HQ"><p>{state.settings.productAngle || 'Monthly product for upcoming streamers.'}</p></Card><Card title="Stream-safe guardrails" eyebrow="Visible by design"><div className="settings-grid">{state.settings.guardrails.map((item) => <div className="setting-card" key={item}><strong>{item}</strong><span>Enabled now</span></div>)}</div></Card><Card title="Data path" eyebrow="Local"><p><code>data/vibe-zone.json</code> stores settings, scans, transcripts, clips, chat practice, and jobs. It is ignored by git.</p></Card></section>
 }
 
-function RexJobs() {
-  return (
-    <section className="page-grid">
-      <Card title="Agent activity" eyebrow="Local job board" className="full-span">
-        <div className="job-list">
-          {jobs.map((job) => (
-            <article className="job-row" key={job.name}>
-              <span className={`dot ${job.status}`} />
-              <div>
-                <h3>{job.name}</h3>
-                <p>{job.detail}</p>
-              </div>
-              <small>{job.owner} • {job.status}</small>
-            </article>
-          ))}
-        </div>
-      </Card>
-    </section>
-  )
-}
-
-function Settings() {
-  return (
-    <section className="page-grid">
-      <Card title="Operating principles" eyebrow="Guardrails" className="full-span">
-        <div className="settings-grid">
-          {settings.map((item) => (
-            <div className="setting-card" key={item.key}>
-              <strong>{item.key}</strong>
-              <span>{item.value}</span>
-              <small>{item.safe ? 'Enabled now' : 'Future integration'}</small>
-            </div>
-          ))}
-        </div>
-      </Card>
-      <Card title="Environment variables" eyebrow="Planned">
-        <code>VITE_APP_MODE=local</code>
-        <code>VITE_ENABLE_MOCKS=true</code>
-      </Card>
-      <Card title="Data path" eyebrow="Planned">
-        <p>Start with committed mock data, then move to local JSON/SQLite behind an API when workflows stabilize.</p>
-      </Card>
-    </section>
-  )
-}
-
-function MetricCard({ label, value, detail, tone }: { label: string; value: string; detail: string; tone: string }) {
-  return (
-    <article className={`metric-card ${tone}`}>
-      <span>{label}</span>
-      <strong>{value}</strong>
-      <small>{detail}</small>
-    </article>
-  )
-}
-
-function Card({ title, eyebrow, children, className = '' }: { title: string; eyebrow: string; children: React.ReactNode; className?: string }) {
-  return (
-    <article className={`card ${className}`}>
-      <p className="eyebrow">{eyebrow}</p>
-      <h3>{title}</h3>
-      {children}
-    </article>
-  )
-}
+function StudioFeedback() { return <section className="page-grid">{['Audio: add peak warning if music overlaps mic.', 'Pacing: add chapter cards every 20 minutes.', 'Privacy: keep stream-safe warning banner visible.', 'Chat: use transparent practice questions, not fake engagement.'].map((note) => <Card key={note} title={note.split(':')[0]} eyebrow="Checklist"><p>{note}</p></Card>)}</section> }
+function SocialDashboard({ clips }: { clips: Clip[] }) { return <section className="page-grid"><Card title="Platform funnel" eyebrow="Quantity-first strategy" className="full-span"><ol className="timeline"><li><time>1</time><span><strong>TikTok first</strong><small>Post lots of variants and measure retention/comments.</small></span></li><li><time>2</time><span><strong>Winners to YouTube</strong><small>Promote proven short-form concepts into Shorts or longer videos.</small></span></li><li><time>3</time><span><strong>Proven YouTube winners to X</strong><small>Turn validated ideas into frequent reports/posts in Masala's tone.</small></span></li></ol></Card><Card title="X/Twitter report drafts from clips" eyebrow="Manual approval only" className="full-span"><div className="table-list">{clips.slice(0, 8).map((clip) => <div className="table-row" key={clip.id}><strong>{clip.title}</strong><span>Draft only • no posting integration</span><p>Report angle: {clip.hook} What changed, what performed, and what I learned building in public. {clip.hashtags.join(' ')}</p></div>)}{!clips.length && <p>Generate clips first. This page never posts externally.</p>}</div></Card></section> }
+function MetricCard({ label, value, detail, tone }: { label: string; value: string; detail: string; tone: string }) { return <article className={`metric-card ${tone}`}><span>{label}</span><strong>{value}</strong><small>{detail}</small></article> }
+function Card({ title, eyebrow, children, className = '' }: { title: string; eyebrow: string; children: React.ReactNode; className?: string }) { return <article className={`card ${className}`}><p className="eyebrow">{eyebrow}</p><h3>{title}</h3>{children}</article> }
 
 export default App

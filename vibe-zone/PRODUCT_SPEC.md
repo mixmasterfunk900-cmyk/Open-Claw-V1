@@ -1,73 +1,120 @@
-# Vibe Zone Product Spec / Roadmap
+# Vibe Zone / HQ Product Spec
 
 ## Vision
 
-Vibe Zone is a local multi-page dashboard for Masala's livestream and product-building workflow. It should help turn stream activity into useful product momentum: clips, research, social drafts, studio feedback, live chat assistance, and Rex job visibility.
+Vibe Zone is Masala's local-first livestream and creator-operations HQ. It turns live building into output: many clips, validated topics, social reports, transparent practice chat, studio feedback, and Rex job visibility.
+
+This can become a monthly product for upcoming streamers: a cheap/local cockpit that helps them convert live sessions into growth assets without buying a stack of SaaS too early.
+
+## Core strategy
+
+### Quantity-first clips
+
+Produce as many viable clips as possible first. Do not over-filter at generation time.
+
+1. **TikTok first:** ship lots of variants and let retention/comments/engagement identify winners.
+2. **Winners to YouTube:** promote proven ideas into Shorts or longer YouTube videos.
+3. **YouTube winners to X/Twitter:** convert validated ideas into frequent reports/posts in Masala's tone.
+
+### Tone learning
+
+Vibe Zone should generate X/Twitter reports from live transcripts and improve Masala-tone matching over time from approved transcript/post examples.
+
+Current MVP: draft copy from clips only. Future: maintain a local tone profile from approved transcript excerpts and edited posts.
+
+### Thumbnail direction
+
+Use Masala's face only after reference images are provided and approved.
+
+Style direction:
+
+- Hyper-realistic.
+- Strong facial expression / reaction.
+- GothamChess-inspired contrast, clean composition, and simple promise text.
+- No misleading or unapproved likeness use.
+
+### Live Chat Co-Pilot
+
+The Co-Pilot should simulate real chat messages appearing naturally, not just direct prompt buttons. It must remain transparent: every simulated message is labelled as AI practice chat / fictional viewer.
+
+Preferred implementation path:
+
+1. Free/cheap/local model where possible.
+2. Deterministic local templates as fallback.
+3. Read-only real chat ingest later, with clear separation between real chat and simulation.
 
 ## Principles
 
 - Cheap-first: do not buy SaaS before the workflow proves it needs cloud services.
-- Local-first: local app, local mock data, later local files/SQLite/API.
-- GitHub-ready: simple stack, clear README, no secrets committed.
+- Local-first: local app, local JSON now, SQLite optional later.
 - Stream-safe: avoid exposing private files, credentials, messages, or awkward personal data on screen.
 - Human approval: drafts are fine; external posts/logins/actions require explicit approval.
+- Transparent simulation: never fake audience activity.
 
 ## Target users
 
 - Masala: dad, full-time worker, coding/livestreaming builder.
 - Rex: local AI co-builder that can surface jobs, drafts, and workflow state.
+- Future customer: upcoming streamer who wants one affordable workflow HQ.
 
 ## Current MVP
 
 Default creator channel: <https://www.youtube.com/@ModernResponsibility>
 
-A Vite + React dashboard with mock data and page navigation:
-
-1. Dashboard: mission summary, run-of-show, stats, quick actions.
-2. Clip Factory: candidate clips, scores, hooks, target platforms.
-3. Viral Research: trend topics and content angles.
-4. Studio Feedback: audio/pacing/privacy/chat feedback.
-5. Social Dashboard: draft-only post queue.
-6. Live Chat Co-Pilot: prompt helpers and chat pulse.
-7. Rex Activity / Jobs: agent job statuses and review needs.
-8. Settings: guardrails, env notes, integration policy.
+1. Dashboard: local workflow counts and demo path.
+2. YouTube Scanner: scans public channel RSS without login/API key.
+3. Clip Factory: paste/import transcript and generate quantity-first overlapping clip candidates.
+4. Studio Feedback: stream-quality checklist.
+5. Social Dashboard: TikTok → YouTube → X/Twitter funnel and draft-only report copy.
+6. Live Chat Co-Pilot: transparent AI practice chat simulation.
+7. Rex Activity / Jobs: persisted local API activity log.
+8. Settings: channel URL, strategy, thumbnail direction, product angle, guardrails.
 
 ## Near-term roadmap
 
-### Phase 1: Make it usable locally
+### Phase 1: Make it useful tonight
 
-- Move mock data into dedicated JSON/TS modules.
-- Add local persistence for clips, jobs, drafts, and settings.
-- Add import flow for transcript text files.
-- Add basic search/filter across clips and jobs.
-- Add a stream-safe privacy banner component for sensitive screens.
+- [x] Local Node API.
+- [x] JSON persistence.
+- [x] Public YouTube RSS scan.
+- [x] Transcript import/paste.
+- [x] Quantity-first clip candidate scoring.
+- [x] Transparent simulated chat messages.
+- [x] Draft-only social funnel copy.
 
-### Phase 2: Creator workflow
+### Phase 2: Creator performance loop
 
-- Generate clip candidates from transcripts.
-- Add hook/title/caption variants per platform.
-- Add manual approval states: idea → draft → reviewed → exported.
-- Add export files for captions/post copy without auto-posting.
-- Add studio checklist before going live.
+- Add TikTok/YouTube/X performance fields per clip.
+- Add clip state machine: generated → TikTok test → winner → YouTube candidate → X report.
+- Add exports for captions, hashtags, and post copy.
+- Add local tone-profile builder from approved Masala transcript/post examples.
+- Add stronger transcript segmentation and deduping.
 
-### Phase 3: Integrations, still cautious
+### Phase 3: Media workflow
+
+- Optional local audio/video transcription pipeline.
+- Optional local clip export integration.
+- Thumbnail concept generator from approved face references.
+- Thumbnail A/B board inspired by GothamChess-style layouts.
+
+### Phase 4: Integrations, still cautious
 
 - OBS scene/status read-only integration.
 - Twitch/YouTube chat read-only ingest.
 - GitHub issue/project sync for product tasks.
-- Local video clipping tool integration.
 - Optional social platform APIs only for drafts or after explicit approval.
 
 ## Open questions
 
-- Preferred persistent store: local JSON, SQLite, or both?
-- Should Vibe Zone run as purely frontend, or include a small local Node API?
-- YouTube comes first for stream/video discovery, using `@ModernResponsibility` as the default channel.
-- What does a “clip score” mean: retention prediction, hook strength, chat reaction, or manual rating?
+- Should persistent store stay JSON or move to SQLite once clip volume grows?
+- Which TikTok metrics matter most for promotion: retention, completion, saves, comments, or shares?
+- How many approved posts are needed before the local Masala tone profile feels accurate?
+- What exact thumbnail reference set is approved for face-led images?
 
 ## Non-goals for now
 
 - No auto-posting.
 - No external login flows.
+- No unlabelled fake chat.
+- No use of Masala's face until references are provided and approved.
 - No paid cloud dependency.
-- No secret management beyond `.env.local` guidance.
