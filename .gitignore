@@ -1,0 +1,8 @@
+# Local/generated
+.venv-transcribe/
+transcripts/
+__pycache__/
+*.pyc
+
+# OpenClaw runtime cache
+.openclaw/
