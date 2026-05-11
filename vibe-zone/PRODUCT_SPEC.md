@@ -33,6 +33,12 @@ Style direction:
 - GothamChess-inspired contrast, clean composition, and simple promise text.
 - No misleading or unapproved likeness use.
 
+### Cheap/local model fallback
+
+Ollama is available on the VPS with `qwen2.5:1.5b-instruct` and `llama3.2:1b`. Vibe Zone should use local models for rough drafts, chat co-pilot simulation, transcript classification/scoring, and fallback work when paid APIs/rate limits fail.
+
+Do not rely on Ollama exclusively unless a given app path has been tested; always keep deterministic/local-template fallback for live reliability.
+
 ### Live Chat Co-Pilot
 
 The Co-Pilot should simulate real chat messages appearing naturally, not just direct prompt buttons. It must remain transparent: every simulated message is labelled as AI practice chat / fictional viewer.
@@ -80,6 +86,7 @@ Default creator channel: <https://www.youtube.com/@ModernResponsibility>
 - [x] Transcript import/paste.
 - [x] Quantity-first clip candidate scoring.
 - [x] Transparent simulated chat messages.
+- [x] Opportunistic Ollama draft path for practice chat, with template fallback.
 - [x] Draft-only social funnel copy.
 
 ### Phase 2: Creator performance loop

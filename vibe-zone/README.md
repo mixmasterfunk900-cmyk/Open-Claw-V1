@@ -11,6 +11,7 @@ The product direction is **quantity-first creator operations**: produce as many 
 - Clip Factory that imports/pastes transcripts and generates many overlapping clip candidates.
 - Social Dashboard with draft-only TikTok → YouTube → X/Twitter funnel copy.
 - Live Chat Co-Pilot that simulates natural chat pop-ups while clearly labelling them as AI practice chat.
+- Optional Ollama local-model fallback for rough chat drafts, classifications, scoring helpers, and API/rate-limit fallback work.
 - Rex Activity / Jobs backed by persisted local job history.
 - Settings with channel URL, stream-safe guardrails, thumbnail direction, and productization notes.
 
@@ -75,6 +76,17 @@ node --check server/server.mjs
 - `src/App.css` contains the dashboard layout and responsive UI styling.
 - `server/server.mjs` contains the local JSON API, YouTube RSS scanner, transcript clip scorer, and AI-practice-chat simulator.
 - `scripts/dev-full.mjs` runs frontend and API together for local development.
+
+## Local model fallback
+
+Ollama is expected locally on the VPS when available. Current design uses it opportunistically, not exclusively.
+
+Preferred models installed:
+
+- `qwen2.5:1.5b-instruct` — rough drafts, chat co-pilot simulation, classification/scoring notes.
+- `llama3.2:1b` — tiny fallback work when speed matters.
+
+The app currently calls Ollama for practice-chat drafts if `http://127.0.0.1:11434` is reachable, then falls back to deterministic templates if it is offline or slow.
 
 ## Stream-safe rules
 

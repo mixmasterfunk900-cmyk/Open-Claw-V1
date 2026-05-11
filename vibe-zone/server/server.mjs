@@ -17,6 +17,7 @@ const defaultDb = {
     clipStrategy: 'Quantity-first: produce many clips, let TikTok performance filter winners for YouTube, then turn proven YouTube winners into X/Twitter posts.',
     thumbnailStyle: 'Hyper-realistic face-led thumbnails once Masala reference images are provided and approved; GothamChess-inspired contrast/composition.',
     productAngle: 'Vibe Zone/HQ can become a monthly product for upcoming streamers.',
+    localModel: 'Ollama fallback: prefer qwen2.5:1.5b-instruct for rough drafts/classification/chat simulation, llama3.2:1b for tiny fallback work; deterministic templates remain available if Ollama is offline.',
     guardrails: ['No logins or account cookies', 'No external posting', 'No secrets displayed', 'Local JSON storage only', 'AI practice chat is always labelled transparent simulation'],
   },
   scans: [],
@@ -30,7 +31,8 @@ const defaultDb = {
 async function loadDb() {
   await mkdir(dataDir, { recursive: true })
   try {
-    return { ...defaultDb, ...JSON.parse(await readFile(dbPath, 'utf8')) }
+    const stored = JSON.parse(await readFile(dbPath, 'utf8'))
+    return { ...defaultDb, ...stored, settings: { ...defaultDb.settings, ...(stored.settings || {}) } }
   } catch {
     await saveDb(defaultDb)
     return structuredClone(defaultDb)
@@ -70,6 +72,20 @@ function tagText(xml, tag) {
 function decode(text) {
   return text.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"')
 }
+async function ollamaDraft(prompt) {
+  try {
+    const response = await fetch('http://127.0.0.1:11434/api/generate', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ model: 'qwen2.5:1.5b-instruct', prompt, stream: false, options: { temperature: 0.7, num_predict: 220 } }),
+      signal: AbortSignal.timeout(6000),
+    })
+    if (!response.ok) throw new Error(`Ollama ${response.status}`)
+    const data = await response.json()
+    return String(data.response || '').trim()
+  } catch { return '' }
+}
+
 async function scanYoutube(db) {
   const startedAt = new Date().toISOString()
   const job = await addJob(db, 'youtube-scan', 'Scan YouTube channel', 'running', db.settings.channelUrl)
@@ -191,7 +207,10 @@ async function handleApi(req, res, db) {
     await addJob(db, 'clip-generation', 'Generated clip candidates', 'done', `${clips.length} clips from ${transcript.title}`); await saveDb(db); return send(res, 200, clips)
   }
   if (req.method === 'POST' && url.pathname === '/api/chat/generate') {
-    const body = await parseBody(req); const messages = generatePracticeChat(body.topic, body.context); db.chatMessages = [...messages, ...db.chatMessages].slice(0, 50)
+    const body = await parseBody(req);
+    const localDraft = await ollamaDraft(`Write 4 short natural livestream chat messages about: ${body.topic || 'the stream'}. Context: ${body.context || ''}. They must be transparent AI practice chat, not fake viewers. Return one per line.`)
+    const aiMessages = localDraft ? localDraft.split(/\n+/).map((line, index) => ({ id: id('chat'), name: `LocalModel${index + 1}`, text: line.replace(/^[-*\d.)\s]+/, '').trim(), label: 'AI practice chat - Ollama local draft, transparent simulation', createdAt: new Date().toISOString() })).filter((m) => m.text).slice(0, 4) : []
+    const messages = [...aiMessages, ...generatePracticeChat(body.topic, body.context)].slice(0, 8); db.chatMessages = [...messages, ...db.chatMessages].slice(0, 50)
     await addJob(db, 'practice-chat', 'Generated AI practice chat', 'done', body.topic || 'No topic'); await saveDb(db); return send(res, 200, messages)
   }
   return send(res, 404, { error: 'Not found' })
