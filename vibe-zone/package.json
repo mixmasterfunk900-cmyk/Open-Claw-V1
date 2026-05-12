@@ -10,6 +10,7 @@
     "preview": "vite preview",
     "api": "node server/server.mjs",
     "dev:full": "node scripts/dev-full.mjs",
+    "pipeline:finish-upload": "node scripts/finish-upload-pipeline.mjs",
     "start": "node server/server.mjs"
   },
   "dependencies": {

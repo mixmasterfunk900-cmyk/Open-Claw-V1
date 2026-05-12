@@ -97,7 +97,7 @@ function Dashboard({ state }: { state: AppState; setPage: (page: PageId) => void
     { label: 'Media jobs', value: String(state.mediaJobs.length), detail: 'Extraction/render queue', tone: 'purple' },
     { label: 'Viral leads', value: String(state.viralFinds.length), detail: 'Hunter backlog', tone: 'blue' },
   ]
-  return <section className="page-grid"><div className="hero-card full-span"><div><p className="eyebrow">Working local MVP</p><h3>Not just cards anymore: scanner, transcript import, clip scoring, practice chat, settings, and job history now persist to local JSON.</h3><p>Everything is local-first and draft-only. Strategy is quantity-first: make lots of clips, test on TikTok, move winners to YouTube, then turn proven winners into X/Twitter posts in Masala's tone.</p></div></div><div className="stat-grid full-span">{stats.map((stat) => <MetricCard key={stat.label} {...stat} />)}</div><Card title="Morning demo path" eyebrow="5 minutes"><ol className="timeline"><li><time>1</time><span><strong>Settings</strong><small>Confirm channel URL</small></span></li><li><time>2</time><span><strong>YouTube Scanner</strong><small>Run public RSS scan</small></span></li><li><time>3</time><span><strong>Media Pipeline</strong><small>Plan yt-dlp, Whisper, ffmpeg/subtitle jobs</small></span></li><li><time>4</time><span><strong>Clip Factory</strong><small>Paste transcript and generate clips</small></span></li><li><time>5</time><span><strong>Rex Jobs</strong><small>Show persisted activity</small></span></li></ol></Card><Card title="Productization angle" eyebrow="Vibe Zone / HQ"><p>Built for Masala first, but shaped as a monthly product for upcoming streamers: clip factory, simulated practice chat, stream-safe assistant work, reports, and social drafting.</p></Card></section>
+  return <section className="page-grid"><div className="hero-card full-span"><div><p className="eyebrow">Creator operations control tower</p><h3>Track the stream-to-clips pipeline from one clean command centre.</h3><p>Inspired by modern logistics dashboards: scanner, uploads, transcripts, clip candidates, render queue, viral leads, and Rex activity are laid out like live operational lanes.</p></div></div><div className="stat-grid full-span">{stats.map((stat) => <MetricCard key={stat.label} {...stat} />)}</div><Card title="Operations route" eyebrow="From stream to shipment"><ol className="timeline"><li><time>1</time><span><strong>Settings</strong><small>Confirm channel URL</small></span></li><li><time>2</time><span><strong>YouTube Scanner</strong><small>Run public RSS scan</small></span></li><li><time>3</time><span><strong>Media Pipeline</strong><small>Plan yt-dlp, Whisper, ffmpeg/subtitle jobs</small></span></li><li><time>4</time><span><strong>Clip Factory</strong><small>Paste transcript and generate clips</small></span></li><li><time>5</time><span><strong>Rex Jobs</strong><small>Show persisted activity</small></span></li></ol></Card><Card title="Dispatch model" eyebrow="Vibe Zone / HQ"><p>Built for Masala first, but shaped like a creator logistics product: ingest streams, process media, dispatch clips, and review every action before anything leaves the yard.</p></Card></section>
 }
 
 function YouTubeScanner({ state, refresh, setError }: { state: AppState; refresh: () => Promise<void>; setError: (value: string) => void }) {
@@ -116,6 +116,28 @@ function ClipFactory({ state, refresh, setError }: { state: AppState; refresh: (
   return <section className="page-grid"><Card title="Import/paste transcript" eyebrow="Timestamp-aware" className="full-span"><div className="form-grid"><input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Transcript title" /><input value={sourceUrl} onChange={(e) => setSourceUrl(e.target.value)} placeholder="Optional source video URL" /><textarea value={text} onChange={(e) => setText(e.target.value)} rows={8} placeholder="Paste transcript lines with optional timestamps like 00:42 text…" /></div><button className="primary" type="button" onClick={importAndScore} disabled={busy || !text.trim()}>{busy ? 'Scoring…' : 'Import and generate clip candidates'}</button><small>Quantity-first scoring uses overlapping transcript windows to create more candidates. Optional download/transcribe is intentionally not automatic yet; this MVP avoids surprise bandwidth/cost.</small></Card><Card title="Quantity-first candidate clips" eyebrow="Make many, let platforms filter" className="full-span"><div className="clip-list">{state.clips.map((clip) => <article className="clip-card" key={clip.id}><div className="clip-score">{clip.score}</div><div><h3>{clip.title}</h3><p>{clip.start}–{clip.end} • {(clip.platform || 'tiktok').toUpperCase()} • {clip.status || 'idea'} • upload-ready draft placeholder</p><blockquote>{clip.hook}</blockquote><p><strong>Title:</strong> {clip.title}</p><p><strong>Caption:</strong> {clip.caption}</p><div className="tag-row">{clip.hashtags.map((tag) => <span key={tag}>{tag}</span>)}<span>Subtitles planned</span><span>9:16 short</span></div><small>{clip.reason}</small></div></article>)}{!state.clips.length && <p>No clips yet. Import a transcript above.</p>}</div></Card></section>
 }
 
+
+type UploadResponse = { ok: boolean; path: string; size: number }
+function uploadFileWithProgress(file: File, onProgress: (percent: number) => void): Promise<UploadResponse> {
+  return new Promise((resolve, reject) => {
+    const request = new XMLHttpRequest()
+    request.open('POST', `/api/media/upload?filename=${encodeURIComponent(file.name)}`)
+    request.setRequestHeader('content-type', file.type || 'application/octet-stream')
+    request.upload.onprogress = (event) => {
+      if (event.lengthComputable) onProgress(Math.round((event.loaded / event.total) * 100))
+    }
+    request.onload = () => {
+      try {
+        const data = JSON.parse(request.responseText || '{}')
+        if (request.status >= 200 && request.status < 300) resolve(data)
+        else reject(new Error(data.error || `Upload failed for ${file.name}`))
+      } catch (error) { reject(error) }
+    }
+    request.onerror = () => reject(new Error(`Network error uploading ${file.name}`))
+    request.send(file)
+  })
+}
+
 function MediaPipeline({ state, refresh, setError }: { state: AppState; refresh: () => Promise<void>; setError: (value: string) => void }) {
   const latestStream = state.videos.find((video) => video.kind === 'stream') || state.videos.find((video) => /\blive\b|stream|vibe coding|day \d+/i.test(video.title)) || state.videos[0]
   const plannedVideoId = latestStream?.id || 'VIDEO_ID'
@@ -131,12 +153,10 @@ function MediaPipeline({ state, refresh, setError }: { state: AppState; refresh:
   const uploadFiles = async (files: FileList | File[]) => {
     const items = Array.from(files)
     if (!items.length) return
-    setBusy('/api/media/upload'); setError(''); setUploadNote(`Uploading ${items.length} file(s)…`)
+    setBusy('/api/media/upload'); setError(''); setUploadNote(`Uploading ${items.length} file(s)… 0%`)
     try {
       for (const file of items) {
-        const response = await fetch(`/api/media/upload?filename=${encodeURIComponent(file.name)}`, { method: 'POST', body: file, headers: { 'content-type': file.type || 'application/octet-stream' } })
-        const data = await response.json()
-        if (!response.ok) throw new Error(data.error || `Upload failed for ${file.name}`)
+        const data = await uploadFileWithProgress(file, (percent) => setUploadNote(`Uploading ${file.name}… ${percent}%`))
         setUploadNote(`Uploaded ${data.path}`)
         if (/\.(mp4|mov|mkv|webm|m4v)$/i.test(file.name)) setInputPath(data.path)
       }

@@ -186,7 +186,13 @@ function buildWhisperCommand(inputPath) {
 function buildFfmpegCommand({ inputPath, start = '0:00', end = '0:45', mode = 'short', subtitlePath = '' }) {
   const scale = mode === 'long' ? 'scale=1920:-2' : 'scale=-2:1920,crop=1080:1920'
   const subtitle = subtitlePath ? `,subtitles='${subtitlePath.replaceAll("'", "'\\''")}'` : ''
-  return `ffmpeg -y -ss ${start} -to ${end} -i "${inputPath}" -vf "${scale}${subtitle}" -c:v libx264 -preset veryfast -c:a aac "media/renders/${mode}-${Date.now()}.mp4"`
+  // Coarse input seek plus accurate output trim avoids decoding a whole livestream,
+  // while preventing tiny header-only MP4s when the start is far from a keyframe.
+  const startSeconds = seconds(start, 0)
+  const duration = Math.max(1, seconds(end, startSeconds + 45) - startSeconds)
+  const preSeek = Math.max(0, startSeconds - 5)
+  const trimSeek = startSeconds - preSeek
+  return `ffmpeg -y -ss ${preSeek} -i "${inputPath}" -ss ${trimSeek} -t ${duration} -vf "${scale}${subtitle}" -c:v libx264 -preset veryfast -c:a aac "media/renders/${mode}-${Date.now()}.mp4"`
 }
 async function ingestLatestLocalMedia(db, body = {}) {
   await ensureMediaDirs()
