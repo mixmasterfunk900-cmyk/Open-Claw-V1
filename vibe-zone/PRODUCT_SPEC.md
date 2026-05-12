@@ -2,7 +2,9 @@
 
 ## Vision
 
-Vibe Zone is Masala's local-first livestream and creator-operations HQ. It turns live building into output: many clips, validated topics, social reports, transparent practice chat, studio feedback, and Rex job visibility.
+Vibe Zone is Masala's local-first livestream and creator-operations HQ. It turns live building into output: many clips, validated topics, social reports, transparent practice chat, studio feedback, Rex job visibility, and eventually a full multi-platform content operation.
+
+The expanded north star is **Content HQ**: every livestream becomes viral clips, evergreen long-form, written posts/articles/newsletters, podcast/audio assets, community prompts, owned-audience funnels, monetized exclusives, and searchable archive material. See `CONTENT_HQ_MASTER_PLAN.md` for the full operating-system spec.
 
 This can become a monthly product for upcoming streamers: a cheap/local cockpit that helps them convert live sessions into growth assets without buying a stack of SaaS too early.
 
@@ -49,13 +51,19 @@ Preferred implementation path:
 2. Deterministic local templates as fallback.
 3. Read-only real chat ingest later, with clear separation between real chat and simulation.
 
+### Rex Live Companion / Avatar
+
+Future experience layer: because the product is built around streaming, Rex should eventually be a live stream-side presence — an avatar/overlay that watches jobs and context, reacts safely during streams, and may later become voice-first or hologram-style. Park this as a long-term design direction; do not let it derail the immediate ingest → clip → render → dispatch pipeline.
+
 ## Principles
 
 - Cheap-first: do not buy SaaS before the workflow proves it needs cloud services.
 - Local-first: local app, local JSON now, SQLite optional later.
 - Stream-safe: avoid exposing private files, credentials, messages, or awkward personal data on screen.
-- Human approval: drafts are fine; external posts/logins/actions require explicit approval.
+- Human approval: drafts/schedules/export bundles are fine; external posts/logins/account actions require explicit approval unless Masala later changes policy.
+- Platform-safe automation: create native variants and respect rate limits/rules; do not spam, impersonate, fake engagement, or evade enforcement.
 - Transparent simulation: never fake audience activity.
+- Funnel-aware: every asset should try to move viewers from algorithmic reach toward long-form and owned audience.
 
 ## Target users
 
@@ -109,7 +117,15 @@ Default creator channel: <https://www.youtube.com/@ModernResponsibility>
 - OBS scene/status read-only integration.
 - Twitch/YouTube chat read-only ingest.
 - GitHub issue/project sync for product tasks.
-- Optional social platform APIs only for drafts or after explicit approval.
+- Optional social platform APIs only for drafts, scheduling, analytics import, or after explicit approval.
+
+### Phase 5: Content HQ distribution engine
+
+- Dispatch Calendar for Shorts/TikTok/Reels/X/Reddit/Substack/Medium/Discord/Patreon/podcast assets.
+- Platform-native render variants from clean masters.
+- Copy Studio for posts, threads, newsletters, articles, show notes, pinned comments, and CTAs.
+- Winner Radar for analytics-driven reposts, variants, compilations, and follow-up topics.
+- Searchable archive for semantic/topic/quote reuse and future remix generation.
 
 ## Open questions
 

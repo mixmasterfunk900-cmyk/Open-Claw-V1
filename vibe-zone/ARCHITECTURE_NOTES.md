@@ -15,7 +15,8 @@
 
 ## Design constraints
 - Bind locally only; access via SSH tunnel.
-- No auto-posting or external social writes.
+- Drafts/export bundles/schedules are safe; public posting, social account actions, logins, cookies, and API-key use require explicit approval unless policy changes.
+- Platform-safe automation only: respect rate limits/rules, avoid spam/fake engagement/impersonation, and create native variants from clean masters instead of lazy reposts.
 - No cookies/logins by default for YouTube extraction.
 - Stream-safe: avoid exposing secrets/private files.
 
@@ -24,5 +25,13 @@
 - Vibe Zone should compete by being local-first, stream-safe, and transparent: no surprise posting, no cookie storage by default, clear job history, and owner-reviewed status gates.
 - Missing parity/opportunity items: semantic viral scoring, caption style presets, optional B-roll/title-card generation, selected-clip rendering from the UI, and platform-specific export bundles.
 
+## Content HQ architecture direction
+- Add first-class entities for `asset`, `platformVariant`, `dispatchItem`, `analyticsSnapshot`, `winnerSignal`, `funnelCTA`, and `archiveEntry`.
+- Preserve master media and render platform-native variants from it: Shorts/TikTok/Reels/Facebook/X/long-form/podcast.
+- Build Dispatch as an approval/scheduling layer before any external integrations.
+- Add Copy Studio and Thumbnail Lab as siblings to Render Lab, not as hidden fields in clip rows.
+- Add Winner Radar to ingest manual/API analytics and trigger variant/repost/follow-up recommendations.
+- Move to SQLite when JSON persistence becomes awkward for archive/search/analytics relationships.
+
 ## Next architecture step
-Move from planned media jobs toward an actual local job runner that executes queued transcribe/render commands, records stdout/stderr, and updates status without requiring shell intervention.
+Move from planned media jobs toward an actual local job runner that executes queued transcribe/render commands, records stdout/stderr, and updates status without requiring shell intervention. Keep this as the foundation for Content HQ automation.

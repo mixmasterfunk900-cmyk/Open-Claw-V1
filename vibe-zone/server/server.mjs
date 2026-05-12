@@ -293,8 +293,13 @@ function buildWhisperCommand(inputPath) {
   return `. /root/.openclaw/workspace/.venv-transcribe/bin/activate && whisper "${inputPath}" --model base --language en --output_format all --output_dir media/transcripts`
 }
 function ffmpegPlan({ inputPath, start = '0:00', end = '0:45', mode = 'short', subtitlePath = '', outputPath = '' }) {
-  const scale = mode === 'long' ? 'scale=1920:-2' : 'scale=-2:1920,crop=1080:1920'
   const subtitle = subtitlePath ? `,subtitles='${subtitlePath.replaceAll("'", "'\\''")}'` : ''
+  const filters = {
+    long: `scale=1920:-2${subtitle}`,
+    'facecam-split': `scale=-2:960,crop=1080:960,pad=1080:1920:0:0:color=0x101828,drawtext=text='Facecam / B-roll zone':x=(w-text_w)/2:y=1440:fontcolor=white@0.65:fontsize=44:box=1:boxcolor=black@0.35:boxborderw=24${subtitle}`,
+    short: `scale=-2:1920,crop=1080:1920${subtitle}`,
+  }
+  const filter = filters[mode] || filters.short
   // Coarse input seek plus accurate output trim avoids decoding a whole livestream,
   // while preventing tiny header-only MP4s when the start is far from a keyframe.
   const startSeconds = seconds(start, 0)
@@ -302,7 +307,7 @@ function ffmpegPlan({ inputPath, start = '0:00', end = '0:45', mode = 'short', s
   const preSeek = Math.max(0, startSeconds - 5)
   const trimSeek = startSeconds - preSeek
   const output = outputPath || `media/renders/${mode}-${Date.now()}.mp4`
-  const args = ['-y', '-ss', String(preSeek), '-i', inputPath, '-ss', String(trimSeek), '-t', String(duration), '-vf', `${scale}${subtitle}`, '-c:v', 'libx264', '-preset', 'veryfast', '-c:a', 'aac', output]
+  const args = ['-y', '-ss', String(preSeek), '-i', inputPath, '-ss', String(trimSeek), '-t', String(duration), '-vf', filter, '-c:v', 'libx264', '-preset', 'veryfast', '-c:a', 'aac', output]
   return { args, output, command: `ffmpeg ${args.map(shellArg).join(' ')}`, startSeconds, endSeconds: startSeconds + duration }
 }
 function shellArg(value) {
@@ -316,6 +321,7 @@ function selectedRenderPreset(presetId = 'punchy-captions', videoId = 'VIDEO_ID'
     'punchy-captions': { preset: 'punchy-captions', mode: 'short', subtitlePath: `media/transcripts/${videoId}.punchy.ass` },
     'standard-captions': { preset: 'standard-captions', mode: 'short', subtitlePath: `media/transcripts/${videoId}.srt` },
     'no-captions': { preset: 'no-captions', mode: 'short', subtitlePath: '' },
+    'facecam-split': { preset: 'facecam-split', mode: 'facecam-split', subtitlePath: `media/transcripts/${videoId}.punchy.ass` },
     'long-standard': { preset: 'long-standard', mode: 'long', subtitlePath: `media/transcripts/${videoId}.srt` },
   }
   return presets[presetId] || presets['punchy-captions']
