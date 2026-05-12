@@ -31,5 +31,8 @@
 
 ## Selected clip rendering follow-ups
 1. [done] Add Render Short action on Clip Factory candidates with source-duration guardrails.
-2. [pending] Add export bundles for approved rendered clips (`upload-card.md`, metadata, checklist).
+2. [done] Add export bundles for approved rendered clips (`upload-card.md`, metadata, checklist).
 3. [pending] Add render preset selector UI beyond the default punchy captions preset.
+
+## API setup reminder
+- [pending] Remind Masala later to set up API keys/providers for higher-quality embeddings, image generation, and optional platform integrations. For now prefer local Ollama/no-API paths.

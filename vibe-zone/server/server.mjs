@@ -17,7 +17,7 @@ const port = Number(process.env.PORT || 8787)
 const localYtDlp = path.join(root, '.venv-media', 'bin', 'yt-dlp')
 const localWhisper = '/root/.openclaw/workspace/.venv-transcribe/bin/whisper'
 const youtubeBotBlockPattern = /sign in to confirm you.?re not a bot|use --cookies|cookies-from-browser/i
-const mediaDirs = ['media/downloads', 'media/transcripts', 'media/renders']
+const mediaDirs = ['media/downloads', 'media/transcripts', 'media/renders', 'media/exports']
 
 const defaultDb = {
   settings: {
@@ -72,6 +72,7 @@ async function listMediaFiles() {
     { kind: 'source', dir: 'media/downloads' },
     { kind: 'transcript', dir: 'media/transcripts' },
     { kind: 'render', dir: 'media/renders' },
+    { kind: 'export', dir: 'media/exports' },
   ]
   const files = []
   for (const group of groups) {
@@ -153,7 +154,7 @@ function contentTypeFor(file) {
   return ({
     '.mp4': 'video/mp4', '.webm': 'video/webm', '.mov': 'video/quicktime', '.mkv': 'video/x-matroska',
     '.mp3': 'audio/mpeg', '.wav': 'audio/wav', '.m4a': 'audio/mp4',
-    '.txt': 'text/plain; charset=utf-8', '.srt': 'text/plain; charset=utf-8', '.vtt': 'text/vtt; charset=utf-8', '.json': 'application/json; charset=utf-8', '.tsv': 'text/tab-separated-values; charset=utf-8',
+    '.txt': 'text/plain; charset=utf-8', '.md': 'text/markdown; charset=utf-8', '.srt': 'text/plain; charset=utf-8', '.vtt': 'text/vtt; charset=utf-8', '.json': 'application/json; charset=utf-8', '.tsv': 'text/tab-separated-values; charset=utf-8',
   })[ext] || 'application/octet-stream'
 }
 async function serveMedia(req, res) {
@@ -359,6 +360,62 @@ async function renderSelectedClip(db, clipId, body = {}) {
     const job = await addMediaJob(db, 'render-selected', 'failed', detail, plan.command)
     return { status: 200, body: { clip, job } }
   }
+}
+function clipPlatformChecklist(platform = 'tiktok') {
+  const common = ['Watch the full rendered file once before upload', 'Confirm subtitles are not covered by platform UI', 'Use manual posting only — Vibe Zone does not publish externally']
+  if (platform === 'youtube') return ['Upload as YouTube Short if vertical and under 60s; otherwise use normal video flow', 'Title should lead with the strongest promise/result', ...common]
+  if (platform === 'x') return ['Use the clip as proof, then add a short build-in-public lesson', 'Keep the post human and specific: what changed, what failed, what is next', ...common]
+  return ['Post as TikTok first for quantity-first validation', 'Test 3 hook/caption variants before promoting winners to YouTube/X', ...common]
+}
+async function exportClipBundle(db, clipId) {
+  await ensureMediaDirs()
+  const clip = db.clips.find((item) => item.id === clipId)
+  if (!clip) return { status: 404, body: { error: 'Clip not found' } }
+  const transcript = db.transcripts.find((item) => item.id === clip.transcriptId)
+  const platform = clip.platform || 'tiktok'
+  const bundleDir = `media/exports/${clip.id}-${slug(clip.title)}`
+  await mkdir(path.join(root, bundleDir), { recursive: true })
+  const checklist = clipPlatformChecklist(platform)
+  const metadata = {
+    id: clip.id,
+    title: clip.title,
+    platform,
+    status: 'exported',
+    sourceUrl: transcript?.sourceUrl || '',
+    start: clip.start,
+    end: clip.end,
+    hook: clip.hook,
+    caption: clip.caption,
+    hashtags: clip.hashtags || [],
+    renderPath: clip.renderPath || '',
+    createdAt: new Date().toISOString(),
+  }
+  const uploadCard = `# Upload Card — ${clip.title}
+
+- Platform: ${platform.toUpperCase()}
+- Source: ${metadata.sourceUrl || 'local transcript'}
+- Timecode: ${clip.start}–${clip.end}
+- Render: ${clip.renderPath || 'not rendered yet'}
+
+## Hook
+${clip.hook}
+
+## Caption
+${clip.caption}
+
+## Hashtags
+${(clip.hashtags || []).join(' ')}
+
+## Manual upload checklist
+${checklist.map((item) => `- [ ] ${item}`).join('\n')}
+`
+  await writeFile(path.join(root, bundleDir, 'metadata.json'), JSON.stringify(metadata, null, 2))
+  await writeFile(path.join(root, bundleDir, 'upload-card.md'), uploadCard)
+  clip.status = 'exported'
+  clip.exportedAt = metadata.createdAt
+  clip.exportBundlePath = bundleDir
+  const job = await addMediaJob(db, 'export-bundle', 'done', `Built manual upload bundle for ${clip.title}: ${bundleDir}/upload-card.md`, '')
+  return { status: 200, body: { clip, job, bundleDir, files: [`${bundleDir}/upload-card.md`, `${bundleDir}/metadata.json`] } }
 }
 async function ingestLatestLocalMedia(db, body = {}) {
   await ensureMediaDirs()
@@ -661,6 +718,11 @@ async function handleApi(req, res, db) {
   if (req.method === 'POST' && url.pathname.startsWith('/api/clips/') && url.pathname.endsWith('/render')) {
     const clipId = decodeURIComponent(url.pathname.split('/').at(-2))
     const result = await renderSelectedClip(db, clipId, await parseBody(req))
+    return send(res, result.status, result.body)
+  }
+  if (req.method === 'POST' && url.pathname.startsWith('/api/clips/') && url.pathname.endsWith('/export-bundle')) {
+    const clipId = decodeURIComponent(url.pathname.split('/').at(-2))
+    const result = await exportClipBundle(db, clipId)
     return send(res, result.status, result.body)
   }
   if (req.method === 'PATCH' && url.pathname.startsWith('/api/clips/')) {
