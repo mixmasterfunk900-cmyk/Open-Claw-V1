@@ -7,7 +7,7 @@ The product direction is **quantity-first creator operations**: produce as many 
 ## What works now
 
 - Dashboard with real local state counts.
-- YouTube Scanner using public RSS discovery for `@ModernResponsibility` — no login/API key.
+- YouTube Scanner using public RSS discovery for `@ModernResponsibility`, with a safe `yt-dlp --flat-playlist` public-tab fallback when RSS is unavailable — no login/API key.
 - Clip Factory that imports/pastes transcripts and generates many overlapping clip candidates.
 - Social Dashboard with draft-only TikTok → YouTube → X/Twitter funnel copy.
 - Live Chat Co-Pilot that simulates natural chat pop-ups while clearly labelling them as AI practice chat.
@@ -118,8 +118,9 @@ Masala's target is not just a dashboard: wake up to clips ready to review/upload
 Known blockers on this VPS right now:
 
 - `ffmpeg` is installed.
-- Project-local `yt-dlp` is installed at `.venv-media/bin/yt-dlp`, but YouTube currently returns a VPS bot-check for direct extraction of Masala's most recent stream-like RSS target (`LIVE! The Energy is UNREAL!`, `jOIFbXW2_K4`). Vibe Zone now preflights extraction and records that blocker instead of pretending the job is ready.
-- Whisper exists in the local transcription venv and probes successfully. It is ready once a local media file is available.
+- Project-local `yt-dlp` is installed at `.venv-media/bin/yt-dlp`. The scanner can use public channel tabs if RSS fails, and the media pipeline targets the newest public Streams-tab item first.
+- Direct VPS extraction can still hit YouTube bot-checks. Vibe Zone preflights extraction and records that blocker instead of pretending the job is ready.
+- Whisper exists in the local transcription venv and probes successfully. Transcribe/render jobs now stay `needs-review` until the referenced local media/SRT files actually exist.
 - Safe fallback remains the local companion flow: download/transcribe on Masala's own machine without storing cookies here, then import transcript/SRT/video into Vibe Zone.
 
 ## Competitor notes: Opus Clip gap check

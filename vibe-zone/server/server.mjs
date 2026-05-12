@@ -88,7 +88,8 @@ async function mediaProbe(db) {
     ffmpeg: await commandExists('ffmpeg', ['-version']),
     whisper: await commandExists(localWhisper, ['--help']),
   }
-  await addJob(db, 'media-probe', 'Checked media pipeline tools', tools.ffmpeg.ok ? 'needs-review' : 'failed', `yt-dlp=${tools.ytDlp.ok}; whisper=${tools.whisper.ok}; ffmpeg=${tools.ffmpeg.ok}`)
+  const allReady = tools.ytDlp.ok && tools.whisper.ok && tools.ffmpeg.ok
+  await addJob(db, 'media-probe', 'Checked media pipeline tools', allReady ? 'done' : 'needs-review', `yt-dlp=${tools.ytDlp.ok}; whisper=${tools.whisper.ok}; ffmpeg=${tools.ffmpeg.ok}`)
   await saveDb(db)
   return { tools, expectedPaths: { downloads: 'media/downloads', transcripts: 'media/transcripts', renders: 'media/renders' } }
 }
@@ -119,7 +120,7 @@ async function preflightYoutubeDownload(videoUrl) {
   }
 }
 function latestStreamCandidate(videos) {
-  return videos.find((video) => /\blive\b|stream|vibe coding|day \d+/i.test(video.title)) || videos[0]
+  return videos.find((video) => video.kind === 'stream') || videos.find((video) => /\blive\b|stream|vibe coding|day \d+/i.test(video.title)) || videos[0]
 }
 function buildWhisperCommand(inputPath) {
   return `. /root/.openclaw/workspace/.venv-transcribe/bin/activate && whisper "${inputPath}" --model base --language en --output_format all --output_dir media/transcripts`
@@ -149,6 +150,40 @@ async function resolveChannelId(channelUrl) {
   if (!match) throw new Error('Could not resolve channel id from public channel page')
   return match[1]
 }
+async function fetchTextOrThrow(url) {
+  const response = await fetch(url, { headers: { 'user-agent': 'VibeZoneLocal/0.1' } })
+  if (!response.ok) throw new Error(`HTTP ${response.status} fetching ${url}`)
+  return await response.text()
+}
+async function scanYoutubeTab(channelUrl, tab, startedAt) {
+  const url = `${channelUrl.replace(/\/$/, '')}/${tab}`
+  const { stdout } = await execFileAsync(localYtDlp, ['--flat-playlist', '--dump-single-json', '--playlist-end', '20', url], { timeout: 45000, maxBuffer: 1024 * 1024 * 8 })
+  const data = JSON.parse(stdout)
+  return (data.entries || []).filter((entry) => entry.id && entry.title).map((entry, index) => ({
+    id: entry.id,
+    title: entry.title,
+    url: entry.url || `https://www.youtube.com/watch?v=${entry.id}`,
+    published: entry.timestamp ? new Date(entry.timestamp * 1000).toISOString() : startedAt,
+    author: data.uploader || data.channel || 'Modern Responsibility',
+    kind: tab === 'streams' ? 'stream' : tab === 'shorts' ? 'short' : 'video',
+    duration: entry.duration || null,
+    sortRank: `${tab}:${String(index).padStart(3, '0')}`,
+  }))
+}
+async function scanYoutubeFallback(channelUrl, startedAt) {
+  const probe = await commandExists(localYtDlp)
+  if (!probe.ok) throw new Error(`RSS scan failed and yt-dlp fallback is unavailable: ${probe.detail}`)
+  const tabs = await Promise.all(['streams', 'shorts', 'videos'].map(async (tab) => {
+    try { return await scanYoutubeTab(channelUrl, tab, startedAt) }
+    catch { return [] }
+  }))
+  const seen = new Set()
+  return tabs.flat().filter((video) => {
+    if (seen.has(video.id)) return false
+    seen.add(video.id)
+    return true
+  })
+}
 function tagText(xml, tag) {
   const match = xml.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`))
   return match ? decode(match[1]) : ''
@@ -177,7 +212,7 @@ async function scanYoutube(db) {
   try {
     const channelId = await resolveChannelId(db.settings.channelUrl)
     const rssUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`
-    const xml = await (await fetch(rssUrl, { headers: { 'user-agent': 'VibeZoneLocal/0.1' } })).text()
+    const xml = await fetchTextOrThrow(rssUrl)
     const entries = [...xml.matchAll(/<entry>([\s\S]*?)<\/entry>/g)].map((m) => {
       const entry = m[1]
       const videoId = tagText(entry, 'yt:videoId')
@@ -188,8 +223,10 @@ async function scanYoutube(db) {
         published: tagText(entry, 'published'),
         updated: tagText(entry, 'updated'),
         author: tagText(entry, 'name'),
+        kind: /shorts/i.test(tagText(entry, 'link')) ? 'short' : 'video',
       }
     })
+    if (!entries.length) throw new Error('Public RSS returned no videos')
     db.videos = entries
     const scan = { id: id('scan'), channelUrl: db.settings.channelUrl, channelId, status: 'done', startedAt, finishedAt: new Date().toISOString(), count: entries.length, error: null }
     db.scans.unshift(scan)
@@ -197,12 +234,27 @@ async function scanYoutube(db) {
     await saveDb(db)
     return scan
   } catch (error) {
-    const scan = { id: id('scan'), channelUrl: db.settings.channelUrl, status: 'failed', startedAt, finishedAt: new Date().toISOString(), count: 0, error: error.message }
-    db.scans.unshift(scan)
-    job.status = 'failed'; job.detail = error.message
-    await saveDb(db)
-    return scan
+    try {
+      const entries = await scanYoutubeFallback(db.settings.channelUrl, startedAt)
+      if (!entries.length) throw new Error('yt-dlp fallback returned no public tab entries')
+      db.videos = entries
+      const scan = { id: id('scan'), channelUrl: db.settings.channelUrl, status: 'needs-review', startedAt, finishedAt: new Date().toISOString(), count: entries.length, error: `RSS unavailable (${error.message}); used yt-dlp public tab fallback.` }
+      db.scans.unshift(scan)
+      job.status = 'needs-review'; job.detail = `Found ${entries.length} public tab entries via yt-dlp fallback because RSS failed.`
+      await saveDb(db)
+      return scan
+    } catch (fallbackError) {
+      const scan = { id: id('scan'), channelUrl: db.settings.channelUrl, status: 'failed', startedAt, finishedAt: new Date().toISOString(), count: 0, error: `${error.message}; fallback failed: ${fallbackError.message}` }
+      db.scans.unshift(scan)
+      job.status = 'failed'; job.detail = scan.error
+      await saveDb(db)
+      return scan
+    }
   }
+}
+async function localFileExists(inputPath) {
+  try { return (await stat(path.resolve(root, inputPath))).isFile() }
+  catch { return false }
 }
 function parseTranscript(text) {
   const lines = text.split(/\r?\n/).map((line) => line.trim()).filter(Boolean)
@@ -300,16 +352,20 @@ async function handleApi(req, res, db) {
     const inputPath = body.inputPath || 'media/downloads/VIDEO_ID.mp4'
     const probe = await commandExists(localWhisper, ['--help'])
     const command = buildWhisperCommand(inputPath)
-    const status = probe.ok ? 'queued' : 'needs-review'
-    const detail = probe.ok ? `Ready to transcribe ${inputPath}` : `Whisper command not ready at local venv path. Planned input: ${inputPath}`
+    const inputReady = await localFileExists(inputPath)
+    const status = probe.ok && inputReady ? 'queued' : 'needs-review'
+    const detail = !probe.ok ? `Whisper command not ready at local venv path. Planned input: ${inputPath}` : inputReady ? `Ready to transcribe ${inputPath}` : `Waiting for local media file before transcription: ${inputPath}. Use the safe local companion/import flow if VPS YouTube extraction is blocked.`
     return send(res, 200, await addMediaJob(db, 'transcribe', status, detail, command))
   }
   if (req.method === 'POST' && url.pathname === '/api/media/render') {
     const body = await parseBody(req)
     const probe = await commandExists('ffmpeg', ['-version'])
     const command = buildFfmpegCommand(body)
-    const status = probe.ok ? 'queued' : 'failed'
-    const detail = probe.ok ? `Ready to render ${body.mode || 'short'} clip with subtitles` : 'ffmpeg missing; cannot render clips yet.'
+    const inputPath = body.inputPath || 'media/downloads/VIDEO_ID.mp4'
+    const inputReady = await localFileExists(inputPath)
+    const subtitleReady = !body.subtitlePath || await localFileExists(body.subtitlePath)
+    const status = probe.ok && inputReady && subtitleReady ? 'queued' : probe.ok ? 'needs-review' : 'failed'
+    const detail = !probe.ok ? 'ffmpeg missing; cannot render clips yet.' : !inputReady ? `Waiting for local media file before rendering: ${inputPath}` : !subtitleReady ? `Waiting for subtitle file before subtitle burn-in: ${body.subtitlePath}` : `Ready to render ${body.mode || 'short'} clip with subtitles`
     return send(res, 200, await addMediaJob(db, 'render-clips', status, detail, command))
   }
   if (req.method === 'POST' && url.pathname === '/api/viral/hunt') {
