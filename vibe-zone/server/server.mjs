@@ -1,5 +1,5 @@
 import { createServer } from 'node:http'
-import { readFile, writeFile, mkdir, stat } from 'node:fs/promises'
+import { readFile, writeFile, mkdir, stat, readdir } from 'node:fs/promises'
 import { createReadStream, createWriteStream } from 'node:fs'
 import { execFile } from 'node:child_process'
 import { promisify } from 'node:util'
@@ -63,6 +63,77 @@ async function addJob(db, type, title, status = 'done', detail = '') {
 function send(res, status, body, headers = {}) {
   res.writeHead(status, { 'content-type': 'application/json; charset=utf-8', ...headers })
   res.end(JSON.stringify(body))
+}
+
+
+async function listMediaFiles() {
+  await ensureMediaDirs()
+  const groups = [
+    { kind: 'source', dir: 'media/downloads' },
+    { kind: 'transcript', dir: 'media/transcripts' },
+    { kind: 'render', dir: 'media/renders' },
+  ]
+  const files = []
+  for (const group of groups) {
+    const absoluteDir = path.join(root, group.dir)
+    for (const name of await readdir(absoluteDir)) {
+      const absolutePath = path.join(absoluteDir, name)
+      const info = await stat(absolutePath).catch(() => null)
+      if (!info?.isFile()) continue
+      const relativePath = path.posix.join(group.dir, name)
+      files.push({
+        name,
+        kind: group.kind,
+        path: relativePath,
+        url: `/${relativePath}`,
+        size: info.size,
+        updatedAt: info.mtime.toISOString(),
+      })
+    }
+  }
+  return files.sort((a, b) => b.updatedAt.localeCompare(a.updatedAt))
+}
+async function appState(db) {
+  return { ...db, mediaFiles: await listMediaFiles() }
+}
+async function healthState(db) {
+  const mediaFiles = await listMediaFiles()
+  return {
+    ok: true,
+    latestStream: latestStreamCandidate(db.videos) || null,
+    counts: {
+      videos: db.videos.length,
+      transcripts: db.transcripts.length,
+      clips: db.clips.length,
+      mediaJobs: db.mediaJobs.length,
+      renders: mediaFiles.filter((file) => file.kind === 'render').length,
+    },
+    newestMediaJob: db.mediaJobs[0] || null,
+  }
+}
+function contentTypeFor(file) {
+  const ext = path.extname(file).toLowerCase()
+  return ({
+    '.mp4': 'video/mp4', '.webm': 'video/webm', '.mov': 'video/quicktime', '.mkv': 'video/x-matroska',
+    '.mp3': 'audio/mpeg', '.wav': 'audio/wav', '.m4a': 'audio/mp4',
+    '.txt': 'text/plain; charset=utf-8', '.srt': 'text/plain; charset=utf-8', '.vtt': 'text/vtt; charset=utf-8', '.json': 'application/json; charset=utf-8', '.tsv': 'text/tab-separated-values; charset=utf-8',
+  })[ext] || 'application/octet-stream'
+}
+async function serveMedia(req, res) {
+  const url = new URL(req.url, `http://${req.headers.host}`)
+  const mediaRoot = path.join(root, 'media')
+  const requested = decodeURIComponent(url.pathname.replace(/^\/media\/?/, ''))
+  const file = path.resolve(mediaRoot, requested)
+  if (!file.startsWith(mediaRoot + path.sep)) return send(res, 403, { error: 'Forbidden media path' })
+  const info = await stat(file).catch(() => null)
+  if (!info?.isFile()) return send(res, 404, { error: 'Media file not found' })
+  res.writeHead(200, {
+    'content-type': contentTypeFor(file),
+    'content-length': info.size,
+    'accept-ranges': 'bytes',
+    'content-disposition': `inline; filename="${path.basename(file).replaceAll('"', '')}"`,
+  })
+  createReadStream(file).pipe(res)
 }
 
 function safeUploadName(value = 'upload.bin') {
@@ -420,7 +491,9 @@ function generatePracticeChat(topic, context) {
 }
 async function handleApi(req, res, db) {
   const url = new URL(req.url, `http://${req.headers.host}`)
-  if (req.method === 'GET' && url.pathname === '/api/state') return send(res, 200, db)
+  if (req.method === 'GET' && url.pathname === '/api/health') return send(res, 200, await healthState(db))
+  if (req.method === 'GET' && url.pathname === '/api/state') return send(res, 200, await appState(db))
+  if (req.method === 'GET' && url.pathname === '/api/media/files') return send(res, 200, await listMediaFiles())
   if (req.method === 'POST' && url.pathname === '/api/media/upload') return await handleMediaUpload(req, res, db, url)
   if (req.method === 'POST' && url.pathname === '/api/settings') {
     const body = await parseBody(req); db.settings = { ...db.settings, ...body }; await addJob(db, 'settings', 'Updated settings', 'done', db.settings.channelUrl); await saveDb(db); return send(res, 200, db.settings)
@@ -535,6 +608,7 @@ createServer(async (req, res) => {
   const db = await loadDb()
   try {
     if (req.url.startsWith('/api/')) return await handleApi(req, res, db)
+    if (req.url.startsWith('/media/')) return await serveMedia(req, res)
     return await serveStatic(req, res)
   } catch (error) { return send(res, 500, { error: error.message }) }
 }).listen(port, '127.0.0.1', () => console.log(`Vibe Zone local server: http://127.0.0.1:${port}`))

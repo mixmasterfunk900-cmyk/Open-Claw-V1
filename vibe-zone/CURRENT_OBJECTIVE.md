@@ -1,0 +1,20 @@
+# Current Objective
+
+Turn the successful local ingest/transcribe/render proof into a repeatable review workflow inside Vibe Zone.
+
+## Active acceptance target
+Masala should be able to open Vibe Zone through the tunnel and see:
+1. Uploaded source media.
+2. Transcript/subtitle artifacts.
+3. Generated clip candidates.
+4. Rendered MP4 outputs with preview/download links.
+5. Job history that explains what happened and what is blocked.
+6. Clip status controls for idea → draft → reviewed → exported.
+
+## Current blocker
+The VPS/local copy of `dejKxLu_iM0.mp4` is partial: MP4 metadata reports ~90 minutes, but packet scan decodes only to ~25 minutes. YouTube extraction from the VPS is still blocked by HTTP 429/bot-check safeguards, so higher-scoring ~51-minute moments need a complete local/residential download import before rendering.
+
+## Do next
+1. Import a complete copy of Masala’s newest stream only (`dejKxLu_iM0`) via the local companion/upload path.
+2. Re-run `npm run pipeline:finish-upload -- dejKxLu_iM0` to pick diverse, playable clips.
+3. Add “render selected clip” from Clip Factory after review statuses are stable.
