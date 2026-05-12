@@ -60,6 +60,10 @@ Then open this on your machine:
 
 <http://localhost:5173>
 
+### Uploading downloaded stream files through the tunnel
+
+The Media Pipeline page has a drag/drop upload box. Drop `.mp4`, `.mov`, `.mkv`, `.webm`, audio, `.txt`, `.srt`, or `.vtt` files into it from your PC. Vibe Zone saves media/audio under `media/downloads/` and transcript/subtitle files under `media/transcripts/`, then records the upload in the media job log.
+
 Do not expose the dev server publicly unless you intentionally accept that anyone with the URL/IP could view the dashboard.
 
 ## Verification commands
@@ -139,11 +143,11 @@ Vibe Zone's opportunity is different:
 
 Next feature gaps to close:
 
-1. Install/integrate `yt-dlp` and run actual public replay extraction.
+1. Run actual public replay extraction when YouTube allows it, otherwise keep the latest-stream-only local companion/import path front and center.
 2. Run Whisper end-to-end from a downloaded/local companion file; auto-import generated transcript text now has a first pass via local ingest.
 3. Execute ffmpeg render jobs and attach output file paths to clip rows.
-4. Add auto-reframe/crop controls and subtitle style presets.
-5. Add upload checklist/export bundle per platform, still manual approval only.
+4. Add auto-reframe/crop controls, subtitle style presets, AI B-roll ideas, and speech-cleanup notes to narrow the Opus Clip gap.
+5. Add upload checklist/export bundle per platform, still manual approval only; no one-click posting until Masala explicitly asks.
 
 ## Safe YouTube extraction tooling update
 

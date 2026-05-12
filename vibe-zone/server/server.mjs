@@ -1,8 +1,9 @@
 import { createServer } from 'node:http'
 import { readFile, writeFile, mkdir, stat } from 'node:fs/promises'
-import { createReadStream } from 'node:fs'
+import { createReadStream, createWriteStream } from 'node:fs'
 import { execFile } from 'node:child_process'
 import { promisify } from 'node:util'
+import { pipeline } from 'node:stream/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -63,6 +64,32 @@ function send(res, status, body, headers = {}) {
   res.writeHead(status, { 'content-type': 'application/json; charset=utf-8', ...headers })
   res.end(JSON.stringify(body))
 }
+
+function safeUploadName(value = 'upload.bin') {
+  return path.basename(value).replace(/[^a-zA-Z0-9._ -]/g, '_').slice(0, 180) || 'upload.bin'
+}
+const transcriptUploadExts = new Set(['.txt', '.srt', '.vtt'])
+const mediaUploadExts = new Set(['.mp4', '.mov', '.mkv', '.webm', '.m4v', '.mp3', '.wav', '.m4a'])
+function mediaUploadTarget(filename) {
+  const ext = path.extname(filename).toLowerCase()
+  if (transcriptUploadExts.has(ext)) return 'media/transcripts'
+  if (mediaUploadExts.has(ext)) return 'media/downloads'
+  return ''
+}
+async function handleMediaUpload(req, res, db, url) {
+  await ensureMediaDirs()
+  const filename = safeUploadName(url.searchParams.get('filename') || req.headers['x-filename'] || 'upload.bin')
+  const targetDir = mediaUploadTarget(filename)
+  if (!targetDir) return send(res, 415, { error: 'Unsupported upload type. Use video/audio, .txt, .srt, or .vtt files only.' })
+  const targetPath = path.join(root, targetDir, filename)
+  const relativePath = path.posix.join(targetDir, filename)
+  await pipeline(req, createWriteStream(targetPath, { flags: 'w' }))
+  const info = await stat(targetPath)
+  const detail = `Uploaded ${filename} to ${relativePath} (${Math.round(info.size / 1024 / 1024 * 10) / 10} MB).`
+  const job = await addMediaJob(db, 'upload', 'done', detail, '')
+  return send(res, 200, { ok: true, path: relativePath, size: info.size, job })
+}
+
 function normalizeClip(clip) {
   return { platform: 'tiktok', status: 'idea', exportedAt: null, ...clip }
 }
@@ -388,6 +415,7 @@ function generatePracticeChat(topic, context) {
 async function handleApi(req, res, db) {
   const url = new URL(req.url, `http://${req.headers.host}`)
   if (req.method === 'GET' && url.pathname === '/api/state') return send(res, 200, db)
+  if (req.method === 'POST' && url.pathname === '/api/media/upload') return await handleMediaUpload(req, res, db, url)
   if (req.method === 'POST' && url.pathname === '/api/settings') {
     const body = await parseBody(req); db.settings = { ...db.settings, ...body }; await addJob(db, 'settings', 'Updated settings', 'done', db.settings.channelUrl); await saveDb(db); return send(res, 200, db.settings)
   }

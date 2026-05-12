@@ -454,3 +454,29 @@ button.primary:disabled {
   overflow-wrap: anywhere;
   margin: 8px 0;
 }
+
+.upload-drop {
+  display: grid;
+  gap: 8px;
+  margin: 16px 0;
+  padding: 22px;
+  border: 1.5px dashed rgba(14, 165, 233, 0.55);
+  border-radius: 22px;
+  background: rgba(14, 165, 233, 0.09);
+  cursor: pointer;
+}
+
+.upload-drop:hover {
+  border-color: rgba(34, 211, 238, 0.9);
+  background: rgba(14, 165, 233, 0.14);
+}
+
+.upload-drop input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.upload-drop span {
+  color: #cbd5e1;
+}
