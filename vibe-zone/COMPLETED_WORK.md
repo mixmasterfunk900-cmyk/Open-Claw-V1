@@ -25,3 +25,8 @@
 - Fixed duplicate-overlap selection logic in the render pipeline.
 - Generated `dejKxLu_iM0.punchy.ass` captions positioned higher in the safe zone.
 - Re-rendered three punchy subtitle-safe clips and verified them with ffprobe + visual frame inspection.
+
+- Confirmed existing 30-minute recurring Vibe Zone HQ check is active.
+- Spawned competitor gap research subtask for Opus/Captions/Submagic/Klap/Vidyo-style comparison.
+- Added source media validation badges in Media Pipeline; `dejKxLu_iM0.mp4` now shows partial/corrupt with metadata duration 1:30:09 and decodable video through 25:27.
+- Rebuilt and linted successfully after the validation UI/API change, then restarted the local Vibe Zone dev/API process.

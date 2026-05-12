@@ -425,6 +425,28 @@ blockquote {
   align-items: center;
 }
 
+.media-artifact-row {
+  grid-template-columns: 120px 120px minmax(220px, 1fr) auto;
+}
+
+.media-artifact-row small {
+  grid-column: 3 / -1;
+}
+
+.validation-badge {
+  width: fit-content;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 900;
+  white-space: nowrap;
+  background: #e9eff7;
+}
+
+.validation-badge.complete { color: #14532d; background: #dcfce7; }
+.validation-badge.partial { color: #7f1d1d; background: #fee2e2; }
+.validation-badge.unknown { color: #713f12; background: #fef3c7; }
+
 .prompt-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }

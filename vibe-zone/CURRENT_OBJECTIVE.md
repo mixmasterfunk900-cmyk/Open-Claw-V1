@@ -12,9 +12,13 @@ Masala should be able to open Vibe Zone through the tunnel and see:
 6. Clip status controls for idea → draft → reviewed → exported.
 
 ## Current blocker
-The VPS/local copy of `dejKxLu_iM0.mp4` is partial: MP4 metadata reports ~90 minutes, but packet scan decodes only to ~25 minutes. YouTube extraction from the VPS is still blocked by HTTP 429/bot-check safeguards, so higher-scoring ~51-minute moments need a complete local/residential download import before rendering.
+The VPS/local copy of `dejKxLu_iM0.mp4` is partial: MP4 metadata reports 1:30:09, but packet scan decodes only to 25:27. The Media Pipeline now surfaces this as a source validation badge. YouTube extraction from the VPS is still blocked by HTTP 429/bot-check safeguards, so higher-scoring ~51-minute moments need a complete local/residential download import before rendering.
 
 ## Do next
 1. Import a complete copy of Masala’s newest stream only (`dejKxLu_iM0`) via the local companion/upload path.
 2. Re-run `npm run pipeline:finish-upload -- dejKxLu_iM0` to pick diverse, playable clips.
 3. Add “render selected clip” from Clip Factory after review statuses are stable.
+
+
+## Orchestrator instruction from Masala
+Keep looping after task completion: audit, compare against successful platforms, create new tasks, and continue improving. Maintain 30-minute recurring checks so work does not stall.

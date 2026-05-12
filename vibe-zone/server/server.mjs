@@ -88,10 +88,47 @@ async function listMediaFiles() {
         url: `/${relativePath}`,
         size: info.size,
         updatedAt: info.mtime.toISOString(),
+        ...(group.kind === 'source' ? { validation: await validateMediaFile(relativePath) } : {}),
       })
     }
   }
   return files.sort((a, b) => b.updatedAt.localeCompare(a.updatedAt))
+}
+
+function isVideoLike(relativePath) {
+  return ['.mp4', '.mov', '.mkv', '.webm', '.m4v'].includes(path.extname(relativePath).toLowerCase())
+}
+async function ffprobeDuration(relativePath) {
+  const absolutePath = path.resolve(root, relativePath)
+  const { stdout } = await execFileAsync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'default=nw=1:nk=1', absolutePath], { timeout: 7000 })
+  const duration = Number(stdout.trim())
+  return Number.isFinite(duration) ? duration : null
+}
+async function ffprobeLastVideoPacket(relativePath) {
+  const absolutePath = path.resolve(root, relativePath)
+  try {
+    const { stdout } = await execFileAsync('ffprobe', ['-v', 'error', '-select_streams', 'v:0', '-show_entries', 'packet=pts_time', '-of', 'csv=p=0', absolutePath], { timeout: 15000, maxBuffer: 1024 * 1024 * 128 })
+    return Number(stdout.trim().split(/\r?\n/).filter(Boolean).at(-1)) || null
+  } catch (error) {
+    const stdout = String(error.stdout || '')
+    return Number(stdout.trim().split(/\r?\n/).filter(Boolean).at(-1)) || null
+  }
+}
+async function validateMediaFile(relativePath) {
+  if (!isVideoLike(relativePath)) return { status: 'unknown', detail: 'Audio/source file; video duration validation not applied.' }
+  try {
+    const durationSeconds = await ffprobeDuration(relativePath)
+    const lastPacketSeconds = await ffprobeLastVideoPacket(relativePath)
+    if (!durationSeconds) return { status: 'unknown', detail: 'ffprobe could not read media duration.' }
+    if (!lastPacketSeconds) return { status: 'unknown', durationSeconds, detail: `Metadata duration ${stamp(durationSeconds)}, but packet scan did not return video timestamps.` }
+    const gapSeconds = durationSeconds - lastPacketSeconds
+    if (gapSeconds > 120 && lastPacketSeconds < durationSeconds * 0.9) {
+      return { status: 'partial', durationSeconds, lastPacketSeconds, detail: `Metadata says ${stamp(durationSeconds)}, but decodable video reaches ${stamp(lastPacketSeconds)}. Import a complete newest-stream source before rendering later moments.` }
+    }
+    return { status: 'complete', durationSeconds, lastPacketSeconds, detail: `Validated playable through ${stamp(lastPacketSeconds)} of ${stamp(durationSeconds)}.` }
+  } catch (error) {
+    return { status: 'unknown', detail: `Validation unavailable: ${error.message}` }
+  }
 }
 async function appState(db) {
   return { ...db, mediaFiles: await listMediaFiles() }
