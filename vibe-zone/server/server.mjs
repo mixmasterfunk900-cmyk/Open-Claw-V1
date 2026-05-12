@@ -136,16 +136,32 @@ async function appState(db) {
 }
 async function healthState(db) {
   const mediaFiles = await listMediaFiles()
+  const latestStream = latestStreamCandidate(db.videos) || null
+  const latestSource = latestStream ? mediaFiles.find((file) => file.kind === 'source' && file.name.startsWith(`${latestStream.id}.`)) : null
+  const activeMediaJobs = db.mediaJobs.filter((job) => ['running', 'queued'].includes(job.status))
+  const failedMediaJobs = db.mediaJobs.filter((job) => job.status === 'failed').slice(0, 5)
+  const blockers = []
+  if (!latestStream) blockers.push('No latest stream has been discovered yet; run a public YouTube scan first.')
+  if (latestStream && !latestSource) blockers.push(`Newest stream source ${latestStream.id} is missing; import/download this stream before rendering clips.`)
+  if (latestSource?.validation?.status === 'partial') blockers.push(latestSource.validation.detail)
+  if (activeMediaJobs.length) blockers.push(`${activeMediaJobs.length} media job(s) still active.`)
   return {
-    ok: true,
-    latestStream: latestStreamCandidate(db.videos) || null,
+    ok: blockers.length === 0,
+    latestStream,
+    latestSource: latestSource || null,
+    blockers,
+    nextAction: blockers[0] || 'No immediate blocker detected; continue clip review, render presets, Viral Hunter, and dispatch workflow improvements.',
     counts: {
       videos: db.videos.length,
       transcripts: db.transcripts.length,
       clips: db.clips.length,
       mediaJobs: db.mediaJobs.length,
+      activeMediaJobs: activeMediaJobs.length,
+      failedMediaJobs: failedMediaJobs.length,
       renders: mediaFiles.filter((file) => file.kind === 'render').length,
     },
+    activeMediaJobs,
+    failedMediaJobs,
     newestMediaJob: db.mediaJobs[0] || null,
   }
 }
