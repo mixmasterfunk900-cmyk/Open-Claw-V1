@@ -37,3 +37,5 @@
 
 - Added API setup reminder to project queue; local Ollama embedding path remains first choice for now.
 - Added manual upload bundle workflow: Clip Factory can generate `upload-card.md` + `metadata.json` under `media/exports/*`, mark clips exported, and link the upload card without posting externally.
+
+- Added first-pass clip diversity filtering: scoring now removes exact-title/nearby-hook repeats, the finish-upload pipeline avoids semantically similar auto-render picks, and the newest-stream rerun produced three more varied early-stream punchy renders while continuing to block later moments until a complete source is imported.

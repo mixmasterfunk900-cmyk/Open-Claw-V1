@@ -611,7 +611,7 @@ function scoreClips(transcriptId, text) {
   // Quantity-first: overlapping windows create many candidates. Platform results decide later.
   for (let i = 0; i < rows.length; i += 3) chunks.push(rows.slice(i, i + 7))
   const keywords = ['why', 'how', 'build', 'secret', 'mistake', 'stop', 'actually', 'ship', 'money', 'creator', 'ai', 'local', 'stream', 'problem']
-  return chunks.map((chunk, i) => {
+  const candidates = chunks.map((chunk, i) => {
     const body = chunk.map((r) => r.text).join(' ')
     const lower = body.toLowerCase()
     const keywordHits = keywords.filter((k) => lower.includes(k)).length
@@ -629,7 +629,33 @@ function scoreClips(transcriptId, text) {
       reason: `Heuristic score: ${keywordHits} strong keyword hits, ${questionBoost ? 'question energy, ' : ''}${energyBoost ? 'high-emphasis language, ' : ''}dense clip-sized segment.`,
       createdAt: new Date().toISOString(),
     }
-  }).filter((c) => c.score >= 55).sort((a, b) => b.score - a.score).slice(0, 12)
+  }).filter((c) => c.score >= 55).sort((a, b) => b.score - a.score)
+  return dedupeClips(candidates).slice(0, 12)
+}
+function textTokens(value = '') {
+  const stop = new Set(['the', 'and', 'that', 'this', 'with', 'you', 'your', 'for', 'are', 'but', 'not', 'just', 'was', 'have', 'from', 'they', 'then', 'when', 'what', 'how', 'why', 'into', 'like'])
+  return new Set(value.toLowerCase().replace(/[^a-z0-9\s]/g, ' ').split(/\s+/).filter((word) => word.length > 3 && !stop.has(word)))
+}
+function tokenSimilarity(a = '', b = '') {
+  const left = textTokens(a), right = textTokens(b)
+  if (!left.size || !right.size) return 0
+  let overlap = 0
+  for (const token of left) if (right.has(token)) overlap += 1
+  return overlap / Math.min(left.size, right.size)
+}
+function clipStartSeconds(clip) { return seconds(clip.start, 0) }
+function dedupeClips(clips, similarityLimit = 0.72, nearbySeconds = 90) {
+  const selected = []
+  for (const clip of clips) {
+    const tooSimilar = selected.some((chosen) => {
+      const nearby = Math.abs(clipStartSeconds(clip) - clipStartSeconds(chosen)) < nearbySeconds
+      const similarTitle = clip.title === chosen.title
+      const similarHook = tokenSimilarity(`${clip.title} ${clip.hook}`, `${chosen.title} ${chosen.hook}`) >= similarityLimit
+      return similarTitle || (nearby && similarHook)
+    })
+    if (!tooSimilar) selected.push(clip)
+  }
+  return selected
 }
 function makeHook(body) {
   const sentence = body.split(/[.!?]/).map((s) => s.trim()).find((s) => s.length > 28) || body.slice(0, 90)

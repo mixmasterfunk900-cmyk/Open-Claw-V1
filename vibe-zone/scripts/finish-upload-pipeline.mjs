@@ -38,11 +38,30 @@ function overlapsTooMuch(a, b, minimumGap = 75) {
   const gap = Math.max(0, Math.max(aStart, bStart) - Math.min(aEnd, bEnd))
   return overlap > 0 || gap < minimumGap
 }
+function textTokens(value = '') {
+  const stop = new Set(['the', 'and', 'that', 'this', 'with', 'you', 'your', 'for', 'are', 'but', 'not', 'just', 'was', 'have', 'from', 'they', 'then', 'when', 'what', 'how', 'why', 'into', 'like'])
+  return new Set(value.toLowerCase().replace(/[^a-z0-9\s]/g, ' ').split(/\s+/).filter((word) => word.length > 3 && !stop.has(word)))
+}
+function tokenSimilarity(a = '', b = '') {
+  const left = textTokens(a), right = textTokens(b)
+  if (!left.size || !right.size) return 0
+  let overlap = 0
+  for (const token of left) if (right.has(token)) overlap += 1
+  return overlap / Math.min(left.size, right.size)
+}
+function tooSimilar(a, b) {
+  if (a.title === b.title) return true
+  return tokenSimilarity(`${a.title} ${a.hook}`, `${b.title} ${b.hook}`) >= 0.72
+}
 function pickDiverseClips(clips, count = 3) {
   const selected = []
   for (const clip of clips) {
-    if (selected.every((chosen) => !overlapsTooMuch(clip, chosen))) selected.push(clip)
+    if (selected.every((chosen) => !overlapsTooMuch(clip, chosen) && !tooSimilar(clip, chosen))) selected.push(clip)
     if (selected.length >= count) return selected
+  }
+  for (const clip of clips) {
+    if (!selected.includes(clip) && selected.every((chosen) => !tooSimilar(clip, chosen))) selected.push(clip)
+    if (selected.length >= count) break
   }
   for (const clip of clips) {
     if (!selected.includes(clip)) selected.push(clip)

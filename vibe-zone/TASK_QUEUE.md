@@ -9,7 +9,7 @@
 6. [completed] Add “render selected clip” from Clip Factory and link output back to the candidate row.
 
 ## Medium-priority improvements
-1. [pending] Improve semantic clip dedupe to avoid repeated hooks/themes.
+1. [in-progress] Improve semantic clip dedupe to avoid repeated hooks/themes. First pass now removes exact-title/nearby-hook repeats during scoring and auto-render selection; next pass should use embeddings/topic clusters.
 2. [in-progress] Add subtitle/render presets: punchy captions, standard captions, no captions, 50/50 facecam/B-roll layout, and long-form captions now selectable; still need richer visual styles (bold centre, TikTok-safe lower third, high-contrast accessibility).
 3. [pending] Add upload progress persistence/server-side status for large browser uploads.
 4. [done] Add a “render selected clip” button from Clip Factory.
@@ -20,7 +20,8 @@
 ## Research / competitive analysis
 1. [in-progress] Research successful clipping/social platforms and compare Vibe Zone gaps.
 2. [pending] Convert competitor findings into implementation tasks.
-3. [pending] Review Masala stream output quality against those patterns.
+3. [in-progress] Review Masala stream output quality against those patterns. Latest pass produced more diverse early-stream auto-renders; full-quality review still blocked by partial source.
+4. [debug] Investigate failed `content-hq-platform-distribution-research` Gemini Flash subagent: recover/error-capture cause, retry with smaller/no-web task, and make failed child tasks auto-log into Known Issues/Task Queue.
 
 ## UX / product design workstream
 1. [high-priority] Redesign information architecture around Ingest → Processing → Clip Review → Render Lab → Dispatch.
