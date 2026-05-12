@@ -118,8 +118,9 @@ Masala's target is not just a dashboard: wake up to clips ready to review/upload
 Known blockers on this VPS right now:
 
 - `ffmpeg` is installed.
-- `yt-dlp` is not currently installed/on PATH, so real YouTube download jobs are marked `needs-review` until installed.
-- Whisper exists in the local transcription venv per workspace notes, but the app probes that exact path and logs if unavailable.
+- Project-local `yt-dlp` is installed at `.venv-media/bin/yt-dlp`, but YouTube currently returns a VPS bot-check for direct extraction of Masala's most recent stream-like RSS target (`LIVE! The Energy is UNREAL!`, `jOIFbXW2_K4`). Vibe Zone now preflights extraction and records that blocker instead of pretending the job is ready.
+- Whisper exists in the local transcription venv and probes successfully. It is ready once a local media file is available.
+- Safe fallback remains the local companion flow: download/transcribe on Masala's own machine without storing cookies here, then import transcript/SRT/video into Vibe Zone.
 
 ## Competitor notes: Opus Clip gap check
 
