@@ -131,6 +131,13 @@ async function preflightYoutubeDownload(videoUrl) {
 function latestStreamCandidate(videos) {
   return videos.find((video) => video.kind === 'stream') || videos.find((video) => /\blive\b|stream|vibe coding|day \d+/i.test(video.title)) || videos[0]
 }
+function videoIdFromUrl(value = '') {
+  return value.match(/[?&]v=([^&]+)/)?.[1] || value.match(/youtu\.be\/([^?&/]+)/)?.[1] || ''
+}
+function latestOnlyBlocker(requestedId, latest) {
+  if (!latest?.id || !requestedId || requestedId === latest.id) return ''
+  return `Current scope is newest Masala stream only (${latest.id}: ${latest.title}). Ignored older/different video id ${requestedId}.`
+}
 function buildWhisperCommand(inputPath) {
   return `. /root/.openclaw/workspace/.venv-transcribe/bin/activate && whisper "${inputPath}" --model base --language en --output_format all --output_dir media/transcripts`
 }
@@ -142,9 +149,12 @@ function buildFfmpegCommand({ inputPath, start = '0:00', end = '0:45', mode = 's
 async function ingestLatestLocalMedia(db, body = {}) {
   await ensureMediaDirs()
   const target = latestStreamCandidate(db.videos)
-  const videoId = body.videoId || target?.id
+  const requestedId = body.videoId || videoIdFromUrl(body.sourceUrl || '') || target?.id
+  const scopeBlocker = latestOnlyBlocker(requestedId, target)
+  if (scopeBlocker) return await addMediaJob(db, 'local-ingest', 'needs-review', scopeBlocker, '')
+  const videoId = target?.id || requestedId
   if (!videoId) return await addMediaJob(db, 'local-ingest', 'needs-review', 'Scan YouTube first so Vibe Zone knows the newest stream id to import.', '')
-  const sourceUrl = body.sourceUrl || target?.url || `https://www.youtube.com/watch?v=${videoId}`
+  const sourceUrl = target?.url || body.sourceUrl || `https://www.youtube.com/watch?v=${videoId}`
   const transcriptPath = body.transcriptPath || `media/transcripts/${videoId}.txt`
   const subtitlePath = body.subtitlePath || `media/transcripts/${videoId}.srt`
   const mediaPath = body.inputPath || `media/downloads/${videoId}.mp4`
@@ -371,10 +381,16 @@ async function handleApi(req, res, db) {
   if (req.method === 'POST' && url.pathname === '/api/media/extract') {
     const body = await parseBody(req)
     const target = latestStreamCandidate(db.videos)
-    const videoUrl = body.videoUrl || target?.url || db.settings.channelUrl
-    const videoId = body.videoId || target?.id || videoUrl.match(/[?&]v=([^&]+)/)?.[1] || ''
+    const requestedUrl = body.videoUrl || target?.url || db.settings.channelUrl
+    const requestedId = body.videoId || videoIdFromUrl(requestedUrl)
+    const scopeBlocker = latestOnlyBlocker(requestedId, target)
+    const videoUrl = target?.url || requestedUrl
+    const videoId = target?.id || requestedId || ''
     const probe = await commandExists(localYtDlp)
     const command = buildYtDlpCommand(videoUrl)
+    if (scopeBlocker) {
+      return send(res, 200, await addMediaJob(db, 'youtube-extract', 'needs-review', scopeBlocker, `${buildYtDlpPreflightCommand(videoUrl)}\n\n${buildLocalCompanionCommand(videoUrl, videoId)}`))
+    }
     if (!probe.ok) {
       return send(res, 200, await addMediaJob(db, 'youtube-extract', 'needs-review', `yt-dlp missing; install it before download. Planned source: ${videoUrl}`, command))
     }
