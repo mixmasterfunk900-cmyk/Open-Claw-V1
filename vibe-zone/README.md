@@ -110,6 +110,7 @@ Masala's target is not just a dashboard: wake up to clips ready to review/upload
 
 - **YouTube extraction architecture:** Media Pipeline page stores planned `yt-dlp` jobs for public video/live replay URLs.
 - **Transcript workflow:** planned local Whisper command uses `/root/.openclaw/workspace/.venv-transcribe/bin/whisper` and outputs `.txt`/`.srt` under `media/transcripts`.
+- **Local companion ingest:** when VPS YouTube extraction is blocked, Vibe Zone can import the newest stream's local `media/transcripts/<videoId>.txt`, generate clip candidates, and check whether the matching `.mp4`/`.srt` are ready for rendering.
 - **Clip rendering scaffold:** planned `ffmpeg` commands for both 9:16 Shorts and 16:9 longer-form clips, with subtitle burn-in placeholders.
 - **Morning output:** Clip Factory shows upload-ready draft placeholders with titles, captions, hashtags, platform/status, subtitles planned, and short-form framing.
 - **Viral Hunter MVP:** generates hook leads from public YouTube RSS titles and existing clip candidates.
@@ -138,7 +139,7 @@ Vibe Zone's opportunity is different:
 Next feature gaps to close:
 
 1. Install/integrate `yt-dlp` and run actual public replay extraction.
-2. Run Whisper end-to-end and auto-import generated transcript text/SRT.
+2. Run Whisper end-to-end from a downloaded/local companion file; auto-import generated transcript text now has a first pass via local ingest.
 3. Execute ffmpeg render jobs and attach output file paths to clip rows.
 4. Add auto-reframe/crop controls and subtitle style presets.
 5. Add upload checklist/export bundle per platform, still manual approval only.

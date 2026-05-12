@@ -130,6 +130,31 @@ function buildFfmpegCommand({ inputPath, start = '0:00', end = '0:45', mode = 's
   const subtitle = subtitlePath ? `,subtitles='${subtitlePath.replaceAll("'", "'\\''")}'` : ''
   return `ffmpeg -y -ss ${start} -to ${end} -i "${inputPath}" -vf "${scale}${subtitle}" -c:v libx264 -preset veryfast -c:a aac "media/renders/${mode}-${Date.now()}.mp4"`
 }
+async function ingestLatestLocalMedia(db, body = {}) {
+  const target = latestStreamCandidate(db.videos)
+  const videoId = body.videoId || target?.id
+  if (!videoId) return await addMediaJob(db, 'local-ingest', 'needs-review', 'Scan YouTube first so Vibe Zone knows the newest stream id to import.', '')
+  const sourceUrl = body.sourceUrl || target?.url || `https://www.youtube.com/watch?v=${videoId}`
+  const transcriptPath = body.transcriptPath || `media/transcripts/${videoId}.txt`
+  const subtitlePath = body.subtitlePath || `media/transcripts/${videoId}.srt`
+  const mediaPath = body.inputPath || `media/downloads/${videoId}.mp4`
+  const transcriptReady = await localFileExists(transcriptPath)
+  const subtitleReady = await localFileExists(subtitlePath)
+  const mediaReady = await localFileExists(mediaPath)
+  if (!transcriptReady) {
+    return await addMediaJob(db, 'local-ingest', 'needs-review', `Waiting for newest stream transcript: ${transcriptPath}. Use local companion download/transcribe for ${sourceUrl}, then rerun local ingest.`, '')
+  }
+  const text = await readFile(path.resolve(root, transcriptPath), 'utf8')
+  const existing = db.transcripts.find((item) => item.sourceUrl === sourceUrl || item.title.includes(videoId))
+  const transcript = existing || { id: id('tx'), title: `${target?.title || 'Newest stream'} (${videoId})`, sourceUrl, text, createdAt: new Date().toISOString() }
+  transcript.text = text
+  transcript.sourceUrl = sourceUrl
+  if (!existing) db.transcripts.unshift(transcript)
+  const clips = scoreClips(transcript.id, text)
+  db.clips = [...clips, ...db.clips.filter((clip) => clip.transcriptId !== transcript.id)].slice(0, 80)
+  const detail = `Imported ${transcriptPath} (${text.length} chars), generated ${clips.length} clip candidates. Media ${mediaReady ? 'ready' : 'missing'}: ${mediaPath}; subtitles ${subtitleReady ? 'ready' : 'missing'}: ${subtitlePath}.`
+  return await addMediaJob(db, 'local-ingest', subtitleReady && mediaReady ? 'done' : 'needs-review', detail, subtitleReady && mediaReady ? buildFfmpegCommand({ inputPath: mediaPath, start: clips[0]?.start || '0:00', end: clips[0]?.end || '0:45', mode: 'short', subtitlePath }) : '')
+}
 function huntViralIdeas(videos, clips) {
   const keywordScore = (text) => ['ai', 'money', 'company', 'privacy', 'live', 'app', 'coding', 'why', 'billion', 'possible'].filter((k) => text.toLowerCase().includes(k)).length
   return [...videos.map((video) => ({ source: 'youtube-rss', title: video.title, url: video.url, score: 55 + keywordScore(video.title) * 8, angle: `Turn “${video.title}” into a sharper hook, then test as 3 Shorts variants.` })), ...clips.slice(0, 12).map((clip) => ({ source: 'clip-factory', title: clip.title, url: '', score: Math.min(99, clip.score + 4), angle: `Clip-first viral test: ${clip.hook}` }))]
@@ -368,6 +393,7 @@ async function handleApi(req, res, db) {
     const detail = !probe.ok ? 'ffmpeg missing; cannot render clips yet.' : !inputReady ? `Waiting for local media file before rendering: ${inputPath}` : !subtitleReady ? `Waiting for subtitle file before subtitle burn-in: ${body.subtitlePath}` : `Ready to render ${body.mode || 'short'} clip with subtitles`
     return send(res, 200, await addMediaJob(db, 'render-clips', status, detail, command))
   }
+  if (req.method === 'POST' && url.pathname === '/api/media/ingest-local') return send(res, 200, await ingestLatestLocalMedia(db, await parseBody(req)))
   if (req.method === 'POST' && url.pathname === '/api/viral/hunt') {
     const finds = huntViralIdeas(db.videos, db.clips).map((find) => ({ id: id('viral'), createdAt: new Date().toISOString(), ...find }))
     db.viralFinds = [...finds, ...db.viralFinds].slice(0, 40)
