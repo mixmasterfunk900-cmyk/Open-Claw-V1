@@ -30,3 +30,7 @@
 - Spawned competitor gap research subtask for Opus/Captions/Submagic/Klap/Vidyo-style comparison.
 - Added source media validation badges in Media Pipeline; `dejKxLu_iM0.mp4` now shows partial/corrupt with metadata duration 1:30:09 and decodable video through 25:27.
 - Rebuilt and linted successfully after the validation UI/API change, then restarted the local Vibe Zone dev/API process.
+
+- Captured Masala feedback that the current dashboard makeover is only ~2% of expected UX/design work. Created `UX_REDESIGN_BRIEF.md` and added UX redesign as a high-priority workflow.
+- Added selected-clip rendering from Clip Factory: `/api/clips/:id/render` now validates newest-stream scope, blocks renders beyond partial source duration, runs ffmpeg for playable clips, and links render metadata back to the clip.
+- Smoke-tested selected render: late 52:48 candidate correctly blocked by partial source; early 11:15-12:18 candidate rendered successfully to `media/renders/dejKxLu_iM0-abb121-stop-overbuilding-and-ship-the-workflow-punchy-captions.mp4` (63s, 17 MB).

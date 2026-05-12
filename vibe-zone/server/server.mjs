@@ -291,7 +291,7 @@ function latestOnlyBlocker(requestedId, latest) {
 function buildWhisperCommand(inputPath) {
   return `. /root/.openclaw/workspace/.venv-transcribe/bin/activate && whisper "${inputPath}" --model base --language en --output_format all --output_dir media/transcripts`
 }
-function buildFfmpegCommand({ inputPath, start = '0:00', end = '0:45', mode = 'short', subtitlePath = '' }) {
+function ffmpegPlan({ inputPath, start = '0:00', end = '0:45', mode = 'short', subtitlePath = '', outputPath = '' }) {
   const scale = mode === 'long' ? 'scale=1920:-2' : 'scale=-2:1920,crop=1080:1920'
   const subtitle = subtitlePath ? `,subtitles='${subtitlePath.replaceAll("'", "'\\''")}'` : ''
   // Coarse input seek plus accurate output trim avoids decoding a whole livestream,
@@ -300,7 +300,65 @@ function buildFfmpegCommand({ inputPath, start = '0:00', end = '0:45', mode = 's
   const duration = Math.max(1, seconds(end, startSeconds + 45) - startSeconds)
   const preSeek = Math.max(0, startSeconds - 5)
   const trimSeek = startSeconds - preSeek
-  return `ffmpeg -y -ss ${preSeek} -i "${inputPath}" -ss ${trimSeek} -t ${duration} -vf "${scale}${subtitle}" -c:v libx264 -preset veryfast -c:a aac "media/renders/${mode}-${Date.now()}.mp4"`
+  const output = outputPath || `media/renders/${mode}-${Date.now()}.mp4`
+  const args = ['-y', '-ss', String(preSeek), '-i', inputPath, '-ss', String(trimSeek), '-t', String(duration), '-vf', `${scale}${subtitle}`, '-c:v', 'libx264', '-preset', 'veryfast', '-c:a', 'aac', output]
+  return { args, output, command: `ffmpeg ${args.map(shellArg).join(' ')}`, startSeconds, endSeconds: startSeconds + duration }
+}
+function shellArg(value) {
+  const text = String(value)
+  return /^[A-Za-z0-9_./:=+-]+$/.test(text) ? text : JSON.stringify(text)
+}
+function buildFfmpegCommand(options) { return ffmpegPlan(options).command }
+function slug(value = 'clip') { return value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60) || 'clip' }
+async function renderSelectedClip(db, clipId, body = {}) {
+  await ensureMediaDirs()
+  const clip = db.clips.find((item) => item.id === clipId)
+  if (!clip) return { status: 404, body: { error: 'Clip not found' } }
+  const latest = latestStreamCandidate(db.videos)
+  const transcript = db.transcripts.find((item) => item.id === clip.transcriptId)
+  if (latest?.id && transcript?.sourceUrl && !transcript.sourceUrl.includes(latest.id)) {
+    const detail = `Current scope is newest Masala stream only (${latest.id}). This clip belongs to ${transcript.sourceUrl || transcript.title}.`
+    clip.renderStatus = 'needs-review'; clip.renderError = detail
+    const job = await addMediaJob(db, 'render-selected', 'needs-review', detail, '')
+    return { status: 200, body: { clip, job } }
+  }
+  const videoId = latest?.id || videoIdFromUrl(transcript?.sourceUrl || '') || 'VIDEO_ID'
+  const inputPath = body.inputPath || `media/downloads/${videoId}.mp4`
+  const subtitlePath = body.subtitlePath || `media/transcripts/${videoId}.punchy.ass`
+  const mode = body.mode || 'short'
+  const preset = body.presetId || (subtitlePath.includes('punchy') ? 'punchy-captions' : 'standard-captions')
+  const outputPath = body.outputPath || `media/renders/${videoId}-${clip.id.slice(-6)}-${slug(clip.title)}-${preset}.mp4`
+  const probe = await commandExists('ffmpeg', ['-version'])
+  const inputReady = await localFileExists(inputPath)
+  const subtitleReady = !subtitlePath || await localFileExists(subtitlePath)
+  if (!probe.ok || !inputReady || !subtitleReady) {
+    const detail = !probe.ok ? 'ffmpeg missing; cannot render selected clip.' : !inputReady ? `Waiting for local source media: ${inputPath}` : `Waiting for subtitle preset file: ${subtitlePath}`
+    clip.renderStatus = !probe.ok ? 'failed' : 'needs-review'; clip.renderError = detail; clip.renderPreset = preset
+    const job = await addMediaJob(db, 'render-selected', clip.renderStatus, detail, buildFfmpegCommand({ inputPath, start: clip.start, end: clip.end, mode, subtitlePath, outputPath }))
+    return { status: 200, body: { clip, job } }
+  }
+  const validation = await validateMediaFile(inputPath)
+  const endSeconds = seconds(clip.end, 0)
+  if (validation.status === 'partial' && validation.lastPacketSeconds && endSeconds > validation.lastPacketSeconds - 2) {
+    const detail = `Blocked selected render: clip ends at ${stamp(endSeconds)}, but source is only decodable to ${stamp(validation.lastPacketSeconds)}. Import a complete newest-stream source first.`
+    clip.renderStatus = 'needs-review'; clip.renderError = detail; clip.renderPreset = preset
+    const job = await addMediaJob(db, 'render-selected', 'needs-review', detail, buildFfmpegCommand({ inputPath, start: clip.start, end: clip.end, mode, subtitlePath, outputPath }))
+    return { status: 200, body: { clip, job } }
+  }
+  const plan = ffmpegPlan({ inputPath, start: clip.start, end: clip.end, mode, subtitlePath, outputPath })
+  clip.renderStatus = 'running'; clip.renderPreset = preset; clip.renderPath = outputPath; clip.renderError = ''
+  await saveDb(db)
+  try {
+    await execFileAsync('ffmpeg', plan.args, { cwd: root, timeout: 180000, maxBuffer: 1024 * 1024 * 20 })
+    clip.renderStatus = 'done'; clip.status = clip.status === 'idea' ? 'draft' : clip.status; clip.renderPath = outputPath; clip.renderUrl = `/${outputPath}`; clip.renderError = ''
+    const job = await addMediaJob(db, 'render-selected', 'done', `Rendered selected clip ${clip.title} (${clip.start}-${clip.end}) to ${outputPath}.`, plan.command)
+    return { status: 200, body: { clip, job } }
+  } catch (error) {
+    const detail = `Selected clip render failed: ${(error.stderr || error.message || '').split('\n').slice(-4).join(' ')}`
+    clip.renderStatus = 'failed'; clip.renderError = detail
+    const job = await addMediaJob(db, 'render-selected', 'failed', detail, plan.command)
+    return { status: 200, body: { clip, job } }
+  }
 }
 async function ingestLatestLocalMedia(db, body = {}) {
   await ensureMediaDirs()
@@ -599,6 +657,11 @@ async function handleApi(req, res, db) {
     if (!transcript) return send(res, 400, { error: 'Import a transcript first.' })
     const clips = scoreClips(transcript.id, transcript.text); db.clips = [...clips, ...db.clips.filter((c) => c.transcriptId !== transcript.id)].slice(0, 80)
     await addJob(db, 'clip-generation', 'Generated clip candidates', 'done', `${clips.length} clips from ${transcript.title}`); await saveDb(db); return send(res, 200, clips)
+  }
+  if (req.method === 'POST' && url.pathname.startsWith('/api/clips/') && url.pathname.endsWith('/render')) {
+    const clipId = decodeURIComponent(url.pathname.split('/').at(-2))
+    const result = await renderSelectedClip(db, clipId, await parseBody(req))
+    return send(res, result.status, result.body)
   }
   if (req.method === 'PATCH' && url.pathname.startsWith('/api/clips/')) {
     const clipId = decodeURIComponent(url.pathname.split('/').pop())

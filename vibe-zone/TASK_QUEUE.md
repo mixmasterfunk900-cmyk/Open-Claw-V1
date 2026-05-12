@@ -21,3 +21,15 @@
 1. [in-progress] Research successful clipping/social platforms and compare Vibe Zone gaps.
 2. [pending] Convert competitor findings into implementation tasks.
 3. [pending] Review Masala stream output quality against those patterns.
+
+## UX / product design workstream
+1. [high-priority] Redesign information architecture around Ingest → Processing → Clip Review → Render Lab → Dispatch.
+2. [high-priority] Build a proper Clip Review page with preview, statuses, platform target, caption/title review, and export actions.
+3. [high-priority] Build Render Lab presets including punchy captions and 50/50 facecam mode.
+4. [medium] Add UX progress states for upload/transcription/rendering with clear retry/resume actions.
+5. [medium] Create visual safe-zone overlay guidance for Shorts captions and facecam placement.
+
+## Selected clip rendering follow-ups
+1. [done] Add Render Short action on Clip Factory candidates with source-duration guardrails.
+2. [pending] Add export bundles for approved rendered clips (`upload-card.md`, metadata, checklist).
+3. [pending] Add render preset selector UI beyond the default punchy captions preset.

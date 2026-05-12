@@ -395,6 +395,15 @@ nav {
   font-weight: 950;
 }
 
+.clip-preview {
+  width: min(260px, 100%);
+  aspect-ratio: 9 / 16;
+  margin: 10px 0;
+  border-radius: 18px;
+  background: #0f172a;
+  object-fit: cover;
+}
+
 blockquote {
   margin: 10px 0;
   padding: 12px 14px;
@@ -557,7 +566,7 @@ button.primary:disabled {
 
 .review-row {
   display: grid;
-  grid-template-columns: repeat(2, minmax(140px, 220px)) 1fr;
+  grid-template-columns: repeat(2, minmax(140px, 220px)) auto 1fr;
   gap: 10px;
   align-items: center;
   margin: 12px 0;

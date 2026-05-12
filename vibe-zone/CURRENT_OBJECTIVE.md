@@ -22,3 +22,7 @@ The VPS/local copy of `dejKxLu_iM0.mp4` is partial: MP4 metadata reports 1:30:09
 
 ## Orchestrator instruction from Masala
 Keep looping after task completion: audit, compare against successful platforms, create new tasks, and continue improving. Maintain 30-minute recurring checks so work does not stall.
+
+
+## Full-product UX redesign
+Masala clarified that the current makeover is only a small slice of the expectation. Treat UX as a core workstream: workflow architecture, review/approval loops, render presets, dispatch/export paths, and clear next-action states. See `UX_REDESIGN_BRIEF.md`.
