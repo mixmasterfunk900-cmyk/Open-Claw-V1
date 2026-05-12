@@ -153,3 +153,11 @@ Masala wants to open Vibe Zone and see tangible clips ready to review/upload. Em
 ### Competitor-informed roadmap
 
 Opus Clip proves the category expectation: automatic clipping, captions, reframing, publishing, team/workflow automation, templates, API. Vibe Zone should compete by becoming the local-first streamer HQ: transparent co-pilot, visible job logs, cheap/local pipeline, and Masala-tone reports.
+
+Priority gaps versus Opus-style workflows:
+
+1. **Actual media execution:** run the newest stream through download/import → Whisper transcript/SRT → ffmpeg short/long renders instead of stopping at planned commands.
+2. **Moment ranking:** combine transcript hooks with audio/visual signals later; the current heuristic only sees text/title metadata.
+3. **Subtitle styling:** add reusable caption presets, safe-area preview, and per-platform export settings.
+4. **Review queue:** attach output file paths, blocker states, and manual upload checklist to every clip candidate.
+5. **Live assistant differentiation:** keep transparent AI practice chat and Rex job history visible; this is Vibe Zone's streamer-HQ wedge, not just a clipping clone.

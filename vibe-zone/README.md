@@ -162,10 +162,18 @@ Policy for Vibe Zone:
 
 ### Local companion fallback
 
-If YouTube blocks VPS extraction:
+If YouTube blocks VPS extraction, keep scope tight: process only Masala's newest Streams-tab replay first. Current target from the latest scan:
 
-1. On user machine: run `yt-dlp` against the public replay URL.
-2. Run Whisper locally or upload the video/audio to Vibe Zone when upload endpoints are added.
-3. Import transcript/SRT into Clip Factory.
-4. Let Vibe Zone generate clip rows, captions, hashtags, and ffmpeg render commands.
+```text
+https://www.youtube.com/watch?v=dejKxLu_iM0
+```
+
+On Masala's own machine, using reputable/open-source tools only:
+
+```bash
+yt-dlp --no-playlist -f "bv*+ba/b" --merge-output-format mp4 -o "media/downloads/%(id)s.%(ext)s" "https://www.youtube.com/watch?v=dejKxLu_iM0"
+whisper "media/downloads/dejKxLu_iM0.mp4" --model base --language en --output_format all --output_dir media/transcripts
+```
+
+Then import `media/transcripts/dejKxLu_iM0.txt` into Clip Factory (and `dejKxLu_iM0.srt` once upload/render endpoints are added). Let Vibe Zone generate clip rows, captions, hashtags, and ffmpeg render commands. Do not process older videos unless Masala asks.
 
