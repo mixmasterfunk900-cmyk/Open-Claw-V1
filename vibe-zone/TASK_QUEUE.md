@@ -6,13 +6,13 @@
 3. [in-progress] Get a complete source video: validation badges now detect partial/corrupt media; still need complete newest-stream re-upload/import.
 4. [pending] Add facecam crop / 50-50 layout render preset.
 5. [completed] Add review actions for clip status: idea → draft → reviewed → exported.
-6. [pending] Add “render selected clip” from Clip Factory and link output back to the candidate row.
+6. [completed] Add “render selected clip” from Clip Factory and link output back to the candidate row.
 
 ## Medium-priority improvements
 1. [pending] Improve semantic clip dedupe to avoid repeated hooks/themes.
-2. [pending] Add subtitle presets: bold centre, TikTok-safe lower third, high-contrast accessibility.
+2. [in-progress] Add subtitle/render presets: punchy captions, standard captions, no captions, and long-form captions now selectable; still need richer visual styles (bold centre, TikTok-safe lower third, high-contrast accessibility).
 3. [pending] Add upload progress persistence/server-side status for large browser uploads.
-4. [pending] Add a “render selected clip” button from Clip Factory.
+4. [done] Add a “render selected clip” button from Clip Factory.
 
 ## Long-term architectural improvement
 1. [pending] Move persistence from one JSON file to SQLite once clip/render volume grows.
@@ -32,7 +32,7 @@
 ## Selected clip rendering follow-ups
 1. [done] Add Render Short action on Clip Factory candidates with source-duration guardrails.
 2. [done] Add export bundles for approved rendered clips (`upload-card.md`, metadata, checklist).
-3. [pending] Add render preset selector UI beyond the default punchy captions preset.
+3. [done] Add render preset selector UI beyond the default punchy captions preset.
 
 ## API setup reminder
 - [pending] Remind Masala later to set up API keys/providers for higher-quality embeddings, image generation, and optional platform integrations. For now prefer local Ollama/no-API paths.

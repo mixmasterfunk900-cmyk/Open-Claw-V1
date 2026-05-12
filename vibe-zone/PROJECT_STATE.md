@@ -1,6 +1,6 @@
 # Project State — Vibe Zone
 
-Last updated: 2026-05-12 07:35 UTC
+Last updated: 2026-05-12 11:08 UTC
 
 ## Current north star
 Vibe Zone is Masala's local-first creator operations HQ: ingest livestreams, transcribe them, generate many clip candidates, render upload-ready clips with subtitles, and expose every Rex/job action in a stream-safe dashboard.
@@ -17,13 +17,15 @@ Vibe Zone is Masala's local-first creator operations HQ: ingest livestreams, tra
 - API exposes media artifacts via `/api/media/files` and safe `/media/*` serving.
 - Media Pipeline shows rendered review cards with video preview plus open/download links.
 - Clip Factory can now build manual upload bundles (`upload-card.md` + `metadata.json`) for approved/rendered clips; no external posting is performed.
+- Clip Factory render actions now have a preset selector for punchy captions, standard captions, clean/no-caption shorts, and long-form SRT caption renders.
 
 ## Latest verification
 - Punchy subtitle ASS generated at `media/transcripts/dejKxLu_iM0.punchy.ass`.
 - Three punchy MP4 renders generated and ffprobe-verified playable.
 - Vision check confirmed captions are readable and in Shorts-safe position between center and bottom quarter.
-- Build and lint pass after export bundle workflow addition.
+- Build and lint pass after render preset selector addition.
+- Created and ffprobe-verified clean/no-caption preset render: `media/renders/dejKxLu_iM0-abb121-stop-overbuilding-and-ship-the-workflow-no-captions.mp4` (63s).
 - Created and served test bundle: `media/exports/clip_1778565945241_abb121-stop-overbuilding-and-ship-the-workflow/upload-card.md`.
 
 ## Immediate focus
-Get/repair the complete source video, then render non-duplicate clips from the later high-scoring moments. Add facecam crop/layout mode as a selectable render preset.
+Get/repair the complete source video, then render non-duplicate clips from the later high-scoring moments. Add facecam crop/layout mode as the next selectable render preset.

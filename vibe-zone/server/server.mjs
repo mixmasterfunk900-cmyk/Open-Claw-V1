@@ -311,6 +311,15 @@ function shellArg(value) {
 }
 function buildFfmpegCommand(options) { return ffmpegPlan(options).command }
 function slug(value = 'clip') { return value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60) || 'clip' }
+function selectedRenderPreset(presetId = 'punchy-captions', videoId = 'VIDEO_ID') {
+  const presets = {
+    'punchy-captions': { preset: 'punchy-captions', mode: 'short', subtitlePath: `media/transcripts/${videoId}.punchy.ass` },
+    'standard-captions': { preset: 'standard-captions', mode: 'short', subtitlePath: `media/transcripts/${videoId}.srt` },
+    'no-captions': { preset: 'no-captions', mode: 'short', subtitlePath: '' },
+    'long-standard': { preset: 'long-standard', mode: 'long', subtitlePath: `media/transcripts/${videoId}.srt` },
+  }
+  return presets[presetId] || presets['punchy-captions']
+}
 async function renderSelectedClip(db, clipId, body = {}) {
   await ensureMediaDirs()
   const clip = db.clips.find((item) => item.id === clipId)
@@ -324,10 +333,11 @@ async function renderSelectedClip(db, clipId, body = {}) {
     return { status: 200, body: { clip, job } }
   }
   const videoId = latest?.id || videoIdFromUrl(transcript?.sourceUrl || '') || 'VIDEO_ID'
+  const presetConfig = selectedRenderPreset(body.presetId, videoId)
   const inputPath = body.inputPath || `media/downloads/${videoId}.mp4`
-  const subtitlePath = body.subtitlePath || `media/transcripts/${videoId}.punchy.ass`
-  const mode = body.mode || 'short'
-  const preset = body.presetId || (subtitlePath.includes('punchy') ? 'punchy-captions' : 'standard-captions')
+  const subtitlePath = body.subtitlePath ?? presetConfig.subtitlePath
+  const mode = body.mode || presetConfig.mode
+  const preset = presetConfig.preset
   const outputPath = body.outputPath || `media/renders/${videoId}-${clip.id.slice(-6)}-${slug(clip.title)}-${preset}.mp4`
   const probe = await commandExists('ffmpeg', ['-version'])
   const inputReady = await localFileExists(inputPath)
