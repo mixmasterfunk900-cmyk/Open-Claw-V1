@@ -16,6 +16,7 @@ const port = Number(process.env.PORT || 8787)
 const localYtDlp = path.join(root, '.venv-media', 'bin', 'yt-dlp')
 const localWhisper = '/root/.openclaw/workspace/.venv-transcribe/bin/whisper'
 const youtubeBotBlockPattern = /sign in to confirm you.?re not a bot|use --cookies|cookies-from-browser/i
+const mediaDirs = ['media/downloads', 'media/transcripts', 'media/renders']
 
 const defaultDb = {
   settings: {
@@ -49,6 +50,9 @@ async function loadDb() {
 }
 async function saveDb(db) { await writeFile(dbPath, JSON.stringify(db, null, 2)) }
 const id = (prefix) => `${prefix}_${Date.now()}_${Math.random().toString(16).slice(2, 8)}`
+async function ensureMediaDirs() {
+  await Promise.all(mediaDirs.map((dir) => mkdir(path.join(root, dir), { recursive: true })))
+}
 async function addJob(db, type, title, status = 'done', detail = '') {
   const job = { id: id('job'), type, title, status, detail, createdAt: new Date().toISOString() }
   db.jobs.unshift(job)
@@ -83,6 +87,7 @@ async function commandExists(command, args = ['--version']) {
   }
 }
 async function mediaProbe(db) {
+  await ensureMediaDirs()
   const tools = {
     ytDlp: await commandExists(localYtDlp),
     ffmpeg: await commandExists('ffmpeg', ['-version']),
@@ -106,6 +111,10 @@ function buildYtDlpCommand(videoUrl) {
 }
 function buildYtDlpPreflightCommand(videoUrl) {
   return `${localYtDlp} --skip-download --print "%(id)s | %(title)s | duration=%(duration_string)s | live=%(live_status)s" "${videoUrl}"`
+}
+function buildLocalCompanionCommand(videoUrl, videoId = '') {
+  const idPart = videoId || 'VIDEO_ID'
+  return `# Run on Masala's own machine if the VPS hits YouTube bot-checks. Latest stream only; no cookies required by default.\nmkdir -p media/downloads media/transcripts\nyt-dlp --no-playlist -f "bv*+ba/b" --merge-output-format mp4 -o "media/downloads/%(id)s.%(ext)s" "${videoUrl}"\nwhisper "media/downloads/${idPart}.mp4" --model base --language en --output_format all --output_dir media/transcripts\n# Then copy/import media/transcripts/${idPart}.txt, media/transcripts/${idPart}.srt, and media/downloads/${idPart}.mp4 into Vibe Zone and press “Import local transcript + score”.`
 }
 async function preflightYoutubeDownload(videoUrl) {
   try {
@@ -131,6 +140,7 @@ function buildFfmpegCommand({ inputPath, start = '0:00', end = '0:45', mode = 's
   return `ffmpeg -y -ss ${start} -to ${end} -i "${inputPath}" -vf "${scale}${subtitle}" -c:v libx264 -preset veryfast -c:a aac "media/renders/${mode}-${Date.now()}.mp4"`
 }
 async function ingestLatestLocalMedia(db, body = {}) {
+  await ensureMediaDirs()
   const target = latestStreamCandidate(db.videos)
   const videoId = body.videoId || target?.id
   if (!videoId) return await addMediaJob(db, 'local-ingest', 'needs-review', 'Scan YouTube first so Vibe Zone knows the newest stream id to import.', '')
@@ -362,6 +372,7 @@ async function handleApi(req, res, db) {
     const body = await parseBody(req)
     const target = latestStreamCandidate(db.videos)
     const videoUrl = body.videoUrl || target?.url || db.settings.channelUrl
+    const videoId = body.videoId || target?.id || videoUrl.match(/[?&]v=([^&]+)/)?.[1] || ''
     const probe = await commandExists(localYtDlp)
     const command = buildYtDlpCommand(videoUrl)
     if (!probe.ok) {
@@ -370,9 +381,10 @@ async function handleApi(req, res, db) {
     const preflight = await preflightYoutubeDownload(videoUrl)
     const status = preflight.ok ? 'queued' : 'needs-review'
     const detail = preflight.ok ? `Preflight passed for ${videoUrl}: ${preflight.detail}` : `${preflight.blocked ? 'VPS extraction blocked' : 'Extraction preflight failed'} for ${videoUrl}: ${preflight.detail}`
-    return send(res, 200, await addMediaJob(db, 'youtube-extract', status, detail, preflight.ok ? command : `${buildYtDlpPreflightCommand(videoUrl)}\n# Local companion fallback: run the download/transcribe on Masala's machine, then import transcript/SRT/video into Vibe Zone. No cookies stored here.`))
+    return send(res, 200, await addMediaJob(db, 'youtube-extract', status, detail, preflight.ok ? command : `${buildYtDlpPreflightCommand(videoUrl)}\n\n${buildLocalCompanionCommand(videoUrl, videoId)}`))
   }
   if (req.method === 'POST' && url.pathname === '/api/media/transcribe') {
+    await ensureMediaDirs()
     const body = await parseBody(req)
     const inputPath = body.inputPath || 'media/downloads/VIDEO_ID.mp4'
     const probe = await commandExists(localWhisper, ['--help'])
@@ -383,6 +395,7 @@ async function handleApi(req, res, db) {
     return send(res, 200, await addMediaJob(db, 'transcribe', status, detail, command))
   }
   if (req.method === 'POST' && url.pathname === '/api/media/render') {
+    await ensureMediaDirs()
     const body = await parseBody(req)
     const probe = await commandExists('ffmpeg', ['-version'])
     const command = buildFfmpegCommand(body)
