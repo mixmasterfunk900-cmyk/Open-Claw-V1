@@ -33,5 +33,11 @@
 - Add Winner Radar to ingest manual/API analytics and trigger variant/repost/follow-up recommendations.
 - Move to SQLite when JSON persistence becomes awkward for archive/search/analytics relationships.
 
+## Processing / AI-compute boundary
+- Video/audio mechanics must run as system jobs: `ffmpeg`, `ffprobe`, Whisper, yt-dlp/import, and future OpenCV/MediaPipe-style face tracking.
+- Deterministic tasks should not call paid/large AI models: transcoding, resizing, caption burn-in, duration validation, file moves, retries, queue status, duplicate file checks, basic heuristics.
+- AI/model usage is reserved for judgment tasks: summarization, hook/title variants, semantic topic grouping, tone matching, high-level clip scoring, and roadmap/research. Even these should have cheap/local/template fallbacks where possible.
+- Current clip generation is heuristic/deterministic. Whisper transcription is local system compute. Rendering is ffmpeg system compute. Gemini/Codex should not be in the hot path for processing uploaded media.
+
 ## Next architecture step
 Move from planned media jobs toward an actual local job runner that executes queued transcribe/render commands, records stdout/stderr, and updates status without requiring shell intervention. Keep this as the foundation for Content HQ automation.

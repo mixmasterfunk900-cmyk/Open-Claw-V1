@@ -11,8 +11,9 @@
 ## Medium-priority improvements
 1. [in-progress] Improve semantic clip dedupe to avoid repeated hooks/themes. First pass now removes exact-title/nearby-hook repeats during scoring and auto-render selection; next pass should use embeddings/topic clusters.
 2. [in-progress] Add subtitle/render presets: punchy captions, standard captions, no captions, 50/50 facecam/B-roll layout, and long-form captions now selectable; still need richer visual styles (bold centre, TikTok-safe lower third, high-contrast accessibility).
-3. [pending] Add upload progress persistence/server-side status for large browser uploads.
-4. [done] Add a “render selected clip” button from Clip Factory.
+3. [pending] Add active facecam tracking/reframing using deterministic computer-vision/ffmpeg tooling; current 50/50 preset is layout-only, not tracking.
+4. [pending] Add upload progress persistence/server-side status for large browser uploads.
+5. [done] Add a “render selected clip” button from Clip Factory.
 
 ## Long-term architectural improvement
 1. [pending] Move persistence from one JSON file to SQLite once clip/render volume grows.
@@ -26,7 +27,7 @@
 ## UX / product design workstream
 1. [high-priority] Redesign information architecture around Ingest → Processing → Clip Review → Render Lab → Dispatch.
 2. [high-priority] Build a proper Clip Review page with preview, statuses, platform target, caption/title review, and export actions.
-3. [in-progress] Build Render Lab presets including punchy captions and 50/50 facecam mode; next add richer caption styles and true overlay inputs.
+3. [in-progress] Build Render Lab presets including punchy captions and 50/50 layout mode; next add richer caption styles, true overlay inputs, and active facecam tracking.
 4. [medium] Add UX progress states for upload/transcription/rendering with clear retry/resume actions.
 5. [medium] Create visual safe-zone overlay guidance for Shorts captions and facecam placement.
 

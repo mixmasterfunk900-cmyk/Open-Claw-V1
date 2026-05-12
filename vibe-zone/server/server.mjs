@@ -452,12 +452,13 @@ async function ingestLatestLocalMedia(db, body = {}) {
     return await addMediaJob(db, 'local-ingest', 'needs-review', `Waiting for newest stream transcript: ${transcriptPath}. Use local companion download/transcribe for ${sourceUrl}, then rerun local ingest.`, '')
   }
   const text = await readFile(path.resolve(root, transcriptPath), 'utf8')
+  const scoringText = subtitleReady ? await readFile(path.resolve(root, subtitlePath), 'utf8') : text
   const existing = db.transcripts.find((item) => item.sourceUrl === sourceUrl || item.title.includes(videoId))
   const transcript = existing || { id: id('tx'), title: `${target?.title || 'Newest stream'} (${videoId})`, sourceUrl, text, createdAt: new Date().toISOString() }
   transcript.text = text
   transcript.sourceUrl = sourceUrl
   if (!existing) db.transcripts.unshift(transcript)
-  const clips = scoreClips(transcript.id, text)
+  const clips = scoreClips(transcript.id, scoringText)
   db.clips = [...clips, ...db.clips.filter((clip) => clip.transcriptId !== transcript.id)].slice(0, 80)
   const detail = `Imported ${transcriptPath} (${text.length} chars), generated ${clips.length} clip candidates. Media ${mediaReady ? 'ready' : 'missing'}: ${mediaPath}; subtitles ${subtitleReady ? 'ready' : 'missing'}: ${subtitlePath}.`
   return await addMediaJob(db, 'local-ingest', subtitleReady && mediaReady ? 'done' : 'needs-review', detail, subtitleReady && mediaReady ? buildFfmpegCommand({ inputPath: mediaPath, start: clips[0]?.start || '0:00', end: clips[0]?.end || '0:45', mode: 'short', subtitlePath }) : '')
@@ -589,27 +590,66 @@ async function localFileExists(inputPath) {
   catch { return false }
 }
 function parseTranscript(text) {
+  if (text.includes('-->')) {
+    const blocks = text.split(/\n\s*\n/)
+    const rows = []
+    for (const [index, block] of blocks.entries()) {
+      const lines = block.split(/\r?\n/).map((line) => line.trim()).filter(Boolean)
+      const timeLine = lines.find((line) => line.includes('-->'))
+      if (!timeLine) continue
+      const [startRaw, endRaw] = timeLine.split('-->').map((part) => part.trim())
+      const textLines = lines.slice(lines.indexOf(timeLine) + 1).join(' ').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim()
+      if (textLines) rows.push({ time: normalizeStamp(startRaw), endTime: normalizeStamp(endRaw), text: textLines, index })
+    }
+    if (rows.length) return rows
+  }
   const lines = text.split(/\r?\n/).map((line) => line.trim()).filter(Boolean)
-  const timed = lines.map((line, index) => {
-    const match = line.match(/^(?:\[)?(\d{1,2}:\d{2}(?::\d{2})?)(?:\])?\s*[-–:]?\s*(.+)$/)
-    return match ? { time: match[1], text: match[2], index } : { time: null, text: line, index }
+  return lines.map((line, index) => {
+    const range = line.match(/^(?:\[)?(\d{1,2}:\d{2}(?::\d{2})?(?:[,.]\d+)?)(?:\])?\s*[-–>]\s*(\d{1,2}:\d{2}(?::\d{2})?(?:[,.]\d+)?)\s+(.+)$/)
+    if (range) return { time: normalizeStamp(range[1]), endTime: normalizeStamp(range[2]), text: range[3], index }
+    const match = line.match(/^(?:\[)?(\d{1,2}:\d{2}(?::\d{2})?(?:[,.]\d+)?)(?:\])?\s*[-–:]?\s*(.+)$/)
+    return match ? { time: normalizeStamp(match[1]), endTime: null, text: match[2], index } : { time: null, endTime: null, text: line, index }
   })
-  return timed
 }
+function normalizeStamp(value = '') { return value.replace(',', '.').replace(/^00:/, '') }
 function seconds(time, fallback) {
   if (!time) return fallback
-  const parts = time.split(':').map(Number)
+  const parts = String(time).replace(',', '.').split(':').map(Number)
+  if (parts.some((part) => !Number.isFinite(part))) return fallback
   return parts.length === 3 ? parts[0] * 3600 + parts[1] * 60 + parts[2] : parts[0] * 60 + parts[1]
 }
 function stamp(total) {
   const h = Math.floor(total / 3600), m = Math.floor((total % 3600) / 60), s = Math.floor(total % 60)
   return h ? `${h}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}` : `${m}:${String(s).padStart(2,'0')}`
 }
+function timedChunks(rows) {
+  if (!rows.some((row) => row.time)) {
+    const chunks = []
+    for (let i = 0; i < rows.length; i += 3) chunks.push(rows.slice(i, i + 7))
+    return chunks
+  }
+  const chunks = []
+  for (let i = 0; i < rows.length; i += 4) {
+    const chunk = []
+    for (let j = i; j < rows.length; j += 1) {
+      chunk.push(rows[j])
+      const start = seconds(chunk[0]?.time, i * 45)
+      const last = chunk.at(-1)
+      const end = seconds(last?.endTime || last?.time, start) + (last?.endTime ? 0 : 2)
+      const duration = end - start
+      const words = chunk.map((row) => row.text).join(' ').split(/\s+/).filter(Boolean).length
+      if ((duration >= 12 && words >= 28) || duration >= 45 || words >= 90) break
+    }
+    const start = seconds(chunk[0]?.time, i * 45)
+    const last = chunk.at(-1)
+    const end = seconds(last?.endTime || last?.time, start) + (last?.endTime ? 0 : 2)
+    if (chunk.length && end - start >= 6) chunks.push(chunk)
+  }
+  return chunks
+}
 function scoreClips(transcriptId, text) {
   const rows = parseTranscript(text)
-  const chunks = []
-  // Quantity-first: overlapping windows create many candidates. Platform results decide later.
-  for (let i = 0; i < rows.length; i += 3) chunks.push(rows.slice(i, i + 7))
+  const chunks = timedChunks(rows)
   const keywords = ['why', 'how', 'build', 'secret', 'mistake', 'stop', 'actually', 'ship', 'money', 'creator', 'ai', 'local', 'stream', 'problem']
   const candidates = chunks.map((chunk, i) => {
     const body = chunk.map((r) => r.text).join(' ')
@@ -619,7 +659,9 @@ function scoreClips(transcriptId, text) {
     const energyBoost = Math.min(12, (body.match(/!|actually|really|never|always/gi) || []).length * 3)
     const score = Math.min(98, 45 + keywordHits * 7 + questionBoost + energyBoost + Math.min(10, Math.round(body.length / 180)))
     const start = seconds(chunk[0]?.time, i * 45)
-    const end = seconds(chunk.at(-1)?.time, start + 55) + 8
+    const last = chunk.at(-1)
+    const rawEnd = seconds(last?.endTime || last?.time, start + 55) + (last?.endTime ? 0 : 8)
+    const end = Math.max(start + 8, rawEnd)
     const hook = makeHook(body)
     return {
       id: id('clip'), transcriptId, score, platform: 'tiktok', status: 'idea', exportedAt: null, start: stamp(start), end: stamp(end),

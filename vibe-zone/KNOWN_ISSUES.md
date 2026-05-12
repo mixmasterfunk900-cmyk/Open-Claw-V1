@@ -8,6 +8,7 @@
 ## Medium
 - Browser upload progress is client-side only; server restart mid-upload has no resumability.
 - Media execution scripts are outside a robust job runner; failures need better retry/status semantics.
+- Active facecam tracking/reframing is not implemented yet; current 50/50 preset is layout-only and needs deterministic CV/ffmpeg implementation.
 - Background research subagent `content-hq-platform-distribution-research` failed after tool/search use despite Gemini Flash connectivity being confirmed. Debug queue item: capture fuller subagent error, retry with smaller/no-web task, and ensure failed child tasks automatically become visible queue items instead of being dropped.
 - `data/vibe-zone.json` can grow and is not ideal for concurrent writes.
 
