@@ -19,8 +19,8 @@
 1. [pending] Move persistence from one JSON file to SQLite once clip/render volume grows.
 
 ## Research / competitive analysis
-1. [in-progress] Research successful clipping/social platforms and compare Vibe Zone gaps.
-2. [pending] Convert competitor findings into implementation tasks.
+1. [in-progress] Research successful clipping/social platforms and compare Vibe Zone gaps. Latest pass checked Opus Clip positioning around viral clipping, captions, reframing, virality scoring, and publishing workflows.
+2. [in-progress] Convert competitor findings into implementation tasks. Viral Hunter now has newest-stream scope, deduped leads, Opus-style hook patterns, and a visible gap board; next turn gaps into retention/performance fields and richer render templates.
 3. [in-progress] Review Masala stream output quality against those patterns. Latest pass produced more diverse early-stream auto-renders; full-quality review still blocked by partial source.
 4. [debug] Investigate failed `content-hq-platform-distribution-research` Gemini Flash subagent: recover/error-capture cause, retry with smaller/no-web task, and make failed child tasks auto-log into Known Issues/Task Queue.
 

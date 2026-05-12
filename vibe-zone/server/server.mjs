@@ -479,9 +479,33 @@ async function ingestLatestLocalMedia(db, body = {}) {
   const detail = `Imported ${transcriptPath} (${text.length} chars), generated ${clips.length} clip candidates. Media ${mediaReady ? 'ready' : 'missing'}: ${mediaPath}; subtitles ${subtitleReady ? 'ready' : 'missing'}: ${subtitlePath}.`
   return await addMediaJob(db, 'local-ingest', subtitleReady && mediaReady ? 'done' : 'needs-review', detail, subtitleReady && mediaReady ? buildFfmpegCommand({ inputPath: mediaPath, start: clips[0]?.start || '0:00', end: clips[0]?.end || '0:45', mode: 'short', subtitlePath }) : '')
 }
-function huntViralIdeas(videos, clips) {
-  const keywordScore = (text) => ['ai', 'money', 'company', 'privacy', 'live', 'app', 'coding', 'why', 'billion', 'possible'].filter((k) => text.toLowerCase().includes(k)).length
-  return [...videos.map((video) => ({ source: 'youtube-rss', title: video.title, url: video.url, score: 55 + keywordScore(video.title) * 8, angle: `Turn “${video.title}” into a sharper hook, then test as 3 Shorts variants.` })), ...clips.slice(0, 12).map((clip) => ({ source: 'clip-factory', title: clip.title, url: '', score: Math.min(99, clip.score + 4), angle: `Clip-first viral test: ${clip.hook}` }))]
+function huntViralIdeas(videos, clips, transcripts = []) {
+  const latest = latestStreamCandidate(videos)
+  const latestTranscripts = latest ? transcripts.filter((item) => item.sourceUrl?.includes(latest.id) || item.title?.includes(latest.id)) : transcripts
+  const latestTranscriptIds = new Set(latestTranscripts.map((item) => item.id))
+  const scopedClips = latestTranscriptIds.size ? clips.filter((clip) => latestTranscriptIds.has(clip.transcriptId)) : clips
+  const keywordScore = (text) => ['ai', 'money', 'company', 'privacy', 'live', 'app', 'coding', 'why', 'billion', 'possible', 'build', 'ship'].filter((k) => text.toLowerCase().includes(k)).length
+  const opusPattern = (title, hook = '') => {
+    const text = `${title} ${hook}`.toLowerCase()
+    if (/money|mrr|\$|revenue/.test(text)) return 'Opus-style money/proof hook: lead with the number, then show the uncomfortable build-in-public lesson.'
+    if (/fix|bug|stuck|blocked|failed|wrong/.test(text)) return 'Problem-resolution hook: open on the mistake/blocker, then cut quickly to the fix.'
+    if (/agent|ai|automation|workflow/.test(text)) return 'AI workflow hook: show the agent outcome first, then reveal the setup in captions.'
+    return 'Curiosity hook: tighten the first 2 seconds, add high-contrast captions, and test 3 platform-native titles.'
+  }
+  const newestStreamLead = latest ? [{
+    source: 'newest-stream-scope',
+    title: latest.title,
+    url: latest.url,
+    score: 70 + keywordScore(latest.title) * 6,
+    angle: `Current-scope lead only: cut Masala's newest stream first (${latest.id}). ${opusPattern(latest.title)}`,
+  }] : []
+  return [...newestStreamLead, ...scopedClips.slice(0, 18).map((clip) => ({
+    source: 'clip-factory',
+    title: clip.title,
+    url: '',
+    score: Math.min(99, clip.score + 4 + keywordScore(`${clip.title} ${clip.hook}`) * 2),
+    angle: `${opusPattern(clip.title, clip.hook)} Clip-first viral test: ${clip.hook}`,
+  }))]
     .sort((a, b) => b.score - a.score).slice(0, 12)
 }
 async function parseBody(req) {
@@ -799,9 +823,15 @@ async function handleApi(req, res, db) {
   }
   if (req.method === 'POST' && url.pathname === '/api/media/ingest-local') return send(res, 200, await ingestLatestLocalMedia(db, await parseBody(req)))
   if (req.method === 'POST' && url.pathname === '/api/viral/hunt') {
-    const finds = huntViralIdeas(db.videos, db.clips).map((find) => ({ id: id('viral'), createdAt: new Date().toISOString(), ...find }))
-    db.viralFinds = [...finds, ...db.viralFinds].slice(0, 40)
-    await addJob(db, 'viral-hunter', 'Generated Viral Hunter leads', 'done', `${finds.length} leads from RSS videos and clip candidates`)
+    const finds = huntViralIdeas(db.videos, db.clips, db.transcripts).map((find) => ({ id: id('viral'), createdAt: new Date().toISOString(), ...find }))
+    const seen = new Set()
+    db.viralFinds = [...finds, ...db.viralFinds].filter((find) => {
+      const key = `${find.source}:${find.title}`.toLowerCase()
+      if (seen.has(key)) return false
+      seen.add(key)
+      return true
+    }).slice(0, 40)
+    await addJob(db, 'viral-hunter', 'Generated newest-stream Viral Hunter leads', 'done', `${finds.length} leads scoped to Masala's newest stream/clips; duplicates collapsed in backlog.`)
     await saveDb(db)
     return send(res, 200, finds)
   }
