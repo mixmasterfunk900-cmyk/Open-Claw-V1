@@ -109,6 +109,9 @@ async function addMediaJob(db, step, status, detail, command = '') {
 function buildYtDlpCommand(videoUrl) {
   return `${localYtDlp} --no-playlist -f "bv*+ba/b" --merge-output-format mp4 -o "media/downloads/%(id)s.%(ext)s" "${videoUrl}"`
 }
+function buildCustomDownloadCommand(videoUrl) {
+  return `node scripts/vibe-download.mjs "${videoUrl}" "media/downloads/%(id)s.%(ext)s"`
+}
 function buildYtDlpPreflightCommand(videoUrl) {
   return `${localYtDlp} --skip-download --print "%(id)s | %(title)s | duration=%(duration_string)s | live=%(live_status)s" "${videoUrl}"`
 }
@@ -116,17 +119,29 @@ function buildLocalCompanionCommand(videoUrl, videoId = '') {
   const idPart = videoId || 'VIDEO_ID'
   return `# Run on Masala's own machine if the VPS hits YouTube bot-checks. Latest stream only; no cookies required by default.\nmkdir -p media/downloads media/transcripts\nyt-dlp --no-playlist -f "bv*+ba/b" --merge-output-format mp4 -o "media/downloads/%(id)s.%(ext)s" "${videoUrl}"\nwhisper "media/downloads/${idPart}.mp4" --model base --language en --output_format all --output_dir media/transcripts\n# Then copy/import media/transcripts/${idPart}.txt, media/transcripts/${idPart}.srt, and media/downloads/${idPart}.mp4 into Vibe Zone and press “Import local transcript + score”.`
 }
+const youtubePreflightStrategies = [
+  { name: 'live-hls-web-safari', args: ['--extractor-args', 'youtube:player_client=web_safari'] },
+  { name: 'mweb-po-token-ready', args: ['--extractor-args', 'youtube:player_client=mweb'] },
+  { name: 'embedded-public', args: ['--extractor-args', 'youtube:player_client=web_embedded'] },
+  { name: 'standard-best', args: [] },
+]
 async function preflightYoutubeDownload(videoUrl) {
-  try {
-    const { stdout, stderr } = await execFileAsync(localYtDlp, ['--skip-download', '--print', '%(id)s | %(title)s | duration=%(duration_string)s | live=%(live_status)s', videoUrl], { timeout: 20000 })
-    return { ok: true, detail: `${stdout || stderr}`.trim().split('\n').at(-1) || 'yt-dlp preflight succeeded' }
-  } catch (error) {
-    const output = `${error.stdout || ''}\n${error.stderr || ''}\n${error.message || ''}`
-    if (youtubeBotBlockPattern.test(output)) {
-      return { ok: false, blocked: true, detail: 'YouTube blocked this VPS extraction with a bot-check. Do not use cookies by default; use the local companion download/import fallback unless Masala explicitly approves a specific cookie step.' }
+  const failures = []
+  for (const strategy of youtubePreflightStrategies) {
+    try {
+      const { stdout, stderr } = await execFileAsync(localYtDlp, [...strategy.args, '--skip-download', '--print', '%(id)s | %(title)s | duration=%(duration_string)s | live=%(live_status)s', videoUrl], { timeout: 20000 })
+      const detail = `${stdout || stderr}`.trim().split('\n').at(-1) || 'yt-dlp preflight succeeded'
+      return { ok: true, strategy: strategy.name, detail: `${detail} via ${strategy.name}` }
+    } catch (error) {
+      const output = `${error.stdout || ''}\n${error.stderr || ''}\n${error.message || ''}`
+      const line = output.trim().split('\n').find((item) => /ERROR|WARNING|Error/i.test(item)) || error.message
+      failures.push({ strategy: strategy.name, blocked: youtubeBotBlockPattern.test(output), line })
     }
-    return { ok: false, blocked: false, detail: output.trim().split('\n').find((line) => /ERROR|WARNING|Error/i.test(line)) || error.message }
   }
+  if (failures.some((failure) => failure.blocked)) {
+    return { ok: false, blocked: true, detail: `YouTube blocked this VPS extraction with a bot-check across safe strategies (${failures.map((failure) => failure.strategy).join(', ')}). Do not use cookies by default; use the local companion download/import fallback unless Masala explicitly approves a specific cookie step.` }
+  }
+  return { ok: false, blocked: false, detail: failures.map((failure) => `${failure.strategy}: ${failure.line}`).join(' | ') }
 }
 function latestStreamCandidate(videos) {
   return videos.find((video) => video.kind === 'stream') || videos.find((video) => /\blive\b|stream|vibe coding|day \d+/i.test(video.title)) || videos[0]
@@ -387,7 +402,7 @@ async function handleApi(req, res, db) {
     const videoUrl = target?.url || requestedUrl
     const videoId = target?.id || requestedId || ''
     const probe = await commandExists(localYtDlp)
-    const command = buildYtDlpCommand(videoUrl)
+    const command = buildCustomDownloadCommand(videoUrl)
     if (scopeBlocker) {
       return send(res, 200, await addMediaJob(db, 'youtube-extract', 'needs-review', scopeBlocker, `${buildYtDlpPreflightCommand(videoUrl)}\n\n${buildLocalCompanionCommand(videoUrl, videoId)}`))
     }
@@ -397,7 +412,8 @@ async function handleApi(req, res, db) {
     const preflight = await preflightYoutubeDownload(videoUrl)
     const status = preflight.ok ? 'queued' : 'needs-review'
     const detail = preflight.ok ? `Preflight passed for ${videoUrl}: ${preflight.detail}` : `${preflight.blocked ? 'VPS extraction blocked' : 'Extraction preflight failed'} for ${videoUrl}: ${preflight.detail}`
-    return send(res, 200, await addMediaJob(db, 'youtube-extract', status, detail, preflight.ok ? command : `${buildYtDlpPreflightCommand(videoUrl)}\n\n${buildLocalCompanionCommand(videoUrl, videoId)}`))
+    const reviewCommand = `${buildYtDlpPreflightCommand(videoUrl)}\n${command}\n\n${buildLocalCompanionCommand(videoUrl, videoId)}`
+    return send(res, 200, await addMediaJob(db, 'youtube-extract', status, detail, preflight.ok ? command : reviewCommand))
   }
   if (req.method === 'POST' && url.pathname === '/api/media/transcribe') {
     await ensureMediaDirs()

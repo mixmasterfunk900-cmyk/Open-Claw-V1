@@ -121,6 +121,7 @@ Known blockers on this VPS right now:
 - `ffmpeg` is installed.
 - Project-local `yt-dlp` is installed at `.venv-media/bin/yt-dlp`. The scanner can use public channel tabs if RSS fails, and the media pipeline targets the newest public Streams-tab item first.
 - Direct VPS extraction can still hit YouTube bot-checks. Vibe Zone preflights extraction and records that blocker instead of pretending the job is ready.
+- A custom downloader wrapper now exists at `scripts/vibe-download.mjs`. It tries several safe server-side strategies in order: HLS/web_safari for live streams, mweb PO-token-ready route, embedded public route, then standard yt-dlp. If all fail with bot-check output, the issue is treated as VPS/cloud IP reputation and the local companion/import flow remains the robust fallback.
 - Whisper exists in the local transcription venv and probes successfully. Transcribe/render jobs now stay `needs-review` until the referenced local media/SRT files actually exist.
 - Safe fallback remains the local companion flow: download/transcribe on Masala's own machine without storing cookies here, then import transcript/SRT/video into Vibe Zone.
 
