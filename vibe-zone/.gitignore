@@ -28,3 +28,4 @@ data/
 # Local media tooling / generated assets
 .venv-media/
 media/
+.venv-review/

@@ -6,3 +6,5 @@ __pycache__/
 
 # OpenClaw runtime cache
 .openclaw/
+backups/
+memory/.dreams/

@@ -138,14 +138,14 @@ function packetDuration(input) {
   // streams do not get truncated by spawnSync.
   const probe = spawnSync('ffprobe', ['-v', 'error', '-select_streams', 'v:0', '-show_entries', 'packet=pts_time', '-of', 'csv=p=0', input], { cwd: root, encoding: 'utf8', maxBuffer: 1024 * 1024 * 128 })
   const values = (probe.stdout || '').trim().split(/\s+/).map(Number).filter(Number.isFinite)
-  const packetMax = values.length ? Math.max(...values) : 0
+  const packetMax = values.reduce((max, value) => value > max ? value : max, 0)
   if (packetMax > 1 && (probe.stderr?.includes('partial file') || packetMax + 10 < containerDuration)) return packetMax
   return containerDuration || packetMax
 }
 async function playableOutput(output) {
   try {
     const info = await stat(path.join(root, output))
-    return info.size > 1024 * 1024 && outputDuration(output) > 1
+    return info.size > 64 * 1024 && outputDuration(output) > 1
   } catch { return false }
 }
 function addJob(db, step, status, detail, command = '') {

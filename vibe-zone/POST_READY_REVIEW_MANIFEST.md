@@ -1,0 +1,158 @@
+# Post-Ready Review Manifest
+
+Generated: 2026-05-13T15:50:54.156Z
+Scope: practical non-temp Stream 2 and Day 3 MP4 clip renders in `media/renders`; long-form/temp/failed/proof/duplicate variants are listed as skipped, not hidden.
+
+## Counts
+- READY: 45
+- NEEDS-FIX: 3
+- SKIP: 95
+
+## READY
+- READY — `media/renders/day3-a-stream-tool-worth-paying-for-centered-screen-20260513T0642Z.mp4` → `media/post-ready-review/day3-a-stream-tool-worth-paying-for-centered-screen-20260513t0642z` (12s, 1080x1920)
+- READY — `media/renders/day3-ai-building-more-ai-facecam-smart-20260513T0647Z.mp4` → `media/post-ready-review/day3-ai-building-more-ai-facecam-smart-20260513t0647z` (17s, 1080x1920)
+- READY — `media/renders/day3-an-iphone-for-streamers-facecam-smart-20260513T0947Z.mp4` → `media/post-ready-review/day3-an-iphone-for-streamers-facecam-smart-20260513t0947z` (23s, 1080x1920)
+- READY — `media/renders/day3-build-the-face-tracker-live-facecam-smart-20260513T0947Z.mp4` → `media/post-ready-review/day3-build-the-face-tracker-live-facecam-smart-20260513t0947z` (76s, 1080x1920)
+- READY — `media/renders/day3-build-while-i-m-off-stream-centered-screen-20260513T0642Z.mp4` → `media/post-ready-review/day3-build-while-i-m-off-stream-centered-screen-20260513t0642z` (12s, 1080x1920)
+- READY — `media/renders/day3-content-is-a-funnel-centered-screen-20260513T0815Z.mp4` → `media/post-ready-review/day3-content-is-a-funnel-centered-screen-20260513t0815z` (37s, 1080x1920)
+- READY — `media/renders/day3-continuous-agent-pipeline-centered-screen-20260513T0947Z.mp4` → `media/post-ready-review/day3-continuous-agent-pipeline-centered-screen-20260513t0947z` (41s, 1080x1920)
+- READY — `media/renders/day3-first-auto-clip-shipped-live-facecam-smart-20260513T0815Z.mp4` → `media/post-ready-review/day3-first-auto-clip-shipped-live-facecam-smart-20260513t0815z` (16s, 1080x1920)
+- READY — `media/renders/day3-make-ai-chat-feel-honest-facecam-smart-20260513T1427Z.mp4` → `media/post-ready-review/day3-make-ai-chat-feel-honest-facecam-smart-20260513t1427z` (26s, 1080x1920)
+- READY — `media/renders/day3-no-sleep-shipping-constantly-facecam-smart-20260513T1417Z.mp4` → `media/post-ready-review/day3-no-sleep-shipping-constantly-facecam-smart-20260513t1417z` (30s, 1080x1920)
+- READY — `media/renders/day3-no-sleep-shipping-live-safe-caption-rerender-20260513T1512Z.mp4` → `media/post-ready-review/day3-no-sleep-shipping-live-safe-caption-rerender-20260513t1512z` (30s, 1080x1920)
+- READY — `media/renders/day3-product-or-content-machine-facecam-smart-20260513T0647Z.mp4` → `media/post-ready-review/day3-product-or-content-machine-facecam-smart-20260513t0647z` (13s, 1080x1920)
+- READY — `media/renders/day3-quality-first-local-first-facecam-smart-20260513T0647Z.mp4` → `media/post-ready-review/day3-quality-first-local-first-facecam-smart-20260513t0647z` (18s, 1080x1920)
+- READY — `media/renders/day3-ship-this-to-everyone-now-facecam-smart-v2-20260513T1117Z.mp4` → `media/post-ready-review/day3-ship-this-to-everyone-now-facecam-smart-v2-20260513t1117z` (22s, 1080x1920)
+- READY — `media/renders/day3-the-facecam-is-missing-facecam-smart-20260513T0642Z.mp4` → `media/post-ready-review/day3-the-facecam-is-missing-facecam-smart-20260513t0642z` (14s, 1080x1920)
+- READY — `media/renders/day3-the-platform-clips-everything-centered-screen-20260513T0815Z.mp4` → `media/post-ready-review/day3-the-platform-clips-everything-centered-screen-20260513t0815z` (20s, 1080x1920)
+- READY — `media/renders/day3-this-is-how-streamers-practice-facecam-smart-20260513T0642Z.mp4` → `media/post-ready-review/day3-this-is-how-streamers-practice-facecam-smart-20260513t0642z` (24s, 1080x1920)
+- READY — `media/renders/day3-troubleshoot-before-you-ship-centered-screen-20260513T0655Z.mp4` → `media/post-ready-review/day3-troubleshoot-before-you-ship-centered-screen-20260513t0655z` (38s, 1080x1920)
+- READY — `media/renders/day3-tweaking-clip-presets-live-centered-screen-20260513T0655Z.mp4` → `media/post-ready-review/day3-tweaking-clip-presets-live-centered-screen-20260513t0655z` (16s, 1080x1920)
+- READY — `media/renders/dejKxLu_iM0-01-come-on-let-s-go-we-ve-got-a-punchy.mp4` → `media/post-ready-review/dejkxlu-im0-01-come-on-let-s-go-we-ve-got-a-punchy` (64s, 1080x1920)
+- READY — `media/renders/dejKxLu_iM0-02-let-me-fix-this-let-me-get-punchy.mp4` → `media/post-ready-review/dejkxlu-im0-02-let-me-fix-this-let-me-get-punchy` (64s, 1080x1920)
+- READY — `media/renders/dejKxLu_iM0-03-quite-an-easy-one-actually-let-s-go-punchy.mp4` → `media/post-ready-review/dejkxlu-im0-03-quite-an-easy-one-actually-let-s-go-punchy` (64s, 1080x1920)
+- READY — `media/renders/dejKxLu_iM0-abb121-stop-overbuilding-and-ship-the-workflow-punchy-captions.mp4` → `media/post-ready-review/dejkxlu-im0-abb121-stop-overbuilding-and-ship-the-workflow-punchy-captions` (63s, 1080x1920)
+- READY — `media/renders/stream-2-03-it-s-a-big-day-it-s-a-big-punchy.mp4` → `media/post-ready-review/stream-2-03-it-s-a-big-day-it-s-a-big-punchy` (31s, 1080x1920)
+- READY — `media/renders/stream-2-ai-agents-actually-work-blur-pulse-underlay-20260513T1247Z.mp4` → `media/post-ready-review/stream-2-ai-agents-actually-work-blur-pulse-underlay-20260513t1247z` (28s, 1080x1920)
+- READY — `media/renders/stream-2-big-day-sprint-centered-screen-20260512T2117Z.mp4` → `media/post-ready-review/stream-2-big-day-sprint-centered-screen-20260512t2117z` (30s, 1080x1920)
+- READY — `media/renders/stream-2-c28d72-double-check-the-streams-we-ve-been-cool-facecam-right.mp4` → `media/post-ready-review/stream-2-c28d72-double-check-the-streams-we-ve-been-cool-facecam-right` (36s, 1080x1920)
+- READY — `media/renders/stream-2-d44d5c-stop-overbuilding-and-ship-the-workflow-facecam-smart.mp4` → `media/post-ready-review/stream-2-d44d5c-stop-overbuilding-and-ship-the-workflow-facecam-smart` (12s, 1080x1920)
+- READY — `media/renders/stream-2-f17815-ai-agents-that-actually-do-work-facecam-right.mp4` → `media/post-ready-review/stream-2-f17815-ai-agents-that-actually-do-work-facecam-right` (28s, 1080x1920)
+- READY — `media/renders/stream-2-focused-12s-centered-screen.mp4` → `media/post-ready-review/stream-2-focused-12s-centered-screen` (12s, 1080x1920)
+- READY — `media/renders/stream-2-huge-day-mic-fixed-facecam-smart-20260512T2235Z.mp4` → `media/post-ready-review/stream-2-huge-day-mic-fixed-facecam-smart-20260512t2235z` (18s, 1080x1920)
+- READY — `media/renders/stream-2-more-agents-work-offstream-centered-screen-20260512T2131Z.mp4` → `media/post-ready-review/stream-2-more-agents-work-offstream-centered-screen-20260512t2131z` (16s, 1080x1920)
+- READY — `media/renders/stream-2-more-billion-company-no-experience-centered-screen-20260512T2131Z.mp4` → `media/post-ready-review/stream-2-more-billion-company-no-experience-centered-screen-20260512t2131z` (24s, 1080x1920)
+- READY — `media/renders/stream-2-more-black-screen-flop-centered-screen-20260512T2131Z.mp4` → `media/post-ready-review/stream-2-more-black-screen-flop-centered-screen-20260512t2131z` (22s, 1080x1920)
+- READY — `media/renders/stream-2-more-fix-mic-then-build-centered-screen-20260512T2131Z.mp4` → `media/post-ready-review/stream-2-more-fix-mic-then-build-centered-screen-20260512t2131z` (29s, 1080x1920)
+- READY — `media/renders/stream-2-more-live-no-leaks-prompt-centered-screen-20260512T2131Z.mp4` → `media/post-ready-review/stream-2-more-live-no-leaks-prompt-centered-screen-20260512t2131z` (28s, 1080x1920)
+- READY — `media/renders/stream-2-more-same-name-or-new-name-centered-screen-20260512T2131Z.mp4` → `media/post-ready-review/stream-2-more-same-name-or-new-name-centered-screen-20260512t2131z` (27s, 1080x1920)
+- READY — `media/renders/stream-2-more-social-setup-plan-centered-screen-20260512T2131Z.mp4` → `media/post-ready-review/stream-2-more-social-setup-plan-centered-screen-20260512t2131z` (30s, 1080x1920)
+- READY — `media/renders/stream-2-no-leaks-centered-screen-final.mp4` → `media/post-ready-review/stream-2-no-leaks-centered-screen-final` (12s, 1080x1920)
+- READY — `media/renders/stream-2-second-clip-facecam-smart.mp4` → `media/post-ready-review/stream-2-second-clip-facecam-smart` (28s, 1080x1920)
+- READY — `media/renders/stream-2-should-i-rename-the-channel-facecam-smart-20260513T0738Z.mp4` → `media/post-ready-review/stream-2-should-i-rename-the-channel-facecam-smart-20260513t0738z` (34s, 1080x1920)
+- READY — `media/renders/stream-2-thumbnail-looking-mid-facecam-smart-20260513T0002Z.mp4` → `media/post-ready-review/stream-2-thumbnail-looking-mid-facecam-smart-20260513t0002z` (17s, 1080x1920)
+- READY — `media/renders/stream-2-thumbnail-quality-check-facecam-smart-20260513T0304Z.mp4` → `media/post-ready-review/stream-2-thumbnail-quality-check-facecam-smart-20260513t0304z` (17s, 1080x1920)
+- READY — `media/renders/stream-2-youtube-progress-centered-screen-final-v2.mp4` → `media/post-ready-review/stream-2-youtube-progress-centered-screen-final-v2` (12s, 1080x1920)
+- READY — `media/renders/stream2-mic-check-before-the-build-centered-screen-20260513T0642Z.mp4` → `media/post-ready-review/stream2-mic-check-before-the-build-centered-screen-20260513t0642z` (28s, 1080x1920)
+
+## NEEDS-FIX
+- NEEDS-FIX — `media/renders/day3-uploading-the-clip-live-centered-screen-20260513T0655Z.mp4` → `media/post-ready-review/day3-uploading-the-clip-live-centered-screen-20260513t0655z` — privacy-risk filename: upload UI may expose channel/account details; human visual review required
+- NEEDS-FIX — `media/renders/stream-2-secure-vps-setup-facecam-smart-20260513T0600Z.mp4` → `media/post-ready-review/stream-2-secure-vps-setup-facecam-smart-20260513t0600z` — privacy-risk filename: VPS/security setup should get human visual review before upload
+- NEEDS-FIX — `media/renders/stream-2-social-accounts-setup-facecam-smart-20260513T0430Z.mp4` → `media/post-ready-review/stream-2-social-accounts-setup-facecam-smart-20260513t0430z` — privacy-risk filename: social-account setup may expose account/session details; human visual review required
+
+## SKIP / DUPLICATE / TEMP
+- SKIP — `media/renders/day3-ai-building-more-ai-centered-screen-20260513T0642Z.mp4` — duplicate/older variant of day3-ai-building-more-ai-facecam-smart-20260513T0647Z.mp4
+- SKIP — `media/renders/day3-make-ai-chat-feel-honest-centered-screen-20260513T1437Z.mp4` — duplicate/older variant of day3-make-ai-chat-feel-honest-facecam-smart-20260513T1427Z.mp4
+- SKIP — `media/renders/day3-product-or-content-machine-centered-screen-20260513T0642Z.mp4` — duplicate/older variant of day3-product-or-content-machine-facecam-smart-20260513T0647Z.mp4
+- SKIP — `media/renders/day3-quality-first-local-first-centered-screen-20260513T0642Z.mp4` — duplicate/older variant of day3-quality-first-local-first-facecam-smart-20260513T0647Z.mp4
+- SKIP — `media/renders/day3-ship-this-to-everyone-now-facecam-smart-20260513T1117Z.mp4` — duplicate/older variant of day3-ship-this-to-everyone-now-facecam-smart-v2-20260513T1117Z.mp4
+- SKIP — `media/renders/day3-the-facecam-is-missing-facecam-tracked-smoke-20260513T0900Z.mp4` — duplicate/older variant of day3-the-facecam-is-missing-facecam-smart-20260513T0642Z.mp4; proof/test render, not upload candidate
+- SKIP — `media/renders/day3-the-facecam-is-missing-facecam-tracked-v2-20260513T0905Z.mp4` — duplicate/older variant of day3-the-facecam-is-missing-facecam-smart-20260513T0642Z.mp4
+- SKIP — `media/renders/dejKxLu_iM0-01-stop-overbuilding-and-ship-the-workflow-punchy.mp4` — duplicate/older variant of dejKxLu_iM0-abb121-stop-overbuilding-and-ship-the-workflow-punchy-captions.mp4
+- SKIP — `media/renders/dejKxLu_iM0-01-stop-overbuilding-and-ship-the-workflow.mp4` — duplicate/older variant of dejKxLu_iM0-abb121-stop-overbuilding-and-ship-the-workflow-punchy-captions.mp4
+- SKIP — `media/renders/dejKxLu_iM0-02-come-on-let-s-go-we-ve-got-a-punchy.mp4` — duplicate/older variant of dejKxLu_iM0-01-come-on-let-s-go-we-ve-got-a-punchy.mp4
+- SKIP — `media/renders/dejKxLu_iM0-02-stop-overbuilding-and-ship-the-workflow.mp4` — duplicate/older variant of dejKxLu_iM0-abb121-stop-overbuilding-and-ship-the-workflow-punchy-captions.mp4
+- SKIP — `media/renders/dejKxLu_iM0-03-stop-overbuilding-and-ship-the-workflow-punchy.mp4` — duplicate/older variant of dejKxLu_iM0-abb121-stop-overbuilding-and-ship-the-workflow-punchy-captions.mp4
+- SKIP — `media/renders/dejKxLu_iM0-03-stop-overbuilding-and-ship-the-workflow.mp4` — duplicate/older variant of dejKxLu_iM0-abb121-stop-overbuilding-and-ship-the-workflow-punchy-captions.mp4
+- SKIP — `media/renders/dejKxLu_iM0-abb121-stop-overbuilding-and-ship-the-workflow-no-captions.mp4` — duplicate/older variant of dejKxLu_iM0-abb121-stop-overbuilding-and-ship-the-workflow-punchy-captions.mp4; explicit no-captions render
+- SKIP — `media/renders/dejKxLu_iM0-facecam-right-test-stop-overbuilding.mp4` — proof/test render, not upload candidate
+- SKIP — `media/renders/stream-2-01-stop-overbuilding-and-ship-the-workflow-punchy.mp4` — duplicate/older variant of stream-2-d44d5c-stop-overbuilding-and-ship-the-workflow-facecam-smart.mp4
+- SKIP — `media/renders/stream-2-02-ai-agents-that-actually-do-work-punchy.mp4` — duplicate/older variant of stream-2-f17815-ai-agents-that-actually-do-work-facecam-right.mp4
+- SKIP — `media/renders/stream-2-ai-agents-actually-work-terminal-grid-underlay-20260513T1200Z.mp4` — duplicate/older variant of stream-2-ai-agents-actually-work-blur-pulse-underlay-20260513T1247Z.mp4
+- SKIP — `media/renders/stream-2-d44d5c-stop-overbuilding-and-ship-the-workflow-facecam-right.mp4` — duplicate/older variant of stream-2-d44d5c-stop-overbuilding-and-ship-the-workflow-facecam-smart.mp4
+- SKIP — `media/renders/stream-2-focused-12s-facecam-fixed.mp4` — duplicate/older variant of stream-2-focused-12s-centered-screen.mp4
+- SKIP — `media/renders/stream-2-hook-card-12s-proof-v2.mp4` — duplicate/older variant of stream-2-hook-card-12s-proof-v4.mp4; proof/test render, not upload candidate
+- SKIP — `media/renders/stream-2-hook-card-12s-proof-v3.mp4` — duplicate/older variant of stream-2-hook-card-12s-proof-v4.mp4; proof/test render, not upload candidate
+- SKIP — `media/renders/stream-2-hook-card-12s-proof-v4.mp4` — proof/test render, not upload candidate
+- SKIP — `media/renders/stream-2-hook-card-12s-proof.mp4` — duplicate/older variant of stream-2-hook-card-12s-proof-v4.mp4; proof/test render, not upload candidate
+- SKIP — `media/renders/stream-2-huge-day-mic-fixed-centered-screen-20260512T2230Z.mp4` — duplicate/older variant of stream-2-huge-day-mic-fixed-facecam-smart-20260512T2235Z.mp4
+- SKIP — `media/renders/stream-2-no-leaks-centered-screen-v2.mp4` — duplicate/older variant of stream-2-no-leaks-centered-screen-final.mp4
+- SKIP — `media/renders/stream-2-no-leaks-centered-screen-v3.mp4` — duplicate/older variant of stream-2-no-leaks-centered-screen-final.mp4
+- SKIP — `media/renders/stream-2-no-leaks-centered-screen-v4.mp4` — duplicate/older variant of stream-2-no-leaks-centered-screen-final.mp4
+- SKIP — `media/renders/stream-2-no-leaks-centered-screen.mp4` — duplicate/older variant of stream-2-no-leaks-centered-screen-final.mp4
+- SKIP — `media/renders/stream-2-no-leaks-x-square.mp4` — duplicate/older variant of stream-2-no-leaks-centered-screen-final.mp4
+- SKIP — `media/renders/stream-2-second-clip-facecam-smart-lowerfill-20260513T0130Z.mp4` — duplicate/older variant of stream-2-second-clip-facecam-smart.mp4
+- SKIP — `media/renders/stream-2-second-clip-hook-card.mp4` — duplicate/older variant of stream-2-second-clip-facecam-smart.mp4
+- SKIP — `media/renders/stream-2-should-i-rename-the-channel-centered-screen-20260513T0730Z.mp4` — duplicate/older variant of stream-2-should-i-rename-the-channel-facecam-smart-20260513T0738Z.mp4
+- SKIP — `media/renders/stream-2-smart-pip-proof.mp4` — duplicate/older variant of stream-2-hook-card-12s-proof-v4.mp4; proof/test render, not upload candidate
+- SKIP — `media/renders/stream-2-thumbnail-quality-check-centered-screen-20260513T0300Z.mp4` — duplicate/older variant of stream-2-thumbnail-quality-check-facecam-smart-20260513T0304Z.mp4
+- SKIP — `media/renders/stream-2-youtube-progress-centered-screen-final.mp4` — duplicate/older variant of stream-2-youtube-progress-centered-screen-final-v2.mp4
+- SKIP — `media/renders/stream-2-youtube-progress-centered-screen-v2.mp4` — duplicate/older variant of stream-2-youtube-progress-centered-screen-final-v2.mp4
+- SKIP — `media/renders/stream-2-youtube-progress-centered-screen-v3.mp4` — duplicate/older variant of stream-2-youtube-progress-centered-screen-final-v2.mp4
+- SKIP — `media/renders/stream-2-youtube-progress-centered-screen-v4.mp4` — duplicate/older variant of stream-2-youtube-progress-centered-screen-final-v2.mp4
+- SKIP — `media/renders/stream-2-youtube-progress-centered-screen.mp4` — duplicate/older variant of stream-2-youtube-progress-centered-screen-final-v2.mp4
+- SKIP — `media/renders/failed/dejKxLu_iM0-01-stop-overbuilding-and-ship-the-workflow.mp4.failed-20260512T054237Z` — failed render artifact
+- SKIP — `media/renders/failed/dejKxLu_iM0-02-ai-agents-that-actually-do-work.mp4.failed-20260512T054237Z` — failed render artifact
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-20260513/01-card.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-20260513/02-seg.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-20260513/03-card.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-20260513/04-seg.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-20260513/05-card.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-20260513/06-seg.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-20260513/07-card.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-20260513/08-seg.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-20260513/09-card.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-20260513/10-seg.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-20260513/11-card.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-20260513/12-seg.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-v2-20260513T1100Z/01-card.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-v2-20260513T1100Z/02-seg.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-v2-20260513T1100Z/03-card.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-v2-20260513T1100Z/04-seg.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-v2-20260513T1100Z/05-card.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-v2-20260513T1100Z/06-seg.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-v2-20260513T1100Z/07-card.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-v2-20260513T1100Z/08-seg.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-v2-20260513T1100Z/09-card.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-v2-20260513T1100Z/10-seg.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-v2-20260513T1100Z/11-card.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-v2-20260513T1100Z/12-seg.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-v2-20260513T1100Z/13-card.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-v2-20260513T1100Z/14-seg.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-v3-20260513T1500Z/00-intro.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-v3-20260513T1500Z/01-hook.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-v3-20260513T1500Z/02-problem.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-v3-20260513T1500Z/03-blocker.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-v3-20260513T1500Z/04-build.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-v3-20260513T1500Z/05-stakes.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-v3-20260513T1500Z/06-result.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-v3-20260513T1500Z/07-next.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/.tmp-day3-product-content-machine-v3-20260513T1500Z/99-outro.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/day3-product-content-machine-20260513.mp4` — long-form render outside low-res clip sweep
+- SKIP — `media/renders/long-form/day3-product-content-machine-v2-20260513T1100Z.mp4` — long-form render outside low-res clip sweep
+- SKIP — `media/renders/long-form/day3-product-content-machine-v3-20260513T1500Z.mp4` — long-form render outside low-res clip sweep
+- SKIP — `media/renders/long-form/stream-2-founder-story-prototype-20260513-work/01-card.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/stream-2-founder-story-prototype-20260513-work/02-seg.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/stream-2-founder-story-prototype-20260513-work/03-card.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/stream-2-founder-story-prototype-20260513-work/04-seg.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/stream-2-founder-story-prototype-20260513-work/05-card.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/stream-2-founder-story-prototype-20260513-work/06-seg.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/stream-2-founder-story-prototype-20260513-work/07-card.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/stream-2-founder-story-prototype-20260513-work/08-seg.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/stream-2-founder-story-prototype-20260513-work/09-card.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/stream-2-founder-story-prototype-20260513-work/10-seg.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/stream-2-founder-story-prototype-20260513-work/11-card.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/stream-2-founder-story-prototype-20260513-work/12-seg.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/stream-2-founder-story-prototype-20260513-work/13-card.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/stream-2-founder-story-prototype-20260513-work/14-seg.mp4` — long-form temp segment/work file
+- SKIP — `media/renders/long-form/stream-2-founder-story-prototype-20260513.mp4` — long-form render outside low-res clip sweep

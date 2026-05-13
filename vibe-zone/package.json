@@ -11,7 +11,11 @@
     "api": "node server/server.mjs",
     "dev:full": "node scripts/dev-full.mjs",
     "pipeline:finish-upload": "node scripts/finish-upload-pipeline.mjs",
-    "start": "node server/server.mjs"
+    "clip:test-second": "node scripts/render-stream2-second-clip.mjs",
+    "clip:review": "node scripts/review-render.mjs",
+    "start": "node server/server.mjs",
+    "media:cleanup-unused": "node scripts/cleanup-unused-media.mjs",
+    "media:cleanup-unused:apply": "node scripts/cleanup-unused-media.mjs --apply"
   },
   "dependencies": {
     "react": "^19.2.6",
