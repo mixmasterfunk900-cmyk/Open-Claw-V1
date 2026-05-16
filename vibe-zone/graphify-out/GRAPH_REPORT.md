@@ -1,7 +1,7 @@
 # Graph Report - vibe-zone  (2026-05-16)
 
 ## Corpus Check
-- 166 files · ~181,434 words
+- 166 files · ~181,528 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `98d26193`
+- Built from commit: `c365ae17`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -289,8 +289,8 @@ Cohesion: 0.05
 Nodes (24): ActivityEvent, Agent, initialLabAgents, JobStatus, LabAgent, LabAgentStatus, labIcons, labTasks (+16 more)
 
 ### Community 4 - "Community 4"
-Cohesion: 0.18
-Nodes (17): addJob(), addMediaJob(), commandExists(), fetchTextOrThrow(), generateThumbnailConcepts(), id(), loadDb(), mediaProbe() (+9 more)
+Cohesion: 0.21
+Nodes (15): addJob(), addMediaJob(), commandExists(), fetchTextOrThrow(), generateThumbnailConcepts(), id(), mediaProbe(), resolveChannelId() (+7 more)
 
 ### Community 5 - "Community 5"
 Cohesion: 0.07
@@ -661,8 +661,8 @@ Cohesion: 0.2
 Nodes (8): dbPath, finishBundle(), probe, result, review, root, run(), seo
 
 ### Community 98 - "Community 98"
-Cohesion: 0.29
-Nodes (11): clipDispatchSeed(), createDispatchItem(), dispatchReplacementKey(), dispatchStatusForClip(), ensureCurrentStyleGateReadyDispatchItems(), expectedDispatchProofFrames(), isCurrentStyleGateReady(), normalizeDispatchItem() (+3 more)
+Cohesion: 0.23
+Nodes (13): clipDispatchSeed(), createDispatchItem(), dispatchReplacementKey(), dispatchStatusForClip(), ensureCurrentStyleGateReadyDispatchItems(), expectedDispatchProofFrames(), isCurrentStyleGateReady(), loadDb() (+5 more)
 
 ### Community 99 - "Community 99"
 Cohesion: 0.15

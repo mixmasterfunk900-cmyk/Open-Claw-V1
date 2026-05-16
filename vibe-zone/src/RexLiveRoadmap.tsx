@@ -171,6 +171,9 @@ function TrexAgentLabDashboard() {
   const selected = agents.find((agent) => agent.id === selectedId) || agents[0]
   const rexLevel = Math.max(1, Math.floor(completed / 4) + 1)
   const rexXp = completed % 4
+  const workingCount = agents.filter((agent) => agent.status === 'working').length
+  const idleCount = agents.filter((agent) => agent.status === 'idle').length
+  const errorCount = agents.filter((agent) => agent.status === 'error').length
   useEffect(() => {
     const timer = window.setInterval(() => {
       setAgents((current) => current.map((agent) => {
@@ -196,8 +199,43 @@ function TrexAgentLabDashboard() {
     return () => window.clearInterval(timer)
   }, [])
   return <section className="trex-live-lab" aria-label="T-Rex Agent Lab live board">
-    <div className="trex-lab-head"><div><p className="eyebrow">Live agent habitat</p><h2>T‑REX Agent Lab</h2><span>Click a Sim to inspect its brain. This is the live dashboard, not the standalone prototype.</span></div><div className="trex-lab-meter"><strong>Rex Lv {rexLevel}</strong><i><b style={{ width: `${(rexXp / 4) * 100}%` }} /></i><small>{completed} lab tasks completed</small></div></div>
-    <div className="trex-lab-grid-shell"><div className="trex-lab-board">{agents.map((agent) => <button key={agent.id} type="button" className={`trex-lab-agent ${agent.status} ${agent.id === selected.id ? 'selected' : ''}`} style={{ left: `${((agent.x + 0.5) / 12) * 100}%`, top: `${((agent.y + 0.5) / 8) * 100}%` }} onClick={() => setSelectedId(agent.id)} aria-label={`Inspect ${agent.name}, ${agent.role}, ${agent.status}`}><span>{labIcons[agent.id] || '🤖'}</span><strong>{agent.name}</strong></button>)}</div><aside className="trex-brain-panel"><p className="eyebrow">Brain inspector</p><div className="brain-title"><h3>{selected.name}</h3><em className={selected.status}>{selected.status}</em></div><p>{selected.role}</p><div className="brain-task"><small>Current task</small><strong>{selected.currentTask}</strong></div><div className="brain-xp"><span>Lv {selected.level}</span><i><b style={{ width: `${(selected.xp / 10) * 100}%` }} /></i><span>{selected.xp}/10 XP</span></div><div className="brain-modules">{selected.modules.map((module) => <span key={module}>{module}</span>)}</div><div className="brain-logs">{selected.logs.map((log, index) => <p key={`${log}-${index}`}>› {log}</p>)}</div></aside></div>
+    <div className="trex-lab-head">
+      <div>
+        <p className="eyebrow">Live agent habitat</p>
+        <h2>T‑REX Agent Lab</h2>
+        <span>Click a Sim to inspect its brain. This is the live dashboard, not the standalone prototype.</span>
+      </div>
+      <div className="trex-lab-meter">
+        <strong>Rex Lv {rexLevel}</strong>
+        <i><b style={{ width: `${(rexXp / 4) * 100}%` }} /></i>
+        <small>{completed} lab tasks completed</small>
+      </div>
+    </div>
+    <div className="trex-habitat-strip" aria-label="Rex area live systems">
+      <span><strong>{workingCount}</strong><small>working bots</small></span>
+      <span><strong>{idleCount}</strong><small>standing by</small></span>
+      <span><strong>{errorCount}</strong><small>needs QA</small></span>
+      <span><strong>24/7</strong><small>stream-safe watch</small></span>
+    </div>
+    <div className="trex-lab-grid-shell">
+      <div className="trex-lab-board" aria-label="Rex area room map">
+        <div className="trex-room-wall trex-wall-intake"><strong>INTAKE BAY</strong><small>Telegram → Planner</small></div>
+        <div className="trex-room-wall trex-wall-qa"><strong>QA GATE</strong><small>Controller checks</small></div>
+        <div className="trex-room-wall trex-wall-media"><strong>MEDIA BENCH</strong><small>Concepts + clips</small></div>
+        <div className="trex-room-core"><span>🦖</span><strong>Rex Core</strong><small>memory · taste · build loop</small></div>
+        <div className="trex-room-dock"><span>queue</span><span>build</span><span>review</span><span>ship</span></div>
+        {agents.map((agent) => <button key={agent.id} type="button" className={`trex-lab-agent ${agent.status} ${agent.id === selected.id ? 'selected' : ''}`} style={{ left: `${((agent.x + 0.5) / 12) * 100}%`, top: `${((agent.y + 0.5) / 8) * 100}%` }} onClick={() => setSelectedId(agent.id)} aria-label={`Inspect ${agent.name}, ${agent.role}, ${agent.status}`}><span>{labIcons[agent.id] || '🤖'}</span><strong>{agent.name}</strong></button>)}
+      </div>
+      <aside className="trex-brain-panel">
+        <p className="eyebrow">Brain inspector</p>
+        <div className="brain-title"><h3>{selected.name}</h3><em className={selected.status}>{selected.status}</em></div>
+        <p>{selected.role}</p>
+        <div className="brain-task"><small>Current task</small><strong>{selected.currentTask}</strong></div>
+        <div className="brain-xp"><span>Lv {selected.level}</span><i><b style={{ width: `${(selected.xp / 10) * 100}%` }} /></i><span>{selected.xp}/10 XP</span></div>
+        <div className="brain-modules">{selected.modules.map((module) => <span key={module}>{module}</span>)}</div>
+        <div className="brain-logs">{selected.logs.map((log, index) => <p key={`${log}-${index}`}>› {log}</p>)}</div>
+      </aside>
+    </div>
   </section>
 }
 
