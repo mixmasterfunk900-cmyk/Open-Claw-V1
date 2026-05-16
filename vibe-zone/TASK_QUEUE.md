@@ -59,6 +59,7 @@
 1. [done] Add Render Short action on Clip Factory candidates with source-duration guardrails.
 2. [done] Add export bundles for approved rendered clips (`upload-card.md`, metadata, checklist).
 3. [done] Add render preset selector UI beyond the default punchy captions preset.
+4. [done] Refreshed Stream 2 `Make The Project Move While I’m Offline` as `Build While I Sleep` with a custom screen-card-safe fallback after facecam-smart and stock centered-screen review blockers; final ready render/bundle use the `20260513T1700Z` tight variant.
 
 ## API setup reminder
 - [pending] Remind Masala later to set up API keys/providers for higher-quality embeddings, image generation, and optional platform integrations. For now prefer local Ollama/no-API paths.
@@ -67,3 +68,9 @@
 1. [done] Added `npm run media:cleanup-unused` and `npm run media:cleanup-unused:apply` to archive SKIP/DUPLICATE/TEMP media from `POST_READY_REVIEW_MANIFEST.md` into timestamped `media/archive/cleanup-*` backups instead of hard-deleting.
 2. [done] Archived the first unused-media batch: 95 duplicate/temp/failed artifacts, 645.3 MB, report at `media/archive/cleanup-20260513T161054Z/cleanup-report.json`.
 3. [active] Planning/PM cycle now includes a cleanup dry-run/check before selecting the next builder task.
+
+## Style regression fix
+1. [active] Masala caught that recent clips drifted into square-face / blue-card style. Suspend previous READY labels until visual house-style recheck.
+2. [done] Created corrected clean house-style proof: `media/renders/stream-2-build-the-clip-machine-live-house-style-clean-20260513T1827Z.mp4`.
+3. [next] Rerender priority clips with house style: VIBE ZONE branding, white text, screen/context-first, no blue card artifact. Keep square face box as optional variant only.
+4. [active] Fix broken/missing captions on the Stream 2 “Build The Clip Machine Live” clip family before any READY label returns.

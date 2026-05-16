@@ -2,6 +2,7 @@
 
 ## Critical / high
 - Source file `media/downloads/dejKxLu_iM0.mp4` appears partial/corrupt: metadata says ~90:09, but packet scan/Whisper only reach ~25:28. Need complete re-upload or resume from PC before using late sections from that source.
+- `/api/health` now detects the newest stream `_R2pPID8N-o` (“Day 4 - Vibe Coding A $1 BILLION COMPANY - LIVE!!”) but local source/transcript/captions are missing. Import/download locally before rendering Day 4 clips; do not use cookies or external posting without approval.
 - VPS YouTube extraction is blocked by HTTP 429/bot-check across safe public strategies; continue using local companion/upload import unless Masala explicitly approves a specific cookie step.
 - Clip ranking now has a first-pass exact-title/nearby-hook dedupe, but full semantic/topic diversity still needs embeddings or topic clustering.
 

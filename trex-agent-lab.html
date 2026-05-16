@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>T‑REX Agent Lab</title>
+  <meta name="description" content="A Sims-style command center where AI agents work as tiny lab characters and a T‑rex mascot evolves with their progress." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="lab-shell" data-app>
+    <header class="lab-header" aria-labelledby="app-title">
+      <div>
+        <p class="eyebrow">OpenClaw · Local command habitat</p>
+        <h1 id="app-title">T‑REX Agent Lab</h1>
+      </div>
+      <div class="header-stats" aria-label="Global lab statistics">
+        <span><strong id="active-count">0</strong> active</span>
+        <span><strong id="task-count">0</strong> tasks</span>
+        <span><strong id="alert-count">0</strong> alerts</span>
+      </div>
+    </header>
+
+    <main class="lab-layout">
+      <section class="board-card" aria-labelledby="board-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Live floor</p>
+            <h2 id="board-title">Agent Habitat</h2>
+          </div>
+          <div class="board-legend" aria-label="Agent status legend">
+            <span class="legend-dot idle"></span> Idle
+            <span class="legend-dot working"></span> Working
+            <span class="legend-dot error"></span> Error
+          </div>
+        </div>
+
+        <div class="board-wrap">
+          <div id="agent-board" class="agent-board" role="group" aria-label="12 by 8 T‑rex agent lab board"></div>
+          <div class="lab-prop prop-reactor" aria-hidden="true">CORE</div>
+          <div class="lab-prop prop-terminal" aria-hidden="true">QUEUE</div>
+          <div class="lab-prop prop-incubator" aria-hidden="true">EGG‑01</div>
+        </div>
+      </section>
+
+      <aside class="inspector-card" aria-labelledby="inspector-title">
+        <div class="section-heading compact">
+          <div>
+            <p class="eyebrow">Click an agent</p>
+            <h2 id="inspector-title">Brain Inspector</h2>
+          </div>
+        </div>
+        <div id="brain-inspector" class="brain-inspector" aria-live="polite"></div>
+      </aside>
+    </main>
+
+    <section class="trex-strip" aria-labelledby="trex-title">
+      <div class="trex-avatar" id="trex-avatar" aria-hidden="true">
+        <span class="trex-body">🦖</span>
+        <span class="trex-aura"></span>
+      </div>
+      <div class="trex-copy">
+        <p class="eyebrow">Evolution strip</p>
+        <h2 id="trex-title">Rex is <span id="trex-mood">curious</span></h2>
+        <p id="trex-summary">The lab is warming up. Agents are looking for their first win.</p>
+      </div>
+      <div class="trex-meter" aria-label="T‑rex evolution progress">
+        <div class="meter-label">
+          <span id="trex-level">Lv. 1</span>
+          <span id="trex-xp">0 / 12 XP</span>
+        </div>
+        <div class="meter-track"><div id="trex-progress" class="meter-fill"></div></div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

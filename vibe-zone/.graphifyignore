@@ -1,0 +1,15 @@
+node_modules/
+dist/
+media/
+.venv-*/
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+graphify-out/manifest.json
+graphify-out/cost.json

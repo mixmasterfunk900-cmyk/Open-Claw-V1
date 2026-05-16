@@ -1,0 +1,674 @@
+{
+  "/root/.openclaw/workspace/vibe-zone/eslint.config.js": {
+    "mtime": 1778528242.2920196,
+    "hash": "0355276bc79439afe3c53e3a2470ca1e"
+  },
+  "/root/.openclaw/workspace/vibe-zone/vite.config.ts": {
+    "mtime": 1778529110.2043686,
+    "hash": "626d63ab37dd83872b870f4facf16197"
+  },
+  "/root/.openclaw/workspace/vibe-zone/server/server.mjs": {
+    "mtime": 1778873385.4761143,
+    "hash": "e487345c854b6f242c235bfaf7fe613b"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-fulltime-247-build-house-v4c-20260515T0918Z.mjs": {
+    "mtime": 1778836666.7052813,
+    "hash": "c68df2cf2533efa969f6eead00d1415a"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-social-to-vps-plan-house-v3-privacycrop-20260514T0452Z.mjs": {
+    "mtime": 1778742815.587583,
+    "hash": "e0f49959931630ccb751f556dadf7e52"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-day3-platform-creates-content-house-v3-20260513T2104Z.mjs": {
+    "mtime": 1778706359.0779436,
+    "hash": "0e5e339a40b9eb17fe8df4f5d03b20d9"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/finish-upload-pipeline.mjs": {
+    "mtime": 1778604094.0584075,
+    "hash": "1aefc6955bae17952603bb62dfe0f868"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/fix-live-retention-border-20260515T0700Z.mjs": {
+    "mtime": 1778828612.435922,
+    "hash": "7f7725fac9d941c163e6e78f14d8b465"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-thumbnail-seed-frame-test-20260514T1648Z.mjs": {
+    "mtime": 1778776954.0590916,
+    "hash": "3a61f8927186c1dae30e071815f4871c"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/cleanup-unused-media.mjs": {
+    "mtime": 1778733080.442131,
+    "hash": "73b30c97e55cd55fc75a4aca68df1319"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/generate-real-thumbnail-singles-20260514T1115Z.mjs": {
+    "mtime": 1778757170.0375564,
+    "hash": "fb2ad0da56532222df75d1227f890453"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-thumbnail-looks-mid-house-v3-20260514T1125Z.mjs": {
+    "mtime": 1778758023.289297,
+    "hash": "5b5e25a645ce23f61168ec8e81be718b"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-project-moves-offstream-house-v4b-20260515T0625Z.mjs": {
+    "mtime": 1778825902.782162,
+    "hash": "94d2fd97436f988d616419f923829c34"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-project-moves-offstream-house-v4-20260515T0613Z.mjs": {
+    "mtime": 1778825724.0076823,
+    "hash": "ff2714010af4f3506199338aaa09e1c8"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/register-day4-clickable-thumbnails-20260515T1349Z.mjs": {
+    "mtime": 1778853095.7400808,
+    "hash": "76dd69fe653609090c9e23c64e90c278"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-border-shine-test-v2-20260514T1540Z.mjs": {
+    "mtime": 1778774338.9470923,
+    "hash": "2021210e8669612e09c3afaa58528241"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/apply-day4-single-frame-thumbnails-20260515T1410Z.mjs": {
+    "mtime": 1778854127.5808938,
+    "hash": "621bf4a89dcde0d08131b1465cc0b49b"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-project-progress-offline-house-v3-20260513T2234Z.mjs": {
+    "mtime": 1778711782.71249,
+    "hash": "6962c54037c48e65beb7c18c9c67bd93"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/stream2-offline-agent-rerender-20260513T1634Z.mjs": {
+    "mtime": 1778690183.810837,
+    "hash": "f66c22bf3dbceb86fbeb4471891d6efd"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs": {
+    "mtime": 1778833674.283683,
+    "hash": "d57f55d0b7fd0d0d708522bcdf4d093a"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-secure-vps-openclaw-house-v4-20260514T1940Z.mjs": {
+    "mtime": 1778787645.3747475,
+    "hash": "dc008465a56d3274dce3086b93202b97"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-big-day-house-v3-20260514T0347Z.mjs": {
+    "mtime": 1778730636.8715136,
+    "hash": "a928ca599a6741ccb0f8b8d72ef6b281"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-rename-channel-house-v3-20260514T0217Z.mjs": {
+    "mtime": 1778725193.1078093,
+    "hash": "f14d383839b3178ca18cdc9fd966ca59"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-longform-day3-no-intro-fixed-captions-20260513T1845Z.mjs": {
+    "mtime": 1778698616.8725293,
+    "hash": "66271088007bbfbe6bf287e2ae3eeaa3"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-clip-machine-house-fixed-captions-20260513T1838Z.mjs": {
+    "mtime": 1778697359.651871,
+    "hash": "e35f5ce6fb28eca159133dae516889c2"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-longform-stream2-founder-tight-privacy-safe-20260514T1500Z.mjs": {
+    "mtime": 1778770935.1084,
+    "hash": "aa5fe5b625aa989475498fc62734c9e3"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/fix-live-title-safe-zone-20260515T0802Z.mjs": {
+    "mtime": 1778837694.415468,
+    "hash": "807696c136c928409cbd525b3d9d1e7a"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-longform-day3-clean-no-story-overlays-20260513T1918Z.mjs": {
+    "mtime": 1778699808.1923628,
+    "hash": "d64056e2da9fa015a7e888b01a96d436"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-border-shine-test-20260514T1535Z.mjs": {
+    "mtime": 1778774338.9480925,
+    "hash": "af6654619325ec2c90811a785f8ce87d"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream3-top10-fixed-template-20260514T1010Z.mjs": {
+    "mtime": 1778753882.418245,
+    "hash": "28a39a1b5cdbfdefc7ce4fe50b1a667e"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-project-moves-offstream-house-v4d-20260515T0645Z.mjs": {
+    "mtime": 1778827924.0383165,
+    "hash": "59342ef544ca85f0043b81560a470fd6"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-thumbnail-mid-house-v3-20260514T0004Z.mjs": {
+    "mtime": 1778717192.063758,
+    "hash": "a107d0f8252a6495973d1ade3521a542"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/batch-stream3-gotham-seed-overlay-audiofix-20260514T1805Z.mjs": {
+    "mtime": 1778781697.6783397,
+    "hash": "a0f95e297bcb9872bb978e2570b28ae9"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs": {
+    "mtime": 1778741429.4318166,
+    "hash": "99b756211603f94a9479098a50b140ec"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/day3-ship-everyone-20260513T1117Z.mjs": {
+    "mtime": 1778671230.5051289,
+    "hash": "9ce82d0f20caa7f09e6963e74d0f860e"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-live-no-leaks-house-v3-20260514T0517Z.mjs": {
+    "mtime": 1778742815.587583,
+    "hash": "be6f0197baaa1bfc475c65bb0771d783"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-template-trial-20260514T0800Z.mjs": {
+    "mtime": 1778748315.571678,
+    "hash": "d61b441dc283abd3488e657874cc2b80"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-phone-controls-build-house-v3-20260514T1510Z.mjs": {
+    "mtime": 1778771486.1100137,
+    "hash": "40b4bc37013102fd3a29c0b160025d16"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-thumbnail-looks-mid-template-20260514T0852Z.mjs": {
+    "mtime": 1778750331.8741555,
+    "hash": "e2c106fe0e60837d9a08c14fd1b7ff99"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-ai-still-working-house-v3-20260514T1208Z.mjs": {
+    "mtime": 1778760712.9977133,
+    "hash": "11f12ed15473f516178d2c260fb8a705"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-day3-three-original-clips-v2-20260513T2024Z.mjs": {
+    "mtime": 1778703853.840247,
+    "hash": "2706400bac30fced4278540f28653e2b"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-project-moves-offstream-house-v4e-20260515T0655Z.mjs": {
+    "mtime": 1778828234.9278426,
+    "hash": "47f9cce94009fcba18a3258ef1ec180e"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-longform-stream2-founder-upload-candidate-20260514T0300Z.mjs": {
+    "mtime": 1778727757.248197,
+    "hash": "ad8c5353bd4b7201440b3ad6de264e37"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/day3-manual-clips-20260513T0947Z.mjs": {
+    "mtime": 1778665857.8068633,
+    "hash": "e9256712d83acb1e72d0e15b70178230"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-longform-day3-fast-privacy-safe-20260515T0710Z.mjs": {
+    "mtime": 1778829278.7323697,
+    "hash": "7fdcf24270fd4da7c645e1b20c38a020"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/fix-longform-thumbnail-lab-subtitles-20260515.mjs": {
+    "mtime": 1778830098.3930793,
+    "hash": "12197ede48ee4f0b3bac685bf140fccd"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-day3-honest-agent-house-v3-20260513T2147Z.mjs": {
+    "mtime": 1778709184.8760388,
+    "hash": "7d890f150055aa2132ee9fbc6a87cc53"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/day3-no-sleep-shipping-rerender-20260513T1512Z.mjs": {
+    "mtime": 1778684893.2596955,
+    "hash": "767ba7cc393d40e5bfb2727c9ea6bcca"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-longform-stream2-founder-privacy-safe-20260514T1100Z.mjs": {
+    "mtime": 1778756590.6284945,
+    "hash": "e2307fa8a6d6fc40bd7b2e4963dc4741"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-general-face-seed-test-20260514T1718Z.mjs": {
+    "mtime": 1778779771.8428795,
+    "hash": "7a8ddd1a67c848f374cf10ef1c9e68cd"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-all-retention-hacks-test-20260514T1635Z.mjs": {
+    "mtime": 1778776497.6841087,
+    "hash": "ec80b37e12aa2643228c278b917a185e"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-build-clip-machine-restored-layout-20260513T2009Z.mjs": {
+    "mtime": 1778702923.0125132,
+    "hash": "f3f6caece114d386a6478750f9734877"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/vibe-download.mjs": {
+    "mtime": 1778558903.5318913,
+    "hash": "bfbd3677633b6011b5e03c70f64edd2a"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-fix-mic-huge-day-house-v4-20260515T0010Z.mjs": {
+    "mtime": 1778803869.569835,
+    "hash": "5f4fb2c83b3da2460e195e2eef60167c"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-day3-no-sleep-shipping-house-v3-20260513T2317Z.mjs": {
+    "mtime": 1778714351.3349633,
+    "hash": "bda071613e0878505580b9fb57e8bf0d"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-template-trial-no-leaks-house-v3-20260514T1338Z.mjs": {
+    "mtime": 1778766086.6322541,
+    "hash": "dcd0f9cd20ef491fdf7fde54891f10b0"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-solid-template-thumbnail-looks-mid-20260514T1615Z.mjs": {
+    "mtime": 1778775335.0865963,
+    "hash": "85e3b6499b683ab9e436e77fc938d0ac"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/generate-stream3-top10-word-timings-20260514T1035Z.py": {
+    "mtime": 1778754825.0997446,
+    "hash": "49a8714adad54e45e414df2a1beca048"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-day3-three-original-clips-20260513T2020Z.mjs": {
+    "mtime": 1778703695.4099495,
+    "hash": "d2a98ab01f8b693a50c9943ec39dfd22"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-fulltime-247-build-house-v4b-20260515T0913Z.mjs": {
+    "mtime": 1778836462.2114642,
+    "hash": "3748d96edbe6ab7539ff2d8e4d60c401"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-project-moves-offstream-house-v4f-20260515T0743Z.mjs": {
+    "mtime": 1778831131.1330242,
+    "hash": "29d36906ad412e04548b5d6d6041d038"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-longform-day3-upload-candidate-20260513T2300Z.mjs": {
+    "mtime": 1778713347.7846718,
+    "hash": "18ce16c1fc840b83b9a3e7e1d75be9ec"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream3-youtube-seed-upload-test-20260514T1725Z.mjs": {
+    "mtime": 1778779771.8428795,
+    "hash": "d790655ead54dbd7ddb14e8c38ff1eec"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-build-clip-machine-centered-logo-fix-20260513T1916Z.mjs": {
+    "mtime": 1778699605.7426083,
+    "hash": "f7da56db22b581964775d4b3d1eb2d7a"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/fix-live-title-clean-layer-20260515T0910Z.mjs": {
+    "mtime": 1778837448.0462344,
+    "hash": "dee1b05b7722f7b743dd9a22ffa3cc38"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-gotham-seed-frames-test-20260514T1658Z.mjs": {
+    "mtime": 1778777705.6454437,
+    "hash": "e56a365148680d36d28a5be6802c017a"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/clip-factory-batch-20260513.mjs": {
+    "mtime": 1778654566.6214082,
+    "hash": "0cc8ff1b92be759b9b3e7fe6fc2bd0bf"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-one-stream-shine-wrapped-heading-20260514T1600Z.mjs": {
+    "mtime": 1778774378.2434328,
+    "hash": "ecd27f5619833eb2d2dbb2c154402888"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-clip-machine-house-fixed-captions-20260513T1855Z.mjs": {
+    "mtime": 1778698308.624084,
+    "hash": "e37779259cdce0cb655db093a9c9fd45"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-longform-day3-v2-20260513T1100Z.mjs": {
+    "mtime": 1778670126.5583038,
+    "hash": "a3563407c06928330e97ab8bae1413a4"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-fulltime-247-build-house-v4-20260514T1820Z.mjs": {
+    "mtime": 1778784355.7399585,
+    "hash": "1068e561e562a24c8183347529abf492"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/day3-honest-ai-chat-20260513T1427Z.mjs": {
+    "mtime": 1778682306.5367522,
+    "hash": "8f2398949ee68525bedd39541aae81a1"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/post-ready-pack-new-20260513T1717Z.mjs": {
+    "mtime": 1778692779.838269,
+    "hash": "7014452b8eef04d3efd6fcc8cfd01dd6"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-longform-day3-tight-privacy-safe-20260514T2310Z.mjs": {
+    "mtime": 1778799975.8358684,
+    "hash": "8bac16513c8c849802e5a4f4938eb45e"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/batch-stream3-hard-audiofix-20260514T1838Z.mjs": {
+    "mtime": 1778785205.3683543,
+    "hash": "75aaf29cb346664d0937d6c693d8e3b4"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs": {
+    "mtime": 1778793191.6184356,
+    "hash": "a48741b68b5bd365c9432db69c20ff6c"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream3-new-params-seed-test-20260514T1730Z.mjs": {
+    "mtime": 1778779771.8408794,
+    "hash": "7857785eff2d1da68c8e4706764b7b6c"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/download-drive-file.mjs": {
+    "mtime": 1778652249.6526377,
+    "hash": "3044a5c1232fdeda9e8870b4b335021a"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream3-top10-strict-word-template-20260514T1035Z.mjs": {
+    "mtime": 1778755366.2427058,
+    "hash": "e2778154ff51227644bcadeead73cd88"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/dev-full.mjs": {
+    "mtime": 1778529098.5163777,
+    "hash": "13844c2f57dfaa9f5b70a81f444be954"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs": {
+    "mtime": 1778746883.4901702,
+    "hash": "e360073435c62af8a9e6b11b2a0aca62"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/check-caption-qa.mjs": {
+    "mtime": 1778698704.2822328,
+    "hash": "7a2bb9d424b8187e4eaabda9cacfa1d7"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-longform-day3-final-captions.mjs": {
+    "mtime": 1778693275.7535725,
+    "hash": "5d22155e6fddd9f8954312b3ac1f51a8"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-retention-hacks-clean-test-20260514T1645Z.mjs": {
+    "mtime": 1778776660.2005312,
+    "hash": "ce8155abd15fc0b19ad4ca44627d4ea9"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/review-render.mjs": {
+    "mtime": 1778827372.2818816,
+    "hash": "9218b04a9679908ffecd2aa0f658574d"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-build-while-i-sleep-house-v3-20260514T0047Z.mjs": {
+    "mtime": 1778720060.6275773,
+    "hash": "33590686f3ab3b8b851b7d5fc3967dcc"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-clip-machine-house-fixed-captions-20260513T1850Z.mjs": {
+    "mtime": 1778698257.1136825,
+    "hash": "60678bad4017f54be6463b74570a5094"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-second-clip.mjs": {
+    "mtime": 1778740980.4410334,
+    "hash": "ba3c0fc98cb90b6e784f71d7c8eee0bd"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-ai-agents-blur-pulse-20260513T1247Z.mjs": {
+    "mtime": 1778676625.1419365,
+    "hash": "928120b8b706c9cb5ca0c0dfb1d384a8"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-social-to-vps-plan-house-v3-20260514T0442Z.mjs": {
+    "mtime": 1778733648.5664504,
+    "hash": "80b939a3774744e0b483745b1aaea3c7"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/batch-stream3-gotham-seed-pipeline-20260514T1740Z.mjs": {
+    "mtime": 1778780806.7857933,
+    "hash": "b815d17db188bbc2e7a5c7f6ad68749b"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-build-clip-machine-logo-below-video-20260513T1929Z.mjs": {
+    "mtime": 1778700620.581301,
+    "hash": "15d1bfeaee648a0985406a364b72b505"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-project-moves-offstream-house-v4c-20260515T0635Z.mjs": {
+    "mtime": 1778825991.2178948,
+    "hash": "91b5c54283e2968063c40f078064e038"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-mic-first-company-second-house-v3-20260514T0742Z.mjs": {
+    "mtime": 1778744444.454365,
+    "hash": "8fcd0b361389b4ade0a23a61f0c12329"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-socials-to-vps-template-20260514T0910Z.mjs": {
+    "mtime": 1778750308.1629488,
+    "hash": "46ae7507b7582ec1844f0591bd0fce0d"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-longform-day3-v3-20260513T1500Z.mjs": {
+    "mtime": 1778684504.8915613,
+    "hash": "2c479bf4ef877999ff926c5023ae975f"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-start-posting-clips-template-20260514T0910Z.mjs": {
+    "mtime": 1778752333.9019349,
+    "hash": "b79e2e34e2518b670ad1b2d254b8f638"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/fix-live-retention-clean-seed-20260515T0712Z.mjs": {
+    "mtime": 1778829318.583696,
+    "hash": "4927f7e5d291014469fce59b7d6861ac"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/stream2-clip-machine-live-card-20260513T1804Z.mjs": {
+    "mtime": 1778695655.4474552,
+    "hash": "1c8d47b29a946814474dccdede8197e0"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-build-clip-machine-restored-layout-v2-20260513T2012Z.mjs": {
+    "mtime": 1778703005.5392005,
+    "hash": "8ca747823ef7811def9fc0675438e223"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-post-while-sleep-house-v3-20260514T1045Z.mjs": {
+    "mtime": 1778755256.1669056,
+    "hash": "38ef3a6edcd48c522eefafad54e6dd0f"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/batch-stream3-wrapped-title-audiofix-20260514T1820Z.mjs": {
+    "mtime": 1778782961.721759,
+    "hash": "09543fcc088cc127a37e18cfe37eb049"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-house-style-proof-20260513T1827Z.mjs": {
+    "mtime": 1778697139.3759978,
+    "hash": "3bdb49e944e43c9aa41beb8b17484c34"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-clip-machine-house-fixed-captions-20260513T1902Z.mjs": {
+    "mtime": 1778698397.0737789,
+    "hash": "49722c52d70d91c0f768ddc5d63d7e81"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/watch-stream2-upload.mjs": {
+    "mtime": 1778601368.894045,
+    "hash": "93d967943f555286036a23f82db46272"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/clip-factory-batch2-20260513.mjs": {
+    "mtime": 1778654710.7325993,
+    "hash": "f45d7d26689259f7857a8e7d5816f23c"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-ai-agents-house-style-v3-20260513T1942Z.mjs": {
+    "mtime": 1778701130.5645833,
+    "hash": "95d44a89cf8efd70b22db1b9d93fa733"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-thumbnail-looks-mid-house-v3-clean-retention-20260514T1640Z.mjs": {
+    "mtime": 1778776942.5569916,
+    "hash": "f38f3d86c7c5ebd52414d3424704cd70"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-masala-face-seed-test-20260514T1708Z.mjs": {
+    "mtime": 1778779771.8428795,
+    "hash": "a02b8ce3854256911530231be8dfb489"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/batch-stream3-raw-source-audiofix-20260514T1915Z.mjs": {
+    "mtime": 1778790523.2557204,
+    "hash": "411dc3577b253e2b2806652d31830d6e"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-longform-stream2-founder-fast-privacy-safe-20260515T0310Z.mjs": {
+    "mtime": 1778814709.8839304,
+    "hash": "3347936a7cc69c95a4ff42acc2f75ada"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-clips-first-vps-next-house-v4-20260515T0442Z.mjs": {
+    "mtime": 1778822870.5996938,
+    "hash": "2ef161cd4ef41752cd64a8129be0a8d2"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-day4-package-20260515T1310Z.mjs": {
+    "mtime": 1778851566.189001,
+    "hash": "c364bcdb4824a779da4c97f6d7728455"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-longform-day3-privacy-safe-20260514T1905Z.mjs": {
+    "mtime": 1778785570.171815,
+    "hash": "64c5ebc6381a21e754dbb7cb95194ea0"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-longform-day3-clean-captions-20260513T1900Z.mjs": {
+    "mtime": 1778698949.0602183,
+    "hash": "134e03d244be502267b8c253724fa630"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-clips-first-vps-next-house-v4b-20260515T0650Z.mjs": {
+    "mtime": 1778827924.0383165,
+    "hash": "e7a2d80793c92e84f0889fe887b20fc0"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/day3-no-sleep-shipping-20260513T1417Z.mjs": {
+    "mtime": 1778682138.6402037,
+    "hash": "3c070fdeb2e1cb57c7e2d33eac9f7c9b"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-border-shine-test-v3-20260514T1548Z.mjs": {
+    "mtime": 1778774338.9480925,
+    "hash": "52fd028e7ff2a50db51b7e1edfa282cb"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs": {
+    "mtime": 1778837063.4491541,
+    "hash": "7170ae6f20f7b693b9e48bab334af70f"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/day3-fresh-manual-clips-20260513T0815Z.mjs": {
+    "mtime": 1778660300.0923007,
+    "hash": "60c15ef8a07975f54130df73349bacb2"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/transcribe-faster-day4-20260515.py": {
+    "mtime": 1778849277.6234624,
+    "hash": "6c3682f06d3053b7acc1dd022bdf38eb"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-fix-mic-huge-day-house-v4-clean-20260515T0025Z.mjs": {
+    "mtime": 1778804006.5889328,
+    "hash": "4c6d6e692eb5430d97391e8aed267c4f"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-one-word-caption-proof-20260513T1908Z.mjs": {
+    "mtime": 1778698779.1818383,
+    "hash": "bf474afadc8cc0a9b470aaf41baf50ba"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-secure-vps-house-v3-20260514T0134Z.mjs": {
+    "mtime": 1778722771.7905989,
+    "hash": "57bdfc87cf26fdea094907c51e3de422"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-ai-agents-house-style-20260513T1934Z.mjs": {
+    "mtime": 1778700982.0503387,
+    "hash": "437f62226cb4127450a54fa4130b575c"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-ai-agents-house-style-v2-20260513T1938Z.mjs": {
+    "mtime": 1778701048.8048983,
+    "hash": "8a64530923a84577300f1226271d59d9"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-one-stream-shine-contrast-heading-20260514T1605Z.mjs": {
+    "mtime": 1778774609.9554281,
+    "hash": "1247b7fd328d77573667e84da81f843d"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-build-clip-machine-title-top-logo-below-20260513T1919Z.mjs": {
+    "mtime": 1778700117.621035,
+    "hash": "349c23adc4ade2c40ed9b12b262069dd"
+  },
+  "/root/.openclaw/workspace/vibe-zone/src/App.tsx": {
+    "mtime": 1778880206.0844512,
+    "hash": "37c3e5e91b8065ab1cdd11c23908b735"
+  },
+  "/root/.openclaw/workspace/vibe-zone/src/RexLiveRoadmap.tsx": {
+    "mtime": 1778840835.4570634,
+    "hash": "fb07d3ed51498a28ea868fe27b0fa80d"
+  },
+  "/root/.openclaw/workspace/vibe-zone/src/main.tsx": {
+    "mtime": 1778528242.2930198,
+    "hash": "787e5a07efeb2bf6209d5937195f2f68"
+  },
+  "/root/.openclaw/workspace/vibe-zone/lib/caption-normalizer.mjs": {
+    "mtime": 1778750344.2822635,
+    "hash": "d5e43d7501976480ff35344ed0de154d"
+  },
+  "/root/.openclaw/workspace/vibe-zone/GENERATED_UNDERLAY_AND_BLENDER_PLAN.md": {
+    "mtime": 1778670669.0311913,
+    "hash": "0c9c676603d45bf81cf1382bb407dcb6"
+  },
+  "/root/.openclaw/workspace/vibe-zone/CONFIRMED_TEMPLATE_01.md": {
+    "mtime": 1778854700.5547624,
+    "hash": "d91738cca3424b22d7e7bf6e57bce3dc"
+  },
+  "/root/.openclaw/workspace/vibe-zone/KNOWN_ISSUES.md": {
+    "mtime": 1778804104.5787194,
+    "hash": "bb5cba069d42c8311e200c77ce36f219"
+  },
+  "/root/.openclaw/workspace/vibe-zone/PRODUCT_SPEC.md": {
+    "mtime": 1778584441.256009,
+    "hash": "7f99dba1b082e1b5490c5bd461f684b4"
+  },
+  "/root/.openclaw/workspace/vibe-zone/X_GROWTH_AGENT_PLAN.md": {
+    "mtime": 1778694318.1061435,
+    "hash": "51e0ceaf0e9c10dc520ec3e423649f8f"
+  },
+  "/root/.openclaw/workspace/vibe-zone/AITOEARN_INTEGRATION_PLAN.md": {
+    "mtime": 1778732573.0791218,
+    "hash": "6920968cdd1fe7fdcc664e36dad7607e"
+  },
+  "/root/.openclaw/workspace/vibe-zone/CONTENT_HQ_MASTER_PLAN.md": {
+    "mtime": 1778584418.289823,
+    "hash": "488586963ee878c3211afb56ea073a96"
+  },
+  "/root/.openclaw/workspace/vibe-zone/COMPETITOR_GAP_REPORT.md": {
+    "mtime": 1778566261.0732577,
+    "hash": "fb2917b16f7077893f951da39e393fa6"
+  },
+  "/root/.openclaw/workspace/vibe-zone/UI_STYLE_LAB.md": {
+    "mtime": 1778655457.2607648,
+    "hash": "fe429d9b4d6e80d4c1fedea2266fe915"
+  },
+  "/root/.openclaw/workspace/vibe-zone/X_WRITING_AND_GROWTH_SOP.md": {
+    "mtime": 1778695341.7888033,
+    "hash": "f513489de1c992a87cbe01d7f59981ae"
+  },
+  "/root/.openclaw/workspace/vibe-zone/index.html": {
+    "mtime": 1778528457.7076237,
+    "hash": "f1288834b7f4e28d006e6b15e32107d3"
+  },
+  "/root/.openclaw/workspace/vibe-zone/POSTING_CREDENTIALS_READY.md": {
+    "mtime": 1778733231.0642166,
+    "hash": "b92e739204032452a119492a8cea320c"
+  },
+  "/root/.openclaw/workspace/vibe-zone/UX_REDESIGN_BRIEF.md": {
+    "mtime": 1778568526.007748,
+    "hash": "694c936485cf9a4e681692d121222b04"
+  },
+  "/root/.openclaw/workspace/vibe-zone/VIBE_ZONE_SHORT_TEMPLATE.md": {
+    "mtime": 1778775335.0845962,
+    "hash": "d65ca7837a4fae96b6109271db4e6ce4"
+  },
+  "/root/.openclaw/workspace/vibe-zone/PROJECT_STATE.md": {
+    "mtime": 1778663268.3748639,
+    "hash": "819167e4bbbf55f12075f67dee67a4dd"
+  },
+  "/root/.openclaw/workspace/vibe-zone/CONFIRMED_TEMPLATE_02.md": {
+    "mtime": 1778870115.8076425,
+    "hash": "10998ad0a916e7a62efefcba54f93da6"
+  },
+  "/root/.openclaw/workspace/vibe-zone/SOCIAL_AUTONOMY_PLAN.md": {
+    "mtime": 1778670598.3315556,
+    "hash": "8b787281edcbb320cde95d3d974a09f4"
+  },
+  "/root/.openclaw/workspace/vibe-zone/POST_READY_REVIEW_MANIFEST.md": {
+    "mtime": 1778839177.7866669,
+    "hash": "2987ec593366fb8958ffb23415551bbd"
+  },
+  "/root/.openclaw/workspace/vibe-zone/CAPTION_RULES.md": {
+    "mtime": 1778698631.163644,
+    "hash": "69d2e1fbeaab1008fa09987ef59b3fe4"
+  },
+  "/root/.openclaw/workspace/vibe-zone/LONG_FORM_STORY_WORKFLOW.md": {
+    "mtime": 1778829216.7588627,
+    "hash": "a82e3136a29760db80709f1091552084"
+  },
+  "/root/.openclaw/workspace/vibe-zone/SOCIAL_CONNECTIONS_WORKFLOW.md": {
+    "mtime": 1778737799.3025231,
+    "hash": "6453b0a2158af1f96a90af0bc1267ae9"
+  },
+  "/root/.openclaw/workspace/vibe-zone/TASK_QUEUE.md": {
+    "mtime": 1778697314.644488,
+    "hash": "1609d40907e58ea74f1f295c3a34bb8f"
+  },
+  "/root/.openclaw/workspace/vibe-zone/OPENSHORTS_EVAL.md": {
+    "mtime": 1778699089.4083645,
+    "hash": "2e5cba6f75325458e47bc573727cd1e8"
+  },
+  "/root/.openclaw/workspace/vibe-zone/MONEYPRINTERV2_EVAL.md": {
+    "mtime": 1778697903.5300162,
+    "hash": "3e8937a21a2c6e87d79bd4bf7011ad84"
+  },
+  "/root/.openclaw/workspace/vibe-zone/ARCHITECTURE_NOTES.md": {
+    "mtime": 1778588978.546031,
+    "hash": "06d99348d801ca571b002d5ce0615f08"
+  },
+  "/root/.openclaw/workspace/vibe-zone/README.md": {
+    "mtime": 1778562168.5628812,
+    "hash": "f4cfc10b51c6542183dfda9590e519fb"
+  },
+  "/root/.openclaw/workspace/vibe-zone/BUILDER_NEXT_TASK.md": {
+    "mtime": 1778836861.8340151,
+    "hash": "bd74460fc9d49d8ca287951d3c68e512"
+  },
+  "/root/.openclaw/workspace/vibe-zone/STYLE_REGRESSION_FIX.md": {
+    "mtime": 1778709382.7736614,
+    "hash": "067b54f996f3a32db03b34edb71204ee"
+  },
+  "/root/.openclaw/workspace/vibe-zone/VIDEOLINGO_SUBTITLE_EVAL.md": {
+    "mtime": 1778698105.3245163,
+    "hash": "ddcd2bb85a6ac59614e2f39c9f92919a"
+  },
+  "/root/.openclaw/workspace/vibe-zone/THUMBNAIL_LEARNING.md": {
+    "mtime": 1778654273.3099961,
+    "hash": "16b4b1d5efebc465e92371b86e23dc03"
+  },
+  "/root/.openclaw/workspace/vibe-zone/COMPLETED_WORK.md": {
+    "mtime": 1778687581.3176665,
+    "hash": "6d292683e0160388a5cf70650f8dab80"
+  },
+  "/root/.openclaw/workspace/vibe-zone/UX_AUDIT_AND_REDESIGN_PLAN.md": {
+    "mtime": 1778568768.7151594,
+    "hash": "0a47eaffb7e0e00bf76a909a7020686a"
+  },
+  "/root/.openclaw/workspace/vibe-zone/CURRENT_OBJECTIVE.md": {
+    "mtime": 1778836861.8340151,
+    "hash": "ffc32c852dd07eb9b861157d05cc145a"
+  },
+  "/root/.openclaw/workspace/vibe-zone/VIRAL_PATTERN_BACKLOG.md": {
+    "mtime": 1778826434.390572,
+    "hash": "fb7b8bc70bf70fa9b5c61f752ccd5b2f"
+  },
+  "/root/.openclaw/workspace/vibe-zone/PURGE_STAGING/DO_NOT_PURGE_WEBSITE_OR_TEMPLATES.md": {
+    "mtime": 1778839290.7965047,
+    "hash": "63187941deb242f35f79f2e91dbe93cf"
+  },
+  "/root/.openclaw/workspace/vibe-zone/public/favicon.svg": {
+    "mtime": 1778528242.2920196,
+    "hash": "7e840862161341271697daa99a40d76b"
+  }
+}

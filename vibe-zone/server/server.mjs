@@ -4,8 +4,10 @@ import { createReadStream, createWriteStream } from 'node:fs'
 import { execFile } from 'node:child_process'
 import { promisify } from 'node:util'
 import { pipeline } from 'node:stream/promises'
+import { randomUUID } from 'node:crypto'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { buildAss as buildNormalizedAss, buildShortWordEvents, qaCaptionEvents } from '../lib/caption-normalizer.mjs'
 
 const execFileAsync = promisify(execFile)
 
@@ -37,6 +39,44 @@ const defaultDb = {
   transcripts: [],
   clips: [],
   dispatchItems: [],
+  platformProfiles: [
+    { id: 'tiktok', label: 'TikTok', stage: 'ready', format: '9:16 short + caption + hashtags', note: 'Primary quantity test lane.' },
+    { id: 'youtube', label: 'YouTube Shorts', stage: 'ready', format: '9:16 short + title/description/tags', note: 'Promote TikTok winners and stream highlights.' },
+    { id: 'x', label: 'X / Twitter', stage: 'draft', format: 'build-in-public post + optional clip', note: 'Turn proven clips into lessons/reports.' },
+    { id: 'instagram', label: 'Instagram Reels', stage: 'draft', format: '9:16 reel + short caption', note: 'Reuse short bundle after safe-zone check.' },
+    { id: 'threads', label: 'Threads', stage: 'planned', format: 'short lesson thread', note: 'Repurpose X copy once tone is locked.' },
+    { id: 'linkedin', label: 'LinkedIn', stage: 'planned', format: 'creator/business lesson', note: 'Post product-building takeaways, not memes.' },
+    { id: 'facebook', label: 'Facebook', stage: 'planned', format: 'reel/video post', note: 'Later cross-post lane.' },
+    { id: 'pinterest', label: 'Pinterest', stage: 'planned', format: 'thumbnail/pin + link', note: 'Useful for evergreen tutorials.' },
+    { id: 'rednote', label: 'Rednote / Xiaohongshu', stage: 'planned', format: 'vertical video + notes', note: 'Hold until account/market strategy exists.' },
+  ],
+  scheduleItems: [
+    { id: 'morning-upload', label: 'Morning upload candidate', cadence: 'Daily first slot', status: 'ready' },
+    { id: 'lunch-experiment', label: 'Lunch experiment slot', cadence: 'Optional second short', status: 'draft' },
+    { id: 'evening-recap', label: 'Evening stream recap', cadence: 'After stream', status: 'draft' },
+    { id: 'next-day-winner', label: 'Next-day winner repost', cadence: 'Promote proven winner', status: 'planned' },
+  ],
+  engagementTasks: [
+    { id: 'comment-intent', label: 'Comment intent finder', mode: 'draft-only', status: 'ready' },
+    { id: 'reply-drafts', label: 'Reply draft writer', mode: 'draft-only', status: 'ready' },
+    { id: 'brand-watcher', label: 'Brand mention watcher', mode: 'manual-review', status: 'planned' },
+    { id: 'link-detector', label: 'High-conversion “link?” detector', mode: 'draft-only', status: 'planned' },
+  ],
+  monetizationOffers: [
+    { id: 'cpm', model: 'CPM', label: 'Views/reach tracking', status: 'tracking' },
+    { id: 'cpe', model: 'CPE', label: 'Comments/saves/clicks', status: 'planned' },
+    { id: 'cps', model: 'CPS', label: 'Deal/link attribution', status: 'planned' },
+  ],
+  socialConnectionState: {},
+  postingConnectors: [
+    { id: 'aitoearn', label: 'AiToEarn / relay', platforms: ['tiktok', 'youtube', 'x', 'instagram', 'facebook', 'threads', 'linkedin', 'pinterest'], mode: 'optional-relay', status: 'credentials-needed', requiredSecrets: ['AITOEARN_API_KEY'], note: 'Optional fastest route for marketplace/relay/MCP workflows.' },
+    { id: 'youtube', label: 'YouTube', platforms: ['youtube'], mode: 'official-api', status: 'credentials-needed', requiredSecrets: ['YOUTUBE_CLIENT_ID', 'YOUTUBE_CLIENT_SECRET', 'YOUTUBE_REFRESH_TOKEN'], note: 'Use for Shorts/video upload after OAuth approval.' },
+    { id: 'tiktok', label: 'TikTok', platforms: ['tiktok'], mode: 'official-api-or-browser-session', status: 'credentials-needed', requiredSecrets: ['TIKTOK_CLIENT_KEY', 'TIKTOK_CLIENT_SECRET'], note: 'Prefer official Content Posting API where available; otherwise owner-approved browser session.' },
+    { id: 'x', label: 'X / Twitter', platforms: ['x'], mode: 'official-api', status: 'credentials-needed', requiredSecrets: ['X_API_KEY', 'X_API_SECRET', 'X_ACCESS_TOKEN', 'X_ACCESS_SECRET'], note: 'Needed for build-in-public posts and clip attachments.' },
+    { id: 'meta', label: 'Instagram / Facebook / Threads', platforms: ['instagram', 'facebook', 'threads'], mode: 'meta-graph-api', status: 'credentials-needed', requiredSecrets: ['META_APP_ID', 'META_APP_SECRET', 'META_LONG_LIVED_TOKEN'], note: 'Requires connected pages/business assets for publishing.' },
+    { id: 'linkedin', label: 'LinkedIn', platforms: ['linkedin'], mode: 'official-api', status: 'credentials-needed', requiredSecrets: ['LINKEDIN_CLIENT_ID', 'LINKEDIN_CLIENT_SECRET', 'LINKEDIN_REFRESH_TOKEN'], note: 'Useful for product-building lessons.' },
+    { id: 'pinterest', label: 'Pinterest', platforms: ['pinterest'], mode: 'official-api', status: 'credentials-needed', requiredSecrets: ['PINTEREST_ACCESS_TOKEN'], note: 'Evergreen tutorial/thumbnail pin lane.' },
+  ],
   mediaJobs: [],
   viralFinds: [],
   chatMessages: [],
@@ -72,30 +112,44 @@ function send(res, status, body, headers = {}) {
 }
 
 
+async function listFilesRecursive(relativeDir, maxDepth = 1, depth = 0) {
+  const absoluteDir = path.join(root, relativeDir)
+  const entries = await readdir(absoluteDir, { withFileTypes: true }).catch(() => [])
+  const files = []
+  for (const entry of entries) {
+    const relativePath = path.posix.join(relativeDir, entry.name)
+    if (entry.isDirectory()) {
+      if (depth < maxDepth) files.push(...await listFilesRecursive(relativePath, maxDepth, depth + 1))
+      continue
+    }
+    if (!entry.isFile()) continue
+    const absolutePath = path.join(root, relativePath)
+    const info = await stat(absolutePath).catch(() => null)
+    if (info?.isFile()) files.push({ name: entry.name, relativePath, info })
+  }
+  return files
+}
+
 async function listMediaFiles() {
   await ensureMediaDirs()
   const groups = [
-    { kind: 'source', dir: 'media/downloads' },
-    { kind: 'transcript', dir: 'media/transcripts' },
-    { kind: 'render', dir: 'media/renders' },
-    { kind: 'export', dir: 'media/exports' },
+    { kind: 'source', dir: 'media/downloads', depth: 0 },
+    { kind: 'transcript', dir: 'media/transcripts', depth: 0 },
+    { kind: 'render', dir: 'media/renders', depth: 0 },
+    { kind: 'export', dir: 'media/exports', depth: 4 },
+    { kind: 'concept', dir: 'media/practice', depth: 4 },
   ]
   const files = []
   for (const group of groups) {
-    const absoluteDir = path.join(root, group.dir)
-    for (const name of await readdir(absoluteDir)) {
-      const absolutePath = path.join(absoluteDir, name)
-      const info = await stat(absolutePath).catch(() => null)
-      if (!info?.isFile()) continue
-      const relativePath = path.posix.join(group.dir, name)
+    for (const file of await listFilesRecursive(group.dir, group.depth)) {
       files.push({
-        name,
+        name: file.name,
         kind: group.kind,
-        path: relativePath,
-        url: `/${relativePath}`,
-        size: info.size,
-        updatedAt: info.mtime.toISOString(),
-        ...(group.kind === 'source' ? { validation: await validateMediaFile(relativePath, info) } : {}),
+        path: file.relativePath,
+        url: `/${file.relativePath}`,
+        size: file.info.size,
+        updatedAt: file.info.mtime.toISOString(),
+        ...(group.kind === 'source' ? { validation: await validateMediaFile(file.relativePath, file.info) } : {}),
       })
     }
   }
@@ -180,8 +234,141 @@ async function validateMediaFile(relativePath, info = null) {
   validationRuns.set(fingerprint.key, run)
   return run
 }
+const publicBaseUrl = () => String(process.env.VIBE_ZONE_PUBLIC_URL || process.env.PUBLIC_BASE_URL || `http://127.0.0.1:${port}`).replace(/\/$/, '')
+const hasEnv = (name) => Boolean(process.env[name])
+const providerConfigs = {
+  tiktok: {
+    label: 'TikTok', platform: 'tiktok', provider: 'TikTok Content Posting API', mode: 'OAuth 2.0 + Content Posting API',
+    scopes: ['user.info.basic', 'video.upload', 'video.publish'], requiredEnv: ['TIKTOK_CLIENT_KEY', 'TIKTOK_CLIENT_SECRET'],
+    authBase: 'https://www.tiktok.com/v2/auth/authorize/', clientEnv: 'TIKTOK_CLIENT_KEY', note: 'Primary short-form lane. Public direct posting may require TikTok app review; private/draft upload can be tested first.',
+  },
+  youtube: {
+    label: 'YouTube', platform: 'youtube', provider: 'Google OAuth', mode: 'OAuth 2.0 + YouTube Data API',
+    scopes: ['https://www.googleapis.com/auth/youtube.upload', 'https://www.googleapis.com/auth/youtube.readonly'], requiredEnv: ['YOUTUBE_CLIENT_ID', 'YOUTUBE_CLIENT_SECRET'],
+    authBase: 'https://accounts.google.com/o/oauth2/v2/auth', clientEnv: 'YOUTUBE_CLIENT_ID', note: 'Shorts/video upload lane. Requires Google OAuth consent setup.',
+  },
+  x: {
+    label: 'X / Twitter', platform: 'x', provider: 'X API', mode: 'OAuth/API app',
+    scopes: ['tweet.read', 'tweet.write', 'users.read', 'offline.access'], requiredEnv: ['X_API_KEY', 'X_API_SECRET'],
+    authBase: '', clientEnv: 'X_API_KEY', note: 'Build-in-public posts and clip attachments. OAuth implementation depends on chosen X API tier.',
+  },
+  meta: {
+    label: 'Instagram / Facebook / Threads', platform: 'meta', provider: 'Meta Graph API', mode: 'OAuth 2.0 + Graph API',
+    scopes: ['pages_show_list', 'pages_read_engagement', 'instagram_basic', 'instagram_content_publish'], requiredEnv: ['META_APP_ID', 'META_APP_SECRET'],
+    authBase: 'https://www.facebook.com/v20.0/dialog/oauth', clientEnv: 'META_APP_ID', note: 'Connects Meta assets for Reels/Page publishing. Needs page/business account selection after OAuth.',
+  },
+  linkedin: {
+    label: 'LinkedIn', platform: 'linkedin', provider: 'LinkedIn API', mode: 'OAuth 2.0',
+    scopes: ['openid', 'profile', 'w_member_social'], requiredEnv: ['LINKEDIN_CLIENT_ID', 'LINKEDIN_CLIENT_SECRET'],
+    authBase: 'https://www.linkedin.com/oauth/v2/authorization', clientEnv: 'LINKEDIN_CLIENT_ID', note: 'Product-building lesson lane after TikTok/YouTube/X are stable.',
+  },
+  pinterest: {
+    label: 'Pinterest', platform: 'pinterest', provider: 'Pinterest API', mode: 'OAuth 2.0',
+    scopes: ['boards:read', 'pins:read', 'pins:write'], requiredEnv: ['PINTEREST_CLIENT_ID', 'PINTEREST_CLIENT_SECRET'],
+    authBase: 'https://www.pinterest.com/oauth/', clientEnv: 'PINTEREST_CLIENT_ID', note: 'Evergreen tutorial/pin lane.',
+  },
+}
+function socialCallbackUrl(providerId) { return `${publicBaseUrl()}/api/social/callback/${providerId}` }
+function socialConnections(db) {
+  const state = db.socialConnectionState || {}
+  return Object.entries(providerConfigs).map(([id, config]) => {
+    const connected = state[id]?.connected === true
+    const oauthApproved = state[id]?.oauthApproved === true
+    const missingConfig = config.requiredEnv.filter((name) => !hasEnv(name))
+    return {
+      id,
+      label: config.label,
+      platform: config.platform,
+      provider: config.provider,
+      status: connected ? 'connected' : oauthApproved ? 'oauth_approved' : missingConfig.length ? 'needs_app_config' : config.authBase ? 'ready_to_connect' : 'planned',
+      scopes: config.scopes,
+      mode: config.mode,
+      callbackUrl: socialCallbackUrl(id),
+      connectedAt: state[id]?.connectedAt || '',
+      accountLabel: state[id]?.accountLabel || '',
+      missingConfig,
+      note: config.note,
+    }
+  })
+}
+function buildOAuthUrl(providerId, db) {
+  const config = providerConfigs[providerId]
+  if (!config) return { status: 404, body: { error: 'Unknown social provider.' } }
+  const missingConfig = config.requiredEnv.filter((name) => !hasEnv(name))
+  if (missingConfig.length) return { status: 400, body: { status: 'needs_app_config', message: `Set ${missingConfig.join(', ')} and restart Vibe Zone before connecting ${config.label}.`, missingConfig } }
+  if (!config.authBase) return { status: 400, body: { status: 'planned', message: `${config.label} needs a provider-specific OAuth implementation before browser login can start.` } }
+  const state = randomUUID()
+  db.socialConnectionState = db.socialConnectionState || {}
+  db.socialConnectionState[providerId] = { ...(db.socialConnectionState[providerId] || {}), pendingState: state, pendingAt: new Date().toISOString() }
+  const params = new URLSearchParams()
+  params.set('response_type', 'code')
+  params.set('client_id', process.env[config.clientEnv])
+  params.set('redirect_uri', socialCallbackUrl(providerId))
+  params.set('scope', config.scopes.join(providerId === 'youtube' ? ' ' : ','))
+  params.set('state', state)
+  if (providerId === 'youtube') { params.set('access_type', 'offline'); params.set('prompt', 'consent') }
+  return { status: 200, body: { status: 'opening_oauth', authUrl: `${config.authBase}?${params.toString()}`, message: `Opening ${config.label} login. Approve the permissions, then return to Vibe Zone.` } }
+}
 async function appState(db) {
-  return { ...db, mediaFiles: await listMediaFiles() }
+  const mediaFiles = await listMediaFiles()
+  return { ...db, mediaFiles, importReadiness: localImportReadiness(db, mediaFiles), postingReadiness: postingReadiness(db), socialConnections: socialConnections(db) }
+}
+const platformLimits = {
+  tiktok: { title: 150, description: 2200, hashtags: 20, videoMaxMb: 4096 },
+  youtube: { title: 100, description: 5000, tags: 500, videoMaxMb: 256000 },
+  x: { title: 280, description: 280, hashtags: 6, videoMaxMb: 512 },
+  instagram: { title: 2200, description: 2200, hashtags: 30, videoMaxMb: 4096 },
+  facebook: { title: 255, description: 63206, hashtags: 30, videoMaxMb: 10240 },
+  threads: { title: 500, description: 500, hashtags: 10, videoMaxMb: 4096 },
+  linkedin: { title: 3000, description: 3000, hashtags: 10, videoMaxMb: 5120 },
+  pinterest: { title: 100, description: 800, hashtags: 20, videoMaxMb: 2048 },
+  rednote: { title: 20, description: 1000, hashtags: 10, videoMaxMb: 2048 },
+}
+function platformLimit(platform) {
+  return platformLimits[platform] || platformLimits.tiktok
+}
+function dispatchCopyForValidation(item = {}, clip = null) {
+  return {
+    title: item.title || clip?.seo?.youtubeTitle || clip?.title || '',
+    description: clip?.seo?.description || clip?.seo?.tiktokDescription || clip?.caption || item.title || '',
+    hashtags: Array.isArray(clip?.hashtags) ? clip.hashtags : [],
+    tags: Array.isArray(clip?.seo?.tags) ? clip.seo.tags : [],
+  }
+}
+function validateDispatchForPlatform(item = {}, clip = null) {
+  const platform = item.platform || clip?.platform || 'tiktok'
+  const limits = platformLimit(platform)
+  const copy = dispatchCopyForValidation(item, clip)
+  const warnings = []
+  const blockers = []
+  if (!item.renderPath) blockers.push('Missing rendered video asset')
+  if (!item.exportBundlePath) blockers.push('Missing upload bundle')
+  if (copy.title.length > limits.title) warnings.push(`${platform} title is ${copy.title.length}/${limits.title} characters`)
+  if (copy.description.length > limits.description) warnings.push(`${platform} description is ${copy.description.length}/${limits.description} characters`)
+  if (limits.hashtags && copy.hashtags.length > limits.hashtags) warnings.push(`${platform} has ${copy.hashtags.length}/${limits.hashtags} hashtags`)
+  if (limits.tags && copy.tags.join(',').length > limits.tags) warnings.push(`${platform} tags exceed ${limits.tags} characters`)
+  if (['x', 'linkedin', 'threads'].includes(platform) && !copy.description) warnings.push(`${platform} needs a native text angle, not just the video file`)
+  return { platform, limits, copy, blockers, warnings, ok: !blockers.length && !warnings.length }
+}
+function postingReadiness(db) {
+  const connectors = Array.isArray(db.postingConnectors) && db.postingConnectors.length ? db.postingConnectors : defaultDb.postingConnectors
+  const dispatchItems = normalizeDispatchItems(db)
+  const clipsById = new Map((db.clips || []).map((clip) => [clip.id, clip]))
+  const approved = dispatchItems.filter((item) => item.status === 'approved_manual_upload' && !item.blockers?.length)
+  const validations = approved.slice(0, 40).map((item) => ({ id: item.id, title: item.title, ...validateDispatchForPlatform(item, clipsById.get(item.clipId) || null) }))
+  const platformsReady = [...new Set(approved.map((item) => item.platform || clipsById.get(item.clipId)?.platform || 'tiktok'))]
+  const missingCredentialConnectors = connectors.filter((connector) => connector.status !== 'connected')
+  return {
+    readyForCredentials: approved.length > 0 && validations.every((item) => !item.blockers.length),
+    approvedManualAssets: approved.length,
+    platformsReady,
+    connectors,
+    missingCredentialConnectors,
+    platformLimits,
+    validations,
+    nextCredentialStep: 'Create/store credentials outside chat, then connect one platform at a time starting with YouTube or TikTok.',
+    safetyGate: 'Posting remains disabled until owner explicitly provides credentials and approves first live post per platform.',
+  }
 }
 function mediaMatchKey(value = '') {
   return String(value || '')
@@ -215,8 +402,42 @@ function findStreamCaption(mediaFiles, stream) {
     && /\.(srt|vtt|ass)$/i.test(file.name)
     && matchesStreamArtifact(file, stream)) || null
 }
+function localImportReadiness(db, mediaFiles = []) {
+  const latestStream = latestStreamCandidate(db.videos) || null
+  const videoId = latestStream?.id || 'VIDEO_ID'
+  const expected = {
+    source: `media/downloads/${videoId}.mp4`,
+    transcript: `media/transcripts/${videoId}.txt`,
+    captions: [`media/transcripts/${videoId}.srt`, `media/transcripts/${videoId}.vtt`],
+  }
+  const latestSource = latestStream ? findStreamArtifact(mediaFiles, latestStream, 'source') : null
+  const latestTranscript = latestStream ? findStreamTranscriptText(mediaFiles, latestStream) : null
+  const latestCaption = latestStream ? findStreamCaption(mediaFiles, latestStream) : null
+  const sourceReady = Boolean(latestSource && latestSource.validation?.status !== 'partial')
+  const transcriptReady = Boolean(latestTranscript)
+  const captionsReady = Boolean(latestCaption)
+  const candidatesReady = Boolean((db.clips || []).some((clip) => clip.transcriptId === videoId || clip.sourceUrl === latestStream?.url))
+  const checklist = [
+    { id: 'detect', label: 'Newest stream detected', status: latestStream ? 'done' : 'blocked', detail: latestStream ? `${latestStream.title} (${latestStream.id})` : 'Run a public channel scan first.' },
+    { id: 'source', label: 'Local source provided', status: sourceReady ? 'done' : 'blocked', detail: sourceReady ? latestSource.path : `Expected ${expected.source}. Do not use cookies; upload/drop a local owner-provided file.` },
+    { id: 'transcript', label: 'Transcript imported', status: transcriptReady ? 'done' : sourceReady ? 'next' : 'blocked', detail: transcriptReady ? latestTranscript.path : `Expected ${expected.transcript}; use local Whisper/import after source is present.` },
+    { id: 'captions', label: 'Captions ready', status: captionsReady ? 'done' : transcriptReady ? 'next' : 'blocked', detail: captionsReady ? latestCaption.path : `Expected ${expected.captions.join(' or ')} for render review.` },
+    { id: 'candidates', label: 'Clip candidates ready', status: candidatesReady ? 'done' : captionsReady ? 'next' : 'blocked', detail: candidatesReady ? 'Newest-stream candidates exist in Clip Factory.' : 'Press “Import local transcript + score” after transcript/captions are present.' },
+  ]
+  const next = checklist.find((item) => item.status === 'next' || item.status === 'blocked') || checklist.at(-1)
+  return {
+    latestStream,
+    expected,
+    found: { source: latestSource, transcript: latestTranscript, caption: latestCaption },
+    checklist,
+    activeMediaJobs: (db.mediaJobs || []).filter((job) => ['running', 'queued'].includes(job.status)).length,
+    nextAction: next?.detail || 'Newest stream local ingest is ready for Clip Factory review.',
+    guardrail: 'Local-only handoff: no external posting, cookies, browser logins, or public services.',
+  }
+}
 async function healthState(db) {
   const mediaFiles = await listMediaFiles()
+  const importReadiness = localImportReadiness(db, mediaFiles)
   const latestStream = latestStreamCandidate(db.videos) || null
   const latestSource = latestStream ? findStreamArtifact(mediaFiles, latestStream, 'source') : null
   const latestTranscript = latestStream ? findStreamTranscriptText(mediaFiles, latestStream) : null
@@ -225,7 +446,7 @@ async function healthState(db) {
   const failedMediaJobs = db.mediaJobs.filter((job) => job.status === 'failed').slice(0, 5)
   const blockers = []
   if (!latestStream) blockers.push('No latest stream has been discovered yet; run a public YouTube scan first.')
-  if (latestStream && !latestSource) blockers.push(`Newest stream source ${latestStream.id} is missing; import/download this stream before rendering clips.`)
+  if (latestStream && !latestSource) blockers.push(`Newest stream source ${latestStream.id} is missing; upload/drop an owner-provided local source before rendering clips.`)
   if (latestSource?.validation?.status === 'partial') blockers.push(latestSource.validation.detail)
   if (latestStream && latestSource && !latestTranscript) blockers.push(`Newest stream source is present (${latestSource.name}), but transcript ${latestStream.id}.txt is missing; transcribe/import captions before clip scoring or rendering.`)
   if (latestStream && latestSource && latestTranscript && !latestCaption) blockers.push(`Transcript is present, but captions ${latestStream.id}.srt or ${latestStream.id}.vtt are missing; import captions before render review.`)
@@ -236,6 +457,7 @@ async function healthState(db) {
     latestSource: latestSource || null,
     latestTranscript: latestTranscript || null,
     latestCaption: latestCaption || null,
+    importReadiness,
     blockers,
     nextAction: blockers[0] || 'No immediate blocker detected; continue clip review, render presets, Viral Hunter, and dispatch workflow improvements.',
     counts: {
@@ -261,6 +483,64 @@ function contentTypeFor(file) {
     '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png', '.webp': 'image/webp',
   })[ext] || 'application/octet-stream'
 }
+
+function plainTextFromTranscriptPayload(payload) {
+  if (!payload) return ''
+  if (typeof payload === 'string') return payload
+  if (typeof payload.text === 'string') return payload.text
+  if (Array.isArray(payload.segments)) {
+    return payload.segments
+      .map((segment) => String(segment.text || '').trim())
+      .filter(Boolean)
+      .join('\n')
+  }
+  return ''
+}
+
+async function readTranscriptFile(relativePath) {
+  if (!relativePath) return ''
+  const absolutePath = path.resolve(root, relativePath)
+  if (!absolutePath.startsWith(root + path.sep)) return ''
+  const raw = await readFile(absolutePath, 'utf8').catch(() => '')
+  if (!raw) return ''
+  if (path.extname(relativePath).toLowerCase() === '.json') {
+    try { return plainTextFromTranscriptPayload(JSON.parse(raw)) } catch { return raw }
+  }
+  return raw
+}
+
+function inferredLongformTranscriptPath(concept = {}) {
+  const key = `${concept.sourceTranscriptId || ''} ${concept.sourceVideoPath || ''} ${concept.sourceTitle || ''}`.toLowerCase()
+  if (key.includes('day3') || key.includes('day-3') || key.includes('product-content-machine')) return 'media/transcripts/longform-corrected-20260515/base-clean.json'
+  if (key.includes('stream2') || key.includes('stream-2') || key.includes('founder-story')) return 'media/transcripts/longform-corrected-20260515/base-privacy-safe.json'
+  return ''
+}
+
+async function thumbnailTranscriptDownload(db, url, res) {
+  const videoPath = url.searchParams.get('videoPath') || ''
+  const conceptId = url.searchParams.get('conceptId') || ''
+  const concepts = db.thumbnailConcepts || []
+  const concept = concepts.find((item) => conceptId && item.id === conceptId)
+    || concepts.find((item) => videoPath && item.sourceVideoPath === videoPath)
+  if (!concept) return send(res, 404, { error: 'Thumbnail Lab video transcript not found.' })
+
+  const directTranscript = (db.transcripts || []).find((item) => item.id === concept.sourceTranscriptId)
+  const clipTranscriptId = (db.clips || []).find((item) => item.id === concept.sourceTranscriptId || item.id === concept.sourceClipId)?.transcriptId
+  const clipTranscript = clipTranscriptId ? (db.transcripts || []).find((item) => item.id === clipTranscriptId) : null
+  const text = plainTextFromTranscriptPayload(directTranscript || clipTranscript)
+    || await readTranscriptFile(concept.sourceTranscriptPath)
+    || await readTranscriptFile(inferredLongformTranscriptPath(concept))
+  if (!text.trim()) return send(res, 404, { error: 'Transcript text is not available for this Thumbnail Lab video yet.' })
+
+  const title = (concept.sourceTitle || 'thumbnail-lab-video').replace(/[^a-z0-9]+/gi, '-').replace(/^-|-$/g, '').toLowerCase() || 'thumbnail-lab-video'
+  const disposition = url.searchParams.get('download') === '1' ? 'attachment' : 'inline'
+  res.writeHead(200, {
+    'content-type': 'text/plain; charset=utf-8',
+    'content-disposition': `${disposition}; filename="${title}-full-transcript.txt"`,
+  })
+  res.end(text.trim() + '\n')
+}
+
 async function serveMedia(req, res) {
   const url = new URL(req.url, `http://${req.headers.host}`)
   const mediaRoot = path.join(root, 'media')
@@ -320,16 +600,130 @@ async function handleMediaUpload(req, res, db, url) {
 function normalizeClip(clip) {
   return { platform: 'tiktok', status: 'idea', exportedAt: null, ...clip }
 }
-const dispatchStatuses = new Set(['drafted', 'needs_owner_review', 'approved_manual_upload', 'posted_manual', 'blocked'])
+const dispatchStatuses = new Set(['drafted', 'needs_owner_review', 'approved_manual_upload', 'posted_manual', 'blocked', 'superseded'])
+const currentStyleGateReadyPathList = [
+  'media/renders/stream-2-build-clip-machine-restored-layout-v2-20260513T2012Z.mp4',
+  'media/renders/stream-2-ai-agents-real-work-house-style-v3-20260513T1942Z.mp4',
+  'media/renders/stream-2-project-progress-offline-house-v3-20260513T2234Z.mp4',
+  'media/renders/day3-platform-creates-content-house-v3-20260513T2104Z.mp4',
+  'media/renders/day3-honest-ai-chat-house-v3-20260513T2147Z.mp4',
+  'media/renders/day3-agent-loop-keeps-building-house-v3-20260513T2147Z.mp4',
+  'media/renders/day3-no-sleep-shipping-house-v3-20260513T2317Z.mp4',
+  'media/renders/stream-2-build-while-i-sleep-house-v3-20260514T0047Z.mp4',
+  'media/renders/stream-2-secure-vps-house-v3-20260514T0134Z.mp4',
+  'media/renders/stream-2-rename-channel-house-v3-20260514T0217Z.mp4',
+  'media/renders/stream-2-big-day-sprint-house-v3-20260514T0347Z.mp4',
+  'media/renders/stream-2-social-to-vps-plan-house-v3-privacycrop-20260514T0452Z.mp4',
+  'media/renders/stream-2-live-no-leaks-house-v3-20260514T0517Z.mp4',
+  'media/renders/stream-2-keep-stream-hide-secrets-house-v3-20260514T0608Z.mp4',
+  'media/renders/stream-2-black-screen-flop-house-v3-20260514T0647Z.mp4',
+  'media/renders/stream-2-mic-first-company-second-house-v3-20260514T0742Z.mp4',
+  'media/renders/stream-2-billion-company-no-experience-house-v3-20260514T0817Z.mp4',
+  'media/renders/stream2-start-posting-clips-template-20260514T0910Z.mp4',
+  'media/renders/stream-2-post-while-i-sleep-house-v3-20260514T1045Z.mp4',
+  'media/renders/thumbnail-looks-mid-house-v3-20260514T1125Z.mp4',
+  'media/renders/stream-2-ai-still-working-house-v3-20260514T1208Z.mp4',
+  'media/renders/template-trial-no-leaks-house-v3-20260514T1338Z.mp4',
+  'media/renders/stream-2-phone-controls-build-house-v3-20260514T1510Z.mp4',
+  'media/exports/READY_TO_SHIP_NOW/day3-top10-house-style-corrected-20260514T1855Z/01-day3-one-stream-many-clips-house-style.mp4',
+  'media/exports/READY_TO_SHIP_NOW/day3-top10-house-style-corrected-20260514T2030Z/02-day3-iphone-for-streamers-house-style.mp4',
+  'media/exports/READY_TO_SHIP_NOW/day3-top10-house-style-corrected-20260514T2118Z/03-day3-product-or-machine-house-style.mp4',
+  'media/exports/READY_TO_SHIP_NOW/day3-top10-house-style-corrected-20260514T2200Z/04-day3-ship-live-fix-later-house-style.mp4',
+  'media/exports/READY_TO_SHIP_NOW/day3-top10-house-style-corrected-20260514T2235Z/05-day3-first-auto-clip-house-style.mp4',
+  'media/exports/READY_TO_SHIP_NOW/day3-top10-house-style-corrected-20260514T2300Z/06-day3-ai-building-ai-house-style.mp4',
+  'media/exports/READY_TO_SHIP_NOW/day3-top10-house-style-corrected-20260514T2330Z/07-day3-practice-streaming-house-style.mp4',
+]
+const currentStyleGateReadyPaths = new Set(currentStyleGateReadyPathList)
+const currentStyleGateReadyBundleList = [
+  'media/exports/clip_stream2_build_clip_machine_restored_layout_v2_20260513T2012Z',
+  'media/exports/clip_stream2_ai_agents_real_work_house_style_v3_20260513T1942Z',
+  'media/exports/clip_stream2_project_progress_offline_house_v3_20260513T2234Z',
+  'media/exports/clip_day3-platform-creates-content-house-v3-20260513T2104Z',
+  'media/exports/clip_day3-honest-ai-chat-house-v3-20260513T2147Z',
+  'media/exports/clip_day3-agent-loop-keeps-building-house-v3-20260513T2147Z',
+  'media/exports/clip_day3-no-sleep-shipping-house-v3-20260513T2317Z',
+  'media/exports/clip_stream-2-build-while-i-sleep-house-v3-20260514T0047Z',
+  'media/exports/clip_stream-2-secure-vps-house-v3-20260514T0134Z',
+  'media/exports/clip_stream-2-rename-channel-house-v3-20260514T0217Z',
+  'media/exports/clip_stream-2-big-day-sprint-house-v3-20260514T0347Z',
+  'media/exports/clip_stream-2-social-to-vps-plan-house-v3-privacycrop-20260514T0452Z',
+  'media/exports/clip_stream-2-live-no-leaks-house-v3-20260514T0517Z',
+  'media/exports/clip_stream-2-keep-stream-hide-secrets-house-v3-20260514T0608Z',
+  'media/exports/clip_stream-2-black-screen-flop-house-v3-20260514T0647Z',
+  'media/exports/clip_stream-2-mic-first-company-second-house-v3-20260514T0742Z',
+  'media/exports/clip_stream-2-billion-company-no-experience-house-v3-20260514T0817Z',
+  'media/exports/clip_stream2-start-posting-clips-template-20260514T0910Z',
+  'media/exports/clip_stream-2-post-while-i-sleep-house-v3-20260514T1045Z',
+  'media/exports/clip_thumbnail-looks-mid-house-v3-20260514T1125Z',
+  'media/exports/clip_stream-2-ai-still-working-house-v3-20260514T1208Z',
+  'media/exports/clip_template-trial-no-leaks-house-v3-20260514T1338Z',
+  'media/exports/clip_stream-2-phone-controls-build-house-v3-20260514T1510Z',
+  'media/exports/READY_TO_SHIP_NOW/day3-top10-house-style-corrected-20260514T1855Z',
+  'media/exports/READY_TO_SHIP_NOW/day3-top10-house-style-corrected-20260514T2030Z',
+  'media/exports/clip_stream3_product_or_machine-house-style-corrected-20260514T2118Z',
+  'media/exports/clip_stream3_ship_live_fix_later-house-style-corrected-20260514T2200Z',
+  'media/exports/clip_stream3_first_auto_clip-house-style-corrected-20260514T2235Z',
+  'media/exports/clip_stream3_ai_building_ai-house-style-corrected-20260514T2300Z',
+  'media/exports/clip_stream3_practice_streaming-house-style-corrected-20260514T2330Z',
+]
+const currentStyleGateReadyBundles = new Set(currentStyleGateReadyBundleList)
+function isCurrentStyleGateReady(item = {}) {
+  const renderPath = item.renderPath || ''
+  const exportBundlePath = item.exportBundlePath || ''
+  return currentStyleGateReadyPaths.has(renderPath)
+    || currentStyleGateReadyBundles.has(exportBundlePath)
+    || /stream3-raw-source-audiofix-20260514T1915Z/.test(renderPath)
+    || /clip_stream3_.*-raw-source-audiofix-20260514T1915Z/.test(exportBundlePath)
+}
 function dispatchQueueSummary(items = []) {
+  const manifestReadyKeys = new Set(currentStyleGateReadyPathList.map((value) => path.posix.basename(value).replace(/\.mp4$/i, '')))
+  const visibleManifestKeys = new Set(items.filter(isCurrentStyleGateReady).map((item) => path.posix.basename(item.renderPath || '').replace(/\.mp4$/i, '')).filter((key) => manifestReadyKeys.has(key)))
+  const missingManifestReadyPaths = currentStyleGateReadyPathList.filter((value) => !visibleManifestKeys.has(path.posix.basename(value).replace(/\.mp4$/i, '')))
   return {
+    manifestReady: manifestReadyKeys.size,
+    manualReadyManifest: items.filter((item) => isCurrentStyleGateReady(item) && item.status === 'approved_manual_upload' && !item.blockers?.length).length,
+    missingManifestReady: missingManifestReadyPaths.length,
+    missingManifestReadyPaths,
     total: items.length,
     drafted: items.filter((item) => item.status === 'drafted').length,
     needsOwnerReview: items.filter((item) => item.status === 'needs_owner_review').length,
     approvedManualUpload: items.filter((item) => item.status === 'approved_manual_upload').length,
+    currentStyleGateReady: items.filter(isCurrentStyleGateReady).length,
+    styleSuspended: items.filter((item) => !isCurrentStyleGateReady(item) && item.blockers?.some((blocker) => /style gate/i.test(blocker))).length,
     postedManual: items.filter((item) => item.status === 'posted_manual').length,
-    blocked: items.filter((item) => item.status === 'blocked' || item.blockers?.length).length,
+    blocked: items.filter((item) => item.status === 'blocked' || (item.status !== 'superseded' && item.blockers?.length)).length,
+    superseded: items.filter((item) => item.status === 'superseded').length,
   }
+}
+function dispatchReplacementKey(item = {}) {
+  const haystack = [item.clipId, item.id, item.renderPath, item.exportBundlePath].filter(Boolean).join(' ')
+  const datedClip = haystack.match(/clip_([a-z0-9_]+?)_\d{8}T\d{4}Z/i)
+  if (datedClip) return datedClip[1].toLowerCase()
+  return ''
+}
+function reconcileDispatchReplacements(items) {
+  const readyByKey = new Map()
+  for (const item of items) {
+    const key = dispatchReplacementKey(item)
+    if (!key || item.status === 'blocked' || item.status === 'superseded' || item.blockers?.length || !item.renderPath || !item.exportBundlePath) continue
+    const current = readyByKey.get(key)
+    if (!current || String(item.updatedAt).localeCompare(String(current.updatedAt)) > 0) readyByKey.set(key, item)
+  }
+  return items.map((item) => {
+    if (item.status !== 'blocked' || !item.blockers?.length) return item
+    const replacement = readyByKey.get(dispatchReplacementKey(item))
+    if (!replacement || replacement.id === item.id) return item
+    return {
+      ...item,
+      status: 'superseded',
+      blockers: [],
+      replacedByDispatchId: replacement.id,
+      replacedByRenderPath: replacement.renderPath,
+      replacedByBundlePath: replacement.exportBundlePath,
+      lastAuditAction: `Replaced by ready rerender: ${replacement.title || replacement.id}`,
+      updatedAt: replacement.updatedAt || item.updatedAt,
+    }
+  })
 }
 function expectedDispatchProofFrames(clip) {
   if (clip.proofFrames?.length) return clip.proofFrames
@@ -367,6 +761,18 @@ function clipDispatchSeed(clip) {
 function normalizeDispatchItem(item, clip = null) {
   const seed = clip ? clipDispatchSeed(clip) : {}
   const next = { ...seed, ...item }
+  if (clip) {
+    if (clip.renderPath) next.renderPath = clip.renderPath
+    if (clip.exportBundlePath) next.exportBundlePath = clip.exportBundlePath
+    const proofFrames = expectedDispatchProofFrames(clip)
+    if (proofFrames.length) next.proofFrames = proofFrames
+    const blockers = []
+    if (!next.renderPath) blockers.push('Missing rendered asset')
+    if (!next.exportBundlePath) blockers.push('Missing local upload bundle')
+    if (next.exportBundlePath && !next.proofFrames?.length) blockers.push('Missing proof-frame metadata')
+    next.blockers = blockers
+    if (item?.status === 'blocked' && !blockers.length) next.status = dispatchStatusForClip(clip)
+  }
   next.id = next.id || (clip?.id ? `dispatch_${clip.id}` : id('dispatch'))
   next.clipId = next.clipId || clip?.id || ''
   next.title = next.title || clip?.title || 'Untitled asset'
@@ -374,6 +780,19 @@ function normalizeDispatchItem(item, clip = null) {
   next.status = dispatchStatuses.has(next.status) ? next.status : dispatchStatusForClip(clip || next)
   next.blockers = Array.isArray(next.blockers) ? next.blockers : []
   next.proofFrames = Array.isArray(next.proofFrames) ? next.proofFrames : []
+  if (isCurrentStyleGateReady(next)) {
+    next.ownerGateRequired = true
+    next.ownerGate = next.ownerGate || 'Final owner privacy/watch pass required before any public upload'
+    next.privacyWatchRequired = true
+    next.blockers = next.blockers.filter((blocker) => !/style gate|superseded|rejected blue-card|old facecam|low-text/i.test(blocker))
+    if (!next.blockers.length && next.status !== 'posted_manual') next.status = 'approved_manual_upload'
+    if (!next.lastAuditAction || /style gate|Seeded locally|Imported|Archived by house-style cleanup/i.test(next.lastAuditAction)) next.lastAuditAction = 'Current house-style gate passed — manual upload only after owner privacy/watch pass'
+  } else if (next.status === 'approved_manual_upload' || next.status === 'needs_owner_review') {
+    const styleBlocker = 'Style gate suspended: packaged legacy asset needs corrected house-style rerender/recheck before manual upload'
+    if (!next.blockers.some((blocker) => /style gate suspended/i.test(blocker))) next.blockers = [styleBlocker, ...next.blockers]
+    next.status = 'blocked'
+    if (!next.lastAuditAction || !/style gate suspended/i.test(next.lastAuditAction)) next.lastAuditAction = 'Style gate suspended legacy/package candidate; do not upload until rerendered/rechecked'
+  }
   next.createdAt = next.createdAt || seed.createdAt || new Date().toISOString()
   next.updatedAt = next.updatedAt || seed.updatedAt || next.createdAt
   next.lastAuditAction = next.lastAuditAction || 'Imported into local dispatch queue'
@@ -388,7 +807,52 @@ function normalizeDispatchItems(db) {
     const isPrimaryClipSeed = dispatchReadyClips.some((clip) => clip.id === key && item.id === `dispatch_${clip.id}`)
     if (!isPrimaryClipSeed) items.push(normalizeDispatchItem(item))
   }
-  return items.sort((a, b) => String(b.updatedAt).localeCompare(String(a.updatedAt))).slice(0, 200)
+  return reconcileDispatchReplacements(items).sort((a, b) => String(b.updatedAt).localeCompare(String(a.updatedAt))).slice(0, 200)
+}
+async function ensureCurrentStyleGateReadyDispatchItems(db) {
+  const items = normalizeDispatchItems(db)
+  const visibleKeys = new Set(items.map((item) => path.posix.basename(item.renderPath || '').replace(/\.mp4$/i, '')).filter(Boolean))
+  const additions = []
+  for (const [index, renderPath] of currentStyleGateReadyPathList.entries()) {
+    const renderKey = path.posix.basename(renderPath).replace(/\.mp4$/i, '')
+    if (visibleKeys.has(renderKey)) continue
+    const renderExists = await stat(path.join(root, renderPath)).then((info) => info.isFile()).catch(() => false)
+    if (!renderExists) continue
+    const exportBundlePath = currentStyleGateReadyBundleList[index] || ''
+    const bundleDir = exportBundlePath ? path.join(root, exportBundlePath) : ''
+    const bundleExists = bundleDir ? await stat(bundleDir).then((info) => info.isDirectory()).catch(() => false) : false
+    const bundleFiles = bundleExists ? await readdir(bundleDir).catch(() => []) : []
+    const uploadCopy = bundleExists ? await readFile(path.join(bundleDir, 'upload-card.md'), 'utf8')
+      .catch(() => readFile(path.join(bundleDir, 'upload-copy.md'), 'utf8'))
+      .catch(() => readFile(path.join(bundleDir, 'README.md'), 'utf8'))
+      .catch(() => '') : ''
+    const uploadTitle = uploadCopy.match(/^#\s*Upload (?:Bundle|Card)\s*[—-]\s*(.+)$/mi)?.[1]?.trim()
+    const proofFrames = bundleFiles
+      .filter((name) => /^proof-frame.*\.(jpe?g|png|webp)$/i.test(name))
+      .sort()
+      .map((name) => `${exportBundlePath}/${name}`)
+    const blockers = []
+    if (!bundleExists) blockers.push('Missing local upload bundle')
+    if (bundleExists && !uploadCopy) blockers.push('Upload card/copy is missing')
+    if (bundleExists && !proofFrames.length) blockers.push('Proof frame(s) missing')
+    additions.push(normalizeDispatchItem({
+      id: `dispatch_manifest_${renderKey}`.replace(/[^a-zA-Z0-9_-]/g, '_'),
+      clipId: `manifest_${renderKey}`,
+      title: uploadTitle || renderKey.replace(/[-_]+/g, ' '),
+      platform: 'tiktok',
+      status: blockers.length ? 'blocked' : 'approved_manual_upload',
+      renderPath,
+      exportBundlePath,
+      proofFrames,
+      blockers,
+      lastAuditAction: blockers.length ? `Recovered from current READY manifest with ${blockers.length} blocker(s)` : 'Recovered from current READY manifest and local bundle scan',
+      createdAt: new Date(0).toISOString(),
+      updatedAt: new Date().toISOString(),
+    }))
+    visibleKeys.add(renderKey)
+  }
+  db.dispatchItems = normalizeDispatchItems({ ...db, dispatchItems: [...additions, ...items] })
+  return additions.length
 }
 async function scanExportBundleDispatchItems(db) {
   const exportsDir = path.join(root, 'media/exports')
@@ -401,37 +865,42 @@ async function scanExportBundleDispatchItems(db) {
     if (known.has(bundlePath)) continue
     const metadataPath = path.join(exportsDir, entry.name, 'metadata.json')
     const metadata = await readFile(metadataPath, 'utf8').then((text) => JSON.parse(text)).catch(() => null)
-    if (!metadata) continue
-    const itemId = `dispatch_${metadata.id || entry.name}`.replace(/[^a-zA-Z0-9_-]/g, '_')
-    if (known.has(itemId) || known.has(metadata.id)) continue
-    const proofFrames = [
-      `${bundlePath}/proof-frame.jpg`,
-      `${bundlePath}/proof-frame-mid.jpg`,
-    ]
-    const missingProof = []
-    for (const frame of proofFrames) {
-      if (!await stat(path.join(root, frame)).then((info) => info.isFile()).catch(() => false)) missingProof.push(frame)
-    }
+    const uploadCopy = await readFile(path.join(exportsDir, entry.name, 'upload-copy.md'), 'utf8')
+      .catch(() => readFile(path.join(exportsDir, entry.name, 'upload-card.md'), 'utf8'))
+      .catch(() => '')
+    if (!metadata && !uploadCopy) continue
+    const uploadTitle = uploadCopy.match(/^#\s*Upload (?:Bundle|Card)\s*[—-]\s*(.+)$/mi)?.[1]?.trim()
+    const renderFromCopy = uploadCopy.match(/Render:\s*`?([^`\n]+?\.mp4)`?/i)?.[1]?.trim()
+    const renderPath = metadata?.renderPath
+      || (renderFromCopy?.startsWith('media/') ? renderFromCopy : renderFromCopy ? path.posix.join(bundlePath, path.posix.basename(renderFromCopy)) : '')
+    const itemId = `dispatch_${metadata?.id || entry.name}`.replace(/[^a-zA-Z0-9_-]/g, '_')
+    if (known.has(itemId) || (metadata?.id && known.has(metadata.id))) continue
+    const bundleFiles = await readdir(path.join(exportsDir, entry.name)).catch(() => [])
+    const proofFrames = bundleFiles
+      .filter((name) => /^proof-frame.*\.(jpe?g|png|webp)$/i.test(name))
+      .sort()
+      .map((name) => `${bundlePath}/${name}`)
     const blockers = []
-    if (!metadata.renderPath) blockers.push('Missing rendered asset path in metadata')
-    if (!await stat(path.join(root, metadata.renderPath || '')).then((info) => info.isFile()).catch(() => false)) blockers.push('Rendered asset file is missing')
-    if (!await stat(path.join(root, bundlePath, 'upload-card.md')).then((info) => info.isFile()).catch(() => false)) blockers.push('Upload card is missing')
-    if (!await stat(path.join(root, bundlePath, 'metadata.json')).then((info) => info.isFile()).catch(() => false)) blockers.push('Metadata JSON is missing')
-    if (missingProof.length) blockers.push('Proof frame(s) missing')
-    const platform = String(metadata.platform || metadata.platforms?.[0] || 'tiktok').includes('youtube') ? 'youtube' : 'tiktok'
+    if (!renderPath) blockers.push(metadata ? 'Missing rendered asset path in metadata' : 'Missing rendered asset path in upload copy')
+    if (!await stat(path.join(root, renderPath || '')).then((info) => info.isFile()).catch(() => false)) blockers.push('Rendered asset file is missing')
+    if (!await stat(path.join(root, bundlePath, 'upload-card.md')).then((info) => info.isFile()).catch(() => false)
+      && !await stat(path.join(root, bundlePath, 'upload-copy.md')).then((info) => info.isFile()).catch(() => false)) blockers.push('Upload card/copy is missing')
+    if (!metadata && !uploadCopy) blockers.push('Metadata JSON or upload-copy notes are missing')
+    if (!proofFrames.length) blockers.push('Proof frame(s) missing')
+    const platform = String(metadata?.platform || metadata?.platforms?.[0] || 'tiktok').includes('youtube') ? 'youtube' : 'tiktok'
     items.push(normalizeDispatchItem({
       id: itemId,
-      clipId: metadata.sourceClipId || metadata.id || entry.name,
-      title: metadata.title || entry.name.replace(/[-_]+/g, ' '),
+      clipId: metadata?.sourceClipId || metadata?.id || entry.name,
+      title: metadata?.title || uploadTitle || entry.name.replace(/[-_]+/g, ' '),
       platform,
       status: blockers.length ? 'blocked' : 'approved_manual_upload',
-      renderPath: metadata.renderPath || '',
+      renderPath,
       exportBundlePath: bundlePath,
-      proofFrames: missingProof.length ? [] : proofFrames,
+      proofFrames,
       blockers,
-      lastAuditAction: blockers.length ? `Seeded from upload bundle with ${blockers.length} blocker(s)` : 'Seeded from local upload bundle metadata',
-      createdAt: metadata.createdAt || new Date().toISOString(),
-      updatedAt: metadata.createdAt || new Date().toISOString(),
+      lastAuditAction: blockers.length ? `Seeded from upload bundle with ${blockers.length} blocker(s)` : metadata ? 'Seeded from local upload bundle metadata' : 'Seeded from local upload-copy bundle',
+      createdAt: metadata?.createdAt || new Date().toISOString(),
+      updatedAt: metadata?.createdAt || new Date().toISOString(),
     }))
   }
   if (!items.length) return db.dispatchItems
@@ -465,6 +934,12 @@ function normalizeDb(db) {
   db.transcripts = db.transcripts || []
   db.clips = (db.clips || []).map(normalizeClip)
   db.dispatchItems = normalizeDispatchItems(db)
+  db.platformProfiles = Array.isArray(db.platformProfiles) && db.platformProfiles.length ? db.platformProfiles : defaultDb.platformProfiles
+  db.scheduleItems = Array.isArray(db.scheduleItems) && db.scheduleItems.length ? db.scheduleItems : defaultDb.scheduleItems
+  db.engagementTasks = Array.isArray(db.engagementTasks) && db.engagementTasks.length ? db.engagementTasks : defaultDb.engagementTasks
+  db.monetizationOffers = Array.isArray(db.monetizationOffers) && db.monetizationOffers.length ? db.monetizationOffers : defaultDb.monetizationOffers
+  db.socialConnectionState = db.socialConnectionState && typeof db.socialConnectionState === 'object' ? db.socialConnectionState : {}
+  db.postingConnectors = Array.isArray(db.postingConnectors) && db.postingConnectors.length ? db.postingConnectors : defaultDb.postingConnectors
   db.mediaJobs = db.mediaJobs || []
   db.viralFinds = db.viralFinds || []
   db.chatMessages = db.chatMessages || []
@@ -646,41 +1121,21 @@ async function writeSpokenCaptionAss(videoId, clip, timeOffset = 0, placement = 
   const transcript = JSON.parse(await readFile(transcriptPath, 'utf8'))
   const clipStart = seconds(clip.start, 0)
   const clipEnd = seconds(clip.end, clipStart + 12)
-  const events = []
-  for (const segment of transcript.segments || []) {
-    if (segment.end < clipStart || segment.start >= clipEnd - 0.15) continue
-    const localStart = Math.max(0, Number(segment.start) - clipStart)
-    const localEnd = Math.max(localStart + 0.35, Math.min(clipEnd - clipStart, Number(segment.end) - clipStart))
-    if (placement === 'centered-screen' && localEnd - localStart < 0.45) continue
-    const chunks = captionChunks(segment.text, placement === 'centered-screen')
-    const chunkDuration = placement === 'centered-screen' ? Math.max(0.28, (localEnd - localStart) / chunks.length) : Math.max(0.7, (localEnd - localStart) / chunks.length)
-    chunks.forEach((chunk, index) => {
-      const timingNudge = placement === 'centered-screen' ? -0.18 : 0
-      const startAt = Math.max(0, localStart + index * chunkDuration + timeOffset + timingNudge)
-      const endAt = placement === 'centered-screen' ? Math.min(localEnd + timeOffset + timingNudge, startAt + Math.max(0.18, chunkDuration * 0.96)) : Math.min(localEnd + timeOffset, startAt + chunkDuration + 0.08)
-      if (chunk && endAt > startAt) events.push(`Dialogue: 0,${assTime(startAt)},${assTime(endAt)},BoldCaption,,0,0,0,,${assEscape(chunk)}`)
-    })
-  }
-  if (!events.length) return ''
-  const outPath = `media/transcripts/${videoId}-${clip.id}-spoken.ass`
-  const style = placement === 'centered-screen'
-    ? 'Style: BoldCaption,Lilita One,82,&H00FFFFFF,&H00FFFFFF,&H00000000,&HAA000000,-1,0,0,0,100,100,0,0,1,7,0,8,70,70,1262,1'
-    : 'Style: BoldCaption,DejaVu Sans,78,&H00FFFFFF,&H00FFFFFF,&H00000000,&HAA000000,-1,0,0,0,100,100,0,0,1,6,0,2,70,70,286,1'
-  const ass = `[Script Info]
-ScriptType: v4.00+
-PlayResX: 1080
-PlayResY: 1920
-ScaledBorderAndShadow: yes
-
-[V4+ Styles]
-Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-${style}
-
-[Events]
-Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-${events.join('\n')}
-`
+  const events = buildShortWordEvents({
+    segments: transcript.segments || [],
+    sourceStart: clipStart,
+    sourceEnd: clipEnd,
+    timelineOffset: timeOffset,
+    minDuration: placement === 'centered-screen' ? 0.14 : 0.18,
+    maxDuration: placement === 'centered-screen' ? 0.52 : 0.62,
+    gap: 0.015,
+  })
+  const qa = qaCaptionEvents(events, { mode: 'short', maxWords: 1, maxChars: 24, minDuration: 0.14, maxDuration: 0.75 })
+  if (!qa.ok) throw new Error(`Caption QA failed for ${clip.id}: ${qa.failures.slice(0, 4).join('; ')}`)
+  const outPath = `media/transcripts/${videoId}-${clip.id}-one-word.ass`
+  const ass = buildNormalizedAss(events, { mode: 'short', font: 'DejaVu Sans' })
   await writeFile(path.resolve(root, outPath), ass)
+  await writeFile(path.resolve(root, outPath.replace(/\.ass$/, '.qa.json')), JSON.stringify(qa, null, 2) + '\n')
   return outPath
 }
 
@@ -699,15 +1154,20 @@ function ffmpegPlan({ inputPath, start = '0:00', end = '0:45', mode = 'short', s
   const centeredScreen = logoPath
     ? `[0:v]${centeredBase}[base];[1:v]scale=460:-1[logo];[base][logo]overlay=x=(W-w)/2:y=1390:format=auto[branded];${centeredSubtitle ? `[branded]${centeredSubtitle}[vout]` : '[branded]copy[vout]'}`
     : `${centeredBase},drawtext=text='${centeredBrand}':x=(w-text_w)/2:y=1426:fontcolor=white:fontsize=88:font='DejaVu Sans':borderw=3:bordercolor=black${centeredSubtitle ? `,${centeredSubtitle}` : ''}`
+  const houseSubtitle = subtitlePath ? `[branded]subtitles='${subtitlePath.replaceAll("'", "'\\''")}'[vout]` : `[branded]copy[vout]`
+  const houseStyle = logoPath
+    ? `[0:v]split=2[srcmain][srcbg];[srcbg]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,boxblur=18:1,eq=brightness=-0.15:saturation=0.62[bg];color=c=0x050505:s=1080x1920:r=30:d=${Math.max(1, seconds(end, seconds(start, 0) + 45) - seconds(start, 0))}[base];[base][bg]overlay=0:0:format=auto,drawbox=x=0:y=0:w=1080:h=308:color=black@0.72:t=fill,drawbox=x=0:y=1035:w=1080:h=885:color=black@0.10:t=fill[underlay];[srcmain]scale=992:-2:force_original_aspect_ratio=decrease,setsar=1[screenfit];[1:v]scale=230:-1,format=rgba[logo];[underlay]${headlineFilter}[headline];[headline]drawbox=x=44:y=330:w=992:h=700:color=black@0.62:t=fill,drawbox=x=44:y=330:w=992:h=700:color=white@0.24:t=4[panel];[panel][screenfit]overlay=x=(W-w)/2:y=400:format=auto[withscreen];[withscreen][logo]overlay=x=(W-w)/2:y=1082:format=auto,drawtext=text='VIBE ZONE':x=(w-text_w)/2:y=1228:fontcolor=white@0.96:fontsize=78:fontfile='media/assets/fonts/LilitaOne-Regular.ttf':borderw=5:bordercolor=black,drawtext=text='SCREEN FIRST • WHITE TEXT • NO BLUE CARD':x=(w-text_w)/2:y=1322:fontcolor=white@0.82:fontsize=36:font='DejaVu Sans':borderw=4:bordercolor=black[branded];${houseSubtitle}`
+    : `[0:v]split=2[srcmain][srcbg];[srcbg]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,boxblur=18:1,eq=brightness=-0.15:saturation=0.62[bg];[srcmain]scale=992:-2:force_original_aspect_ratio=decrease,setsar=1[screenfit];[bg]drawbox=x=0:y=0:w=1080:h=308:color=black@0.72:t=fill,${headlineFilter},drawbox=x=44:y=330:w=992:h=700:color=black@0.62:t=fill,drawbox=x=44:y=330:w=992:h=700:color=white@0.24:t=4[panel];[panel][screenfit]overlay=x=(W-w)/2:y=400:format=auto,drawtext=text='VIBE ZONE':x=(w-text_w)/2:y=1160:fontcolor=white:fontsize=88:fontfile='media/assets/fonts/LilitaOne-Regular.ttf':borderw=5:bordercolor=black${centeredSubtitle ? `,${centeredSubtitle}` : ''}`
   const facecamSubtitle = subtitlePath ? `[pipout]subtitles='${subtitlePath.replaceAll("'", "'\\''")}'[vout]` : `[pipout]copy[vout]`
-  const facecamLowerFill = `drawbox=x=70:y=930:w=940:h=560:color=0x1d4ed8@0.92:t=fill,drawbox=x=70:y=930:w=940:h=560:color=white@0.24:t=4,drawtext=text='${hook.line1.toUpperCase()}':x=(w-text_w)/2:y=1058:fontcolor=white:fontsize=64:fontfile='media/assets/fonts/LilitaOne-Regular.ttf',drawtext=text='${hook.line2.toUpperCase()}':x=(w-text_w)/2:y=1134:fontcolor=white:fontsize=64:fontfile='media/assets/fonts/LilitaOne-Regular.ttf',drawtext=text='local-first clip factory proof':x=(w-text_w)/2:y=1248:fontcolor=white@0.88:fontsize=34:font='DejaVu Sans'`
-  const facecamSmart = `[0:v]split=2[main][cam];[main]scale=-2:1920,crop=1080:1920:${pipBackgroundCropX}:0,boxblur=10:1,eq=brightness=-0.18:saturation=0.65[base];[cam]crop=${facecam.w}:${facecam.h}:${facecam.x}:${facecam.y},scale=560:-2,setsar=1,drawbox=x=0:y=0:w=iw:h=ih:color=white@0.34:t=3[face];[base][face]overlay=x=(W-w)/2:y=74:format=auto[withface];[withface]${facecamLowerFill}[pipout];${facecamSubtitle}`
+  const facecamLowerFill = `drawbox=x=70:y=930:w=940:h=560:color=0x050505@0.84:t=fill,drawbox=x=70:y=930:w=940:h=560:color=white@0.28:t=4,drawtext=text='${hook.line1.toUpperCase()}':x=(w-text_w)/2:y=1058:fontcolor=white:fontsize=64:fontfile='media/assets/fonts/LilitaOne-Regular.ttf',drawtext=text='${hook.line2.toUpperCase()}':x=(w-text_w)/2:y=1134:fontcolor=white:fontsize=64:fontfile='media/assets/fonts/LilitaOne-Regular.ttf',drawtext=text='VIBE ZONE':x=(w-text_w)/2:y=1248:fontcolor=white@0.88:fontsize=34:font='DejaVu Sans':borderw=3:bordercolor=black`
+  const facecamSmart = `[0:v]split=2[main][cam];[main]scale=-2:1920,crop=1080:1920:${pipBackgroundCropX}:0,boxblur=7:1,eq=brightness=-0.12:saturation=0.78[base];[cam]crop=${facecam.w}:${facecam.h}:${facecam.x}:${facecam.y},scale=520:-2,setsar=1,drawbox=x=0:y=0:w=iw:h=ih:color=white@0.34:t=3[face];[base][face]overlay=x=(W-w)/2:y=82:format=auto[withface];[withface]${facecamLowerFill}[pipout];${facecamSubtitle}`
   const filters = {
     long: { kind: 'vf', value: `scale=1920:-2${subtitle}` },
     'facecam-split': { kind: 'vf', value: `scale=-2:960,crop=1080:960,pad=1080:1920:0:0:color=0x101828,drawtext=text='Facecam / B-roll zone':x=(w-text_w)/2:y=1440:fontcolor=white@0.65:fontsize=44:box=1:boxcolor=black@0.35:boxborderw=24${subtitle}` },
     'right-focus': { kind: 'vf', value: `scale=-2:1920,crop=1080:1920:iw-ow-260:0${subtitle}` },
     'hook-card': { kind: 'vf', value: `scale=-2:1920,crop=1080:1920,${hookCard}${subtitle}` },
     'centered-screen': { kind: logoPath ? 'complex-logo' : 'vf', value: centeredScreen },
+    'house-style': { kind: 'complex-logo', value: houseStyle },
     'facecam-smart': { kind: 'complex', value: facecamSmart },
     'facecam-right': { kind: 'vf', value: `scale=-2:1920,crop=1080:1920:iw-ow-260:0${subtitle}` },
     short: { kind: 'vf', value: `scale=-2:1920,crop=1080:1920${subtitle}` },
@@ -722,7 +1182,7 @@ function ffmpegPlan({ inputPath, start = '0:00', end = '0:45', mode = 'short', s
   const output = outputPath || `media/renders/${mode}-${Date.now()}.mp4`
   const filterArgs = filter.kind === 'complex' || filter.kind === 'complex-logo' ? ['-filter_complex', filter.value, '-map', '[vout]', '-map', '0:a?'] : ['-vf', filter.value]
   const encodeArgs = quality === 'draft' ? ['-c:v', 'libx264', '-preset', 'ultrafast', '-crf', '32'] : ['-c:v', 'libx264', '-preset', 'veryfast']
-  const inputArgs = logoPath && mode === 'centered-screen' ? ['-ss', String(preSeek), '-i', inputPath, '-loop', '1', '-i', logoPath] : ['-ss', String(preSeek), '-i', inputPath]
+  const inputArgs = logoPath && ['centered-screen', 'house-style'].includes(mode) ? ['-ss', String(preSeek), '-i', inputPath, '-loop', '1', '-i', logoPath] : ['-ss', String(preSeek), '-i', inputPath]
   const args = ['-y', ...inputArgs, '-ss', String(trimSeek), '-t', String(duration), ...filterArgs, ...encodeArgs, '-c:a', 'aac', output]
   return { args, output, command: `ffmpeg ${args.map(shellArg).join(' ')}`, startSeconds, endSeconds: startSeconds + duration }
 }
@@ -846,7 +1306,8 @@ print(json.dumps({'samples':results}))
 }
 function buildFfmpegCommand(options) { return ffmpegPlan(options).command }
 function slug(value = 'clip') { return value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60) || 'clip' }
-function selectedRenderPreset(presetId = 'punchy-captions', videoId = 'VIDEO_ID') {
+function selectedRenderPreset(presetId = 'house-style', videoId = 'VIDEO_ID') {
+  const houseDefault = { preset: 'house-style', mode: 'house-style', subtitlePath: '' }
   const presets = {
     'punchy-captions': { preset: 'punchy-captions', mode: 'short', subtitlePath: `media/transcripts/${videoId}.punchy.ass` },
     'standard-captions': { preset: 'standard-captions', mode: 'short', subtitlePath: `media/transcripts/${videoId}.srt` },
@@ -854,12 +1315,22 @@ function selectedRenderPreset(presetId = 'punchy-captions', videoId = 'VIDEO_ID'
     'facecam-split': { preset: 'facecam-split', mode: 'facecam-split', subtitlePath: `media/transcripts/${videoId}.punchy.ass` },
     'right-focus-captions': { preset: 'right-focus-captions', mode: 'right-focus', subtitlePath: `media/transcripts/${videoId}.punchy.ass` },
     'hook-card': { preset: 'hook-card', mode: 'hook-card', subtitlePath: `media/transcripts/${videoId}.punchy.ass` },
-    'centered-screen': { preset: 'centered-screen', mode: 'centered-screen', subtitlePath: '' },
-    'facecam-smart': { preset: 'facecam-smart', mode: 'facecam-smart', subtitlePath: `media/transcripts/${videoId}.punchy.ass` },
+    'house-style': houseDefault,
+    // Masala regression guard: default/caught clips must stay in the branded
+    // screen-context house layout. The older centered-screen preset can miss
+    // the logo/brand lane, so keep it as an explicit variant only.
+    'centered-screen': houseDefault,
+    'centered-screen-variant': { preset: 'centered-screen-variant', mode: 'centered-screen', subtitlePath: '' },
+    // Legacy callers used `facecam-smart` as a default, which collapsed caught
+    // clips into the square face-box / blue-card family. Keep that style
+    // available only under an explicit variant id; plain `facecam-smart` now
+    // safely renders the screen/context-first house style.
+    'facecam-smart': houseDefault,
+    'facecam-smart-variant': { preset: 'facecam-smart-variant', mode: 'facecam-smart', subtitlePath: `media/transcripts/${videoId}.punchy.ass` },
     'facecam-right': { preset: 'facecam-right', mode: 'facecam-right', subtitlePath: `media/transcripts/${videoId}.punchy.ass` },
     'long-standard': { preset: 'long-standard', mode: 'long', subtitlePath: `media/transcripts/${videoId}.srt` },
   }
-  return presets[presetId] || presets['punchy-captions']
+  return presets[presetId] || houseDefault
 }
 async function renderSelectedClip(db, clipId, body = {}) {
   await ensureMediaDirs()
@@ -878,10 +1349,17 @@ async function renderSelectedClip(db, clipId, body = {}) {
   const inputPath = body.inputPath || `media/downloads/${videoId}.mp4`
   const mode = body.mode || presetConfig.mode
   let subtitlePath = body.subtitlePath ?? presetConfig.subtitlePath
-  if ((body.spokenCaptions ?? true) && ['facecam-smart', 'hook-card', 'short', 'centered-screen'].includes(mode)) {
-    const startSeconds = seconds(clip.start, 0)
-    const preSeek = Math.max(0, startSeconds - 5)
-    subtitlePath = await writeSpokenCaptionAss(videoId, clip, startSeconds - preSeek, mode === 'centered-screen' ? 'centered-screen' : 'bottom') || subtitlePath
+  if ((body.spokenCaptions ?? true) && ['facecam-smart', 'hook-card', 'short', 'centered-screen', 'house-style'].includes(mode)) {
+    try {
+      const startSeconds = seconds(clip.start, 0)
+      const preSeek = Math.max(0, startSeconds - 5)
+      subtitlePath = await writeSpokenCaptionAss(videoId, clip, startSeconds - preSeek, ['centered-screen', 'house-style'].includes(mode) ? 'centered-screen' : 'bottom') || subtitlePath
+    } catch (error) {
+      const detail = `Blocked render: one-word short-form caption QA failed. ${error.message || error}`
+      clip.renderStatus = 'needs-review'; clip.renderError = detail; clip.renderPreset = presetConfig.preset
+      const job = await addMediaJob(db, 'render-selected', 'needs-review', detail, '')
+      return { status: 200, body: { clip, job } }
+    }
   }
   const preset = presetConfig.preset
   const outputPath = body.outputPath || `media/renders/${videoId}-${clip.id.slice(-6)}-${slug(clip.title)}-${preset}.mp4`
@@ -904,7 +1382,7 @@ async function renderSelectedClip(db, clipId, body = {}) {
   }
   const facecamBox = mode === 'facecam-smart' ? await detectFacecamBox(inputPath, seconds(clip.start, 0), seconds(clip.end, seconds(clip.start, 0) + 12)) : null
   if (facecamBox?.tracking) clip.facecamTracking = facecamBox.tracking
-  const plan = ffmpegPlan({ inputPath, start: clip.start, end: clip.end, mode, subtitlePath, outputPath, cropX: facecamBox?.cropX || 0, facecamBox, hookText: body.headline || (['hook-card', 'centered-screen'].includes(mode) ? clip.title : (clip.hook || clip.title)), quality: body.quality || 'standard', brandText: body.brandText || brandWordmark(`${clip.title} ${clip.hook}`), logoPath: body.logoPath || (mode === 'centered-screen' && /openclaw/i.test(body.brandText || brandWordmark(`${clip.title} ${clip.hook}`)) ? 'media/assets/logos/openclaw-logo-text.png' : '') })
+  const plan = ffmpegPlan({ inputPath, start: clip.start, end: clip.end, mode, subtitlePath, outputPath, cropX: facecamBox?.cropX || 0, facecamBox, hookText: body.headline || (['hook-card', 'centered-screen', 'house-style'].includes(mode) ? clip.title : (clip.hook || clip.title)), quality: body.quality || 'standard', brandText: body.brandText || brandWordmark(`${clip.title} ${clip.hook}`), logoPath: body.logoPath || (mode === 'house-style' || (mode === 'centered-screen' && /openclaw/i.test(body.brandText || brandWordmark(`${clip.title} ${clip.hook}`))) ? 'media/assets/logos/openclaw-logo-text.png' : '') })
   clip.renderStatus = 'running'; clip.renderPreset = preset; clip.renderPath = outputPath; clip.renderError = ''
   await saveDb(db)
   try {
@@ -1343,6 +1821,31 @@ function dedupeThumbnailConcepts(concepts) {
     return true
   })
 }
+function updateThumbnailPreferenceProfile(db, concept) {
+  const concepts = db.thumbnailConcepts || []
+  const liked = concepts.filter((item) => item.rating === 'like' || item.status === 'liked' || item.status === 'used')
+  const disliked = concepts.filter((item) => item.rating === 'dislike' || item.status === 'disliked')
+  const summarize = (items) => items.slice(0, 12).map((item) => ({
+    id: item.id,
+    text: item.thumbnailText,
+    title: item.title,
+    style: item.style,
+    visualAngle: item.visualAngle,
+    emotion: item.emotion,
+    notes: item.learningNotes || '',
+  }))
+  db.settings = db.settings || {}
+  db.settings.thumbnailPreferenceProfile = {
+    updatedAt: new Date().toISOString(),
+    lastFeedbackId: concept?.id || null,
+    liked: summarize(liked),
+    disliked: summarize(disliked),
+    guidance: liked.length || disliked.length
+      ? `Prefer patterns similar to liked thumbnails (${liked.map((item) => item.thumbnailText).filter(Boolean).slice(0, 6).join(', ') || 'none yet'}). Avoid disliked patterns (${disliked.map((item) => item.thumbnailText).filter(Boolean).slice(0, 6).join(', ') || 'none yet'}). Use this profile when generating future Thumbnail Lab concepts.`
+      : 'No thumbnail preference feedback yet.',
+  }
+  db.settings.thumbnailStyle = `Learned thumbnail direction: ${db.settings.thumbnailPreferenceProfile.guidance}`.slice(0, 500)
+}
 function thumbnailVariant(concept, variantIndex = 0) {
   if (!variantIndex) return concept
   const textVariants = [concept.thumbnailText, 'WAIT… WHAT?', 'I BUILT THIS LIVE', 'THIS CHANGED EVERYTHING', 'AI DID THIS?', 'WHY SO MID?', 'CLIP MACHINE', 'DON’T LEAK THIS']
@@ -1362,7 +1865,11 @@ async function generateThumbnailConcepts(db, limit = 50) {
   const targetCount = Math.max(1, Number(limit || 50))
   const transcriptById = new Map(db.transcripts.map((t) => [t.id, t.title]))
   const feedback = db.settings?.thumbnailConceptFeedback || {}
-  const dislikedTexts = new Set((db.thumbnailConcepts || []).filter((c) => c.rating === 'dislike' || feedback[c.id] === 'dislike').map((c) => String(c.thumbnailText || '').toLowerCase()))
+  const preferenceProfile = db.settings?.thumbnailPreferenceProfile || {}
+  const dislikedTexts = new Set([
+    ...(db.thumbnailConcepts || []).filter((c) => c.rating === 'dislike' || feedback[c.id] === 'dislike').map((c) => String(c.thumbnailText || '').toLowerCase()),
+    ...(preferenceProfile.disliked || []).map((c) => String(c.text || '').toLowerCase()),
+  ].filter(Boolean))
   const existingKeys = new Set((db.thumbnailConcepts || []).map((c) => `${c.sourceClipId || ''}:${c.thumbnailText}:${c.emotion}`.toLowerCase()))
   const sourceClips = [...db.clips].sort((a, b) => (b.score || 0) - (a.score || 0))
   const generated = []
@@ -1418,15 +1925,35 @@ function pickPracticePrompts(topic = '', context = '') {
   if (signals.live) pool.unshift(`new here, what's the chaos today?`, `what are we watching you build?`)
   return pool
 }
-function generatePracticeChat(topic, context) {
+function pickWisdomPrompts(topic = '', context = '') {
+  const signals = contextSignals(`${topic} ${context}`)
+  const pool = [
+    `that's the actual product: making the boring repeatable so the creative part survives`,
+    `this is why live building works, the audience sees the decision not just the demo`,
+    `clip this bit: the tool is only valuable if it still works when you're tired`,
+    `the best creator tools disappear into the workflow instead of becoming another job`,
+    `that's weirdly the lesson, systems beat motivation when the stream gets chaotic`,
+    `if it survives a refresh and a panic-click, it is much closer to real software`,
+    `this is the difference between a feature and a habit`,
+    `the content machine is really a memory machine for good moments`,
+  ]
+  if (signals.mic) pool.unshift(`audio is trust, if the mic feels off the whole stream feels off`)
+  if (signals.clip) pool.unshift(`the best shorts sound like a thought you caught live, not an ad you wrote later`, `clip farming should preserve the messy insight, not sand it into nothing`)
+  if (signals.build) pool.unshift(`you are not just building an app, you are building a rhythm you can return to every night`, `the killer feature is reducing the gap between idea and shipped artefact`)
+  if (signals.stuck) pool.unshift(`the bug is annoying, but it is also telling you where the product needs a rail`)
+  if (signals.live) pool.unshift(`live chat is not decoration, it is the feedback loop that keeps the build human`)
+  return pool
+}
+function generatePracticeChat(topic, context, mode = 'chat') {
   const names = ['maya', 'jay', 'priya', 'kev', 'nina', 'sam', 'leah', 'owen', 'tariq', 'becky', 'marco', 'jess']
-  const prompts = pickPracticePrompts(topic, context)
-  const start = Math.floor(Math.random() * Math.max(prompts.length - 4, 1))
-  return prompts.slice(start, start + 4).map((text, index) => ({
+  const prompts = mode === 'wisdom' ? pickWisdomPrompts(topic, context) : pickPracticePrompts(topic, context)
+  const count = mode === 'wisdom' ? 3 : 4
+  const start = Math.floor(Math.random() * Math.max(prompts.length - count, 1))
+  return prompts.slice(start, start + count).map((text, index) => ({
     id: id('chat'),
     name: names[(start + index) % names.length],
     text,
-    label: 'practice prompt',
+    label: mode === 'wisdom' ? 'clip-farm wisdom' : 'practice prompt',
     createdAt: new Date().toISOString(),
   }))
 }
@@ -1434,12 +1961,45 @@ async function handleApi(req, res, db) {
   const url = new URL(req.url, `http://${req.headers.host}`)
   if (req.method === 'GET' && url.pathname === '/api/health') return send(res, 200, await healthState(db))
   if (req.method === 'GET' && url.pathname === '/api/state') return send(res, 200, await appState(db))
+  if (req.method === 'GET' && url.pathname === '/api/posting/readiness') return send(res, 200, postingReadiness(db))
+  if (req.method === 'GET' && url.pathname === '/api/social/connections') return send(res, 200, socialConnections(db))
+  if (req.method === 'POST' && url.pathname.startsWith('/api/social/connect/') && url.pathname.endsWith('/start')) {
+    const providerId = decodeURIComponent(url.pathname.split('/').at(-2))
+    const result = buildOAuthUrl(providerId, db)
+    if (result.status === 200) { await addJob(db, 'social-connection', `Started ${providerConfigs[providerId].label} connection`, 'needs-review', 'OAuth opened in owner browser; no public posting enabled.') }
+    await saveDb(db)
+    return send(res, result.status, result.body)
+  }
+  if (req.method === 'POST' && url.pathname.startsWith('/api/social/connect/') && url.pathname.endsWith('/disconnect')) {
+    const providerId = decodeURIComponent(url.pathname.split('/').at(-2))
+    if (!providerConfigs[providerId]) return send(res, 404, { error: 'Unknown social provider.' })
+    db.socialConnectionState = db.socialConnectionState || {}
+    db.socialConnectionState[providerId] = { disconnectedAt: new Date().toISOString(), connected: false }
+    await addJob(db, 'social-connection', `Disconnected ${providerConfigs[providerId].label} locally`, 'done', 'Local connection state cleared; revoke app access on the provider too if needed.')
+    await saveDb(db)
+    return send(res, 200, socialConnections(db).find((item) => item.id === providerId))
+  }
+  if (req.method === 'GET' && url.pathname.startsWith('/api/social/callback/')) {
+    const providerId = decodeURIComponent(url.pathname.split('/').pop())
+    const config = providerConfigs[providerId]
+    if (!config) return send(res, 404, { error: 'Unknown social provider.' })
+    const expectedState = db.socialConnectionState?.[providerId]?.pendingState
+    const returnedState = url.searchParams.get('state') || ''
+    if (!expectedState || expectedState !== returnedState) return send(res, 400, { error: 'OAuth state mismatch. Start the connection from Vibe Zone again.' })
+    if (!url.searchParams.get('code')) return send(res, 400, { error: 'Provider did not return an OAuth code.' })
+    db.socialConnectionState[providerId] = { oauthApproved: true, connected: false, connectedAt: new Date().toISOString(), accountLabel: `${config.label} OAuth approved`, codeReceived: true }
+    await addJob(db, 'social-connection', `${config.label} OAuth callback received`, 'needs-review', 'OAuth code received. Token exchange/storage is intentionally gated before live posting.')
+    await saveDb(db)
+    res.writeHead(200, { 'content-type': 'text/html; charset=utf-8' })
+    return res.end(`<h1>${config.label} connected to Vibe Zone</h1><p>You can close this tab and return to Vibe Zone. Posting is still approval-gated.</p>`)
+  }
   if (req.method === 'GET' && url.pathname === '/api/dispatch/list') {
-    db.dispatchItems = normalizeDispatchItems(db)
+    const recovered = await ensureCurrentStyleGateReadyDispatchItems(db)
+    if (recovered) await saveDb(db)
     return send(res, 200, { items: db.dispatchItems, summary: dispatchQueueSummary(db.dispatchItems) })
   }
   if (req.method === 'POST' && url.pathname === '/api/dispatch/seed') {
-    db.dispatchItems = normalizeDispatchItems(db)
+    await ensureCurrentStyleGateReadyDispatchItems(db)
     await scanExportBundleDispatchItems(db)
     await addJob(db, 'dispatch', 'Seeded dispatch queue', 'done', `${db.dispatchItems.length} local dispatch item(s) available; no external posting performed.`)
     await saveDb(db)
@@ -1469,6 +2029,7 @@ async function handleApi(req, res, db) {
     return send(res, 200, item)
   }
   if (req.method === 'GET' && url.pathname === '/api/media/files') return send(res, 200, await listMediaFiles())
+  if (req.method === 'GET' && url.pathname === '/api/thumbnails/transcript') return await thumbnailTranscriptDownload(db, url, res)
   if (req.method === 'POST' && url.pathname === '/api/media/upload') return await handleMediaUpload(req, res, db, url)
   if (req.method === 'POST' && url.pathname === '/api/settings') {
     const body = await parseBody(req); db.settings = { ...db.settings, ...body }; await addJob(db, 'settings', 'Updated settings', 'done', db.settings.channelUrl); await saveDb(db); return send(res, 200, db.settings)
@@ -1535,7 +2096,8 @@ async function handleApi(req, res, db) {
     if (body.rating === 'like' || body.rating === 'dislike' || body.rating === null) concept.rating = body.rating
     if (typeof body.learningNotes === 'string') concept.learningNotes = body.learningNotes.slice(0, 500)
     concept.updatedAt = new Date().toISOString()
-    await addJob(db, 'thumbnail-feedback', 'Updated thumbnail feedback', 'done', `${concept.thumbnailText}: ${concept.rating || concept.status}`)
+    updateThumbnailPreferenceProfile(db, concept)
+    await addJob(db, 'thumbnail-feedback', 'Updated thumbnail feedback', 'done', `${concept.thumbnailText}: ${concept.rating || concept.status}; preference profile updated for future thumbnail generation.`)
     await saveDb(db)
     return send(res, 200, concept)
   }
@@ -1577,13 +2139,24 @@ async function handleApi(req, res, db) {
     const body = await parseBody(req)
     const clip = db.clips.find((item) => item.id === clipId)
     if (!clip) return send(res, 404, { error: 'Clip not found' })
-    const statuses = ['idea', 'draft', 'reviewed', 'exported']
+    const statuses = ['idea', 'draft', 'reviewed', 'exported', 'ready_local_manual_upload', 'uploaded', 'archived', 'superseded']
     const platforms = ['tiktok', 'youtube', 'x']
     if (body.status && !statuses.includes(body.status)) return send(res, 400, { error: 'Invalid clip status' })
     if (body.platform && !platforms.includes(body.platform)) return send(res, 400, { error: 'Invalid platform' })
     Object.assign(clip, { status: body.status || clip.status, platform: body.platform || clip.platform })
     if (body.status === 'exported') clip.exportedAt = new Date().toISOString()
-    await addJob(db, 'clip-update', 'Updated clip workflow status', 'done', `${clip.title}: ${clip.platform}/${clip.status}`)
+    if (body.status === 'uploaded') {
+      clip.uploadedAt = new Date().toISOString()
+      clip.renderStatus = 'done'
+      for (const item of db.dispatchItems || []) {
+        if (item.clipId === clip.id) {
+          item.status = 'posted_manual'
+          item.updatedAt = new Date().toISOString()
+          item.lastAuditAction = 'marked-uploaded-by-owner'
+        }
+      }
+    }
+    await addJob(db, 'clip-update', body.status === 'uploaded' ? 'Marked clip uploaded' : 'Updated clip workflow status', 'done', `${clip.title}: ${clip.platform}/${clip.status}`)
     await saveDb(db)
     return send(res, 200, clip)
   }
@@ -1595,9 +2168,9 @@ async function handleApi(req, res, db) {
   }
   if (req.method === 'POST' && url.pathname === '/api/chat/generate') {
     const body = await parseBody(req)
-    const messages = generatePracticeChat(body.topic, body.context)
+    const messages = generatePracticeChat(body.topic, body.context, body.mode)
     db.chatMessages = [...messages, ...db.chatMessages].slice(0, 40)
-    await addJob(db, 'practice-chat', 'Generated practice prompts', 'done', body.topic || 'stream context')
+    await addJob(db, 'practice-chat', 'Generated practice prompts', 'done', `${body.topic || 'stream context'} • ${body.mode === 'wisdom' ? 'clip-farm wisdom' : 'normal chat'}`)
     await saveDb(db)
     return send(res, 200, messages)
   }

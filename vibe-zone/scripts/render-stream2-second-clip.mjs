@@ -3,7 +3,9 @@ import { spawnSync } from 'node:child_process'
 
 const clipId = 'clip_1778603919030_f17815'
 const presets = process.argv.slice(2)
-const selected = presets.length ? presets : ['hook-card', 'facecam-smart']
+// Style gate default: screen/context-first house layout. Facecam/square-box variants
+// are optional only and must be requested explicitly on the command line.
+const selected = presets.length ? presets : ['house-style']
 let failedReview = false
 
 async function render(presetId) {

@@ -15,7 +15,8 @@
     "clip:review": "node scripts/review-render.mjs",
     "start": "node server/server.mjs",
     "media:cleanup-unused": "node scripts/cleanup-unused-media.mjs",
-    "media:cleanup-unused:apply": "node scripts/cleanup-unused-media.mjs --apply"
+    "media:cleanup-unused:apply": "node scripts/cleanup-unused-media.mjs --apply",
+    "caption:qa": "node scripts/check-caption-qa.mjs"
   },
   "dependencies": {
     "react": "^19.2.6",

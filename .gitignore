@@ -8,3 +8,14 @@ __pycache__/
 .openclaw/
 backups/
 memory/.dreams/
+
+# Heavy/generated local project artifacts
+.venv-graphify/
+vibe-zone/node_modules/
+vibe-zone/dist/
+vibe-zone/media/
+vibe-zone/data/
+
+# Graphify generated cache
+vibe-zone/graphify-out/cache/
+vibe-zone/graphify-out/.rebuild.lock

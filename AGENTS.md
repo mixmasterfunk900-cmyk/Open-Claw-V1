@@ -53,3 +53,34 @@ Keep this file lean. Put durable context in memory files, not here.
 
 ## Related
 - [Default AGENTS.md](/reference/AGENTS.default)
+
+## graphify
+
+Graphify is installed at `/root/.local/bin/graphify` and the Python venv lives at `.venv-graphify/`.
+
+Rules:
+- When a project has `graphify-out/GRAPH_REPORT.md`, read it before broad source searches or architecture answers.
+- When a project has `graphify-out/wiki/index.md`, use that wiki as the first map before raw files.
+- For cross-module “how does X relate to Y” questions, prefer `graphify query "<question>"`, `graphify path "<A>" "<B>"`, or `graphify explain "<concept>"` when a graph exists.
+- After modifying code in a graphed project, run `graphify update .` from that project root to keep the graph current.
+- If no graph/report exists yet, use normal inspection first, then create one with `graphify update .` for AST-only code graphs or `graphify extract .` when LLM credentials are available.
+
+## Telegram Intake Routing
+
+All Telegram inbound work must pass through Planner Bot first, with Controller Bot as the QA/routing fallback.
+
+- Telegram is an intake channel, not a direct implementation lane.
+- Planner Bot triages Telegram requests and writes clear queue items under `.openclaw-grid/queues/`.
+- Controller Bot can handle/verify ambiguous Telegram intake, conflict checks, and ship-gate routing.
+- Planner Bot may ask clarifying questions back through Telegram when the request is ambiguous.
+- Planner Bot should not directly edit product code unless Masala explicitly asks for a quick single-agent action.
+- Planner Bot assigns work to the appropriate lane:
+  - Rex Bot: Rex Live Roadmap and Rex Activity/Jobs.
+  - Core App Bot: Dashboard, Settings, navigation, shared UX.
+  - Media Factory Bot: Media Pipeline, Clip Factory, Viral Hunter.
+  - YouTube Bot: social-media packaging lane for Thumbnail Lab, YouTube Scanner, titles/thumbnails/descriptions; coordinate with Social Live.
+  - Social Live Bot: Social Dashboard, Social Connections, Live Chat Co-Pilot, Studio Feedback.
+  - Controller Bot: QA, conflict checks, ship-log, master handoff.
+  - CEO Bot: priority conflicts, end-goal decisions, final direction.
+- Section bots should read their queue and handoff files before acting.
+- Controller Bot is the gate before changes are considered shipped.

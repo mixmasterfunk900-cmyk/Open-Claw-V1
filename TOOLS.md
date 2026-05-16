@@ -13,6 +13,13 @@ Things like:
 - Device nicknames
 - Anything environment-specific
 
+## Graphify
+
+- Graphify is installed in `/root/.openclaw/workspace/.venv-graphify` with CLI symlink `/root/.local/bin/graphify`.
+- OpenClaw skill installed at `/root/.openclaw/skills/graphify/SKILL.md`.
+- Vibe Zone has an AST-only graph at `vibe-zone/graphify-out/graph.json` and call-flow page `vibe-zone/graphify-out/vibe-zone-callflow.html`.
+- Run from a project root: `graphify update .` for local AST graph refresh; use `graphify extract .` only when LLM API keys are available.
+
 ## Local Transcription
 
 - Voice-note transcription is available locally via `/root/.openclaw/workspace/.venv-transcribe`.

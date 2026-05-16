@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")/.."
+MANIFEST="PURGE_STAGING/purge-manifest-20260515T1000Z.json"
+node <<'PURGENODE'
+const fs=require('fs'); const path=require('path');
+const m=JSON.parse(fs.readFileSync('PURGE_STAGING/purge-manifest-20260515T1000Z.json','utf8'));
+for(const f of m.purge.files){ try{ fs.rmSync(f,{force:true}); } catch(e){ console.error('failed',f,e.message); } }
+function prune(dir){ if(!fs.existsSync(dir)) return; for(const ent of fs.readdirSync(dir,{withFileTypes:true})){ const p=path.join(dir,ent.name); if(ent.isDirectory()) prune(p); } try{ if(dir!=='media' && fs.readdirSync(dir).length===0) fs.rmdirSync(dir); }catch{} }
+prune('media');
+const dataPath='data/vibe-zone.json'; const old=JSON.parse(fs.readFileSync(dataPath,'utf8'));
+const now=new Date().toISOString();
+const keepLong=m.keep.longForm, keepShort=m.keep.recentShort;
+const reset={settings:old.settings||{}, clips:[{id:'example_long_form_stream2_founder_story',title:'Example Long Form — Stream 2 Founder Story Prototype',type:'long-form-example',status:'example-kept',renderPath:keepLong,renderUrl:'/'+keepLong,updatedAt:now},{id:'example_recent_short_project_moves_offstream',title:'Example Recent Short — Build Moves Offline',type:'short-example',status:'example-kept',renderPath:keepShort,renderUrl:'/'+keepShort,updatedAt:now}],dispatchItems:[],mediaJobs:[{id:'media_job_'+Date.now()+'_backend_purge_reset',type:'purge-reset',status:'done',title:'Backend media/library purged for new logic system',detail:'Kept one long-form example and one recent short example; cleared old queues/jobs/library records.',createdAt:now,manifestPath:m.stamp}],thumbnailConcepts:[]};
+fs.writeFileSync(dataPath, JSON.stringify(reset,null,2)+'\n');
+console.log(JSON.stringify({ok:true,deleted:m.purge.fileCount,gb:m.purge.gb,dataReset:true},null,2));
+PURGENODE
