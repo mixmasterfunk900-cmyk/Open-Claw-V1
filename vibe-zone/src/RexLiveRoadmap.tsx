@@ -129,6 +129,18 @@ export default function RexLiveRoadmap({ state }: { state: RexAppState }) {
   }, [])
   const statusLine = rex.overallStatus === 'building' ? 'Agents are building' : rex.overallStatus === 'blocked' ? 'Rex found a blocker' : rex.overallStatus === 'reporting' ? 'Ready to report' : 'Rex is watching'
   return <section className={`rex-command-page rex-status-${rex.overallStatus}`}>
+    <div className="rex-showpiece-intro" aria-label="Rex dashboard design direction">
+      <div className="rex-showpiece-copy">
+        <p className="eyebrow">Competition-grade command habitat</p>
+        <h2>Rex’s live ops arena</h2>
+        <p>A cinematic control room for the bots: intake, build lanes, QA gates, media output, and Rex’s evolving brain in one stream-safe cockpit.</p>
+      </div>
+      <div className="rex-showpiece-metrics" aria-label="Rex dashboard summary">
+        <span><strong>{rex.workshops.filter((workshop) => workshop.status === 'active').length}</strong><small>Active lanes</small></span>
+        <span><strong>{rex.evolution.level}</strong><small>Rex level</small></span>
+        <span><strong>{rex.pipeline.filter((stage) => stage.status === 'complete').length}</strong><small>Checked gates</small></span>
+      </div>
+    </div>
     <TrexAgentLabDashboard />
     <div className="rex-command-hero" aria-label="Rex Command Center"><div className="rex-hero-grid" aria-hidden="true" />
       <div className="rex-brand-row"><button className="rex-brand-button" type="button" onClick={() => setPanel({ type: 'skill-map' })} aria-label="Open Rex Skill Map"><span className="rex-brand-orb">🦖</span><span><small>Rex Command Center</small><strong>Roadmap + Activity + Jobs</strong></span><em>Open Skill Map</em></button><RexStatusBadge status={rex.overallStatus} label={statusLine} /></div>

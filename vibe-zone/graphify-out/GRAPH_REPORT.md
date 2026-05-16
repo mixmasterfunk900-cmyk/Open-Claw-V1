@@ -1,7 +1,7 @@
-# Graph Report - vibe-zone  (2026-05-15)
+# Graph Report - vibe-zone  (2026-05-16)
 
 ## Corpus Check
-- 166 files · ~181,374 words
+- 166 files · ~181,434 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `fc088a9a`
+- Built from commit: `98d26193`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -601,8 +601,8 @@ Cohesion: 0.21
 Nodes (10): canonical, dbPath, duration(), execFileAsync, fileOpen(), lastPacket(), registerManualStream(), root (+2 more)
 
 ### Community 83 - "Community 83"
-Cohesion: 0.26
-Nodes (12): brandWordmark(), centeredHeadlineLayout(), centeredHookLines(), clipStartSeconds(), drawTextEscape(), ffmpegPlan(), hookLines(), localFileExists() (+4 more)
+Cohesion: 0.24
+Nodes (13): brandWordmark(), buildFfmpegCommand(), centeredHeadlineLayout(), centeredHookLines(), clipStartSeconds(), drawTextEscape(), ffmpegPlan(), hookLines() (+5 more)
 
 ### Community 84 - "Community 84"
 Cohesion: 0.18
@@ -814,7 +814,7 @@ Nodes (5): chains, overlayMoving(), probe, q(), root
 
 ### Community 136 - "Community 136"
 Cohesion: 0.14
-Nodes (25): appState(), buildCustomDownloadCommand(), buildFfmpegCommand(), buildLocalCompanionCommand(), buildWhisperCommand(), buildYtDlpPreflightCommand(), dispatchQueueSummary(), ensureMediaDirs() (+17 more)
+Nodes (24): appState(), buildCustomDownloadCommand(), buildLocalCompanionCommand(), buildWhisperCommand(), buildYtDlpPreflightCommand(), dispatchQueueSummary(), ensureMediaDirs(), findStreamArtifact() (+16 more)
 
 ### Community 137 - "Community 137"
 Cohesion: 0.29

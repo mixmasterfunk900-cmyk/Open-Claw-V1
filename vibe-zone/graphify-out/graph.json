@@ -990,7 +990,7 @@
       "source_file": "server/server.mjs",
       "source_location": "L1307",
       "id": "server_server_buildffmpegcommand",
-      "community": 136,
+      "community": 83,
       "norm_label": "buildffmpegcommand()"
     },
     {
@@ -19384,7 +19384,7 @@
       "label": "RexStatusBadge()",
       "file_type": "code",
       "source_file": "src/RexLiveRoadmap.tsx",
-      "source_location": "L142",
+      "source_location": "L154",
       "id": "src_rexliveroadmap_rexstatusbadge",
       "community": 3,
       "norm_label": "rexstatusbadge()"
@@ -19393,7 +19393,7 @@
       "label": "labTasks",
       "file_type": "code",
       "source_file": "src/RexLiveRoadmap.tsx",
-      "source_location": "L144",
+      "source_location": "L156",
       "id": "src_rexliveroadmap_labtasks",
       "community": 3,
       "norm_label": "labtasks"
@@ -19402,7 +19402,7 @@
       "label": "labIcons",
       "file_type": "code",
       "source_file": "src/RexLiveRoadmap.tsx",
-      "source_location": "L145",
+      "source_location": "L157",
       "id": "src_rexliveroadmap_labicons",
       "community": 3,
       "norm_label": "labicons"
@@ -19411,7 +19411,7 @@
       "label": "initialLabAgents",
       "file_type": "code",
       "source_file": "src/RexLiveRoadmap.tsx",
-      "source_location": "L146",
+      "source_location": "L158",
       "id": "src_rexliveroadmap_initiallabagents",
       "community": 3,
       "norm_label": "initiallabagents"
@@ -19420,7 +19420,7 @@
       "label": "TrexAgentLabDashboard()",
       "file_type": "code",
       "source_file": "src/RexLiveRoadmap.tsx",
-      "source_location": "L155",
+      "source_location": "L167",
       "id": "src_rexliveroadmap_trexagentlabdashboard",
       "community": 3,
       "norm_label": "trexagentlabdashboard()"
@@ -19429,7 +19429,7 @@
       "label": "RexCharacter()",
       "file_type": "code",
       "source_file": "src/RexLiveRoadmap.tsx",
-      "source_location": "L192",
+      "source_location": "L204",
       "id": "src_rexliveroadmap_rexcharacter",
       "community": 3,
       "norm_label": "rexcharacter()"
@@ -19438,7 +19438,7 @@
       "label": "RexWorkshops()",
       "file_type": "code",
       "source_file": "src/RexLiveRoadmap.tsx",
-      "source_location": "L193",
+      "source_location": "L205",
       "id": "src_rexliveroadmap_rexworkshops",
       "community": 3,
       "norm_label": "rexworkshops()"
@@ -19447,7 +19447,7 @@
       "label": "RexWorkBeams()",
       "file_type": "code",
       "source_file": "src/RexLiveRoadmap.tsx",
-      "source_location": "L194",
+      "source_location": "L206",
       "id": "src_rexliveroadmap_rexworkbeams",
       "community": 3,
       "norm_label": "rexworkbeams()"
@@ -19456,7 +19456,7 @@
       "label": "RexPipeline()",
       "file_type": "code",
       "source_file": "src/RexLiveRoadmap.tsx",
-      "source_location": "L195",
+      "source_location": "L207",
       "id": "src_rexliveroadmap_rexpipeline",
       "community": 3,
       "norm_label": "rexpipeline()"
@@ -19465,7 +19465,7 @@
       "label": "RexEvolutionPanel()",
       "file_type": "code",
       "source_file": "src/RexLiveRoadmap.tsx",
-      "source_location": "L196",
+      "source_location": "L208",
       "id": "src_rexliveroadmap_rexevolutionpanel",
       "community": 3,
       "norm_label": "rexevolutionpanel()"
@@ -19474,7 +19474,7 @@
       "label": "eventTimeLabel()",
       "file_type": "code",
       "source_file": "src/RexLiveRoadmap.tsx",
-      "source_location": "L197",
+      "source_location": "L209",
       "id": "src_rexliveroadmap_eventtimelabel",
       "community": 3,
       "norm_label": "eventtimelabel()"
@@ -19483,7 +19483,7 @@
       "label": "RexActivityFeed()",
       "file_type": "code",
       "source_file": "src/RexLiveRoadmap.tsx",
-      "source_location": "L201",
+      "source_location": "L213",
       "id": "src_rexliveroadmap_rexactivityfeed",
       "community": 3,
       "norm_label": "rexactivityfeed()"
@@ -19492,7 +19492,7 @@
       "label": "RexCore()",
       "file_type": "code",
       "source_file": "src/RexLiveRoadmap.tsx",
-      "source_location": "L202",
+      "source_location": "L214",
       "id": "src_rexliveroadmap_rexcore",
       "community": 3,
       "norm_label": "rexcore()"
@@ -19501,7 +19501,7 @@
       "label": "RexWorkshopPanel()",
       "file_type": "code",
       "source_file": "src/RexLiveRoadmap.tsx",
-      "source_location": "L203",
+      "source_location": "L215",
       "id": "src_rexliveroadmap_rexworkshoppanel",
       "community": 3,
       "norm_label": "rexworkshoppanel()"
@@ -19510,7 +19510,7 @@
       "label": "RexSkillMap()",
       "file_type": "code",
       "source_file": "src/RexLiveRoadmap.tsx",
-      "source_location": "L204",
+      "source_location": "L216",
       "id": "src_rexliveroadmap_rexskillmap",
       "community": 3,
       "norm_label": "rexskillmap()"
@@ -19519,7 +19519,7 @@
       "label": "Info()",
       "file_type": "code",
       "source_file": "src/RexLiveRoadmap.tsx",
-      "source_location": "L205",
+      "source_location": "L217",
       "id": "src_rexliveroadmap_info",
       "community": 3,
       "norm_label": "info()"
@@ -52259,9 +52259,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L359",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_tsx",
-      "target": "src_app_workflowrail",
-      "confidence_score": 1.0
+      "target": "src_app_workflowrail"
     },
     {
       "relation": "contains",
@@ -59904,5 +59904,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "fc088a9a5e214f32e5fddede6911ae0fd1bc720e"
+  "built_at_commit": "98d261938e6ff827eade1f5d8ad05ae24775eb7c"
 }
