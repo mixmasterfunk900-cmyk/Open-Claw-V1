@@ -373,25 +373,57 @@ function WorkflowRail({ eyebrow, title, description, tone, steps }: { eyebrow: s
 }
 
 function YouTubeAutomation({ state }: { state: AppState }) {
-  const dogAssets = state.mediaFiles
+  const allDogAssets = state.mediaFiles
     .filter((file) => file.path.includes('youtube-automation/dog-paw-psychology') || file.path.includes('youtube-automation/dog-content'))
     .sort((a, b) => b.updatedAt.localeCompare(a.updatedAt))
-  const dogVideo = dogAssets.find((file) => /practice-v3-one-line-audio-subtitles\.mp4$|practice-v2-netflix-subtitles\.mp4$|practice-v1\.mp4$|dog_paw_full_preview/i.test(file.path))
-  const dogExports = dogAssets.filter((file) => file.kind === 'export')
-  const dogReviewNotes = dogAssets.filter((file) => /review-note\.md$/i.test(file.name))
-  const dogThumbnails = dogAssets.filter((file) => /thumbnail.*\.(png|jpg|jpeg)$/i.test(file.name)).sort((a, b) => a.name.localeCompare(b.name))
-  const dogTranscripts = dogAssets
-    .filter((file) => /transcripts\/.+\.(md|txt)$/i.test(file.path) || /transcript|script|source-notes/i.test(file.name))
-    .sort((a, b) => a.name.localeCompare(b.name))
+  const isImage = (file: MediaFile) => /\.(png|jpg|jpeg|webp)$/i.test(file.name)
+  const isVideo = (file: MediaFile) => /\.(mp4|mov|webm)$/i.test(file.name)
+  const isScript = (file: MediaFile) => /\.(md|txt)$/i.test(file.name) || /transcript|script|source-notes/i.test(file.name)
   const cleanAssetLabel = (name: string) => name
-    .replace(/\.(md|txt)$/i, '')
+    .replace(/\.(md|txt|png|jpg|jpeg|mp4)$/i, '')
     .replace(/[-_]+/g, ' ')
     .replace(/\b\w/g, (letter) => letter.toUpperCase())
+  const dogPawAssets = allDogAssets.filter((file) => file.path.includes('dog-paw-psychology') || /dog-paw/i.test(file.name))
+  const dogStaringAssets = allDogAssets.filter((file) => file.path.includes('dog-staring-psychology') || /dog-staring/i.test(file.name))
+  const contentItems = [
+    {
+      id: 'dog-paw-psychology',
+      title: 'Dog Paw Psychology',
+      status: 'review draft',
+      description: 'Finished draft, subtitles, thumbnails, transcripts, and review assets.',
+      assets: dogPawAssets,
+    },
+    {
+      id: 'dog-staring-psychology',
+      title: 'Dog Staring Psychology',
+      status: 'visuals running',
+      description: 'New researched script with varied hook frames. Waiting for WAV before final timing.',
+      assets: dogStaringAssets,
+    },
+  ]
+  const [selectedId, setSelectedId] = useState(contentItems[0]?.id ?? 'dog-paw-psychology')
+  const selectedItem = contentItems.find((item) => item.id === selectedId) ?? contentItems[0]
+  const assetBuckets = (assets: MediaFile[]) => {
+    const videos = assets.filter(isVideo)
+    const images = assets.filter(isImage)
+    const scripts = assets.filter(isScript)
+    const thumbnails = images.filter((file) => /thumbnail|contact-sheet|contact_sheet/i.test(file.name))
+    const hookFrames = images.filter((file) => /hook-frames|beat_\d+/i.test(file.path))
+    return { videos, images, scripts, thumbnails, hookFrames }
+  }
+  const previewFor = (assets: MediaFile[]) => {
+    const buckets = assetBuckets(assets)
+    return buckets.thumbnails.find((file) => /option_?01|thumbnail_option_01/i.test(file.name)) ?? buckets.thumbnails[0] ?? buckets.hookFrames[0] ?? buckets.images[0] ?? buckets.videos[0]
+  }
+  const selectedBuckets = assetBuckets(selectedItem?.assets ?? [])
+  const selectedVideo = selectedBuckets.videos.find((file) => /practice-v3-one-line-audio-subtitles\.mp4$|practice-v2-netflix-subtitles\.mp4$|practice-v1\.mp4$/i.test(file.path)) ?? selectedBuckets.videos[0]
+  const dogVideo = assetBuckets(dogPawAssets).videos[0]
   const pipelines = [
-    { id: 'dog-content', label: 'Dog Content', icon: '🐶', status: dogVideo ? 'review-ready' : 'waiting', detail: dogVideo ? 'Dog Paw Psychology full preview is ready for review.' : 'Waiting for first dog-content video render.', count: dogAssets.length },
+    { id: 'dog-content', label: 'Dog Content', icon: '🐶', status: dogVideo ? 'review-ready' : 'waiting', detail: `${contentItems.length} content project(s) in the lane.`, count: allDogAssets.length },
     { id: 'future-channel-1', label: 'Future Channel Pipeline', icon: '📺', status: 'planned', detail: 'Reserved lane for the next YouTube automation niche.', count: 0 },
   ]
-  return <section className="page-grid youtube-automation-page"><WorkflowRail eyebrow="YouTube automation HQ" title="Separate channels get their own production lanes." description="Dog Content lives here now; future channels can nest beside it without cluttering Vibe Zone’s general media lab." tone="lab" steps={[{ label: 'Channel pipeline', detail: 'Dog Content active', state: 'complete' }, { label: 'Review long-form render', detail: dogVideo ? 'Full YouTube preview ready' : 'Waiting for render', state: dogVideo ? 'active' : 'next' }, { label: 'Approve or revise', detail: 'Owner gate before upload package', state: 'next' }]} /><Card title="Channel pipelines" eyebrow="Bespoke YouTube lanes" className="full-span"><div className="youtube-pipeline-grid">{pipelines.map((pipeline) => <article className={`youtube-pipeline-card ${pipeline.status}`} key={pipeline.id}><span>{pipeline.icon}</span><div><h3>{pipeline.label}</h3><p>{pipeline.detail}</p><small>{pipeline.count ? `${pipeline.count} asset(s) detected` : 'empty lane'}</small></div></article>)}</div></Card><Card title="Dog Content / Dog Paw Psychology" eyebrow="Long-form YouTube preview" className="full-span dog-content-card">{dogVideo ? <div className="youtube-video-review"><video src={mediaUrl(dogVideo.url, dogVideo.updatedAt)} controls preload="metadata" /><div><h3>Dog Paw Psychology — full preview</h3><p>{formatBytes(dogVideo.size)} • updated {new Date(dogVideo.updatedAt).toLocaleString()}</p><div className="tag-row"><span>Dog Content</span><span>YouTube 16:9</span><span>owner review</span><span>not uploaded</span></div><p>This is nested under the Dog Content pipeline so future channels can get their own lanes without mixing assets.</p><div className="button-row"><a className="file-link" href={mediaUrl(dogVideo.url, dogVideo.updatedAt)} target="_blank">Open preview</a><a className="file-link" href={mediaUrl(dogVideo.url, dogVideo.updatedAt)} download>Download MP4</a>{dogReviewNotes[0] && <a className="file-link" href={dogReviewNotes[0].url} target="_blank">Review note</a>}</div></div></div> : <p>No Dog Content preview has been posted yet.</p>}{dogExports.length ? <div className="notice">Archive/export copy also exists: <code>{dogExports[0].path}</code></div> : null}</Card><Card title="Dog Content transcripts" eyebrow={`${dogTranscripts.length} script asset(s)`} className="full-span"><div className="youtube-transcript-grid">{dogTranscripts.map((file) => <article className="youtube-transcript-card" key={file.path}><div><span className="transcript-icon">📜</span><strong>{cleanAssetLabel(file.name)}</strong><small>{formatBytes(file.size)} • updated {new Date(file.updatedAt).toLocaleString()}</small></div><div className="button-row"><a className="file-link" href={mediaUrl(file.url, file.updatedAt)} target="_blank">Open</a><a className="file-link" href={mediaUrl(file.url, file.updatedAt)} download>Download</a></div></article>)}{!dogTranscripts.length && <p>No transcript/script files found for Dog Content yet.</p>}</div></Card><Card title="Dog Content thumbnails" eyebrow={`${dogThumbnails.length} preview asset(s)`} className="full-span"><div className="youtube-thumbnail-grid">{dogThumbnails.map((file) => <article className="youtube-thumbnail-card" key={file.path}><img src={mediaUrl(file.url, file.updatedAt)} alt={file.name} /><div><strong>{file.name.replace(/[-_]+/g, ' ').replace(/\.png$/i, '')}</strong><small>{formatBytes(file.size)}</small><div className="button-row"><a className="file-link" href={mediaUrl(file.url, file.updatedAt)} target="_blank">Open</a><a className="file-link" href={mediaUrl(file.url, file.updatedAt)} download>Download</a></div></div></article>)}{!dogThumbnails.length && <p>No thumbnail previews found for Dog Content yet.</p>}</div></Card><Card title="Next channel slots" eyebrow="Future-proofing" className="full-span"><div className="table-list"><div className="table-row"><strong>Dog Content</strong><span>Psychology / pet education / hand-drawn explainers</span><span>Active</span></div><div className="table-row"><strong>Channel 2</strong><span>Reserved for the next niche pipeline</span><span>Planned</span></div><div className="table-row"><strong>Channel 3</strong><span>Reserved for another automation lane</span><span>Planned</span></div></div></Card></section>
+  const assetLinks = (files: MediaFile[], empty: string) => files.length ? <div className="youtube-asset-links">{files.map((file) => <a className="youtube-asset-pill" href={mediaUrl(file.url, file.updatedAt)} target="_blank" download key={file.path}><span>{cleanAssetLabel(file.name)}</span><small>{formatBytes(file.size)}</small></a>)}</div> : <p>{empty}</p>
+  return <section className="page-grid youtube-automation-page compact-youtube-page"><WorkflowRail eyebrow="YouTube automation HQ" title="Compact content library." description="Small project tiles stay clean while each item opens into video, thumbnail, transcript, and visual assets on demand." tone="lab" steps={[{ label: 'Channel pipeline', detail: 'Dog Content active', state: 'complete' }, { label: 'Open a project', detail: 'Click any square preview', state: 'active' }, { label: 'Approve or revise', detail: 'Owner gate before upload package', state: 'next' }]} /><Card title="Channel pipelines" eyebrow="Bespoke YouTube lanes" className="full-span compact-pipeline-card"><div className="youtube-pipeline-grid compact">{pipelines.map((pipeline) => <article className={`youtube-pipeline-card ${pipeline.status}`} key={pipeline.id}><span>{pipeline.icon}</span><div><h3>{pipeline.label}</h3><p>{pipeline.detail}</p><small>{pipeline.count ? `${pipeline.count} asset(s) detected` : 'empty lane'}</small></div></article>)}</div></Card><Card title="Dog Content library" eyebrow={`${contentItems.length} project tile(s)`} className="full-span"><div className="youtube-content-shell"><div className="youtube-content-grid">{contentItems.map((item) => { const preview = previewFor(item.assets); const buckets = assetBuckets(item.assets); const active = item.id === selectedItem?.id; return <button type="button" className={`youtube-content-tile ${active ? 'active' : ''}`} key={item.id} onClick={() => setSelectedId(item.id)}>{preview ? isVideo(preview) ? <video src={mediaUrl(preview.url, preview.updatedAt)} preload="metadata" muted /> : <img src={mediaUrl(preview.url, preview.updatedAt)} alt={item.title} /> : <div className="youtube-empty-thumb">🐶</div>}<span className="youtube-tile-shade" /><strong>{item.title}</strong><small>{item.status} • {buckets.videos.length} video • {buckets.images.length} image • {buckets.scripts.length} script</small></button> })}</div>{selectedItem ? <div className="youtube-content-detail"><div className="youtube-detail-head"><div><p className="eyebrow">{selectedItem.status}</p><h3>{selectedItem.title}</h3><p>{selectedItem.description}</p></div><span>{selectedItem.assets.length} assets</span></div>{selectedVideo ? <video className="youtube-detail-video" src={mediaUrl(selectedVideo.url, selectedVideo.updatedAt)} controls preload="metadata" /> : <div className="youtube-detail-empty">No full video yet — scripts and hook frames are ready for review.</div>}<div className="youtube-detail-sections"><section><h4>Scripts / transcripts</h4>{assetLinks(selectedBuckets.scripts, 'No transcripts/scripts yet.')}</section><section><h4>Thumbnail ideas</h4>{assetLinks(selectedBuckets.thumbnails, 'No thumbnails yet.')}</section><section><h4>Hook / visual frames</h4>{assetLinks(selectedBuckets.hookFrames, 'No generated frames surfaced yet.')}</section><section><h4>Videos</h4>{assetLinks(selectedBuckets.videos, 'No videos yet.')}</section></div></div> : null}</div></Card><Card title="Next channel slots" eyebrow="Future-proofing" className="full-span compact-next-slots"><div className="table-list"><div className="table-row"><strong>Dog Content</strong><span>Psychology / pet education / hand-drawn explainers</span><span>Active</span></div><div className="table-row"><strong>Channel 2</strong><span>Reserved for the next niche pipeline</span><span>Planned</span></div><div className="table-row"><strong>Channel 3</strong><span>Reserved for another automation lane</span><span>Planned</span></div></div></Card></section>
 }
 
 function ClipFactory({ state, refresh, setError }: { state: AppState; refresh: () => Promise<void>; setError: (value: string) => void }) {
