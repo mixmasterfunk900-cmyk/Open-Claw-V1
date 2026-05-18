@@ -1118,6 +1118,16 @@ button.primary:disabled {
   object-fit: cover;
 }
 
+.render-card.render-card-wide {
+  grid-column: span 2;
+}
+
+.render-card.render-card-wide video,
+.render-card.render-card-wide img {
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+}
+
 .file-link {
   display: inline-flex;
   align-items: center;
@@ -1132,6 +1142,7 @@ button.primary:disabled {
 
 @media (max-width: 1100px) {
   .render-grid { grid-template-columns: 1fr; }
+  .render-card.render-card-wide { grid-column: auto; }
 }
 
 .live-roadmap-page {
