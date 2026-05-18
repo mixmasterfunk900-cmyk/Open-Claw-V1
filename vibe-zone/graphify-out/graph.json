@@ -162,7 +162,7 @@
       "source_file": "server/server.mjs",
       "source_location": "L128",
       "id": "server_server_ensuremediadirs",
-      "community": 70,
+      "community": 136,
       "norm_label": "ensuremediadirs()"
     },
     {
@@ -207,7 +207,7 @@
       "source_file": "server/server.mjs",
       "source_location": "L187",
       "id": "server_server_isvideolike",
-      "community": 136,
+      "community": 1,
       "norm_label": "isvideolike()"
     },
     {
@@ -216,7 +216,7 @@
       "source_file": "server/server.mjs",
       "source_location": "L190",
       "id": "server_server_loadvalidationcache",
-      "community": 136,
+      "community": 1,
       "norm_label": "loadvalidationcache()"
     },
     {
@@ -234,7 +234,7 @@
       "source_file": "server/server.mjs",
       "source_location": "L204",
       "id": "server_server_mediavalidationfingerprint",
-      "community": 136,
+      "community": 1,
       "norm_label": "mediavalidationfingerprint()"
     },
     {
@@ -270,7 +270,7 @@
       "source_file": "server/server.mjs",
       "source_location": "L245",
       "id": "server_server_validatemediafile",
-      "community": 136,
+      "community": 1,
       "norm_label": "validatemediafile()"
     },
     {
@@ -1062,7 +1062,7 @@
       "source_file": "server/server.mjs",
       "source_location": "L1348",
       "id": "server_server_videoidfromurl",
-      "community": 70,
+      "community": 83,
       "norm_label": "videoidfromurl()"
     },
     {
@@ -1071,7 +1071,7 @@
       "source_file": "server/server.mjs",
       "source_location": "L1351",
       "id": "server_server_latestonlyblocker",
-      "community": 70,
+      "community": 83,
       "norm_label": "latestonlyblocker()"
     },
     {
@@ -1251,7 +1251,7 @@
       "source_file": "server/server.mjs",
       "source_location": "L1638",
       "id": "server_server_slug",
-      "community": 70,
+      "community": 136,
       "norm_label": "slug()"
     },
     {
@@ -1278,7 +1278,7 @@
       "source_file": "server/server.mjs",
       "source_location": "L1731",
       "id": "server_server_clipplatformchecklist",
-      "community": 70,
+      "community": 136,
       "norm_label": "clipplatformchecklist()"
     },
     {
@@ -1287,7 +1287,7 @@
       "source_file": "server/server.mjs",
       "source_location": "L1737",
       "id": "server_server_exportclipbundle",
-      "community": 70,
+      "community": 136,
       "norm_label": "exportclipbundle()"
     },
     {
@@ -1296,7 +1296,7 @@
       "source_file": "server/server.mjs",
       "source_location": "L1816",
       "id": "server_server_ingestlatestlocalmedia",
-      "community": 70,
+      "community": 83,
       "norm_label": "ingestlatestlocalmedia()"
     },
     {
@@ -1395,7 +1395,7 @@
       "source_file": "server/server.mjs",
       "source_location": "L1983",
       "id": "server_server_parsetranscript",
-      "community": 242,
+      "community": 83,
       "norm_label": "parsetranscript()"
     },
     {
@@ -1404,7 +1404,7 @@
       "source_file": "server/server.mjs",
       "source_location": "L2005",
       "id": "server_server_normalizestamp",
-      "community": 242,
+      "community": 83,
       "norm_label": "normalizestamp()"
     },
     {
@@ -1431,7 +1431,7 @@
       "source_file": "server/server.mjs",
       "source_location": "L2016",
       "id": "server_server_timedchunks",
-      "community": 242,
+      "community": 83,
       "norm_label": "timedchunks()"
     },
     {
@@ -1440,7 +1440,7 @@
       "source_file": "server/server.mjs",
       "source_location": "L2041",
       "id": "server_server_scoreclips",
-      "community": 242,
+      "community": 83,
       "norm_label": "scoreclips()"
     },
     {
@@ -1476,7 +1476,7 @@
       "source_file": "server/server.mjs",
       "source_location": "L2080",
       "id": "server_server_dedupeclips",
-      "community": 242,
+      "community": 83,
       "norm_label": "dedupeclips()"
     },
     {
@@ -1512,7 +1512,7 @@
       "source_file": "server/server.mjs",
       "source_location": "L2109",
       "id": "server_server_thumbnailtext",
-      "community": 1,
+      "community": 70,
       "norm_label": "thumbnailtext()"
     },
     {
@@ -1521,7 +1521,7 @@
       "source_file": "server/server.mjs",
       "source_location": "L2118",
       "id": "server_server_thumbnailvisualangle",
-      "community": 1,
+      "community": 70,
       "norm_label": "thumbnailvisualangle()"
     },
     {
@@ -1530,7 +1530,7 @@
       "source_file": "server/server.mjs",
       "source_location": "L2125",
       "id": "server_server_thumbnailconceptfromclip",
-      "community": 1,
+      "community": 70,
       "norm_label": "thumbnailconceptfromclip()"
     },
     {
@@ -1633,10 +1633,19 @@
       "norm_label": "callopenaistudio()"
     },
     {
-      "label": "callOllamaStudio()",
+      "label": "callOpenClawStudio()",
       "file_type": "code",
       "source_file": "server/server.mjs",
       "source_location": "L2323",
+      "id": "server_server_callopenclawstudio",
+      "community": 1,
+      "norm_label": "callopenclawstudio()"
+    },
+    {
+      "label": "callOllamaStudio()",
+      "file_type": "code",
+      "source_file": "server/server.mjs",
+      "source_location": "L2341",
       "id": "server_server_callollamastudio",
       "community": 1,
       "norm_label": "callollamastudio()"
@@ -1645,7 +1654,7 @@
       "label": "generateStudioAi()",
       "file_type": "code",
       "source_file": "server/server.mjs",
-      "source_location": "L2338",
+      "source_location": "L2356",
       "id": "server_server_generatestudioai",
       "community": 1,
       "norm_label": "generatestudioai()"
@@ -1654,7 +1663,7 @@
       "label": "handleApi()",
       "file_type": "code",
       "source_file": "server/server.mjs",
-      "source_location": "L2351",
+      "source_location": "L2369",
       "id": "server_server_handleapi",
       "community": 70,
       "norm_label": "handleapi()"
@@ -1663,7 +1672,7 @@
       "label": "serveStatic()",
       "file_type": "code",
       "source_file": "server/server.mjs",
-      "source_location": "L2621",
+      "source_location": "L2639",
       "id": "server_server_servestatic",
       "community": 1,
       "norm_label": "servestatic()"
@@ -4113,7 +4122,7 @@
       "source_file": "scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs",
       "source_location": "L70",
       "id": "scripts_fix_stream2_founder_crisp_subtitles_20260515_flush",
-      "community": 221,
+      "community": 148,
       "norm_label": "flush()"
     },
     {
@@ -4122,7 +4131,7 @@
       "source_file": "scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs",
       "source_location": "L74",
       "id": "scripts_fix_stream2_founder_crisp_subtitles_20260515_applydomaincorrections",
-      "community": 221,
+      "community": 148,
       "norm_label": "applydomaincorrections()"
     },
     {
@@ -4131,7 +4140,7 @@
       "source_file": "scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs",
       "source_location": "L90",
       "id": "scripts_fix_stream2_founder_crisp_subtitles_20260515_buildphraseeventsfromwords",
-      "community": 221,
+      "community": 148,
       "norm_label": "buildphraseeventsfromwords()"
     },
     {
@@ -8046,7 +8055,7 @@
       "source_file": "scripts/fix-longform-thumbnail-lab-subtitles-20260515.mjs",
       "source_location": "L127",
       "id": "scripts_fix_longform_thumbnail_lab_subtitles_20260515_applydomaincorrections",
-      "community": 221,
+      "community": 148,
       "norm_label": "applydomaincorrections()"
     },
     {
@@ -12375,7 +12384,7 @@
       "source_file": "scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs",
       "source_location": "L1",
       "id": "scripts_render_stream2_billion_company_house_v3_20260514t0817z_mjs",
-      "community": 31,
+      "community": 221,
       "norm_label": "render-stream2-billion-company-house-v3-20260514t0817z.mjs"
     },
     {
@@ -12384,7 +12393,7 @@
       "source_file": "scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs",
       "source_location": "L7",
       "id": "scripts_render_stream2_billion_company_house_v3_20260514t0817z_root",
-      "community": 31,
+      "community": 221,
       "norm_label": "root"
     },
     {
@@ -12393,7 +12402,7 @@
       "source_file": "scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs",
       "source_location": "L24",
       "id": "scripts_render_stream2_billion_company_house_v3_20260514t0817z_copy",
-      "community": 31,
+      "community": 221,
       "norm_label": "copy"
     },
     {
@@ -12402,7 +12411,7 @@
       "source_file": "scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs",
       "source_location": "L34",
       "id": "scripts_render_stream2_billion_company_house_v3_20260514t0817z_run",
-      "community": 31,
+      "community": 221,
       "norm_label": "run()"
     },
     {
@@ -12411,7 +12420,7 @@
       "source_file": "scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs",
       "source_location": "L39",
       "id": "scripts_render_stream2_billion_company_house_v3_20260514t0817z_esc",
-      "community": 31,
+      "community": 221,
       "norm_label": "esc()"
     },
     {
@@ -12420,7 +12429,7 @@
       "source_file": "scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs",
       "source_location": "L40",
       "id": "scripts_render_stream2_billion_company_house_v3_20260514t0817z_filterpath",
-      "community": 31,
+      "community": 221,
       "norm_label": "filterpath()"
     },
     {
@@ -12429,7 +12438,7 @@
       "source_file": "scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs",
       "source_location": "L47",
       "id": "scripts_render_stream2_billion_company_house_v3_20260514t0817z_transcript",
-      "community": 31,
+      "community": 221,
       "norm_label": "transcript"
     },
     {
@@ -12438,7 +12447,7 @@
       "source_file": "scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs",
       "source_location": "L48",
       "id": "scripts_render_stream2_billion_company_house_v3_20260514t0817z_events",
-      "community": 31,
+      "community": 221,
       "norm_label": "events"
     },
     {
@@ -12447,7 +12456,7 @@
       "source_file": "scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs",
       "source_location": "L49",
       "id": "scripts_render_stream2_billion_company_house_v3_20260514t0817z_captionevents",
-      "community": 31,
+      "community": 221,
       "norm_label": "captionevents"
     },
     {
@@ -12456,7 +12465,7 @@
       "source_file": "scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs",
       "source_location": "L50",
       "id": "scripts_render_stream2_billion_company_house_v3_20260514t0817z_qa",
-      "community": 31,
+      "community": 221,
       "norm_label": "qa"
     },
     {
@@ -12465,7 +12474,7 @@
       "source_file": "scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs",
       "source_location": "L55",
       "id": "scripts_render_stream2_billion_company_house_v3_20260514t0817z_vf",
-      "community": 31,
+      "community": 221,
       "norm_label": "vf"
     },
     {
@@ -12474,7 +12483,7 @@
       "source_file": "scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs",
       "source_location": "L78",
       "id": "scripts_render_stream2_billion_company_house_v3_20260514t0817z_probe",
-      "community": 31,
+      "community": 221,
       "norm_label": "probe"
     },
     {
@@ -12483,7 +12492,7 @@
       "source_file": "scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs",
       "source_location": "L80",
       "id": "scripts_render_stream2_billion_company_house_v3_20260514t0817z_review",
-      "community": 31,
+      "community": 221,
       "norm_label": "review"
     },
     {
@@ -12492,7 +12501,7 @@
       "source_file": "scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs",
       "source_location": "L81",
       "id": "scripts_render_stream2_billion_company_house_v3_20260514t0817z_reviewjson",
-      "community": 31,
+      "community": 221,
       "norm_label": "reviewjson"
     },
     {
@@ -12501,7 +12510,7 @@
       "source_file": "scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs",
       "source_location": "L94",
       "id": "scripts_render_stream2_billion_company_house_v3_20260514t0817z_metadata",
-      "community": 31,
+      "community": 221,
       "norm_label": "metadata"
     },
     {
@@ -12510,7 +12519,7 @@
       "source_file": "scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs",
       "source_location": "L133",
       "id": "scripts_render_stream2_billion_company_house_v3_20260514t0817z_datapath",
-      "community": 31,
+      "community": 221,
       "norm_label": "datapath"
     },
     {
@@ -12519,7 +12528,7 @@
       "source_file": "scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs",
       "source_location": "L134",
       "id": "scripts_render_stream2_billion_company_house_v3_20260514t0817z_data",
-      "community": 31,
+      "community": 221,
       "norm_label": "data"
     },
     {
@@ -12528,7 +12537,7 @@
       "source_file": "scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs",
       "source_location": "L136",
       "id": "scripts_render_stream2_billion_company_house_v3_20260514t0817z_clip",
-      "community": 31,
+      "community": 221,
       "norm_label": "clip"
     },
     {
@@ -12537,7 +12546,7 @@
       "source_file": "scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs",
       "source_location": "L148",
       "id": "scripts_render_stream2_billion_company_house_v3_20260514t0817z_dispatch",
-      "community": 31,
+      "community": 221,
       "norm_label": "dispatch"
     },
     {
@@ -16227,7 +16236,7 @@
       "source_file": "scripts/render-day4-package-20260515T1310Z.mjs",
       "source_location": "L93",
       "id": "scripts_render_day4_package_20260515t1310z_cleanword",
-      "community": 221,
+      "community": 148,
       "norm_label": "cleanword()"
     },
     {
@@ -16281,7 +16290,7 @@
       "source_file": "scripts/render-day4-package-20260515T1310Z.mjs",
       "source_location": "L156",
       "id": "scripts_render_day4_package_20260515t1310z_collectwords",
-      "community": 221,
+      "community": 148,
       "norm_label": "collectwords()"
     },
     {
@@ -17325,7 +17334,7 @@
       "source_file": "scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs",
       "source_location": "L28",
       "id": "scripts_fix_stream2_founder_trim_hook_subtitles_20260515_assescape",
-      "community": 221,
+      "community": 218,
       "norm_label": "assescape()"
     },
     {
@@ -20115,7 +20124,7 @@
       "source_file": "lib/caption-normalizer.mjs",
       "source_location": "L1",
       "id": "lib_caption_normalizer_mjs",
-      "community": 221,
+      "community": 148,
       "norm_label": "caption-normalizer.mjs"
     },
     {
@@ -20124,7 +20133,7 @@
       "source_file": "lib/caption-normalizer.mjs",
       "source_location": "L3",
       "id": "lib_caption_normalizer_cleancaptiontext",
-      "community": 221,
+      "community": 148,
       "norm_label": "cleancaptiontext()"
     },
     {
@@ -20133,7 +20142,7 @@
       "source_file": "lib/caption-normalizer.mjs",
       "source_location": "L13",
       "id": "lib_caption_normalizer_assescape",
-      "community": 221,
+      "community": 148,
       "norm_label": "assescape()"
     },
     {
@@ -20142,7 +20151,7 @@
       "source_file": "lib/caption-normalizer.mjs",
       "source_location": "L17",
       "id": "lib_caption_normalizer_asstime",
-      "community": 221,
+      "community": 148,
       "norm_label": "asstime()"
     },
     {
@@ -20160,7 +20169,7 @@
       "source_file": "lib/caption-normalizer.mjs",
       "source_location": "L38",
       "id": "lib_caption_normalizer_splitwords",
-      "community": 221,
+      "community": 148,
       "norm_label": "splitwords()"
     },
     {
@@ -20169,7 +20178,7 @@
       "source_file": "lib/caption-normalizer.mjs",
       "source_location": "L42",
       "id": "lib_caption_normalizer_weightedlength",
-      "community": 221,
+      "community": 148,
       "norm_label": "weightedlength()"
     },
     {
@@ -20178,7 +20187,7 @@
       "source_file": "lib/caption-normalizer.mjs",
       "source_location": "L53",
       "id": "lib_caption_normalizer_phrasechunks",
-      "community": 221,
+      "community": 148,
       "norm_label": "phrasechunks()"
     },
     {
@@ -20187,7 +20196,7 @@
       "source_file": "lib/caption-normalizer.mjs",
       "source_location": "L70",
       "id": "lib_caption_normalizer_eventfromwordtiming",
-      "community": 221,
+      "community": 148,
       "norm_label": "eventfromwordtiming()"
     },
     {
@@ -20196,7 +20205,7 @@
       "source_file": "lib/caption-normalizer.mjs",
       "source_location": "L78",
       "id": "lib_caption_normalizer_segmentintersections",
-      "community": 221,
+      "community": 148,
       "norm_label": "segmentintersections()"
     },
     {
@@ -20205,7 +20214,7 @@
       "source_file": "lib/caption-normalizer.mjs",
       "source_location": "L94",
       "id": "lib_caption_normalizer_buildshortwordevents",
-      "community": 221,
+      "community": 148,
       "norm_label": "buildshortwordevents()"
     },
     {
@@ -20214,7 +20223,7 @@
       "source_file": "lib/caption-normalizer.mjs",
       "source_location": "L115",
       "id": "lib_caption_normalizer_buildlongphraseevents",
-      "community": 221,
+      "community": 148,
       "norm_label": "buildlongphraseevents()"
     },
     {
@@ -20223,7 +20232,7 @@
       "source_file": "lib/caption-normalizer.mjs",
       "source_location": "L140",
       "id": "lib_caption_normalizer_normalizetiming",
-      "community": 221,
+      "community": 148,
       "norm_label": "normalizetiming()"
     },
     {
@@ -20250,7 +20259,7 @@
       "source_file": "lib/caption-normalizer.mjs",
       "source_location": "L182",
       "id": "lib_caption_normalizer_captioncoverage",
-      "community": 221,
+      "community": 30,
       "norm_label": "captioncoverage()"
     },
     {
@@ -20259,7 +20268,7 @@
       "source_file": "lib/caption-normalizer.mjs",
       "source_location": "L207",
       "id": "lib_caption_normalizer_mergetimedcaptionevents",
-      "community": 221,
+      "community": 30,
       "norm_label": "mergetimedcaptionevents()"
     },
     {
@@ -20268,7 +20277,7 @@
       "source_file": "lib/caption-normalizer.mjs",
       "source_location": "L224",
       "id": "lib_caption_normalizer_qacaptionevents",
-      "community": 102,
+      "community": 105,
       "norm_label": "qacaptionevents()"
     },
     {
@@ -28364,9 +28373,9 @@
       "source_file": "server/server.mjs",
       "source_location": "L2290",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "server_server_mjs",
-      "target": "server_server_fallbackstudioai",
-      "confidence_score": 1.0
+      "target": "server_server_fallbackstudioai"
     },
     {
       "relation": "contains",
@@ -28374,9 +28383,9 @@
       "source_file": "server/server.mjs",
       "source_location": "L2305",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "server_server_mjs",
-      "target": "server_server_parsestudiojson",
-      "confidence_score": 1.0
+      "target": "server_server_parsestudiojson"
     },
     {
       "relation": "contains",
@@ -28384,9 +28393,9 @@
       "source_file": "server/server.mjs",
       "source_location": "L2310",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "server_server_mjs",
-      "target": "server_server_callopenaistudio",
-      "confidence_score": 1.0
+      "target": "server_server_callopenaistudio"
     },
     {
       "relation": "contains",
@@ -28395,8 +28404,18 @@
       "source_location": "L2323",
       "weight": 1.0,
       "source": "server_server_mjs",
-      "target": "server_server_callollamastudio",
+      "target": "server_server_callopenclawstudio",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/server.mjs",
+      "source_location": "L2323",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "server_server_mjs",
+      "target": "server_server_callollamastudio"
     },
     {
       "relation": "contains",
@@ -28404,9 +28423,9 @@
       "source_file": "server/server.mjs",
       "source_location": "L2338",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "server_server_mjs",
-      "target": "server_server_generatestudioai",
-      "confidence_score": 1.0
+      "target": "server_server_generatestudioai"
     },
     {
       "relation": "contains",
@@ -28515,6 +28534,17 @@
       "confidence_score": 1.0,
       "source": "server_server_scanyoutubetab",
       "target": "server_server_execfileasync"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "server/server.mjs",
+      "source_location": "L2335",
+      "weight": 1.0,
+      "source": "server_server_callopenclawstudio",
+      "target": "server_server_execfileasync",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -31086,9 +31116,9 @@
       "source_file": "server/server.mjs",
       "source_location": "L2340",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "server_server_generatestudioai",
-      "target": "server_server_fallbackstudioai",
-      "confidence_score": 1.0
+      "target": "server_server_fallbackstudioai"
     },
     {
       "relation": "calls",
@@ -31097,8 +31127,30 @@
       "source_file": "server/server.mjs",
       "source_location": "L2345",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "server_server_generatestudioai",
-      "target": "server_server_parsestudiojson",
+      "target": "server_server_parsestudiojson"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "server/server.mjs",
+      "source_location": "L2343",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "server_server_generatestudioai",
+      "target": "server_server_callopenaistudio"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "server/server.mjs",
+      "source_location": "L2361",
+      "weight": 1.0,
+      "source": "server_server_generatestudioai",
+      "target": "server_server_callopenclawstudio",
       "confidence_score": 1.0
     },
     {
@@ -31108,20 +31160,9 @@
       "source_file": "server/server.mjs",
       "source_location": "L2343",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "server_server_generatestudioai",
-      "target": "server_server_callopenaistudio",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "server/server.mjs",
-      "source_location": "L2343",
-      "weight": 1.0,
-      "source": "server_server_generatestudioai",
-      "target": "server_server_callollamastudio",
-      "confidence_score": 1.0
+      "target": "server_server_callollamastudio"
     },
     {
       "relation": "calls",
@@ -31130,9 +31171,9 @@
       "source_file": "server/server.mjs",
       "source_location": "L2554",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "server_server_handleapi",
-      "target": "server_server_generatestudioai",
-      "confidence_score": 1.0
+      "target": "server_server_generatestudioai"
     },
     {
       "relation": "imports_from",
@@ -53803,9 +53844,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_tsx",
-      "target": "src_app_studioairesult",
-      "confidence_score": 1.0
+      "target": "src_app_studioairesult"
     },
     {
       "relation": "contains",
@@ -62552,5 +62593,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "3cc4efcd96c13151e3661ed45a95b47681a16387"
+  "built_at_commit": "cc52046eafee1444a44ea4faa1924540ce89abd6"
 }

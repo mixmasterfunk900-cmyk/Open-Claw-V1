@@ -60,7 +60,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
 <div class="container">
 
 <h1>vibe-zone — Complete Call Flow &amp; Architecture Documentation</h1>
-<p class="subtitle">Generated from graphify knowledge graph: 2951 nodes, 3524 edges, 244 communities. Commit: 3cc4efc</p>
+<p class="subtitle">Generated from graphify knowledge graph: 2952 nodes, 3527 edges, 243 communities. Commit: cc52046</p>
 
 <div class="nav">
     <a href="#overview">Architecture Overview</a>
@@ -75,8 +75,8 @@ hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
     <a href="#community-0">Community 0</a>
     <a href="#community-1">Community 1</a>
     <a href="#community-3">Community 3</a>
+    <a href="#community-148">Community 148</a>
     <a href="#community-2">Community 2</a>
-    <a href="#community-31">Community 31</a>
     <a href="#community-229">Community 229</a>
     <a href="#other">Other</a>
 </div>
@@ -88,13 +88,13 @@ hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
 
 %%{init: {"theme": "dark", "themeVariables": {"fontSize": "15.0px", "fontFamily": "Segoe UI, system-ui, sans-serif", "primaryColor": "#1e293b", "primaryTextColor": "#e2e8f0", "primaryBorderColor": "#38bdf8", "secondaryColor": "#0f172a", "tertiaryColor": "#334155", "lineColor": "#64748b", "textColor": "#e2e8f0"}, "flowchart": {"htmlLabels": true, "curve": "basis", "nodeSpacing": 48, "rankSpacing": 64, "padding": 14, "diagramPadding": 10, "useMaxWidth": true}}}%%
 flowchart LR
-    BUILD_GRAPH_321CBB04("Graph Build<br/><small>199 nodes</small>")
+    BUILD_GRAPH_321CBB04("Graph Build<br/><small>200 nodes</small>")
     class BUILD_GRAPH_321CBB04 module;
     ANALYSIS_CLUSTERING_C79796DA("Analysis &amp; Clustering<br/><small>34 nodes</small>")
     class ANALYSIS_CLUSTERING_C79796DA module;
     OUTPUTS_DOCS_ED82387C("Outputs &amp; Docs<br/><small>29 nodes</small>")
     class OUTPUTS_DOCS_ED82387C module;
-    CLI_SKILLS_9964CBB8("CLI &amp; Skill Installers<br/><small>62 nodes</small>")
+    CLI_SKILLS_9964CBB8("CLI &amp; Skill Installers<br/><small>63 nodes</small>")
     class CLI_SKILLS_9964CBB8 module;
     INGEST_CACHE_UPDATE_FF457338("Ingestion &amp; Updates<br/><small>161 nodes</small>")
     class INGEST_CACHE_UPDATE_FF457338 module;
@@ -106,30 +106,30 @@ flowchart LR
     class TESTS_FIXTURES_B84B1DCC module;
     COMMUNITY_0_B056AD3D("Community 0<br/><small>99 nodes</small>")
     class COMMUNITY_0_B056AD3D module;
-    COMMUNITY_1_3073A0DB("Community 1<br/><small>58 nodes</small>")
+    COMMUNITY_1_3073A0DB("Community 1<br/><small>60 nodes</small>")
     class COMMUNITY_1_3073A0DB module;
     COMMUNITY_3_D8DFCEA7("Community 3<br/><small>42 nodes</small>")
     class COMMUNITY_3_D8DFCEA7 module;
+    COMMUNITY_148_56BF65DD("Community 148<br/><small>40 nodes</small>")
+    class COMMUNITY_148_56BF65DD module;
     COMMUNITY_2_8C8DF7B9("Community 2<br/><small>39 nodes</small>")
     class COMMUNITY_2_8C8DF7B9 module;
-    COMMUNITY_31_2075BEB2("Community 31<br/><small>38 nodes</small>")
-    class COMMUNITY_31_2075BEB2 module;
     COMMUNITY_229_82169BCE("Community 229<br/><small>37 nodes</small>")
     class COMMUNITY_229_82169BCE module;
-    OTHER_D0941E68("Other<br/><small>1848 nodes</small>")
+    OTHER_D0941E68("Other<br/><small>1843 nodes</small>")
     class OTHER_D0941E68 module;
-    COMMUNITY_1_3073A0DB -->|contains x130| OTHER_D0941E68
-    OTHER_D0941E68 -->|imports x49| BUILD_GRAPH_321CBB04
+    COMMUNITY_1_3073A0DB -->|contains x126| OTHER_D0941E68
+    OTHER_D0941E68 -->|imports x108| COMMUNITY_148_56BF65DD
+    OTHER_D0941E68 -->|imports x97| BUILD_GRAPH_321CBB04
     COMMUNITY_0_B056AD3D -->|contains x42| OTHER_D0941E68
-    BUILD_GRAPH_321CBB04 -->|imports x34| OTHER_D0941E68
-    SECURITY_GLOBAL_5B9C6A04 -->|imports x18| OTHER_D0941E68
-    COMMUNITY_229_82169BCE -->|imports x10| OTHER_D0941E68
-    CLI_SKILLS_9964CBB8 -->|imports x9| OTHER_D0941E68
-    SECURITY_GLOBAL_5B9C6A04 -->|imports x6| BUILD_GRAPH_321CBB04
-    COMMUNITY_31_2075BEB2 -->|imports x6| OTHER_D0941E68
-    SERVE_API_35EC8E86 -->|imports x6| OTHER_D0941E68
-    COMMUNITY_31_2075BEB2 -->|imports x2| BUILD_GRAPH_321CBB04
-    SERVE_API_35EC8E86 -->|imports x2| BUILD_GRAPH_321CBB04
+    BUILD_GRAPH_321CBB04 -->|imports x20| COMMUNITY_148_56BF65DD
+    SECURITY_GLOBAL_5B9C6A04 -->|imports x12| COMMUNITY_148_56BF65DD
+    SECURITY_GLOBAL_5B9C6A04 -->|imports x12| BUILD_GRAPH_321CBB04
+    COMMUNITY_229_82169BCE -->|imports x8| COMMUNITY_148_56BF65DD
+    CLI_SKILLS_9964CBB8 -->|imports x6| COMMUNITY_148_56BF65DD
+    COMMUNITY_148_56BF65DD -->|contains x5| BUILD_GRAPH_321CBB04
+    BUILD_GRAPH_321CBB04 -->|imports x4| OTHER_D0941E68
+    SERVE_API_35EC8E86 -->|imports x4| COMMUNITY_148_56BF65DD
     classDef entry fill:#422006,stroke:#fbbf24,color:#fde68a,stroke-width:1px;
     classDef api fill:#450a0a,stroke:#f87171,color:#fee2e2,stroke-width:1px;
     classDef async fill:#2e1065,stroke:#a78bfa,color:#ede9fe,stroke-width:1px;
@@ -146,19 +146,19 @@ flowchart LR
     <h4>Architecture Layers</h4>
     <table style="width:100%;font-size:0.85rem;">
       <tr><th>Layer</th><th>Nodes</th><th>Communities</th></tr>
-      <tr><td>Graph Build</td><td>199</td><td><code>38, 41, 17, 22, 34, 107, 94, 103, 104, 105, 106, 233, 234</code></td></tr><tr><td>Analysis &amp; Clustering</td><td>34</td><td><code>43, 113, 146</code></td></tr><tr><td>Outputs &amp; Docs</td><td>29</td><td><code>8</code></td></tr><tr><td>CLI &amp; Skill Installers</td><td>62</td><td><code>218, 59, 97, 119, 145</code></td></tr><tr><td>Ingestion &amp; Updates</td><td>161</td><td><code>26, 45, 53, 82, 127, 133, 171, 231, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 217, 222, 228</code></td></tr><tr><td>Serving API</td><td>104</td><td><code>5, 9, 63, 67, 240, 161, 162</code></td></tr><tr><td>Security &amp; Global Graph</td><td>128</td><td><code>42, 214, 219, 61, 62, 64, 65, 66</code></td></tr><tr><td>Tests &amp; Fixtures</td><td>73</td><td><code>114, 120, 121, 122, 135, 142, 236, 157, 158, 159, 160, 239, 237</code></td></tr><tr><td>Community 0</td><td>99</td><td><code>0</code></td></tr><tr><td>Community 1</td><td>58</td><td><code>1</code></td></tr><tr><td>Community 3</td><td>42</td><td><code>3</code></td></tr><tr><td>Community 2</td><td>39</td><td><code>2</code></td></tr><tr><td>Community 31</td><td>38</td><td><code>31</code></td></tr><tr><td>Community 229</td><td>37</td><td><code>229</code></td></tr><tr><td>Other</td><td>1848</td><td><code>70, 7, 10, 11, 12, 39, 46, 13, 86, 14, 15, 16, 18, 19, 20, 21, 23, 24, 25, 81, 148, 221, 27, 28, 29, 30, 212, 216, 220, 35, 36, 52, 33, 37, 4, 40, 51, 223, 224, 44, 69, 98, 213, 32, 47, 48, 49, 50, 136, 225, 54, 55, 56, 57, 58, 60, 68, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 83, 84, 85, 99, 227, 88, 89, 90, 91, 92, 100, 101, 102, 95, 96, 108, 109, 110, 111, 112, 129, 143, 87, 93, 115, 116, 117, 118, 226, 123, 124, 125, 126, 128, 130, 131, 132, 215, 232, 134, 137, 238, 241, 138, 139, 140, 141, 144, 147, 149, 230, 150, 151, 152, 153, 154, 155, 235, 242, 243, 156, 163, 164, 167, 165, 166, 168, 169, 170, 172, 173, 174, 210, 211, 6, 208, 209</code></td></tr>
+      <tr><td>Graph Build</td><td>200</td><td><code>38, 41, 17, 22, 34, 107, 105, 94, 103, 104, 106, 233, 234</code></td></tr><tr><td>Analysis &amp; Clustering</td><td>34</td><td><code>43, 113, 146</code></td></tr><tr><td>Outputs &amp; Docs</td><td>29</td><td><code>8</code></td></tr><tr><td>CLI &amp; Skill Installers</td><td>63</td><td><code>218, 59, 97, 119, 145</code></td></tr><tr><td>Ingestion &amp; Updates</td><td>161</td><td><code>26, 45, 53, 82, 127, 133, 171, 231, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 217, 222, 228</code></td></tr><tr><td>Serving API</td><td>104</td><td><code>5, 9, 63, 67, 240, 161, 162</code></td></tr><tr><td>Security &amp; Global Graph</td><td>128</td><td><code>42, 214, 219, 61, 62, 64, 65, 66</code></td></tr><tr><td>Tests &amp; Fixtures</td><td>73</td><td><code>114, 120, 121, 122, 135, 142, 236, 157, 158, 159, 160, 239, 237</code></td></tr><tr><td>Community 0</td><td>99</td><td><code>0</code></td></tr><tr><td>Community 1</td><td>60</td><td><code>1</code></td></tr><tr><td>Community 3</td><td>42</td><td><code>3</code></td></tr><tr><td>Community 148</td><td>40</td><td><code>148</code></td></tr><tr><td>Community 2</td><td>39</td><td><code>2</code></td></tr><tr><td>Community 229</td><td>37</td><td><code>229</code></td></tr><tr><td>Other</td><td>1843</td><td><code>70, 7, 10, 11, 12, 39, 46, 13, 86, 14, 15, 16, 18, 19, 20, 21, 23, 24, 25, 81, 30, 27, 28, 83, 29, 212, 216, 220, 221, 31, 35, 36, 52, 33, 37, 4, 40, 51, 223, 224, 44, 69, 98, 213, 32, 47, 48, 49, 50, 136, 225, 54, 55, 56, 57, 58, 60, 68, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 84, 85, 99, 227, 88, 89, 90, 91, 92, 100, 101, 95, 96, 102, 108, 109, 110, 111, 112, 129, 143, 87, 93, 115, 116, 117, 118, 226, 123, 124, 125, 126, 128, 130, 131, 132, 215, 232, 134, 137, 238, 241, 138, 139, 140, 141, 144, 147, 149, 230, 150, 151, 152, 153, 154, 155, 235, 243, 156, 163, 164, 167, 165, 166, 168, 169, 170, 172, 173, 174, 210, 211, 6, 208, 209</code></td></tr>
     </table>
   </div>
   <div class="card">
     <h4>Core Flow</h4>
-    <div class="arrow-chain">Outputs &amp; Docs -&gt; Graph Build -&gt; Other -&gt; Analysis &amp; Clustering -&gt; CLI &amp; Skill Installers -&gt; Ingestion &amp; Updates -&gt; Serving API</div>
+    <div class="arrow-chain">Outputs &amp; Docs -&gt; Graph Build -&gt; Community 148 -&gt; Other -&gt; Community 1 -&gt; Analysis &amp; Clustering -&gt; CLI &amp; Skill Installers</div>
   </div>
 </div>
 <div class="grid">
   <div class="card">
     <h4>Graph Report Highlights</h4>
     <ul>
-      <li>2951 nodes · 3524 edges · 244 communities (194 shown, 50 thin omitted)</li>
+      <li>2952 nodes · 3527 edges · 243 communities (193 shown, 50 thin omitted)</li>
       <li>Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 2 edges (avg confidence: 0.8)</li>
       <li>Token cost: 0 input · 0 output</li>
       <li>1. `buildAss()` - 73 edges</li>
@@ -170,36 +170,36 @@ flowchart LR
 <hr>
 <!-- ====== 2. Graph Build ====== -->
 <h2 id="build-graph">2. Graph Build</h2>
-<p>Graph Build groups implementation around build, render, stream2, scripts, mostly in scripts/render-stream2-fulltime-247-build-house-v4b-20260515T0913Z.mjs, scripts/render-stream2-fulltime-247-build-house-v4c-20260515T0918Z.mjs, scripts/render-stream2-fulltime-247-build-house-v4-20260514T1820Z.mjs. This section covers 199 nodes and 198 internal edges; the diagram shows only representative relationships to stay readable.</p>
+<p>Graph Build groups implementation around build, render, stream2, scripts, mostly in scripts/render-stream2-fulltime-247-build-house-v4b-20260515T0913Z.mjs, scripts/render-stream2-fulltime-247-build-house-v4c-20260515T0918Z.mjs, scripts/render-stream2-fulltime-247-build-house-v4-20260514T1820Z.mjs. This section covers 200 nodes and 208 internal edges; the diagram shows only representative relationships to stay readable.</p>
 
 <div class="mermaid">
 %%{init: {"theme": "dark", "themeVariables": {"fontSize": "15.0px", "fontFamily": "Segoe UI, system-ui, sans-serif", "primaryColor": "#1e293b", "primaryTextColor": "#e2e8f0", "primaryBorderColor": "#38bdf8", "secondaryColor": "#0f172a", "tertiaryColor": "#334155", "lineColor": "#64748b", "textColor": "#e2e8f0"}, "flowchart": {"htmlLabels": true, "curve": "basis", "nodeSpacing": 48, "rankSpacing": 64, "padding": 14, "diagramPadding": 10, "useMaxWidth": true}}}%%
 flowchart LR
-    %% Section: Graph Build (199 nodes, 198 edges)
-    subgraph build_graph_scripts_render_stream2_fulltime_247_ad17fba5["scripts/render-stream2-fulltime-247-build-house-v4-20260514T1820Z.mjs"]
-        scripts_render_stream2_fulltime_247_build_house_6fdc9a0c("esc()<br/><small>scripts/render-stream2-fulltime-247-build-house-v4-20260514T1820Z.mjs</small>")
-        scripts_render_stream2_fulltime_247_build_house_d45cb6a0("headerDraw()<br/><small>scripts/render-stream2-fulltime-247-build-house-v4-20260514T1820Z.mjs</small>")
-        scripts_render_stream2_fulltime_247_build_house_7529e181("render-stream2-fulltime-247-build-house...<br/><small>scripts/render-stream2-fulltime-247-build-house-v4-20260514T1820Z.mjs</small>")
-    end
-    subgraph build_graph_scripts_render_stream2_fulltime_247_0b5a57ae["scripts/render-stream2-fulltime-247-build-house-v4b-20260515T0913Z.mjs"]
-        scripts_render_stream2_fulltime_247_build_house_6d25e4ec("esc()<br/><small>scripts/render-stream2-fulltime-247-build-house-v4b-20260515T0913Z.mjs</small>")
-        scripts_render_stream2_fulltime_247_build_house_39e3b5ac("headerDraw()<br/><small>scripts/render-stream2-fulltime-247-build-house-v4b-20260515T0913Z.mjs</small>")
-        scripts_render_stream2_fulltime_247_build_house_e6802f5a("render-stream2-fulltime-247-build-house...<br/><small>scripts/render-stream2-fulltime-247-build-house-v4b-20260515T0913Z.mjs</small>")
+    %% Section: Graph Build (200 nodes, 208 edges)
+    subgraph build_graph_lib_caption_normalizer_mjs_96948ba1["lib/caption-normalizer.mjs"]
+        lib_caption_normalizer_buildass_9f1b33d6("buildAss()<br/><small>lib/caption-normalizer.mjs</small>")
+        lib_caption_normalizer_captionstyle_6e2f980f("captionStyle()<br/><small>lib/caption-normalizer.mjs</small>")
+        lib_caption_normalizer_qacaptionevents_76590539("qaCaptionEvents()<br/><small>lib/caption-normalizer.mjs</small>")
     end
     subgraph build_graph_scripts_render_stream2_fulltime_247_b668776e["scripts/render-stream2-fulltime-247-build-house-v4c-20260515T0918Z.mjs"]
         scripts_render_stream2_fulltime_247_build_house_32c1a05e("esc()<br/><small>scripts/render-stream2-fulltime-247-build-house-v4c-20260515T0918Z.mjs</small>")
         scripts_render_stream2_fulltime_247_build_house_dda249dd("headerDraw()<br/><small>scripts/render-stream2-fulltime-247-build-house-v4c-20260515T0918Z.mjs</small>")
         scripts_render_stream2_fulltime_247_build_house_a77b2924("render-stream2-fulltime-247-build-house...<br/><small>scripts/render-stream2-fulltime-247-build-house-v4c-20260515T0918Z.mjs</small>")
     end
-    subgraph build_graph_lib_caption_normalizer_mjs_96948ba1["lib/caption-normalizer.mjs"]
-        lib_caption_normalizer_captionstyle_6e2f980f("captionStyle()<br/><small>lib/caption-normalizer.mjs</small>")
-        lib_caption_normalizer_buildass_9f1b33d6("buildAss()<br/><small>lib/caption-normalizer.mjs</small>")
+    subgraph build_graph_scripts_render_stream2_fulltime_247_ad17fba5["scripts/render-stream2-fulltime-247-build-house-v4-20260514T1820Z.mjs"]
+        scripts_render_stream2_fulltime_247_build_house_6fdc9a0c("esc()<br/><small>scripts/render-stream2-fulltime-247-build-house-v4-20260514T1820Z.mjs</small>")
+        scripts_render_stream2_fulltime_247_build_house_d45cb6a0("headerDraw()<br/><small>scripts/render-stream2-fulltime-247-build-house-v4-20260514T1820Z.mjs</small>")
+    end
+    subgraph build_graph_scripts_render_stream2_fulltime_247_0b5a57ae["scripts/render-stream2-fulltime-247-build-house-v4b-20260515T0913Z.mjs"]
+        scripts_render_stream2_fulltime_247_build_house_6d25e4ec("esc()<br/><small>scripts/render-stream2-fulltime-247-build-house-v4b-20260515T0913Z.mjs</small>")
+        scripts_render_stream2_fulltime_247_build_house_39e3b5ac("headerDraw()<br/><small>scripts/render-stream2-fulltime-247-build-house-v4b-20260515T0913Z.mjs</small>")
     end
     scripts_render_day4_package_20260515t1310z_asswi_f7024d60("assWithStyle()<br/><small>scripts/render-day4-package-20260515T1310Z.mjs</small>")
     scripts_render_stream2_build_clip_machine_center_e80d8a1b("render-stream2-build-clip-machine-cente...<br/><small>scripts/render-stream2-build-clip-machine-centered-logo-fix-20260513T1916Z.mjs</small>")
     scripts_render_stream2_build_clip_machine_logo_b_f0b972ae("render-stream2-build-clip-machine-logo-...<br/><small>scripts/render-stream2-build-clip-machine-logo-below-video-20260513T1929Z.mjs</small>")
     scripts_render_stream2_build_clip_machine_restor_b2ff4f6a("render-stream2-build-clip-machine-resto...<br/><small>scripts/render-stream2-build-clip-machine-restored-layout-20260513T2009Z.mjs</small>")
     scripts_render_stream2_build_clip_machine_restor_52afc836("render-stream2-build-clip-machine-resto...<br/><small>scripts/render-stream2-build-clip-machine-restored-layout-v2-20260513T2012Z.mjs</small>")
+    scripts_render_stream2_build_clip_machine_title_bad855af("render-stream2-build-clip-machine-title...<br/><small>scripts/render-stream2-build-clip-machine-title-top-logo-below-20260513T1919Z.mjs</small>")
     scripts_render_stream2_build_while_i_sleep_house_08d39986("render-stream2-build-while-i-sleep-hous...<br/><small>scripts/render-stream2-build-while-i-sleep-house-v3-20260514T0047Z.mjs</small>")
     scripts_render_stream2_phone_controls_build_hous_b93bcf14("render-stream2-phone-controls-build-hou...<br/><small>scripts/render-stream2-phone-controls-build-house-v3-20260514T1510Z.mjs</small>")
     scripts_render_stream2_fulltime_247_build_house_32c1a05e -->|calls| scripts_render_stream2_fulltime_247_build_house_dda249dd
@@ -208,31 +208,38 @@ flowchart LR
     scripts_render_day4_package_20260515t1310z_asswi_f7024d60 -->|calls| lib_caption_normalizer_buildass_9f1b33d6
     lib_caption_normalizer_captionstyle_6e2f980f -->|calls| lib_caption_normalizer_buildass_9f1b33d6
     scripts_render_stream2_fulltime_247_build_house_a77b2924 -->|imports| lib_caption_normalizer_buildass_9f1b33d6
+    scripts_render_stream2_fulltime_247_build_house_a77b2924 -->|imports| lib_caption_normalizer_qacaptionevents_76590539
     scripts_render_stream2_phone_controls_build_hous_b93bcf14 -->|imports| lib_caption_normalizer_buildass_9f1b33d6
+    scripts_render_stream2_phone_controls_build_hous_b93bcf14 -->|imports| lib_caption_normalizer_qacaptionevents_76590539
     scripts_render_stream2_build_clip_machine_restor_b2ff4f6a -->|imports| lib_caption_normalizer_buildass_9f1b33d6
-    scripts_render_stream2_fulltime_247_build_house_e6802f5a -->|imports| lib_caption_normalizer_buildass_9f1b33d6
+    scripts_render_stream2_build_clip_machine_restor_b2ff4f6a -->|imports| lib_caption_normalizer_qacaptionevents_76590539
     scripts_render_stream2_build_clip_machine_center_e80d8a1b -->|imports| lib_caption_normalizer_buildass_9f1b33d6
-    scripts_render_stream2_fulltime_247_build_house_7529e181 -->|imports| lib_caption_normalizer_buildass_9f1b33d6
+    scripts_render_stream2_build_clip_machine_center_e80d8a1b -->|imports| lib_caption_normalizer_qacaptionevents_76590539
     scripts_render_stream2_build_while_i_sleep_house_08d39986 -->|imports| lib_caption_normalizer_buildass_9f1b33d6
+    scripts_render_stream2_build_while_i_sleep_house_08d39986 -->|imports| lib_caption_normalizer_qacaptionevents_76590539
     scripts_render_stream2_build_clip_machine_logo_b_f0b972ae -->|imports| lib_caption_normalizer_buildass_9f1b33d6
+    scripts_render_stream2_build_clip_machine_logo_b_f0b972ae -->|imports| lib_caption_normalizer_qacaptionevents_76590539
     scripts_render_stream2_build_clip_machine_restor_52afc836 -->|imports| lib_caption_normalizer_buildass_9f1b33d6
-    %% Omitted for readability: 181 nodes, 0 edges
-    class scripts_render_stream2_fulltime_247_build_house_6fdc9a0c function;
-    class scripts_render_stream2_fulltime_247_build_house_d45cb6a0 function;
-    class scripts_render_stream2_fulltime_247_build_house_7529e181 async;
-    class scripts_render_stream2_fulltime_247_build_house_6d25e4ec function;
-    class scripts_render_stream2_fulltime_247_build_house_39e3b5ac function;
-    class scripts_render_stream2_fulltime_247_build_house_e6802f5a async;
+    scripts_render_stream2_build_clip_machine_restor_52afc836 -->|imports| lib_caption_normalizer_qacaptionevents_76590539
+    scripts_render_stream2_build_clip_machine_title_bad855af -->|imports| lib_caption_normalizer_buildass_9f1b33d6
+    scripts_render_stream2_build_clip_machine_title_bad855af -->|imports| lib_caption_normalizer_qacaptionevents_76590539
+    %% Omitted for readability: 182 nodes, 0 edges
+    class lib_caption_normalizer_buildass_9f1b33d6 function;
+    class lib_caption_normalizer_captionstyle_6e2f980f function;
+    class lib_caption_normalizer_qacaptionevents_76590539 function;
     class scripts_render_stream2_fulltime_247_build_house_32c1a05e function;
     class scripts_render_stream2_fulltime_247_build_house_dda249dd function;
     class scripts_render_stream2_fulltime_247_build_house_a77b2924 async;
-    class lib_caption_normalizer_captionstyle_6e2f980f function;
-    class lib_caption_normalizer_buildass_9f1b33d6 function;
+    class scripts_render_stream2_fulltime_247_build_house_6fdc9a0c function;
+    class scripts_render_stream2_fulltime_247_build_house_d45cb6a0 function;
+    class scripts_render_stream2_fulltime_247_build_house_6d25e4ec function;
+    class scripts_render_stream2_fulltime_247_build_house_39e3b5ac function;
     class scripts_render_day4_package_20260515t1310z_asswi_f7024d60 function;
     class scripts_render_stream2_build_clip_machine_center_e80d8a1b entry;
     class scripts_render_stream2_build_clip_machine_logo_b_f0b972ae entry;
     class scripts_render_stream2_build_clip_machine_restor_b2ff4f6a entry;
     class scripts_render_stream2_build_clip_machine_restor_52afc836 entry;
+    class scripts_render_stream2_build_clip_machine_title_bad855af entry;
     class scripts_render_stream2_build_while_i_sleep_house_08d39986 async;
     class scripts_render_stream2_phone_controls_build_hous_b93bcf14 async;
     classDef entry fill:#422006,stroke:#fbbf24,color:#fde68a,stroke-width:1px;
@@ -261,7 +268,7 @@ flowchart LR
   <td><code>render-stream2-fulltime-247-build-house-v4b-20260515T0913Z.mjs</code><br><small style="color:var(--muted)">scripts/render-stream2-fulltime-247-build-house-v4b-20260515T0913Z.mjs</small></td>
   <td><span class="tag tag-async">Async</span></td>
   <td>External entry / no inbound edge</td>
-  <td><code>buildAss()</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small></td>
+  <td><code>buildAss()</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small><br><code>qaCaptionEvents()</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small></td>
   <td>render-stream2-fulltime-247-build-house-v4b-20260515T0913Z.mjs node in scripts/render-stream2-fulltime-247-build-house-v4b-20260515T0913Z.mjs.</td>
 </tr>
 <tr>
@@ -469,7 +476,7 @@ flowchart LR
   <td><code>render-stream2-fulltime-247-build-house-v4c-20260515T0918Z.mjs</code><br><small style="color:var(--muted)">scripts/render-stream2-fulltime-247-build-house-v4c-20260515T0918Z.mjs</small></td>
   <td><span class="tag tag-async">Async</span></td>
   <td>External entry / no inbound edge</td>
-  <td><code>buildAss()</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small></td>
+  <td><code>buildAss()</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small><br><code>qaCaptionEvents()</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small></td>
   <td>render-stream2-fulltime-247-build-house-v4c-20260515T0918Z.mjs node in scripts/render-stream2-fulltime-247-build-house-v4c-20260515T0918Z.mjs.</td>
 </tr>
 <tr>
@@ -515,7 +522,7 @@ flowchart LR
   </div>
   <div class="card">
     <h4>Design Notes</h4>
-    <p>This section comes from graphify community clustering. Relationship summary: contains x183, imports x10, calls x5. The diagram prioritizes high-confidence calls or usage relationships; the table keeps the broader node inventory.</p>
+    <p>This section comes from graphify community clustering. Relationship summary: contains x183, imports x20, calls x5. The diagram prioritizes high-confidence calls or usage relationships; the table keeps the broader node inventory.</p>
   </div>
 </div>
 <hr>
@@ -1197,17 +1204,18 @@ flowchart LR
 
 <!-- ====== 5. CLI & Skill Installers ====== -->
 <h2 id="cli-skills">5. CLI &amp; Skill Installers</h2>
-<p>CLI &amp; Skill Installers groups implementation around scripts, agent, stream2, hook, mostly in scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs, scripts/render-day3-honest-agent-house-v3-20260513T2147Z.mjs, scripts/stream2-offline-agent-rerender-20260513T1634Z.mjs. This section covers 62 nodes and 60 internal edges; the diagram shows only representative relationships to stay readable.</p>
+<p>CLI &amp; Skill Installers groups implementation around scripts, agent, stream2, hook, mostly in scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs, scripts/render-day3-honest-agent-house-v3-20260513T2147Z.mjs, scripts/stream2-offline-agent-rerender-20260513T1634Z.mjs. This section covers 63 nodes and 61 internal edges; the diagram shows only representative relationships to stay readable.</p>
 
 <div class="mermaid">
 %%{init: {"theme": "dark", "themeVariables": {"fontSize": "15.0px", "fontFamily": "Segoe UI, system-ui, sans-serif", "primaryColor": "#1e293b", "primaryTextColor": "#e2e8f0", "primaryBorderColor": "#38bdf8", "secondaryColor": "#0f172a", "tertiaryColor": "#334155", "lineColor": "#64748b", "textColor": "#e2e8f0"}, "flowchart": {"htmlLabels": true, "curve": "basis", "nodeSpacing": 48, "rankSpacing": 64, "padding": 14, "diagramPadding": 10, "useMaxWidth": true}}}%%
 flowchart LR
-    %% Section: CLI &amp; Skill Installers (62 nodes, 60 edges)
+    %% Section: CLI &amp; Skill Installers (63 nodes, 61 edges)
     subgraph cli_skills_scripts_fix_stream2_founder_trim_hook_5080156b["scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs"]
         scripts_fix_stream2_founder_trim_hook_subtitles_36f7a9b2("parseAssTime()<br/><small>scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs</small>")
         scripts_fix_stream2_founder_trim_hook_subtitles_9d3753ac("run()<br/><small>scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs</small>")
         scripts_fix_stream2_founder_trim_hook_subtitles_96dbd626("probeDuration()<br/><small>scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs</small>")
         scripts_fix_stream2_founder_trim_hook_subtitles_97350bcd("parseDialogue()<br/><small>scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs</small>")
+        scripts_fix_stream2_founder_trim_hook_subtitles_21cd994a("assEscape()<br/><small>scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs</small>")
         scripts_fix_stream2_founder_trim_hook_subtitles_89c90da3("assTime()<br/><small>scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs</small>")
         scripts_fix_stream2_founder_trim_hook_subtitles_ad33b330("buildBigAss()<br/><small>scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs</small>")
         scripts_fix_stream2_founder_trim_hook_subtitles_dd01b910("cov<br/><small>scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs</small>")
@@ -1219,7 +1227,6 @@ flowchart LR
         scripts_fix_stream2_founder_trim_hook_subtitles_dcf0a57f("events<br/><small>scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs</small>")
         scripts_fix_stream2_founder_trim_hook_subtitles_b20c8bde("expectedDuration<br/><small>scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs</small>")
         scripts_fix_stream2_founder_trim_hook_subtitles_1e88e31f("filterPath()<br/><small>scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs</small>")
-        scripts_fix_stream2_founder_trim_hook_subtitles_4617295a("fix-stream2-founder-trim-hook-subtitles...<br/><small>scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs</small>")
     end
     subgraph cli_skills_scripts_stream2_offline_agent_rerende_39d34537["scripts/stream2-offline-agent-rerender-20260513T1634Z.mjs"]
         scripts_stream2_offline_agent_rerender_20260513t_7db3b312("run()<br/><small>scripts/stream2-offline-agent-rerender-20260513T1634Z.mjs</small>")
@@ -1228,11 +1235,12 @@ flowchart LR
     scripts_stream2_offline_agent_rerender_20260513t_7db3b312 -->|calls| scripts_stream2_offline_agent_rerender_20260513t_d95c6680
     scripts_fix_stream2_founder_trim_hook_subtitles_9d3753ac -->|calls| scripts_fix_stream2_founder_trim_hook_subtitles_96dbd626
     scripts_fix_stream2_founder_trim_hook_subtitles_36f7a9b2 -->|calls| scripts_fix_stream2_founder_trim_hook_subtitles_97350bcd
-    %% Omitted for readability: 44 nodes, 0 edges
+    %% Omitted for readability: 45 nodes, 0 edges
     class scripts_fix_stream2_founder_trim_hook_subtitles_36f7a9b2 function;
     class scripts_fix_stream2_founder_trim_hook_subtitles_9d3753ac function;
     class scripts_fix_stream2_founder_trim_hook_subtitles_96dbd626 function;
     class scripts_fix_stream2_founder_trim_hook_subtitles_97350bcd function;
+    class scripts_fix_stream2_founder_trim_hook_subtitles_21cd994a async;
     class scripts_fix_stream2_founder_trim_hook_subtitles_89c90da3 function;
     class scripts_fix_stream2_founder_trim_hook_subtitles_ad33b330 function;
     class scripts_fix_stream2_founder_trim_hook_subtitles_dd01b910 function;
@@ -1244,7 +1252,6 @@ flowchart LR
     class scripts_fix_stream2_founder_trim_hook_subtitles_dcf0a57f function;
     class scripts_fix_stream2_founder_trim_hook_subtitles_b20c8bde function;
     class scripts_fix_stream2_founder_trim_hook_subtitles_1e88e31f function;
-    class scripts_fix_stream2_founder_trim_hook_subtitles_4617295a async;
     class scripts_stream2_offline_agent_rerender_20260513t_7db3b312 function;
     class scripts_stream2_offline_agent_rerender_20260513t_d95c6680 function;
     classDef entry fill:#422006,stroke:#fbbf24,color:#fde68a,stroke-width:1px;
@@ -1302,6 +1309,14 @@ flowchart LR
 </tr>
 <tr>
   <td>5</td>
+  <td><code>assEscape()</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs</small></td>
+  <td><span class="tag tag-async">Async</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>assEscape() node in scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs.</td>
+</tr>
+<tr>
+  <td>6</td>
   <td><code>parseAssTime()</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -1309,7 +1324,7 @@ flowchart LR
   <td>parseAssTime() node in scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs.</td>
 </tr>
 <tr>
-  <td>6</td>
+  <td>7</td>
   <td><code>assTime()</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -1317,7 +1332,7 @@ flowchart LR
   <td>assTime() node in scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs.</td>
 </tr>
 <tr>
-  <td>7</td>
+  <td>8</td>
   <td><code>parseDialogue()</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td><code>parseAssTime()</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs</small></td>
@@ -1325,7 +1340,7 @@ flowchart LR
   <td>parseDialogue() node in scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs.</td>
 </tr>
 <tr>
-  <td>8</td>
+  <td>9</td>
   <td><code>buildBigAss()</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -1333,7 +1348,7 @@ flowchart LR
   <td>buildBigAss() node in scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs.</td>
 </tr>
 <tr>
-  <td>9</td>
+  <td>10</td>
   <td><code>probeDuration()</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td><code>run()</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs</small></td>
@@ -1341,7 +1356,7 @@ flowchart LR
   <td>probeDuration() node in scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs.</td>
 </tr>
 <tr>
-  <td>10</td>
+  <td>11</td>
   <td><code>coverage()</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -1349,7 +1364,7 @@ flowchart LR
   <td>Supports retrieval-augmented Q&amp;A or streaming chat.</td>
 </tr>
 <tr>
-  <td>11</td>
+  <td>12</td>
   <td><code>events</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -1357,7 +1372,7 @@ flowchart LR
   <td>events node in scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs.</td>
 </tr>
 <tr>
-  <td>12</td>
+  <td>13</td>
   <td><code>normalized</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -1365,7 +1380,7 @@ flowchart LR
   <td>normalized node in scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs.</td>
 </tr>
 <tr>
-  <td>13</td>
+  <td>14</td>
   <td><code>qa</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -1373,7 +1388,7 @@ flowchart LR
   <td>qa node in scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs.</td>
 </tr>
 <tr>
-  <td>14</td>
+  <td>15</td>
   <td><code>expectedDuration</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -1381,7 +1396,7 @@ flowchart LR
   <td>expectedDuration node in scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs.</td>
 </tr>
 <tr>
-  <td>15</td>
+  <td>16</td>
   <td><code>decode</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -1389,7 +1404,7 @@ flowchart LR
   <td>decode node in scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs.</td>
 </tr>
 <tr>
-  <td>16</td>
+  <td>17</td>
   <td><code>duration</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -1397,7 +1412,7 @@ flowchart LR
   <td>duration node in scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs.</td>
 </tr>
 <tr>
-  <td>17</td>
+  <td>18</td>
   <td><code>cov</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -1405,7 +1420,7 @@ flowchart LR
   <td>cov node in scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs.</td>
 </tr>
 <tr>
-  <td>18</td>
+  <td>19</td>
   <td><code>dataPath</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -1413,7 +1428,7 @@ flowchart LR
   <td>dataPath node in scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs.</td>
 </tr>
 <tr>
-  <td>19</td>
+  <td>20</td>
   <td><code>data</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -1421,7 +1436,7 @@ flowchart LR
   <td>data node in scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs.</td>
 </tr>
 <tr>
-  <td>20</td>
+  <td>21</td>
   <td><code>now</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -1429,7 +1444,7 @@ flowchart LR
   <td>now node in scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs.</td>
 </tr>
 <tr>
-  <td>21</td>
+  <td>22</td>
   <td><code>probe</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -1437,7 +1452,7 @@ flowchart LR
   <td>probe node in scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs.</td>
 </tr>
 <tr>
-  <td>22</td>
+  <td>23</td>
   <td><code>render-day3-honest-agent-house-v3-20260513T2147Z.mjs</code><br><small style="color:var(--muted)">scripts/render-day3-honest-agent-house-v3-20260513T2147Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -1445,7 +1460,7 @@ flowchart LR
   <td>render-day3-honest-agent-house-v3-20260513T2147Z.mjs node in scripts/render-day3-honest-agent-house-v3-20260513T2147Z.mjs.</td>
 </tr>
 <tr>
-  <td>23</td>
+  <td>24</td>
   <td><code>root</code><br><small style="color:var(--muted)">scripts/render-day3-honest-agent-house-v3-20260513T2147Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -1453,7 +1468,7 @@ flowchart LR
   <td>root node in scripts/render-day3-honest-agent-house-v3-20260513T2147Z.mjs.</td>
 </tr>
 <tr>
-  <td>24</td>
+  <td>25</td>
   <td><code>clips</code><br><small style="color:var(--muted)">scripts/render-day3-honest-agent-house-v3-20260513T2147Z.mjs</small></td>
   <td><span class="tag tag-cmd">Entry</span></td>
   <td>External entry / no inbound edge</td>
@@ -1461,7 +1476,7 @@ flowchart LR
   <td>clips node in scripts/render-day3-honest-agent-house-v3-20260513T2147Z.mjs.</td>
 </tr>
 <tr>
-  <td>25</td>
+  <td>26</td>
   <td><code>run()</code><br><small style="color:var(--muted)">scripts/render-day3-honest-agent-house-v3-20260513T2147Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -1469,7 +1484,7 @@ flowchart LR
   <td>run() node in scripts/render-day3-honest-agent-house-v3-20260513T2147Z.mjs.</td>
 </tr>
 <tr>
-  <td>26</td>
+  <td>27</td>
   <td><code>esc()</code><br><small style="color:var(--muted)">scripts/render-day3-honest-agent-house-v3-20260513T2147Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -1477,7 +1492,7 @@ flowchart LR
   <td>esc() node in scripts/render-day3-honest-agent-house-v3-20260513T2147Z.mjs.</td>
 </tr>
 <tr>
-  <td>27</td>
+  <td>28</td>
   <td><code>filterPath()</code><br><small style="color:var(--muted)">scripts/render-day3-honest-agent-house-v3-20260513T2147Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -1485,7 +1500,7 @@ flowchart LR
   <td>filterPath() node in scripts/render-day3-honest-agent-house-v3-20260513T2147Z.mjs.</td>
 </tr>
 <tr>
-  <td>28</td>
+  <td>29</td>
   <td><code>slug()</code><br><small style="color:var(--muted)">scripts/render-day3-honest-agent-house-v3-20260513T2147Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -1493,20 +1508,12 @@ flowchart LR
   <td>slug() node in scripts/render-day3-honest-agent-house-v3-20260513T2147Z.mjs.</td>
 </tr>
 <tr>
-  <td>29</td>
+  <td>30</td>
   <td><code>transcript</code><br><small style="color:var(--muted)">scripts/render-day3-honest-agent-house-v3-20260513T2147Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
   <td>No direct outbound edge</td>
   <td>transcript node in scripts/render-day3-honest-agent-house-v3-20260513T2147Z.mjs.</td>
-</tr>
-<tr>
-  <td>30</td>
-  <td><code>outputs</code><br><small style="color:var(--muted)">scripts/render-day3-honest-agent-house-v3-20260513T2147Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>outputs node in scripts/render-day3-honest-agent-house-v3-20260513T2147Z.mjs.</td>
 </tr>
 </table>
 
@@ -1515,7 +1522,7 @@ flowchart LR
     <h4>Key Files</h4>
     <table style="width:100%;font-size:0.85rem;">
       <tr><th>File</th><th>Coverage</th></tr>
-      <tr><td><code>scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs</code></td><td>21 nodes</td></tr>
+      <tr><td><code>scripts/fix-stream2-founder-trim-hook-subtitles-20260515.mjs</code></td><td>22 nodes</td></tr>
 <tr><td><code>scripts/render-day3-honest-agent-house-v3-20260513T2147Z.mjs</code></td><td>15 nodes</td></tr>
 <tr><td><code>scripts/stream2-offline-agent-rerender-20260513T1634Z.mjs</code></td><td>11 nodes</td></tr>
 <tr><td><code>X_GROWTH_AGENT_PLAN.md</code></td><td>9 nodes</td></tr>
@@ -1524,7 +1531,7 @@ flowchart LR
   </div>
   <div class="card">
     <h4>Design Notes</h4>
-    <p>This section comes from graphify community clustering. Relationship summary: contains x57, calls x3. The diagram prioritizes high-confidence calls or usage relationships; the table keeps the broader node inventory.</p>
+    <p>This section comes from graphify community clustering. Relationship summary: contains x58, calls x3. The diagram prioritizes high-confidence calls or usage relationships; the table keeps the broader node inventory.</p>
   </div>
 </div>
 <hr>
@@ -3238,58 +3245,58 @@ flowchart LR
 
 <!-- ====== 11. Community 1 ====== -->
 <h2 id="community-1">11. Community 1</h2>
-<p>Community 1 groups implementation around servermjs, server, dirname, root, mostly in server/server.mjs. This section covers 58 nodes and 72 internal edges; the diagram shows only representative relationships to stay readable.</p>
+<p>Community 1 groups implementation around servermjs, server, dirname, root, mostly in server/server.mjs. This section covers 60 nodes and 76 internal edges; the diagram shows only representative relationships to stay readable.</p>
 
 <div class="mermaid">
 %%{init: {"theme": "dark", "themeVariables": {"fontSize": "15.0px", "fontFamily": "Segoe UI, system-ui, sans-serif", "primaryColor": "#1e293b", "primaryTextColor": "#e2e8f0", "primaryBorderColor": "#38bdf8", "secondaryColor": "#0f172a", "tertiaryColor": "#334155", "lineColor": "#64748b", "textColor": "#e2e8f0"}, "flowchart": {"htmlLabels": true, "curve": "basis", "nodeSpacing": 48, "rankSpacing": 64, "padding": 14, "diagramPadding": 10, "useMaxWidth": true}}}%%
 flowchart LR
-    %% Section: Community 1 (58 nodes, 72 edges)
+    %% Section: Community 1 (60 nodes, 76 edges)
     server_server_assescape_b05ca5a7("assEscape()<br/><small>server/server.mjs</small>")
     server_server_buildtwitteraccountsearchurl_cb1cb7e3("buildTwitterAccountSearchUrl()<br/><small>server/server.mjs</small>")
     server_server_buildtwittersearchurl_3b5245d7("buildTwitterSearchUrl()<br/><small>server/server.mjs</small>")
     server_server_callollamastudio_47c31a83("callOllamaStudio()<br/><small>server/server.mjs</small>")
     server_server_callopenaistudio_9855e021("callOpenAiStudio()<br/><small>server/server.mjs</small>")
-    server_server_dispatchcopyforvalidation_a2bbc219("dispatchCopyForValidation()<br/><small>server/server.mjs</small>")
+    server_server_callopenclawstudio_af6523d4("callOpenClawStudio()<br/><small>server/server.mjs</small>")
+    server_server_isvideolike_604e8de1("isVideoLike()<br/><small>server/server.mjs</small>")
+    server_server_validatemediafile_fe72fe6b("validateMediaFile()<br/><small>server/server.mjs</small>")
+    server_server_loadvalidationcache_342616cd("loadValidationCache()<br/><small>server/server.mjs</small>")
+    server_server_mediavalidationfingerprint_15ca2b35("mediaValidationFingerprint()<br/><small>server/server.mjs</small>")
     server_server_platformlimit_ecc59e54("platformLimit()<br/><small>server/server.mjs</small>")
     server_server_validatedispatchforplatform_2bbb1e76("validateDispatchForPlatform()<br/><small>server/server.mjs</small>")
+    server_server_dispatchcopyforvalidation_a2bbc219("dispatchCopyForValidation()<br/><small>server/server.mjs</small>")
     server_server_mediamatchkey_1a9c42c4("mediaMatchKey()<br/><small>server/server.mjs</small>")
     server_server_matchesstreamartifact_74d7fb55("matchesStreamArtifact()<br/><small>server/server.mjs</small>")
     server_server_makeradaritem_8ee34ef6("makeRadarItem()<br/><small>server/server.mjs</small>")
     server_server_makewatchlistradaritem_962bfa4c("makeWatchlistRadarItem()<br/><small>server/server.mjs</small>")
     server_server_radarreason_d6956a47("radarReason()<br/><small>server/server.mjs</small>")
-    server_server_captionchunks_0125f91e("captionChunks()<br/><small>server/server.mjs</small>")
-    server_server_tagtext_5686f72d("tagText()<br/><small>server/server.mjs</small>")
-    server_server_decode_7715fa8e("decode()<br/><small>server/server.mjs</small>")
-    server_server_texttokens_304b5cef("textTokens()<br/><small>server/server.mjs</small>")
-    server_server_tokensimilarity_dd24da86("tokenSimilarity()<br/><small>server/server.mjs</small>")
+    server_server_isvideolike_604e8de1 -->|calls| server_server_validatemediafile_fe72fe6b
+    server_server_loadvalidationcache_342616cd -->|calls| server_server_validatemediafile_fe72fe6b
+    server_server_mediavalidationfingerprint_15ca2b35 -->|calls| server_server_validatemediafile_fe72fe6b
     server_server_platformlimit_ecc59e54 -->|calls| server_server_validatedispatchforplatform_2bbb1e76
     server_server_dispatchcopyforvalidation_a2bbc219 -->|calls| server_server_validatedispatchforplatform_2bbb1e76
     server_server_mediamatchkey_1a9c42c4 -->|calls| server_server_matchesstreamartifact_74d7fb55
     server_server_buildtwittersearchurl_3b5245d7 -->|calls| server_server_makeradaritem_8ee34ef6
     server_server_buildtwitteraccountsearchurl_cb1cb7e3 -->|calls| server_server_makewatchlistradaritem_962bfa4c
     server_server_radarreason_d6956a47 -->|calls| server_server_makeradaritem_8ee34ef6
-    server_server_assescape_b05ca5a7 -->|calls| server_server_captionchunks_0125f91e
-    server_server_tagtext_5686f72d -->|calls| server_server_decode_7715fa8e
-    server_server_texttokens_304b5cef -->|calls| server_server_tokensimilarity_dd24da86
-    %% Omitted for readability: 40 nodes, 0 edges
+    %% Omitted for readability: 42 nodes, 0 edges
     class server_server_assescape_b05ca5a7 async;
     class server_server_buildtwitteraccountsearchurl_cb1cb7e3 function;
     class server_server_buildtwittersearchurl_3b5245d7 function;
     class server_server_callollamastudio_47c31a83 function;
     class server_server_callopenaistudio_9855e021 function;
-    class server_server_dispatchcopyforvalidation_a2bbc219 function;
+    class server_server_callopenclawstudio_af6523d4 function;
+    class server_server_isvideolike_604e8de1 function;
+    class server_server_validatemediafile_fe72fe6b function;
+    class server_server_loadvalidationcache_342616cd function;
+    class server_server_mediavalidationfingerprint_15ca2b35 function;
     class server_server_platformlimit_ecc59e54 function;
     class server_server_validatedispatchforplatform_2bbb1e76 function;
+    class server_server_dispatchcopyforvalidation_a2bbc219 function;
     class server_server_mediamatchkey_1a9c42c4 function;
     class server_server_matchesstreamartifact_74d7fb55 async;
     class server_server_makeradaritem_8ee34ef6 function;
     class server_server_makewatchlistradaritem_962bfa4c function;
     class server_server_radarreason_d6956a47 function;
-    class server_server_captionchunks_0125f91e function;
-    class server_server_tagtext_5686f72d function;
-    class server_server_decode_7715fa8e function;
-    class server_server_texttokens_304b5cef function;
-    class server_server_tokensimilarity_dd24da86 function;
     classDef entry fill:#422006,stroke:#fbbf24,color:#fde68a,stroke-width:1px;
     classDef api fill:#450a0a,stroke:#f87171,color:#fee2e2,stroke-width:1px;
     classDef async fill:#2e1065,stroke:#a78bfa,color:#ede9fe,stroke-width:1px;
@@ -3401,6 +3408,22 @@ flowchart LR
 </tr>
 <tr>
   <td>12</td>
+  <td><code>isVideoLike()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td><code>validateMediaFile()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
+  <td>isVideoLike() node in server/server.mjs.</td>
+</tr>
+<tr>
+  <td>13</td>
+  <td><code>loadValidationCache()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td><code>validateMediaFile()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
+  <td>Caches analysis results or computes cache keys.</td>
+</tr>
+<tr>
+  <td>14</td>
   <td><code>saveValidationCache()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -3408,7 +3431,23 @@ flowchart LR
   <td>Caches analysis results or computes cache keys.</td>
 </tr>
 <tr>
-  <td>13</td>
+  <td>15</td>
+  <td><code>mediaValidationFingerprint()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td><code>validateMediaFile()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
+  <td>mediaValidationFingerprint() node in server/server.mjs.</td>
+</tr>
+<tr>
+  <td>16</td>
+  <td><code>validateMediaFile()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td><code>isVideoLike()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>loadValidationCache()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>mediaValidationFingerprint()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
+  <td>No direct outbound edge</td>
+  <td>validateMediaFile() node in server/server.mjs.</td>
+</tr>
+<tr>
+  <td>17</td>
   <td><code>hasEnv()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -3416,7 +3455,7 @@ flowchart LR
   <td>hasEnv() node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>14</td>
+  <td>18</td>
   <td><code>providerConfigs</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -3424,7 +3463,7 @@ flowchart LR
   <td>Reads, resolves, or persists project configuration.</td>
 </tr>
 <tr>
-  <td>15</td>
+  <td>19</td>
   <td><code>platformLimits</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -3432,7 +3471,7 @@ flowchart LR
   <td>platformLimits node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>16</td>
+  <td>20</td>
   <td><code>platformLimit()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -3440,7 +3479,7 @@ flowchart LR
   <td>platformLimit() node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>17</td>
+  <td>21</td>
   <td><code>dispatchCopyForValidation()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -3448,7 +3487,7 @@ flowchart LR
   <td>dispatchCopyForValidation() node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>18</td>
+  <td>22</td>
   <td><code>validateDispatchForPlatform()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td><code>dispatchCopyForValidation()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>platformLimit()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
@@ -3456,7 +3495,7 @@ flowchart LR
   <td>validateDispatchForPlatform() node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>19</td>
+  <td>23</td>
   <td><code>mediaMatchKey()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -3464,7 +3503,7 @@ flowchart LR
   <td>mediaMatchKey() node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>20</td>
+  <td>24</td>
   <td><code>matchesStreamArtifact()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-async">Async</span></td>
   <td><code>mediaMatchKey()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
@@ -3472,7 +3511,7 @@ flowchart LR
   <td>matchesStreamArtifact() node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>21</td>
+  <td>25</td>
   <td><code>transcriptUploadExts</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -3480,7 +3519,7 @@ flowchart LR
   <td>transcriptUploadExts node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>22</td>
+  <td>26</td>
   <td><code>mediaUploadExts</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -3488,7 +3527,7 @@ flowchart LR
   <td>mediaUploadExts node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>23</td>
+  <td>27</td>
   <td><code>normalizeClip()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-cmd">Entry</span></td>
   <td>External entry / no inbound edge</td>
@@ -3496,7 +3535,7 @@ flowchart LR
   <td>normalizeClip() node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>24</td>
+  <td>28</td>
   <td><code>dispatchStatuses</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -3504,7 +3543,7 @@ flowchart LR
   <td>dispatchStatuses node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>25</td>
+  <td>29</td>
   <td><code>currentStyleGateReadyPathList</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -3512,44 +3551,12 @@ flowchart LR
   <td>currentStyleGateReadyPathList node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>26</td>
+  <td>30</td>
   <td><code>currentStyleGateReadyPaths</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
   <td>No direct outbound edge</td>
   <td>currentStyleGateReadyPaths node in server/server.mjs.</td>
-</tr>
-<tr>
-  <td>27</td>
-  <td><code>currentStyleGateReadyBundleList</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>currentStyleGateReadyBundleList node in server/server.mjs.</td>
-</tr>
-<tr>
-  <td>28</td>
-  <td><code>currentStyleGateReadyBundles</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>currentStyleGateReadyBundles node in server/server.mjs.</td>
-</tr>
-<tr>
-  <td>29</td>
-  <td><code>normalizeCopyOverride()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>normalizeCopyOverride() node in server/server.mjs.</td>
-</tr>
-<tr>
-  <td>30</td>
-  <td><code>twitterRadarReplyDrafts</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>twitterRadarReplyDrafts node in server/server.mjs.</td>
 </tr>
 </table>
 
@@ -3558,12 +3565,12 @@ flowchart LR
     <h4>Key Files</h4>
     <table style="width:100%;font-size:0.85rem;">
       <tr><th>File</th><th>Coverage</th></tr>
-      <tr><td><code>server/server.mjs</code></td><td>58 nodes</td></tr>
+      <tr><td><code>server/server.mjs</code></td><td>60 nodes</td></tr>
     </table>
   </div>
   <div class="card">
     <h4>Design Notes</h4>
-    <p>This section comes from graphify community clustering. Relationship summary: contains x57, calls x15. The diagram prioritizes high-confidence calls or usage relationships; the table keeps the broader node inventory.</p>
+    <p>This section comes from graphify community clustering. Relationship summary: contains x59, calls x17. The diagram prioritizes high-confidence calls or usage relationships; the table keeps the broader node inventory.</p>
   </div>
 </div>
 <hr>
@@ -3892,8 +3899,358 @@ flowchart LR
 </div>
 <hr>
 
-<!-- ====== 13. Community 2 ====== -->
-<h2 id="community-2">13. Community 2</h2>
+<!-- ====== 13. Community 148 ====== -->
+<h2 id="community-148">13. Community 148</h2>
+<p>Community 148 groups implementation around scripts, fix, subtitles, 20260515mjs, mostly in scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs, lib/caption-normalizer.mjs, scripts/render-day4-package-20260515T1310Z.mjs. This section covers 40 nodes and 63 internal edges; the diagram shows only representative relationships to stay readable.</p>
+
+<div class="mermaid">
+%%{init: {"theme": "dark", "themeVariables": {"fontSize": "15.0px", "fontFamily": "Segoe UI, system-ui, sans-serif", "primaryColor": "#1e293b", "primaryTextColor": "#e2e8f0", "primaryBorderColor": "#38bdf8", "secondaryColor": "#0f172a", "tertiaryColor": "#334155", "lineColor": "#64748b", "textColor": "#e2e8f0"}, "flowchart": {"htmlLabels": true, "curve": "basis", "nodeSpacing": 48, "rankSpacing": 64, "padding": 14, "diagramPadding": 10, "useMaxWidth": true}}}%%
+flowchart LR
+    %% Section: Community 148 (40 nodes, 63 edges)
+    subgraph community_148_scripts_fix_stream2_founder_crisp_bcf2a82e["scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs"]
+        scripts_fix_stream2_founder_crisp_subtitles_2026_749774e5("fix-stream2-founder-crisp-subtitles-202...<br/><small>scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small>")
+        scripts_fix_stream2_founder_crisp_subtitles_2026_f92b431f("wordText()<br/><small>scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small>")
+        scripts_fix_stream2_founder_crisp_subtitles_2026_7dfb0d98("buildPhraseEventsFromWords()<br/><small>scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small>")
+        scripts_fix_stream2_founder_crisp_subtitles_2026_66544d31("run()<br/><small>scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small>")
+        scripts_fix_stream2_founder_crisp_subtitles_2026_560f6ec3("probeDuration()<br/><small>scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small>")
+        scripts_fix_stream2_founder_crisp_subtitles_2026_af91dc37("collectWords()<br/><small>scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small>")
+        scripts_fix_stream2_founder_crisp_subtitles_2026_c46b668b("flush()<br/><small>scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small>")
+        scripts_fix_stream2_founder_crisp_subtitles_2026_ee7f98e6("applyDomainCorrections()<br/><small>scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small>")
+    end
+    subgraph community_148_lib_caption_normalizer_mjs_996085a8["lib/caption-normalizer.mjs"]
+        lib_caption_normalizer_segmentintersections_e0a7b3d7("segmentIntersections()<br/><small>lib/caption-normalizer.mjs</small>")
+        lib_caption_normalizer_splitwords_3802f947("splitWords()<br/><small>lib/caption-normalizer.mjs</small>")
+        lib_caption_normalizer_cleancaptiontext_786c2c88("cleanCaptionText()<br/><small>lib/caption-normalizer.mjs</small>")
+        lib_caption_normalizer_normalizetiming_852c29fa("normalizeTiming()<br/><small>lib/caption-normalizer.mjs</small>")
+        lib_caption_normalizer_assescape_eb0a3561("assEscape()<br/><small>lib/caption-normalizer.mjs</small>")
+        lib_caption_normalizer_weightedlength_75ef8de5("weightedLength()<br/><small>lib/caption-normalizer.mjs</small>")
+        lib_caption_normalizer_eventfromwordtiming_6ac1e3b9("eventFromWordTiming()<br/><small>lib/caption-normalizer.mjs</small>")
+    end
+    subgraph community_148_scripts_render_day4_package_202605_549eb70a["scripts/render-day4-package-20260515T1310Z.mjs"]
+        scripts_render_day4_package_20260515t1310z_clean_df45db82("cleanWord()<br/><small>scripts/render-day4-package-20260515T1310Z.mjs</small>")
+        scripts_render_day4_package_20260515t1310z_colle_305b90c2("collectWords()<br/><small>scripts/render-day4-package-20260515T1310Z.mjs</small>")
+    end
+    scripts_fix_longform_thumbnail_lab_subtitles_202_368a5d3d("applyDomainCorrections()<br/><small>scripts/fix-longform-thumbnail-lab-subtitles-20260515.mjs</small>")
+    scripts_fix_stream2_founder_crisp_subtitles_2026_66544d31 -->|calls| scripts_fix_stream2_founder_crisp_subtitles_2026_560f6ec3
+    scripts_fix_stream2_founder_crisp_subtitles_2026_f92b431f -->|calls| scripts_fix_stream2_founder_crisp_subtitles_2026_af91dc37
+    scripts_fix_stream2_founder_crisp_subtitles_2026_f92b431f -->|calls| lib_caption_normalizer_cleancaptiontext_786c2c88
+    scripts_fix_stream2_founder_crisp_subtitles_2026_af91dc37 -->|calls| lib_caption_normalizer_cleancaptiontext_786c2c88
+    scripts_fix_stream2_founder_crisp_subtitles_2026_c46b668b -->|calls| scripts_fix_stream2_founder_crisp_subtitles_2026_7dfb0d98
+    scripts_fix_stream2_founder_crisp_subtitles_2026_ee7f98e6 -->|calls| lib_caption_normalizer_cleancaptiontext_786c2c88
+    scripts_fix_stream2_founder_crisp_subtitles_2026_7dfb0d98 -->|calls| lib_caption_normalizer_cleancaptiontext_786c2c88
+    scripts_fix_stream2_founder_crisp_subtitles_2026_7dfb0d98 -->|calls| lib_caption_normalizer_normalizetiming_852c29fa
+    scripts_fix_longform_thumbnail_lab_subtitles_202_368a5d3d -->|calls| lib_caption_normalizer_cleancaptiontext_786c2c88
+    scripts_render_day4_package_20260515t1310z_clean_df45db82 -->|calls| lib_caption_normalizer_cleancaptiontext_786c2c88
+    scripts_render_day4_package_20260515t1310z_colle_305b90c2 -->|calls| lib_caption_normalizer_cleancaptiontext_786c2c88
+    lib_caption_normalizer_cleancaptiontext_786c2c88 -->|calls| lib_caption_normalizer_assescape_eb0a3561
+    lib_caption_normalizer_cleancaptiontext_786c2c88 -->|calls| lib_caption_normalizer_splitwords_3802f947
+    lib_caption_normalizer_cleancaptiontext_786c2c88 -->|calls| lib_caption_normalizer_weightedlength_75ef8de5
+    lib_caption_normalizer_cleancaptiontext_786c2c88 -->|calls| lib_caption_normalizer_eventfromwordtiming_6ac1e3b9
+    lib_caption_normalizer_cleancaptiontext_786c2c88 -->|calls| lib_caption_normalizer_segmentintersections_e0a7b3d7
+    scripts_fix_stream2_founder_crisp_subtitles_2026_749774e5 -->|imports| lib_caption_normalizer_cleancaptiontext_786c2c88
+    scripts_fix_stream2_founder_crisp_subtitles_2026_749774e5 -->|imports| lib_caption_normalizer_normalizetiming_852c29fa
+    %% Omitted for readability: 22 nodes, 0 edges
+    class scripts_fix_stream2_founder_crisp_subtitles_2026_749774e5 async;
+    class scripts_fix_stream2_founder_crisp_subtitles_2026_f92b431f function;
+    class scripts_fix_stream2_founder_crisp_subtitles_2026_7dfb0d98 function;
+    class scripts_fix_stream2_founder_crisp_subtitles_2026_66544d31 function;
+    class scripts_fix_stream2_founder_crisp_subtitles_2026_560f6ec3 function;
+    class scripts_fix_stream2_founder_crisp_subtitles_2026_af91dc37 function;
+    class scripts_fix_stream2_founder_crisp_subtitles_2026_c46b668b function;
+    class scripts_fix_stream2_founder_crisp_subtitles_2026_ee7f98e6 function;
+    class lib_caption_normalizer_segmentintersections_e0a7b3d7 function;
+    class lib_caption_normalizer_splitwords_3802f947 function;
+    class lib_caption_normalizer_cleancaptiontext_786c2c88 function;
+    class lib_caption_normalizer_normalizetiming_852c29fa function;
+    class lib_caption_normalizer_assescape_eb0a3561 async;
+    class lib_caption_normalizer_weightedlength_75ef8de5 function;
+    class lib_caption_normalizer_eventfromwordtiming_6ac1e3b9 function;
+    class scripts_render_day4_package_20260515t1310z_clean_df45db82 function;
+    class scripts_render_day4_package_20260515t1310z_colle_305b90c2 function;
+    class scripts_fix_longform_thumbnail_lab_subtitles_202_368a5d3d function;
+    classDef entry fill:#422006,stroke:#fbbf24,color:#fde68a,stroke-width:1px;
+    classDef api fill:#450a0a,stroke:#f87171,color:#fee2e2,stroke-width:1px;
+    classDef async fill:#2e1065,stroke:#a78bfa,color:#ede9fe,stroke-width:1px;
+    classDef klass fill:#064e3b,stroke:#34d399,color:#d1fae5,stroke-width:1px;
+    classDef ui fill:#831843,stroke:#f472b6,color:#fce7f3,stroke-width:1px;
+    classDef module fill:#172554,stroke:#60a5fa,color:#dbeafe,stroke-width:1px;
+    classDef test fill:#3f3f46,stroke:#a1a1aa,color:#f4f4f5,stroke-width:1px;
+    classDef concept fill:#292524,stroke:#a8a29e,color:#fafaf9,stroke-dasharray:4 3;
+    classDef function fill:#0f172a,stroke:#38bdf8,color:#e0f2fe,stroke-width:1px;
+</div>
+
+<h3>Call Details</h3>
+<table class="call-table">
+<tr>
+  <th style="width:5%">#</th>
+  <th style="width:28%">Node</th>
+  <th style="width:10%">Type</th>
+  <th style="width:17%">Caller</th>
+  <th style="width:20%">Callees</th>
+  <th style="width:20%">Description</th>
+</tr>
+<tr>
+  <td>1</td>
+  <td><code>fix-stream2-founder-crisp-subtitles-20260515.mjs</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small></td>
+  <td><span class="tag tag-async">Async</span></td>
+  <td>External entry / no inbound edge</td>
+  <td><code>caption-normalizer.mjs</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small><br><code>cleanCaptionText()</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small><br><code>normalizeTiming()</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small></td>
+  <td>fix-stream2-founder-crisp-subtitles-20260515.mjs node in scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs.</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td><code>root</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>root node in scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs.</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td><code>beats</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>beats node in scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs.</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td><code>run()</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td><code>probeDuration()</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small></td>
+  <td>run() node in scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs.</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td><code>filterPath()</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>filterPath() node in scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs.</td>
+</tr>
+<tr>
+  <td>6</td>
+  <td><code>probeDuration()</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td><code>run()</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small></td>
+  <td>No direct outbound edge</td>
+  <td>probeDuration() node in scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs.</td>
+</tr>
+<tr>
+  <td>7</td>
+  <td><code>wordText()</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td><code>cleanCaptionText()</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small><br><code>collectWords()</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small></td>
+  <td>wordText() node in scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs.</td>
+</tr>
+<tr>
+  <td>8</td>
+  <td><code>collectWords()</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td><code>wordText()</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small></td>
+  <td><code>cleanCaptionText()</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small></td>
+  <td>collectWords() node in scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs.</td>
+</tr>
+<tr>
+  <td>9</td>
+  <td><code>flush()</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td><code>buildPhraseEventsFromWords()</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small><br><code>phraseChunks()</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small></td>
+  <td>flush() node in scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs.</td>
+</tr>
+<tr>
+  <td>10</td>
+  <td><code>applyDomainCorrections()</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td><code>cleanCaptionText()</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small></td>
+  <td>applyDomainCorrections() node in scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs.</td>
+</tr>
+<tr>
+  <td>11</td>
+  <td><code>buildPhraseEventsFromWords()</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td><code>flush()</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small></td>
+  <td><code>cleanCaptionText()</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small><br><code>normalizeTiming()</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small></td>
+  <td>buildPhraseEventsFromWords() node in scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs.</td>
+</tr>
+<tr>
+  <td>12</td>
+  <td><code>coverage()</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>Supports retrieval-augmented Q&amp;A or streaming chat.</td>
+</tr>
+<tr>
+  <td>13</td>
+  <td><code>concat</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>concat node in scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs.</td>
+</tr>
+<tr>
+  <td>14</td>
+  <td><code>vf</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>vf node in scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs.</td>
+</tr>
+<tr>
+  <td>15</td>
+  <td><code>transcript</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>transcript node in scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs.</td>
+</tr>
+<tr>
+  <td>16</td>
+  <td><code>duration</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>duration node in scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs.</td>
+</tr>
+<tr>
+  <td>17</td>
+  <td><code>words</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>words node in scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs.</td>
+</tr>
+<tr>
+  <td>18</td>
+  <td><code>events</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>events node in scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs.</td>
+</tr>
+<tr>
+  <td>19</td>
+  <td><code>qa</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>qa node in scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs.</td>
+</tr>
+<tr>
+  <td>20</td>
+  <td><code>cov</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>cov node in scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs.</td>
+</tr>
+<tr>
+  <td>21</td>
+  <td><code>decode</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>decode node in scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs.</td>
+</tr>
+<tr>
+  <td>22</td>
+  <td><code>dataPath</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>dataPath node in scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs.</td>
+</tr>
+<tr>
+  <td>23</td>
+  <td><code>data</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>data node in scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs.</td>
+</tr>
+<tr>
+  <td>24</td>
+  <td><code>now</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>now node in scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs.</td>
+</tr>
+<tr>
+  <td>25</td>
+  <td><code>probe</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>probe node in scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs.</td>
+</tr>
+<tr>
+  <td>26</td>
+  <td><code>applyDomainCorrections()</code><br><small style="color:var(--muted)">scripts/fix-longform-thumbnail-lab-subtitles-20260515.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td><code>cleanCaptionText()</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small></td>
+  <td>applyDomainCorrections() node in scripts/fix-longform-thumbnail-lab-subtitles-20260515.mjs.</td>
+</tr>
+<tr>
+  <td>27</td>
+  <td><code>cleanWord()</code><br><small style="color:var(--muted)">scripts/render-day4-package-20260515T1310Z.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td><code>cleanCaptionText()</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small></td>
+  <td>cleanWord() node in scripts/render-day4-package-20260515T1310Z.mjs.</td>
+</tr>
+<tr>
+  <td>28</td>
+  <td><code>collectWords()</code><br><small style="color:var(--muted)">scripts/render-day4-package-20260515T1310Z.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td><code>cleanCaptionText()</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small></td>
+  <td>collectWords() node in scripts/render-day4-package-20260515T1310Z.mjs.</td>
+</tr>
+<tr>
+  <td>29</td>
+  <td><code>caption-normalizer.mjs</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td><code>fix-stream2-founder-crisp-subtitles-202...</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small></td>
+  <td>No direct outbound edge</td>
+  <td>caption-normalizer.mjs node in lib/caption-normalizer.mjs.</td>
+</tr>
+<tr>
+  <td>30</td>
+  <td><code>cleanCaptionText()</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td><code>applyDomainCorrections()</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small><br><code>applyDomainCorrections()</code><br><small style="color:var(--muted)">scripts/fix-longform-thumbnail-lab-subtitles-20260515.mjs</small><br><code>buildPhraseEventsFromWords()</code><br><small style="color:var(--muted)">scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</small><br>+5 more</td>
+  <td><code>assEscape()</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small><br><code>eventFromWordTiming()</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small><br><code>segmentIntersections()</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small><br>+2 more</td>
+  <td>cleanCaptionText() node in lib/caption-normalizer.mjs.</td>
+</tr>
+</table>
+
+<div class="grid">
+  <div class="card">
+    <h4>Key Files</h4>
+    <table style="width:100%;font-size:0.85rem;">
+      <tr><th>File</th><th>Coverage</th></tr>
+      <tr><td><code>scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs</code></td><td>25 nodes</td></tr>
+<tr><td><code>lib/caption-normalizer.mjs</code></td><td>12 nodes</td></tr>
+<tr><td><code>scripts/render-day4-package-20260515T1310Z.mjs</code></td><td>2 nodes</td></tr>
+<tr><td><code>scripts/fix-longform-thumbnail-lab-subtitles-20260515.mjs</code></td><td>1 nodes</td></tr>
+    </table>
+  </div>
+  <div class="card">
+    <h4>Design Notes</h4>
+    <p>This section comes from graphify community clustering. Relationship summary: contains x35, calls x24, imports x2, imports x1. The diagram prioritizes high-confidence calls or usage relationships; the table keeps the broader node inventory.</p>
+  </div>
+</div>
+<hr>
+
+<!-- ====== 14. Community 2 ====== -->
+<h2 id="community-2">14. Community 2</h2>
 <p>Community 2 groups implementation around content, master, planmd, stage, mostly in CONTENT_HQ_MASTER_PLAN.md. This section covers 39 nodes and 38 internal edges; the diagram shows only representative relationships to stay readable.</p>
 
 <div class="mermaid">
@@ -4232,348 +4589,6 @@ flowchart LR
 </div>
 <hr>
 
-<!-- ====== 14. Community 31 ====== -->
-<h2 id="community-31">14. Community 31</h2>
-<p>Community 31 groups implementation around render, stream2, house, scripts, mostly in scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs, scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs. This section covers 38 nodes and 36 internal edges; the diagram shows only representative relationships to stay readable.</p>
-
-<div class="mermaid">
-%%{init: {"theme": "dark", "themeVariables": {"fontSize": "15.0px", "fontFamily": "Segoe UI, system-ui, sans-serif", "primaryColor": "#1e293b", "primaryTextColor": "#e2e8f0", "primaryBorderColor": "#38bdf8", "secondaryColor": "#0f172a", "tertiaryColor": "#334155", "lineColor": "#64748b", "textColor": "#e2e8f0"}, "flowchart": {"htmlLabels": true, "curve": "basis", "nodeSpacing": 48, "rankSpacing": 64, "padding": 14, "diagramPadding": 10, "useMaxWidth": true}}}%%
-flowchart LR
-    %% Section: Community 31 (38 nodes, 36 edges)
-    subgraph community_31_scripts_render_stream2_black_screen_0fa5bbe2["scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs"]
-        scripts_render_stream2_black_screen_flop_house_v_62d2e7d7("render-stream2-black-screen-flop-house-...<br/><small>scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small>")
-        scripts_render_stream2_black_screen_flop_house_v_047987a8("root<br/><small>scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small>")
-        scripts_render_stream2_black_screen_flop_house_v_2666b985("copy<br/><small>scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small>")
-        scripts_render_stream2_black_screen_flop_house_v_ea936681("run()<br/><small>scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small>")
-        scripts_render_stream2_black_screen_flop_house_v_d205b7a8("esc()<br/><small>scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small>")
-        scripts_render_stream2_black_screen_flop_house_v_eff99d76("filterPath()<br/><small>scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small>")
-        scripts_render_stream2_black_screen_flop_house_v_aba4d435("transcript<br/><small>scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small>")
-        scripts_render_stream2_black_screen_flop_house_v_e0abde77("events<br/><small>scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small>")
-        scripts_render_stream2_black_screen_flop_house_v_d00d3738("captionEvents<br/><small>scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small>")
-        scripts_render_stream2_black_screen_flop_house_v_53c4006f("qa<br/><small>scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small>")
-        scripts_render_stream2_black_screen_flop_house_v_92f524bd("vf<br/><small>scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small>")
-        scripts_render_stream2_black_screen_flop_house_v_ba71bea9("probe<br/><small>scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small>")
-        scripts_render_stream2_black_screen_flop_house_v_fc5372fa("review<br/><small>scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small>")
-        scripts_render_stream2_black_screen_flop_house_v_333c0f0f("reviewJson<br/><small>scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small>")
-        scripts_render_stream2_black_screen_flop_house_v_86ac200b("metadata<br/><small>scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small>")
-        scripts_render_stream2_black_screen_flop_house_v_8ec97ede("dataPath<br/><small>scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small>")
-        scripts_render_stream2_black_screen_flop_house_v_cca5abf2("data<br/><small>scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small>")
-    end
-    scripts_render_stream2_billion_company_house_v3_bcd587f6("render-stream2-billion-company-house-v3...<br/><small>scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small>")
-    scripts_render_stream2_black_screen_flop_house_v_62d2e7d7 -->|contains| scripts_render_stream2_black_screen_flop_house_v_047987a8
-    scripts_render_stream2_black_screen_flop_house_v_62d2e7d7 -->|contains| scripts_render_stream2_black_screen_flop_house_v_2666b985
-    scripts_render_stream2_black_screen_flop_house_v_62d2e7d7 -->|contains| scripts_render_stream2_black_screen_flop_house_v_ea936681
-    scripts_render_stream2_black_screen_flop_house_v_62d2e7d7 -->|contains| scripts_render_stream2_black_screen_flop_house_v_d205b7a8
-    scripts_render_stream2_black_screen_flop_house_v_62d2e7d7 -->|contains| scripts_render_stream2_black_screen_flop_house_v_eff99d76
-    scripts_render_stream2_black_screen_flop_house_v_62d2e7d7 -->|contains| scripts_render_stream2_black_screen_flop_house_v_aba4d435
-    scripts_render_stream2_black_screen_flop_house_v_62d2e7d7 -->|contains| scripts_render_stream2_black_screen_flop_house_v_e0abde77
-    scripts_render_stream2_black_screen_flop_house_v_62d2e7d7 -->|contains| scripts_render_stream2_black_screen_flop_house_v_d00d3738
-    scripts_render_stream2_black_screen_flop_house_v_62d2e7d7 -->|contains| scripts_render_stream2_black_screen_flop_house_v_53c4006f
-    scripts_render_stream2_black_screen_flop_house_v_62d2e7d7 -->|contains| scripts_render_stream2_black_screen_flop_house_v_92f524bd
-    scripts_render_stream2_black_screen_flop_house_v_62d2e7d7 -->|contains| scripts_render_stream2_black_screen_flop_house_v_ba71bea9
-    scripts_render_stream2_black_screen_flop_house_v_62d2e7d7 -->|contains| scripts_render_stream2_black_screen_flop_house_v_fc5372fa
-    scripts_render_stream2_black_screen_flop_house_v_62d2e7d7 -->|contains| scripts_render_stream2_black_screen_flop_house_v_333c0f0f
-    scripts_render_stream2_black_screen_flop_house_v_62d2e7d7 -->|contains| scripts_render_stream2_black_screen_flop_house_v_86ac200b
-    scripts_render_stream2_black_screen_flop_house_v_62d2e7d7 -->|contains| scripts_render_stream2_black_screen_flop_house_v_8ec97ede
-    scripts_render_stream2_black_screen_flop_house_v_62d2e7d7 -->|contains| scripts_render_stream2_black_screen_flop_house_v_cca5abf2
-    %% Omitted for readability: 20 nodes, 0 edges
-    class scripts_render_stream2_black_screen_flop_house_v_62d2e7d7 async;
-    class scripts_render_stream2_black_screen_flop_house_v_047987a8 function;
-    class scripts_render_stream2_black_screen_flop_house_v_2666b985 function;
-    class scripts_render_stream2_black_screen_flop_house_v_ea936681 function;
-    class scripts_render_stream2_black_screen_flop_house_v_d205b7a8 function;
-    class scripts_render_stream2_black_screen_flop_house_v_eff99d76 function;
-    class scripts_render_stream2_black_screen_flop_house_v_aba4d435 function;
-    class scripts_render_stream2_black_screen_flop_house_v_e0abde77 function;
-    class scripts_render_stream2_black_screen_flop_house_v_d00d3738 function;
-    class scripts_render_stream2_black_screen_flop_house_v_53c4006f function;
-    class scripts_render_stream2_black_screen_flop_house_v_92f524bd function;
-    class scripts_render_stream2_black_screen_flop_house_v_ba71bea9 function;
-    class scripts_render_stream2_black_screen_flop_house_v_fc5372fa function;
-    class scripts_render_stream2_black_screen_flop_house_v_333c0f0f function;
-    class scripts_render_stream2_black_screen_flop_house_v_86ac200b function;
-    class scripts_render_stream2_black_screen_flop_house_v_8ec97ede function;
-    class scripts_render_stream2_black_screen_flop_house_v_cca5abf2 function;
-    class scripts_render_stream2_billion_company_house_v3_bcd587f6 async;
-    classDef entry fill:#422006,stroke:#fbbf24,color:#fde68a,stroke-width:1px;
-    classDef api fill:#450a0a,stroke:#f87171,color:#fee2e2,stroke-width:1px;
-    classDef async fill:#2e1065,stroke:#a78bfa,color:#ede9fe,stroke-width:1px;
-    classDef klass fill:#064e3b,stroke:#34d399,color:#d1fae5,stroke-width:1px;
-    classDef ui fill:#831843,stroke:#f472b6,color:#fce7f3,stroke-width:1px;
-    classDef module fill:#172554,stroke:#60a5fa,color:#dbeafe,stroke-width:1px;
-    classDef test fill:#3f3f46,stroke:#a1a1aa,color:#f4f4f5,stroke-width:1px;
-    classDef concept fill:#292524,stroke:#a8a29e,color:#fafaf9,stroke-dasharray:4 3;
-    classDef function fill:#0f172a,stroke:#38bdf8,color:#e0f2fe,stroke-width:1px;
-</div>
-
-<h3>Call Details</h3>
-<table class="call-table">
-<tr>
-  <th style="width:5%">#</th>
-  <th style="width:28%">Node</th>
-  <th style="width:10%">Type</th>
-  <th style="width:17%">Caller</th>
-  <th style="width:20%">Callees</th>
-  <th style="width:20%">Description</th>
-</tr>
-<tr>
-  <td>1</td>
-  <td><code>render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</code><br><small style="color:var(--muted)">scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small></td>
-  <td><span class="tag tag-async">Async</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs node in scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs.</td>
-</tr>
-<tr>
-  <td>2</td>
-  <td><code>root</code><br><small style="color:var(--muted)">scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>root node in scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs.</td>
-</tr>
-<tr>
-  <td>3</td>
-  <td><code>copy</code><br><small style="color:var(--muted)">scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>copy node in scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs.</td>
-</tr>
-<tr>
-  <td>4</td>
-  <td><code>run()</code><br><small style="color:var(--muted)">scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>run() node in scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs.</td>
-</tr>
-<tr>
-  <td>5</td>
-  <td><code>esc()</code><br><small style="color:var(--muted)">scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>esc() node in scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs.</td>
-</tr>
-<tr>
-  <td>6</td>
-  <td><code>filterPath()</code><br><small style="color:var(--muted)">scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>filterPath() node in scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs.</td>
-</tr>
-<tr>
-  <td>7</td>
-  <td><code>transcript</code><br><small style="color:var(--muted)">scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>transcript node in scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs.</td>
-</tr>
-<tr>
-  <td>8</td>
-  <td><code>events</code><br><small style="color:var(--muted)">scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>events node in scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs.</td>
-</tr>
-<tr>
-  <td>9</td>
-  <td><code>captionEvents</code><br><small style="color:var(--muted)">scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>captionEvents node in scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs.</td>
-</tr>
-<tr>
-  <td>10</td>
-  <td><code>qa</code><br><small style="color:var(--muted)">scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>qa node in scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs.</td>
-</tr>
-<tr>
-  <td>11</td>
-  <td><code>vf</code><br><small style="color:var(--muted)">scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>vf node in scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs.</td>
-</tr>
-<tr>
-  <td>12</td>
-  <td><code>probe</code><br><small style="color:var(--muted)">scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>probe node in scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs.</td>
-</tr>
-<tr>
-  <td>13</td>
-  <td><code>review</code><br><small style="color:var(--muted)">scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>review node in scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs.</td>
-</tr>
-<tr>
-  <td>14</td>
-  <td><code>reviewJson</code><br><small style="color:var(--muted)">scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>reviewJson node in scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs.</td>
-</tr>
-<tr>
-  <td>15</td>
-  <td><code>metadata</code><br><small style="color:var(--muted)">scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>metadata node in scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs.</td>
-</tr>
-<tr>
-  <td>16</td>
-  <td><code>dataPath</code><br><small style="color:var(--muted)">scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>dataPath node in scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs.</td>
-</tr>
-<tr>
-  <td>17</td>
-  <td><code>data</code><br><small style="color:var(--muted)">scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>data node in scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs.</td>
-</tr>
-<tr>
-  <td>18</td>
-  <td><code>clip</code><br><small style="color:var(--muted)">scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small></td>
-  <td><span class="tag tag-cmd">Entry</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>clip node in scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs.</td>
-</tr>
-<tr>
-  <td>19</td>
-  <td><code>dispatch</code><br><small style="color:var(--muted)">scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>dispatch node in scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs.</td>
-</tr>
-<tr>
-  <td>20</td>
-  <td><code>render-stream2-billion-company-house-v3-20260514T0817Z.mjs</code><br><small style="color:var(--muted)">scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small></td>
-  <td><span class="tag tag-async">Async</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>render-stream2-billion-company-house-v3-20260514T0817Z.mjs node in scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs.</td>
-</tr>
-<tr>
-  <td>21</td>
-  <td><code>root</code><br><small style="color:var(--muted)">scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>root node in scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs.</td>
-</tr>
-<tr>
-  <td>22</td>
-  <td><code>copy</code><br><small style="color:var(--muted)">scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>copy node in scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs.</td>
-</tr>
-<tr>
-  <td>23</td>
-  <td><code>run()</code><br><small style="color:var(--muted)">scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>run() node in scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs.</td>
-</tr>
-<tr>
-  <td>24</td>
-  <td><code>esc()</code><br><small style="color:var(--muted)">scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>esc() node in scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs.</td>
-</tr>
-<tr>
-  <td>25</td>
-  <td><code>filterPath()</code><br><small style="color:var(--muted)">scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>filterPath() node in scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs.</td>
-</tr>
-<tr>
-  <td>26</td>
-  <td><code>transcript</code><br><small style="color:var(--muted)">scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>transcript node in scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs.</td>
-</tr>
-<tr>
-  <td>27</td>
-  <td><code>events</code><br><small style="color:var(--muted)">scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>events node in scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs.</td>
-</tr>
-<tr>
-  <td>28</td>
-  <td><code>captionEvents</code><br><small style="color:var(--muted)">scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>captionEvents node in scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs.</td>
-</tr>
-<tr>
-  <td>29</td>
-  <td><code>qa</code><br><small style="color:var(--muted)">scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>qa node in scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs.</td>
-</tr>
-<tr>
-  <td>30</td>
-  <td><code>vf</code><br><small style="color:var(--muted)">scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>vf node in scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs.</td>
-</tr>
-</table>
-
-<div class="grid">
-  <div class="card">
-    <h4>Key Files</h4>
-    <table style="width:100%;font-size:0.85rem;">
-      <tr><th>File</th><th>Coverage</th></tr>
-      <tr><td><code>scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</code></td><td>19 nodes</td></tr>
-<tr><td><code>scripts/render-stream2-black-screen-flop-house-v3-20260514T0647Z.mjs</code></td><td>19 nodes</td></tr>
-    </table>
-  </div>
-  <div class="card">
-    <h4>Design Notes</h4>
-    <p>This section comes from graphify community clustering. Relationship summary: contains x36. The diagram prioritizes high-confidence calls or usage relationships; the table keeps the broader node inventory.</p>
-  </div>
-</div>
-<hr>
-
 <!-- ====== 15. Community 229 ====== -->
 <h2 id="community-229">15. Community 229</h2>
 <p>Community 229 groups implementation around render, day4, package, 20260515t1310zmjs, mostly in scripts/render-day4-package-20260515T1310Z.mjs. This section covers 37 nodes and 41 internal edges; the diagram shows only representative relationships to stay readable.</p>
@@ -4904,32 +4919,30 @@ flowchart LR
 
 <!-- ====== 16. Other ====== -->
 <h2 id="other">16. Other</h2>
-<p>Other groups implementation around scripts, render, stream2, house, mostly in server/server.mjs, UX_AUDIT_AND_REDESIGN_PLAN.md, X_WRITING_AND_GROWTH_SOP.md. This section covers 1848 nodes and 2099 internal edges; the diagram shows only representative relationships to stay readable.</p>
+<p>Other groups implementation around scripts, render, house, stream2, mostly in server/server.mjs, UX_AUDIT_AND_REDESIGN_PLAN.md, X_WRITING_AND_GROWTH_SOP.md. This section covers 1843 nodes and 1913 internal edges; the diagram shows only representative relationships to stay readable.</p>
 
 <div class="mermaid">
 %%{init: {"theme": "dark", "themeVariables": {"fontSize": "15.0px", "fontFamily": "Segoe UI, system-ui, sans-serif", "primaryColor": "#1e293b", "primaryTextColor": "#e2e8f0", "primaryBorderColor": "#38bdf8", "secondaryColor": "#0f172a", "tertiaryColor": "#334155", "lineColor": "#64748b", "textColor": "#e2e8f0"}, "flowchart": {"htmlLabels": true, "curve": "basis", "nodeSpacing": 48, "rankSpacing": 64, "padding": 14, "diagramPadding": 10, "useMaxWidth": true}}}%%
 flowchart LR
-    %% Section: Other (1848 nodes, 2099 edges)
-    subgraph other_server_server_mjs_7c9204b3["server/server.mjs"]
-        server_server_savedb_baf23f5c("saveDb()<br/><small>server/server.mjs</small>")
-        server_server_execfileasync_1f284383("execFileAsync<br/><small>server/server.mjs</small>")
-        server_server_id_24020de8("id()<br/><small>server/server.mjs</small>")
-        server_server_ensuremediadirs_628c7ac7("ensureMediaDirs()<br/><small>server/server.mjs</small>")
-        server_server_addjob_46dc7c5b("addJob()<br/><small>server/server.mjs</small>")
-        server_server_ffprobeduration_47121d8a("ffprobeDuration()<br/><small>server/server.mjs</small>")
-        server_server_ffprobelastvideopacket_c150e0b4("ffprobeLastVideoPacket()<br/><small>server/server.mjs</small>")
-        server_server_commandexists_f35ca9cf("commandExists()<br/><small>server/server.mjs</small>")
-        server_server_preflightyoutubedownload_4d67b928("preflightYoutubeDownload()<br/><small>server/server.mjs</small>")
-        server_server_sourcedimensions_3b1bb4bb("sourceDimensions()<br/><small>server/server.mjs</small>")
-        server_server_detectfacecambox_88b58a6d("detectFacecamBox()<br/><small>server/server.mjs</small>")
-        server_server_renderselectedclip_2cdd6419("renderSelectedClip()<br/><small>server/server.mjs</small>")
-        server_server_scanyoutubetab_ca7e9327("scanYoutubeTab()<br/><small>server/server.mjs</small>")
-        server_server_loaddb_ff569b8e("loadDb()<br/><small>server/server.mjs</small>")
-        server_server_normalizedb_a70abd7b("normalizeDb()<br/><small>server/server.mjs</small>")
-        server_server_scantwitterradar_075d47b9("scanTwitterRadar()<br/><small>server/server.mjs</small>")
-        server_server_updatetwitterradar_1c72ed87("updateTwitterRadar()<br/><small>server/server.mjs</small>")
-    end
-    scripts_render_stream3_top10_strict_word_templat_2ba56b69("render-stream3-top10-strict-word-templa...<br/><small>scripts/render-stream3-top10-strict-word-template-20260514T1035Z.mjs</small>")
+    %% Section: Other (1843 nodes, 1913 edges)
+    server_server_savedb_baf23f5c("saveDb()<br/><small>server/server.mjs</small>")
+    server_server_id_24020de8("id()<br/><small>server/server.mjs</small>")
+    server_server_execfileasync_1f284383("execFileAsync<br/><small>server/server.mjs</small>")
+    server_server_ensuremediadirs_628c7ac7("ensureMediaDirs()<br/><small>server/server.mjs</small>")
+    server_server_addjob_46dc7c5b("addJob()<br/><small>server/server.mjs</small>")
+    server_server_send_d6780336("send()<br/><small>server/server.mjs</small>")
+    server_server_ffprobeduration_47121d8a("ffprobeDuration()<br/><small>server/server.mjs</small>")
+    server_server_ffprobelastvideopacket_c150e0b4("ffprobeLastVideoPacket()<br/><small>server/server.mjs</small>")
+    server_server_commandexists_f35ca9cf("commandExists()<br/><small>server/server.mjs</small>")
+    server_server_preflightyoutubedownload_4d67b928("preflightYoutubeDownload()<br/><small>server/server.mjs</small>")
+    server_server_sourcedimensions_3b1bb4bb("sourceDimensions()<br/><small>server/server.mjs</small>")
+    server_server_detectfacecambox_88b58a6d("detectFacecamBox()<br/><small>server/server.mjs</small>")
+    server_server_renderselectedclip_2cdd6419("renderSelectedClip()<br/><small>server/server.mjs</small>")
+    server_server_scanyoutubetab_ca7e9327("scanYoutubeTab()<br/><small>server/server.mjs</small>")
+    server_server_loaddb_ff569b8e("loadDb()<br/><small>server/server.mjs</small>")
+    server_server_normalizedb_a70abd7b("normalizeDb()<br/><small>server/server.mjs</small>")
+    server_server_scantwitterradar_075d47b9("scanTwitterRadar()<br/><small>server/server.mjs</small>")
+    server_server_updatetwitterradar_1c72ed87("updateTwitterRadar()<br/><small>server/server.mjs</small>")
     server_server_execfileasync_1f284383 -->|calls| server_server_ffprobeduration_47121d8a
     server_server_execfileasync_1f284383 -->|calls| server_server_ffprobelastvideopacket_c150e0b4
     server_server_execfileasync_1f284383 -->|calls| server_server_commandexists_f35ca9cf
@@ -4949,12 +4962,13 @@ flowchart LR
     server_server_commandexists_f35ca9cf -->|calls| server_server_renderselectedclip_2cdd6419
     server_server_sourcedimensions_3b1bb4bb -->|calls| server_server_detectfacecambox_88b58a6d
     server_server_detectfacecambox_88b58a6d -->|calls| server_server_renderselectedclip_2cdd6419
-    %% Omitted for readability: 1830 nodes, 0 edges
+    %% Omitted for readability: 1825 nodes, 0 edges
     class server_server_savedb_baf23f5c function;
-    class server_server_execfileasync_1f284383 async;
     class server_server_id_24020de8 function;
+    class server_server_execfileasync_1f284383 async;
     class server_server_ensuremediadirs_628c7ac7 function;
     class server_server_addjob_46dc7c5b function;
+    class server_server_send_d6780336 function;
     class server_server_ffprobeduration_47121d8a function;
     class server_server_ffprobelastvideopacket_c150e0b4 function;
     class server_server_commandexists_f35ca9cf entry;
@@ -4967,7 +4981,6 @@ flowchart LR
     class server_server_normalizedb_a70abd7b function;
     class server_server_scantwitterradar_075d47b9 function;
     class server_server_updatetwitterradar_1c72ed87 function;
-    class scripts_render_stream3_top10_strict_word_templat_2ba56b69 async;
     classDef entry fill:#422006,stroke:#fbbf24,color:#fde68a,stroke-width:1px;
     classDef api fill:#450a0a,stroke:#f87171,color:#fee2e2,stroke-width:1px;
     classDef async fill:#2e1065,stroke:#a78bfa,color:#ede9fe,stroke-width:1px;
@@ -5002,19 +5015,11 @@ flowchart LR
   <td><code>id()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
-  <td><code>addJob()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>addMediaJob()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>createDispatchItem()</code><br><small style="color:var(--muted)">server/server.mjs</small><br>+5 more</td>
+  <td><code>addJob()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>addMediaJob()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>createDispatchItem()</code><br><small style="color:var(--muted)">server/server.mjs</small><br>+6 more</td>
   <td>id() node in server/server.mjs.</td>
 </tr>
 <tr>
   <td>3</td>
-  <td><code>ensureMediaDirs()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td><code>exportClipBundle()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>handleApi()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>handleMediaUpload()</code><br><small style="color:var(--muted)">server/server.mjs</small><br>+4 more</td>
-  <td>ensureMediaDirs() node in server/server.mjs.</td>
-</tr>
-<tr>
-  <td>4</td>
   <td><code>addJob()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td><code>id()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
@@ -5022,7 +5027,7 @@ flowchart LR
   <td>addJob() node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>5</td>
+  <td>4</td>
   <td><code>dispatchQueueSummary()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -5030,7 +5035,7 @@ flowchart LR
   <td>dispatchQueueSummary() node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>6</td>
+  <td>5</td>
   <td><code>normalizeWatchAccounts()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td><code>normalizeWatchAccount()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
@@ -5038,7 +5043,7 @@ flowchart LR
   <td>normalizeWatchAccounts() node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>7</td>
+  <td>6</td>
   <td><code>normalizeRadarSourceAdapters()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -5046,7 +5051,7 @@ flowchart LR
   <td>normalizeRadarSourceAdapters() node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>8</td>
+  <td>7</td>
   <td><code>normalizeRadarWorkerLanes()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -5054,7 +5059,7 @@ flowchart LR
   <td>normalizeRadarWorkerLanes() node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>9</td>
+  <td>8</td>
   <td><code>normalizeTwitterRadar()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td><code>normalizeRadarSourceAdapters()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>normalizeRadarWorkerLanes()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>normalizeWatchAccounts()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
@@ -5062,7 +5067,7 @@ flowchart LR
   <td>normalizeTwitterRadar() node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>10</td>
+  <td>9</td>
   <td><code>scanTwitterRadar()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td><code>addJob()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>normalizeTwitterRadar()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>normalizeWatchAccounts()</code><br><small style="color:var(--muted)">server/server.mjs</small><br>+1 more</td>
@@ -5070,7 +5075,7 @@ flowchart LR
   <td>Starts scanning or handles scan status.</td>
 </tr>
 <tr>
-  <td>11</td>
+  <td>10</td>
   <td><code>updateTwitterRadar()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td><code>normalizeTwitterRadar()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>normalizeWatchAccounts()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>saveDb()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
@@ -5078,7 +5083,7 @@ flowchart LR
   <td>updateTwitterRadar() node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>12</td>
+  <td>11</td>
   <td><code>updateTwitterRadarWatchlist()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td><code>normalizeTwitterRadar()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>normalizeWatchAccounts()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>saveDb()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
@@ -5086,7 +5091,7 @@ flowchart LR
   <td>updateTwitterRadarWatchlist() node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>13</td>
+  <td>12</td>
   <td><code>markTwitterRadarAccountChecked()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td><code>addJob()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>normalizeRadarHandle()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>normalizeTwitterRadar()</code><br><small style="color:var(--muted)">server/server.mjs</small><br>+1 more</td>
@@ -5094,7 +5099,7 @@ flowchart LR
   <td>markTwitterRadarAccountChecked() node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>14</td>
+  <td>13</td>
   <td><code>commandExists()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-cmd">Entry</span></td>
   <td><code>execFileAsync</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
@@ -5102,7 +5107,7 @@ flowchart LR
   <td>commandExists() node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>15</td>
+  <td>14</td>
   <td><code>mediaProbe()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td><code>addJob()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>commandExists()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>ensureMediaDirs()</code><br><small style="color:var(--muted)">server/server.mjs</small><br>+1 more</td>
@@ -5110,7 +5115,7 @@ flowchart LR
   <td>mediaProbe() node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>16</td>
+  <td>15</td>
   <td><code>addMediaJob()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td><code>addJob()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>handleMediaUpload()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>id()</code><br><small style="color:var(--muted)">server/server.mjs</small><br>+1 more</td>
@@ -5118,7 +5123,7 @@ flowchart LR
   <td>addMediaJob() node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>17</td>
+  <td>16</td>
   <td><code>buildCustomDownloadCommand()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-cmd">Entry</span></td>
   <td>External entry / no inbound edge</td>
@@ -5126,7 +5131,7 @@ flowchart LR
   <td>buildCustomDownloadCommand() node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>18</td>
+  <td>17</td>
   <td><code>buildYtDlpPreflightCommand()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-cmd">Entry</span></td>
   <td>External entry / no inbound edge</td>
@@ -5134,7 +5139,7 @@ flowchart LR
   <td>buildYtDlpPreflightCommand() node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>19</td>
+  <td>18</td>
   <td><code>buildLocalCompanionCommand()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-cmd">Entry</span></td>
   <td>External entry / no inbound edge</td>
@@ -5142,23 +5147,7 @@ flowchart LR
   <td>buildLocalCompanionCommand() node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>20</td>
-  <td><code>videoIdFromUrl()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td><code>handleApi()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>ingestLatestLocalMedia()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>renderSelectedClip()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
-  <td>videoIdFromUrl() node in server/server.mjs.</td>
-</tr>
-<tr>
-  <td>21</td>
-  <td><code>latestOnlyBlocker()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td><code>handleApi()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>ingestLatestLocalMedia()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
-  <td>Verifies imports, entry points, or version behavior.</td>
-</tr>
-<tr>
-  <td>22</td>
+  <td>19</td>
   <td><code>buildWhisperCommand()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-cmd">Entry</span></td>
   <td>External entry / no inbound edge</td>
@@ -5166,39 +5155,7 @@ flowchart LR
   <td>buildWhisperCommand() node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>23</td>
-  <td><code>slug()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td><code>exportClipBundle()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>renderSelectedClip()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
-  <td>slug() node in server/server.mjs.</td>
-</tr>
-<tr>
-  <td>24</td>
-  <td><code>clipPlatformChecklist()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
-  <td><span class="tag tag-cmd">Entry</span></td>
-  <td>External entry / no inbound edge</td>
-  <td><code>exportClipBundle()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
-  <td>clipPlatformChecklist() node in server/server.mjs.</td>
-</tr>
-<tr>
-  <td>25</td>
-  <td><code>exportClipBundle()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
-  <td><span class="tag tag-cmd">Entry</span></td>
-  <td><code>addMediaJob()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>clipPlatformChecklist()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>ensureMediaDirs()</code><br><small style="color:var(--muted)">server/server.mjs</small><br>+1 more</td>
-  <td><code>handleApi()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
-  <td>Exports documentation data to a target format.</td>
-</tr>
-<tr>
-  <td>26</td>
-  <td><code>ingestLatestLocalMedia()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td><code>addMediaJob()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>buildFfmpegCommand()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>ensureMediaDirs()</code><br><small style="color:var(--muted)">server/server.mjs</small><br>+4 more</td>
-  <td><code>handleApi()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>localFileExists()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>scoreClips()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
-  <td>Turns a local path or remote repository into analysis context.</td>
-</tr>
-<tr>
-  <td>27</td>
+  <td>20</td>
   <td><code>parseBody()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -5206,7 +5163,7 @@ flowchart LR
   <td>parseBody() node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>28</td>
+  <td>21</td>
   <td><code>resolveChannelId()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -5214,7 +5171,7 @@ flowchart LR
   <td>resolveChannelId() node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>29</td>
+  <td>22</td>
   <td><code>fetchTextOrThrow()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -5222,12 +5179,68 @@ flowchart LR
   <td>fetchTextOrThrow() node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>30</td>
+  <td>23</td>
   <td><code>scanYoutubeFallback()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td><code>commandExists()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><code>scanYoutube()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td>Starts scanning or handles scan status.</td>
+</tr>
+<tr>
+  <td>24</td>
+  <td><code>scanYoutube()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td><code>addJob()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>fetchTextOrThrow()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>id()</code><br><small style="color:var(--muted)">server/server.mjs</small><br>+3 more</td>
+  <td><code>handleApi()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
+  <td>Starts scanning or handles scan status.</td>
+</tr>
+<tr>
+  <td>25</td>
+  <td><code>thumbnailText()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td><code>thumbnailConceptFromClip()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
+  <td>thumbnailText() node in server/server.mjs.</td>
+</tr>
+<tr>
+  <td>26</td>
+  <td><code>thumbnailVisualAngle()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td><code>thumbnailConceptFromClip()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
+  <td>thumbnailVisualAngle() node in server/server.mjs.</td>
+</tr>
+<tr>
+  <td>27</td>
+  <td><code>thumbnailConceptFromClip()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
+  <td><span class="tag tag-cmd">Entry</span></td>
+  <td><code>id()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>thumbnailText()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>thumbnailVisualAngle()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
+  <td><code>generateThumbnailConcepts()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
+  <td>thumbnailConceptFromClip() node in server/server.mjs.</td>
+</tr>
+<tr>
+  <td>28</td>
+  <td><code>updateThumbnailPreferenceProfile()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td><code>handleApi()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
+  <td>updateThumbnailPreferenceProfile() node in server/server.mjs.</td>
+</tr>
+<tr>
+  <td>29</td>
+  <td><code>thumbnailVariant()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td><code>id()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
+  <td><code>generateThumbnailConcepts()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
+  <td>thumbnailVariant() node in server/server.mjs.</td>
+</tr>
+<tr>
+  <td>30</td>
+  <td><code>generateThumbnailConcepts()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td><code>addJob()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>saveDb()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>thumbnailConceptFromClip()</code><br><small style="color:var(--muted)">server/server.mjs</small><br>+1 more</td>
+  <td><code>handleApi()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
+  <td>generateThumbnailConcepts() node in server/server.mjs.</td>
 </tr>
 </table>
 
@@ -5236,7 +5249,7 @@ flowchart LR
     <h4>Key Files</h4>
     <table style="width:100%;font-size:0.85rem;">
       <tr><th>File</th><th>Coverage</th></tr>
-      <tr><td><code>server/server.mjs</code></td><td>125 nodes</td></tr>
+      <tr><td><code>server/server.mjs</code></td><td>124 nodes</td></tr>
 <tr><td><code>UX_AUDIT_AND_REDESIGN_PLAN.md</code></td><td>59 nodes</td></tr>
 <tr><td><code>X_WRITING_AND_GROWTH_SOP.md</code></td><td>53 nodes</td></tr>
 <tr><td><code>src/App.tsx</code></td><td>42 nodes</td></tr>
@@ -5248,7 +5261,7 @@ flowchart LR
   </div>
   <div class="card">
     <h4>Design Notes</h4>
-    <p>This section comes from graphify community clustering. Relationship summary: contains x1567, calls x346, imports x137, imports x48. The diagram prioritizes high-confidence calls or usage relationships; the table keeps the broader node inventory.</p>
+    <p>This section comes from graphify community clustering. Relationship summary: contains x1563, calls x313, imports x37. The diagram prioritizes high-confidence calls or usage relationships; the table keeps the broader node inventory.</p>
   </div>
 </div>
 <hr>
@@ -5259,17 +5272,17 @@ flowchart LR
   <div class="card">
     <h4>Graph</h4>
     <table style="width:100%;font-size:0.85rem;">
-      <tr><td>Nodes</td><td>2951</td></tr>
-      <tr><td>Edges</td><td>3524</td></tr>
+      <tr><td>Nodes</td><td>2952</td></tr>
+      <tr><td>Edges</td><td>3527</td></tr>
       <tr><td>Hyperedges</td><td>0</td></tr>
-      <tr><td>Communities</td><td>244</td></tr>
+      <tr><td>Communities</td><td>243</td></tr>
       <tr><td>Documented Sections</td><td>15</td></tr>
     </table>
   </div>
   <div class="card">
     <h4>Edge Confidence</h4>
     <table style="width:100%;font-size:0.85rem;">
-      <tr><td>EXTRACTED</td><td>3522</td></tr>
+      <tr><td>EXTRACTED</td><td>3525</td></tr>
       <tr><td>INFERRED</td><td>2</td></tr>
       <tr><td>AMBIGUOUS</td><td>0</td></tr>
     </table>
@@ -5278,7 +5291,7 @@ flowchart LR
 
 <div style="text-align:center; padding:40px 0; color: var(--muted); font-size:0.9rem;">
   <p>vibe-zone — Architecture Documentation</p>
-  <p>Generated: 2026-05-18 15:24 UTC · graphify callflow-html</p>
+  <p>Generated: 2026-05-18 15:29 UTC · graphify callflow-html</p>
 </div>
 
 </div><!-- .container -->
