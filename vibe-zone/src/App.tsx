@@ -376,7 +376,7 @@ function YouTubeAutomation({ state }: { state: AppState }) {
   const dogAssets = state.mediaFiles
     .filter((file) => file.path.includes('youtube-automation/dog-paw-psychology'))
     .sort((a, b) => b.updatedAt.localeCompare(a.updatedAt))
-  const dogVideo = dogAssets.find((file) => /practice-v2-netflix-subtitles\.mp4$|practice-v1\.mp4$|dog_paw_full_preview/i.test(file.path))
+  const dogVideo = dogAssets.find((file) => /practice-v3-one-line-audio-subtitles\.mp4$|practice-v2-netflix-subtitles\.mp4$|practice-v1\.mp4$|dog_paw_full_preview/i.test(file.path))
   const dogExports = dogAssets.filter((file) => file.kind === 'export')
   const dogReviewNotes = dogAssets.filter((file) => /review-note\.md$/i.test(file.name))
   const dogThumbnails = dogAssets.filter((file) => /thumbnail.*\.(png|jpg|jpeg)$/i.test(file.name)).sort((a, b) => a.name.localeCompare(b.name))
