@@ -987,7 +987,7 @@ function TwitterRadarPage({ state, refresh, setError }: { state: AppState; refre
   const isManualLinked = xConnection?.status === 'manual_linked'
   const isOauthReady = xConnection?.status === 'connected' || xConnection?.status === 'oauth_approved'
   const [draft, setDraft] = useState('')
-  const [format, setFormat] = useState<'one-liner' | 'milestone' | 'lesson' | 'stack'>('one-liner')
+  const [format, setFormat] = useState<'one-liner' | 'milestone' | 'lesson' | 'stack' | 'trend'>('one-liner')
   const [chatPrompt, setChatPrompt] = useState('')
   const [aiBusy, setAiBusy] = useState<'draft' | 'score' | 'coach' | ''>('')
   const [aiResult, setAiResult] = useState<StudioAiResult | null>(null)
@@ -1010,6 +1010,7 @@ function TwitterRadarPage({ state, refresh, setError }: { state: AppState; refre
     { id: 'milestone', icon: '🏆', label: 'Milestone', help: 'Crossed a number' },
     { id: 'lesson', icon: '📖', label: 'Lesson learned', help: 'From doing the work' },
     { id: 'stack', icon: '🛠️', label: 'My stack', help: 'What I use, why' },
+    { id: 'trend', icon: '🔥', label: 'AI trend', help: 'Niche-aware viral angle' },
   ] as const
   const analytics = twitterStudioAnalytics(replyCards, watchAccounts, draft)
   const saveRadar = async () => {
@@ -1039,13 +1040,13 @@ function TwitterRadarPage({ state, refresh, setError }: { state: AppState; refre
   const copyDraft = async () => {
     try { await navigator.clipboard.writeText(draft) } catch { setError('Copy failed. Select the draft manually.') }
   }
-  const runStudioAi = async (action: 'draft' | 'score' | 'coach', nextFormat = format, prompt = chatPrompt) => {
-    setAiBusy(action)
+  const runStudioAi = async (action: 'draft' | 'score' | 'coach' | 'trend', nextFormat = format, prompt = chatPrompt) => {
+    setAiBusy(action === 'trend' ? 'draft' : action)
     setError('')
     try {
-      const result = await api<StudioAiResult>('/api/studio/ai', { method: 'POST', body: JSON.stringify({ action, format: nextFormat, prompt, draft }) })
+      const result = await api<StudioAiResult>('/api/studio/ai', { method: 'POST', body: JSON.stringify({ action, format: nextFormat, prompt, draft, niche: 'AI agents, creator tools, stream-to-content systems, local-first automation, build-in-public software' }) })
       setAiResult(result)
-      if (action === 'draft' && result.draft) setDraft(result.draft)
+      if ((action === 'draft' || action === 'trend') && result.draft) setDraft(result.draft)
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Studio AI failed')
     } finally {
@@ -1080,9 +1081,10 @@ function TwitterRadarPage({ state, refresh, setError }: { state: AppState; refre
       milestone: 'Today I linked the first social profile into Vibe Zone. Tiny step, real product momentum.',
       lesson: 'Lesson learned: “connected” should mean exactly what the product can do, not what the UI hopes it can do later.',
       stack: 'My current build stack: Vite, local media pipeline, manual social review, and tiny loops that actually ship.',
+      trend: 'AI agents are moving from demos into boring daily workflows. That is where the real creator-tool opportunity is.',
     }
     setDraft(starters[next])
-    runStudioAi('draft', next, chatPrompt).catch(() => undefined)
+    runStudioAi(next === 'trend' ? 'trend' : 'draft', next, chatPrompt || (next === 'trend' ? 'Find a current AI niche angle for creator tools, AI agents, and stream-to-content workflows.' : '')).catch(() => undefined)
   }
   return <section className="x-studio-page">
     <div className="x-studio-title"><div><h2>Studio</h2><p>Draft, refine, and publish posts in your voice.</p></div><div className={`x-connection-pill ${isOauthReady ? 'live' : isManualLinked ? 'linked' : 'blocked'}`}><strong>{isOauthReady ? 'OAuth connected' : isManualLinked ? 'Profile linked' : 'Not linked'}</strong><span>{linkedLabel}</span></div></div>
