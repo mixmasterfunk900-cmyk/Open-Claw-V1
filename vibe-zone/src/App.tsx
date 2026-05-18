@@ -995,6 +995,7 @@ function TwitterRadarPage({ state, refresh, setError }: { state: AppState; refre
   const [watchText, setWatchText] = useState((radar.watchAccounts || []).map(formatWatchAccount).join('\n'))
   const [bulkWatchText, setBulkWatchText] = useState('')
   const [scanning, setScanning] = useState(false)
+  const [trafficBusy, setTrafficBusy] = useState(false)
   const [saving, setSaving] = useState(false)
   const topics = splitRadarLines(topicText)
   const watchAccounts = splitRadarLines(watchText).map(parseWatchAccount).filter(Boolean).slice(0, 2000) as TwitterWatchAccount[]
@@ -1035,6 +1036,18 @@ function TwitterRadarPage({ state, refresh, setError }: { state: AppState; refre
       setError(err instanceof Error ? err.message : 'Twitter/X screening failed')
     } finally {
       setScanning(false)
+    }
+  }
+  const runTrafficQueue = async () => {
+    setTrafficBusy(true)
+    try {
+      await api<TwitterRadar>('/api/twitter-radar/traffic', { method: 'POST', body: JSON.stringify({ topics }) })
+      await refresh()
+      setError('')
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Traffic reply queue failed')
+    } finally {
+      setTrafficBusy(false)
     }
   }
   const copyDraft = async () => {
@@ -1102,8 +1115,9 @@ function TwitterRadarPage({ state, refresh, setError }: { state: AppState; refre
     <section className="x-card x-format-table"><div><h3>Format performance</h3><p>Per-format breakdown across this period.</p></div><table><thead><tr><th>Format</th><th>Posts ↓</th><th>Replies</th><th>Impr.</th></tr></thead><tbody>{analytics.formats.map((row) => <tr key={row.format}><td><span>{row.icon}</span>{row.format}</td><td>{row.posts}</td><td>{row.replies}</td><td>{row.impressions}</td></tr>)}</tbody></table></section>
     <section className="x-bottom-grid"><div className="x-card"><h3>Audience insights</h3><p>{isOauthReady ? 'Real X audience insights can land here after API read access is wired.' : 'Lands once your X audience-insights data is OAuth connected.'}</p></div><div className="x-card"><h3>Takeaways</h3><p>Ship a handful of posts and this card fills with what is working for you specifically.</p></div></section>
     <details className="x-card x-advanced"><summary>Advanced radar setup</summary><div className="x-advanced-grid"><label className="radar-input-label"><strong>Topic lanes</strong><textarea value={topicText} onChange={(event) => setTopicText(event.target.value)} rows={5} placeholder="AI agents\nbuild in public\ncreator tools" /></label><label className="radar-input-label"><strong>High-profile watchlist</strong><textarea value={watchText} onChange={(event) => setWatchText(event.target.value)} rows={5} placeholder="Tier A @levelsio" /></label><div><button type="button" onClick={saveRadar} disabled={saving}>{saving ? 'Saving…' : 'Save topics + watchlist'}</button><button type="button" onClick={runScan} disabled={scanning}>{scanning ? 'Screening…' : 'Run screening now'}</button></div></div></details>
-    <section className="twitter-radar-hero"><div><h2>Twitter Radar</h2><p>Manual-only reply radar. No X API, no login, no scraping loop, no posting.</p></div><span>{radar.lastScanAt ? `Last scan ${new Date(radar.lastScanAt).toLocaleString()}` : 'Awaiting local scan'}</span></section>
-    <section className="twitter-radar-card"><h3>Priority openings</h3><div className="radar-card-grid">{replyCards.slice(0, 6).map((item) => <article className="reply-draft manual-only" key={item.id}><span>{`${item.topic} · score ${item.score}`}</span><strong>{item.account || item.handle || 'Radar lead'}</strong><blockquote>{item.replyDraft}</blockquote><small>{item.reason}</small><div><a href={item.url} target="_blank" rel="noreferrer">Open X search</a><button type="button" onClick={() => copyReply(item.replyDraft)}>Copy reply</button></div></article>)}</div></section>
+    <section className="twitter-radar-hero"><div><h2>Twitter Radar</h2><p>Manual-only reply radar. Find high-traffic AI conversations, draft smart replies, then copy/open X. No auto-commenting.</p></div><span>{radar.lastScanAt ? `Last scan ${new Date(radar.lastScanAt).toLocaleString()}` : 'Awaiting local scan'}</span></section>
+    <section className="twitter-radar-card traffic-reply-card"><div><h3>Traffic reply queue</h3><p>Creates Top-search lanes for AI posts already showing visible engagement. Pick a real post, copy the Rex reply, and comment manually while the conversation is hot.</p></div><button className="primary" type="button" onClick={runTrafficQueue} disabled={trafficBusy}>{trafficBusy ? 'Finding traffic…' : 'Find high-traffic AI posts'}</button><small>Safe mode: no scraping, no mass replies, no blind OAuth posting. One human-approved reply at a time.</small></section>
+    <section className="twitter-radar-card"><h3>Priority openings</h3><div className="radar-card-grid">{replyCards.slice(0, 8).map((item) => <article className="reply-draft manual-only" key={item.id}><span>{`${item.topic} · score ${item.score}`}</span><strong>{item.account || item.handle || 'Radar lead'}</strong><blockquote>{item.replyDraft}</blockquote><small>{item.reason}</small><div><a href={item.url} target="_blank" rel="noreferrer">Open X search</a><button type="button" onClick={() => copyReply(item.replyDraft)}>Copy reply</button></div></article>)}</div></section>
     <section className="twitter-radar-card"><h3>Manual check queue</h3><div className="manual-check-list">{manualQueue.map((account) => <article key={account.handle} className="twitter-watch-card"><div><span className="watch-tier">{`Tier ${account.tier || 'B'}`}</span><strong>{`@${account.handle}`}</strong><small>Next local check: {account.nextManualCheckAt ? new Date(account.nextManualCheckAt).toLocaleString() : 'not scheduled'}</small></div><a href={xSearchUrl(account.handle)} target="_blank" rel="noreferrer">Open X search</a><button type="button" onClick={() => markChecked(account.handle)}>Mark checked</button></article>)}</div></section>
     <section className="twitter-radar-card"><h3>No-API source adapters</h3><div className="radar-source-grid">{(radar.sourceAdapters || []).map((source) => <article key={source.id}><strong>{source.label}</strong><span>{source.latencyClass}</span><small>{source.note}</small></article>)}</div></section>
     <section className="twitter-radar-card"><h3>4-lane radar workers</h3><div className="radar-worker-grid">{(radar.workerLanes || []).map((lane) => <article key={lane.id}><strong>{lane.label}</strong><span>{lane.status}</span><small>{lane.focus}</small></article>)}</div></section>

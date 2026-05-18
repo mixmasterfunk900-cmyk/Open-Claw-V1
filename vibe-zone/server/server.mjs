@@ -1160,6 +1160,10 @@ function buildTwitterSearchUrl(topic) {
   const query = `${topic} min_faves:5 -filter:replies`
   return `https://x.com/search?q=${encodeURIComponent(query)}&src=typed_query&f=live`
 }
+function buildTwitterTrafficSearchUrl(topic) {
+  const query = `${topic} (AI OR agents OR automation OR creator tools) min_faves:100 -filter:replies`
+  return `https://x.com/search?q=${encodeURIComponent(query)}&src=typed_query&f=top`
+}
 function buildTwitterAccountSearchUrl(account) {
   const tags = account.topicTags?.length ? ` (${account.topicTags.join(' OR ')})` : ''
   const query = `from:${account.handle}${tags} -filter:replies`
@@ -1208,6 +1212,27 @@ function makeWatchlistRadarItem(account, index, now) {
     createdAt: now,
   }
 }
+function makeTrafficRadarItem(topic, index, now) {
+  const drafts = [
+    'The part I keep watching is whether this becomes a daily workflow, not just a good demo. The real win is when it saves the boring middle every single time.',
+    'This is where AI gets useful: not replacing the creator, but catching the moment, preparing the asset, and handing the final decision back to a human.',
+    'I think the underrated shift is from “AI makes content” to “AI runs the repeatable ops around the content.” That is where small teams get leverage.',
+    'The best version of this is boring: fewer tabs, fewer handoffs, more review gates, and one clear path from idea to shipped asset.',
+  ]
+  return {
+    id: `radar_traffic_${Date.now()}_${index}_${Math.random().toString(16).slice(2, 7)}`,
+    topic,
+    account: 'High-traffic AI conversation lane',
+    text: `Open this Top search, pick a post with visible engagement/comment velocity, then use the drafted reply. Vibe Zone did not scrape X or auto-comment.`,
+    url: buildTwitterTrafficSearchUrl(topic),
+    replyDraft: drafts[index % drafts.length],
+    score: 96 - index * 2,
+    reason: `Traffic-surf lane: searches for AI/agent/creator-tool posts with high visible likes. Manual review required; one-click copy/open only.`,
+    source: 'traffic_search',
+    status: 'needs_manual_screen',
+    createdAt: now,
+  }
+}
 async function scanTwitterRadar(db, body = {}) {
   const radar = normalizeTwitterRadar(db.twitterRadar)
   const topics = Array.isArray(body.topics) && body.topics.length ? body.topics.map(String).map((item) => item.trim()).filter(Boolean).slice(0, 12) : radar.topics
@@ -1218,6 +1243,18 @@ async function scanTwitterRadar(db, body = {}) {
   const items = [...watchItems, ...topicItems]
   db.twitterRadar = { ...radar, topics, watchAccounts, lastScanAt: now, items: [...items, ...radar.items].slice(0, 80) }
   await addJob(db, 'twitter-radar-scan', 'Twitter Radar manual screening refreshed', 'done', `${topicItems.length} topic lane(s), ${watchItems.length} watchlist lane(s) queued. Draft-only; no X posting or scraping.`)
+  await saveDb(db)
+  return db.twitterRadar
+}
+async function generateTrafficReplyQueue(db, body = {}) {
+  const radar = normalizeTwitterRadar(db.twitterRadar)
+  const seedTopics = Array.isArray(body.topics) && body.topics.length ? body.topics : radar.topics
+  const topics = seedTopics.map(String).map((item) => item.trim()).filter(Boolean).slice(0, 8)
+  const fallbackTopics = ['AI agents', 'creator tools', 'AI video workflow', 'build in public', 'automation']
+  const now = new Date().toISOString()
+  const items = (topics.length ? topics : fallbackTopics).slice(0, 8).map((topic, index) => makeTrafficRadarItem(topic, index, now))
+  db.twitterRadar = { ...radar, lastScanAt: now, items: [...items, ...radar.items].slice(0, 80) }
+  await addJob(db, 'twitter-radar-traffic', 'Generated traffic reply queue', 'done', `${items.length} high-engagement AI search lane(s). Owner-gated copy/open only; no auto-comments.`)
   await saveDb(db)
   return db.twitterRadar
 }
@@ -2442,6 +2479,7 @@ async function handleApi(req, res, db) {
   }
   if (req.method === 'POST' && url.pathname === '/api/twitter-radar/config') return send(res, 200, await updateTwitterRadar(db, await parseBody(req)))
   if (req.method === 'POST' && url.pathname === '/api/twitter-radar/scan') return send(res, 200, await scanTwitterRadar(db, await parseBody(req)))
+  if (req.method === 'POST' && url.pathname === '/api/twitter-radar/traffic') return send(res, 200, await generateTrafficReplyQueue(db, await parseBody(req)))
   if (req.method === 'GET' && url.pathname === '/api/dispatch/list') {
     const recovered = await ensureCurrentStyleGateReadyDispatchItems(db)
     if (recovered) await saveDb(db)
