@@ -969,6 +969,15 @@ const parseWatchAccount = (value: string, index: number): TwitterWatchAccount | 
   if (!handle) return null
   return { handle, displayName: identity.replace(/^tier\s*[abc][:\s-]*/i, '').replace(/^@?[a-zA-Z0-9_]+\s*[—-]?\s*/, '').trim() || `@${handle}`, tier: radarTierLabel(value, index), topicTags: splitRadarLines(tags).slice(0, 8), sourceMode: 'manual_search', lastSeenTweetId: null, lastSeenAt: null, enabled: true }
 }
+const parseBulkWatchAccount = (value: string, index: number): TwitterWatchAccount | null => {
+  const parts = value.split(',').map((part) => part.trim())
+  if (parts.length >= 3) {
+    const handle = cleanWatchAccount(parts[0] || '').replace(/^@/, '').replace(/[^a-zA-Z0-9_]/g, '').slice(0, 15)
+    if (!handle) return null
+    return { handle, displayName: parts[1] || `@${handle}`, tier: radarTierLabel(parts[2] || '', index), topicTags: splitRadarLines(parts.slice(3).join(',')).slice(0, 8), sourceMode: 'manual_search', lastSeenTweetId: null, lastSeenAt: null, enabled: true }
+  }
+  return parseWatchAccount(value, index)
+}
 
 function TwitterRadarPage({ state, refresh, setError }: { state: AppState; refresh: () => Promise<void>; setError: (value: string) => void }) {
   const radar = state.twitterRadar || { status: 'draft-only', mode: 'topic-mvp', lastScanAt: null, topics: [], watchAccounts: [], items: [] }
@@ -980,11 +989,15 @@ function TwitterRadarPage({ state, refresh, setError }: { state: AppState; refre
   const [format, setFormat] = useState<'one-liner' | 'milestone' | 'lesson' | 'stack'>('one-liner')
   const [topicText, setTopicText] = useState((radar.topics || []).join('\n'))
   const [watchText, setWatchText] = useState((radar.watchAccounts || []).map(formatWatchAccount).join('\n'))
+  const [bulkWatchText, setBulkWatchText] = useState('')
   const [scanning, setScanning] = useState(false)
   const [saving, setSaving] = useState(false)
   const topics = splitRadarLines(topicText)
   const watchAccounts = splitRadarLines(watchText).map(parseWatchAccount).filter(Boolean).slice(0, 2000) as TwitterWatchAccount[]
   const replyCards = radar.items || []
+  const manualQueue = [...(radar.watchAccounts || [])].filter((account) => account.enabled !== false).sort((a, b) => (b.priorityScore || 0) - (a.priorityScore || 0)).slice(0, 8)
+  const csvExport = (radar.watchAccounts || []).map((account) => `${account.handle},${account.displayName || ''},${account.tier || 'B'},${(account.topicTags || []).join('|')}`).join('\n')
+  const xSearchUrl = (handle: string) => `https://x.com/search?q=${encodeURIComponent(`from:${handle}`)}&src=typed_query&f=live`
   const score = draft.trim().length ? Math.min(19, Math.max(4, Math.round(5 + draft.length / 22 + (/[?]/.test(draft) ? 2 : 0) + (format === 'lesson' ? 2 : 0)))) : 0
   const predictedImpressions = draft.trim().length ? Math.max(24, Math.round(score * 18 + draft.length * 1.7)) : 0
   const formatRows = [
@@ -1021,6 +1034,26 @@ function TwitterRadarPage({ state, refresh, setError }: { state: AppState; refre
   const copyDraft = async () => {
     try { await navigator.clipboard.writeText(draft) } catch { setError('Copy failed. Select the draft manually.') }
   }
+  const copyReply = async (text: string) => {
+    try { await navigator.clipboard.writeText(text) } catch { setError('Copy failed. Select the reply manually.') }
+  }
+  const copyCsvExport = async () => {
+    try { await navigator.clipboard.writeText(csvExport) } catch { setError('Copy CSV export failed. Select the export manually.') }
+  }
+  const importBulkWatchlist = () => {
+    const byHandle = new Map(watchAccounts.map((account) => [account.handle.toLowerCase(), account]))
+    splitRadarLines(bulkWatchText).map(parseBulkWatchAccount).filter(Boolean).forEach((account) => byHandle.set((account as TwitterWatchAccount).handle.toLowerCase(), account as TwitterWatchAccount))
+    setWatchText([...byHandle.values()].slice(0, 2000).map(formatWatchAccount).join('\n'))
+  }
+  const markChecked = async (handle: string) => {
+    try {
+      await api('/api/twitter-radar/watchlist/check', { method: 'POST', body: JSON.stringify({ handle }) })
+      await refresh()
+      setError('')
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Manual check update failed')
+    }
+  }
   const applyStarter = (next: typeof format) => {
     setFormat(next)
     const starters = {
@@ -1046,7 +1079,13 @@ function TwitterRadarPage({ state, refresh, setError }: { state: AppState; refre
     <section className="x-metric-row">{analytics.metrics.map((metric) => <article className="x-card x-metric" key={metric.label}><span>{metric.label}</span><strong>{metric.value}</strong><small>{metric.note}</small></article>)}</section>
     <section className="x-card x-format-table"><div><h3>Format performance</h3><p>Per-format breakdown across this period.</p></div><table><thead><tr><th>Format</th><th>Posts ↓</th><th>Replies</th><th>Impr.</th></tr></thead><tbody>{analytics.formats.map((row) => <tr key={row.format}><td><span>{row.icon}</span>{row.format}</td><td>{row.posts}</td><td>{row.replies}</td><td>{row.impressions}</td></tr>)}</tbody></table></section>
     <section className="x-bottom-grid"><div className="x-card"><h3>Audience insights</h3><p>{isOauthReady ? 'Real X audience insights can land here after API read access is wired.' : 'Lands once your X audience-insights data is OAuth connected.'}</p></div><div className="x-card"><h3>Takeaways</h3><p>Ship a handful of posts and this card fills with what is working for you specifically.</p></div></section>
-    <details className="x-card x-advanced"><summary>Advanced radar setup</summary><div className="x-advanced-grid"><label><strong>Topic lanes</strong><textarea value={topicText} onChange={(event) => setTopicText(event.target.value)} rows={5} placeholder="AI agents\nbuild in public\ncreator tools" /></label><label><strong>Watchlist</strong><textarea value={watchText} onChange={(event) => setWatchText(event.target.value)} rows={5} placeholder="Tier A @levelsio" /></label><div><button type="button" onClick={saveRadar} disabled={saving}>{saving ? 'Saving…' : 'Save radar setup'}</button><button type="button" onClick={runScan} disabled={scanning}>{scanning ? 'Screening…' : 'Run manual screening'}</button></div></div></details>
+    <details className="x-card x-advanced"><summary>Advanced radar setup</summary><div className="x-advanced-grid"><label className="radar-input-label"><strong>Topic lanes</strong><textarea value={topicText} onChange={(event) => setTopicText(event.target.value)} rows={5} placeholder="AI agents\nbuild in public\ncreator tools" /></label><label className="radar-input-label"><strong>High-profile watchlist</strong><textarea value={watchText} onChange={(event) => setWatchText(event.target.value)} rows={5} placeholder="Tier A @levelsio" /></label><div><button type="button" onClick={saveRadar} disabled={saving}>{saving ? 'Saving…' : 'Save topics + watchlist'}</button><button type="button" onClick={runScan} disabled={scanning}>{scanning ? 'Screening…' : 'Run screening now'}</button></div></div></details>
+    <section className="twitter-radar-hero"><div><h2>Twitter Radar</h2><p>Manual-only reply radar. No X API, no login, no scraping loop, no posting.</p></div><span>{radar.lastScanAt ? `Last scan ${new Date(radar.lastScanAt).toLocaleString()}` : 'Awaiting local scan'}</span></section>
+    <section className="twitter-radar-card"><h3>Priority openings</h3><div className="radar-card-grid">{replyCards.slice(0, 6).map((item) => <article className="reply-draft manual-only" key={item.id}><span>{`${item.topic} · score ${item.score}`}</span><strong>{item.account || item.handle || 'Radar lead'}</strong><blockquote>{item.replyDraft}</blockquote><small>{item.reason}</small><div><a href={item.url} target="_blank" rel="noreferrer">Open X search</a><button type="button" onClick={() => copyReply(item.replyDraft)}>Copy reply</button></div></article>)}</div></section>
+    <section className="twitter-radar-card"><h3>Manual check queue</h3><div className="manual-check-list">{manualQueue.map((account) => <article key={account.handle} className="twitter-watch-card"><div><span className="watch-tier">{`Tier ${account.tier || 'B'}`}</span><strong>{`@${account.handle}`}</strong><small>Next local check: {account.nextManualCheckAt ? new Date(account.nextManualCheckAt).toLocaleString() : 'not scheduled'}</small></div><a href={xSearchUrl(account.handle)} target="_blank" rel="noreferrer">Open X search</a><button type="button" onClick={() => markChecked(account.handle)}>Mark checked</button></article>)}</div></section>
+    <section className="twitter-radar-card"><h3>No-API source adapters</h3><div className="radar-source-grid">{(radar.sourceAdapters || []).map((source) => <article key={source.id}><strong>{source.label}</strong><span>{source.latencyClass}</span><small>{source.note}</small></article>)}</div></section>
+    <section className="twitter-radar-card"><h3>4-lane radar workers</h3><div className="radar-worker-grid">{(radar.workerLanes || []).map((lane) => <article key={lane.id}><strong>{lane.label}</strong><span>{lane.status}</span><small>{lane.focus}</small></article>)}</div></section>
+    <section className="twitter-radar-card"><h3>Bulk watchlist import/export</h3><div className="radar-bulk-grid"><label><strong>Paste handles or CSV</strong><textarea value={bulkWatchText} onChange={(event) => setBulkWatchText(event.target.value)} rows={5} placeholder="handle,displayName,tier,tags" /></label><div><button type="button" onClick={importBulkWatchlist} disabled={!bulkWatchText.trim()}>Stage import locally</button><button type="button" onClick={copyCsvExport} disabled={!csvExport}>Copy CSV export</button><p>Imports are staged into the local editor only. Save topics + watchlist persists them; nothing fetches or posts to X.</p></div></div></section>
   </section>
 }
 

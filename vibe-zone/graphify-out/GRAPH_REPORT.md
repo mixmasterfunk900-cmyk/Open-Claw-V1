@@ -1,16 +1,16 @@
 # Graph Report - vibe-zone  (2026-05-18)
 
 ## Corpus Check
-- 173 files · ~189,862 words
+- 173 files · ~190,238 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2945 nodes · 3511 edges · 243 communities (193 shown, 50 thin omitted)
+- 2945 nodes · 3513 edges · 244 communities (194 shown, 50 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 2 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `565bd1d4`
+- Built from commit: `db31dcac`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -254,6 +254,7 @@
 - [[_COMMUNITY_Community 240|Community 240]]
 - [[_COMMUNITY_Community 241|Community 241]]
 - [[_COMMUNITY_Community 242|Community 242]]
+- [[_COMMUNITY_Community 243|Community 243]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `buildAss()` - 73 edges
@@ -279,7 +280,7 @@
 - `writeSpokenCaptionAss()` --calls--> `buildShortWordEvents()`  [EXTRACTED]
   server/server.mjs → lib/caption-normalizer.mjs
 
-## Communities (243 total, 50 thin omitted)
+## Communities (244 total, 50 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.02
@@ -622,8 +623,8 @@ Cohesion: 0.15
 Nodes (12): 1. Product map / navigation rethink, 2. Clip Review experience, 3. Render Lab, 4. Processing transparency, 5. Creator dispatch flow, Acceptance criteria, Current UX shortcomings, Priority (+4 more)
 
 ### Community 86 - "Community 86"
-Cohesion: 0.17
-Nodes (8): endSec, events, probe, qa, root, startSec, transcript, vf
+Cohesion: 0.15
+Nodes (9): secondsFromStamp(), endSec, events, probe, qa, root, startSec, transcript (+1 more)
 
 ### Community 87 - "Community 87"
 Cohesion: 0.2
@@ -1030,12 +1031,16 @@ Cohesion: 0.29
 Nodes (6): 2026-05-17 — Open-source scheduler pattern: Postiz, 2026-05-17 — Open-source scheduler pattern: TryPost, 2026-05-17 — Twitter Radar manual tier scheduler pattern, 2026-05-17 — Twitter Radar no-API source options, 2026-05-17 — Twitter Radar source scout: no-API/low-risk public data sources, 2026-05-18 — Watchlist import/export maintenance pattern
 
 ### Community 241 - "Community 241"
-Cohesion: 0.18
-Nodes (12): cleanWatchAccount(), latencyLabel(), parseBulkWatchAccount(), parseWatchAccount(), radarSourceLabel(), radarTierLabel(), splitRadarLines(), TwitterRadarCard() (+4 more)
+Cohesion: 0.29
+Nodes (7): latencyLabel(), radarSourceLabel(), TwitterRadarCard(), TwitterRadarPage(), twitterStudioAnalytics(), xCoachText(), xHandleFromUrl()
 
 ### Community 242 - "Community 242"
-Cohesion: 0.15
-Nodes (10): secondsFromStamp(), beats, concat, decode, events, probe, qa, root (+2 more)
+Cohesion: 0.17
+Nodes (9): beats, concat, decode, events, probe, qa, root, transcript (+1 more)
+
+### Community 243 - "Community 243"
+Cohesion: 0.7
+Nodes (5): cleanWatchAccount(), parseBulkWatchAccount(), parseWatchAccount(), radarTierLabel(), splitRadarLines()
 
 ## Knowledge Gaps
 - **1843 isolated node(s):** `__dirname`, `root`, `dataDir`, `dbPath`, `validationCachePath` (+1838 more)

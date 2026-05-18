@@ -19566,7 +19566,7 @@
       "source_file": "src/App.tsx",
       "source_location": "L959",
       "id": "src_app_splitradarlines",
-      "community": 241,
+      "community": 243,
       "norm_label": "splitradarlines()"
     },
     {
@@ -19575,7 +19575,7 @@
       "source_file": "src/App.tsx",
       "source_location": "L960",
       "id": "src_app_radartierlabel",
-      "community": 241,
+      "community": 243,
       "norm_label": "radartierlabel()"
     },
     {
@@ -19584,7 +19584,7 @@
       "source_file": "src/App.tsx",
       "source_location": "L964",
       "id": "src_app_cleanwatchaccount",
-      "community": 241,
+      "community": 243,
       "norm_label": "cleanwatchaccount()"
     },
     {
@@ -19602,14 +19602,23 @@
       "source_file": "src/App.tsx",
       "source_location": "L966",
       "id": "src_app_parsewatchaccount",
-      "community": 241,
+      "community": 243,
       "norm_label": "parsewatchaccount()"
+    },
+    {
+      "label": "parseBulkWatchAccount()",
+      "file_type": "code",
+      "source_file": "src/App.tsx",
+      "source_location": "L972",
+      "id": "src_app_parsebulkwatchaccount",
+      "community": 243,
+      "norm_label": "parsebulkwatchaccount()"
     },
     {
       "label": "TwitterRadarPage()",
       "file_type": "code",
       "source_file": "src/App.tsx",
-      "source_location": "L973",
+      "source_location": "L982",
       "id": "src_app_twitterradarpage",
       "community": 241,
       "norm_label": "twitterradarpage()"
@@ -19618,7 +19627,7 @@
       "label": "xHandleFromUrl()",
       "file_type": "code",
       "source_file": "src/App.tsx",
-      "source_location": "L1053",
+      "source_location": "L1092",
       "id": "src_app_xhandlefromurl",
       "community": 241,
       "norm_label": "xhandlefromurl()"
@@ -19627,7 +19636,7 @@
       "label": "xCoachText()",
       "file_type": "code",
       "source_file": "src/App.tsx",
-      "source_location": "L1057",
+      "source_location": "L1096",
       "id": "src_app_xcoachtext",
       "community": 241,
       "norm_label": "xcoachtext()"
@@ -19636,7 +19645,7 @@
       "label": "twitterStudioAnalytics()",
       "file_type": "code",
       "source_file": "src/App.tsx",
-      "source_location": "L1063",
+      "source_location": "L1102",
       "id": "src_app_twitterstudioanalytics",
       "community": 241,
       "norm_label": "twitterstudioanalytics()"
@@ -19645,7 +19654,7 @@
       "label": "MetricCard()",
       "file_type": "code",
       "source_file": "src/App.tsx",
-      "source_location": "L1088",
+      "source_location": "L1127",
       "id": "src_app_metriccard",
       "community": 0,
       "norm_label": "metriccard()"
@@ -19654,7 +19663,7 @@
       "label": "Card()",
       "file_type": "code",
       "source_file": "src/App.tsx",
-      "source_location": "L1089",
+      "source_location": "L1128",
       "id": "src_app_card",
       "community": 0,
       "norm_label": "card()"
@@ -20088,7 +20097,7 @@
       "source_file": "lib/caption-normalizer.mjs",
       "source_location": "L27",
       "id": "lib_caption_normalizer_secondsfromstamp",
-      "community": 242,
+      "community": 86,
       "norm_label": "secondsfromstamp()"
     },
     {
@@ -26356,15 +26365,6 @@
       "norm_label": "do not purge website/templates"
     },
     {
-      "label": "parseBulkWatchAccount()",
-      "file_type": "code",
-      "source_file": "src/App.tsx",
-      "source_location": "L972",
-      "community": 241,
-      "norm_label": "parsebulkwatchaccount()",
-      "id": "src_app_parsebulkwatchaccount"
-    },
-    {
       "label": "mergeWatchAccounts()",
       "file_type": "code",
       "source_file": "src/App.tsx",
@@ -26990,9 +26990,9 @@
       "source_file": "server/server.mjs",
       "source_location": "L456",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "server_server_mjs",
-      "target": "server_server_normalizepostingconnectors",
-      "confidence_score": 1.0
+      "target": "server_server_normalizepostingconnectors"
     },
     {
       "relation": "contains",
@@ -29156,9 +29156,9 @@
       "source_file": "server/server.mjs",
       "source_location": "L437",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "server_server_postingreadiness",
-      "target": "server_server_normalizepostingconnectors",
-      "confidence_score": 1.0
+      "target": "server_server_normalizepostingconnectors"
     },
     {
       "relation": "calls",
@@ -29189,9 +29189,9 @@
       "source_file": "server/server.mjs",
       "source_location": "L1272",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "server_server_normalizedb",
-      "target": "server_server_normalizepostingconnectors",
-      "confidence_score": 1.0
+      "target": "server_server_normalizepostingconnectors"
     },
     {
       "relation": "calls",
@@ -54552,6 +54552,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/App.tsx",
+      "source_location": "L935",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_tsx",
+      "target": "src_app_parsebulkwatchaccount"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
       "source_location": "L888",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -54618,16 +54628,6 @@
       "confidence_score": 1.0,
       "source": "src_main_tsx",
       "target": "src_app_tsx"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/App.tsx",
-      "source_location": "L935",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_app_tsx",
-      "target": "src_app_parsebulkwatchaccount"
     },
     {
       "relation": "contains",
@@ -54946,6 +54946,17 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/App.tsx",
+      "source_location": "L977",
+      "weight": 1.0,
+      "source": "src_app_parsebulkwatchaccount",
+      "target": "src_app_splitradarlines",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
       "source_location": "L941",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -54984,6 +54995,17 @@
       "confidence_score": 1.0,
       "source": "src_app_parsewatchaccount",
       "target": "src_app_cleanwatchaccount"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L975",
+      "weight": 1.0,
+      "source": "src_app_parsebulkwatchaccount",
+      "target": "src_app_cleanwatchaccount",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -62361,5 +62383,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "565bd1d48e859395ef1dad798bbca61dd45cbb9d"
+  "built_at_commit": "db31dcaca29651053ceff9f4b33a12e9cc3bacc2"
 }
