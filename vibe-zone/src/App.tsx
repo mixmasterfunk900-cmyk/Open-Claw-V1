@@ -35,6 +35,7 @@ type TwitterWatchAccount = { handle: string; displayName: string; tier: 'A' | 'B
 type TwitterRadarSourceAdapter = { id: string; label: string; status: string; latencyClass: string; requiresCredentials: boolean; termsRisk: string; minPollIntervalMs: number; capability: string; note: string }
 type TwitterRadarWorkerLane = { id: string; label: string; status: string; focus: string }
 type TwitterRadar = { status: string; mode: string; pollingMode?: string; source?: string; lastScanAt?: string | null; topics: string[]; watchAccounts: TwitterWatchAccount[]; sourceAdapters?: TwitterRadarSourceAdapter[]; workerLanes?: TwitterRadarWorkerLane[]; items: TwitterRadarItem[] }
+type StudioAiResult = { draft: string; score: number; coach: string; predictedImpressions: number; provider: string; model: string; notes?: string }
 type ThumbnailConcept = { id: string; sourceClipId?: string; sourceTranscriptId?: string; sourceTitle?: string; sourceVideoPath?: string; sourceProofPath?: string; status: 'idea' | 'liked' | 'disliked' | 'used'; rating?: 'like' | 'dislike' | null; title: string; thumbnailText: string; visualAngle: string; emotion: string; style: string; prompt: string; imageUrl?: string; learningNotes?: string; createdAt: string; updatedAt?: string }
 type MediaValidation = { status: 'complete' | 'partial' | 'unknown'; detail: string; durationSeconds?: number; lastPacketSeconds?: number; validatedAt?: string; cacheStatus?: 'fresh' | 'reused' | 'not-applicable' }
 type MediaFile = { name: string; kind: 'source' | 'transcript' | 'render' | 'export' | 'concept'; path: string; url: string; size: number; updatedAt: string; validation?: MediaValidation }
@@ -987,6 +988,9 @@ function TwitterRadarPage({ state, refresh, setError }: { state: AppState; refre
   const isOauthReady = xConnection?.status === 'connected' || xConnection?.status === 'oauth_approved'
   const [draft, setDraft] = useState('')
   const [format, setFormat] = useState<'one-liner' | 'milestone' | 'lesson' | 'stack'>('one-liner')
+  const [chatPrompt, setChatPrompt] = useState('')
+  const [aiBusy, setAiBusy] = useState<'draft' | 'score' | 'coach' | ''>('')
+  const [aiResult, setAiResult] = useState<StudioAiResult | null>(null)
   const [topicText, setTopicText] = useState((radar.topics || []).join('\n'))
   const [watchText, setWatchText] = useState((radar.watchAccounts || []).map(formatWatchAccount).join('\n'))
   const [bulkWatchText, setBulkWatchText] = useState('')
@@ -998,8 +1002,9 @@ function TwitterRadarPage({ state, refresh, setError }: { state: AppState; refre
   const manualQueue = [...(radar.watchAccounts || [])].filter((account) => account.enabled !== false).sort((a, b) => (b.priorityScore || 0) - (a.priorityScore || 0)).slice(0, 8)
   const csvExport = (radar.watchAccounts || []).map((account) => `${account.handle},${account.displayName || ''},${account.tier || 'B'},${(account.topicTags || []).join('|')}`).join('\n')
   const xSearchUrl = (handle: string) => `https://x.com/search?q=${encodeURIComponent(`from:${handle}`)}&src=typed_query&f=live`
-  const score = draft.trim().length ? Math.min(19, Math.max(4, Math.round(5 + draft.length / 22 + (/[?]/.test(draft) ? 2 : 0) + (format === 'lesson' ? 2 : 0)))) : 0
-  const predictedImpressions = draft.trim().length ? Math.max(24, Math.round(score * 18 + draft.length * 1.7)) : 0
+  const localScore = draft.trim().length ? Math.min(19, Math.max(4, Math.round(5 + draft.length / 22 + (/[?]/.test(draft) ? 2 : 0) + (format === 'lesson' ? 2 : 0)))) : 0
+  const score = aiResult?.score || localScore
+  const predictedImpressions = draft.trim().length ? (aiResult?.predictedImpressions || Math.max(24, Math.round(score * 18 + draft.length * 1.7))) : 0
   const formatRows = [
     { id: 'one-liner', icon: '⚡', label: 'One-liner', help: 'Punchy, no setup' },
     { id: 'milestone', icon: '🏆', label: 'Milestone', help: 'Crossed a number' },
@@ -1034,6 +1039,19 @@ function TwitterRadarPage({ state, refresh, setError }: { state: AppState; refre
   const copyDraft = async () => {
     try { await navigator.clipboard.writeText(draft) } catch { setError('Copy failed. Select the draft manually.') }
   }
+  const runStudioAi = async (action: 'draft' | 'score' | 'coach', nextFormat = format, prompt = chatPrompt) => {
+    setAiBusy(action)
+    setError('')
+    try {
+      const result = await api<StudioAiResult>('/api/studio/ai', { method: 'POST', body: JSON.stringify({ action, format: nextFormat, prompt, draft }) })
+      setAiResult(result)
+      if (action === 'draft' && result.draft) setDraft(result.draft)
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Studio AI failed')
+    } finally {
+      setAiBusy('')
+    }
+  }
   const copyReply = async (text: string) => {
     try { await navigator.clipboard.writeText(text) } catch { setError('Copy failed. Select the reply manually.') }
   }
@@ -1056,6 +1074,7 @@ function TwitterRadarPage({ state, refresh, setError }: { state: AppState; refre
   }
   const applyStarter = (next: typeof format) => {
     setFormat(next)
+    setAiResult(null)
     const starters = {
       'one-liner': 'Boring systems beat flashy ideas when you have to show up every day.',
       milestone: 'Today I linked the first social profile into Vibe Zone. Tiny step, real product momentum.',
@@ -1063,16 +1082,17 @@ function TwitterRadarPage({ state, refresh, setError }: { state: AppState; refre
       stack: 'My current build stack: Vite, local media pipeline, manual social review, and tiny loops that actually ship.',
     }
     setDraft(starters[next])
+    runStudioAi('draft', next, chatPrompt).catch(() => undefined)
   }
   return <section className="x-studio-page">
     <div className="x-studio-title"><div><h2>Studio</h2><p>Draft, refine, and publish posts in your voice.</p></div><div className={`x-connection-pill ${isOauthReady ? 'live' : isManualLinked ? 'linked' : 'blocked'}`}><strong>{isOauthReady ? 'OAuth connected' : isManualLinked ? 'Profile linked' : 'Not linked'}</strong><span>{linkedLabel}</span></div></div>
     <div className="x-studio-explainer"><strong>How this works right now:</strong> your Twitter/X URL is linked locally, so Vibe Zone knows which profile belongs to you. It does <em>not</em> mean X has granted posting/analytics access yet. Until X API/OAuth credentials are added, this page drafts, scores, saves/copies, and opens X manually — it cannot post or read real analytics.</div>
     <div className="x-studio-grid">
       <div className="x-main-column">
-        <section className="x-card x-starter-card"><div><h3>What should we draft today?</h3><p>Pick a starting point — Cliff drafts options in your voice.</p></div><div className="x-starter-grid">{formatRows.map((row) => <button className={format === row.id ? 'active' : ''} type="button" key={row.id} onClick={() => applyStarter(row.id)}><span>{row.icon}</span><strong>{row.label}</strong><small>{row.help}</small></button>)}</div><label className="x-chat-line">💬 <input placeholder="or describe what you want in chat" onKeyDown={(event) => { if (event.key === 'Enter') setDraft((event.currentTarget as HTMLInputElement).value) }} /></label></section>
-        <section className="x-card x-composer-card"><div className="x-compose-tabs"><strong>◉ Preview</strong><span>✧ Rate post</span></div><div className="x-tweet-shell"><div className="x-avatar">{linkedLabel.slice(0, 1).replace('@', 'M') || 'M'}</div><div className="x-tweet-body"><button type="button" className="x-audience">Everyone⌄</button><textarea value={draft} onChange={(event) => setDraft(event.target.value)} placeholder="What's happening?" maxLength={280} /><div className="x-reply-rule">🌐 Everyone can reply</div></div></div><div className="x-compose-actions"><span>🖼️</span><span>😊</span><button type="button" onClick={copyDraft} disabled={!draft.trim()}>Save copy</button><a className={!draft.trim() ? 'disabled' : ''} href="https://x.com/compose/post" target="_blank" rel="noreferrer">Open X</a><button className="dark" type="button" disabled={!draft.trim()}>Post manually</button></div></section>
+        <section className="x-card x-starter-card"><div><h3>What should we draft today?</h3><p>Pick a starting point — Cliff drafts options in your voice.</p></div><div className="x-starter-grid">{formatRows.map((row) => <button className={format === row.id ? 'active' : ''} type="button" key={row.id} onClick={() => applyStarter(row.id)} disabled={aiBusy === 'draft'}><span>{row.icon}</span><strong>{row.label}</strong><small>{aiBusy === 'draft' && format === row.id ? 'AI drafting…' : row.help}</small></button>)}</div><label className="x-chat-line">💬 <input value={chatPrompt} onChange={(event) => setChatPrompt(event.target.value)} placeholder="or describe what you want in chat" onKeyDown={(event) => { if (event.key === 'Enter') runStudioAi('draft') }} /><button type="button" onClick={() => runStudioAi('draft')} disabled={aiBusy === 'draft'}>{aiBusy === 'draft' ? 'Drafting…' : 'Ask AI'}</button></label>{aiResult && <small className="x-ai-source">AI: {aiResult.provider}/{aiResult.model}{aiResult.notes ? ` — ${aiResult.notes}` : ''}</small>}</section>
+        <section className="x-card x-composer-card"><div className="x-compose-tabs"><strong>◉ Preview</strong><span>✧ Rate post</span></div><div className="x-tweet-shell"><div className="x-avatar">{linkedLabel.slice(0, 1).replace('@', 'M') || 'M'}</div><div className="x-tweet-body"><button type="button" className="x-audience">Everyone⌄</button><textarea value={draft} onChange={(event) => { setDraft(event.target.value); setAiResult(null) }} placeholder="What's happening?" maxLength={280} /><div className="x-reply-rule">🌐 Everyone can reply</div></div></div><div className="x-compose-actions"><span>🖼️</span><span>😊</span><button type="button" onClick={copyDraft} disabled={!draft.trim()}>Save copy</button><a className={!draft.trim() ? 'disabled' : ''} href="https://x.com/compose/post" target="_blank" rel="noreferrer">Open X</a><button className="dark" type="button" disabled={!draft.trim()}>Post manually</button></div></section>
       </div>
-      <aside className="x-side-column"><section className="x-card x-prediction"><div><strong>ENGAGEMENT PREDICTION</strong><span>{draft.trim() ? 'estimated' : 'waiting'}</span></div><h3>{draft.trim() ? predictedImpressions.toLocaleString() : '— — —'} <small>impressions</small></h3><p>{draft.trim() ? 'Predicted from draft length, hook shape, format, and local learning placeholders. Real accuracy starts after real post results are logged.' : 'Type a draft (15+ characters) to see a predicted impressions range for your account size.'}</p></section><section className="x-card x-algo"><strong>X ALGORITHM SCORE</strong><p>Score this draft against simple For You signals: hook, clarity, quoteability, reply potential, and profile click intent.</p><button type="button" disabled={!draft.trim()}>✧ Score on X algo</button><b>{score ? `${score} / 19` : 'waiting'}</b></section><section className="x-card x-coach"><strong>POST COACH</strong><p>{draft.trim() ? xCoachText(draft, format) : 'Start typing to see how the draft scores against your voice rules plus learnings from your last 30 days.'}</p></section></aside>
+      <aside className="x-side-column"><section className="x-card x-prediction"><div><strong>ENGAGEMENT PREDICTION</strong><span>{draft.trim() ? (aiResult ? aiResult.provider : 'estimated') : 'waiting'}</span></div><h3>{draft.trim() ? predictedImpressions.toLocaleString() : '— — —'} <small>impressions</small></h3><p>{draft.trim() ? 'Predicted from draft length, hook shape, format, and local learning placeholders. Real accuracy starts after real post results are logged.' : 'Type a draft (15+ characters) to see a predicted impressions range for your account size.'}</p></section><section className="x-card x-algo"><strong>X ALGORITHM SCORE</strong><p>Score this draft against simple For You signals: hook, clarity, quoteability, reply potential, and profile click intent.</p><button type="button" onClick={() => runStudioAi('score')} disabled={!draft.trim() || aiBusy === 'score'}>{aiBusy === 'score' ? 'Scoring…' : '✧ Score on X algo'}</button><b>{score ? `${score} / 19` : 'waiting'}</b></section><section className="x-card x-coach"><strong>POST COACH</strong><p>{draft.trim() ? (aiResult?.coach || xCoachText(draft, format)) : 'Start typing to see how the draft scores against your voice rules plus learnings from your last 30 days.'}</p><button type="button" onClick={() => runStudioAi('coach')} disabled={!draft.trim() || aiBusy === 'coach'}>{aiBusy === 'coach' ? 'Coaching…' : 'Ask AI coach'}</button></section></aside>
     </div>
     <section className="x-profile-card"><div><strong>{linkedLabel.replace('@', '') || 'X profile'}</strong><span>{linkedLabel}</span></div><div><b>{analytics.postsTarget}</b><small>posts / day target</small></div><div><b>{analytics.replyTarget}</b><small>recommended replies / day</small></div><div><b>{analytics.followers}</b><small>followers</small></div></section>
     <div className="x-analytics-head"><div><h2>Your analytics</h2><p>What's working for your audience, learned from every post.</p></div><div><button type="button">Apr 16 - May 16, 2026 ◷</button><button type="button">▽ Filters</button></div></div>

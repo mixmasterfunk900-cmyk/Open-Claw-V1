@@ -1,16 +1,16 @@
 # Graph Report - vibe-zone  (2026-05-18)
 
 ## Corpus Check
-- 173 files · ~190,238 words
+- 173 files · ~191,122 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2945 nodes · 3513 edges · 244 communities (194 shown, 50 thin omitted)
+- 2951 nodes · 3524 edges · 244 communities (194 shown, 50 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 2 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `db31dcac`
+- Built from commit: `3cc4efcd`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -261,7 +261,7 @@
 2. `qaCaptionEvents()` - 73 edges
 3. `buildShortWordEvents()` - 62 edges
 4. `Post-Ready Review Manifest` - 53 edges
-5. `handleApi()` - 50 edges
+5. `handleApi()` - 51 edges
 6. `cleanCaptionText()` - 23 edges
 7. `X Writing and Growth SOP — Vibe Zone / Masala` - 23 edges
 8. `captionCoverage()` - 22 edges
@@ -269,26 +269,26 @@
 10. `Long-Form Story Workflow` - 18 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `applyDomainCorrections()` --calls--> `cleanCaptionText()`  [EXTRACTED]
-  scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs → lib/caption-normalizer.mjs
-- `applyDomainCorrections()` --calls--> `cleanCaptionText()`  [EXTRACTED]
-  scripts/fix-longform-thumbnail-lab-subtitles-20260515.mjs → lib/caption-normalizer.mjs
-- `cleanWord()` --calls--> `cleanCaptionText()`  [EXTRACTED]
-  scripts/render-day4-package-20260515T1310Z.mjs → lib/caption-normalizer.mjs
-- `collectWords()` --calls--> `cleanCaptionText()`  [EXTRACTED]
-  scripts/render-day4-package-20260515T1310Z.mjs → lib/caption-normalizer.mjs
 - `writeSpokenCaptionAss()` --calls--> `buildShortWordEvents()`  [EXTRACTED]
   server/server.mjs → lib/caption-normalizer.mjs
+- `writeSpokenCaptionAss()` --calls--> `qaCaptionEvents()`  [EXTRACTED]
+  server/server.mjs → lib/caption-normalizer.mjs
+- `wordText()` --calls--> `cleanCaptionText()`  [EXTRACTED]
+  scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs → lib/caption-normalizer.mjs
+- `collectWords()` --calls--> `cleanCaptionText()`  [EXTRACTED]
+  scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs → lib/caption-normalizer.mjs
+- `phraseChunks()` --calls--> `flush()`  [INFERRED]
+  lib/caption-normalizer.mjs → scripts/fix-stream2-founder-crisp-subtitles-20260515.mjs
 
 ## Communities (244 total, 50 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.02
-Nodes (60): aiToEarnFeatures, approvedHouseRenderNames, AppState, Clip, DispatchFilterId, DispatchItem, DispatchListResponse, DispatchStatus (+52 more)
+Nodes (61): aiToEarnFeatures, approvedHouseRenderNames, AppState, Clip, DispatchFilterId, DispatchItem, DispatchListResponse, DispatchStatus (+53 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.04
-Nodes (46): assEscape(), buildTwitterAccountSearchUrl(), buildTwitterSearchUrl(), captionChunks(), currentStyleGateReadyBundleList, currentStyleGateReadyBundles, currentStyleGateReadyPathList, currentStyleGateReadyPaths (+38 more)
+Nodes (45): assEscape(), buildTwitterAccountSearchUrl(), buildTwitterSearchUrl(), callOllamaStudio(), callOpenAiStudio(), captionChunks(), currentStyleGateReadyBundleList, currentStyleGateReadyBundles (+37 more)
 
 ### Community 2 - "Community 2"
 Cohesion: 0.05
@@ -399,12 +399,12 @@ Cohesion: 0.1
 Nodes (17): audioProbe, byClipId, candidate, candidates, clip, clips, db, dbPath (+9 more)
 
 ### Community 30 - "Community 30"
-Cohesion: 0.1
-Nodes (17): captionCoverage(), mergeTimedCaptionEvents(), ass, captionEvents, captionPlan, captionQa, chains, coverage (+9 more)
+Cohesion: 0.11
+Nodes (15): ass, captionEvents, captionPlan, captionQa, chains, coverage, fallbackEvents, overlayMoving() (+7 more)
 
 ### Community 31 - "Community 31"
-Cohesion: 0.11
-Nodes (15): captionEvents, clip, copy, data, dataPath, dispatch, events, metadata (+7 more)
+Cohesion: 0.05
+Nodes (30): captionEvents, clip, copy, data, dataPath, dispatch, events, metadata (+22 more)
 
 ### Community 32 - "Community 32"
 Cohesion: 0.12
@@ -484,7 +484,7 @@ Nodes (11): ass, captionEvents, captionPlan, fallbackEvents, probe, qa, root, tr
 
 ### Community 51 - "Community 51"
 Cohesion: 0.11
-Nodes (15): captionEvents, clip, copy, data, dataPath, dispatch, events, metadata (+7 more)
+Nodes (14): clip, copy, data, dataPath, dispatch, events, metadata, probe (+6 more)
 
 ### Community 52 - "Community 52"
 Cohesion: 0.11
@@ -559,8 +559,8 @@ Cohesion: 0.12
 Nodes (16): 11. The profile-click flywheel, 13. Research-informed ranking assumptions, 14. Anti-spam rules, 15. Batch creation workflow, 18. When the writing SOP from Masala arrives, 19. Final publishing checklist, 1. Core principle, 20. Final publishing checklist (+8 more)
 
 ### Community 70 - "Community 70"
-Cohesion: 0.18
-Nodes (18): addJob(), loadDb(), markTwitterRadarAccountChecked(), nextManualCheckAt(), normalizeDb(), normalizeRadarHandle(), normalizeRadarSourceAdapters(), normalizeRadarTags() (+10 more)
+Cohesion: 0.12
+Nodes (35): addJob(), addMediaJob(), buildCustomDownloadCommand(), buildLocalCompanionCommand(), buildWhisperCommand(), buildYtDlpPreflightCommand(), clipPlatformChecklist(), commandExists() (+27 more)
 
 ### Community 71 - "Community 71"
 Cohesion: 0.14
@@ -604,15 +604,15 @@ Nodes (9): endSec, events, probe, qa, review, root, startSec, transcript (+1 mor
 
 ### Community 81 - "Community 81"
 Cohesion: 0.1
-Nodes (21): applyDomainCorrections(), buildPhraseEventsFromWords(), collectWords(), coverage, data, dataPath, decode, duration (+13 more)
+Nodes (20): buildPhraseEventsFromWords(), collectWords(), coverage, data, dataPath, decode, duration, events (+12 more)
 
 ### Community 82 - "Community 82"
 Cohesion: 0.21
 Nodes (10): canonical, dbPath, duration(), execFileAsync, fileOpen(), lastPacket(), registerManualStream(), root (+2 more)
 
 ### Community 83 - "Community 83"
-Cohesion: 0.13
-Nodes (25): addMediaJob(), brandWordmark(), buildFfmpegCommand(), centeredHeadlineLayout(), centeredHookLines(), clipPlatformChecklist(), clipStartSeconds(), drawTextEscape() (+17 more)
+Cohesion: 0.24
+Nodes (13): brandWordmark(), buildFfmpegCommand(), centeredHeadlineLayout(), centeredHookLines(), clipStartSeconds(), drawTextEscape(), ffmpegPlan(), hookLines() (+5 more)
 
 ### Community 84 - "Community 84"
 Cohesion: 0.18
@@ -623,8 +623,8 @@ Cohesion: 0.15
 Nodes (12): 1. Product map / navigation rethink, 2. Clip Review experience, 3. Render Lab, 4. Processing transparency, 5. Creator dispatch flow, Acceptance criteria, Current UX shortcomings, Priority (+4 more)
 
 ### Community 86 - "Community 86"
-Cohesion: 0.15
-Nodes (9): secondsFromStamp(), endSec, events, probe, qa, root, startSec, transcript (+1 more)
+Cohesion: 0.08
+Nodes (18): secondsFromStamp(), endSec, events, probe, qa, root, startSec, transcript (+10 more)
 
 ### Community 87 - "Community 87"
 Cohesion: 0.2
@@ -671,8 +671,8 @@ Cohesion: 0.2
 Nodes (8): dbPath, finishBundle(), probe, result, review, root, run(), seo
 
 ### Community 98 - "Community 98"
-Cohesion: 0.15
-Nodes (19): clipDispatchSeed(), createDispatchItem(), dispatchReplacementKey(), dispatchStatusForClip(), ensureCurrentStyleGateReadyDispatchItems(), expectedDispatchProofFrames(), generateThumbnailConcepts(), id() (+11 more)
+Cohesion: 0.17
+Nodes (17): clipDispatchSeed(), createDispatchItem(), dispatchReplacementKey(), dispatchStatusForClip(), ensureCurrentStyleGateReadyDispatchItems(), expectedDispatchProofFrames(), isCurrentStyleGateReady(), loadDb() (+9 more)
 
 ### Community 99 - "Community 99"
 Cohesion: 0.15
@@ -687,8 +687,8 @@ Cohesion: 0.18
 Nodes (10): Caption Sync Correction — 2026-05-14, Composition, Fixed Zone Requirement — 2026-05-14, Hard Rules, Header Hook Correction — 2026-05-14, Logo Container + Caption Lane Correction — 2026-05-14, Solid Template Burn-In — 2026-05-14, Spacing Correction — 2026-05-14 (+2 more)
 
 ### Community 102 - "Community 102"
-Cohesion: 0.2
-Nodes (6): events, probe, qa, root, transcript, vf
+Cohesion: 0.18
+Nodes (7): qaCaptionEvents(), events, probe, qa, root, transcript, vf
 
 ### Community 103 - "Community 103"
 Cohesion: 0.2
@@ -699,20 +699,20 @@ Cohesion: 0.2
 Nodes (6): events, probe, qa, root, transcript, vf
 
 ### Community 105 - "Community 105"
-Cohesion: 0.18
-Nodes (7): qaCaptionEvents(), events, probe, qa, root, transcript, vf
+Cohesion: 0.2
+Nodes (6): events, probe, qa, root, transcript, vf
 
 ### Community 106 - "Community 106"
 Cohesion: 0.2
 Nodes (6): events, probe, qa, root, transcript, vf
 
 ### Community 107 - "Community 107"
-Cohesion: 0.2
-Nodes (6): events, probe, qa, root, transcript, vf
-
-### Community 108 - "Community 108"
 Cohesion: 0.15
 Nodes (9): buildAss(), captionStyle(), assWithStyle(), events, probe, qa, root, transcript (+1 more)
+
+### Community 108 - "Community 108"
+Cohesion: 0.2
+Nodes (6): events, probe, qa, root, transcript, vf
 
 ### Community 109 - "Community 109"
 Cohesion: 0.2
@@ -823,8 +823,8 @@ Cohesion: 0.33
 Nodes (5): chains, overlayMoving(), probe, q(), root
 
 ### Community 136 - "Community 136"
-Cohesion: 0.15
-Nodes (21): appState(), buildCustomDownloadCommand(), buildLocalCompanionCommand(), buildWhisperCommand(), buildYtDlpPreflightCommand(), dispatchQueueSummary(), findStreamArtifact(), findStreamCaption() (+13 more)
+Cohesion: 0.18
+Nodes (15): appState(), findStreamArtifact(), findStreamCaption(), findStreamTranscriptText(), healthState(), huntViralIdeas(), isVideoLike(), latestStreamCandidate() (+7 more)
 
 ### Community 137 - "Community 137"
 Cohesion: 0.29
@@ -851,8 +851,8 @@ Cohesion: 0.33
 Nodes (3): probe, root, vfSeed
 
 ### Community 143 - "Community 143"
-Cohesion: 0.33
-Nodes (7): contentTypeFor(), inferredLongformTranscriptPath(), plainTextFromTranscriptPayload(), readTranscriptFile(), send(), serveMedia(), thumbnailTranscriptDownload()
+Cohesion: 0.22
+Nodes (10): contentTypeFor(), handleMediaUpload(), inferredLongformTranscriptPath(), mediaUploadTarget(), plainTextFromTranscriptPayload(), readTranscriptFile(), safeUploadName(), send() (+2 more)
 
 ### Community 144 - "Community 144"
 Cohesion: 0.33
@@ -871,8 +871,8 @@ Cohesion: 0.33
 Nodes (6): 16. Draft scoring rubric, Curiosity, Masala voice, Proof, Spam risk, Specificity
 
 ### Community 148 - "Community 148"
-Cohesion: 0.09
-Nodes (20): applyDomainCorrections(), beats, collectWords(), concat, cov, data, dataPath, decode (+12 more)
+Cohesion: 0.1
+Nodes (19): beats, collectWords(), concat, cov, data, dataPath, decode, duration (+11 more)
 
 ### Community 149 - "Community 149"
 Cohesion: 0.33
@@ -967,12 +967,12 @@ Cohesion: 0.13
 Nodes (14): baseName, cleanHook(), data, dataPath, esc(), first, live, output (+6 more)
 
 ### Community 220 - "Community 220"
-Cohesion: 0.05
-Nodes (29): clip, copy, data, dataPath, dispatch, events, metadata, probe (+21 more)
+Cohesion: 0.11
+Nodes (15): captionEvents, clip, copy, data, dataPath, dispatch, events, metadata (+7 more)
 
 ### Community 221 - "Community 221"
-Cohesion: 0.27
-Nodes (14): assEscape(), buildLongPhraseEvents(), buildShortWordEvents(), cleanCaptionText(), eventFromWordTiming(), normalizeTiming(), phraseChunks(), segmentIntersections() (+6 more)
+Cohesion: 0.18
+Nodes (19): assEscape(), buildLongPhraseEvents(), buildShortWordEvents(), captionCoverage(), cleanCaptionText(), eventFromWordTiming(), mergeTimedCaptionEvents(), normalizeTiming() (+11 more)
 
 ### Community 223 - "Community 223"
 Cohesion: 0.12
@@ -996,11 +996,11 @@ Nodes (10): clip, db, dbPath, filter, now, pairs, probe(), results (+2 more)
 
 ### Community 229 - "Community 229"
 Cohesion: 0.06
-Nodes (32): addRetention(), buildShortFilter(), cleanWord(), clips, collectWords(), concat, cov, data (+24 more)
+Nodes (31): addRetention(), buildLongEvents(), buildShortFilter(), clips, concat, cov, data, dataPath (+23 more)
 
 ### Community 230 - "Community 230"
 Cohesion: 0.4
-Nodes (5): commandExists(), fetchTextOrThrow(), resolveChannelId(), scanYoutube(), scanYoutubeFallback()
+Nodes (6): nextManualCheckAt(), normalizeRadarHandle(), normalizeRadarTags(), normalizeWatchAccount(), watchCadenceMinutes(), watchPriorityScore()
 
 ### Community 232 - "Community 232"
 Cohesion: 0.25
@@ -1035,29 +1035,29 @@ Cohesion: 0.29
 Nodes (7): latencyLabel(), radarSourceLabel(), TwitterRadarCard(), TwitterRadarPage(), twitterStudioAnalytics(), xCoachText(), xHandleFromUrl()
 
 ### Community 242 - "Community 242"
-Cohesion: 0.17
-Nodes (9): beats, concat, decode, events, probe, qa, root, transcript (+1 more)
+Cohesion: 0.4
+Nodes (5): dedupeClips(), normalizeStamp(), parseTranscript(), scoreClips(), timedChunks()
 
 ### Community 243 - "Community 243"
 Cohesion: 0.7
 Nodes (5): cleanWatchAccount(), parseBulkWatchAccount(), parseWatchAccount(), radarTierLabel(), splitRadarLines()
 
 ## Knowledge Gaps
-- **1843 isolated node(s):** `__dirname`, `root`, `dataDir`, `dbPath`, `validationCachePath` (+1838 more)
+- **1844 isolated node(s):** `__dirname`, `root`, `dataDir`, `dbPath`, `validationCachePath` (+1839 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **50 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `qaCaptionEvents()` connect `Community 105` to `Community 1`, `Community 4`, `Community 7`, `Community 10`, `Community 11`, `Community 12`, `Community 14`, `Community 16`, `Community 17`, `Community 18`, `Community 19`, `Community 148`, `Community 21`, `Community 20`, `Community 23`, `Community 24`, `Community 27`, `Community 28`, `Community 30`, `Community 31`, `Community 32`, `Community 33`, `Community 34`, `Community 35`, `Community 36`, `Community 38`, `Community 39`, `Community 40`, `Community 41`, `Community 46`, `Community 47`, `Community 48`, `Community 49`, `Community 50`, `Community 51`, `Community 54`, `Community 55`, `Community 58`, `Community 59`, `Community 60`, `Community 61`, `Community 62`, `Community 63`, `Community 64`, `Community 65`, `Community 66`, `Community 67`, `Community 80`, `Community 81`, `Community 83`, `Community 213`, `Community 86`, `Community 214`, `Community 87`, `Community 218`, `Community 220`, `Community 93`, `Community 94`, `Community 95`, `Community 223`, `Community 225`, `Community 221`, `Community 229`, `Community 102`, `Community 103`, `Community 104`, `Community 106`, `Community 107`, `Community 108`, `Community 109`, `Community 242`?**
-  _High betweenness centrality (0.055) - this node is a cross-community bridge._
-- **Why does `buildAss()` connect `Community 108` to `Community 1`, `Community 4`, `Community 7`, `Community 10`, `Community 11`, `Community 12`, `Community 14`, `Community 16`, `Community 17`, `Community 18`, `Community 19`, `Community 148`, `Community 21`, `Community 20`, `Community 23`, `Community 24`, `Community 27`, `Community 28`, `Community 30`, `Community 31`, `Community 32`, `Community 33`, `Community 34`, `Community 35`, `Community 36`, `Community 38`, `Community 39`, `Community 40`, `Community 41`, `Community 46`, `Community 47`, `Community 48`, `Community 49`, `Community 50`, `Community 51`, `Community 54`, `Community 55`, `Community 58`, `Community 59`, `Community 60`, `Community 61`, `Community 62`, `Community 63`, `Community 64`, `Community 65`, `Community 66`, `Community 67`, `Community 80`, `Community 81`, `Community 213`, `Community 86`, `Community 214`, `Community 87`, `Community 220`, `Community 93`, `Community 94`, `Community 95`, `Community 223`, `Community 225`, `Community 221`, `Community 229`, `Community 102`, `Community 103`, `Community 104`, `Community 105`, `Community 106`, `Community 107`, `Community 109`, `Community 242`?**
-  _High betweenness centrality (0.054) - this node is a cross-community bridge._
+- **Why does `qaCaptionEvents()` connect `Community 102` to `Community 1`, `Community 4`, `Community 7`, `Community 10`, `Community 11`, `Community 12`, `Community 14`, `Community 16`, `Community 17`, `Community 18`, `Community 19`, `Community 148`, `Community 21`, `Community 20`, `Community 23`, `Community 24`, `Community 27`, `Community 28`, `Community 30`, `Community 31`, `Community 32`, `Community 33`, `Community 34`, `Community 35`, `Community 36`, `Community 38`, `Community 39`, `Community 40`, `Community 41`, `Community 46`, `Community 47`, `Community 48`, `Community 49`, `Community 50`, `Community 51`, `Community 54`, `Community 55`, `Community 58`, `Community 59`, `Community 60`, `Community 61`, `Community 62`, `Community 63`, `Community 64`, `Community 65`, `Community 66`, `Community 67`, `Community 80`, `Community 81`, `Community 83`, `Community 213`, `Community 86`, `Community 214`, `Community 87`, `Community 218`, `Community 220`, `Community 93`, `Community 94`, `Community 95`, `Community 223`, `Community 225`, `Community 221`, `Community 229`, `Community 103`, `Community 104`, `Community 105`, `Community 106`, `Community 107`, `Community 108`, `Community 109`?**
+  _High betweenness centrality (0.062) - this node is a cross-community bridge._
+- **Why does `buildAss()` connect `Community 107` to `Community 1`, `Community 4`, `Community 7`, `Community 10`, `Community 11`, `Community 12`, `Community 14`, `Community 16`, `Community 17`, `Community 18`, `Community 19`, `Community 148`, `Community 21`, `Community 20`, `Community 23`, `Community 24`, `Community 27`, `Community 28`, `Community 30`, `Community 31`, `Community 32`, `Community 33`, `Community 34`, `Community 35`, `Community 36`, `Community 38`, `Community 39`, `Community 40`, `Community 41`, `Community 46`, `Community 47`, `Community 48`, `Community 49`, `Community 50`, `Community 51`, `Community 54`, `Community 55`, `Community 58`, `Community 59`, `Community 60`, `Community 61`, `Community 62`, `Community 63`, `Community 64`, `Community 65`, `Community 66`, `Community 67`, `Community 80`, `Community 81`, `Community 213`, `Community 86`, `Community 214`, `Community 87`, `Community 220`, `Community 93`, `Community 94`, `Community 95`, `Community 223`, `Community 225`, `Community 221`, `Community 229`, `Community 102`, `Community 103`, `Community 104`, `Community 105`, `Community 106`, `Community 108`, `Community 109`?**
+  _High betweenness centrality (0.060) - this node is a cross-community bridge._
 - **Why does `buildShortWordEvents()` connect `Community 221` to `Community 1`, `Community 4`, `Community 7`, `Community 10`, `Community 11`, `Community 12`, `Community 14`, `Community 16`, `Community 17`, `Community 18`, `Community 19`, `Community 20`, `Community 21`, `Community 23`, `Community 24`, `Community 27`, `Community 28`, `Community 30`, `Community 31`, `Community 32`, `Community 33`, `Community 34`, `Community 35`, `Community 36`, `Community 38`, `Community 39`, `Community 40`, `Community 41`, `Community 46`, `Community 47`, `Community 48`, `Community 49`, `Community 50`, `Community 51`, `Community 54`, `Community 55`, `Community 58`, `Community 59`, `Community 60`, `Community 80`, `Community 83`, `Community 86`, `Community 87`, `Community 220`, `Community 93`, `Community 94`, `Community 95`, `Community 225`, `Community 229`, `Community 102`, `Community 103`, `Community 104`, `Community 105`, `Community 106`, `Community 107`, `Community 108`, `Community 109`?**
-  _High betweenness centrality (0.035) - this node is a cross-community bridge._
+  _High betweenness centrality (0.036) - this node is a cross-community bridge._
 - **What connects `__dirname`, `root`, `dataDir` to the rest of the system?**
-  _1843 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1844 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.02 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

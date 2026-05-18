@@ -2287,6 +2287,67 @@ function generatePracticeChat(topic, context, mode = 'chat') {
     createdAt: new Date().toISOString(),
   }))
 }
+function fallbackStudioAi({ action, draft = '', format = 'one-liner', prompt = '', profile = {} }) {
+  const seed = String(prompt || draft || 'building Vibe Zone live').trim()
+  const safeSeed = seed.replace(/\s+/g, ' ').slice(0, 220)
+  const baseDrafts = {
+    'one-liner': `Boring systems beat flashy ideas when you have to ship every day.`,
+    milestone: `Tiny milestone today: Vibe Zone is turning from a dashboard into an actual content engine.\n\nNot perfect yet.\nBut real enough to improve from.`,
+    lesson: `Lesson learned: if a tool only works when you are calm and rested, it is not a workflow yet.\n\nThe boring rails are the product.`,
+    stack: `My current build stack:\n\nVite frontend\nLocal media pipeline\nOAuth-connected socials\nManual review gates\nTiny agent loops that actually ship\n\nSimple beats magical when you need it every day.`,
+  }
+  const nextDraft = action === 'draft' ? (safeSeed.length > 8 && safeSeed !== draft ? `Building this live is teaching me something:\n\n${safeSeed}\n\nThe product is not the flashy AI part.\n\nIt is the boring loop that keeps working tomorrow.` : baseDrafts[format] || baseDrafts['one-liner']) : draft
+  const hook = String(nextDraft || '').split(/\n|\./).find(Boolean) || ''
+  const score = Math.min(19, Math.max(4, Math.round(5 + nextDraft.length / 24 + (/\?|:/.test(nextDraft) ? 2 : 0) + (/\n/.test(nextDraft) ? 2 : 0))))
+  const coach = hook.length > 70 ? 'Strong idea, but the opening line is long. Make the first 6 words punchier.' : nextDraft.length > 235 ? 'Good substance. Trim one clause so it feels native to X.' : 'Solid draft. Add one concrete proof point if you want more replies.'
+  return { draft: nextDraft, score, coach, predictedImpressions: Math.round(score * 18 + nextDraft.length * 1.7), provider: 'local-template', model: 'deterministic-fallback', notes: `Draft-only. Uses ${profile?.accountLabel || 'local profile'} context; no external posting.` }
+}
+function parseStudioJson(text, fallback) {
+  const match = String(text || '').match(/\{[\s\S]*\}/)
+  if (!match) return fallback
+  try { return { ...fallback, ...JSON.parse(match[0]) } } catch { return fallback }
+}
+async function callOpenAiStudio(prompt) {
+  if (!process.env.OPENAI_API_KEY) return null
+  const model = process.env.OPENAI_MODEL || 'gpt-4o-mini'
+  const response = await fetch('https://api.openai.com/v1/chat/completions', {
+    method: 'POST',
+    headers: { 'content-type': 'application/json', authorization: `Bearer ${process.env.OPENAI_API_KEY}` },
+    body: JSON.stringify({ model, temperature: 0.8, response_format: { type: 'json_object' }, messages: [{ role: 'system', content: 'You are Vibe Zone Studio. Return compact JSON only with keys: draft, score, coach, predictedImpressions, notes. Draft for X/Twitter in Masala/Tom Jones build-in-public voice. Never post. Keep draft <= 280 chars unless explicitly writing a thread.' }, { role: 'user', content: prompt }] }),
+    signal: AbortSignal.timeout(20000),
+  })
+  if (!response.ok) throw new Error(`OpenAI ${response.status}: ${(await response.text()).slice(0, 220)}`)
+  const data = await response.json()
+  return { provider: 'openai', model, text: data.choices?.[0]?.message?.content || '' }
+}
+async function callOllamaStudio(prompt) {
+  const base = process.env.OLLAMA_URL || 'http://127.0.0.1:11434'
+  const model = process.env.OLLAMA_MODEL || process.env.LLAMA_MODEL || 'qwen2.5:1.5b-instruct'
+  try {
+    const response = await fetch(`${base.replace(/\/$/, '')}/api/generate`, {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ model, stream: false, prompt: `Return JSON only with keys draft, score, coach, predictedImpressions, notes. Draft for X/Twitter in Masala/Tom Jones build-in-public voice. Never post. <=280 chars.\n\n${prompt}` }),
+      signal: AbortSignal.timeout(12000),
+    })
+    if (!response.ok) return null
+    const data = await response.json()
+    return { provider: 'ollama', model, text: data.response || '' }
+  } catch { return null }
+}
+async function generateStudioAi(db, body) {
+  const profile = db.socialConnectionState?.x || {}
+  const fallback = fallbackStudioAi({ ...body, profile })
+  const prompt = JSON.stringify({ action: body.action || 'draft', format: body.format || 'one-liner', userPrompt: body.prompt || '', currentDraft: body.draft || '', xProfile: { accountLabel: profile.accountLabel, username: profile.username }, recentTopics: db.twitterRadar?.topics?.slice(0, 10), newestStream: db.videos?.[0]?.title || '' })
+  try {
+    const ai = await callOpenAiStudio(prompt) || await callOllamaStudio(prompt)
+    if (!ai) return fallback
+    const parsed = parseStudioJson(ai.text, fallback)
+    return { ...parsed, provider: ai.provider, model: ai.model, draft: String(parsed.draft || fallback.draft).slice(0, 560), score: Math.max(0, Math.min(19, Number(parsed.score || fallback.score))), predictedImpressions: Math.max(0, Number(parsed.predictedImpressions || fallback.predictedImpressions)), coach: String(parsed.coach || fallback.coach).slice(0, 700), notes: String(parsed.notes || fallback.notes).slice(0, 500) }
+  } catch (error) {
+    return { ...fallback, provider: 'local-template', model: 'fallback-after-ai-error', notes: `AI provider unavailable: ${error.message}` }
+  }
+}
 async function handleApi(req, res, db) {
   const url = new URL(req.url, `http://${req.headers.host}`)
   if (req.method === 'GET' && url.pathname === '/api/health') return send(res, 200, await healthState(db))
@@ -2487,6 +2548,13 @@ async function handleApi(req, res, db) {
     await addJob(db, 'viral-hunter', 'Generated newest-stream Viral Hunter leads', 'done', `${finds.length} leads scoped to Masala's newest stream/clips; duplicates collapsed in backlog.`)
     await saveDb(db)
     return send(res, 200, finds)
+  }
+  if (req.method === 'POST' && url.pathname === '/api/studio/ai') {
+    const body = await parseBody(req)
+    const result = await generateStudioAi(db, body)
+    await addJob(db, 'studio-ai', 'Generated Studio AI draft/score', 'done', `${result.provider}/${result.model}: ${body.action || 'draft'}; no posting performed.`)
+    await saveDb(db)
+    return send(res, 200, result)
   }
   if (req.method === 'POST' && url.pathname === '/api/transcripts') {
     const body = await parseBody(req); const t = { id: id('tx'), title: body.title || 'Untitled transcript', sourceUrl: body.sourceUrl || '', text: body.text || '', createdAt: new Date().toISOString() }
