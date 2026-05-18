@@ -1,7 +1,7 @@
 # X Writing and Growth SOP — Vibe Zone / Masala
 
 Status: active SOP for Rex when drafting X posts, threads, video posts, and replies for Vibe Zone.  
-Last updated: 2026-05-13 UTC.  
+Last updated: 2026-05-17 UTC.  
 External posting still requires explicit Masala approval and a safe logged-in Chrome session.
 
 ## 1. Core principle
@@ -692,7 +692,62 @@ When Masala provides the detailed voice/tactics SOP:
 3. Keep this file as the operating SOP.
 4. Never let tactics override safety or anti-spam rules.
 
-## 19. Final publishing checklist
+## 19. X recommendation-informed drafting rules
+
+Masala provided a breakdown of X recommendation signals from the open-source algorithm/code review. Use these as drafting heuristics, not as spam tactics. The aim is to write content that naturally earns high-intent engagement.
+
+### Positive signals to intentionally design for
+
+- **Dwell time:** write hooks and story arcs that make people pause instead of glance-scroll. Prefer curiosity, tension, receipts, and clear stakes.
+- **Click dwell time:** if a post asks someone to open it, the opened content must reward the click with substance.
+- **Photo expands:** use detailed screenshots, charts, proof frames, thumbnail/contact sheets, or before/after visuals worth zooming into.
+- **Profile clicks:** posts should make readers curious about the builder/product without saying “check me out”.
+- **Follows:** make the account feel like an ongoing build worth tracking.
+- **Private shares / copy-link shares:** draft posts that someone would DM to a creator, builder, or friend because the idea is useful or sharply put.
+- **Quote posts and replies:** create clean, quotable claims and reply with useful insight, not self-promo.
+- **Video quality views:** avoid tiny throwaway videos; use substantial clips that pass platform video-duration quality thresholds.
+
+### Negative signals to avoid
+
+- Boring openers that cause immediate scroll-past.
+- Spammy cadence or repeated variants of the same idea.
+- Content likely to trigger mute/block/report/not-interested reactions.
+- Safety/policy/spam classifier risk, especially from low-context automation, deceptive claims, excessive tagging, or engagement bait.
+- Long thread chains where multiple posts compete; assume only the strongest post in a conversation may survive dedupe.
+
+### Cadence rule
+
+Respect author diversity/attenuation: do not fire off many posts in a short burst. Space out the strongest posts so each has room to breathe. Quality beats volume.
+
+### Drafting checklist extension
+
+For every draft, score it quickly:
+
+1. Would someone stop scrolling for this?
+2. Would they click/zoom/open the media?
+3. Would it make them curious enough to view the profile?
+4. Would a builder/creator privately send this to someone?
+5. Is it safe, non-spammy, and grounded in real receipts?
+6. Is this the strongest version, or are we making duplicate weaker variants?
+
+
+## Style constraint: no hyphen marks and avoid AI words
+
+Masala added two hard writing constraints for X drafts:
+
+1. Do not use hyphen marks in visible post copy. Avoid hyphenated constructions and dash punctuation. Rewrite with commas, periods, line breaks, or simpler wording.
+2. Avoid obvious AI words and AI-coded phrasing that make the post feel machine-written. Hype, meme jargon, and normal internet language are allowed if they fit Masala's voice. Do not over-sanitize the writing.
+
+The goal is not bland plainness. The goal is to avoid words that make readers think “an AI wrote this.” Keep the copy human, specific, loose, and natural.
+
+Before showing a draft, run a style pass:
+
+1. No hyphen marks in visible post text.
+2. No obvious AI-coded words or phrases.
+3. Hype and meme wording are allowed when they sound like Masala.
+4. Specific receipts, human voice, no machine polish.
+
+## 20. Final publishing checklist
 
 Before any external X action:
 

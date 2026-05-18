@@ -60,7 +60,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
 <div class="container">
 
 <h1>vibe-zone — Complete Call Flow &amp; Architecture Documentation</h1>
-<p class="subtitle">Generated from graphify knowledge graph: 2845 nodes, 3361 edges, 233 communities. Commit: c365ae1</p>
+<p class="subtitle">Generated from graphify knowledge graph: 2945 nodes, 3511 edges, 243 communities. Commit: 565bd1d</p>
 
 <div class="nav">
     <a href="#overview">Architecture Overview</a>
@@ -77,7 +77,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
     <a href="#community-3">Community 3</a>
     <a href="#community-2">Community 2</a>
     <a href="#community-229">Community 229</a>
-    <a href="#community-31">Community 31</a>
+    <a href="#community-220">Community 220</a>
     <a href="#other">Other</a>
 </div>
 
@@ -88,7 +88,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
 
 %%{init: {"theme": "dark", "themeVariables": {"fontSize": "15.0px", "fontFamily": "Segoe UI, system-ui, sans-serif", "primaryColor": "#1e293b", "primaryTextColor": "#e2e8f0", "primaryBorderColor": "#38bdf8", "secondaryColor": "#0f172a", "tertiaryColor": "#334155", "lineColor": "#64748b", "textColor": "#e2e8f0"}, "flowchart": {"htmlLabels": true, "curve": "basis", "nodeSpacing": 48, "rankSpacing": 64, "padding": 14, "diagramPadding": 10, "useMaxWidth": true}}}%%
 flowchart LR
-    BUILD_GRAPH_321CBB04("Graph Build<br/><small>183 nodes</small>")
+    BUILD_GRAPH_321CBB04("Graph Build<br/><small>197 nodes</small>")
     class BUILD_GRAPH_321CBB04 module;
     ANALYSIS_CLUSTERING_C79796DA("Analysis &amp; Clustering<br/><small>34 nodes</small>")
     class ANALYSIS_CLUSTERING_C79796DA module;
@@ -98,38 +98,38 @@ flowchart LR
     class CLI_SKILLS_9964CBB8 module;
     INGEST_CACHE_UPDATE_FF457338("Ingestion &amp; Updates<br/><small>161 nodes</small>")
     class INGEST_CACHE_UPDATE_FF457338 module;
-    SERVE_API_35EC8E86("Serving API<br/><small>97 nodes</small>")
+    SERVE_API_35EC8E86("Serving API<br/><small>104 nodes</small>")
     class SERVE_API_35EC8E86 module;
     SECURITY_GLOBAL_5B9C6A04("Security &amp; Global Graph<br/><small>128 nodes</small>")
     class SECURITY_GLOBAL_5B9C6A04 module;
-    TESTS_FIXTURES_B84B1DCC("Tests &amp; Fixtures<br/><small>62 nodes</small>")
+    TESTS_FIXTURES_B84B1DCC("Tests &amp; Fixtures<br/><small>73 nodes</small>")
     class TESTS_FIXTURES_B84B1DCC module;
-    COMMUNITY_0_B056AD3D("Community 0<br/><small>87 nodes</small>")
+    COMMUNITY_0_B056AD3D("Community 0<br/><small>98 nodes</small>")
     class COMMUNITY_0_B056AD3D module;
-    COMMUNITY_1_3073A0DB("Community 1<br/><small>50 nodes</small>")
+    COMMUNITY_1_3073A0DB("Community 1<br/><small>59 nodes</small>")
     class COMMUNITY_1_3073A0DB module;
     COMMUNITY_3_D8DFCEA7("Community 3<br/><small>42 nodes</small>")
     class COMMUNITY_3_D8DFCEA7 module;
     COMMUNITY_2_8C8DF7B9("Community 2<br/><small>39 nodes</small>")
     class COMMUNITY_2_8C8DF7B9 module;
-    COMMUNITY_229_82169BCE("Community 229<br/><small>36 nodes</small>")
+    COMMUNITY_229_82169BCE("Community 229<br/><small>38 nodes</small>")
     class COMMUNITY_229_82169BCE module;
-    COMMUNITY_31_2075BEB2("Community 31<br/><small>35 nodes</small>")
-    class COMMUNITY_31_2075BEB2 module;
-    OTHER_D0941E68("Other<br/><small>1800 nodes</small>")
+    COMMUNITY_220_321FFC8C("Community 220<br/><small>37 nodes</small>")
+    class COMMUNITY_220_321FFC8C module;
+    OTHER_D0941E68("Other<br/><small>1844 nodes</small>")
     class OTHER_D0941E68 module;
-    COMMUNITY_1_3073A0DB -->|contains x105| OTHER_D0941E68
+    COMMUNITY_1_3073A0DB -->|contains x124| OTHER_D0941E68
     OTHER_D0941E68 -->|imports x49| BUILD_GRAPH_321CBB04
+    COMMUNITY_0_B056AD3D -->|contains x42| OTHER_D0941E68
     BUILD_GRAPH_321CBB04 -->|imports x34| OTHER_D0941E68
-    COMMUNITY_0_B056AD3D -->|contains x30| OTHER_D0941E68
     SECURITY_GLOBAL_5B9C6A04 -->|imports x18| OTHER_D0941E68
-    CLI_SKILLS_9964CBB8 -->|imports x9| OTHER_D0941E68
-    COMMUNITY_229_82169BCE -->|imports x9| OTHER_D0941E68
+    COMMUNITY_229_82169BCE -->|imports x10| OTHER_D0941E68
+    CLI_SKILLS_9964CBB8 -->|imports x8| OTHER_D0941E68
+    COMMUNITY_220_321FFC8C -->|imports x6| OTHER_D0941E68
     SECURITY_GLOBAL_5B9C6A04 -->|imports x6| BUILD_GRAPH_321CBB04
     SERVE_API_35EC8E86 -->|imports x6| OTHER_D0941E68
-    COMMUNITY_31_2075BEB2 -->|imports x6| OTHER_D0941E68
-    SERVE_API_35EC8E86 -->|imports x2| BUILD_GRAPH_321CBB04
-    COMMUNITY_31_2075BEB2 -->|imports x2| BUILD_GRAPH_321CBB04
+    OTHER_D0941E68 -->|calls x3| COMMUNITY_1_3073A0DB
+    COMMUNITY_220_321FFC8C -->|imports x2| BUILD_GRAPH_321CBB04
     classDef entry fill:#422006,stroke:#fbbf24,color:#fde68a,stroke-width:1px;
     classDef api fill:#450a0a,stroke:#f87171,color:#fee2e2,stroke-width:1px;
     classDef async fill:#2e1065,stroke:#a78bfa,color:#ede9fe,stroke-width:1px;
@@ -146,19 +146,19 @@ flowchart LR
     <h4>Architecture Layers</h4>
     <table style="width:100%;font-size:0.85rem;">
       <tr><th>Layer</th><th>Nodes</th><th>Communities</th></tr>
-      <tr><td>Graph Build</td><td>183</td><td><code>38, 41, 17, 22, 34, 107, 94, 103, 104, 105, 106</code></td></tr><tr><td>Analysis &amp; Clustering</td><td>34</td><td><code>43, 113, 146</code></td></tr><tr><td>Outputs &amp; Docs</td><td>29</td><td><code>8</code></td></tr><tr><td>CLI &amp; Skill Installers</td><td>62</td><td><code>218, 59, 97, 119, 145</code></td></tr><tr><td>Ingestion &amp; Updates</td><td>161</td><td><code>26, 45, 53, 82, 127, 133, 171, 231, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 217, 222, 228</code></td></tr><tr><td>Serving API</td><td>97</td><td><code>5, 9, 63, 67, 161, 162</code></td></tr><tr><td>Security &amp; Global Graph</td><td>128</td><td><code>42, 214, 219, 61, 62, 64, 65, 66</code></td></tr><tr><td>Tests &amp; Fixtures</td><td>62</td><td><code>114, 120, 121, 122, 135, 142, 157, 158, 159, 160</code></td></tr><tr><td>Community 0</td><td>87</td><td><code>0</code></td></tr><tr><td>Community 1</td><td>50</td><td><code>1</code></td></tr><tr><td>Community 3</td><td>42</td><td><code>3</code></td></tr><tr><td>Community 2</td><td>39</td><td><code>2</code></td></tr><tr><td>Community 229</td><td>36</td><td><code>229</code></td></tr><tr><td>Community 31</td><td>35</td><td><code>31</code></td></tr><tr><td>Other</td><td>1800</td><td><code>221, 7, 10, 11, 12, 39, 46, 13, 136, 14, 15, 16, 18, 19, 20, 21, 23, 24, 25, 148, 30, 70, 27, 28, 81, 29, 212, 216, 220, 32, 35, 36, 52, 223, 230, 37, 40, 213, 224, 44, 47, 48, 49, 50, 51, 4, 54, 55, 56, 57, 58, 60, 68, 69, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 83, 84, 85, 86, 98, 99, 227, 33, 88, 89, 90, 91, 92, 100, 101, 93, 95, 96, 102, 108, 109, 110, 111, 112, 129, 143, 87, 115, 116, 117, 118, 226, 123, 124, 125, 126, 128, 130, 131, 132, 215, 134, 137, 138, 139, 140, 141, 144, 147, 149, 150, 151, 152, 153, 154, 155, 232, 156, 163, 164, 167, 165, 166, 168, 169, 170, 172, 225, 173, 174, 210, 211, 6, 208, 209</code></td></tr>
+      <tr><td>Graph Build</td><td>197</td><td><code>38, 41, 17, 22, 34, 105, 94, 103, 104, 106, 107, 233, 234</code></td></tr><tr><td>Analysis &amp; Clustering</td><td>34</td><td><code>43, 113, 146</code></td></tr><tr><td>Outputs &amp; Docs</td><td>29</td><td><code>8</code></td></tr><tr><td>CLI &amp; Skill Installers</td><td>62</td><td><code>218, 59, 97, 119, 145</code></td></tr><tr><td>Ingestion &amp; Updates</td><td>161</td><td><code>26, 45, 53, 82, 127, 133, 171, 231, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 217, 222, 228</code></td></tr><tr><td>Serving API</td><td>104</td><td><code>5, 9, 63, 67, 240, 161, 162</code></td></tr><tr><td>Security &amp; Global Graph</td><td>128</td><td><code>42, 214, 219, 61, 62, 64, 65, 66</code></td></tr><tr><td>Tests &amp; Fixtures</td><td>73</td><td><code>114, 120, 121, 122, 135, 142, 236, 157, 158, 159, 160, 239, 237</code></td></tr><tr><td>Community 0</td><td>98</td><td><code>0</code></td></tr><tr><td>Community 1</td><td>59</td><td><code>1</code></td></tr><tr><td>Community 3</td><td>42</td><td><code>3</code></td></tr><tr><td>Community 2</td><td>39</td><td><code>2</code></td></tr><tr><td>Community 229</td><td>38</td><td><code>229</code></td></tr><tr><td>Community 220</td><td>37</td><td><code>220</code></td></tr><tr><td>Other</td><td>1844</td><td><code>7, 10, 11, 12, 39, 46, 13, 83, 14, 15, 16, 18, 19, 20, 21, 81, 148, 23, 24, 25, 30, 136, 27, 28, 29, 212, 216, 31, 35, 36, 51, 52, 98, 33, 37, 4, 40, 70, 223, 224, 44, 69, 213, 221, 32, 47, 48, 49, 50, 225, 54, 55, 56, 57, 58, 60, 68, 71, 72, 73, 74, 75, 76, 77, 78, 108, 242, 79, 80, 84, 85, 99, 227, 241, 86, 88, 89, 90, 91, 92, 100, 101, 95, 96, 102, 109, 110, 111, 112, 129, 87, 93, 115, 116, 117, 118, 226, 123, 124, 125, 126, 128, 130, 131, 132, 215, 232, 134, 137, 143, 238, 138, 139, 140, 141, 144, 147, 149, 150, 151, 152, 153, 154, 155, 230, 235, 156, 163, 164, 167, 165, 166, 168, 169, 170, 172, 173, 174, 210, 211, 6, 208, 209</code></td></tr>
     </table>
   </div>
   <div class="card">
     <h4>Core Flow</h4>
-    <div class="arrow-chain">Outputs &amp; Docs -&gt; Graph Build -&gt; Other -&gt; Analysis &amp; Clustering -&gt; CLI &amp; Skill Installers -&gt; Ingestion &amp; Updates -&gt; Serving API</div>
+    <div class="arrow-chain">Outputs &amp; Docs -&gt; Graph Build -&gt; Other -&gt; Community 1 -&gt; Analysis &amp; Clustering -&gt; CLI &amp; Skill Installers -&gt; Ingestion &amp; Updates</div>
   </div>
 </div>
 <div class="grid">
   <div class="card">
     <h4>Graph Report Highlights</h4>
     <ul>
-      <li>2845 nodes · 3361 edges · 233 communities (184 shown, 49 thin omitted)</li>
+      <li>2945 nodes · 3511 edges · 243 communities (193 shown, 50 thin omitted)</li>
       <li>Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 2 edges (avg confidence: 0.8)</li>
       <li>Token cost: 0 input · 0 output</li>
       <li>1. `buildAss()` - 73 edges</li>
@@ -170,12 +170,12 @@ flowchart LR
 <hr>
 <!-- ====== 2. Graph Build ====== -->
 <h2 id="build-graph">2. Graph Build</h2>
-<p>Graph Build groups implementation around render, build, stream2, scripts, mostly in scripts/render-stream2-fulltime-247-build-house-v4b-20260515T0913Z.mjs, scripts/render-stream2-fulltime-247-build-house-v4c-20260515T0918Z.mjs, scripts/render-stream2-fulltime-247-build-house-v4-20260514T1820Z.mjs. This section covers 183 nodes and 184 internal edges; the diagram shows only representative relationships to stay readable.</p>
+<p>Graph Build groups implementation around build, render, stream2, scripts, mostly in scripts/render-stream2-fulltime-247-build-house-v4b-20260515T0913Z.mjs, scripts/render-stream2-fulltime-247-build-house-v4c-20260515T0918Z.mjs, scripts/render-stream2-fulltime-247-build-house-v4-20260514T1820Z.mjs. This section covers 197 nodes and 196 internal edges; the diagram shows only representative relationships to stay readable.</p>
 
 <div class="mermaid">
 %%{init: {"theme": "dark", "themeVariables": {"fontSize": "15.0px", "fontFamily": "Segoe UI, system-ui, sans-serif", "primaryColor": "#1e293b", "primaryTextColor": "#e2e8f0", "primaryBorderColor": "#38bdf8", "secondaryColor": "#0f172a", "tertiaryColor": "#334155", "lineColor": "#64748b", "textColor": "#e2e8f0"}, "flowchart": {"htmlLabels": true, "curve": "basis", "nodeSpacing": 48, "rankSpacing": 64, "padding": 14, "diagramPadding": 10, "useMaxWidth": true}}}%%
 flowchart LR
-    %% Section: Graph Build (183 nodes, 184 edges)
+    %% Section: Graph Build (197 nodes, 196 edges)
     subgraph build_graph_scripts_render_stream2_fulltime_247_ad17fba5["scripts/render-stream2-fulltime-247-build-house-v4-20260514T1820Z.mjs"]
         scripts_render_stream2_fulltime_247_build_house_6fdc9a0c("esc()<br/><small>scripts/render-stream2-fulltime-247-build-house-v4-20260514T1820Z.mjs</small>")
         scripts_render_stream2_fulltime_247_build_house_d45cb6a0("headerDraw()<br/><small>scripts/render-stream2-fulltime-247-build-house-v4-20260514T1820Z.mjs</small>")
@@ -191,32 +191,31 @@ flowchart LR
         scripts_render_stream2_fulltime_247_build_house_dda249dd("headerDraw()<br/><small>scripts/render-stream2-fulltime-247-build-house-v4c-20260515T0918Z.mjs</small>")
         scripts_render_stream2_fulltime_247_build_house_a77b2924("render-stream2-fulltime-247-build-house...<br/><small>scripts/render-stream2-fulltime-247-build-house-v4c-20260515T0918Z.mjs</small>")
     end
-    subgraph build_graph_lib_caption_normalizer_mjs_96948ba1["lib/caption-normalizer.mjs"]
-        lib_caption_normalizer_captionstyle_6e2f980f("captionStyle()<br/><small>lib/caption-normalizer.mjs</small>")
-        lib_caption_normalizer_buildass_9f1b33d6("buildAss()<br/><small>lib/caption-normalizer.mjs</small>")
+    subgraph build_graph_scripts_render_stream2_build_clip_ma_177c2fbd["scripts/render-stream2-build-clip-machine-centered-logo-fix-20260513T1916Z.mjs"]
+        scripts_render_stream2_build_clip_machine_center_e80d8a1b("render-stream2-build-clip-machine-cente...<br/><small>scripts/render-stream2-build-clip-machine-centered-logo-fix-20260513T1916Z.mjs</small>")
+        scripts_render_stream2_build_clip_machine_center_42d94c06("esc()<br/><small>scripts/render-stream2-build-clip-machine-centered-logo-fix-20260513T1916Z.mjs</small>")
     end
-    scripts_render_day4_package_20260515t1310z_asswi_f7024d60("assWithStyle()<br/><small>scripts/render-day4-package-20260515T1310Z.mjs</small>")
-    scripts_render_stream2_build_clip_machine_center_e80d8a1b("render-stream2-build-clip-machine-cente...<br/><small>scripts/render-stream2-build-clip-machine-centered-logo-fix-20260513T1916Z.mjs</small>")
+    lib_caption_normalizer_qacaptionevents_76590539("qaCaptionEvents()<br/><small>lib/caption-normalizer.mjs</small>")
     scripts_render_stream2_build_clip_machine_logo_b_f0b972ae("render-stream2-build-clip-machine-logo-...<br/><small>scripts/render-stream2-build-clip-machine-logo-below-video-20260513T1929Z.mjs</small>")
     scripts_render_stream2_build_clip_machine_restor_b2ff4f6a("render-stream2-build-clip-machine-resto...<br/><small>scripts/render-stream2-build-clip-machine-restored-layout-20260513T2009Z.mjs</small>")
     scripts_render_stream2_build_clip_machine_restor_52afc836("render-stream2-build-clip-machine-resto...<br/><small>scripts/render-stream2-build-clip-machine-restored-layout-v2-20260513T2012Z.mjs</small>")
+    scripts_render_stream2_build_clip_machine_title_bad855af("render-stream2-build-clip-machine-title...<br/><small>scripts/render-stream2-build-clip-machine-title-top-logo-below-20260513T1919Z.mjs</small>")
     scripts_render_stream2_build_while_i_sleep_house_08d39986("render-stream2-build-while-i-sleep-hous...<br/><small>scripts/render-stream2-build-while-i-sleep-house-v3-20260514T0047Z.mjs</small>")
     scripts_render_stream2_phone_controls_build_hous_b93bcf14("render-stream2-phone-controls-build-hou...<br/><small>scripts/render-stream2-phone-controls-build-house-v3-20260514T1510Z.mjs</small>")
     scripts_render_stream2_fulltime_247_build_house_32c1a05e -->|calls| scripts_render_stream2_fulltime_247_build_house_dda249dd
     scripts_render_stream2_fulltime_247_build_house_6d25e4ec -->|calls| scripts_render_stream2_fulltime_247_build_house_39e3b5ac
     scripts_render_stream2_fulltime_247_build_house_6fdc9a0c -->|calls| scripts_render_stream2_fulltime_247_build_house_d45cb6a0
-    scripts_render_day4_package_20260515t1310z_asswi_f7024d60 -->|calls| lib_caption_normalizer_buildass_9f1b33d6
-    lib_caption_normalizer_captionstyle_6e2f980f -->|calls| lib_caption_normalizer_buildass_9f1b33d6
-    scripts_render_stream2_fulltime_247_build_house_a77b2924 -->|imports| lib_caption_normalizer_buildass_9f1b33d6
-    scripts_render_stream2_phone_controls_build_hous_b93bcf14 -->|imports| lib_caption_normalizer_buildass_9f1b33d6
-    scripts_render_stream2_build_clip_machine_restor_b2ff4f6a -->|imports| lib_caption_normalizer_buildass_9f1b33d6
-    scripts_render_stream2_fulltime_247_build_house_e6802f5a -->|imports| lib_caption_normalizer_buildass_9f1b33d6
-    scripts_render_stream2_build_clip_machine_center_e80d8a1b -->|imports| lib_caption_normalizer_buildass_9f1b33d6
-    scripts_render_stream2_fulltime_247_build_house_7529e181 -->|imports| lib_caption_normalizer_buildass_9f1b33d6
-    scripts_render_stream2_build_while_i_sleep_house_08d39986 -->|imports| lib_caption_normalizer_buildass_9f1b33d6
-    scripts_render_stream2_build_clip_machine_logo_b_f0b972ae -->|imports| lib_caption_normalizer_buildass_9f1b33d6
-    scripts_render_stream2_build_clip_machine_restor_52afc836 -->|imports| lib_caption_normalizer_buildass_9f1b33d6
-    %% Omitted for readability: 165 nodes, 0 edges
+    scripts_render_stream2_fulltime_247_build_house_a77b2924 -->|imports| lib_caption_normalizer_qacaptionevents_76590539
+    scripts_render_stream2_phone_controls_build_hous_b93bcf14 -->|imports| lib_caption_normalizer_qacaptionevents_76590539
+    scripts_render_stream2_build_clip_machine_restor_b2ff4f6a -->|imports| lib_caption_normalizer_qacaptionevents_76590539
+    scripts_render_stream2_fulltime_247_build_house_e6802f5a -->|imports| lib_caption_normalizer_qacaptionevents_76590539
+    scripts_render_stream2_build_clip_machine_center_e80d8a1b -->|imports| lib_caption_normalizer_qacaptionevents_76590539
+    scripts_render_stream2_fulltime_247_build_house_7529e181 -->|imports| lib_caption_normalizer_qacaptionevents_76590539
+    scripts_render_stream2_build_while_i_sleep_house_08d39986 -->|imports| lib_caption_normalizer_qacaptionevents_76590539
+    scripts_render_stream2_build_clip_machine_logo_b_f0b972ae -->|imports| lib_caption_normalizer_qacaptionevents_76590539
+    scripts_render_stream2_build_clip_machine_restor_52afc836 -->|imports| lib_caption_normalizer_qacaptionevents_76590539
+    scripts_render_stream2_build_clip_machine_title_bad855af -->|imports| lib_caption_normalizer_qacaptionevents_76590539
+    %% Omitted for readability: 179 nodes, 0 edges
     class scripts_render_stream2_fulltime_247_build_house_6fdc9a0c function;
     class scripts_render_stream2_fulltime_247_build_house_d45cb6a0 function;
     class scripts_render_stream2_fulltime_247_build_house_7529e181 async;
@@ -226,13 +225,13 @@ flowchart LR
     class scripts_render_stream2_fulltime_247_build_house_32c1a05e function;
     class scripts_render_stream2_fulltime_247_build_house_dda249dd function;
     class scripts_render_stream2_fulltime_247_build_house_a77b2924 async;
-    class lib_caption_normalizer_captionstyle_6e2f980f function;
-    class lib_caption_normalizer_buildass_9f1b33d6 function;
-    class scripts_render_day4_package_20260515t1310z_asswi_f7024d60 function;
     class scripts_render_stream2_build_clip_machine_center_e80d8a1b entry;
+    class scripts_render_stream2_build_clip_machine_center_42d94c06 function;
+    class lib_caption_normalizer_qacaptionevents_76590539 function;
     class scripts_render_stream2_build_clip_machine_logo_b_f0b972ae entry;
     class scripts_render_stream2_build_clip_machine_restor_b2ff4f6a entry;
     class scripts_render_stream2_build_clip_machine_restor_52afc836 entry;
+    class scripts_render_stream2_build_clip_machine_title_bad855af entry;
     class scripts_render_stream2_build_while_i_sleep_house_08d39986 async;
     class scripts_render_stream2_phone_controls_build_hous_b93bcf14 async;
     classDef entry fill:#422006,stroke:#fbbf24,color:#fde68a,stroke-width:1px;
@@ -261,7 +260,7 @@ flowchart LR
   <td><code>render-stream2-fulltime-247-build-house-v4b-20260515T0913Z.mjs</code><br><small style="color:var(--muted)">scripts/render-stream2-fulltime-247-build-house-v4b-20260515T0913Z.mjs</small></td>
   <td><span class="tag tag-async">Async</span></td>
   <td>External entry / no inbound edge</td>
-  <td><code>buildAss()</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small></td>
+  <td><code>qaCaptionEvents()</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small></td>
   <td>render-stream2-fulltime-247-build-house-v4b-20260515T0913Z.mjs node in scripts/render-stream2-fulltime-247-build-house-v4b-20260515T0913Z.mjs.</td>
 </tr>
 <tr>
@@ -469,7 +468,7 @@ flowchart LR
   <td><code>render-stream2-fulltime-247-build-house-v4c-20260515T0918Z.mjs</code><br><small style="color:var(--muted)">scripts/render-stream2-fulltime-247-build-house-v4c-20260515T0918Z.mjs</small></td>
   <td><span class="tag tag-async">Async</span></td>
   <td>External entry / no inbound edge</td>
-  <td><code>buildAss()</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small></td>
+  <td><code>qaCaptionEvents()</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small></td>
   <td>render-stream2-fulltime-247-build-house-v4c-20260515T0918Z.mjs node in scripts/render-stream2-fulltime-247-build-house-v4c-20260515T0918Z.mjs.</td>
 </tr>
 <tr>
@@ -515,7 +514,7 @@ flowchart LR
   </div>
   <div class="card">
     <h4>Design Notes</h4>
-    <p>This section comes from graphify community clustering. Relationship summary: contains x169, imports x10, calls x5. The diagram prioritizes high-confidence calls or usage relationships; the table keeps the broader node inventory.</p>
+    <p>This section comes from graphify community clustering. Relationship summary: contains x183, imports x10, calls x3. The diagram prioritizes high-confidence calls or usage relationships; the table keeps the broader node inventory.</p>
   </div>
 </div>
 <hr>
@@ -1875,12 +1874,12 @@ flowchart LR
 
 <!-- ====== 7. Serving API ====== -->
 <h2 id="serve-api">7. Serving API</h2>
-<p>Serving API groups implementation around upload, scripts, render, finish, mostly in scripts/finish-upload-pipeline.mjs, SOCIAL_AUTONOMY_PLAN.md, scripts/render-longform-day3-upload-candidate-20260513T2300Z.mjs. This section covers 97 nodes and 99 internal edges; the diagram shows only representative relationships to stay readable.</p>
+<p>Serving API groups implementation around upload, scripts, social, render, mostly in scripts/finish-upload-pipeline.mjs, SOCIAL_AUTONOMY_PLAN.md, scripts/render-longform-day3-upload-candidate-20260513T2300Z.mjs. This section covers 104 nodes and 105 internal edges; the diagram shows only representative relationships to stay readable.</p>
 
 <div class="mermaid">
 %%{init: {"theme": "dark", "themeVariables": {"fontSize": "15.0px", "fontFamily": "Segoe UI, system-ui, sans-serif", "primaryColor": "#1e293b", "primaryTextColor": "#e2e8f0", "primaryBorderColor": "#38bdf8", "secondaryColor": "#0f172a", "tertiaryColor": "#334155", "lineColor": "#64748b", "textColor": "#e2e8f0"}, "flowchart": {"htmlLabels": true, "curve": "basis", "nodeSpacing": 48, "rankSpacing": 64, "padding": 14, "diagramPadding": 10, "useMaxWidth": true}}}%%
 flowchart LR
-    %% Section: Serving API (97 nodes, 99 edges)
+    %% Section: Serving API (104 nodes, 105 edges)
     subgraph serve_api_scripts_finish_upload_pipeline_mjs_6129e166["scripts/finish-upload-pipeline.mjs"]
         scripts_finish_upload_pipeline_outputduration_b35fedff("outputDuration()<br/><small>scripts/finish-upload-pipeline.mjs</small>")
         scripts_finish_upload_pipeline_parsestamp_f91db223("parseStamp()<br/><small>scripts/finish-upload-pipeline.mjs</small>")
@@ -1913,7 +1912,7 @@ flowchart LR
     scripts_finish_upload_pipeline_outputduration_b35fedff -->|calls| scripts_finish_upload_pipeline_playableoutput_9a801335
     scripts_render_longform_stream2_founder_upload_c_49c4c1e6 -->|calls| scripts_render_longform_stream2_founder_upload_c_c835e533
     scripts_render_longform_day3_upload_candidate_20_036f7705 -->|calls| scripts_render_longform_day3_upload_candidate_20_a3401ba3
-    %% Omitted for readability: 79 nodes, 0 edges
+    %% Omitted for readability: 86 nodes, 0 edges
     class scripts_finish_upload_pipeline_outputduration_b35fedff function;
     class scripts_finish_upload_pipeline_parsestamp_f91db223 function;
     class scripts_finish_upload_pipeline_srttimetoseconds_5b08acb6 function;
@@ -2204,13 +2203,14 @@ flowchart LR
 <tr><td><code>SOCIAL_AUTONOMY_PLAN.md</code></td><td>27 nodes</td></tr>
 <tr><td><code>scripts/render-longform-day3-upload-candidate-20260513T2300Z.mjs</code></td><td>15 nodes</td></tr>
 <tr><td><code>scripts/render-longform-stream2-founder-upload-candidate-20260514T0300Z.mjs</code></td><td>15 nodes</td></tr>
+<tr><td><code>SOCIAL_BRIDGE_RESEARCH.md</code></td><td>7 nodes</td></tr>
 <tr><td><code>UX_AUDIT_AND_REDESIGN_PLAN.md</code></td><td>4 nodes</td></tr>
 <tr><td><code>scripts/render-stream3-youtube-seed-upload-test-20260514T1725Z.mjs</code></td><td>4 nodes</td></tr>
     </table>
   </div>
   <div class="card">
     <h4>Design Notes</h4>
-    <p>This section comes from graphify community clustering. Relationship summary: contains x91, calls x8. The diagram prioritizes high-confidence calls or usage relationships; the table keeps the broader node inventory.</p>
+    <p>This section comes from graphify community clustering. Relationship summary: contains x97, calls x8. The diagram prioritizes high-confidence calls or usage relationships; the table keeps the broader node inventory.</p>
   </div>
 </div>
 <hr>
@@ -2569,12 +2569,12 @@ flowchart LR
 
 <!-- ====== 9. Tests & Fixtures ====== -->
 <h2 id="tests-fixtures">9. Tests &amp; Fixtures</h2>
-<p>Tests &amp; Fixtures groups implementation around render, test, scripts, border, mostly in scripts/render-border-shine-test-v3-20260514T1548Z.mjs, scripts/render-all-retention-hacks-test-20260514T1635Z.mjs, scripts/render-border-shine-test-20260514T1535Z.mjs. This section covers 62 nodes and 55 internal edges; the diagram shows only representative relationships to stay readable.</p>
+<p>Tests &amp; Fixtures groups implementation around test, scripts, render, border, mostly in scripts/render-border-shine-test-v3-20260514T1548Z.mjs, scripts/render-all-retention-hacks-test-20260514T1635Z.mjs, scripts/render-border-shine-test-20260514T1535Z.mjs. This section covers 73 nodes and 63 internal edges; the diagram shows only representative relationships to stay readable.</p>
 
 <div class="mermaid">
 %%{init: {"theme": "dark", "themeVariables": {"fontSize": "15.0px", "fontFamily": "Segoe UI, system-ui, sans-serif", "primaryColor": "#1e293b", "primaryTextColor": "#e2e8f0", "primaryBorderColor": "#38bdf8", "secondaryColor": "#0f172a", "tertiaryColor": "#334155", "lineColor": "#64748b", "textColor": "#e2e8f0"}, "flowchart": {"htmlLabels": true, "curve": "basis", "nodeSpacing": 48, "rankSpacing": 64, "padding": 14, "diagramPadding": 10, "useMaxWidth": true}}}%%
 flowchart LR
-    %% Section: Tests &amp; Fixtures (62 nodes, 55 edges)
+    %% Section: Tests &amp; Fixtures (73 nodes, 63 edges)
     subgraph tests_fixtures_scripts_render_all_retention_hack_1e35ad1f["scripts/render-all-retention-hacks-test-20260514T1635Z.mjs"]
         scripts_render_all_retention_hacks_test_20260514_5596d38b("q()<br/><small>scripts/render-all-retention-hacks-test-20260514T1635Z.mjs</small>")
         scripts_render_all_retention_hacks_test_20260514_907c4626("overlayMoving()<br/><small>scripts/render-all-retention-hacks-test-20260514T1635Z.mjs</small>")
@@ -2604,7 +2604,7 @@ flowchart LR
     scripts_render_all_retention_hacks_test_20260514_5596d38b -->|calls| scripts_render_all_retention_hacks_test_20260514_907c4626
     scripts_render_retention_hacks_clean_test_202605_e359bdea -->|calls| scripts_render_retention_hacks_clean_test_202605_8c0293f5
     scripts_render_border_shine_test_v3_20260514t154_81cf23ea -->|calls| scripts_render_border_shine_test_v3_20260514t154_4c83ffdd
-    %% Omitted for readability: 44 nodes, 0 edges
+    %% Omitted for readability: 55 nodes, 0 edges
     class scripts_render_all_retention_hacks_test_20260514_5596d38b test;
     class scripts_render_all_retention_hacks_test_20260514_907c4626 test;
     class scripts_render_all_retention_hacks_test_20260514_de9b0003 test;
@@ -2897,34 +2897,36 @@ flowchart LR
 <tr><td><code>scripts/render-border-shine-test-v2-20260514T1540Z.mjs</code></td><td>8 nodes</td></tr>
 <tr><td><code>scripts/render-retention-hacks-clean-test-20260514T1645Z.mjs</code></td><td>7 nodes</td></tr>
 <tr><td><code>scripts/render-thumbnail-seed-frame-test-20260514T1648Z.mjs</code></td><td>6 nodes</td></tr>
+<tr><td><code>scripts/test-twitter-radar.mjs</code></td><td>6 nodes</td></tr>
 <tr><td><code>scripts/render-general-face-seed-test-20260514T1718Z.mjs</code></td><td>4 nodes</td></tr>
-<tr><td><code>scripts/render-gotham-seed-frames-test-20260514T1658Z.mjs</code></td><td>4 nodes</td></tr>
     </table>
   </div>
   <div class="card">
     <h4>Design Notes</h4>
-    <p>This section comes from graphify community clustering. Relationship summary: contains x52, calls x3. The diagram prioritizes high-confidence calls or usage relationships; the table keeps the broader node inventory.</p>
+    <p>This section comes from graphify community clustering. Relationship summary: contains x60, calls x3. The diagram prioritizes high-confidence calls or usage relationships; the table keeps the broader node inventory.</p>
   </div>
 </div>
 <hr>
 
 <!-- ====== 10. Community 0 ====== -->
 <h2 id="community-0">10. Community 0</h2>
-<p>Community 0 groups implementation around apptsx, maintsx, pageid, jobstatus, mostly in src/App.tsx, src/main.tsx. This section covers 87 nodes and 86 internal edges; the diagram shows only representative relationships to stay readable.</p>
+<p>Community 0 groups implementation around apptsx, maintsx, pageid, jobstatus, mostly in src/App.tsx, src/main.tsx. This section covers 98 nodes and 97 internal edges; the diagram shows only representative relationships to stay readable.</p>
 
 <div class="mermaid">
 %%{init: {"theme": "dark", "themeVariables": {"fontSize": "15.0px", "fontFamily": "Segoe UI, system-ui, sans-serif", "primaryColor": "#1e293b", "primaryTextColor": "#e2e8f0", "primaryBorderColor": "#38bdf8", "secondaryColor": "#0f172a", "tertiaryColor": "#334155", "lineColor": "#64748b", "textColor": "#e2e8f0"}, "flowchart": {"htmlLabels": true, "curve": "basis", "nodeSpacing": 48, "rankSpacing": 64, "padding": 14, "diagramPadding": 10, "useMaxWidth": true}}}%%
 flowchart LR
-    %% Section: Community 0 (87 nodes, 86 edges)
+    %% Section: Community 0 (98 nodes, 97 edges)
     subgraph community_0_src_App_tsx_d0e25b24["src/App.tsx"]
         src_app_tsx_7809c3b0("App.tsx")
         src_app_appstate_a2ea3332("AppState<br/><small>src/App.tsx</small>")
         src_app_card_1775f406("Card()<br/><small>src/App.tsx</small>")
         src_app_clip_e3a33893("Clip<br/><small>src/App.tsx</small>")
         src_app_clipfactory_4f77e6d9("ClipFactory()<br/><small>src/App.tsx</small>")
+        src_app_dispatchcopyoverrideeditor_e2d8f976("DispatchCopyOverrideEditor()<br/><small>src/App.tsx</small>")
         src_app_dispatchfilterid_fc5dd413("DispatchFilterId<br/><small>src/App.tsx</small>")
         src_app_dispatchitem_91a4cc42("DispatchItem<br/><small>src/App.tsx</small>")
         src_app_dispatchlistresponse_7d13ef83("DispatchListResponse<br/><small>src/App.tsx</small>")
+        src_app_dispatchmanualresultform_e2694cd6("DispatchManualResultForm()<br/><small>src/App.tsx</small>")
         src_app_dispatchstatus_796efb5d("DispatchStatus<br/><small>src/App.tsx</small>")
         src_app_engagementtask_8015e7f7("EngagementTask<br/><small>src/App.tsx</small>")
         src_app_facecamtracking_19f29c82("FacecamTracking<br/><small>src/App.tsx</small>")
@@ -2932,20 +2934,20 @@ flowchart LR
         src_app_facecamtrackingproof_66fac79e("FacecamTrackingProof()<br/><small>src/App.tsx</small>")
         src_app_importchecklistitem_7e0f393f("ImportChecklistItem<br/><small>src/App.tsx</small>")
         src_app_importreadiness_25d23258("ImportReadiness<br/><small>src/App.tsx</small>")
-        src_app_job_38488a50("Job<br/><small>src/App.tsx</small>")
-        src_app_jobstatus_1cb14b92("JobStatus<br/><small>src/App.tsx</small>")
     end
     src_main_tsx_4bfa9e1b("main.tsx")
     src_app_tsx_7809c3b0 -->|imports| src_main_tsx_4bfa9e1b
-    %% Omitted for readability: 69 nodes, 0 edges
+    %% Omitted for readability: 80 nodes, 0 edges
     class src_app_tsx_7809c3b0 ui;
     class src_app_appstate_a2ea3332 ui;
     class src_app_card_1775f406 ui;
     class src_app_clip_e3a33893 entry;
     class src_app_clipfactory_4f77e6d9 entry;
+    class src_app_dispatchcopyoverrideeditor_e2d8f976 ui;
     class src_app_dispatchfilterid_fc5dd413 ui;
     class src_app_dispatchitem_91a4cc42 ui;
     class src_app_dispatchlistresponse_7d13ef83 ui;
+    class src_app_dispatchmanualresultform_e2694cd6 ui;
     class src_app_dispatchstatus_796efb5d ui;
     class src_app_engagementtask_8015e7f7 ui;
     class src_app_facecamtracking_19f29c82 ui;
@@ -2953,8 +2955,6 @@ flowchart LR
     class src_app_facecamtrackingproof_66fac79e ui;
     class src_app_importchecklistitem_7e0f393f ui;
     class src_app_importreadiness_25d23258 ui;
-    class src_app_job_38488a50 ui;
-    class src_app_jobstatus_1cb14b92 ui;
     class src_main_tsx_4bfa9e1b ui;
     classDef entry fill:#422006,stroke:#fbbf24,color:#fde68a,stroke-width:1px;
     classDef api fill:#450a0a,stroke:#f87171,color:#fee2e2,stroke-width:1px;
@@ -3075,6 +3075,22 @@ flowchart LR
 </tr>
 <tr>
   <td>13</td>
+  <td><code>ManualPostResult</code><br><small style="color:var(--muted)">src/App.tsx</small></td>
+  <td><span class="tag tag-hook">UI</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>ManualPostResult node in src/App.tsx.</td>
+</tr>
+<tr>
+  <td>14</td>
+  <td><code>PlatformCopyOverride</code><br><small style="color:var(--muted)">src/App.tsx</small></td>
+  <td><span class="tag tag-hook">UI</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>PlatformCopyOverride node in src/App.tsx.</td>
+</tr>
+<tr>
+  <td>15</td>
   <td><code>DispatchItem</code><br><small style="color:var(--muted)">src/App.tsx</small></td>
   <td><span class="tag tag-hook">UI</span></td>
   <td>External entry / no inbound edge</td>
@@ -3082,7 +3098,7 @@ flowchart LR
   <td>DispatchItem node in src/App.tsx.</td>
 </tr>
 <tr>
-  <td>14</td>
+  <td>16</td>
   <td><code>DispatchFilterId</code><br><small style="color:var(--muted)">src/App.tsx</small></td>
   <td><span class="tag tag-hook">UI</span></td>
   <td>External entry / no inbound edge</td>
@@ -3090,7 +3106,7 @@ flowchart LR
   <td>DispatchFilterId node in src/App.tsx.</td>
 </tr>
 <tr>
-  <td>15</td>
+  <td>17</td>
   <td><code>PlatformProfile</code><br><small style="color:var(--muted)">src/App.tsx</small></td>
   <td><span class="tag tag-hook">UI</span></td>
   <td>External entry / no inbound edge</td>
@@ -3098,7 +3114,7 @@ flowchart LR
   <td>PlatformProfile node in src/App.tsx.</td>
 </tr>
 <tr>
-  <td>16</td>
+  <td>18</td>
   <td><code>ScheduleItem</code><br><small style="color:var(--muted)">src/App.tsx</small></td>
   <td><span class="tag tag-hook">UI</span></td>
   <td>External entry / no inbound edge</td>
@@ -3106,7 +3122,7 @@ flowchart LR
   <td>ScheduleItem node in src/App.tsx.</td>
 </tr>
 <tr>
-  <td>17</td>
+  <td>19</td>
   <td><code>EngagementTask</code><br><small style="color:var(--muted)">src/App.tsx</small></td>
   <td><span class="tag tag-hook">UI</span></td>
   <td>External entry / no inbound edge</td>
@@ -3114,7 +3130,7 @@ flowchart LR
   <td>EngagementTask node in src/App.tsx.</td>
 </tr>
 <tr>
-  <td>18</td>
+  <td>20</td>
   <td><code>MonetizationOffer</code><br><small style="color:var(--muted)">src/App.tsx</small></td>
   <td><span class="tag tag-hook">UI</span></td>
   <td>External entry / no inbound edge</td>
@@ -3122,7 +3138,7 @@ flowchart LR
   <td>MonetizationOffer node in src/App.tsx.</td>
 </tr>
 <tr>
-  <td>19</td>
+  <td>21</td>
   <td><code>PostingConnector</code><br><small style="color:var(--muted)">src/App.tsx</small></td>
   <td><span class="tag tag-hook">UI</span></td>
   <td>External entry / no inbound edge</td>
@@ -3130,7 +3146,7 @@ flowchart LR
   <td>PostingConnector node in src/App.tsx.</td>
 </tr>
 <tr>
-  <td>20</td>
+  <td>22</td>
   <td><code>SocialConnection</code><br><small style="color:var(--muted)">src/App.tsx</small></td>
   <td><span class="tag tag-hook">UI</span></td>
   <td>External entry / no inbound edge</td>
@@ -3138,7 +3154,7 @@ flowchart LR
   <td>SocialConnection node in src/App.tsx.</td>
 </tr>
 <tr>
-  <td>21</td>
+  <td>23</td>
   <td><code>PostingValidation</code><br><small style="color:var(--muted)">src/App.tsx</small></td>
   <td><span class="tag tag-hook">UI</span></td>
   <td>External entry / no inbound edge</td>
@@ -3146,7 +3162,7 @@ flowchart LR
   <td>PostingValidation node in src/App.tsx.</td>
 </tr>
 <tr>
-  <td>22</td>
+  <td>24</td>
   <td><code>PostingReadiness</code><br><small style="color:var(--muted)">src/App.tsx</small></td>
   <td><span class="tag tag-hook">UI</span></td>
   <td>External entry / no inbound edge</td>
@@ -3154,7 +3170,7 @@ flowchart LR
   <td>PostingReadiness node in src/App.tsx.</td>
 </tr>
 <tr>
-  <td>23</td>
+  <td>25</td>
   <td><code>DispatchListResponse</code><br><small style="color:var(--muted)">src/App.tsx</small></td>
   <td><span class="tag tag-hook">UI</span></td>
   <td>External entry / no inbound edge</td>
@@ -3162,7 +3178,7 @@ flowchart LR
   <td>DispatchListResponse node in src/App.tsx.</td>
 </tr>
 <tr>
-  <td>24</td>
+  <td>26</td>
   <td><code>Job</code><br><small style="color:var(--muted)">src/App.tsx</small></td>
   <td><span class="tag tag-hook">UI</span></td>
   <td>External entry / no inbound edge</td>
@@ -3170,7 +3186,7 @@ flowchart LR
   <td>Job node in src/App.tsx.</td>
 </tr>
 <tr>
-  <td>25</td>
+  <td>27</td>
   <td><code>MediaJob</code><br><small style="color:var(--muted)">src/App.tsx</small></td>
   <td><span class="tag tag-hook">UI</span></td>
   <td>External entry / no inbound edge</td>
@@ -3178,7 +3194,7 @@ flowchart LR
   <td>MediaJob node in src/App.tsx.</td>
 </tr>
 <tr>
-  <td>26</td>
+  <td>28</td>
   <td><code>ViralFind</code><br><small style="color:var(--muted)">src/App.tsx</small></td>
   <td><span class="tag tag-hook">UI</span></td>
   <td>External entry / no inbound edge</td>
@@ -3186,7 +3202,7 @@ flowchart LR
   <td>ViralFind node in src/App.tsx.</td>
 </tr>
 <tr>
-  <td>27</td>
+  <td>29</td>
   <td><code>PracticeChat</code><br><small style="color:var(--muted)">src/App.tsx</small></td>
   <td><span class="tag tag-hook">UI</span></td>
   <td>External entry / no inbound edge</td>
@@ -3194,28 +3210,12 @@ flowchart LR
   <td>Supports retrieval-augmented Q&amp;A or streaming chat.</td>
 </tr>
 <tr>
-  <td>28</td>
-  <td><code>ThumbnailConcept</code><br><small style="color:var(--muted)">src/App.tsx</small></td>
-  <td><span class="tag tag-hook">UI</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>ThumbnailConcept node in src/App.tsx.</td>
-</tr>
-<tr>
-  <td>29</td>
-  <td><code>MediaValidation</code><br><small style="color:var(--muted)">src/App.tsx</small></td>
-  <td><span class="tag tag-hook">UI</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>MediaValidation node in src/App.tsx.</td>
-</tr>
-<tr>
   <td>30</td>
-  <td><code>MediaFile</code><br><small style="color:var(--muted)">src/App.tsx</small></td>
+  <td><code>TwitterRadarItem</code><br><small style="color:var(--muted)">src/App.tsx</small></td>
   <td><span class="tag tag-hook">UI</span></td>
   <td>External entry / no inbound edge</td>
   <td>No direct outbound edge</td>
-  <td>MediaFile node in src/App.tsx.</td>
+  <td>TwitterRadarItem node in src/App.tsx.</td>
 </tr>
 </table>
 
@@ -3224,73 +3224,72 @@ flowchart LR
     <h4>Key Files</h4>
     <table style="width:100%;font-size:0.85rem;">
       <tr><th>File</th><th>Coverage</th></tr>
-      <tr><td><code>src/App.tsx</code></td><td>86 nodes</td></tr>
+      <tr><td><code>src/App.tsx</code></td><td>97 nodes</td></tr>
 <tr><td><code>src/main.tsx</code></td><td>1 nodes</td></tr>
     </table>
   </div>
   <div class="card">
     <h4>Design Notes</h4>
-    <p>This section comes from graphify community clustering. Relationship summary: contains x85, imports x1. The diagram prioritizes high-confidence calls or usage relationships; the table keeps the broader node inventory.</p>
+    <p>This section comes from graphify community clustering. Relationship summary: contains x96, imports x1. The diagram prioritizes high-confidence calls or usage relationships; the table keeps the broader node inventory.</p>
   </div>
 </div>
 <hr>
 
 <!-- ====== 11. Community 1 ====== -->
 <h2 id="community-1">11. Community 1</h2>
-<p>Community 1 groups implementation around servermjs, server, dirname, root, mostly in server/server.mjs. This section covers 50 nodes and 60 internal edges; the diagram shows only representative relationships to stay readable.</p>
+<p>Community 1 groups implementation around servermjs, server, dirname, root, mostly in server/server.mjs. This section covers 59 nodes and 74 internal edges; the diagram shows only representative relationships to stay readable.</p>
 
 <div class="mermaid">
 %%{init: {"theme": "dark", "themeVariables": {"fontSize": "15.0px", "fontFamily": "Segoe UI, system-ui, sans-serif", "primaryColor": "#1e293b", "primaryTextColor": "#e2e8f0", "primaryBorderColor": "#38bdf8", "secondaryColor": "#0f172a", "tertiaryColor": "#334155", "lineColor": "#64748b", "textColor": "#e2e8f0"}, "flowchart": {"htmlLabels": true, "curve": "basis", "nodeSpacing": 48, "rankSpacing": 64, "padding": 14, "diagramPadding": 10, "useMaxWidth": true}}}%%
 flowchart LR
-    %% Section: Community 1 (50 nodes, 60 edges)
+    %% Section: Community 1 (59 nodes, 74 edges)
+    server_server_parsetranscript_fa4564ee("parseTranscript()<br/><small>server/server.mjs</small>")
     server_server_assescape_b05ca5a7("assEscape()<br/><small>server/server.mjs</small>")
+    server_server_buildtwitteraccountsearchurl_cb1cb7e3("buildTwitterAccountSearchUrl()<br/><small>server/server.mjs</small>")
+    server_server_buildtwittersearchurl_3b5245d7("buildTwitterSearchUrl()<br/><small>server/server.mjs</small>")
     server_server_dispatchcopyforvalidation_a2bbc219("dispatchCopyForValidation()<br/><small>server/server.mjs</small>")
     server_server_isvideolike_604e8de1("isVideoLike()<br/><small>server/server.mjs</small>")
-    server_server_loadvalidationcache_342616cd("loadValidationCache()<br/><small>server/server.mjs</small>")
-    server_server_mediamatchkey_1a9c42c4("mediaMatchKey()<br/><small>server/server.mjs</small>")
-    server_server_mediavalidationfingerprint_15ca2b35("mediaValidationFingerprint()<br/><small>server/server.mjs</small>")
     server_server_validatemediafile_fe72fe6b("validateMediaFile()<br/><small>server/server.mjs</small>")
-    server_server_publicbaseurl_ba639b97("publicBaseUrl()<br/><small>server/server.mjs</small>")
-    server_server_socialcallbackurl_47aea863("socialCallbackUrl()<br/><small>server/server.mjs</small>")
-    server_server_buildoauthurl_c2fe5b96("buildOAuthUrl()<br/><small>server/server.mjs</small>")
+    server_server_loadvalidationcache_342616cd("loadValidationCache()<br/><small>server/server.mjs</small>")
+    server_server_mediavalidationfingerprint_15ca2b35("mediaValidationFingerprint()<br/><small>server/server.mjs</small>")
     server_server_platformlimit_ecc59e54("platformLimit()<br/><small>server/server.mjs</small>")
     server_server_validatedispatchforplatform_2bbb1e76("validateDispatchForPlatform()<br/><small>server/server.mjs</small>")
+    server_server_mediamatchkey_1a9c42c4("mediaMatchKey()<br/><small>server/server.mjs</small>")
     server_server_matchesstreamartifact_74d7fb55("matchesStreamArtifact()<br/><small>server/server.mjs</small>")
+    server_server_makeradaritem_8ee34ef6("makeRadarItem()<br/><small>server/server.mjs</small>")
+    server_server_makewatchlistradaritem_962bfa4c("makeWatchlistRadarItem()<br/><small>server/server.mjs</small>")
+    server_server_radarreason_d6956a47("radarReason()<br/><small>server/server.mjs</small>")
     server_server_captionchunks_0125f91e("captionChunks()<br/><small>server/server.mjs</small>")
     server_server_tagtext_5686f72d("tagText()<br/><small>server/server.mjs</small>")
-    server_server_decode_7715fa8e("decode()<br/><small>server/server.mjs</small>")
-    server_server_texttokens_304b5cef("textTokens()<br/><small>server/server.mjs</small>")
-    server_server_tokensimilarity_dd24da86("tokenSimilarity()<br/><small>server/server.mjs</small>")
     server_server_isvideolike_604e8de1 -->|calls| server_server_validatemediafile_fe72fe6b
     server_server_loadvalidationcache_342616cd -->|calls| server_server_validatemediafile_fe72fe6b
     server_server_mediavalidationfingerprint_15ca2b35 -->|calls| server_server_validatemediafile_fe72fe6b
-    server_server_publicbaseurl_ba639b97 -->|calls| server_server_socialcallbackurl_47aea863
-    server_server_socialcallbackurl_47aea863 -->|calls| server_server_buildoauthurl_c2fe5b96
     server_server_platformlimit_ecc59e54 -->|calls| server_server_validatedispatchforplatform_2bbb1e76
     server_server_dispatchcopyforvalidation_a2bbc219 -->|calls| server_server_validatedispatchforplatform_2bbb1e76
     server_server_mediamatchkey_1a9c42c4 -->|calls| server_server_matchesstreamartifact_74d7fb55
+    server_server_buildtwittersearchurl_3b5245d7 -->|calls| server_server_makeradaritem_8ee34ef6
+    server_server_buildtwitteraccountsearchurl_cb1cb7e3 -->|calls| server_server_makewatchlistradaritem_962bfa4c
+    server_server_radarreason_d6956a47 -->|calls| server_server_makeradaritem_8ee34ef6
     server_server_assescape_b05ca5a7 -->|calls| server_server_captionchunks_0125f91e
-    server_server_tagtext_5686f72d -->|calls| server_server_decode_7715fa8e
-    server_server_texttokens_304b5cef -->|calls| server_server_tokensimilarity_dd24da86
-    %% Omitted for readability: 32 nodes, 0 edges
+    %% Omitted for readability: 41 nodes, 0 edges
+    class server_server_parsetranscript_fa4564ee function;
     class server_server_assescape_b05ca5a7 async;
+    class server_server_buildtwitteraccountsearchurl_cb1cb7e3 function;
+    class server_server_buildtwittersearchurl_3b5245d7 function;
     class server_server_dispatchcopyforvalidation_a2bbc219 function;
     class server_server_isvideolike_604e8de1 function;
-    class server_server_loadvalidationcache_342616cd function;
-    class server_server_mediamatchkey_1a9c42c4 function;
-    class server_server_mediavalidationfingerprint_15ca2b35 function;
     class server_server_validatemediafile_fe72fe6b function;
-    class server_server_publicbaseurl_ba639b97 function;
-    class server_server_socialcallbackurl_47aea863 function;
-    class server_server_buildoauthurl_c2fe5b96 function;
+    class server_server_loadvalidationcache_342616cd function;
+    class server_server_mediavalidationfingerprint_15ca2b35 function;
     class server_server_platformlimit_ecc59e54 function;
     class server_server_validatedispatchforplatform_2bbb1e76 function;
+    class server_server_mediamatchkey_1a9c42c4 function;
     class server_server_matchesstreamartifact_74d7fb55 async;
+    class server_server_makeradaritem_8ee34ef6 function;
+    class server_server_makewatchlistradaritem_962bfa4c function;
+    class server_server_radarreason_d6956a47 function;
     class server_server_captionchunks_0125f91e function;
     class server_server_tagtext_5686f72d function;
-    class server_server_decode_7715fa8e function;
-    class server_server_texttokens_304b5cef function;
-    class server_server_tokensimilarity_dd24da86 function;
     classDef entry fill:#422006,stroke:#fbbf24,color:#fde68a,stroke-width:1px;
     classDef api fill:#450a0a,stroke:#f87171,color:#fee2e2,stroke-width:1px;
     classDef async fill:#2e1065,stroke:#a78bfa,color:#ede9fe,stroke-width:1px;
@@ -3442,14 +3441,6 @@ flowchart LR
 </tr>
 <tr>
   <td>17</td>
-  <td><code>publicBaseUrl()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td><code>socialCallbackUrl()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
-  <td>publicBaseUrl() node in server/server.mjs.</td>
-</tr>
-<tr>
-  <td>18</td>
   <td><code>hasEnv()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -3457,7 +3448,7 @@ flowchart LR
   <td>hasEnv() node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>19</td>
+  <td>18</td>
   <td><code>providerConfigs</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -3465,23 +3456,7 @@ flowchart LR
   <td>Reads, resolves, or persists project configuration.</td>
 </tr>
 <tr>
-  <td>20</td>
-  <td><code>socialCallbackUrl()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td><code>publicBaseUrl()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
-  <td><code>buildOAuthUrl()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
-  <td>socialCallbackUrl() node in server/server.mjs.</td>
-</tr>
-<tr>
-  <td>21</td>
-  <td><code>buildOAuthUrl()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td><code>socialCallbackUrl()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
-  <td>No direct outbound edge</td>
-  <td>buildOAuthUrl() node in server/server.mjs.</td>
-</tr>
-<tr>
-  <td>22</td>
+  <td>19</td>
   <td><code>platformLimits</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -3489,7 +3464,7 @@ flowchart LR
   <td>platformLimits node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>23</td>
+  <td>20</td>
   <td><code>platformLimit()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -3497,7 +3472,7 @@ flowchart LR
   <td>platformLimit() node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>24</td>
+  <td>21</td>
   <td><code>dispatchCopyForValidation()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -3505,7 +3480,7 @@ flowchart LR
   <td>dispatchCopyForValidation() node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>25</td>
+  <td>22</td>
   <td><code>validateDispatchForPlatform()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td><code>dispatchCopyForValidation()</code><br><small style="color:var(--muted)">server/server.mjs</small><br><code>platformLimit()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
@@ -3513,7 +3488,7 @@ flowchart LR
   <td>validateDispatchForPlatform() node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>26</td>
+  <td>23</td>
   <td><code>mediaMatchKey()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -3521,7 +3496,7 @@ flowchart LR
   <td>mediaMatchKey() node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>27</td>
+  <td>24</td>
   <td><code>matchesStreamArtifact()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-async">Async</span></td>
   <td><code>mediaMatchKey()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
@@ -3529,7 +3504,7 @@ flowchart LR
   <td>matchesStreamArtifact() node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>28</td>
+  <td>25</td>
   <td><code>transcriptUploadExts</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -3537,7 +3512,7 @@ flowchart LR
   <td>transcriptUploadExts node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>29</td>
+  <td>26</td>
   <td><code>mediaUploadExts</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -3545,12 +3520,36 @@ flowchart LR
   <td>mediaUploadExts node in server/server.mjs.</td>
 </tr>
 <tr>
-  <td>30</td>
+  <td>27</td>
   <td><code>normalizeClip()</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
   <td><span class="tag tag-cmd">Entry</span></td>
   <td>External entry / no inbound edge</td>
   <td>No direct outbound edge</td>
   <td>normalizeClip() node in server/server.mjs.</td>
+</tr>
+<tr>
+  <td>28</td>
+  <td><code>dispatchStatuses</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>dispatchStatuses node in server/server.mjs.</td>
+</tr>
+<tr>
+  <td>29</td>
+  <td><code>currentStyleGateReadyPathList</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>currentStyleGateReadyPathList node in server/server.mjs.</td>
+</tr>
+<tr>
+  <td>30</td>
+  <td><code>currentStyleGateReadyPaths</code><br><small style="color:var(--muted)">server/server.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>currentStyleGateReadyPaths node in server/server.mjs.</td>
 </tr>
 </table>
 
@@ -3559,12 +3558,12 @@ flowchart LR
     <h4>Key Files</h4>
     <table style="width:100%;font-size:0.85rem;">
       <tr><th>File</th><th>Coverage</th></tr>
-      <tr><td><code>server/server.mjs</code></td><td>50 nodes</td></tr>
+      <tr><td><code>server/server.mjs</code></td><td>59 nodes</td></tr>
     </table>
   </div>
   <div class="card">
     <h4>Design Notes</h4>
-    <p>This section comes from graphify community clustering. Relationship summary: contains x49, calls x11. The diagram prioritizes high-confidence calls or usage relationships; the table keeps the broader node inventory.</p>
+    <p>This section comes from graphify community clustering. Relationship summary: contains x58, calls x16. The diagram prioritizes high-confidence calls or usage relationships; the table keeps the broader node inventory.</p>
   </div>
 </div>
 <hr>
@@ -4235,19 +4234,21 @@ flowchart LR
 
 <!-- ====== 14. Community 229 ====== -->
 <h2 id="community-229">14. Community 229</h2>
-<p>Community 229 groups implementation around render, day4, package, 20260515t1310zmjs, mostly in scripts/render-day4-package-20260515T1310Z.mjs. This section covers 36 nodes and 39 internal edges; the diagram shows only representative relationships to stay readable.</p>
+<p>Community 229 groups implementation around render, day4, package, 20260515t1310zmjs, mostly in scripts/render-day4-package-20260515T1310Z.mjs. This section covers 38 nodes and 41 internal edges; the diagram shows only representative relationships to stay readable.</p>
 
 <div class="mermaid">
 %%{init: {"theme": "dark", "themeVariables": {"fontSize": "15.0px", "fontFamily": "Segoe UI, system-ui, sans-serif", "primaryColor": "#1e293b", "primaryTextColor": "#e2e8f0", "primaryBorderColor": "#38bdf8", "secondaryColor": "#0f172a", "tertiaryColor": "#334155", "lineColor": "#64748b", "textColor": "#e2e8f0"}, "flowchart": {"htmlLabels": true, "curve": "basis", "nodeSpacing": 48, "rankSpacing": 64, "padding": 14, "diagramPadding": 10, "useMaxWidth": true}}}%%
 flowchart LR
-    %% Section: Community 229 (36 nodes, 39 edges)
+    %% Section: Community 229 (38 nodes, 41 edges)
     scripts_render_day4_package_20260515t1310z_addre_b4a9f621("addRetention()<br/><small>scripts/render-day4-package-20260515T1310Z.mjs</small>")
     scripts_render_day4_package_20260515t1310z_filte_982c4f81("filterPath()<br/><small>scripts/render-day4-package-20260515T1310Z.mjs</small>")
     scripts_render_day4_package_20260515t1310z_title_69d991e3("titleFilters()<br/><small>scripts/render-day4-package-20260515T1310Z.mjs</small>")
     scripts_render_day4_package_20260515t1310z_build_ae197a8c("buildShortFilter()<br/><small>scripts/render-day4-package-20260515T1310Z.mjs</small>")
     scripts_render_day4_package_20260515t1310z_filte_9ed38200("filter<br/><small>scripts/render-day4-package-20260515T1310Z.mjs</small>")
     scripts_render_day4_package_20260515t1310z_z_180375f2("Z<br/><small>scripts/render-day4-package-20260515T1310Z.mjs</small>")
+    scripts_render_day4_package_20260515t1310z_clean_df45db82("cleanWord()<br/><small>scripts/render-day4-package-20260515T1310Z.mjs</small>")
     scripts_render_day4_package_20260515t1310z_clips_56271cf2("clips<br/><small>scripts/render-day4-package-20260515T1310Z.mjs</small>")
+    scripts_render_day4_package_20260515t1310z_colle_305b90c2("collectWords()<br/><small>scripts/render-day4-package-20260515T1310Z.mjs</small>")
     scripts_render_day4_package_20260515t1310z_conca_389db905("concat<br/><small>scripts/render-day4-package-20260515T1310Z.mjs</small>")
     scripts_render_day4_package_20260515t1310z_cov_b8db1c0b("cov<br/><small>scripts/render-day4-package-20260515T1310Z.mjs</small>")
     scripts_render_day4_package_20260515t1310z_cover_38df1d84("coverage()<br/><small>scripts/render-day4-package-20260515T1310Z.mjs</small>")
@@ -4257,20 +4258,20 @@ flowchart LR
     scripts_render_day4_package_20260515t1310z_event_3a8d3903("events<br/><small>scripts/render-day4-package-20260515T1310Z.mjs</small>")
     scripts_render_day4_package_20260515t1310z_exist_105133ab("existingTranscript<br/><small>scripts/render-day4-package-20260515T1310Z.mjs</small>")
     scripts_render_day4_package_20260515t1310z_idx_3111b77d("idx<br/><small>scripts/render-day4-package-20260515T1310Z.mjs</small>")
-    scripts_render_day4_package_20260515t1310z_longb_673c42ea("longBeats<br/><small>scripts/render-day4-package-20260515T1310Z.mjs</small>")
-    scripts_render_day4_package_20260515t1310z_longc_e9331864("longConcepts<br/><small>scripts/render-day4-package-20260515T1310Z.mjs</small>")
     scripts_render_day4_package_20260515t1310z_filte_982c4f81 -->|calls| scripts_render_day4_package_20260515t1310z_build_ae197a8c
     scripts_render_day4_package_20260515t1310z_title_69d991e3 -->|calls| scripts_render_day4_package_20260515t1310z_build_ae197a8c
     scripts_render_day4_package_20260515t1310z_addre_b4a9f621 -->|calls| scripts_render_day4_package_20260515t1310z_filte_9ed38200
     scripts_render_day4_package_20260515t1310z_addre_b4a9f621 -->|calls| scripts_render_day4_package_20260515t1310z_build_ae197a8c
-    %% Omitted for readability: 18 nodes, 0 edges
+    %% Omitted for readability: 20 nodes, 0 edges
     class scripts_render_day4_package_20260515t1310z_addre_b4a9f621 function;
     class scripts_render_day4_package_20260515t1310z_filte_982c4f81 function;
     class scripts_render_day4_package_20260515t1310z_title_69d991e3 function;
     class scripts_render_day4_package_20260515t1310z_build_ae197a8c function;
     class scripts_render_day4_package_20260515t1310z_filte_9ed38200 function;
     class scripts_render_day4_package_20260515t1310z_z_180375f2 klass;
+    class scripts_render_day4_package_20260515t1310z_clean_df45db82 function;
     class scripts_render_day4_package_20260515t1310z_clips_56271cf2 entry;
+    class scripts_render_day4_package_20260515t1310z_colle_305b90c2 function;
     class scripts_render_day4_package_20260515t1310z_conca_389db905 function;
     class scripts_render_day4_package_20260515t1310z_cov_b8db1c0b function;
     class scripts_render_day4_package_20260515t1310z_cover_38df1d84 function;
@@ -4280,8 +4281,6 @@ flowchart LR
     class scripts_render_day4_package_20260515t1310z_event_3a8d3903 function;
     class scripts_render_day4_package_20260515t1310z_exist_105133ab function;
     class scripts_render_day4_package_20260515t1310z_idx_3111b77d function;
-    class scripts_render_day4_package_20260515t1310z_longb_673c42ea function;
-    class scripts_render_day4_package_20260515t1310z_longc_e9331864 function;
     classDef entry fill:#422006,stroke:#fbbf24,color:#fde68a,stroke-width:1px;
     classDef api fill:#450a0a,stroke:#f87171,color:#fee2e2,stroke-width:1px;
     classDef async fill:#2e1065,stroke:#a78bfa,color:#ede9fe,stroke-width:1px;
@@ -4377,6 +4376,14 @@ flowchart LR
 </tr>
 <tr>
   <td>10</td>
+  <td><code>cleanWord()</code><br><small style="color:var(--muted)">scripts/render-day4-package-20260515T1310Z.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>cleanWord() node in scripts/render-day4-package-20260515T1310Z.mjs.</td>
+</tr>
+<tr>
+  <td>11</td>
   <td><code>q()</code><br><small style="color:var(--muted)">scripts/render-day4-package-20260515T1310Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -4384,7 +4391,7 @@ flowchart LR
   <td>q() node in scripts/render-day4-package-20260515T1310Z.mjs.</td>
 </tr>
 <tr>
-  <td>11</td>
+  <td>12</td>
   <td><code>titleFilters()</code><br><small style="color:var(--muted)">scripts/render-day4-package-20260515T1310Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -4392,7 +4399,7 @@ flowchart LR
   <td>titleFilters() node in scripts/render-day4-package-20260515T1310Z.mjs.</td>
 </tr>
 <tr>
-  <td>12</td>
+  <td>13</td>
   <td><code>addRetention()</code><br><small style="color:var(--muted)">scripts/render-day4-package-20260515T1310Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -4400,7 +4407,7 @@ flowchart LR
   <td>addRetention() node in scripts/render-day4-package-20260515T1310Z.mjs.</td>
 </tr>
 <tr>
-  <td>13</td>
+  <td>14</td>
   <td><code>buildShortFilter()</code><br><small style="color:var(--muted)">scripts/render-day4-package-20260515T1310Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td><code>addRetention()</code><br><small style="color:var(--muted)">scripts/render-day4-package-20260515T1310Z.mjs</small><br><code>filterPath()</code><br><small style="color:var(--muted)">scripts/render-day4-package-20260515T1310Z.mjs</small><br><code>titleFilters()</code><br><small style="color:var(--muted)">scripts/render-day4-package-20260515T1310Z.mjs</small></td>
@@ -4408,7 +4415,15 @@ flowchart LR
   <td>buildShortFilter() node in scripts/render-day4-package-20260515T1310Z.mjs.</td>
 </tr>
 <tr>
-  <td>14</td>
+  <td>15</td>
+  <td><code>collectWords()</code><br><small style="color:var(--muted)">scripts/render-day4-package-20260515T1310Z.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>collectWords() node in scripts/render-day4-package-20260515T1310Z.mjs.</td>
+</tr>
+<tr>
+  <td>16</td>
   <td><code>coverage()</code><br><small style="color:var(--muted)">scripts/render-day4-package-20260515T1310Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -4416,7 +4431,7 @@ flowchart LR
   <td>Supports retrieval-augmented Q&amp;A or streaming chat.</td>
 </tr>
 <tr>
-  <td>15</td>
+  <td>17</td>
   <td><code>transcript</code><br><small style="color:var(--muted)">scripts/render-day4-package-20260515T1310Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -4424,7 +4439,7 @@ flowchart LR
   <td>transcript node in scripts/render-day4-package-20260515T1310Z.mjs.</td>
 </tr>
 <tr>
-  <td>16</td>
+  <td>18</td>
   <td><code>rendered</code><br><small style="color:var(--muted)">scripts/render-day4-package-20260515T1310Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -4432,7 +4447,7 @@ flowchart LR
   <td>rendered node in scripts/render-day4-package-20260515T1310Z.mjs.</td>
 </tr>
 <tr>
-  <td>17</td>
+  <td>19</td>
   <td><code>events</code><br><small style="color:var(--muted)">scripts/render-day4-package-20260515T1310Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -4440,7 +4455,7 @@ flowchart LR
   <td>events node in scripts/render-day4-package-20260515T1310Z.mjs.</td>
 </tr>
 <tr>
-  <td>18</td>
+  <td>20</td>
   <td><code>qa</code><br><small style="color:var(--muted)">scripts/render-day4-package-20260515T1310Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -4448,7 +4463,7 @@ flowchart LR
   <td>qa node in scripts/render-day4-package-20260515T1310Z.mjs.</td>
 </tr>
 <tr>
-  <td>19</td>
+  <td>21</td>
   <td><code>cov</code><br><small style="color:var(--muted)">scripts/render-day4-package-20260515T1310Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -4456,7 +4471,7 @@ flowchart LR
   <td>cov node in scripts/render-day4-package-20260515T1310Z.mjs.</td>
 </tr>
 <tr>
-  <td>20</td>
+  <td>22</td>
   <td><code>filter</code><br><small style="color:var(--muted)">scripts/render-day4-package-20260515T1310Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td><code>addRetention()</code><br><small style="color:var(--muted)">scripts/render-day4-package-20260515T1310Z.mjs</small></td>
@@ -4464,7 +4479,7 @@ flowchart LR
   <td>filter node in scripts/render-day4-package-20260515T1310Z.mjs.</td>
 </tr>
 <tr>
-  <td>21</td>
+  <td>23</td>
   <td><code>probe</code><br><small style="color:var(--muted)">scripts/render-day4-package-20260515T1310Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -4472,7 +4487,7 @@ flowchart LR
   <td>probe node in scripts/render-day4-package-20260515T1310Z.mjs.</td>
 </tr>
 <tr>
-  <td>22</td>
+  <td>24</td>
   <td><code>concat</code><br><small style="color:var(--muted)">scripts/render-day4-package-20260515T1310Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -4480,7 +4495,7 @@ flowchart LR
   <td>concat node in scripts/render-day4-package-20260515T1310Z.mjs.</td>
 </tr>
 <tr>
-  <td>23</td>
+  <td>25</td>
   <td><code>longDuration</code><br><small style="color:var(--muted)">scripts/render-day4-package-20260515T1310Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -4488,7 +4503,7 @@ flowchart LR
   <td>longDuration node in scripts/render-day4-package-20260515T1310Z.mjs.</td>
 </tr>
 <tr>
-  <td>24</td>
+  <td>26</td>
   <td><code>longEvents</code><br><small style="color:var(--muted)">scripts/render-day4-package-20260515T1310Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -4496,7 +4511,7 @@ flowchart LR
   <td>longEvents node in scripts/render-day4-package-20260515T1310Z.mjs.</td>
 </tr>
 <tr>
-  <td>25</td>
+  <td>27</td>
   <td><code>longQa</code><br><small style="color:var(--muted)">scripts/render-day4-package-20260515T1310Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -4504,7 +4519,7 @@ flowchart LR
   <td>longQa node in scripts/render-day4-package-20260515T1310Z.mjs.</td>
 </tr>
 <tr>
-  <td>26</td>
+  <td>28</td>
   <td><code>longCov</code><br><small style="color:var(--muted)">scripts/render-day4-package-20260515T1310Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -4512,7 +4527,7 @@ flowchart LR
   <td>longCov node in scripts/render-day4-package-20260515T1310Z.mjs.</td>
 </tr>
 <tr>
-  <td>27</td>
+  <td>29</td>
   <td><code>longProbe</code><br><small style="color:var(--muted)">scripts/render-day4-package-20260515T1310Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
@@ -4520,29 +4535,13 @@ flowchart LR
   <td>longProbe node in scripts/render-day4-package-20260515T1310Z.mjs.</td>
 </tr>
 <tr>
-  <td>28</td>
+  <td>30</td>
   <td><code>dataPath</code><br><small style="color:var(--muted)">scripts/render-day4-package-20260515T1310Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
   <td>No direct outbound edge</td>
   <td>dataPath node in scripts/render-day4-package-20260515T1310Z.mjs.</td>
 </tr>
-<tr>
-  <td>29</td>
-  <td><code>data</code><br><small style="color:var(--muted)">scripts/render-day4-package-20260515T1310Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>data node in scripts/render-day4-package-20260515T1310Z.mjs.</td>
-</tr>
-<tr>
-  <td>30</td>
-  <td><code>now</code><br><small style="color:var(--muted)">scripts/render-day4-package-20260515T1310Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>now node in scripts/render-day4-package-20260515T1310Z.mjs.</td>
-</tr>
 </table>
 
 <div class="grid">
@@ -4550,426 +4549,79 @@ flowchart LR
     <h4>Key Files</h4>
     <table style="width:100%;font-size:0.85rem;">
       <tr><th>File</th><th>Coverage</th></tr>
-      <tr><td><code>scripts/render-day4-package-20260515T1310Z.mjs</code></td><td>36 nodes</td></tr>
+      <tr><td><code>scripts/render-day4-package-20260515T1310Z.mjs</code></td><td>38 nodes</td></tr>
     </table>
   </div>
   <div class="card">
     <h4>Design Notes</h4>
-    <p>This section comes from graphify community clustering. Relationship summary: contains x35, calls x4. The diagram prioritizes high-confidence calls or usage relationships; the table keeps the broader node inventory.</p>
+    <p>This section comes from graphify community clustering. Relationship summary: contains x37, calls x4. The diagram prioritizes high-confidence calls or usage relationships; the table keeps the broader node inventory.</p>
   </div>
 </div>
 <hr>
 
-<!-- ====== 15. Community 31 ====== -->
-<h2 id="community-31">15. Community 31</h2>
-<p>Community 31 groups implementation around render, scripts, stream2, billion, mostly in scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs, scripts/render-longform-day3-clean-captions-20260513T1900Z.mjs. This section covers 35 nodes and 33 internal edges; the diagram shows only representative relationships to stay readable.</p>
+<!-- ====== 15. Community 220 ====== -->
+<h2 id="community-220">15. Community 220</h2>
+<p>Community 220 groups implementation around render, stream2, house, scripts, mostly in scripts/render-stream2-mic-first-company-second-house-v3-20260514T0742Z.mjs, scripts/render-stream2-big-day-house-v3-20260514T0347Z.mjs. This section covers 37 nodes and 35 internal edges; the diagram shows only representative relationships to stay readable.</p>
 
 <div class="mermaid">
 %%{init: {"theme": "dark", "themeVariables": {"fontSize": "15.0px", "fontFamily": "Segoe UI, system-ui, sans-serif", "primaryColor": "#1e293b", "primaryTextColor": "#e2e8f0", "primaryBorderColor": "#38bdf8", "secondaryColor": "#0f172a", "tertiaryColor": "#334155", "lineColor": "#64748b", "textColor": "#e2e8f0"}, "flowchart": {"htmlLabels": true, "curve": "basis", "nodeSpacing": 48, "rankSpacing": 64, "padding": 14, "diagramPadding": 10, "useMaxWidth": true}}}%%
 flowchart LR
-    %% Section: Community 31 (35 nodes, 33 edges)
-    subgraph community_31_scripts_render_stream2_billion_comp_84677b0e["scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs"]
-        scripts_render_stream2_billion_company_house_v3_bcd587f6("render-stream2-billion-company-house-v3...<br/><small>scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small>")
-        scripts_render_stream2_billion_company_house_v3_ffb5571c("root<br/><small>scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small>")
-        scripts_render_stream2_billion_company_house_v3_8825d2cb("copy<br/><small>scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small>")
-        scripts_render_stream2_billion_company_house_v3_2fd37400("run()<br/><small>scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small>")
-        scripts_render_stream2_billion_company_house_v3_40d80110("esc()<br/><small>scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small>")
-        scripts_render_stream2_billion_company_house_v3_da562902("filterPath()<br/><small>scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small>")
-        scripts_render_stream2_billion_company_house_v3_379c8896("transcript<br/><small>scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small>")
-        scripts_render_stream2_billion_company_house_v3_c89f2d86("events<br/><small>scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small>")
-        scripts_render_stream2_billion_company_house_v3_bbf14326("captionEvents<br/><small>scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small>")
-        scripts_render_stream2_billion_company_house_v3_192ff525("qa<br/><small>scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small>")
-        scripts_render_stream2_billion_company_house_v3_1131b7b7("vf<br/><small>scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small>")
-        scripts_render_stream2_billion_company_house_v3_d17139ef("probe<br/><small>scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small>")
-        scripts_render_stream2_billion_company_house_v3_e3a560ed("review<br/><small>scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small>")
-        scripts_render_stream2_billion_company_house_v3_942fdc00("reviewJson<br/><small>scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small>")
-        scripts_render_stream2_billion_company_house_v3_c9c63480("metadata<br/><small>scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small>")
-        scripts_render_stream2_billion_company_house_v3_ab8c6891("dataPath<br/><small>scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small>")
-        scripts_render_stream2_billion_company_house_v3_7e229bd5("data<br/><small>scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small>")
+    %% Section: Community 220 (37 nodes, 35 edges)
+    subgraph community_220_scripts_render_stream2_big_day_hou_2ef96b3a["scripts/render-stream2-big-day-house-v3-20260514T0347Z.mjs"]
+        scripts_render_stream2_big_day_house_v3_20260514_7d81c5d4("render-stream2-big-day-house-v3-2026051...<br/><small>scripts/render-stream2-big-day-house-v3-20260514T0347Z.mjs</small>")
+        scripts_render_stream2_big_day_house_v3_20260514_b33cccde("root<br/><small>scripts/render-stream2-big-day-house-v3-20260514T0347Z.mjs</small>")
+        scripts_render_stream2_big_day_house_v3_20260514_3b0c66d6("copy<br/><small>scripts/render-stream2-big-day-house-v3-20260514T0347Z.mjs</small>")
+        scripts_render_stream2_big_day_house_v3_20260514_00587daa("run()<br/><small>scripts/render-stream2-big-day-house-v3-20260514T0347Z.mjs</small>")
+        scripts_render_stream2_big_day_house_v3_20260514_a2296233("esc()<br/><small>scripts/render-stream2-big-day-house-v3-20260514T0347Z.mjs</small>")
+        scripts_render_stream2_big_day_house_v3_20260514_e6c921e0("filterPath()<br/><small>scripts/render-stream2-big-day-house-v3-20260514T0347Z.mjs</small>")
+        scripts_render_stream2_big_day_house_v3_20260514_5f42d47d("transcript<br/><small>scripts/render-stream2-big-day-house-v3-20260514T0347Z.mjs</small>")
+        scripts_render_stream2_big_day_house_v3_20260514_bd5fb66e("events<br/><small>scripts/render-stream2-big-day-house-v3-20260514T0347Z.mjs</small>")
+        scripts_render_stream2_big_day_house_v3_20260514_71e00a8c("qa<br/><small>scripts/render-stream2-big-day-house-v3-20260514T0347Z.mjs</small>")
+        scripts_render_stream2_big_day_house_v3_20260514_b8413c66("vf<br/><small>scripts/render-stream2-big-day-house-v3-20260514T0347Z.mjs</small>")
+        scripts_render_stream2_big_day_house_v3_20260514_a7ff859a("probe<br/><small>scripts/render-stream2-big-day-house-v3-20260514T0347Z.mjs</small>")
+        scripts_render_stream2_big_day_house_v3_20260514_23d8d75d("review<br/><small>scripts/render-stream2-big-day-house-v3-20260514T0347Z.mjs</small>")
+        scripts_render_stream2_big_day_house_v3_20260514_2c761fb1("reviewJson<br/><small>scripts/render-stream2-big-day-house-v3-20260514T0347Z.mjs</small>")
+        scripts_render_stream2_big_day_house_v3_20260514_40dc5fc6("metadata<br/><small>scripts/render-stream2-big-day-house-v3-20260514T0347Z.mjs</small>")
+        scripts_render_stream2_big_day_house_v3_20260514_4e7b345a("dataPath<br/><small>scripts/render-stream2-big-day-house-v3-20260514T0347Z.mjs</small>")
+        scripts_render_stream2_big_day_house_v3_20260514_c17b312c("data<br/><small>scripts/render-stream2-big-day-house-v3-20260514T0347Z.mjs</small>")
+        scripts_render_stream2_big_day_house_v3_20260514_339ebbb9("clip<br/><small>scripts/render-stream2-big-day-house-v3-20260514T0347Z.mjs</small>")
     end
-    scripts_render_longform_day3_clean_captions_2026_d4be9155("render-longform-day3-clean-captions-202...<br/><small>scripts/render-longform-day3-clean-captions-20260513T1900Z.mjs</small>")
-    scripts_render_stream2_billion_company_house_v3_bcd587f6 -->|contains| scripts_render_stream2_billion_company_house_v3_ffb5571c
-    scripts_render_stream2_billion_company_house_v3_bcd587f6 -->|contains| scripts_render_stream2_billion_company_house_v3_8825d2cb
-    scripts_render_stream2_billion_company_house_v3_bcd587f6 -->|contains| scripts_render_stream2_billion_company_house_v3_2fd37400
-    scripts_render_stream2_billion_company_house_v3_bcd587f6 -->|contains| scripts_render_stream2_billion_company_house_v3_40d80110
-    scripts_render_stream2_billion_company_house_v3_bcd587f6 -->|contains| scripts_render_stream2_billion_company_house_v3_da562902
-    scripts_render_stream2_billion_company_house_v3_bcd587f6 -->|contains| scripts_render_stream2_billion_company_house_v3_379c8896
-    scripts_render_stream2_billion_company_house_v3_bcd587f6 -->|contains| scripts_render_stream2_billion_company_house_v3_c89f2d86
-    scripts_render_stream2_billion_company_house_v3_bcd587f6 -->|contains| scripts_render_stream2_billion_company_house_v3_bbf14326
-    scripts_render_stream2_billion_company_house_v3_bcd587f6 -->|contains| scripts_render_stream2_billion_company_house_v3_192ff525
-    scripts_render_stream2_billion_company_house_v3_bcd587f6 -->|contains| scripts_render_stream2_billion_company_house_v3_1131b7b7
-    scripts_render_stream2_billion_company_house_v3_bcd587f6 -->|contains| scripts_render_stream2_billion_company_house_v3_d17139ef
-    scripts_render_stream2_billion_company_house_v3_bcd587f6 -->|contains| scripts_render_stream2_billion_company_house_v3_e3a560ed
-    scripts_render_stream2_billion_company_house_v3_bcd587f6 -->|contains| scripts_render_stream2_billion_company_house_v3_942fdc00
-    scripts_render_stream2_billion_company_house_v3_bcd587f6 -->|contains| scripts_render_stream2_billion_company_house_v3_c9c63480
-    scripts_render_stream2_billion_company_house_v3_bcd587f6 -->|contains| scripts_render_stream2_billion_company_house_v3_ab8c6891
-    scripts_render_stream2_billion_company_house_v3_bcd587f6 -->|contains| scripts_render_stream2_billion_company_house_v3_7e229bd5
-    %% Omitted for readability: 17 nodes, 0 edges
-    class scripts_render_stream2_billion_company_house_v3_bcd587f6 async;
-    class scripts_render_stream2_billion_company_house_v3_ffb5571c function;
-    class scripts_render_stream2_billion_company_house_v3_8825d2cb function;
-    class scripts_render_stream2_billion_company_house_v3_2fd37400 function;
-    class scripts_render_stream2_billion_company_house_v3_40d80110 function;
-    class scripts_render_stream2_billion_company_house_v3_da562902 function;
-    class scripts_render_stream2_billion_company_house_v3_379c8896 function;
-    class scripts_render_stream2_billion_company_house_v3_c89f2d86 function;
-    class scripts_render_stream2_billion_company_house_v3_bbf14326 function;
-    class scripts_render_stream2_billion_company_house_v3_192ff525 function;
-    class scripts_render_stream2_billion_company_house_v3_1131b7b7 function;
-    class scripts_render_stream2_billion_company_house_v3_d17139ef function;
-    class scripts_render_stream2_billion_company_house_v3_e3a560ed function;
-    class scripts_render_stream2_billion_company_house_v3_942fdc00 function;
-    class scripts_render_stream2_billion_company_house_v3_c9c63480 function;
-    class scripts_render_stream2_billion_company_house_v3_ab8c6891 function;
-    class scripts_render_stream2_billion_company_house_v3_7e229bd5 function;
-    class scripts_render_longform_day3_clean_captions_2026_d4be9155 function;
-    classDef entry fill:#422006,stroke:#fbbf24,color:#fde68a,stroke-width:1px;
-    classDef api fill:#450a0a,stroke:#f87171,color:#fee2e2,stroke-width:1px;
-    classDef async fill:#2e1065,stroke:#a78bfa,color:#ede9fe,stroke-width:1px;
-    classDef klass fill:#064e3b,stroke:#34d399,color:#d1fae5,stroke-width:1px;
-    classDef ui fill:#831843,stroke:#f472b6,color:#fce7f3,stroke-width:1px;
-    classDef module fill:#172554,stroke:#60a5fa,color:#dbeafe,stroke-width:1px;
-    classDef test fill:#3f3f46,stroke:#a1a1aa,color:#f4f4f5,stroke-width:1px;
-    classDef concept fill:#292524,stroke:#a8a29e,color:#fafaf9,stroke-dasharray:4 3;
-    classDef function fill:#0f172a,stroke:#38bdf8,color:#e0f2fe,stroke-width:1px;
-</div>
-
-<h3>Call Details</h3>
-<table class="call-table">
-<tr>
-  <th style="width:5%">#</th>
-  <th style="width:28%">Node</th>
-  <th style="width:10%">Type</th>
-  <th style="width:17%">Caller</th>
-  <th style="width:20%">Callees</th>
-  <th style="width:20%">Description</th>
-</tr>
-<tr>
-  <td>1</td>
-  <td><code>render-stream2-billion-company-house-v3-20260514T0817Z.mjs</code><br><small style="color:var(--muted)">scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small></td>
-  <td><span class="tag tag-async">Async</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>render-stream2-billion-company-house-v3-20260514T0817Z.mjs node in scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs.</td>
-</tr>
-<tr>
-  <td>2</td>
-  <td><code>root</code><br><small style="color:var(--muted)">scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>root node in scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs.</td>
-</tr>
-<tr>
-  <td>3</td>
-  <td><code>copy</code><br><small style="color:var(--muted)">scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>copy node in scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs.</td>
-</tr>
-<tr>
-  <td>4</td>
-  <td><code>run()</code><br><small style="color:var(--muted)">scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>run() node in scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs.</td>
-</tr>
-<tr>
-  <td>5</td>
-  <td><code>esc()</code><br><small style="color:var(--muted)">scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>esc() node in scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs.</td>
-</tr>
-<tr>
-  <td>6</td>
-  <td><code>filterPath()</code><br><small style="color:var(--muted)">scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>filterPath() node in scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs.</td>
-</tr>
-<tr>
-  <td>7</td>
-  <td><code>transcript</code><br><small style="color:var(--muted)">scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>transcript node in scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs.</td>
-</tr>
-<tr>
-  <td>8</td>
-  <td><code>events</code><br><small style="color:var(--muted)">scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>events node in scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs.</td>
-</tr>
-<tr>
-  <td>9</td>
-  <td><code>captionEvents</code><br><small style="color:var(--muted)">scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>captionEvents node in scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs.</td>
-</tr>
-<tr>
-  <td>10</td>
-  <td><code>qa</code><br><small style="color:var(--muted)">scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>qa node in scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs.</td>
-</tr>
-<tr>
-  <td>11</td>
-  <td><code>vf</code><br><small style="color:var(--muted)">scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>vf node in scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs.</td>
-</tr>
-<tr>
-  <td>12</td>
-  <td><code>probe</code><br><small style="color:var(--muted)">scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>probe node in scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs.</td>
-</tr>
-<tr>
-  <td>13</td>
-  <td><code>review</code><br><small style="color:var(--muted)">scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>review node in scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs.</td>
-</tr>
-<tr>
-  <td>14</td>
-  <td><code>reviewJson</code><br><small style="color:var(--muted)">scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>reviewJson node in scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs.</td>
-</tr>
-<tr>
-  <td>15</td>
-  <td><code>metadata</code><br><small style="color:var(--muted)">scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>metadata node in scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs.</td>
-</tr>
-<tr>
-  <td>16</td>
-  <td><code>dataPath</code><br><small style="color:var(--muted)">scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>dataPath node in scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs.</td>
-</tr>
-<tr>
-  <td>17</td>
-  <td><code>data</code><br><small style="color:var(--muted)">scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>data node in scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs.</td>
-</tr>
-<tr>
-  <td>18</td>
-  <td><code>clip</code><br><small style="color:var(--muted)">scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small></td>
-  <td><span class="tag tag-cmd">Entry</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>clip node in scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs.</td>
-</tr>
-<tr>
-  <td>19</td>
-  <td><code>dispatch</code><br><small style="color:var(--muted)">scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>dispatch node in scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs.</td>
-</tr>
-<tr>
-  <td>20</td>
-  <td><code>render-longform-day3-clean-captions-20260513T1900Z.mjs</code><br><small style="color:var(--muted)">scripts/render-longform-day3-clean-captions-20260513T1900Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>render-longform-day3-clean-captions-20260513T1900Z.mjs node in scripts/render-longform-day3-clean-captions-20260513T1900Z.mjs.</td>
-</tr>
-<tr>
-  <td>21</td>
-  <td><code>root</code><br><small style="color:var(--muted)">scripts/render-longform-day3-clean-captions-20260513T1900Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>root node in scripts/render-longform-day3-clean-captions-20260513T1900Z.mjs.</td>
-</tr>
-<tr>
-  <td>22</td>
-  <td><code>beats</code><br><small style="color:var(--muted)">scripts/render-longform-day3-clean-captions-20260513T1900Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>beats node in scripts/render-longform-day3-clean-captions-20260513T1900Z.mjs.</td>
-</tr>
-<tr>
-  <td>23</td>
-  <td><code>run()</code><br><small style="color:var(--muted)">scripts/render-longform-day3-clean-captions-20260513T1900Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>run() node in scripts/render-longform-day3-clean-captions-20260513T1900Z.mjs.</td>
-</tr>
-<tr>
-  <td>24</td>
-  <td><code>toSec()</code><br><small style="color:var(--muted)">scripts/render-longform-day3-clean-captions-20260513T1900Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>toSec() node in scripts/render-longform-day3-clean-captions-20260513T1900Z.mjs.</td>
-</tr>
-<tr>
-  <td>25</td>
-  <td><code>escFilterText()</code><br><small style="color:var(--muted)">scripts/render-longform-day3-clean-captions-20260513T1900Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>escFilterText() node in scripts/render-longform-day3-clean-captions-20260513T1900Z.mjs.</td>
-</tr>
-<tr>
-  <td>26</td>
-  <td><code>fmtChapterTime()</code><br><small style="color:var(--muted)">scripts/render-longform-day3-clean-captions-20260513T1900Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>fmtChapterTime() node in scripts/render-longform-day3-clean-captions-20260513T1900Z.mjs.</td>
-</tr>
-<tr>
-  <td>27</td>
-  <td><code>concat</code><br><small style="color:var(--muted)">scripts/render-longform-day3-clean-captions-20260513T1900Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>concat node in scripts/render-longform-day3-clean-captions-20260513T1900Z.mjs.</td>
-</tr>
-<tr>
-  <td>28</td>
-  <td><code>chapters</code><br><small style="color:var(--muted)">scripts/render-longform-day3-clean-captions-20260513T1900Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>chapters node in scripts/render-longform-day3-clean-captions-20260513T1900Z.mjs.</td>
-</tr>
-<tr>
-  <td>29</td>
-  <td><code>transcript</code><br><small style="color:var(--muted)">scripts/render-longform-day3-clean-captions-20260513T1900Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>transcript node in scripts/render-longform-day3-clean-captions-20260513T1900Z.mjs.</td>
-</tr>
-<tr>
-  <td>30</td>
-  <td><code>events</code><br><small style="color:var(--muted)">scripts/render-longform-day3-clean-captions-20260513T1900Z.mjs</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>events node in scripts/render-longform-day3-clean-captions-20260513T1900Z.mjs.</td>
-</tr>
-</table>
-
-<div class="grid">
-  <div class="card">
-    <h4>Key Files</h4>
-    <table style="width:100%;font-size:0.85rem;">
-      <tr><th>File</th><th>Coverage</th></tr>
-      <tr><td><code>scripts/render-stream2-billion-company-house-v3-20260514T0817Z.mjs</code></td><td>19 nodes</td></tr>
-<tr><td><code>scripts/render-longform-day3-clean-captions-20260513T1900Z.mjs</code></td><td>16 nodes</td></tr>
-    </table>
-  </div>
-  <div class="card">
-    <h4>Design Notes</h4>
-    <p>This section comes from graphify community clustering. Relationship summary: contains x33. The diagram prioritizes high-confidence calls or usage relationships; the table keeps the broader node inventory.</p>
-  </div>
-</div>
-<hr>
-
-<!-- ====== 16. Other ====== -->
-<h2 id="other">16. Other</h2>
-<p>Other groups implementation around scripts, render, stream2, house, mostly in server/server.mjs, UX_AUDIT_AND_REDESIGN_PLAN.md, X_WRITING_AND_GROWTH_SOP.md. This section covers 1800 nodes and 2031 internal edges; the diagram shows only representative relationships to stay readable.</p>
-
-<div class="mermaid">
-%%{init: {"theme": "dark", "themeVariables": {"fontSize": "15.0px", "fontFamily": "Segoe UI, system-ui, sans-serif", "primaryColor": "#1e293b", "primaryTextColor": "#e2e8f0", "primaryBorderColor": "#38bdf8", "secondaryColor": "#0f172a", "tertiaryColor": "#334155", "lineColor": "#64748b", "textColor": "#e2e8f0"}, "flowchart": {"htmlLabels": true, "curve": "basis", "nodeSpacing": 48, "rankSpacing": 64, "padding": 14, "diagramPadding": 10, "useMaxWidth": true}}}%%
-flowchart LR
-    %% Section: Other (1800 nodes, 2031 edges)
-    subgraph other_server_server_mjs_7c9204b3["server/server.mjs"]
-        server_server_id_24020de8("id()<br/><small>server/server.mjs</small>")
-        server_server_execfileasync_1f284383("execFileAsync<br/><small>server/server.mjs</small>")
-        server_server_ensuremediadirs_628c7ac7("ensureMediaDirs()<br/><small>server/server.mjs</small>")
-        server_server_savedb_baf23f5c("saveDb()<br/><small>server/server.mjs</small>")
-        server_server_ffprobeduration_47121d8a("ffprobeDuration()<br/><small>server/server.mjs</small>")
-        server_server_ffprobelastvideopacket_c150e0b4("ffprobeLastVideoPacket()<br/><small>server/server.mjs</small>")
-        server_server_commandexists_f35ca9cf("commandExists()<br/><small>server/server.mjs</small>")
-        server_server_preflightyoutubedownload_4d67b928("preflightYoutubeDownload()<br/><small>server/server.mjs</small>")
-        server_server_sourcedimensions_3b1bb4bb("sourceDimensions()<br/><small>server/server.mjs</small>")
-        server_server_detectfacecambox_88b58a6d("detectFacecamBox()<br/><small>server/server.mjs</small>")
-        server_server_renderselectedclip_2cdd6419("renderSelectedClip()<br/><small>server/server.mjs</small>")
-        server_server_scanyoutubetab_ca7e9327("scanYoutubeTab()<br/><small>server/server.mjs</small>")
-        server_server_loaddb_ff569b8e("loadDb()<br/><small>server/server.mjs</small>")
-        server_server_normalizedb_a70abd7b("normalizeDb()<br/><small>server/server.mjs</small>")
-        server_server_mediaprobe_0b947015("mediaProbe()<br/><small>server/server.mjs</small>")
-        server_server_addmediajob_dc2fb43d("addMediaJob()<br/><small>server/server.mjs</small>")
-    end
-    scripts_render_stream3_top10_strict_word_templat_2ba56b69("render-stream3-top10-strict-word-templa...<br/><small>scripts/render-stream3-top10-strict-word-template-20260514T1035Z.mjs</small>")
-    scripts_render_stream3_top10_wrapped_title_templ_1bccfde1("render-stream3-top10-wrapped-title-temp...<br/><small>scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</small>")
-    server_server_execfileasync_1f284383 -->|calls| server_server_ffprobeduration_47121d8a
-    server_server_execfileasync_1f284383 -->|calls| server_server_ffprobelastvideopacket_c150e0b4
-    server_server_execfileasync_1f284383 -->|calls| server_server_commandexists_f35ca9cf
-    server_server_execfileasync_1f284383 -->|calls| server_server_preflightyoutubedownload_4d67b928
-    server_server_execfileasync_1f284383 -->|calls| server_server_sourcedimensions_3b1bb4bb
-    server_server_execfileasync_1f284383 -->|calls| server_server_detectfacecambox_88b58a6d
-    server_server_execfileasync_1f284383 -->|calls| server_server_renderselectedclip_2cdd6419
-    server_server_execfileasync_1f284383 -->|calls| server_server_scanyoutubetab_ca7e9327
-    server_server_loaddb_ff569b8e -->|calls| server_server_normalizedb_a70abd7b
-    server_server_loaddb_ff569b8e -->|calls| server_server_savedb_baf23f5c
-    server_server_savedb_baf23f5c -->|calls| server_server_mediaprobe_0b947015
-    server_server_savedb_baf23f5c -->|calls| server_server_addmediajob_dc2fb43d
-    server_server_savedb_baf23f5c -->|calls| server_server_renderselectedclip_2cdd6419
-    server_server_id_24020de8 -->|calls| server_server_addmediajob_dc2fb43d
-    server_server_ensuremediadirs_628c7ac7 -->|calls| server_server_mediaprobe_0b947015
-    server_server_ensuremediadirs_628c7ac7 -->|calls| server_server_renderselectedclip_2cdd6419
-    server_server_commandexists_f35ca9cf -->|calls| server_server_mediaprobe_0b947015
-    server_server_commandexists_f35ca9cf -->|calls| server_server_renderselectedclip_2cdd6419
-    server_server_addmediajob_dc2fb43d -->|calls| server_server_renderselectedclip_2cdd6419
-    server_server_sourcedimensions_3b1bb4bb -->|calls| server_server_detectfacecambox_88b58a6d
-    server_server_detectfacecambox_88b58a6d -->|calls| server_server_renderselectedclip_2cdd6419
-    %% Omitted for readability: 1782 nodes, 0 edges
-    class server_server_id_24020de8 function;
-    class server_server_execfileasync_1f284383 async;
-    class server_server_ensuremediadirs_628c7ac7 function;
-    class server_server_savedb_baf23f5c function;
-    class server_server_ffprobeduration_47121d8a function;
-    class server_server_ffprobelastvideopacket_c150e0b4 function;
-    class server_server_commandexists_f35ca9cf entry;
-    class server_server_preflightyoutubedownload_4d67b928 function;
-    class server_server_sourcedimensions_3b1bb4bb function;
-    class server_server_detectfacecambox_88b58a6d function;
-    class server_server_renderselectedclip_2cdd6419 entry;
-    class server_server_scanyoutubetab_ca7e9327 function;
-    class server_server_loaddb_ff569b8e function;
-    class server_server_normalizedb_a70abd7b function;
-    class server_server_mediaprobe_0b947015 function;
-    class server_server_addmediajob_dc2fb43d function;
-    class scripts_render_stream3_top10_strict_word_templat_2ba56b69 async;
-    class scripts_render_stream3_top10_wrapped_title_templ_1bccfde1 async;
+    scripts_render_stream2_mic_first_company_second_118deb64("render-stream2-mic-first-company-second...<br/><small>scripts/render-stream2-mic-first-company-second-house-v3-20260514T0742Z.mjs</small>")
+    scripts_render_stream2_big_day_house_v3_20260514_7d81c5d4 -->|contains| scripts_render_stream2_big_day_house_v3_20260514_b33cccde
+    scripts_render_stream2_big_day_house_v3_20260514_7d81c5d4 -->|contains| scripts_render_stream2_big_day_house_v3_20260514_3b0c66d6
+    scripts_render_stream2_big_day_house_v3_20260514_7d81c5d4 -->|contains| scripts_render_stream2_big_day_house_v3_20260514_00587daa
+    scripts_render_stream2_big_day_house_v3_20260514_7d81c5d4 -->|contains| scripts_render_stream2_big_day_house_v3_20260514_a2296233
+    scripts_render_stream2_big_day_house_v3_20260514_7d81c5d4 -->|contains| scripts_render_stream2_big_day_house_v3_20260514_e6c921e0
+    scripts_render_stream2_big_day_house_v3_20260514_7d81c5d4 -->|contains| scripts_render_stream2_big_day_house_v3_20260514_5f42d47d
+    scripts_render_stream2_big_day_house_v3_20260514_7d81c5d4 -->|contains| scripts_render_stream2_big_day_house_v3_20260514_bd5fb66e
+    scripts_render_stream2_big_day_house_v3_20260514_7d81c5d4 -->|contains| scripts_render_stream2_big_day_house_v3_20260514_71e00a8c
+    scripts_render_stream2_big_day_house_v3_20260514_7d81c5d4 -->|contains| scripts_render_stream2_big_day_house_v3_20260514_b8413c66
+    scripts_render_stream2_big_day_house_v3_20260514_7d81c5d4 -->|contains| scripts_render_stream2_big_day_house_v3_20260514_a7ff859a
+    scripts_render_stream2_big_day_house_v3_20260514_7d81c5d4 -->|contains| scripts_render_stream2_big_day_house_v3_20260514_23d8d75d
+    scripts_render_stream2_big_day_house_v3_20260514_7d81c5d4 -->|contains| scripts_render_stream2_big_day_house_v3_20260514_2c761fb1
+    scripts_render_stream2_big_day_house_v3_20260514_7d81c5d4 -->|contains| scripts_render_stream2_big_day_house_v3_20260514_40dc5fc6
+    scripts_render_stream2_big_day_house_v3_20260514_7d81c5d4 -->|contains| scripts_render_stream2_big_day_house_v3_20260514_4e7b345a
+    scripts_render_stream2_big_day_house_v3_20260514_7d81c5d4 -->|contains| scripts_render_stream2_big_day_house_v3_20260514_c17b312c
+    scripts_render_stream2_big_day_house_v3_20260514_7d81c5d4 -->|contains| scripts_render_stream2_big_day_house_v3_20260514_339ebbb9
+    %% Omitted for readability: 19 nodes, 0 edges
+    class scripts_render_stream2_big_day_house_v3_20260514_7d81c5d4 async;
+    class scripts_render_stream2_big_day_house_v3_20260514_b33cccde function;
+    class scripts_render_stream2_big_day_house_v3_20260514_3b0c66d6 function;
+    class scripts_render_stream2_big_day_house_v3_20260514_00587daa function;
+    class scripts_render_stream2_big_day_house_v3_20260514_a2296233 function;
+    class scripts_render_stream2_big_day_house_v3_20260514_e6c921e0 function;
+    class scripts_render_stream2_big_day_house_v3_20260514_5f42d47d function;
+    class scripts_render_stream2_big_day_house_v3_20260514_bd5fb66e function;
+    class scripts_render_stream2_big_day_house_v3_20260514_71e00a8c function;
+    class scripts_render_stream2_big_day_house_v3_20260514_b8413c66 function;
+    class scripts_render_stream2_big_day_house_v3_20260514_a7ff859a function;
+    class scripts_render_stream2_big_day_house_v3_20260514_23d8d75d function;
+    class scripts_render_stream2_big_day_house_v3_20260514_2c761fb1 function;
+    class scripts_render_stream2_big_day_house_v3_20260514_40dc5fc6 function;
+    class scripts_render_stream2_big_day_house_v3_20260514_4e7b345a function;
+    class scripts_render_stream2_big_day_house_v3_20260514_c17b312c function;
+    class scripts_render_stream2_big_day_house_v3_20260514_339ebbb9 entry;
+    class scripts_render_stream2_mic_first_company_second_118deb64 async;
     classDef entry fill:#422006,stroke:#fbbf24,color:#fde68a,stroke-width:1px;
     classDef api fill:#450a0a,stroke:#f87171,color:#fee2e2,stroke-width:1px;
     classDef async fill:#2e1065,stroke:#a78bfa,color:#ede9fe,stroke-width:1px;
@@ -4996,7 +4648,7 @@ flowchart LR
   <td><code>render-stream2-big-day-house-v3-20260514T0347Z.mjs</code><br><small style="color:var(--muted)">scripts/render-stream2-big-day-house-v3-20260514T0347Z.mjs</small></td>
   <td><span class="tag tag-async">Async</span></td>
   <td>External entry / no inbound edge</td>
-  <td><code>buildShortWordEvents()</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small><br><code>caption-normalizer.mjs</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small><br><code>qaCaptionEvents()</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small></td>
+  <td>No direct outbound edge</td>
   <td>render-stream2-big-day-house-v3-20260514T0347Z.mjs node in scripts/render-stream2-big-day-house-v3-20260514T0347Z.mjs.</td>
 </tr>
 <tr>
@@ -5137,99 +4789,99 @@ flowchart LR
 </tr>
 <tr>
   <td>19</td>
-  <td><code>render-stream2-live-no-leaks-house-v3-20260514T0517Z.mjs</code><br><small style="color:var(--muted)">scripts/render-stream2-live-no-leaks-house-v3-20260514T0517Z.mjs</small></td>
+  <td><code>render-stream2-mic-first-company-second-house-v3-20260514T0742Z.mjs</code><br><small style="color:var(--muted)">scripts/render-stream2-mic-first-company-second-house-v3-20260514T0742Z.mjs</small></td>
   <td><span class="tag tag-async">Async</span></td>
   <td>External entry / no inbound edge</td>
-  <td><code>buildShortWordEvents()</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small><br><code>caption-normalizer.mjs</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small><br><code>qaCaptionEvents()</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small></td>
-  <td>render-stream2-live-no-leaks-house-v3-20260514T0517Z.mjs node in scripts/render-stream2-live-no-leaks-house-v3-20260514T0517Z.mjs.</td>
+  <td>No direct outbound edge</td>
+  <td>render-stream2-mic-first-company-second-house-v3-20260514T0742Z.mjs node in scripts/render-stream2-mic-first-company-second-house-v3-20260514T0742Z.mjs.</td>
 </tr>
 <tr>
   <td>20</td>
-  <td><code>root</code><br><small style="color:var(--muted)">scripts/render-stream2-live-no-leaks-house-v3-20260514T0517Z.mjs</small></td>
+  <td><code>root</code><br><small style="color:var(--muted)">scripts/render-stream2-mic-first-company-second-house-v3-20260514T0742Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
   <td>No direct outbound edge</td>
-  <td>root node in scripts/render-stream2-live-no-leaks-house-v3-20260514T0517Z.mjs.</td>
+  <td>root node in scripts/render-stream2-mic-first-company-second-house-v3-20260514T0742Z.mjs.</td>
 </tr>
 <tr>
   <td>21</td>
-  <td><code>copy</code><br><small style="color:var(--muted)">scripts/render-stream2-live-no-leaks-house-v3-20260514T0517Z.mjs</small></td>
+  <td><code>copy</code><br><small style="color:var(--muted)">scripts/render-stream2-mic-first-company-second-house-v3-20260514T0742Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
   <td>No direct outbound edge</td>
-  <td>copy node in scripts/render-stream2-live-no-leaks-house-v3-20260514T0517Z.mjs.</td>
+  <td>copy node in scripts/render-stream2-mic-first-company-second-house-v3-20260514T0742Z.mjs.</td>
 </tr>
 <tr>
   <td>22</td>
-  <td><code>run()</code><br><small style="color:var(--muted)">scripts/render-stream2-live-no-leaks-house-v3-20260514T0517Z.mjs</small></td>
+  <td><code>run()</code><br><small style="color:var(--muted)">scripts/render-stream2-mic-first-company-second-house-v3-20260514T0742Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
   <td>No direct outbound edge</td>
-  <td>run() node in scripts/render-stream2-live-no-leaks-house-v3-20260514T0517Z.mjs.</td>
+  <td>run() node in scripts/render-stream2-mic-first-company-second-house-v3-20260514T0742Z.mjs.</td>
 </tr>
 <tr>
   <td>23</td>
-  <td><code>esc()</code><br><small style="color:var(--muted)">scripts/render-stream2-live-no-leaks-house-v3-20260514T0517Z.mjs</small></td>
+  <td><code>esc()</code><br><small style="color:var(--muted)">scripts/render-stream2-mic-first-company-second-house-v3-20260514T0742Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
   <td>No direct outbound edge</td>
-  <td>esc() node in scripts/render-stream2-live-no-leaks-house-v3-20260514T0517Z.mjs.</td>
+  <td>esc() node in scripts/render-stream2-mic-first-company-second-house-v3-20260514T0742Z.mjs.</td>
 </tr>
 <tr>
   <td>24</td>
-  <td><code>filterPath()</code><br><small style="color:var(--muted)">scripts/render-stream2-live-no-leaks-house-v3-20260514T0517Z.mjs</small></td>
+  <td><code>filterPath()</code><br><small style="color:var(--muted)">scripts/render-stream2-mic-first-company-second-house-v3-20260514T0742Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
   <td>No direct outbound edge</td>
-  <td>filterPath() node in scripts/render-stream2-live-no-leaks-house-v3-20260514T0517Z.mjs.</td>
+  <td>filterPath() node in scripts/render-stream2-mic-first-company-second-house-v3-20260514T0742Z.mjs.</td>
 </tr>
 <tr>
   <td>25</td>
-  <td><code>transcript</code><br><small style="color:var(--muted)">scripts/render-stream2-live-no-leaks-house-v3-20260514T0517Z.mjs</small></td>
+  <td><code>transcript</code><br><small style="color:var(--muted)">scripts/render-stream2-mic-first-company-second-house-v3-20260514T0742Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
   <td>No direct outbound edge</td>
-  <td>transcript node in scripts/render-stream2-live-no-leaks-house-v3-20260514T0517Z.mjs.</td>
+  <td>transcript node in scripts/render-stream2-mic-first-company-second-house-v3-20260514T0742Z.mjs.</td>
 </tr>
 <tr>
   <td>26</td>
-  <td><code>events</code><br><small style="color:var(--muted)">scripts/render-stream2-live-no-leaks-house-v3-20260514T0517Z.mjs</small></td>
+  <td><code>events</code><br><small style="color:var(--muted)">scripts/render-stream2-mic-first-company-second-house-v3-20260514T0742Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
   <td>No direct outbound edge</td>
-  <td>events node in scripts/render-stream2-live-no-leaks-house-v3-20260514T0517Z.mjs.</td>
+  <td>events node in scripts/render-stream2-mic-first-company-second-house-v3-20260514T0742Z.mjs.</td>
 </tr>
 <tr>
   <td>27</td>
-  <td><code>captionEvents</code><br><small style="color:var(--muted)">scripts/render-stream2-live-no-leaks-house-v3-20260514T0517Z.mjs</small></td>
+  <td><code>captionEvents</code><br><small style="color:var(--muted)">scripts/render-stream2-mic-first-company-second-house-v3-20260514T0742Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
   <td>No direct outbound edge</td>
-  <td>captionEvents node in scripts/render-stream2-live-no-leaks-house-v3-20260514T0517Z.mjs.</td>
+  <td>captionEvents node in scripts/render-stream2-mic-first-company-second-house-v3-20260514T0742Z.mjs.</td>
 </tr>
 <tr>
   <td>28</td>
-  <td><code>qa</code><br><small style="color:var(--muted)">scripts/render-stream2-live-no-leaks-house-v3-20260514T0517Z.mjs</small></td>
+  <td><code>qa</code><br><small style="color:var(--muted)">scripts/render-stream2-mic-first-company-second-house-v3-20260514T0742Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
   <td>No direct outbound edge</td>
-  <td>qa node in scripts/render-stream2-live-no-leaks-house-v3-20260514T0517Z.mjs.</td>
+  <td>qa node in scripts/render-stream2-mic-first-company-second-house-v3-20260514T0742Z.mjs.</td>
 </tr>
 <tr>
   <td>29</td>
-  <td><code>vf</code><br><small style="color:var(--muted)">scripts/render-stream2-live-no-leaks-house-v3-20260514T0517Z.mjs</small></td>
+  <td><code>vf</code><br><small style="color:var(--muted)">scripts/render-stream2-mic-first-company-second-house-v3-20260514T0742Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
   <td>No direct outbound edge</td>
-  <td>vf node in scripts/render-stream2-live-no-leaks-house-v3-20260514T0517Z.mjs.</td>
+  <td>vf node in scripts/render-stream2-mic-first-company-second-house-v3-20260514T0742Z.mjs.</td>
 </tr>
 <tr>
   <td>30</td>
-  <td><code>probe</code><br><small style="color:var(--muted)">scripts/render-stream2-live-no-leaks-house-v3-20260514T0517Z.mjs</small></td>
+  <td><code>probe</code><br><small style="color:var(--muted)">scripts/render-stream2-mic-first-company-second-house-v3-20260514T0742Z.mjs</small></td>
   <td><span class="tag tag-func">Function</span></td>
   <td>External entry / no inbound edge</td>
   <td>No direct outbound edge</td>
-  <td>probe node in scripts/render-stream2-live-no-leaks-house-v3-20260514T0517Z.mjs.</td>
+  <td>probe node in scripts/render-stream2-mic-first-company-second-house-v3-20260514T0742Z.mjs.</td>
 </tr>
 </table>
 
@@ -5238,10 +4890,355 @@ flowchart LR
     <h4>Key Files</h4>
     <table style="width:100%;font-size:0.85rem;">
       <tr><th>File</th><th>Coverage</th></tr>
-      <tr><td><code>server/server.mjs</code></td><td>100 nodes</td></tr>
+      <tr><td><code>scripts/render-stream2-mic-first-company-second-house-v3-20260514T0742Z.mjs</code></td><td>19 nodes</td></tr>
+<tr><td><code>scripts/render-stream2-big-day-house-v3-20260514T0347Z.mjs</code></td><td>18 nodes</td></tr>
+    </table>
+  </div>
+  <div class="card">
+    <h4>Design Notes</h4>
+    <p>This section comes from graphify community clustering. Relationship summary: contains x35. The diagram prioritizes high-confidence calls or usage relationships; the table keeps the broader node inventory.</p>
+  </div>
+</div>
+<hr>
+
+<!-- ====== 16. Other ====== -->
+<h2 id="other">16. Other</h2>
+<p>Other groups implementation around scripts, render, stream2, house, mostly in server/server.mjs, UX_AUDIT_AND_REDESIGN_PLAN.md, X_WRITING_AND_GROWTH_SOP.md. This section covers 1844 nodes and 2093 internal edges; the diagram shows only representative relationships to stay readable.</p>
+
+<div class="mermaid">
+%%{init: {"theme": "dark", "themeVariables": {"fontSize": "15.0px", "fontFamily": "Segoe UI, system-ui, sans-serif", "primaryColor": "#1e293b", "primaryTextColor": "#e2e8f0", "primaryBorderColor": "#38bdf8", "secondaryColor": "#0f172a", "tertiaryColor": "#334155", "lineColor": "#64748b", "textColor": "#e2e8f0"}, "flowchart": {"htmlLabels": true, "curve": "basis", "nodeSpacing": 48, "rankSpacing": 64, "padding": 14, "diagramPadding": 10, "useMaxWidth": true}}}%%
+flowchart LR
+    %% Section: Other (1844 nodes, 2093 edges)
+    subgraph other_server_server_mjs_7c9204b3["server/server.mjs"]
+        server_server_savedb_baf23f5c("saveDb()<br/><small>server/server.mjs</small>")
+        server_server_id_24020de8("id()<br/><small>server/server.mjs</small>")
+        server_server_execfileasync_1f284383("execFileAsync<br/><small>server/server.mjs</small>")
+        server_server_ensuremediadirs_628c7ac7("ensureMediaDirs()<br/><small>server/server.mjs</small>")
+        server_server_addjob_46dc7c5b("addJob()<br/><small>server/server.mjs</small>")
+        server_server_ffprobeduration_47121d8a("ffprobeDuration()<br/><small>server/server.mjs</small>")
+        server_server_ffprobelastvideopacket_c150e0b4("ffprobeLastVideoPacket()<br/><small>server/server.mjs</small>")
+        server_server_commandexists_f35ca9cf("commandExists()<br/><small>server/server.mjs</small>")
+        server_server_preflightyoutubedownload_4d67b928("preflightYoutubeDownload()<br/><small>server/server.mjs</small>")
+        server_server_sourcedimensions_3b1bb4bb("sourceDimensions()<br/><small>server/server.mjs</small>")
+        server_server_detectfacecambox_88b58a6d("detectFacecamBox()<br/><small>server/server.mjs</small>")
+        server_server_renderselectedclip_2cdd6419("renderSelectedClip()<br/><small>server/server.mjs</small>")
+        server_server_scanyoutubetab_ca7e9327("scanYoutubeTab()<br/><small>server/server.mjs</small>")
+        server_server_loaddb_ff569b8e("loadDb()<br/><small>server/server.mjs</small>")
+        server_server_normalizedb_a70abd7b("normalizeDb()<br/><small>server/server.mjs</small>")
+        server_server_scantwitterradar_075d47b9("scanTwitterRadar()<br/><small>server/server.mjs</small>")
+        server_server_updatetwitterradar_1c72ed87("updateTwitterRadar()<br/><small>server/server.mjs</small>")
+    end
+    scripts_render_stream3_top10_strict_word_templat_2ba56b69("render-stream3-top10-strict-word-templa...<br/><small>scripts/render-stream3-top10-strict-word-template-20260514T1035Z.mjs</small>")
+    server_server_execfileasync_1f284383 -->|calls| server_server_ffprobeduration_47121d8a
+    server_server_execfileasync_1f284383 -->|calls| server_server_ffprobelastvideopacket_c150e0b4
+    server_server_execfileasync_1f284383 -->|calls| server_server_commandexists_f35ca9cf
+    server_server_execfileasync_1f284383 -->|calls| server_server_preflightyoutubedownload_4d67b928
+    server_server_execfileasync_1f284383 -->|calls| server_server_sourcedimensions_3b1bb4bb
+    server_server_execfileasync_1f284383 -->|calls| server_server_detectfacecambox_88b58a6d
+    server_server_execfileasync_1f284383 -->|calls| server_server_renderselectedclip_2cdd6419
+    server_server_execfileasync_1f284383 -->|calls| server_server_scanyoutubetab_ca7e9327
+    server_server_loaddb_ff569b8e -->|calls| server_server_normalizedb_a70abd7b
+    server_server_loaddb_ff569b8e -->|calls| server_server_savedb_baf23f5c
+    server_server_savedb_baf23f5c -->|calls| server_server_scantwitterradar_075d47b9
+    server_server_savedb_baf23f5c -->|calls| server_server_updatetwitterradar_1c72ed87
+    server_server_savedb_baf23f5c -->|calls| server_server_renderselectedclip_2cdd6419
+    server_server_id_24020de8 -->|calls| server_server_addjob_46dc7c5b
+    server_server_ensuremediadirs_628c7ac7 -->|calls| server_server_renderselectedclip_2cdd6419
+    server_server_addjob_46dc7c5b -->|calls| server_server_scantwitterradar_075d47b9
+    server_server_commandexists_f35ca9cf -->|calls| server_server_renderselectedclip_2cdd6419
+    server_server_sourcedimensions_3b1bb4bb -->|calls| server_server_detectfacecambox_88b58a6d
+    server_server_detectfacecambox_88b58a6d -->|calls| server_server_renderselectedclip_2cdd6419
+    %% Omitted for readability: 1826 nodes, 0 edges
+    class server_server_savedb_baf23f5c function;
+    class server_server_id_24020de8 function;
+    class server_server_execfileasync_1f284383 async;
+    class server_server_ensuremediadirs_628c7ac7 function;
+    class server_server_addjob_46dc7c5b function;
+    class server_server_ffprobeduration_47121d8a function;
+    class server_server_ffprobelastvideopacket_c150e0b4 function;
+    class server_server_commandexists_f35ca9cf entry;
+    class server_server_preflightyoutubedownload_4d67b928 function;
+    class server_server_sourcedimensions_3b1bb4bb function;
+    class server_server_detectfacecambox_88b58a6d function;
+    class server_server_renderselectedclip_2cdd6419 entry;
+    class server_server_scanyoutubetab_ca7e9327 function;
+    class server_server_loaddb_ff569b8e function;
+    class server_server_normalizedb_a70abd7b function;
+    class server_server_scantwitterradar_075d47b9 function;
+    class server_server_updatetwitterradar_1c72ed87 function;
+    class scripts_render_stream3_top10_strict_word_templat_2ba56b69 async;
+    classDef entry fill:#422006,stroke:#fbbf24,color:#fde68a,stroke-width:1px;
+    classDef api fill:#450a0a,stroke:#f87171,color:#fee2e2,stroke-width:1px;
+    classDef async fill:#2e1065,stroke:#a78bfa,color:#ede9fe,stroke-width:1px;
+    classDef klass fill:#064e3b,stroke:#34d399,color:#d1fae5,stroke-width:1px;
+    classDef ui fill:#831843,stroke:#f472b6,color:#fce7f3,stroke-width:1px;
+    classDef module fill:#172554,stroke:#60a5fa,color:#dbeafe,stroke-width:1px;
+    classDef test fill:#3f3f46,stroke:#a1a1aa,color:#f4f4f5,stroke-width:1px;
+    classDef concept fill:#292524,stroke:#a8a29e,color:#fafaf9,stroke-dasharray:4 3;
+    classDef function fill:#0f172a,stroke:#38bdf8,color:#e0f2fe,stroke-width:1px;
+</div>
+
+<h3>Call Details</h3>
+<table class="call-table">
+<tr>
+  <th style="width:5%">#</th>
+  <th style="width:28%">Node</th>
+  <th style="width:10%">Type</th>
+  <th style="width:17%">Caller</th>
+  <th style="width:20%">Callees</th>
+  <th style="width:20%">Description</th>
+</tr>
+<tr>
+  <td>1</td>
+  <td><code>render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</code><br><small style="color:var(--muted)">scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</small></td>
+  <td><span class="tag tag-async">Async</span></td>
+  <td>External entry / no inbound edge</td>
+  <td><code>buildAss()</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small><br><code>buildShortWordEvents()</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small><br><code>caption-normalizer.mjs</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small><br>+3 more</td>
+  <td>render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs node in scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs.</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td><code>root</code><br><small style="color:var(--muted)">scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>root node in scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs.</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td><code>hookOverrides</code><br><small style="color:var(--muted)">scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</small></td>
+  <td><span class="tag tag-hook">UI</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>hookOverrides node in scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs.</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td><code>run()</code><br><small style="color:var(--muted)">scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>run() node in scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs.</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td><code>esc()</code><br><small style="color:var(--muted)">scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td><code>headerDraw()</code><br><small style="color:var(--muted)">scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</small></td>
+  <td>esc() node in scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs.</td>
+</tr>
+<tr>
+  <td>6</td>
+  <td><code>filterPath()</code><br><small style="color:var(--muted)">scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>filterPath() node in scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs.</td>
+</tr>
+<tr>
+  <td>7</td>
+  <td><code>slug()</code><br><small style="color:var(--muted)">scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>slug() node in scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs.</td>
+</tr>
+<tr>
+  <td>8</td>
+  <td><code>cleanCaptionWord()</code><br><small style="color:var(--muted)">scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>cleanCaptionWord() node in scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs.</td>
+</tr>
+<tr>
+  <td>9</td>
+  <td><code>headerLines()</code><br><small style="color:var(--muted)">scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td><code>headerDraw()</code><br><small style="color:var(--muted)">scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</small></td>
+  <td>headerLines() node in scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs.</td>
+</tr>
+<tr>
+  <td>10</td>
+  <td><code>headerDraw()</code><br><small style="color:var(--muted)">scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td><code>esc()</code><br><small style="color:var(--muted)">scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</small><br><code>headerLines()</code><br><small style="color:var(--muted)">scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</small></td>
+  <td>No direct outbound edge</td>
+  <td>headerDraw() node in scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs.</td>
+</tr>
+<tr>
+  <td>11</td>
+  <td><code>transcript</code><br><small style="color:var(--muted)">scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>transcript node in scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs.</td>
+</tr>
+<tr>
+  <td>12</td>
+  <td><code>startRank</code><br><small style="color:var(--muted)">scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>startRank node in scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs.</td>
+</tr>
+<tr>
+  <td>13</td>
+  <td><code>endRank</code><br><small style="color:var(--muted)">scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>endRank node in scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs.</td>
+</tr>
+<tr>
+  <td>14</td>
+  <td><code>candidates</code><br><small style="color:var(--muted)">scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>candidates node in scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs.</td>
+</tr>
+<tr>
+  <td>15</td>
+  <td><code>results</code><br><small style="color:var(--muted)">scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>results node in scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs.</td>
+</tr>
+<tr>
+  <td>16</td>
+  <td><code>startSec</code><br><small style="color:var(--muted)">scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>startSec node in scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs.</td>
+</tr>
+<tr>
+  <td>17</td>
+  <td><code>endSec</code><br><small style="color:var(--muted)">scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>endSec node in scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs.</td>
+</tr>
+<tr>
+  <td>18</td>
+  <td><code>safeSlug</code><br><small style="color:var(--muted)">scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>safeSlug node in scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs.</td>
+</tr>
+<tr>
+  <td>19</td>
+  <td><code>fallbackEvents</code><br><small style="color:var(--muted)">scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>fallbackEvents node in scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs.</td>
+</tr>
+<tr>
+  <td>20</td>
+  <td><code>wordTimedEvents</code><br><small style="color:var(--muted)">scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>wordTimedEvents node in scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs.</td>
+</tr>
+<tr>
+  <td>21</td>
+  <td><code>wordTiming</code><br><small style="color:var(--muted)">scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>wordTiming node in scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs.</td>
+</tr>
+<tr>
+  <td>22</td>
+  <td><code>captionPlan</code><br><small style="color:var(--muted)">scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>captionPlan node in scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs.</td>
+</tr>
+<tr>
+  <td>23</td>
+  <td><code>captionEvents</code><br><small style="color:var(--muted)">scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>captionEvents node in scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs.</td>
+</tr>
+<tr>
+  <td>24</td>
+  <td><code>coverage</code><br><small style="color:var(--muted)">scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>Supports retrieval-augmented Q&amp;A or streaming chat.</td>
+</tr>
+<tr>
+  <td>25</td>
+  <td><code>qa</code><br><small style="color:var(--muted)">scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>qa node in scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs.</td>
+</tr>
+<tr>
+  <td>26</td>
+  <td><code>ass</code><br><small style="color:var(--muted)">scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>ass node in scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs.</td>
+</tr>
+<tr>
+  <td>27</td>
+  <td><code>captionQa</code><br><small style="color:var(--muted)">scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>captionQa node in scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs.</td>
+</tr>
+<tr>
+  <td>28</td>
+  <td><code>vf</code><br><small style="color:var(--muted)">scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>vf node in scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs.</td>
+</tr>
+<tr>
+  <td>29</td>
+  <td><code>probe</code><br><small style="color:var(--muted)">scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>probe node in scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs.</td>
+</tr>
+<tr>
+  <td>30</td>
+  <td><code>render-stream3-top10-strict-word-template-20260514T1035Z.mjs</code><br><small style="color:var(--muted)">scripts/render-stream3-top10-strict-word-template-20260514T1035Z.mjs</small></td>
+  <td><span class="tag tag-async">Async</span></td>
+  <td>External entry / no inbound edge</td>
+  <td><code>buildAss()</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small><br><code>buildShortWordEvents()</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small><br><code>caption-normalizer.mjs</code><br><small style="color:var(--muted)">lib/caption-normalizer.mjs</small><br>+3 more</td>
+  <td>render-stream3-top10-strict-word-template-20260514T1035Z.mjs node in scripts/render-stream3-top10-strict-word-template-20260514T1035Z.mjs.</td>
+</tr>
+</table>
+
+<div class="grid">
+  <div class="card">
+    <h4>Key Files</h4>
+    <table style="width:100%;font-size:0.85rem;">
+      <tr><th>File</th><th>Coverage</th></tr>
+      <tr><td><code>server/server.mjs</code></td><td>119 nodes</td></tr>
 <tr><td><code>UX_AUDIT_AND_REDESIGN_PLAN.md</code></td><td>59 nodes</td></tr>
-<tr><td><code>X_WRITING_AND_GROWTH_SOP.md</code></td><td>46 nodes</td></tr>
-<tr><td><code>src/App.tsx</code></td><td>30 nodes</td></tr>
+<tr><td><code>X_WRITING_AND_GROWTH_SOP.md</code></td><td>53 nodes</td></tr>
+<tr><td><code>src/App.tsx</code></td><td>42 nodes</td></tr>
 <tr><td><code>scripts/render-stream3-top10-wrapped-title-template-20260514T1810Z.mjs</code></td><td>29 nodes</td></tr>
 <tr><td><code>scripts/render-stream2-clips-first-vps-next-house-v4b-20260515T0650Z.mjs</code></td><td>26 nodes</td></tr>
 <tr><td><code>scripts/render-stream2-project-moves-offstream-house-v4d-20260515T0645Z.mjs</code></td><td>26 nodes</td></tr>
@@ -5250,7 +5247,7 @@ flowchart LR
   </div>
   <div class="card">
     <h4>Design Notes</h4>
-    <p>This section comes from graphify community clustering. Relationship summary: contains x1556, calls x288, imports x137, imports x48. The diagram prioritizes high-confidence calls or usage relationships; the table keeps the broader node inventory.</p>
+    <p>This section comes from graphify community clustering. Relationship summary: contains x1569, calls x337, imports x137, imports x48. The diagram prioritizes high-confidence calls or usage relationships; the table keeps the broader node inventory.</p>
   </div>
 </div>
 <hr>
@@ -5261,17 +5258,17 @@ flowchart LR
   <div class="card">
     <h4>Graph</h4>
     <table style="width:100%;font-size:0.85rem;">
-      <tr><td>Nodes</td><td>2845</td></tr>
-      <tr><td>Edges</td><td>3361</td></tr>
+      <tr><td>Nodes</td><td>2945</td></tr>
+      <tr><td>Edges</td><td>3511</td></tr>
       <tr><td>Hyperedges</td><td>0</td></tr>
-      <tr><td>Communities</td><td>233</td></tr>
+      <tr><td>Communities</td><td>243</td></tr>
       <tr><td>Documented Sections</td><td>15</td></tr>
     </table>
   </div>
   <div class="card">
     <h4>Edge Confidence</h4>
     <table style="width:100%;font-size:0.85rem;">
-      <tr><td>EXTRACTED</td><td>3359</td></tr>
+      <tr><td>EXTRACTED</td><td>3509</td></tr>
       <tr><td>INFERRED</td><td>2</td></tr>
       <tr><td>AMBIGUOUS</td><td>0</td></tr>
     </table>
@@ -5280,7 +5277,7 @@ flowchart LR
 
 <div style="text-align:center; padding:40px 0; color: var(--muted); font-size:0.9rem;">
   <p>vibe-zone — Architecture Documentation</p>
-  <p>Generated: 2026-05-16 10:58 UTC · graphify callflow-html</p>
+  <p>Generated: 2026-05-18 14:06 UTC · graphify callflow-html</p>
 </div>
 
 </div><!-- .container -->

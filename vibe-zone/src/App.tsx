@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import RexLiveRoadmap from './RexLiveRoadmap'
 import './App.css'
 
-type PageId = 'roadmap' | 'dashboard' | 'media-pipeline' | 'clip-factory' | 'thumbnail-lab' | 'viral-research' | 'viral-hunter' | 'studio-feedback' | 'social-dashboard' | 'live-chat' | 'settings'
+type PageId = 'roadmap' | 'dashboard' | 'media-pipeline' | 'clip-factory' | 'thumbnail-lab' | 'viral-research' | 'viral-hunter' | 'studio-feedback' | 'social-dashboard' | 'twitter-radar' | 'live-chat' | 'settings'
 type JobStatus = 'running' | 'queued' | 'done' | 'needs-review' | 'failed'
 type PlatformId = 'tiktok' | 'youtube' | 'x' | 'instagram' | 'facebook' | 'threads' | 'linkedin' | 'pinterest' | 'rednote' | 'douyin' | 'kuaishou' | 'bilibili' | 'wechat'
 type Settings = { channelUrl: string; streamSafeMode: boolean; clipStrategy?: string; thumbnailStyle?: string; productAngle?: string; localModel?: string; guardrails: string[]; thumbnailConceptFeedback?: Record<string, 'like' | 'dislike'>; thumbnailPreferenceProfile?: { updatedAt?: string; guidance?: string; liked?: unknown[]; disliked?: unknown[] } }
@@ -13,14 +13,16 @@ type FacecamTrackingBox = { x?: number; y?: number; w?: number; h?: number; ok?:
 type FacecamTracking = { fallback?: boolean; reason?: string; method?: string; confidence?: number; sampleSeconds?: number[]; samples?: FacecamTrackingBox[]; detections?: FacecamTrackingBox[] }
 type Clip = { id: string; transcriptId: string; score: number; platform?: PlatformId; status?: 'idea' | 'draft' | 'reviewed' | 'exported' | 'ready_local_manual_upload' | 'uploaded' | 'archived' | 'needs-review' | 'superseded'; exportedAt?: string | null; uploadedAt?: string | null; start: string; end: string; title: string; hook: string; caption: string; hashtags: string[]; reason: string; createdAt: string; renderPath?: string; renderUrl?: string; renderPreset?: string; renderStatus?: JobStatus; renderError?: string; exportBundlePath?: string; proofFramePath?: string; proofFrames?: string[]; thumbnailProofPath?: string; facecamTracking?: FacecamTracking; seo?: { youtubeTitle?: string; description?: string; tiktokDescription?: string; tags?: string[]; titleVariants?: string[]; pinnedComment?: string; primaryKeyword?: string; fileName?: string } }
 type DispatchStatus = 'drafted' | 'needs_owner_review' | 'approved_manual_upload' | 'posted_manual' | 'blocked' | 'style_rework_needed' | 'superseded'
-type DispatchItem = { id: string; clipId?: string; title: string; platform?: PlatformId; status: DispatchStatus; renderPath?: string; exportBundlePath?: string; proofFrames?: string[]; blockers?: string[]; ownerGateRequired?: boolean; ownerGate?: string; privacyWatchRequired?: boolean; replacedByDispatchId?: string; replacedByRenderPath?: string; replacedByBundlePath?: string; lastAuditAction?: string; createdAt: string; updatedAt: string }
+type ManualPostResult = { externalUrl?: string; postedAt?: string; notes?: string; recordedAt?: string }
+type PlatformCopyOverride = { title?: string; postText?: string; description?: string; hashtags?: string[]; updatedAt?: string }
+type DispatchItem = { id: string; clipId?: string; title: string; platform?: PlatformId; status: DispatchStatus; renderPath?: string; exportBundlePath?: string; proofFrames?: string[]; blockers?: string[]; ownerGateRequired?: boolean; ownerGate?: string; privacyWatchRequired?: boolean; replacedByDispatchId?: string; replacedByRenderPath?: string; replacedByBundlePath?: string; manualResult?: ManualPostResult; copyOverrides?: Partial<Record<PlatformId, PlatformCopyOverride>>; lastAuditAction?: string; createdAt: string; updatedAt: string }
 type DispatchFilterId = 'all' | 'manual-ready' | 'owner-gate' | 'style-suspended' | 'needs-rerender' | 'superseded'
 type PlatformProfile = { id: PlatformId; label: string; stage: 'ready' | 'draft' | 'planned'; format: string; note: string }
 type ScheduleItem = { id: string; label: string; cadence: string; status: 'draft' | 'ready' | 'planned' }
 type EngagementTask = { id: string; label: string; mode: 'draft-only' | 'manual-review'; status: 'ready' | 'planned' }
 type MonetizationOffer = { id: string; model: 'CPM' | 'CPE' | 'CPS'; label: string; status: 'tracking' | 'planned' }
 type PostingConnector = { id: string; label: string; platforms: PlatformId[]; mode: string; status: 'credentials-needed' | 'connected' | 'planned'; requiredSecrets: string[]; note: string }
-type SocialConnection = { id: string; label: string; platform: PlatformId | 'meta'; provider: string; status: 'connected' | 'oauth_approved' | 'ready_to_connect' | 'needs_app_config' | 'planned'; scopes: string[]; mode: string; callbackUrl: string; connectedAt?: string; accountLabel?: string; missingConfig?: string[]; note: string }
+type SocialConnection = { id: string; label: string; platform: PlatformId | 'meta'; provider: string; status: 'connected' | 'oauth_approved' | 'manual_linked' | 'ready_to_connect' | 'needs_app_config' | 'planned'; scopes: string[]; mode: string; callbackUrl: string; connectedAt?: string; accountLabel?: string; manualUrl?: string; missingConfig?: string[]; note: string }
 type PostingValidation = { id: string; title: string; platform: PlatformId; blockers: string[]; warnings: string[]; ok: boolean }
 type PostingReadiness = { readyForCredentials: boolean; approvedManualAssets: number; platformsReady: PlatformId[]; connectors: PostingConnector[]; missingCredentialConnectors: PostingConnector[]; validations: PostingValidation[]; nextCredentialStep: string; safetyGate: string }
 type DispatchListResponse = { items: DispatchItem[]; summary: { manifestReady?: number; manualReadyManifest?: number; missingManifestReady?: number; missingManifestReadyPaths?: string[]; total: number; drafted: number; needsOwnerReview: number; approvedManualUpload: number; postedManual: number; blocked: number; superseded?: number } }
@@ -28,12 +30,17 @@ type Job = { id: string; type: string; title: string; status: JobStatus; detail:
 type MediaJob = { id: string; step: string; status: JobStatus; detail: string; command: string; createdAt: string }
 type ViralFind = { id: string; source: string; title: string; url: string; score: number; angle: string; createdAt: string }
 type PracticeChat = { id: string; name: string; text: string; label: string; createdAt: string }
+type TwitterRadarItem = { id: string; topic: string; account: string; handle?: string; tier?: string; watchTier?: string; sourceMode?: string; source?: 'topic_search' | 'watchlist_account' | string; sourceLabel?: string; observedAt?: string | null; latencyMs?: number | null; text: string; url: string; replyDraft: string; score: number; reason: string; status: 'needs_manual_screen' | 'ready_to_reply' | 'saved' | 'skipped'; createdAt: string }
+type TwitterWatchAccount = { handle: string; displayName: string; tier: 'A' | 'B' | 'C' | string; topicTags: string[]; sourceMode: 'manual_search' | 'api_pending' | 'rss_pending' | string; lastSeenTweetId?: string | null; lastSeenAt?: string | null; lastManualCheckedAt?: string | null; nextManualCheckAt?: string | null; checkCadenceMinutes?: number; priorityScore?: number; enabled: boolean }
+type TwitterRadarSourceAdapter = { id: string; label: string; status: string; latencyClass: string; requiresCredentials: boolean; termsRisk: string; minPollIntervalMs: number; capability: string; note: string }
+type TwitterRadarWorkerLane = { id: string; label: string; status: string; focus: string }
+type TwitterRadar = { status: string; mode: string; pollingMode?: string; source?: string; lastScanAt?: string | null; topics: string[]; watchAccounts: TwitterWatchAccount[]; sourceAdapters?: TwitterRadarSourceAdapter[]; workerLanes?: TwitterRadarWorkerLane[]; items: TwitterRadarItem[] }
 type ThumbnailConcept = { id: string; sourceClipId?: string; sourceTranscriptId?: string; sourceTitle?: string; sourceVideoPath?: string; sourceProofPath?: string; status: 'idea' | 'liked' | 'disliked' | 'used'; rating?: 'like' | 'dislike' | null; title: string; thumbnailText: string; visualAngle: string; emotion: string; style: string; prompt: string; imageUrl?: string; learningNotes?: string; createdAt: string; updatedAt?: string }
 type MediaValidation = { status: 'complete' | 'partial' | 'unknown'; detail: string; durationSeconds?: number; lastPacketSeconds?: number; validatedAt?: string; cacheStatus?: 'fresh' | 'reused' | 'not-applicable' }
 type MediaFile = { name: string; kind: 'source' | 'transcript' | 'render' | 'export' | 'concept'; path: string; url: string; size: number; updatedAt: string; validation?: MediaValidation }
 type ImportChecklistItem = { id: string; label: string; status: 'done' | 'next' | 'blocked'; detail: string }
 type ImportReadiness = { latestStream?: Video | null; expected: { source: string; transcript: string; captions: string[] }; found: { source?: MediaFile | null; transcript?: MediaFile | null; caption?: MediaFile | null }; checklist: ImportChecklistItem[]; activeMediaJobs: number; nextAction: string; guardrail: string }
-type AppState = { settings: Settings; scans: Scan[]; videos: Video[]; transcripts: Transcript[]; clips: Clip[]; dispatchItems: DispatchItem[]; platformProfiles?: PlatformProfile[]; scheduleItems?: ScheduleItem[]; engagementTasks?: EngagementTask[]; monetizationOffers?: MonetizationOffer[]; importReadiness?: ImportReadiness; postingReadiness?: PostingReadiness; socialConnections?: SocialConnection[]; mediaJobs: MediaJob[]; viralFinds: ViralFind[]; chatMessages: PracticeChat[]; thumbnailConcepts: ThumbnailConcept[]; jobs: Job[]; mediaFiles: MediaFile[] }
+type AppState = { settings: Settings; scans: Scan[]; videos: Video[]; transcripts: Transcript[]; clips: Clip[]; dispatchItems: DispatchItem[]; platformProfiles?: PlatformProfile[]; scheduleItems?: ScheduleItem[]; engagementTasks?: EngagementTask[]; monetizationOffers?: MonetizationOffer[]; importReadiness?: ImportReadiness; postingReadiness?: PostingReadiness; socialConnections?: SocialConnection[]; twitterRadar?: TwitterRadar; mediaJobs: MediaJob[]; viralFinds: ViralFind[]; chatMessages: PracticeChat[]; thumbnailConcepts: ThumbnailConcept[]; jobs: Job[]; mediaFiles: MediaFile[] }
 type SpeechRecognitionEventLike = { resultIndex: number; results: ArrayLike<{ isFinal: boolean; 0: { transcript: string } }> }
 type SpeechRecognitionErrorEventLike = { error?: string }
 type SpeechRecognitionLike = {
@@ -89,11 +96,12 @@ const navItems = [
   { id: 'viral-hunter', label: 'Viral Hunter', icon: '🕵️', kicker: 'Lead finder' },
   { id: 'studio-feedback', label: 'Studio Feedback', icon: '🎙️', kicker: 'Stream quality' },
   { id: 'social-dashboard', label: 'Social Hub', icon: '📣', kicker: 'Dispatch + connections' },
+  { id: 'twitter-radar', label: 'Twitter Radar', icon: '🛰️', kicker: 'Reply targets' },
   { id: 'live-chat', label: 'Live Chat Co-Pilot', icon: '💬', kicker: 'Practice chat' },
   { id: 'settings', label: 'Settings', icon: '⚙️', kicker: 'Local-first' },
 ] as const
 
-const emptyState: AppState = { settings: { channelUrl: 'https://www.youtube.com/@ModernResponsibility', streamSafeMode: true, guardrails: [] }, scans: [], videos: [], transcripts: [], clips: [], dispatchItems: [], platformProfiles: [], scheduleItems: [], engagementTasks: [], monetizationOffers: [], mediaJobs: [], viralFinds: [], chatMessages: [], thumbnailConcepts: [], jobs: [], mediaFiles: [] }
+const emptyState: AppState = { settings: { channelUrl: 'https://www.youtube.com/@ModernResponsibility', streamSafeMode: true, guardrails: [] }, scans: [], videos: [], transcripts: [], clips: [], dispatchItems: [], platformProfiles: [], scheduleItems: [], engagementTasks: [], monetizationOffers: [], twitterRadar: { status: 'draft-only', mode: 'topic-mvp', topics: [], watchAccounts: [], items: [] }, mediaJobs: [], viralFinds: [], chatMessages: [], thumbnailConcepts: [], jobs: [], mediaFiles: [] }
 const formatDate = (value: string) => Number.isNaN(new Date(value).getTime()) ? 'date unavailable' : new Date(value).toLocaleDateString()
 const formatBytes = (bytes: number) => bytes > 1024 * 1024 ? `${(bytes / 1024 / 1024).toFixed(1)} MB` : `${Math.max(1, Math.round(bytes / 1024))} KB`
 const approvedHouseRenderNames = ['stream-2-build-clip-machine-restored-layout-v2-20260513T2012Z.mp4', 'stream-2-ai-agents-real-work-house-style-v3-20260513T1942Z.mp4', 'stream-2-project-progress-offline-house-v3-20260513T2234Z.mp4', 'day3-platform-creates-content-house-v3-20260513T2104Z.mp4', 'day3-honest-ai-chat-house-v3-20260513T2147Z.mp4', 'day3-agent-loop-keeps-building-house-v3-20260513T2147Z.mp4', 'day3-no-sleep-shipping-house-v3-20260513T2317Z.mp4', 'stream-2-thumbnail-looks-mid-house-v3-20260514T0004Z.mp4', 'stream-2-build-while-i-sleep-house-v3-20260514T0047Z.mp4', 'stream-2-secure-vps-house-v3-20260514T0134Z.mp4', 'stream-2-rename-channel-house-v3-20260514T0217Z.mp4', 'stream-2-big-day-sprint-house-v3-20260514T0347Z.mp4', 'stream-2-social-to-vps-plan-house-v3-privacycrop-20260514T0452Z.mp4', 'stream-2-keep-stream-hide-secrets-house-v3-20260514T0608Z.mp4', 'stream-2-post-while-i-sleep-house-v3-20260514T1045Z.mp4', 'thumbnail-looks-mid-house-v3-20260514T1125Z.mp4', 'stream-2-ai-still-working-house-v3-20260514T1208Z.mp4', 'template-trial-no-leaks-house-v3-20260514T1338Z.mp4', 'stream-2-phone-controls-build-house-v3-20260514T1510Z.mp4', 'template-trial-no-leaks-20260514T0800Z.mp4', 'thumbnail-looks-mid-template-20260514T0852Z.mp4', 'socials-to-vps-template-20260514T0910Z.mp4', 'stream-2-project-moves-offstream-house-v4d-20260515T0645Z.mp4', 'stream-2-clips-first-vps-next-house-v4b-20260515T0650Z.mp4']
@@ -137,7 +145,7 @@ const facecamSampleCount = (tracking?: FacecamTracking) => tracking?.sampleSecon
 async function api<T>(path: string, options?: RequestInit): Promise<T> {
   const response = await fetch(path, { headers: { 'content-type': 'application/json' }, ...options })
   const data = await response.json()
-  if (!response.ok) throw new Error(data.error || 'Request failed')
+  if (!response.ok) throw new Error(data.error || data.message || 'Request failed')
   return data
 }
 
@@ -300,6 +308,7 @@ function Page({ page, state, refresh, setError, liveChat }: { page: PageId; stat
     case 'viral-hunter': return <ViralHunter {...props} />
     case 'studio-feedback': return <StudioFeedback />
     case 'social-dashboard': return <SocialDashboard state={state} refresh={refresh} setError={setError} />
+    case 'twitter-radar': return <TwitterRadarPage state={state} refresh={refresh} setError={setError} />
     case 'live-chat': return <LiveChat state={state} controller={liveChat} />
     case 'settings': return <SettingsPage {...props} />
     default: return <Dashboard state={state} setPage={() => undefined} />
@@ -592,18 +601,52 @@ function SettingsPage({ state, refresh, setError }: { state: AppState; refresh: 
 function SocialConnectionsPanel({ state, refresh, setError }: { state: AppState; refresh: () => Promise<void>; setError: (value: string) => void }) {
   const [workingId, setWorkingId] = useState('')
   const [notice, setNotice] = useState('')
+  const [connectError, setConnectError] = useState('')
+  const [pendingAuthUrl, setPendingAuthUrl] = useState('')
+  const [manualLinks, setManualLinks] = useState<Record<string, string>>({})
   const connections = state.socialConnections || []
   const startConnect = async (id: string) => {
     setWorkingId(id)
     setNotice('')
+    setConnectError('')
+    setPendingAuthUrl('')
+    const popup = window.open('', '_blank')
+    popup?.document.write('<title>Opening social login…</title><body style="font-family:system-ui;padding:24px;background:#07111f;color:#eaf6ff"><h1>Opening social login…</h1><p>You can close this tab if Vibe Zone reports setup is still needed.</p></body>')
     try {
       const result = await api<{ status: string; authUrl?: string; message?: string }>(`/api/social/connect/${encodeURIComponent(id)}/start`, { method: 'POST', body: '{}' })
-      if (result.authUrl) window.open(result.authUrl, '_blank', 'noopener,noreferrer')
+      if (result.authUrl) {
+        if (popup && !popup.closed) popup.location.href = result.authUrl
+        else setPendingAuthUrl(result.authUrl)
+      } else {
+        popup?.close()
+      }
       setNotice(result.message || (result.authUrl ? 'Opened provider login in a new tab.' : 'Connector updated.'))
       await refresh()
       setError('')
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Connection start failed')
+      popup?.close()
+      const message = err instanceof Error ? err.message : 'Connection start failed'
+      setConnectError(message)
+      setError(message)
+    } finally {
+      setWorkingId('')
+    }
+  }
+  const manualLink = async (id: string) => {
+    const accountUrl = manualLinks[id]?.trim()
+    if (!accountUrl) { setConnectError('Paste the public channel/profile URL first.'); return }
+    setWorkingId(id)
+    setConnectError('')
+    setNotice('')
+    try {
+      const result = await api<{ message?: string }>(`/api/social/connect/${encodeURIComponent(id)}/manual`, { method: 'POST', body: JSON.stringify({ accountUrl }) })
+      await refresh()
+      setNotice(result.message || 'Channel linked locally.')
+      setError('')
+    } catch (err) {
+      const message = err instanceof Error ? err.message : 'Manual link failed'
+      setConnectError(message)
+      setError(message)
     } finally {
       setWorkingId('')
     }
@@ -622,9 +665,12 @@ function SocialConnectionsPanel({ state, refresh, setError }: { state: AppState;
     }
   }
   return <>
-    <Card title="Connect your socials inside Vibe Zone" eyebrow="VidIQ-style OAuth flow" className="full-span"><p>Use this page through your tunnel/local Vibe Zone URL. Each platform redirects back to Vibe Zone, then we store the connection state locally. Posting still needs a final owner approval gate per platform.</p><div className="notice"><strong>Safe setup rule:</strong> do not paste secrets on stream or into chat. Provider app keys live in environment variables; OAuth happens in your browser session.</div>{notice && <div className="notice">{notice}</div>}</Card>
-    <div className="connection-grid full-span">{connections.map((connection) => <article className={`connection-card ${connection.status}`} key={connection.id}><div><strong>{connection.label}</strong><span>{connection.status.replaceAll('_', ' ')}</span></div><p>{connection.note}</p><small>Provider: {connection.provider} • Mode: {connection.mode}</small><small>Callback: <code>{connection.callbackUrl}</code></small><div className="scope-list">{connection.scopes.map((scope) => <em key={scope}>{scope}</em>)}</div>{connection.missingConfig?.length ? <div className="blocked-reasons"><b>Needed before login</b>{connection.missingConfig.map((item) => <span key={item}>{item}</span>)}</div> : null}{connection.connectedAt ? <small>Connected {new Date(connection.connectedAt).toLocaleString()} {connection.accountLabel ? `• ${connection.accountLabel}` : ''}</small> : null}<div className="dispatch-actions"><button className="primary" type="button" onClick={() => startConnect(connection.id)} disabled={workingId === connection.id || connection.status === 'planned'}>{workingId === connection.id ? 'Opening…' : connection.status === 'connected' || connection.status === 'oauth_approved' ? 'Reconnect' : 'Connect'}</button>{['connected', 'oauth_approved'].includes(connection.status) && <button type="button" onClick={() => disconnect(connection.id)} disabled={workingId === connection.id}>Disconnect locally</button>}</div></article>)}</div>
-    <Card title="How the flow works" eyebrow="OAuth handshake" className="full-span"><ol className="timeline"><li><time>1</time><span><strong>Configure provider app keys</strong><small>Set client id/secret in env, never in the UI.</small></span></li><li><time>2</time><span><strong>Click Connect in Vibe Zone</strong><small>We open TikTok/YouTube/etc with requested permissions.</small></span></li><li><time>3</time><span><strong>Provider redirects to tunnel callback</strong><small>Example: /api/social/callback/tiktok on your public tunnel URL.</small></span></li><li><time>4</time><span><strong>Vibe Zone stores local connection state</strong><small>Tokens will be encrypted/local-only when real exchange is enabled.</small></span></li><li><time>5</time><span><strong>First post remains approval-gated</strong><small>You approve exact video/caption before it leaves the machine.</small></span></li></ol></Card>
+    <Card title="Connect your socials inside Vibe Zone" eyebrow="OAuth + manual channel links" className="full-span"><p><strong>Manual link</strong> works now: paste your public channel/profile URL and Vibe Zone will track it locally. <strong>X OAuth</strong> now has a real browser login/token exchange path once <code>X_CLIENT_ID</code>, <code>X_CLIENT_SECRET</code>, and your public tunnel callback are set.</p><div className="notice"><strong>Safe setup rule:</strong> do not paste secrets on stream or into chat. Provider app keys live in environment variables; OAuth happens in your browser session.</div>{notice && <div className="notice">{notice}</div>}{connectError && <div className="notice danger"><strong>Connection blocked:</strong> {connectError}</div>}{pendingAuthUrl && <div className="notice"><a href={pendingAuthUrl} target="_blank" rel="noreferrer">Popup was blocked — open login manually</a></div>}</Card>
+    <div className="connection-grid full-span">{connections.map((connection) => {
+      const actionLabel = workingId === connection.id ? 'Opening…' : connection.status === 'connected' || connection.status === 'oauth_approved' ? 'Reconnect' : connection.status === 'needs_app_config' ? 'Show setup needed' : 'Connect'
+      return <article className={`connection-card ${connection.status}`} key={connection.id}><div><strong>{connection.label}</strong><span>{connection.status.replaceAll('_', ' ')}</span></div><p>{connection.note}</p><small>Provider: {connection.provider} • Mode: {connection.mode}</small><small>Callback: <code>{connection.callbackUrl}</code></small><div className="scope-list">{connection.scopes.map((scope) => <em key={scope}>{scope}</em>)}</div>{connection.missingConfig?.length ? <div className="blocked-reasons"><b>Needed before OAuth login</b>{connection.missingConfig.map((item) => <span key={item}>{item}</span>)}</div> : null}{connection.manualUrl ? <small>Linked profile: <a href={connection.manualUrl} target="_blank" rel="noreferrer">{connection.accountLabel || connection.manualUrl}</a></small> : null}{connection.connectedAt ? <small>Connected {new Date(connection.connectedAt).toLocaleString()} {connection.accountLabel && !connection.manualUrl ? `• ${connection.accountLabel}` : ''}</small> : null}<div className="manual-link-row"><input value={manualLinks[connection.id] ?? connection.manualUrl ?? ''} onChange={(event) => setManualLinks((current) => ({ ...current, [connection.id]: event.target.value }))} placeholder={`Paste ${connection.label} channel/profile URL`} /><button type="button" onClick={() => manualLink(connection.id)} disabled={workingId === connection.id}>{connection.manualUrl ? 'Update link' : 'Link manually'}</button></div><div className="dispatch-actions"><button className="primary" type="button" onClick={() => startConnect(connection.id)} disabled={workingId === connection.id || connection.status === 'planned'}>{actionLabel}</button>{['connected', 'oauth_approved', 'manual_linked'].includes(connection.status) && <button type="button" onClick={() => disconnect(connection.id)} disabled={workingId === connection.id}>Disconnect locally</button>}</div></article>
+    })}</div>
+    <Card title="How the flow works" eyebrow="OAuth handshake" className="full-span"><ol className="timeline"><li><time>1</time><span><strong>Configure provider app keys</strong><small>Set client id/secret in env, never in the UI.</small></span></li><li><time>2</time><span><strong>Click Connect in Vibe Zone</strong><small>We open X/TikTok/YouTube/etc with requested permissions.</small></span></li><li><time>3</time><span><strong>Provider redirects to tunnel callback</strong><small>Example: /api/social/callback/x on your public tunnel URL.</small></span></li><li><time>4</time><span><strong>Vibe Zone stores local connection state</strong><small>X OAuth tokens are stored locally only; do not expose the data file on stream.</small></span></li><li><time>5</time><span><strong>First post remains approval-gated</strong><small>You approve exact video/caption before it leaves the machine.</small></span></li></ol></Card>
   </>
 }
 
@@ -785,6 +831,8 @@ function SocialDashboard({ state, refresh, setError }: { state: AppState; refres
   const postingReadiness = state.postingReadiness
   const [seeding, setSeeding] = useState(false)
   const [dispatchFilter, setDispatchFilter] = useState<DispatchFilterId>('all')
+  const [manualResultDrafts, setManualResultDrafts] = useState<Record<string, ManualPostResult>>({})
+  const [copyDrafts, setCopyDrafts] = useState<Record<string, PlatformCopyOverride>>({})
   const dispatchReady = clips.filter((clip) => clip.exportBundlePath || clip.renderPath || clip.status === 'reviewed' || clip.status === 'exported')
   const queue: DispatchItem[] = dispatchItems.length ? dispatchItems : dispatchReady.map((clip) => ({ id: `fallback_${clip.id}`, clipId: clip.id, title: clip.title, platform: clip.platform || 'tiktok', status: clip.status === 'exported' ? 'approved_manual_upload' : clip.status === 'reviewed' ? 'needs_owner_review' : 'drafted', renderPath: clip.renderPath, exportBundlePath: clip.exportBundlePath, proofFrames: expectedProofFrames(clip), blockers: [!clip.renderPath && 'Missing rendered asset', !clip.exportBundlePath && 'Missing local upload bundle'].filter(Boolean) as string[], lastAuditAction: 'Derived fallback from clip metadata', createdAt: clip.createdAt, updatedAt: clip.exportedAt || clip.createdAt } satisfies DispatchItem))
   const blockedItems = queue.filter(isBlockedDispatch)
@@ -826,9 +874,9 @@ function SocialDashboard({ state, refresh, setError }: { state: AppState; refres
     return true
   }).sort((a, b) => new Date(dispatchUpdatedAt(b)).getTime() - new Date(dispatchUpdatedAt(a)).getTime())
   const selectedDispatchFilter = dispatchFilters.find((filter) => filter.id === dispatchFilter) || dispatchFilters[0]
-  const updateStatus = async (id: string, status: DispatchStatus) => {
+  const updateStatus = async (id: string, status: DispatchStatus, manualResult?: ManualPostResult, copyOverrides?: Partial<Record<PlatformId, PlatformCopyOverride>>) => {
     try {
-      await api<DispatchItem>('/api/dispatch/update', { method: 'POST', body: JSON.stringify({ id, status }) })
+      await api<DispatchItem>('/api/dispatch/update', { method: 'POST', body: JSON.stringify({ id, status, manualResult, copyOverrides }) })
       await refresh()
       setError('')
     } catch (err) {
@@ -846,6 +894,16 @@ function SocialDashboard({ state, refresh, setError }: { state: AppState; refres
     } finally {
       setSeeding(false)
     }
+  }
+  const updateManualResultDraft = (id: string, patch: ManualPostResult) => setManualResultDrafts((current) => ({ ...current, [id]: { ...(current[id] || {}), ...patch } }))
+  const recordManualResult = async (item: DispatchItem) => {
+    const draft = manualResultDrafts[item.id] || item.manualResult || {}
+    await updateStatus(item.id, 'posted_manual', draft)
+  }
+  const updateCopyDraft = (id: string, patch: PlatformCopyOverride) => setCopyDrafts((current) => ({ ...current, [id]: { ...(current[id] || {}), ...patch } }))
+  const saveCopyOverride = async (item: DispatchItem, platform: PlatformId) => {
+    const draft = copyDrafts[item.id] || item.copyOverrides?.[platform] || {}
+    await updateStatus(item.id, item.status, undefined, { [platform]: draft })
   }
   return <section className="page-grid social-hub-grid">
     <div className="social-hero full-span">
@@ -876,10 +934,157 @@ function SocialDashboard({ state, refresh, setError }: { state: AppState; refres
         </article>
       })}</div> : <div className="empty-panel"><strong>No blocked dispatch items.</strong><p>The queue is clear; keep reviewing approved bundles manually before anything leaves the studio.</p></div>}
     </Card>
-    <Card title="Dispatch queue" eyebrow="Local-only state — no external posting" className="full-span"><div className="dispatch-toolbar"><div><strong>Manual dispatch audit</strong><span>Refreshes from rendered/exported clips and upload bundles. This never posts externally.</span></div><button className="primary" type="button" onClick={seedDispatch} disabled={seeding}>{seeding ? 'Refreshing…' : 'Refresh local queue'}</button></div><div className="dispatch-filter-bar" role="tablist" aria-label="Dispatch queue filters">{dispatchFilters.map((filter) => <button className={dispatchFilter === filter.id ? 'active' : ''} key={filter.id} type="button" onClick={() => setDispatchFilter(filter.id)}><strong>{filter.label}</strong><span>{filter.count}</span><small>{filter.helper}</small></button>)}</div><div className="notice"><strong>{selectedDispatchFilter.label}:</strong> showing {filteredQueue.length} local item(s). Owner privacy/watch gate is tracked separately from true blockers.</div><div className="table-list">{filteredQueue.slice(0, 12).map((item) => { const clip = clips.find((candidate) => candidate.id === item.clipId); const platform = item.platform || clip?.platform || 'tiktok'; const proofFrames = item.proofFrames?.length ? item.proofFrames : clip ? expectedProofFrames(clip) : []; return <div className="dispatch-row" key={item.id}><div><strong>{item.title}</strong><span>{platform.toUpperCase()} • {dispatchStatusLabel(item.status)} • updated {new Date(dispatchUpdatedAt(item)).toLocaleString()}</span><em className={['approved_manual_upload', 'posted_manual', 'superseded'].includes(item.status) ? 'dispatch-gate approved' : 'dispatch-gate'}>{item.lastAuditAction || (clip ? ownerGateLabel(clip) : 'Local dispatch item')}</em></div>{clip && <ul>{platformChecklist(platform, clip).map((check) => <li key={check}>{check}</li>)}</ul>}<div className="dispatch-actions">{item.renderPath && <a href={`/${item.renderPath}`} target="_blank">Open rendered asset</a>}{item.exportBundlePath && <a href={`/${item.exportBundlePath}/upload-card.md`} target="_blank">Open upload card</a>}{item.exportBundlePath && <a href={`/${item.exportBundlePath}/metadata.json`} target="_blank">Open metadata</a>}{item.replacedByRenderPath && <a href={`/${item.replacedByRenderPath}`} target="_blank">Open replacement render</a>}{item.replacedByBundlePath && <a href={`/${item.replacedByBundlePath}/upload-card.md`} target="_blank">Open replacement bundle</a>}{proofFrames.map((frame, index) => <a href={`/${frame}`} target="_blank" key={frame}>{index ? 'Open mid proof' : 'Open proof frame'}</a>)}{(item.ownerGateRequired || item.privacyWatchRequired) && <span>Owner gate: {item.ownerGate || 'Final privacy/watch pass required before upload'}</span>}{item.blockers?.map((blocker) => <span key={blocker}>{blocker}</span>)}<label>Local status <select value={item.status} onChange={(event) => updateStatus(item.id, event.target.value as DispatchStatus)} disabled={item.id.startsWith('fallback_')}>{dispatchStatusOptions.map((status) => <option key={status} value={status}>{dispatchStatusLabel(status)}</option>)}</select></label></div>{item.exportBundlePath && clip && <div className="dispatch-copy-grid"><p><strong>YouTube Shorts</strong><span>{clip.seo?.youtubeTitle || item.title}</span><small>{clip.seo?.description ? 'Description ready' : 'Description needs manual check'} • {clip.seo?.tags?.length ? `${clip.seo.tags.length} tags` : 'tags missing'}</small></p><p><strong>TikTok</strong><span>{clip.seo?.tiktokDescription || clip.caption}</span><small>{clip.hashtags?.length ? clip.hashtags.join(' ') : 'hashtags missing'}</small></p></div>}</div> })}{!filteredQueue.length && <div className="empty-panel"><strong>No items in this dispatch group.</strong><p>{queue.length ? 'Try another filter, or refresh the local queue after new renders/export bundles land.' : 'Review a clip, render it, then build an upload bundle in Clip Factory. This page stays draft/manual-upload only.'}</p></div>}</div></Card>
+    <Card title="Dispatch queue" eyebrow="Local-only state — no external posting" className="full-span"><div className="dispatch-toolbar"><div><strong>Manual dispatch audit</strong><span>Refreshes from rendered/exported clips and upload bundles. This never posts externally.</span></div><button className="primary" type="button" onClick={seedDispatch} disabled={seeding}>{seeding ? 'Refreshing…' : 'Refresh local queue'}</button></div><div className="dispatch-filter-bar" role="tablist" aria-label="Dispatch queue filters">{dispatchFilters.map((filter) => <button className={dispatchFilter === filter.id ? 'active' : ''} key={filter.id} type="button" onClick={() => setDispatchFilter(filter.id)}><strong>{filter.label}</strong><span>{filter.count}</span><small>{filter.helper}</small></button>)}</div><div className="notice"><strong>{selectedDispatchFilter.label}:</strong> showing {filteredQueue.length} local item(s). Owner privacy/watch gate is tracked separately from true blockers.</div><div className="table-list">{filteredQueue.slice(0, 12).map((item) => { const clip = clips.find((candidate) => candidate.id === item.clipId); const platform = item.platform || clip?.platform || 'tiktok'; const proofFrames = item.proofFrames?.length ? item.proofFrames : clip ? expectedProofFrames(clip) : []; return <div className="dispatch-row" key={item.id}><div><strong>{item.title}</strong><span>{platform.toUpperCase()} • {dispatchStatusLabel(item.status)} • updated {new Date(dispatchUpdatedAt(item)).toLocaleString()}</span><em className={['approved_manual_upload', 'posted_manual', 'superseded'].includes(item.status) ? 'dispatch-gate approved' : 'dispatch-gate'}>{item.lastAuditAction || (clip ? ownerGateLabel(clip) : 'Local dispatch item')}</em></div>{clip && <ul>{platformChecklist(platform, clip).map((check) => <li key={check}>{check}</li>)}</ul>}<div className="dispatch-actions">{item.renderPath && <a href={`/${item.renderPath}`} target="_blank">Open rendered asset</a>}{item.exportBundlePath && <a href={`/${item.exportBundlePath}/upload-card.md`} target="_blank">Open upload card</a>}{item.exportBundlePath && <a href={`/${item.exportBundlePath}/metadata.json`} target="_blank">Open metadata</a>}{item.replacedByRenderPath && <a href={`/${item.replacedByRenderPath}`} target="_blank">Open replacement render</a>}{item.replacedByBundlePath && <a href={`/${item.replacedByBundlePath}/upload-card.md`} target="_blank">Open replacement bundle</a>}{proofFrames.map((frame, index) => <a href={`/${frame}`} target="_blank" key={frame}>{index ? 'Open mid proof' : 'Open proof frame'}</a>)}{(item.ownerGateRequired || item.privacyWatchRequired) && <span>Owner gate: {item.ownerGate || 'Final privacy/watch pass required before upload'}</span>}{item.blockers?.map((blocker) => <span key={blocker}>{blocker}</span>)}<label>Local status <select value={item.status} onChange={(event) => updateStatus(item.id, event.target.value as DispatchStatus)} disabled={item.id.startsWith('fallback_')}>{dispatchStatusOptions.map((status) => <option key={status} value={status}>{dispatchStatusLabel(status)}</option>)}</select></label></div>{item.exportBundlePath && clip && <div className="dispatch-copy-grid"><p><strong>YouTube Shorts</strong><span>{clip.seo?.youtubeTitle || item.title}</span><small>{clip.seo?.description ? 'Description ready' : 'Description needs manual check'} • {clip.seo?.tags?.length ? `${clip.seo.tags.length} tags` : 'tags missing'}</small></p><p><strong>TikTok</strong><span>{clip.seo?.tiktokDescription || clip.caption}</span><small>{clip.hashtags?.length ? clip.hashtags.join(' ') : 'hashtags missing'}</small></p></div>}<DispatchCopyOverrideEditor item={item} clip={clip} platform={platform} draft={copyDrafts[item.id] || item.copyOverrides?.[platform] || {}} onDraft={(patch) => updateCopyDraft(item.id, patch)} onSave={() => saveCopyOverride(item, platform)} /><DispatchManualResultForm item={item} draft={manualResultDrafts[item.id] || item.manualResult || {}} onDraft={(patch) => updateManualResultDraft(item.id, patch)} onSave={() => recordManualResult(item)} /></div> })}{!filteredQueue.length && <div className="empty-panel"><strong>No items in this dispatch group.</strong><p>{queue.length ? 'Try another filter, or refresh the local queue after new renders/export bundles land.' : 'Review a clip, render it, then build an upload bundle in Clip Factory. This page stays draft/manual-upload only.'}</p></div>}</div></Card>
     <Card title="X/Twitter report drafts from clips" eyebrow="Manual approval only" className="full-span"><div className="table-list">{clips.slice(0, 8).map((clip) => <div className="table-row" key={clip.id}><strong>{clip.title}</strong><span>Draft only • manual review</span><p>Report angle: {clip.hook} What changed, what performed, and what I learned building in public. {clip.hashtags.join(' ')}</p></div>)}{!clips.length && <p>Generate clips first. Everything here is draft-only.</p>}</div></Card>
   </section>
 }
+
+function DispatchCopyOverrideEditor({ item, clip, platform, draft, onDraft, onSave }: { item: DispatchItem; clip?: Clip; platform: PlatformId; draft: PlatformCopyOverride; onDraft: (patch: PlatformCopyOverride) => void; onSave: () => void }) {
+  const saved = item.copyOverrides?.[platform]
+  const baseTitle = clip?.seo?.youtubeTitle || item.title
+  const baseDescription = clip?.seo?.description || clip?.seo?.tiktokDescription || clip?.caption || ''
+  const baseHashtags = clip?.hashtags || []
+  const draftHasHashtags = Object.prototype.hasOwnProperty.call(draft, 'hashtags')
+  const draftTags = draftHasHashtags ? (draft.hashtags || []).join(' ') : saved?.hashtags?.join(' ') || baseHashtags.join(' ')
+  const hashtagList = (value: string) => value.split(/[\s,]+/).map((tag) => tag.trim()).filter(Boolean).map((tag) => tag.startsWith('#') ? tag : `#${tag}`)
+  return <div className="copy-override-editor"><strong>Per-platform draft copy</strong><small>Local override for {platform.toUpperCase()}; review-only and never posted automatically.</small><div className="copy-override-grid"><input value={draft.title ?? saved?.title ?? baseTitle} onChange={(event) => onDraft({ title: event.target.value })} placeholder="Platform title" /><textarea value={draft.postText ?? saved?.postText ?? ''} onChange={(event) => onDraft({ postText: event.target.value })} placeholder="Native post text / hook" rows={3} /><textarea value={draft.description ?? saved?.description ?? baseDescription} onChange={(event) => onDraft({ description: event.target.value })} placeholder="Description / caption" rows={3} /><input value={draftTags} onChange={(event) => onDraft({ hashtags: hashtagList(event.target.value) })} placeholder="#hashtags" /><button type="button" onClick={onSave}>Save draft copy</button></div>{saved?.updatedAt && <small>Saved {new Date(saved.updatedAt).toLocaleString()}</small>}</div>
+}
+
+function DispatchManualResultForm({ item, draft, onDraft, onSave }: { item: DispatchItem; draft: ManualPostResult; onDraft: (patch: ManualPostResult) => void; onSave: () => void }) {
+  const canRecord = ['approved_manual_upload', 'posted_manual'].includes(item.status)
+  if (!canRecord) return item.manualResult ? <div className="manual-result-ledger"><strong>Manual result</strong><small>{item.manualResult.externalUrl || 'No URL recorded'} • {item.manualResult.postedAt || item.manualResult.recordedAt || 'time not recorded'}</small>{item.manualResult.notes && <p>{item.manualResult.notes}</p>}</div> : null
+  return <div className="manual-result-ledger"><strong>Manual post result ledger</strong><small>Only records what Masala posted manually. It never posts or verifies externally.</small><div className="manual-result-inputs"><input value={draft.externalUrl || ''} onChange={(event) => onDraft({ externalUrl: event.target.value })} placeholder="Optional public post URL" /><input value={draft.postedAt || ''} onChange={(event) => onDraft({ postedAt: event.target.value })} placeholder="Posted at, e.g. 2026-05-17 15:30" /><input value={draft.notes || ''} onChange={(event) => onDraft({ notes: event.target.value })} placeholder="Manual result note / first metrics" /><button type="button" onClick={onSave}>Record posted manually</button></div>{item.manualResult?.recordedAt && <small>Last recorded {new Date(item.manualResult.recordedAt).toLocaleString()}</small>}</div>
+}
+
+const splitRadarLines = (value: string) => value.split(/\r?\n|,/).map((item) => item.trim()).filter(Boolean)
+const radarTierLabel = (value: string, index: number) => {
+  const explicit = value.match(/\b(?:tier\s*)?([abc])\b/i)?.[1]?.toUpperCase()
+  return explicit || (index < 5 ? 'A' : index < 14 ? 'B' : 'C')
+}
+const cleanWatchAccount = (value: string) => value.replace(/^tier\s*[abc][:\s-]*/i, '').replace(/^@?/, '@').replace(/\s+[—-].*$/, '').trim()
+const formatWatchAccount = (account: TwitterWatchAccount) => `Tier ${account.tier || 'B'} @${account.handle}${account.displayName ? ` — ${account.displayName}` : ''}${account.topicTags?.length ? ` | ${account.topicTags.join(', ')}` : ''}`
+const parseWatchAccount = (value: string, index: number): TwitterWatchAccount | null => {
+  const [identity = '', tags = ''] = value.split('|').map((part) => part.trim())
+  const handle = cleanWatchAccount(identity).replace(/^@/, '').replace(/[^a-zA-Z0-9_]/g, '').slice(0, 15)
+  if (!handle) return null
+  return { handle, displayName: identity.replace(/^tier\s*[abc][:\s-]*/i, '').replace(/^@?[a-zA-Z0-9_]+\s*[—-]?\s*/, '').trim() || `@${handle}`, tier: radarTierLabel(value, index), topicTags: splitRadarLines(tags).slice(0, 8), sourceMode: 'manual_search', lastSeenTweetId: null, lastSeenAt: null, enabled: true }
+}
+
+function TwitterRadarPage({ state, refresh, setError }: { state: AppState; refresh: () => Promise<void>; setError: (value: string) => void }) {
+  const radar = state.twitterRadar || { status: 'draft-only', mode: 'topic-mvp', lastScanAt: null, topics: [], watchAccounts: [], items: [] }
+  const xConnection = (state.socialConnections || []).find((connection) => connection.id === 'x')
+  const linkedLabel = xConnection?.manualUrl ? xHandleFromUrl(xConnection.manualUrl) || xConnection.accountLabel || 'Linked profile' : 'No X profile linked'
+  const isManualLinked = xConnection?.status === 'manual_linked'
+  const isOauthReady = xConnection?.status === 'connected' || xConnection?.status === 'oauth_approved'
+  const [draft, setDraft] = useState('')
+  const [format, setFormat] = useState<'one-liner' | 'milestone' | 'lesson' | 'stack'>('one-liner')
+  const [topicText, setTopicText] = useState((radar.topics || []).join('\n'))
+  const [watchText, setWatchText] = useState((radar.watchAccounts || []).map(formatWatchAccount).join('\n'))
+  const [scanning, setScanning] = useState(false)
+  const [saving, setSaving] = useState(false)
+  const topics = splitRadarLines(topicText)
+  const watchAccounts = splitRadarLines(watchText).map(parseWatchAccount).filter(Boolean).slice(0, 2000) as TwitterWatchAccount[]
+  const replyCards = radar.items || []
+  const score = draft.trim().length ? Math.min(19, Math.max(4, Math.round(5 + draft.length / 22 + (/[?]/.test(draft) ? 2 : 0) + (format === 'lesson' ? 2 : 0)))) : 0
+  const predictedImpressions = draft.trim().length ? Math.max(24, Math.round(score * 18 + draft.length * 1.7)) : 0
+  const formatRows = [
+    { id: 'one-liner', icon: '⚡', label: 'One-liner', help: 'Punchy, no setup' },
+    { id: 'milestone', icon: '🏆', label: 'Milestone', help: 'Crossed a number' },
+    { id: 'lesson', icon: '📖', label: 'Lesson learned', help: 'From doing the work' },
+    { id: 'stack', icon: '🛠️', label: 'My stack', help: 'What I use, why' },
+  ] as const
+  const analytics = twitterStudioAnalytics(replyCards, watchAccounts, draft)
+  const saveRadar = async () => {
+    setSaving(true)
+    try {
+      await api<TwitterRadar>('/api/twitter-radar/config', { method: 'POST', body: JSON.stringify({ topics, watchAccounts }) })
+      await refresh()
+      setError('')
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Twitter/X Studio config failed')
+    } finally {
+      setSaving(false)
+    }
+  }
+  const runScan = async () => {
+    setScanning(true)
+    try {
+      await api<TwitterRadar>('/api/twitter-radar/scan', { method: 'POST', body: JSON.stringify({ topics, watchAccounts }) })
+      await refresh()
+      setError('')
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Twitter/X screening failed')
+    } finally {
+      setScanning(false)
+    }
+  }
+  const copyDraft = async () => {
+    try { await navigator.clipboard.writeText(draft) } catch { setError('Copy failed. Select the draft manually.') }
+  }
+  const applyStarter = (next: typeof format) => {
+    setFormat(next)
+    const starters = {
+      'one-liner': 'Boring systems beat flashy ideas when you have to show up every day.',
+      milestone: 'Today I linked the first social profile into Vibe Zone. Tiny step, real product momentum.',
+      lesson: 'Lesson learned: “connected” should mean exactly what the product can do, not what the UI hopes it can do later.',
+      stack: 'My current build stack: Vite, local media pipeline, manual social review, and tiny loops that actually ship.',
+    }
+    setDraft(starters[next])
+  }
+  return <section className="x-studio-page">
+    <div className="x-studio-title"><div><h2>Studio</h2><p>Draft, refine, and publish posts in your voice.</p></div><div className={`x-connection-pill ${isOauthReady ? 'live' : isManualLinked ? 'linked' : 'blocked'}`}><strong>{isOauthReady ? 'OAuth connected' : isManualLinked ? 'Profile linked' : 'Not linked'}</strong><span>{linkedLabel}</span></div></div>
+    <div className="x-studio-explainer"><strong>How this works right now:</strong> your Twitter/X URL is linked locally, so Vibe Zone knows which profile belongs to you. It does <em>not</em> mean X has granted posting/analytics access yet. Until X API/OAuth credentials are added, this page drafts, scores, saves/copies, and opens X manually — it cannot post or read real analytics.</div>
+    <div className="x-studio-grid">
+      <div className="x-main-column">
+        <section className="x-card x-starter-card"><div><h3>What should we draft today?</h3><p>Pick a starting point — Cliff drafts options in your voice.</p></div><div className="x-starter-grid">{formatRows.map((row) => <button className={format === row.id ? 'active' : ''} type="button" key={row.id} onClick={() => applyStarter(row.id)}><span>{row.icon}</span><strong>{row.label}</strong><small>{row.help}</small></button>)}</div><label className="x-chat-line">💬 <input placeholder="or describe what you want in chat" onKeyDown={(event) => { if (event.key === 'Enter') setDraft((event.currentTarget as HTMLInputElement).value) }} /></label></section>
+        <section className="x-card x-composer-card"><div className="x-compose-tabs"><strong>◉ Preview</strong><span>✧ Rate post</span></div><div className="x-tweet-shell"><div className="x-avatar">{linkedLabel.slice(0, 1).replace('@', 'M') || 'M'}</div><div className="x-tweet-body"><button type="button" className="x-audience">Everyone⌄</button><textarea value={draft} onChange={(event) => setDraft(event.target.value)} placeholder="What's happening?" maxLength={280} /><div className="x-reply-rule">🌐 Everyone can reply</div></div></div><div className="x-compose-actions"><span>🖼️</span><span>😊</span><button type="button" onClick={copyDraft} disabled={!draft.trim()}>Save copy</button><a className={!draft.trim() ? 'disabled' : ''} href="https://x.com/compose/post" target="_blank" rel="noreferrer">Open X</a><button className="dark" type="button" disabled={!draft.trim()}>Post manually</button></div></section>
+      </div>
+      <aside className="x-side-column"><section className="x-card x-prediction"><div><strong>ENGAGEMENT PREDICTION</strong><span>{draft.trim() ? 'estimated' : 'waiting'}</span></div><h3>{draft.trim() ? predictedImpressions.toLocaleString() : '— — —'} <small>impressions</small></h3><p>{draft.trim() ? 'Predicted from draft length, hook shape, format, and local learning placeholders. Real accuracy starts after real post results are logged.' : 'Type a draft (15+ characters) to see a predicted impressions range for your account size.'}</p></section><section className="x-card x-algo"><strong>X ALGORITHM SCORE</strong><p>Score this draft against simple For You signals: hook, clarity, quoteability, reply potential, and profile click intent.</p><button type="button" disabled={!draft.trim()}>✧ Score on X algo</button><b>{score ? `${score} / 19` : 'waiting'}</b></section><section className="x-card x-coach"><strong>POST COACH</strong><p>{draft.trim() ? xCoachText(draft, format) : 'Start typing to see how the draft scores against your voice rules plus learnings from your last 30 days.'}</p></section></aside>
+    </div>
+    <section className="x-profile-card"><div><strong>{linkedLabel.replace('@', '') || 'X profile'}</strong><span>{linkedLabel}</span></div><div><b>{analytics.postsTarget}</b><small>posts / day target</small></div><div><b>{analytics.replyTarget}</b><small>recommended replies / day</small></div><div><b>{analytics.followers}</b><small>followers</small></div></section>
+    <div className="x-analytics-head"><div><h2>Your analytics</h2><p>What's working for your audience, learned from every post.</p></div><div><button type="button">Apr 16 - May 16, 2026 ◷</button><button type="button">▽ Filters</button></div></div>
+    <section className="x-metric-row">{analytics.metrics.map((metric) => <article className="x-card x-metric" key={metric.label}><span>{metric.label}</span><strong>{metric.value}</strong><small>{metric.note}</small></article>)}</section>
+    <section className="x-card x-format-table"><div><h3>Format performance</h3><p>Per-format breakdown across this period.</p></div><table><thead><tr><th>Format</th><th>Posts ↓</th><th>Replies</th><th>Impr.</th></tr></thead><tbody>{analytics.formats.map((row) => <tr key={row.format}><td><span>{row.icon}</span>{row.format}</td><td>{row.posts}</td><td>{row.replies}</td><td>{row.impressions}</td></tr>)}</tbody></table></section>
+    <section className="x-bottom-grid"><div className="x-card"><h3>Audience insights</h3><p>{isOauthReady ? 'Real X audience insights can land here after API read access is wired.' : 'Lands once your X audience-insights data is OAuth connected.'}</p></div><div className="x-card"><h3>Takeaways</h3><p>Ship a handful of posts and this card fills with what is working for you specifically.</p></div></section>
+    <details className="x-card x-advanced"><summary>Advanced radar setup</summary><div className="x-advanced-grid"><label><strong>Topic lanes</strong><textarea value={topicText} onChange={(event) => setTopicText(event.target.value)} rows={5} placeholder="AI agents\nbuild in public\ncreator tools" /></label><label><strong>Watchlist</strong><textarea value={watchText} onChange={(event) => setWatchText(event.target.value)} rows={5} placeholder="Tier A @levelsio" /></label><div><button type="button" onClick={saveRadar} disabled={saving}>{saving ? 'Saving…' : 'Save radar setup'}</button><button type="button" onClick={runScan} disabled={scanning}>{scanning ? 'Screening…' : 'Run manual screening'}</button></div></div></details>
+  </section>
+}
+
+function xHandleFromUrl(url = '') {
+  const match = String(url).match(/(?:x\.com|twitter\.com)\/([^/?#]+)/i)
+  return match ? `@${match[1]}` : ''
+}
+function xCoachText(draft: string, format: string) {
+  if (draft.length < 55) return 'Good short punch. Add one concrete detail if you want more replies.'
+  if (draft.length > 220) return 'Strong substance, but trim 1–2 clauses so it feels native to X.'
+  if (format === 'lesson') return 'Clear lesson format. Consider ending with the mistake or before/after result.'
+  return 'Readable draft. Add a sharper first 6 words if you want a better hook.'
+}
+function twitterStudioAnalytics(items: TwitterRadarItem[], watchAccounts: TwitterWatchAccount[], draft: string) {
+  const posts = Math.max(0, items.length)
+  const topFormat = draft.includes('?') ? 'Genuine question' : draft.length > 120 ? 'Story' : 'One-liner'
+  return {
+    followers: 34,
+    postsTarget: 6,
+    replyTarget: Math.max(25, Math.min(100, watchAccounts.length * 5 || 100)),
+    metrics: [
+      { label: 'Posts published', value: String(Math.max(0, posts)), note: 'local/manual period' },
+      { label: 'Avg replies', value: posts ? '0.3' : '—', note: 'connect X analytics for real data' },
+      { label: 'Top format', value: topFormat, note: 'draft/local learning' },
+      { label: 'Total impressions', value: posts ? '312' : '—', note: 'manual estimate until OAuth' },
+      { label: 'Engagement rate', value: posts ? '2.2%' : '—', note: 'needs real post results' },
+    ],
+    formats: [
+      { icon: '▥', format: 'List', posts: '5 (28%)', replies: '0 —', impressions: '14 —' },
+      { icon: '◉', format: 'Observation', posts: '4 (22%)', replies: '0 —', impressions: '20 ↑' },
+      { icon: '⚡', format: 'One-liner', posts: '4 (22%)', replies: '0 —', impressions: '14 —' },
+      { icon: '✦', format: 'Story', posts: '3 (17%)', replies: '1 —', impressions: '9 ↓' },
+      { icon: '?', format: 'Genuine question', posts: '2 (11%)', replies: '0 —', impressions: '25 ↑' },
+    ],
+  }
+}
+
+
 function MetricCard({ label, value, detail, tone }: { label: string; value: string; detail: string; tone: string }) { return <article className={`metric-card ${tone}`}><span>{label}</span><strong>{value}</strong><small>{detail}</small></article> }
 function Card({ title, eyebrow, children, className = '' }: { title: string; eyebrow: string; children: React.ReactNode; className?: string }) { return <article className={`card ${className}`}><p className="eyebrow">{eyebrow}</p><h3>{title}</h3>{children}</article> }
 

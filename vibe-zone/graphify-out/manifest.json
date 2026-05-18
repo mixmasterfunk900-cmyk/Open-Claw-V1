@@ -8,8 +8,8 @@
     "hash": "626d63ab37dd83872b870f4facf16197"
   },
   "/root/.openclaw/workspace/vibe-zone/server/server.mjs": {
-    "mtime": 1778873385.4761143,
-    "hash": "e487345c854b6f242c235bfaf7fe613b"
+    "mtime": 1779113163.2073245,
+    "hash": "eabd6c3501bd06e5aea698c3f61c984c"
   },
   "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-fulltime-247-build-house-v4c-20260515T0918Z.mjs": {
     "mtime": 1778836666.7052813,
@@ -194,6 +194,10 @@
   "/root/.openclaw/workspace/vibe-zone/scripts/render-longform-stream2-founder-privacy-safe-20260514T1100Z.mjs": {
     "mtime": 1778756590.6284945,
     "hash": "e2307fa8a6d6fc40bd7b2e4963dc4741"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/test-twitter-radar-static.mjs": {
+    "mtime": 1779063461.4093266,
+    "hash": "7f38653a2c1919b7d7fb4e48cd1a9f00"
   },
   "/root/.openclaw/workspace/vibe-zone/scripts/render-general-face-seed-test-20260514T1718Z.mjs": {
     "mtime": 1778779771.8428795,
@@ -423,6 +427,10 @@
     "mtime": 1778654710.7325993,
     "hash": "f45d7d26689259f7857a8e7d5816f23c"
   },
+  "/root/.openclaw/workspace/vibe-zone/scripts/test-social-bridge-static.mjs": {
+    "mtime": 1779041860.5871665,
+    "hash": "840ed3f609c2aae7bc15c4d3224a206e"
+  },
   "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-ai-agents-house-style-v3-20260513T1942Z.mjs": {
     "mtime": 1778701130.5645833,
     "hash": "95d44a89cf8efd70b22db1b9d93fa733"
@@ -450,6 +458,10 @@
   "/root/.openclaw/workspace/vibe-zone/scripts/render-day4-package-20260515T1310Z.mjs": {
     "mtime": 1778851566.189001,
     "hash": "c364bcdb4824a779da4c97f6d7728455"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/test-twitter-radar.mjs": {
+    "mtime": 1779056311.7081313,
+    "hash": "a98dd89aca82a576401953c751237559"
   },
   "/root/.openclaw/workspace/vibe-zone/scripts/render-longform-day3-privacy-safe-20260514T1905Z.mjs": {
     "mtime": 1778785570.171815,
@@ -512,8 +524,8 @@
     "hash": "349c23adc4ade2c40ed9b12b262069dd"
   },
   "/root/.openclaw/workspace/vibe-zone/src/App.tsx": {
-    "mtime": 1778880206.0844512,
-    "hash": "37c3e5e91b8065ab1cdd11c23908b735"
+    "mtime": 1779113021.9062772,
+    "hash": "486fb72ff8f3bcd3376505d32622e8a8"
   },
   "/root/.openclaw/workspace/vibe-zone/src/RexLiveRoadmap.tsx": {
     "mtime": 1778928962.8333774,
@@ -564,8 +576,12 @@
     "hash": "fe429d9b4d6e80d4c1fedea2266fe915"
   },
   "/root/.openclaw/workspace/vibe-zone/X_WRITING_AND_GROWTH_SOP.md": {
-    "mtime": 1778695341.7888033,
-    "hash": "f513489de1c992a87cbe01d7f59981ae"
+    "mtime": 1779015171.891164,
+    "hash": "d43e8ed90be982eb37ad2c393db533c8"
+  },
+  "/root/.openclaw/workspace/vibe-zone/SOCIAL_BRIDGE_IMPLEMENTATION_LOOP.md": {
+    "mtime": 1779063569.677202,
+    "hash": "5fa97442aed926aa35a3e07856c2b84b"
   },
   "/root/.openclaw/workspace/vibe-zone/index.html": {
     "mtime": 1778528457.7076237,
@@ -602,6 +618,10 @@
   "/root/.openclaw/workspace/vibe-zone/CAPTION_RULES.md": {
     "mtime": 1778698631.163644,
     "hash": "69d2e1fbeaab1008fa09987ef59b3fe4"
+  },
+  "/root/.openclaw/workspace/vibe-zone/SOCIAL_BRIDGE_RESEARCH.md": {
+    "mtime": 1779063469.7093935,
+    "hash": "d21ee10de2b008f394e7e6d0d4fb55e9"
   },
   "/root/.openclaw/workspace/vibe-zone/LONG_FORM_STORY_WORKFLOW.md": {
     "mtime": 1778829216.7588627,
@@ -662,6 +682,14 @@
   "/root/.openclaw/workspace/vibe-zone/VIRAL_PATTERN_BACKLOG.md": {
     "mtime": 1778826434.390572,
     "hash": "fb7b8bc70bf70fa9b5c61f752ccd5b2f"
+  },
+  "/root/.openclaw/workspace/vibe-zone/social_drafts/x_article_build_public_20260517/article.md": {
+    "mtime": 1779018270.1515038,
+    "hash": "8c72baf6db644a330b3f0f2b7583c355"
+  },
+  "/root/.openclaw/workspace/vibe-zone/social-drafts/x-build-in-public-20260517.md": {
+    "mtime": 1779015108.6314166,
+    "hash": "2a8aaa59d71ebf0486fbdc895f49eb0c"
   },
   "/root/.openclaw/workspace/vibe-zone/PURGE_STAGING/DO_NOT_PURGE_WEBSITE_OR_TEMPLATES.md": {
     "mtime": 1778839290.7965047,

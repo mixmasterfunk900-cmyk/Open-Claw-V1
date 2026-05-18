@@ -4,7 +4,7 @@ import { createReadStream, createWriteStream } from 'node:fs'
 import { execFile } from 'node:child_process'
 import { promisify } from 'node:util'
 import { pipeline } from 'node:stream/promises'
-import { randomUUID } from 'node:crypto'
+import { createHash, randomBytes, randomUUID } from 'node:crypto'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { buildAss as buildNormalizedAss, buildShortWordEvents, qaCaptionEvents } from '../lib/caption-normalizer.mjs'
@@ -39,6 +39,7 @@ const defaultDb = {
   transcripts: [],
   clips: [],
   dispatchItems: [],
+  postResults: [],
   platformProfiles: [
     { id: 'tiktok', label: 'TikTok', stage: 'ready', format: '9:16 short + caption + hashtags', note: 'Primary quantity test lane.' },
     { id: 'youtube', label: 'YouTube Shorts', stage: 'ready', format: '9:16 short + title/description/tags', note: 'Promote TikTok winners and stream highlights.' },
@@ -68,11 +69,38 @@ const defaultDb = {
     { id: 'cps', model: 'CPS', label: 'Deal/link attribution', status: 'planned' },
   ],
   socialConnectionState: {},
+  twitterRadar: {
+    status: 'draft-only',
+    mode: 'topic-mvp',
+    lastScanAt: null,
+    topics: ['AI agents', 'build in public', 'creator tools', 'indie hacking', 'livestreaming', 'content automation', 'vibe coding'],
+    watchAccounts: [
+      { handle: 'openai', displayName: 'OpenAI', tier: 'A', topicTags: ['AI agents', 'creator tools'], sourceMode: 'manual_search', lastSeenTweetId: null, lastSeenAt: null, enabled: true },
+      { handle: 'AnthropicAI', displayName: 'Anthropic', tier: 'A', topicTags: ['AI agents'], sourceMode: 'manual_search', lastSeenTweetId: null, lastSeenAt: null, enabled: true },
+      { handle: 'levelsio', displayName: 'Pieter Levels', tier: 'A', topicTags: ['indie hacking', 'build in public'], sourceMode: 'manual_search', lastSeenTweetId: null, lastSeenAt: null, enabled: true },
+      { handle: 'ycombinator', displayName: 'Y Combinator', tier: 'B', topicTags: ['startups', 'creator tools'], sourceMode: 'manual_search', lastSeenTweetId: null, lastSeenAt: null, enabled: true },
+      { handle: 'vercel', displayName: 'Vercel', tier: 'B', topicTags: ['developer tools', 'vibe coding'], sourceMode: 'manual_search', lastSeenTweetId: null, lastSeenAt: null, enabled: true },
+    ],
+    sourceAdapters: [
+      { id: 'manual_x_search', label: 'Manual X search openings', status: 'enabled', latencyClass: 'human-refresh', requiresCredentials: false, termsRisk: 'low', minPollIntervalMs: 7200000, capability: 'watchlist + topic links only', note: 'Creates exact X search links and local reply cards. No fetching, scraping, login, or posting.' },
+      { id: 'public_web_search', label: 'Public web/search discovery', status: 'research-ready', latencyClass: 'delayed-public-web', requiresCredentials: false, termsRisk: 'low', minPollIntervalMs: 7200000, capability: 'topic discovery', note: 'Safe broad discovery, but incomplete and not suitable for second-level alerts.' },
+      { id: 'rss_provider', label: 'RSS/provider profile feeds', status: 'approval-needed', latencyClass: 'near-real-time-provider', requiresCredentials: false, termsRisk: 'medium', minPollIntervalMs: 900000, capability: 'profile/list feeds if provider terms allow', note: 'Could improve latency if Masala approves a provider; still not guaranteed seconds.' },
+      { id: 'x_api_filtered_stream', label: 'Official X filtered stream', status: 'blocked-credentials', latencyClass: 'real-time-api', requiresCredentials: true, termsRisk: 'low', minPollIntervalMs: 0, capability: 'true account stream when paid/API access exists', note: 'Only clean path to seconds-level alerts; intentionally disabled.' },
+      { id: 'browser_monitor', label: 'Logged-in browser monitor', status: 'blocked-approval', latencyClass: 'near-real-time-browser', requiresCredentials: true, termsRisk: 'high', minPollIntervalMs: 300000, capability: 'tiny approved watchlists only', note: 'Not enabled; would require explicit approval and stop-on-challenge behavior.' },
+    ],
+    workerLanes: [
+      { id: 'source-scout', label: 'Radar Source Scout', status: 'active', focus: 'Find no-API/low-risk sources and latency limits.' },
+      { id: 'backend-builder', label: 'Watchlist Backend Builder', status: 'active', focus: 'Maintain local watchlist/source contracts and last-seen fields.' },
+      { id: 'ui-builder', label: 'Radar UI Builder', status: 'active', focus: 'Expose priority openings, source health, and manual reply cards.' },
+      { id: 'qa-coordinator', label: 'QA Coordinator', status: 'active', focus: 'Run build/tests and enforce no-post/no-scrape guardrails.' },
+    ],
+    items: [],
+  },
   postingConnectors: [
     { id: 'aitoearn', label: 'AiToEarn / relay', platforms: ['tiktok', 'youtube', 'x', 'instagram', 'facebook', 'threads', 'linkedin', 'pinterest'], mode: 'optional-relay', status: 'credentials-needed', requiredSecrets: ['AITOEARN_API_KEY'], note: 'Optional fastest route for marketplace/relay/MCP workflows.' },
     { id: 'youtube', label: 'YouTube', platforms: ['youtube'], mode: 'official-api', status: 'credentials-needed', requiredSecrets: ['YOUTUBE_CLIENT_ID', 'YOUTUBE_CLIENT_SECRET', 'YOUTUBE_REFRESH_TOKEN'], note: 'Use for Shorts/video upload after OAuth approval.' },
     { id: 'tiktok', label: 'TikTok', platforms: ['tiktok'], mode: 'official-api-or-browser-session', status: 'credentials-needed', requiredSecrets: ['TIKTOK_CLIENT_KEY', 'TIKTOK_CLIENT_SECRET'], note: 'Prefer official Content Posting API where available; otherwise owner-approved browser session.' },
-    { id: 'x', label: 'X / Twitter', platforms: ['x'], mode: 'official-api', status: 'credentials-needed', requiredSecrets: ['X_API_KEY', 'X_API_SECRET', 'X_ACCESS_TOKEN', 'X_ACCESS_SECRET'], note: 'Needed for build-in-public posts and clip attachments.' },
+    { id: 'x', label: 'X / Twitter', platforms: ['x'], mode: 'official-api', status: 'credentials-needed', requiredSecrets: ['X_CLIENT_ID', 'X_CLIENT_SECRET'], note: 'Needed for build-in-public posts and clip attachments. OAuth stores tokens locally after browser approval.' },
     { id: 'meta', label: 'Instagram / Facebook / Threads', platforms: ['instagram', 'facebook', 'threads'], mode: 'meta-graph-api', status: 'credentials-needed', requiredSecrets: ['META_APP_ID', 'META_APP_SECRET', 'META_LONG_LIVED_TOKEN'], note: 'Requires connected pages/business assets for publishing.' },
     { id: 'linkedin', label: 'LinkedIn', platforms: ['linkedin'], mode: 'official-api', status: 'credentials-needed', requiredSecrets: ['LINKEDIN_CLIENT_ID', 'LINKEDIN_CLIENT_SECRET', 'LINKEDIN_REFRESH_TOKEN'], note: 'Useful for product-building lessons.' },
     { id: 'pinterest', label: 'Pinterest', platforms: ['pinterest'], mode: 'official-api', status: 'credentials-needed', requiredSecrets: ['PINTEREST_ACCESS_TOKEN'], note: 'Evergreen tutorial/thumbnail pin lane.' },
@@ -236,6 +264,9 @@ async function validateMediaFile(relativePath, info = null) {
 }
 const publicBaseUrl = () => String(process.env.VIBE_ZONE_PUBLIC_URL || process.env.PUBLIC_BASE_URL || `http://127.0.0.1:${port}`).replace(/\/$/, '')
 const hasEnv = (name) => Boolean(process.env[name])
+const envValue = (name, aliases = []) => [name, ...aliases].map((key) => process.env[key]).find(Boolean) || ''
+const missingRequiredEnv = (config) => config.requiredEnv.filter((name) => !envValue(name, config.envAliases?.[name] || []))
+const base64Url = (input) => Buffer.from(input).toString('base64url')
 const providerConfigs = {
   tiktok: {
     label: 'TikTok', platform: 'tiktok', provider: 'TikTok Content Posting API', mode: 'OAuth 2.0 + Content Posting API',
@@ -248,9 +279,11 @@ const providerConfigs = {
     authBase: 'https://accounts.google.com/o/oauth2/v2/auth', clientEnv: 'YOUTUBE_CLIENT_ID', note: 'Shorts/video upload lane. Requires Google OAuth consent setup.',
   },
   x: {
-    label: 'X / Twitter', platform: 'x', provider: 'X API', mode: 'OAuth/API app',
-    scopes: ['tweet.read', 'tweet.write', 'users.read', 'offline.access'], requiredEnv: ['X_API_KEY', 'X_API_SECRET'],
-    authBase: '', clientEnv: 'X_API_KEY', note: 'Build-in-public posts and clip attachments. OAuth implementation depends on chosen X API tier.',
+    label: 'X / Twitter', platform: 'x', provider: 'X API', mode: 'OAuth 2.0 + X API',
+    scopes: ['tweet.read', 'tweet.write', 'users.read', 'offline.access'], requiredEnv: ['X_CLIENT_ID', 'X_CLIENT_SECRET'],
+    envAliases: { X_CLIENT_ID: ['X_API_KEY'], X_CLIENT_SECRET: ['X_API_SECRET'] },
+    authBase: 'https://x.com/i/oauth2/authorize', tokenUrl: 'https://api.x.com/2/oauth2/token', meUrl: 'https://api.x.com/2/users/me?user.fields=username,name,profile_image_url', clientEnv: 'X_CLIENT_ID', clientEnvAliases: ['X_API_KEY'], clientSecretEnv: 'X_CLIENT_SECRET', clientSecretEnvAliases: ['X_API_SECRET'], scopeSeparator: ' ', usesPkce: true,
+    note: 'Build-in-public posts and clip attachments. Requires an X developer app, public tunnel callback, and owner-approved posting gate.',
   },
   meta: {
     label: 'Instagram / Facebook / Threads', platform: 'meta', provider: 'Meta Graph API', mode: 'OAuth 2.0 + Graph API',
@@ -274,18 +307,19 @@ function socialConnections(db) {
   return Object.entries(providerConfigs).map(([id, config]) => {
     const connected = state[id]?.connected === true
     const oauthApproved = state[id]?.oauthApproved === true
-    const missingConfig = config.requiredEnv.filter((name) => !hasEnv(name))
+    const missingConfig = missingRequiredEnv(config)
     return {
       id,
       label: config.label,
       platform: config.platform,
       provider: config.provider,
-      status: connected ? 'connected' : oauthApproved ? 'oauth_approved' : missingConfig.length ? 'needs_app_config' : config.authBase ? 'ready_to_connect' : 'planned',
+      status: connected ? 'connected' : state[id]?.manualLinked ? 'manual_linked' : oauthApproved ? 'oauth_approved' : missingConfig.length ? 'needs_app_config' : config.authBase ? 'ready_to_connect' : 'planned',
       scopes: config.scopes,
       mode: config.mode,
       callbackUrl: socialCallbackUrl(id),
       connectedAt: state[id]?.connectedAt || '',
       accountLabel: state[id]?.accountLabel || '',
+      manualUrl: state[id]?.manualUrl || '',
       missingConfig,
       note: config.note,
     }
@@ -294,20 +328,69 @@ function socialConnections(db) {
 function buildOAuthUrl(providerId, db) {
   const config = providerConfigs[providerId]
   if (!config) return { status: 404, body: { error: 'Unknown social provider.' } }
-  const missingConfig = config.requiredEnv.filter((name) => !hasEnv(name))
+  const missingConfig = missingRequiredEnv(config)
   if (missingConfig.length) return { status: 400, body: { status: 'needs_app_config', message: `Set ${missingConfig.join(', ')} and restart Vibe Zone before connecting ${config.label}.`, missingConfig } }
   if (!config.authBase) return { status: 400, body: { status: 'planned', message: `${config.label} needs a provider-specific OAuth implementation before browser login can start.` } }
   const state = randomUUID()
+  const codeVerifier = config.usesPkce ? base64Url(randomBytes(32)) : ''
+  const codeChallenge = codeVerifier ? createHash('sha256').update(codeVerifier).digest('base64url') : ''
   db.socialConnectionState = db.socialConnectionState || {}
-  db.socialConnectionState[providerId] = { ...(db.socialConnectionState[providerId] || {}), pendingState: state, pendingAt: new Date().toISOString() }
+  db.socialConnectionState[providerId] = { ...(db.socialConnectionState[providerId] || {}), pendingState: state, pendingCodeVerifier: codeVerifier, pendingAt: new Date().toISOString() }
   const params = new URLSearchParams()
   params.set('response_type', 'code')
-  params.set('client_id', process.env[config.clientEnv])
+  params.set('client_id', envValue(config.clientEnv, config.clientEnvAliases || []))
   params.set('redirect_uri', socialCallbackUrl(providerId))
-  params.set('scope', config.scopes.join(providerId === 'youtube' ? ' ' : ','))
+  params.set('scope', config.scopes.join(config.scopeSeparator || (providerId === 'youtube' ? ' ' : ',')))
   params.set('state', state)
+  if (codeChallenge) { params.set('code_challenge', codeChallenge); params.set('code_challenge_method', 'S256') }
   if (providerId === 'youtube') { params.set('access_type', 'offline'); params.set('prompt', 'consent') }
   return { status: 200, body: { status: 'opening_oauth', authUrl: `${config.authBase}?${params.toString()}`, message: `Opening ${config.label} login. Approve the permissions, then return to Vibe Zone.` } }
+}
+
+async function exchangeXOAuthCode(db, code) {
+  const config = providerConfigs.x
+  const clientId = envValue(config.clientEnv, config.clientEnvAliases || [])
+  const clientSecret = envValue(config.clientSecretEnv, config.clientSecretEnvAliases || [])
+  const codeVerifier = db.socialConnectionState?.x?.pendingCodeVerifier || ''
+  if (!clientId || !clientSecret) throw new Error('X OAuth client id/secret are not configured.')
+  if (!codeVerifier) throw new Error('Missing X PKCE verifier. Start the connection from Vibe Zone again.')
+
+  const body = new URLSearchParams()
+  body.set('grant_type', 'authorization_code')
+  body.set('code', code)
+  body.set('redirect_uri', socialCallbackUrl('x'))
+  body.set('code_verifier', codeVerifier)
+
+  const tokenResponse = await fetch(config.tokenUrl, {
+    method: 'POST',
+    headers: {
+      'content-type': 'application/x-www-form-urlencoded',
+      authorization: `Basic ${Buffer.from(`${clientId}:${clientSecret}`).toString('base64')}`,
+    },
+    body,
+  })
+  const tokenData = await tokenResponse.json().catch(() => ({}))
+  if (!tokenResponse.ok) throw new Error(`X token exchange failed: ${tokenData.error_description || tokenData.error || tokenResponse.status}`)
+  const accessToken = tokenData.access_token || ''
+  let profile = null
+  if (accessToken) {
+    const profileResponse = await fetch(config.meUrl, { headers: { authorization: `Bearer ${accessToken}` } })
+    profile = await profileResponse.json().catch(() => null)
+  }
+  const user = profile?.data || {}
+  return {
+    connected: true,
+    oauthApproved: true,
+    connectedAt: new Date().toISOString(),
+    accountLabel: user.username ? `@${user.username}` : 'X OAuth connected',
+    accountName: user.name || '',
+    accountId: user.id || '',
+    tokenType: tokenData.token_type || 'bearer',
+    scopes: String(tokenData.scope || '').split(/\s+/).filter(Boolean),
+    accessToken,
+    refreshToken: tokenData.refresh_token || '',
+    expiresAt: tokenData.expires_in ? new Date(Date.now() + Number(tokenData.expires_in) * 1000).toISOString() : '',
+  }
 }
 async function appState(db) {
   const mediaFiles = await listMediaFiles()
@@ -351,7 +434,7 @@ function validateDispatchForPlatform(item = {}, clip = null) {
   return { platform, limits, copy, blockers, warnings, ok: !blockers.length && !warnings.length }
 }
 function postingReadiness(db) {
-  const connectors = Array.isArray(db.postingConnectors) && db.postingConnectors.length ? db.postingConnectors : defaultDb.postingConnectors
+  const connectors = normalizePostingConnectors(db.postingConnectors)
   const dispatchItems = normalizeDispatchItems(db)
   const clipsById = new Map((db.clips || []).map((clip) => [clip.id, clip]))
   const approved = dispatchItems.filter((item) => item.status === 'approved_manual_upload' && !item.blockers?.length)
@@ -369,6 +452,15 @@ function postingReadiness(db) {
     nextCredentialStep: 'Create/store credentials outside chat, then connect one platform at a time starting with YouTube or TikTok.',
     safetyGate: 'Posting remains disabled until owner explicitly provides credentials and approves first live post per platform.',
   }
+}
+function normalizePostingConnectors(connectors = []) {
+  const storedById = new Map((Array.isArray(connectors) ? connectors : []).map((connector) => [connector.id, connector]))
+  const merged = defaultDb.postingConnectors.map((defaults) => {
+    const stored = storedById.get(defaults.id) || {}
+    return { ...defaults, ...stored, requiredSecrets: defaults.requiredSecrets, note: defaults.note, mode: defaults.mode, platforms: defaults.platforms }
+  })
+  const knownIds = new Set(merged.map((connector) => connector.id))
+  return [...merged, ...(Array.isArray(connectors) ? connectors.filter((connector) => connector?.id && !knownIds.has(connector.id)) : [])]
 }
 function mediaMatchKey(value = '') {
   return String(value || '')
@@ -600,7 +692,7 @@ async function handleMediaUpload(req, res, db, url) {
 function normalizeClip(clip) {
   return { platform: 'tiktok', status: 'idea', exportedAt: null, ...clip }
 }
-const dispatchStatuses = new Set(['drafted', 'needs_owner_review', 'approved_manual_upload', 'posted_manual', 'blocked', 'superseded'])
+const dispatchStatuses = new Set(['drafted', 'needs_owner_review', 'approved_manual_upload', 'posted_manual', 'blocked', 'style_rework_needed', 'superseded'])
 const currentStyleGateReadyPathList = [
   'media/renders/stream-2-build-clip-machine-restored-layout-v2-20260513T2012Z.mp4',
   'media/renders/stream-2-ai-agents-real-work-house-style-v3-20260513T1942Z.mp4',
@@ -758,6 +850,32 @@ function clipDispatchSeed(clip) {
     updatedAt: now,
   }
 }
+function normalizeCopyOverride(copy = {}) {
+  if (!copy || typeof copy !== 'object') return null
+  const title = String(copy.title || '').trim().slice(0, 180)
+  const postText = String(copy.postText || '').trim().slice(0, 3000)
+  const description = String(copy.description || '').trim().slice(0, 5000)
+  const hashtags = Array.isArray(copy.hashtags) ? copy.hashtags.map(String).map((tag) => tag.trim()).filter(Boolean).slice(0, 30) : []
+  const updatedAt = String(copy.updatedAt || '').trim() || new Date().toISOString()
+  if (!title && !postText && !description && !hashtags.length) return null
+  return { title, postText, description, hashtags, updatedAt }
+}
+function normalizeCopyOverrides(overrides = {}) {
+  if (!overrides || typeof overrides !== 'object') return {}
+  return Object.fromEntries(Object.entries(overrides).map(([platform, copy]) => [platform, normalizeCopyOverride(copy)]).filter(([, copy]) => copy))
+}
+function normalizeManualResult(result = {}) {
+  if (!result || typeof result !== 'object') return null
+  const externalUrl = String(result.externalUrl || '').trim()
+  const postedAt = String(result.postedAt || '').trim()
+  const notes = String(result.notes || '').trim().slice(0, 500)
+  const recordedAt = String(result.recordedAt || '').trim()
+  const clean = { externalUrl, postedAt, notes, recordedAt }
+  if (externalUrl && !/^https?:\/\//i.test(externalUrl)) clean.externalUrl = ''
+  if (!clean.externalUrl && !clean.postedAt && !clean.notes) return null
+  clean.recordedAt = recordedAt || new Date().toISOString()
+  return clean
+}
 function normalizeDispatchItem(item, clip = null) {
   const seed = clip ? clipDispatchSeed(clip) : {}
   const next = { ...seed, ...item }
@@ -780,6 +898,8 @@ function normalizeDispatchItem(item, clip = null) {
   next.status = dispatchStatuses.has(next.status) ? next.status : dispatchStatusForClip(clip || next)
   next.blockers = Array.isArray(next.blockers) ? next.blockers : []
   next.proofFrames = Array.isArray(next.proofFrames) ? next.proofFrames : []
+  next.manualResult = normalizeManualResult(next.manualResult)
+  next.copyOverrides = normalizeCopyOverrides(next.copyOverrides)
   if (isCurrentStyleGateReady(next)) {
     next.ownerGateRequired = true
     next.ownerGate = next.ownerGate || 'Final owner privacy/watch pass required before any public upload'
@@ -927,6 +1047,214 @@ function createDispatchItem(db, body = {}) {
   db.dispatchItems = normalizeDispatchItems({ ...db, dispatchItems: [item, ...(db.dispatchItems || [])] })
   return db.dispatchItems.find((entry) => entry.id === item.id) || item
 }
+
+function normalizeRadarHandle(value = '') {
+  return String(value).trim().replace(/^@+/, '').replace(/[^a-zA-Z0-9_]/g, '').slice(0, 15)
+}
+function normalizeRadarTags(tags, fallback = []) {
+  const source = Array.isArray(tags) ? tags : typeof tags === 'string' ? tags.split(/[,\n]/) : fallback
+  return [...new Set(source.map(String).map((item) => item.trim()).filter(Boolean))].slice(0, 8)
+}
+function watchCadenceMinutes(tier = 'B') {
+  if (tier === 'A') return 15
+  if (tier === 'B') return 60
+  return 240
+}
+function nextManualCheckAt(lastCheckedAt, tier = 'B') {
+  const base = lastCheckedAt && !Number.isNaN(new Date(lastCheckedAt).getTime()) ? new Date(lastCheckedAt).getTime() : Date.now() - watchCadenceMinutes(tier) * 60 * 1000
+  return new Date(base + watchCadenceMinutes(tier) * 60 * 1000).toISOString()
+}
+function watchPriorityScore(account = {}, nowMs = Date.now()) {
+  const tierBoost = account.tier === 'A' ? 100 : account.tier === 'B' ? 70 : 40
+  const nextMs = new Date(account.nextManualCheckAt || 0).getTime()
+  const dueBoost = Number.isFinite(nextMs) && nextMs <= nowMs ? 40 : 0
+  const staleHours = account.lastManualCheckedAt ? Math.max(0, (nowMs - new Date(account.lastManualCheckedAt).getTime()) / 3600000) : 24
+  return Math.round(tierBoost + dueBoost + Math.min(40, staleHours * 2))
+}
+function normalizeWatchAccount(account = {}, index = 0) {
+  const raw = typeof account === 'string' ? { handle: account, displayName: account } : account && typeof account === 'object' ? account : {}
+  const handle = normalizeRadarHandle(raw.handle || raw.account || raw.username || '')
+  if (!handle) return null
+  const tier = ['A', 'B', 'C'].includes(String(raw.tier || '').toUpperCase()) ? String(raw.tier).toUpperCase() : index < 3 ? 'A' : 'B'
+  const lastManualCheckedAt = raw.lastManualCheckedAt || raw.lastCheckedAt || null
+  const accountRecord = {
+    handle,
+    displayName: String(raw.displayName || raw.name || `@${handle}`).trim().slice(0, 80),
+    tier,
+    topicTags: normalizeRadarTags(raw.topicTags || raw.topics || raw.tags),
+    sourceMode: ['manual_search', 'api_pending', 'rss_pending'].includes(raw.sourceMode) ? raw.sourceMode : 'manual_search',
+    lastSeenTweetId: raw.lastSeenTweetId ? String(raw.lastSeenTweetId).trim().slice(0, 80) : null,
+    lastSeenAt: raw.lastSeenAt ? String(raw.lastSeenAt).trim().slice(0, 40) : null,
+    lastManualCheckedAt: lastManualCheckedAt ? String(lastManualCheckedAt).trim().slice(0, 40) : null,
+    nextManualCheckAt: raw.nextManualCheckAt ? String(raw.nextManualCheckAt).trim().slice(0, 40) : nextManualCheckAt(lastManualCheckedAt, tier),
+    checkCadenceMinutes: Math.max(15, Number(raw.checkCadenceMinutes || watchCadenceMinutes(tier))),
+    enabled: raw.enabled !== false,
+  }
+  accountRecord.priorityScore = watchPriorityScore(accountRecord)
+  return accountRecord
+}
+function normalizeWatchAccounts(accounts) {
+  const defaults = defaultDb.twitterRadar.watchAccounts
+  const source = Array.isArray(accounts) && accounts.length ? accounts : defaults
+  const seen = new Set()
+  const normalized = []
+  for (const account of source) {
+    const item = normalizeWatchAccount(account, normalized.length)
+    if (!item || seen.has(item.handle.toLowerCase())) continue
+    seen.add(item.handle.toLowerCase())
+    normalized.push(item)
+    if (normalized.length >= 2000) break
+  }
+  return normalized
+}
+function normalizeRadarSourceAdapters(adapters) {
+  const defaults = defaultDb.twitterRadar.sourceAdapters
+  const source = Array.isArray(adapters) && adapters.length ? adapters : defaults
+  return source.map((adapter = {}) => ({
+    id: String(adapter.id || 'source').replace(/[^a-z0-9_-]/gi, '').slice(0, 40) || 'source',
+    label: String(adapter.label || adapter.id || 'Radar source').trim().slice(0, 80),
+    status: String(adapter.status || 'planned').trim().slice(0, 40),
+    latencyClass: String(adapter.latencyClass || 'unknown').trim().slice(0, 60),
+    requiresCredentials: Boolean(adapter.requiresCredentials),
+    termsRisk: String(adapter.termsRisk || 'unknown').trim().slice(0, 30),
+    minPollIntervalMs: Math.max(0, Number(adapter.minPollIntervalMs || 0)),
+    capability: String(adapter.capability || '').trim().slice(0, 140),
+    note: String(adapter.note || '').trim().slice(0, 240),
+  })).slice(0, 12)
+}
+function normalizeRadarWorkerLanes(lanes) {
+  const defaults = defaultDb.twitterRadar.workerLanes
+  const source = Array.isArray(lanes) && lanes.length ? lanes : defaults
+  return source.map((lane = {}) => ({
+    id: String(lane.id || 'lane').replace(/[^a-z0-9_-]/gi, '').slice(0, 40) || 'lane',
+    label: String(lane.label || lane.id || 'Radar lane').trim().slice(0, 80),
+    status: String(lane.status || 'active').trim().slice(0, 40),
+    focus: String(lane.focus || '').trim().slice(0, 180),
+  })).slice(0, 8)
+}
+function normalizeTwitterRadar(radar = {}) {
+  const defaults = defaultDb.twitterRadar
+  const sourceAdapters = normalizeRadarSourceAdapters(radar.sourceAdapters)
+  const enabledAdapter = sourceAdapters.find((adapter) => adapter.status === 'enabled') || sourceAdapters[0]
+  return {
+    status: radar.status || defaults.status,
+    mode: radar.mode || defaults.mode,
+    source: radar.source || enabledAdapter?.label || 'Manual X search openings',
+    pollingMode: radar.pollingMode || '2h cron + manual refresh; no X fetch loop',
+    lastScanAt: radar.lastScanAt || null,
+    topics: Array.isArray(radar.topics) && radar.topics.length ? radar.topics : defaults.topics,
+    watchAccounts: normalizeWatchAccounts(radar.watchAccounts),
+    sourceAdapters,
+    workerLanes: normalizeRadarWorkerLanes(radar.workerLanes),
+    items: Array.isArray(radar.items) ? radar.items.slice(0, 80) : [],
+  }
+}
+const twitterRadarReplyDrafts = [
+  'I think the missing piece is proof. A lot of people post the result, but the useful part is seeing what broke and what changed.',
+  'This is why I like building in public when it has receipts. The lesson lands harder when people can see the messy version too.',
+  'The hard part is not making more output. It is knowing what is worth trusting enough to ship.',
+  'I keep coming back to this. If a tool still leaves you with all the review work, it did not remove the job. It moved the job.',
+  'This is the bit most people skip. The process is the signal. The polished result is only half the story.',
+]
+function buildTwitterSearchUrl(topic) {
+  const query = `${topic} min_faves:5 -filter:replies`
+  return `https://x.com/search?q=${encodeURIComponent(query)}&src=typed_query&f=live`
+}
+function buildTwitterAccountSearchUrl(account) {
+  const tags = account.topicTags?.length ? ` (${account.topicTags.join(' OR ')})` : ''
+  const query = `from:${account.handle}${tags} -filter:replies`
+  return `https://x.com/search?q=${encodeURIComponent(query)}&src=typed_query&f=live`
+}
+function radarReason(topic, index) {
+  const reasons = [
+    'Good reply target because the topic maps to Vibe Zone and the reply can add a real builder angle.',
+    'Likely to earn profile curiosity if the reply points at process, receipts, or the messy middle.',
+    'Worth checking for newer accounts with active comments and lower competition.',
+    'Useful scan lane for high intent builders, creators, and tool makers.',
+  ]
+  return `${reasons[index % reasons.length]} Topic: ${topic}.`
+}
+function makeRadarItem(topic, index, now) {
+  return {
+    id: `radar_${Date.now()}_${index}_${Math.random().toString(16).slice(2, 7)}`,
+    topic,
+    account: index % 3 === 0 ? 'High profile watch lane' : index % 3 === 1 ? 'New account discovery lane' : 'Niche search lane',
+    text: `Manual screening lane for recent posts about ${topic}. Open the search, pick a live post, then use or tweak the reply draft.`,
+    url: buildTwitterSearchUrl(topic),
+    replyDraft: twitterRadarReplyDrafts[index % twitterRadarReplyDrafts.length],
+    score: 86 - index * 3,
+    reason: radarReason(topic, index),
+    source: 'topic_search',
+    status: 'needs_manual_screen',
+    createdAt: now,
+  }
+}
+function makeWatchlistRadarItem(account, index, now) {
+  const topics = account.topicTags.length ? account.topicTags.join(', ') : 'Vibe Zone topics'
+  return {
+    id: `radar_watch_${Date.now()}_${index}_${Math.random().toString(16).slice(2, 7)}`,
+    topic: account.topicTags[0] || 'watchlist',
+    account: `@${account.handle} · ${account.displayName}`,
+    handle: account.handle,
+    watchTier: account.tier,
+    sourceMode: account.sourceMode,
+    text: `High-profile watchlist lane for @${account.handle}. Manually check recent posts matching: ${topics}. No timeline scraping or API calls were made.`,
+    url: buildTwitterAccountSearchUrl(account),
+    replyDraft: twitterRadarReplyDrafts[(index + 1) % twitterRadarReplyDrafts.length],
+    score: Math.max(60, 94 - index * 2 - (account.tier === 'A' ? 0 : account.tier === 'B' ? 5 : 10)),
+    reason: `High-profile ${account.tier}-tier account. Source mode: ${account.sourceMode}. Last seen: ${account.lastSeenAt || 'not recorded locally yet'}. Manual review required.`,
+    source: 'watchlist_account',
+    status: 'needs_manual_screen',
+    createdAt: now,
+  }
+}
+async function scanTwitterRadar(db, body = {}) {
+  const radar = normalizeTwitterRadar(db.twitterRadar)
+  const topics = Array.isArray(body.topics) && body.topics.length ? body.topics.map(String).map((item) => item.trim()).filter(Boolean).slice(0, 12) : radar.topics
+  const watchAccounts = normalizeWatchAccounts(Array.isArray(body.watchAccounts) ? body.watchAccounts : radar.watchAccounts)
+  const now = new Date().toISOString()
+  const topicItems = topics.slice(0, 8).map((topic, index) => makeRadarItem(topic, index, now))
+  const watchItems = watchAccounts.filter((account) => account.enabled).slice(0, 20).map((account, index) => makeWatchlistRadarItem(account, index, now))
+  const items = [...watchItems, ...topicItems]
+  db.twitterRadar = { ...radar, topics, watchAccounts, lastScanAt: now, items: [...items, ...radar.items].slice(0, 80) }
+  await addJob(db, 'twitter-radar-scan', 'Twitter Radar manual screening refreshed', 'done', `${topicItems.length} topic lane(s), ${watchItems.length} watchlist lane(s) queued. Draft-only; no X posting or scraping.`)
+  await saveDb(db)
+  return db.twitterRadar
+}
+async function updateTwitterRadar(db, body = {}) {
+  const radar = normalizeTwitterRadar(db.twitterRadar)
+  const topics = Array.isArray(body.topics) ? body.topics.map(String).map((item) => item.trim()).filter(Boolean).slice(0, 20) : radar.topics
+  const watchAccounts = Array.isArray(body.watchAccounts) ? normalizeWatchAccounts(body.watchAccounts) : radar.watchAccounts
+  db.twitterRadar = { ...radar, topics, watchAccounts }
+  await saveDb(db)
+  return db.twitterRadar
+}
+async function updateTwitterRadarWatchlist(db, body = {}) {
+  const radar = normalizeTwitterRadar(db.twitterRadar)
+  const rawAccounts = Array.isArray(body) ? body : Array.isArray(body.accounts) ? body.accounts : Array.isArray(body.watchAccounts) ? body.watchAccounts : null
+  if (!rawAccounts) return { accounts: radar.watchAccounts }
+  db.twitterRadar = { ...radar, watchAccounts: normalizeWatchAccounts(rawAccounts) }
+  await saveDb(db)
+  return { accounts: db.twitterRadar.watchAccounts }
+}
+async function markTwitterRadarAccountChecked(db, body = {}) {
+  const radar = normalizeTwitterRadar(db.twitterRadar)
+  const handle = normalizeRadarHandle(body.handle || body.account || '')
+  if (!handle) return { error: 'Watchlist handle is required.' }
+  let updated = null
+  const checkedAt = new Date().toISOString()
+  const watchAccounts = radar.watchAccounts.map((account) => {
+    if (account.handle.toLowerCase() !== handle.toLowerCase()) return account
+    updated = normalizeWatchAccount({ ...account, lastManualCheckedAt: checkedAt, nextManualCheckAt: nextManualCheckAt(checkedAt, account.tier) })
+    return updated
+  })
+  if (!updated) return { error: 'Watchlist account not found.' }
+  db.twitterRadar = { ...radar, watchAccounts }
+  await addJob(db, 'twitter-radar-check', `Marked @${updated.handle} manually checked`, 'done', `Next local check: ${updated.nextManualCheckAt}. No X fetch or action performed.`)
+  await saveDb(db)
+  return { account: updated, accounts: watchAccounts }
+}
+
 function normalizeDb(db) {
   db.settings = { ...defaultDb.settings, ...(db.settings || {}) }
   db.scans = (db.scans || []).slice(0, 50)
@@ -934,12 +1262,14 @@ function normalizeDb(db) {
   db.transcripts = db.transcripts || []
   db.clips = (db.clips || []).map(normalizeClip)
   db.dispatchItems = normalizeDispatchItems(db)
+  db.postResults = Array.isArray(db.postResults) ? db.postResults.slice(0, 200) : []
   db.platformProfiles = Array.isArray(db.platformProfiles) && db.platformProfiles.length ? db.platformProfiles : defaultDb.platformProfiles
   db.scheduleItems = Array.isArray(db.scheduleItems) && db.scheduleItems.length ? db.scheduleItems : defaultDb.scheduleItems
   db.engagementTasks = Array.isArray(db.engagementTasks) && db.engagementTasks.length ? db.engagementTasks : defaultDb.engagementTasks
   db.monetizationOffers = Array.isArray(db.monetizationOffers) && db.monetizationOffers.length ? db.monetizationOffers : defaultDb.monetizationOffers
   db.socialConnectionState = db.socialConnectionState && typeof db.socialConnectionState === 'object' ? db.socialConnectionState : {}
-  db.postingConnectors = Array.isArray(db.postingConnectors) && db.postingConnectors.length ? db.postingConnectors : defaultDb.postingConnectors
+  db.twitterRadar = normalizeTwitterRadar(db.twitterRadar)
+  db.postingConnectors = normalizePostingConnectors(db.postingConnectors)
   db.mediaJobs = db.mediaJobs || []
   db.viralFinds = db.viralFinds || []
   db.chatMessages = db.chatMessages || []
@@ -1970,6 +2300,19 @@ async function handleApi(req, res, db) {
     await saveDb(db)
     return send(res, result.status, result.body)
   }
+  if (req.method === 'POST' && url.pathname.startsWith('/api/social/connect/') && url.pathname.endsWith('/manual')) {
+    const providerId = decodeURIComponent(url.pathname.split('/').at(-2))
+    const config = providerConfigs[providerId]
+    if (!config) return send(res, 404, { error: 'Unknown social provider.' })
+    const body = await parseBody(req)
+    const accountUrl = String(body.accountUrl || '').trim()
+    if (!/^https?:\/\//i.test(accountUrl)) return send(res, 400, { error: 'Paste a full public channel/profile URL starting with http:// or https://.' })
+    db.socialConnectionState = db.socialConnectionState || {}
+    db.socialConnectionState[providerId] = { ...(db.socialConnectionState[providerId] || {}), manualLinked: true, connected: false, connectedAt: new Date().toISOString(), manualUrl: accountUrl, accountLabel: accountUrl }
+    await addJob(db, 'social-connection', `Linked ${config.label} profile manually`, 'done', 'Manual channel/profile URL saved locally. OAuth/posting still requires provider app credentials.')
+    await saveDb(db)
+    return send(res, 200, { status: 'manual_linked', message: `${config.label} profile linked locally. OAuth/posting still needs provider app credentials.`, connection: socialConnections(db).find((item) => item.id === providerId) })
+  }
   if (req.method === 'POST' && url.pathname.startsWith('/api/social/connect/') && url.pathname.endsWith('/disconnect')) {
     const providerId = decodeURIComponent(url.pathname.split('/').at(-2))
     if (!providerConfigs[providerId]) return send(res, 404, { error: 'Unknown social provider.' })
@@ -1986,13 +2329,35 @@ async function handleApi(req, res, db) {
     const expectedState = db.socialConnectionState?.[providerId]?.pendingState
     const returnedState = url.searchParams.get('state') || ''
     if (!expectedState || expectedState !== returnedState) return send(res, 400, { error: 'OAuth state mismatch. Start the connection from Vibe Zone again.' })
-    if (!url.searchParams.get('code')) return send(res, 400, { error: 'Provider did not return an OAuth code.' })
-    db.socialConnectionState[providerId] = { oauthApproved: true, connected: false, connectedAt: new Date().toISOString(), accountLabel: `${config.label} OAuth approved`, codeReceived: true }
-    await addJob(db, 'social-connection', `${config.label} OAuth callback received`, 'needs-review', 'OAuth code received. Token exchange/storage is intentionally gated before live posting.')
-    await saveDb(db)
+    const code = url.searchParams.get('code') || ''
+    if (!code) return send(res, 400, { error: 'Provider did not return an OAuth code.' })
+    try {
+      if (providerId === 'x') {
+        const connection = await exchangeXOAuthCode(db, code)
+        db.socialConnectionState[providerId] = { ...connection, pendingState: '', pendingCodeVerifier: '', codeReceived: true }
+        await addJob(db, 'social-connection', `${config.label} OAuth connected`, 'done', `${connection.accountLabel || config.label} connected locally. Posting remains approval-gated.`)
+      } else {
+        db.socialConnectionState[providerId] = { oauthApproved: true, connected: false, connectedAt: new Date().toISOString(), accountLabel: `${config.label} OAuth approved`, codeReceived: true }
+        await addJob(db, 'social-connection', `${config.label} OAuth callback received`, 'needs-review', 'OAuth code received. Token exchange/storage is still pending for this provider.')
+      }
+      await saveDb(db)
+    } catch (error) {
+      await addJob(db, 'social-connection', `${config.label} OAuth exchange failed`, 'failed', error.message)
+      await saveDb(db)
+      return send(res, 500, { error: error.message })
+    }
     res.writeHead(200, { 'content-type': 'text/html; charset=utf-8' })
     return res.end(`<h1>${config.label} connected to Vibe Zone</h1><p>You can close this tab and return to Vibe Zone. Posting is still approval-gated.</p>`)
   }
+  if (req.method === 'GET' && url.pathname === '/api/twitter-radar') return send(res, 200, normalizeTwitterRadar(db.twitterRadar))
+  if (req.method === 'GET' && url.pathname === '/api/twitter-radar/watchlist') return send(res, 200, { accounts: normalizeTwitterRadar(db.twitterRadar).watchAccounts })
+  if (req.method === 'POST' && url.pathname === '/api/twitter-radar/watchlist') return send(res, 200, await updateTwitterRadarWatchlist(db, await parseBody(req)))
+  if (req.method === 'POST' && url.pathname === '/api/twitter-radar/watchlist/check') {
+    const result = await markTwitterRadarAccountChecked(db, await parseBody(req))
+    return send(res, result.error ? 400 : 200, result)
+  }
+  if (req.method === 'POST' && url.pathname === '/api/twitter-radar/config') return send(res, 200, await updateTwitterRadar(db, await parseBody(req)))
+  if (req.method === 'POST' && url.pathname === '/api/twitter-radar/scan') return send(res, 200, await scanTwitterRadar(db, await parseBody(req)))
   if (req.method === 'GET' && url.pathname === '/api/dispatch/list') {
     const recovered = await ensureCurrentStyleGateReadyDispatchItems(db)
     if (recovered) await saveDb(db)
@@ -2022,9 +2387,18 @@ async function handleApi(req, res, db) {
     const item = db.dispatchItems.find((entry) => entry.id === body.id)
     if (!item) return send(res, 404, { error: 'Dispatch item not found.' })
     item.status = body.status
+    if (body.copyOverrides && typeof body.copyOverrides === 'object') {
+      item.copyOverrides = normalizeCopyOverrides({ ...(item.copyOverrides || {}), ...body.copyOverrides })
+    }
+    if (body.manualResult && typeof body.manualResult === 'object') {
+      item.manualResult = normalizeManualResult(body.manualResult)
+      if (item.manualResult) {
+        db.postResults = [{ id: id('post_result'), dispatchItemId: item.id, title: item.title, platform: item.platform, status: 'posted_manual', ...item.manualResult }, ...(db.postResults || [])].slice(0, 200)
+      }
+    }
     item.updatedAt = new Date().toISOString()
-    item.lastAuditAction = `Local status changed to ${body.status}`
-    await addJob(db, 'dispatch', 'Updated dispatch queue', 'done', `${item.title}: ${body.status}`)
+    item.lastAuditAction = body.copyOverrides ? 'Per-platform draft copy saved locally; no external posting performed' : item.manualResult && body.status === 'posted_manual' ? 'Manual post result recorded locally; no external posting performed' : `Local status changed to ${body.status}`
+    await addJob(db, 'dispatch', item.manualResult && body.status === 'posted_manual' ? 'Recorded manual post result' : 'Updated dispatch queue', 'done', `${item.title}: ${body.status}`)
     await saveDb(db)
     return send(res, 200, item)
   }

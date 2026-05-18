@@ -16,7 +16,11 @@
     "start": "node server/server.mjs",
     "media:cleanup-unused": "node scripts/cleanup-unused-media.mjs",
     "media:cleanup-unused:apply": "node scripts/cleanup-unused-media.mjs --apply",
-    "caption:qa": "node scripts/check-caption-qa.mjs"
+    "caption:qa": "node scripts/check-caption-qa.mjs",
+    "radar:smoke": "node scripts/test-twitter-radar.mjs",
+    "radar:static": "node scripts/test-twitter-radar-static.mjs",
+    "radar:test": "npm run radar:static && npm run radar:smoke",
+    "social-bridge:static": "node scripts/test-social-bridge-static.mjs"
   },
   "dependencies": {
     "react": "^19.2.6",
