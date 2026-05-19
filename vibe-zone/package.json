@@ -20,7 +20,11 @@
     "radar:smoke": "node scripts/test-twitter-radar.mjs",
     "radar:static": "node scripts/test-twitter-radar-static.mjs",
     "radar:test": "npm run radar:static && npm run radar:smoke",
-    "social-bridge:static": "node scripts/test-social-bridge-static.mjs"
+    "social-bridge:static": "node scripts/test-social-bridge-static.mjs",
+    "dog:sop": "node scripts/check-dog-content-sop.mjs",
+    "dog:production": "npm run dog:sop && node scripts/check-dog-production-ready.mjs",
+    "experiment:sop": "node scripts/check-experiment-where-sop.mjs",
+    "experiment:production": "npm run experiment:sop"
   },
   "dependencies": {
     "react": "^19.2.6",

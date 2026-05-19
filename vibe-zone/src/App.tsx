@@ -373,57 +373,163 @@ function WorkflowRail({ eyebrow, title, description, tone, steps }: { eyebrow: s
 }
 
 function YouTubeAutomation({ state }: { state: AppState }) {
-  const allDogAssets = state.mediaFiles
-    .filter((file) => file.path.includes('youtube-automation/dog-paw-psychology') || file.path.includes('youtube-automation/dog-content'))
-    .sort((a, b) => b.updatedAt.localeCompare(a.updatedAt))
   const isImage = (file: MediaFile) => /\.(png|jpg|jpeg|webp)$/i.test(file.name)
   const isVideo = (file: MediaFile) => /\.(mp4|mov|webm)$/i.test(file.name)
-  const isScript = (file: MediaFile) => /\.(md|txt)$/i.test(file.name) || /transcript|script|source-notes/i.test(file.name)
+  const isScript = (file: MediaFile) => /\.(md|txt|json)$/i.test(file.name) || /transcript|script|source-notes|visual-plan|manifest/i.test(file.name)
   const cleanAssetLabel = (name: string) => name
-    .replace(/\.(md|txt|png|jpg|jpeg|mp4)$/i, '')
+    .replace(/\.(md|txt|json|png|jpg|jpeg|mp4)$/i, '')
     .replace(/[-_]+/g, ' ')
     .replace(/\b\w/g, (letter) => letter.toUpperCase())
-  const dogPawAssets = allDogAssets.filter((file) => file.path.includes('dog-paw-psychology') || /dog-paw/i.test(file.name))
-  const dogStaringAssets = allDogAssets.filter((file) => file.path.includes('dog-staring-psychology') || /dog-staring/i.test(file.name))
-  const contentItems = [
+  const titleFromProjectId = (projectId: string, laneId: string) => {
+    const cleaned = projectId
+      .replace(/^why-dogs-/, 'why dog ')
+      .replace(/^why-your-dog-/, 'why your dog ')
+      .replace(/^the-experiment-where-/, 'the experiment where ')
+      .replace(/[-_]+/g, ' ')
+      .replace(/\b\w/g, (letter) => letter.toUpperCase())
+    return laneId === 'experiment-where' ? cleaned.replace(/^The Experiment Where /, 'The Experiment Where ') : cleaned
+  }
+
+  type YouTubeLane = {
+    id: string
+    label: string
+    icon: string
+    shortLabel: string
+    rootMatch: string
+    status: string
+    emptyIcon: string
+    description: string
+    plannedDetail: string
+    projectMeta: Record<string, { title: string; status: string; description: string }>
+    projectOrder: string[]
+  }
+
+  const lanes: YouTubeLane[] = [
     {
-      id: 'dog-paw-psychology',
-      title: 'Dog Paw Psychology',
-      status: 'review draft',
-      description: 'Finished draft, subtitles, thumbnails, transcripts, and review assets.',
-      assets: dogPawAssets,
+      id: 'dog-content',
+      label: 'Dog Psychology Automation',
+      shortLabel: 'Dog Psychology',
+      icon: '🐶',
+      rootMatch: 'youtube-automation/dog-content',
+      status: 'active',
+      emptyIcon: '🐶',
+      description: 'Pet psychology explainers with SOP-gated scripts, audio-truth timing, real generated frames, and thumbnail options.',
+      plannedDetail: 'Psychology / pet education / hand-drawn explainers',
+      projectOrder: ['dog-paw-psychology', 'dog-staring-psychology', 'why-dogs-follow-you-everywhere', 'why-dogs-get-zoomies', 'why-dogs-look-guilty'],
+      projectMeta: {
+        'dog-paw-psychology': { title: 'Dog Paw Psychology', status: 'review draft', description: 'Finished draft, subtitles, thumbnails, transcripts, and review assets.' },
+        'dog-staring-psychology': { title: 'Dog Staring Psychology', status: 'visual QA rebuild', description: 'Audio/captions are good; visual beat layer is being rebuilt after QA caught jumbled story progression.' },
+        'why-dogs-follow-you-everywhere': { title: 'Why Dogs Follow You Everywhere', status: 'complete', description: 'Clean master, Telegram review cut, real generated frames, and thumbnail options are available.' },
+        'why-dogs-get-zoomies': { title: 'Why Dogs Get Zoomies', status: 'complete', description: 'Clean master, Telegram review cut, real generated frames, and thumbnail options are available.' },
+        'why-dogs-look-guilty': { title: 'Why Dogs Look Guilty', status: 'complete', description: 'Clean master, Telegram review cut, real generated frames, and thumbnail options are available.' },
+        'dog-content-inbox': { title: 'Dog Content Inbox', status: 'intake', description: 'Loose Dog Content assets that still need a project folder.' },
+      },
     },
     {
-      id: 'dog-staring-psychology',
-      title: 'Dog Staring Psychology',
-      status: 'visuals running',
-      description: 'New researched script with varied hook frames. Waiting for WAV before final timing.',
-      assets: dogStaringAssets,
+      id: 'experiment-where',
+      label: 'The Experiment Where',
+      shortLabel: 'Experiment Where',
+      icon: '🧪',
+      rootMatch: 'youtube-automation/the-experiment-where',
+      status: 'image-gen',
+      emptyIcon: '◉',
+      description: 'Dark psychology / human-nature experiments. Isolated SOP lane — never reads Dog Psychology SOPs.',
+      plannedDetail: 'Historical experiment → modern science → philosophical reveal',
+      projectOrder: ['the-experiment-where-children-were-taught-to-fear'],
+      projectMeta: {
+        'the-experiment-where-children-were-taught-to-fear': { title: 'The Experiment Where Children Were Taught To Fear', status: 'image generation', description: '2,000+ word script and 129-beat visual plan are locked. Frame generation is running while final audio is pending.' },
+      },
     },
   ]
-  const [selectedId, setSelectedId] = useState(contentItems[0]?.id ?? 'dog-paw-psychology')
-  const selectedItem = contentItems.find((item) => item.id === selectedId) ?? contentItems[0]
+
+  const laneAssets = (lane: YouTubeLane) => state.mediaFiles
+    .filter((file) => file.path.includes(lane.rootMatch) || (lane.id === 'dog-content' && file.path.includes('youtube-automation/dog-paw-psychology')))
+    .sort((a, b) => b.updatedAt.localeCompare(a.updatedAt))
+
+  const projectIdFor = (file: MediaFile, lane: YouTubeLane) => {
+    if (lane.id === 'dog-content') {
+      const dogContentMatch = file.path.match(/youtube-automation\/dog-content\/([^/]+)/)
+      if (dogContentMatch && dogContentMatch[1] !== 'transcripts') return dogContentMatch[1]
+      if (file.path.includes('dog-paw-psychology') || /dog-paw/i.test(file.name)) return 'dog-paw-psychology'
+      if (file.path.includes('dog-staring-psychology') || /dog-staring/i.test(file.name)) return 'dog-staring-psychology'
+      return 'dog-content-inbox'
+    }
+    const laneMatch = file.path.match(new RegExp(`${lane.rootMatch.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\/([^/]+)`))
+    if (laneMatch && laneMatch[1] !== 'transcripts') return laneMatch[1]
+    return `${lane.id}-inbox`
+  }
+
   const assetBuckets = (assets: MediaFile[]) => {
     const videos = assets.filter(isVideo)
     const images = assets.filter(isImage)
     const scripts = assets.filter(isScript)
-    const thumbnails = images.filter((file) => /thumbnail|contact-sheet|contact_sheet/i.test(file.name))
-    const hookFrames = images.filter((file) => /hook-frames|beat_\d+/i.test(file.path))
+    const thumbnails = images.filter((file) => /thumbnail|contact-sheet|contact_sheet/i.test(file.name) || file.path.includes('/thumbnails/'))
+    const hookFrames = images.filter((file) => /hook-frames|beat_\d+|approved_frames|frames_draft/i.test(file.path) || /beat_\d+/i.test(file.name))
     return { videos, images, scripts, thumbnails, hookFrames }
   }
   const previewFor = (assets: MediaFile[]) => {
     const buckets = assetBuckets(assets)
     return buckets.thumbnails.find((file) => /option_?01|thumbnail_option_01/i.test(file.name)) ?? buckets.thumbnails[0] ?? buckets.hookFrames[0] ?? buckets.images[0] ?? buckets.videos[0]
   }
+
+  const laneSummaries = lanes.map((lane) => ({ lane, assets: laneAssets(lane) }))
+  const [selectedLaneId, setSelectedLaneId] = useState(laneSummaries.find((item) => item.assets.length)?.lane.id ?? 'experiment-where')
+  const selectedLane = lanes.find((lane) => lane.id === selectedLaneId) ?? lanes[0]
+  const selectedLaneAssets = laneAssets(selectedLane)
+  const projectIds = Array.from(new Set(selectedLaneAssets.map((file) => projectIdFor(file, selectedLane))))
+    .sort((a, b) => {
+      const knownA = selectedLane.projectOrder.indexOf(a)
+      const knownB = selectedLane.projectOrder.indexOf(b)
+      if (knownA !== -1 || knownB !== -1) return (knownA === -1 ? 999 : knownA) - (knownB === -1 ? 999 : knownB)
+      const latestA = selectedLaneAssets.find((file) => projectIdFor(file, selectedLane) === a)?.updatedAt || ''
+      const latestB = selectedLaneAssets.find((file) => projectIdFor(file, selectedLane) === b)?.updatedAt || ''
+      return latestB.localeCompare(latestA)
+    })
+  const contentItems = projectIds.map((projectId) => {
+    const meta = selectedLane.projectMeta[projectId] || { title: titleFromProjectId(projectId, selectedLane.id), status: 'intake', description: `${selectedLane.shortLabel} project assets discovered automatically from the local project folder.` }
+    return { id: projectId, ...meta, assets: selectedLaneAssets.filter((file) => projectIdFor(file, selectedLane) === projectId) }
+  })
+  const [selectedByLane, setSelectedByLane] = useState<Record<string, string>>({})
+  const selectedItemId = selectedByLane[selectedLane.id] ?? contentItems[0]?.id
+  const selectedItem = contentItems.find((item) => item.id === selectedItemId) ?? contentItems[0]
   const selectedBuckets = assetBuckets(selectedItem?.assets ?? [])
-  const selectedVideo = selectedBuckets.videos.find((file) => /practice-v3-one-line-audio-subtitles\.mp4$|practice-v2-netflix-subtitles\.mp4$|practice-v1\.mp4$/i.test(file.path)) ?? selectedBuckets.videos[0]
-  const dogVideo = assetBuckets(dogPawAssets).videos[0]
-  const pipelines = [
-    { id: 'dog-content', label: 'Dog Content', icon: '🐶', status: dogVideo ? 'review-ready' : 'waiting', detail: `${contentItems.length} content project(s) in the lane.`, count: allDogAssets.length },
-    { id: 'future-channel-1', label: 'Future Channel Pipeline', icon: '📺', status: 'planned', detail: 'Reserved lane for the next YouTube automation niche.', count: 0 },
-  ]
-  const assetLinks = (files: MediaFile[], empty: string) => files.length ? <div className="youtube-asset-links">{files.map((file) => <a className="youtube-asset-pill" href={mediaUrl(file.url, file.updatedAt)} target="_blank" download key={file.path}><span>{cleanAssetLabel(file.name)}</span><small>{formatBytes(file.size)}</small></a>)}</div> : <p>{empty}</p>
-  return <section className="page-grid youtube-automation-page compact-youtube-page"><WorkflowRail eyebrow="YouTube automation HQ" title="Compact content library." description="Small project tiles stay clean while each item opens into video, thumbnail, transcript, and visual assets on demand." tone="lab" steps={[{ label: 'Channel pipeline', detail: 'Dog Content active', state: 'complete' }, { label: 'Open a project', detail: 'Click any square preview', state: 'active' }, { label: 'Approve or revise', detail: 'Owner gate before upload package', state: 'next' }]} /><Card title="Channel pipelines" eyebrow="Bespoke YouTube lanes" className="full-span compact-pipeline-card"><div className="youtube-pipeline-grid compact">{pipelines.map((pipeline) => <article className={`youtube-pipeline-card ${pipeline.status}`} key={pipeline.id}><span>{pipeline.icon}</span><div><h3>{pipeline.label}</h3><p>{pipeline.detail}</p><small>{pipeline.count ? `${pipeline.count} asset(s) detected` : 'empty lane'}</small></div></article>)}</div></Card><Card title="Dog Content library" eyebrow={`${contentItems.length} project tile(s)`} className="full-span"><div className="youtube-content-shell"><div className="youtube-content-grid">{contentItems.map((item) => { const preview = previewFor(item.assets); const buckets = assetBuckets(item.assets); const active = item.id === selectedItem?.id; return <button type="button" className={`youtube-content-tile ${active ? 'active' : ''}`} key={item.id} onClick={() => setSelectedId(item.id)}>{preview ? isVideo(preview) ? <video src={mediaUrl(preview.url, preview.updatedAt)} preload="metadata" muted /> : <img src={mediaUrl(preview.url, preview.updatedAt)} alt={item.title} /> : <div className="youtube-empty-thumb">🐶</div>}<span className="youtube-tile-shade" /><strong>{item.title}</strong><small>{item.status} • {buckets.videos.length} video • {buckets.images.length} image • {buckets.scripts.length} script</small></button> })}</div>{selectedItem ? <div className="youtube-content-detail"><div className="youtube-detail-head"><div><p className="eyebrow">{selectedItem.status}</p><h3>{selectedItem.title}</h3><p>{selectedItem.description}</p></div><span>{selectedItem.assets.length} assets</span></div>{selectedVideo ? <video className="youtube-detail-video" src={mediaUrl(selectedVideo.url, selectedVideo.updatedAt)} controls preload="metadata" /> : <div className="youtube-detail-empty">No full video yet — scripts and hook frames are ready for review.</div>}<div className="youtube-detail-sections"><section><h4>Scripts / transcripts</h4>{assetLinks(selectedBuckets.scripts, 'No transcripts/scripts yet.')}</section><section><h4>Thumbnail ideas</h4>{assetLinks(selectedBuckets.thumbnails, 'No thumbnails yet.')}</section><section><h4>Hook / visual frames</h4>{assetLinks(selectedBuckets.hookFrames, 'No generated frames surfaced yet.')}</section><section><h4>Videos</h4>{assetLinks(selectedBuckets.videos, 'No videos yet.')}</section></div></div> : null}</div></Card><Card title="Next channel slots" eyebrow="Future-proofing" className="full-span compact-next-slots"><div className="table-list"><div className="table-row"><strong>Dog Content</strong><span>Psychology / pet education / hand-drawn explainers</span><span>Active</span></div><div className="table-row"><strong>Channel 2</strong><span>Reserved for the next niche pipeline</span><span>Planned</span></div><div className="table-row"><strong>Channel 3</strong><span>Reserved for another automation lane</span><span>Planned</span></div></div></Card></section>
+  const selectedVideo = selectedBuckets.videos.find((file) => /site-visible-captions\.mp4$/i.test(file.path)) ?? selectedBuckets.videos.find((file) => /preview-1min.*visible-captions\.mp4$/i.test(file.path)) ?? selectedBuckets.videos.find((file) => /audio-truth-captioned-v2\.mp4$|audio-truth-captioned\.mp4$|practice-v3-one-line-audio-subtitles\.mp4$|practice-v2-netflix-subtitles\.mp4$|practice-v1\.mp4$/i.test(file.path)) ?? selectedBuckets.videos[0]
+  const [lightbox, setLightbox] = useState<{ files: MediaFile[]; index: number; title: string } | null>(null)
+  const lightboxFile = lightbox?.files[lightbox.index]
+  const moveLightbox = useCallback((direction: -1 | 1) => {
+    setLightbox((current) => {
+      if (!current?.files.length) return current
+      const nextIndex = (current.index + direction + current.files.length) % current.files.length
+      return { ...current, index: nextIndex }
+    })
+  }, [setLightbox])
+  useEffect(() => {
+    if (!lightbox) return undefined
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setLightbox(null)
+      if (event.key === 'ArrowLeft') moveLightbox(-1)
+      if (event.key === 'ArrowRight') moveLightbox(1)
+    }
+    window.addEventListener('keydown', onKeyDown)
+    return () => window.removeEventListener('keydown', onKeyDown)
+  }, [lightbox, moveLightbox])
+  const pipelines = laneSummaries.map(({ lane, assets }) => {
+    const projectCount = Array.from(new Set(assets.map((file) => projectIdFor(file, lane)))).length
+    const hasReviewVideo = assets.some((file) => isVideo(file) && /audio-truth-captioned|preview-1min|practice-v/i.test(file.name))
+    return { id: lane.id, label: lane.label, icon: lane.icon, status: hasReviewVideo ? 'review-ready' : lane.status, detail: assets.length ? `${projectCount} project(s) • ${assets.length} asset(s). ${lane.description}` : lane.description, count: assets.length }
+  })
+  const assetLinks = (files: MediaFile[], empty: string) => files.length ? <div className="youtube-asset-links">{files.slice(0, 40).map((file) => <a className="youtube-asset-pill" href={mediaUrl(file.url, file.updatedAt)} target="_blank" download key={file.path}><span>{cleanAssetLabel(file.name)}</span><small>{formatBytes(file.size)}</small></a>)}</div> : <p>{empty}</p>
+  const mediaAssetGrid = (files: MediaFile[], empty: string, title = 'Preview gallery') => {
+    const visibleFiles = files.slice(0, 18)
+    return visibleFiles.length ? <div className="youtube-media-asset-grid">{visibleFiles.map((file) => {
+      const label = cleanAssetLabel(file.name)
+      const url = mediaUrl(file.url, file.updatedAt)
+      if (isVideo(file)) return <a className="youtube-media-asset-card" href={url} target="_blank" key={file.path}><video src={url} preload="metadata" muted /><span>{label}</span><small>{formatBytes(file.size)}</small></a>
+      return <button type="button" className="youtube-media-asset-card" onClick={() => setLightbox({ files: visibleFiles.filter(isImage), index: visibleFiles.filter(isImage).findIndex((image) => image.path === file.path), title })} key={file.path}><img src={url} alt={label} loading="lazy" /><span>{label}</span><small>{formatBytes(file.size)}</small></button>
+    })}</div> : <p>{empty}</p>
+  }
+
+  return <section className="page-grid youtube-automation-page compact-youtube-page"><WorkflowRail eyebrow="YouTube automation HQ" title="Niche pipelines, isolated SOPs." description="Each channel lane keeps its own SOPs, scripts, visuals, thumbnails, and review gates so niches never cross-contaminate." tone="lab" steps={[{ label: 'Master template', detail: '10 gates locked', state: 'complete' }, { label: 'Pick a niche lane', detail: selectedLane.label, state: 'active' }, { label: 'Approve or revise', detail: 'Owner gate before upload package', state: 'next' }]} /><Card title="Channel pipelines" eyebrow="Bespoke YouTube lanes" className="full-span compact-pipeline-card"><div className="youtube-pipeline-grid compact">{pipelines.map((pipeline) => <button type="button" className={`youtube-pipeline-card ${pipeline.status} ${pipeline.id === selectedLane.id ? 'active' : ''}`} key={pipeline.id} onClick={() => setSelectedLaneId(pipeline.id)}><span>{pipeline.icon}</span><div><h3>{pipeline.label}</h3><p>{pipeline.detail}</p><small>{pipeline.count ? `${pipeline.count} asset(s) detected` : 'empty lane'}</small></div></button>)}</div></Card><Card title={`${selectedLane.shortLabel} library`} eyebrow={`${contentItems.length} project tile(s)`} className="full-span"><div className="youtube-content-shell"><div className="youtube-content-grid">{contentItems.map((item) => { const preview = previewFor(item.assets); const buckets = assetBuckets(item.assets); const active = item.id === selectedItem?.id; return <button type="button" className={`youtube-content-tile ${active ? 'active' : ''}`} key={item.id} onClick={() => setSelectedByLane((current) => ({ ...current, [selectedLane.id]: item.id }))}>{preview ? isVideo(preview) ? <video src={mediaUrl(preview.url, preview.updatedAt)} preload="metadata" muted /> : <img src={mediaUrl(preview.url, preview.updatedAt)} alt={item.title} /> : <div className="youtube-empty-thumb">{selectedLane.emptyIcon}</div>}<span className="youtube-tile-shade" /><strong>{item.title}</strong><small>{item.status} • {buckets.videos.length} video • {buckets.images.length} image • {buckets.scripts.length} script</small></button> })}</div>{selectedItem ? <div className="youtube-content-detail"><div className="youtube-detail-head"><div><p className="eyebrow">{selectedLane.label} • {selectedItem.status}</p><h3>{selectedItem.title}</h3><p>{selectedItem.description}</p></div><span>{selectedItem.assets.length} assets</span></div>{selectedVideo ? <video className="youtube-detail-video" src={mediaUrl(selectedVideo.url, selectedVideo.updatedAt)} controls preload="metadata" /> : <div className="youtube-detail-empty">No full video yet — scripts, thumbnails, and generated frames are surfaced here as they arrive.</div>}<div className="youtube-detail-sections"><section><h4>Scripts / SOP assets</h4>{assetLinks(selectedBuckets.scripts, 'No transcripts/scripts yet.')}</section><section><h4>Thumbnail ideas</h4>{mediaAssetGrid(selectedBuckets.thumbnails, 'No thumbnails yet.', 'Thumbnail ideas')}</section><section><h4>Hook / visual frames</h4>{mediaAssetGrid(selectedBuckets.hookFrames, 'No generated frames surfaced yet.', 'Hook / visual frames')}</section><section><h4>Videos</h4>{assetLinks(selectedBuckets.videos, 'No videos yet.')}</section></div></div> : <div className="youtube-content-detail"><div className="youtube-detail-empty">No projects detected in this lane yet.</div></div>}</div></Card><Card title="Pipeline map" eyebrow="SOP isolation" className="full-span compact-next-slots"><div className="table-list">{lanes.map((lane) => <div className="table-row" key={lane.id}><strong>{lane.label}</strong><span>{lane.plannedDetail}</span><span>{lane.id === selectedLane.id ? 'Open' : lane.status}</span></div>)}<div className="table-row"><strong>Next niche slot</strong><span>Reserved for another SOP-isolated automation lane</span><span>Planned</span></div></div></Card>{lightbox && lightboxFile ? <div className="youtube-lightbox" role="dialog" aria-modal="true" aria-label={lightbox.title} onClick={() => setLightbox(null)}><button type="button" className="youtube-lightbox-close" onClick={() => setLightbox(null)} aria-label="Close preview">×</button><button type="button" className="youtube-lightbox-arrow previous" onClick={(event) => { event.stopPropagation(); moveLightbox(-1) }} aria-label="Previous image">‹</button><figure onClick={(event) => event.stopPropagation()}><img src={mediaUrl(lightboxFile.url, lightboxFile.updatedAt)} alt={cleanAssetLabel(lightboxFile.name)} /><figcaption><strong>{cleanAssetLabel(lightboxFile.name)}</strong><span>{lightbox.index + 1} / {lightbox.files.length} • {formatBytes(lightboxFile.size)}</span></figcaption></figure><button type="button" className="youtube-lightbox-arrow next" onClick={(event) => { event.stopPropagation(); moveLightbox(1) }} aria-label="Next image">›</button></div> : null}</section>
 }
 
 function ClipFactory({ state, refresh, setError }: { state: AppState; refresh: () => Promise<void>; setError: (value: string) => void }) {

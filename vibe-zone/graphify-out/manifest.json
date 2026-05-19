@@ -8,8 +8,8 @@
     "hash": "3e0cc408cd65f818a187de2e8afd5cc0"
   },
   "/root/.openclaw/workspace/vibe-zone/server/server.mjs": {
-    "mtime": 1779118122.5355637,
-    "hash": "e75750a7d258228526eece3430ed25c7"
+    "mtime": 1779124431.5488648,
+    "hash": "a64291e003e12744f4304d1342531bec"
   },
   "/root/.openclaw/workspace/vibe-zone/scripts/render-stream2-fulltime-247-build-house-v4c-20260515T0918Z.mjs": {
     "mtime": 1778836666.7052813,
@@ -167,6 +167,10 @@
     "mtime": 1778828234.9278426,
     "hash": "47f9cce94009fcba18a3258ef1ec180e"
   },
+  "/root/.openclaw/workspace/vibe-zone/scripts/check-dog-content-sop.mjs": {
+    "mtime": 1779166262.4956133,
+    "hash": "75daa317ac3a4dbec7e9cb8d5669efb4"
+  },
   "/root/.openclaw/workspace/vibe-zone/scripts/render-longform-stream2-founder-upload-candidate-20260514T0300Z.mjs": {
     "mtime": 1778727757.248197,
     "hash": "ad8c5353bd4b7201440b3ad6de264e37"
@@ -182,6 +186,10 @@
   "/root/.openclaw/workspace/vibe-zone/scripts/fix-longform-thumbnail-lab-subtitles-20260515.mjs": {
     "mtime": 1778830098.3930793,
     "hash": "12197ede48ee4f0b3bac685bf140fccd"
+  },
+  "/root/.openclaw/workspace/vibe-zone/scripts/check-dog-production-ready.mjs": {
+    "mtime": 1779204495.056567,
+    "hash": "bbe7485529dacbfa89985cd93e45b5e8"
   },
   "/root/.openclaw/workspace/vibe-zone/scripts/render-day3-honest-agent-house-v3-20260513T2147Z.mjs": {
     "mtime": 1778709184.8760388,
@@ -467,6 +475,10 @@
     "mtime": 1778785570.171815,
     "hash": "64c5ebc6381a21e754dbb7cb95194ea0"
   },
+  "/root/.openclaw/workspace/vibe-zone/scripts/check-experiment-where-sop.mjs": {
+    "mtime": 1779218286.0944145,
+    "hash": "310293392a843b6413b87dd6ad73c5c5"
+  },
   "/root/.openclaw/workspace/vibe-zone/scripts/render-longform-day3-clean-captions-20260513T1900Z.mjs": {
     "mtime": 1778698949.0602183,
     "hash": "134e03d244be502267b8c253724fa630"
@@ -524,8 +536,8 @@
     "hash": "349c23adc4ade2c40ed9b12b262069dd"
   },
   "/root/.openclaw/workspace/vibe-zone/src/App.tsx": {
-    "mtime": 1779117748.2863147,
-    "hash": "5652b79046c5f2a2604d40f4cac83010"
+    "mtime": 1779222091.711136,
+    "hash": "42b580dbf3a5038e9f608f0e244dc424"
   },
   "/root/.openclaw/workspace/vibe-zone/src/RexLiveRoadmap.tsx": {
     "mtime": 1778928962.8333774,
@@ -630,6 +642,10 @@
   "/root/.openclaw/workspace/vibe-zone/SOCIAL_CONNECTIONS_WORKFLOW.md": {
     "mtime": 1778737799.3025231,
     "hash": "6453b0a2158af1f96a90af0bc1267ae9"
+  },
+  "/root/.openclaw/workspace/vibe-zone/DOG_CONTENT_SOP_CHECKLIST.md": {
+    "mtime": 1779166233.8933825,
+    "hash": "65b07b47f226dee5619308792772f627"
   },
   "/root/.openclaw/workspace/vibe-zone/TASK_QUEUE.md": {
     "mtime": 1778697314.644488,
