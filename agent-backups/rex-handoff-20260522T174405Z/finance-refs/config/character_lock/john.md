@@ -1,0 +1,1 @@
+John character lock: early-60s man; salt-and-pepper short neat hair with slightly receding hairline; square jaw; clean-shaven; warm medium skin tone; light blue polo or beige cardigan over white shirt, khakis/chinos, sensible shoes; slightly stocky broad-shouldered build; calm mentor expression; cartoon explainer proportions only; never photorealistic.

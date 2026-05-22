@@ -1,0 +1,22 @@
+{
+  "styleContract": "dog-psychology-v1",
+  "auditedAt": "2026-05-19",
+  "status": "fail",
+  "singleSceneFrames": false,
+  "styleMatchesBible": false,
+  "characterContinuity": false,
+  "scriptMatchedProgression": false,
+  "noForbiddenGraphics": false,
+  "findings": [
+    "Major SOP failure: many approved frames are 2x2/multi-panel contact sheets instead of single story frames.",
+    "Automated detector found 52 likely contact-sheet/multi-panel frames; example beat_043.png matches the user screenshot.",
+    "Manifest source files are named like zoomies-unique-batch-001-004; 80 source files match multi-beat batch generation patterns.",
+    "Frames include action/VFX/overlay/comic energy and inconsistent dog/owner identity.",
+    "Thumbnail options are photoreal/action contact sheets, not the agreed thumbnail style."
+  ],
+  "requiredFix": [
+    "Do not batch multiple beats/options into one image prompt. Generate one single-scene image per beat.",
+    "Regenerate from locked style bible.",
+    "Block renders until visual_sop_audit and thumbnail_sop_audit pass."
+  ]
+}

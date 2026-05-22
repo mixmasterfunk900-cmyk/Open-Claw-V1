@@ -1,0 +1,13 @@
+GENERATE beat_074 attempt 1
+_074.png",
+      "mimeType": "image/png",
+      "size": 4549047,
+      "width": 2048,
+      "height": 1152,
+      "revisedPrompt": "Sparse melancholic 2D hand-drawn doodle illustration in The Experiment Channel style. Rough pencil line art, near-black uneven lines, flat lighting, wide negative space, muted pale tan, warm grey, and faded blue-grey palette only; no bright or saturated colours. Handmade sketchbook aesthetic, not photo, not 3D, not anime. No logos, no watermarks, no readable text.\n\nBeat 074 symbolic scene about learned fear, association, memory, and a childhood nervous system: side-profile power-imbalance composition. On the right, two large adult researchers in side profile loom tall and severe but restrained: Watson, a tall severe male researcher drawn with dark sketch lines and hollow dark-circled eyes; Rayner, a quiet adult researcher slightly behind him, also hollow-eyed. On the left foreground, infant Albert appears very small and vulnerable in simple one-piece pale clothing, oversized hollow eyes, seated or crouched low, turned in profile toward a small harmless-looking white rat nearby. The white rat is small, pale, non-threatening, still and delicate.\n\nUse symbolism: a faint ghostly outline or pale faded echo of a second absent stimulus behind the rat, like a barely visible memory shadow or ripple, suggesting the first thing summoning the feeling of the second thing even when it is gone. The echo must be abstract and non-readable, not a literal object with text. Minimal environment: mostly blank paper-like background, a thin floor line, maybe a few faint nervous-system-like pencil threads or memory arcs connecting rat, child, and distant adults. Emotionally restrained, historically suggestive, non-graphic. Characters share same line weight and palette across sequence. Make this frame visually distinct from nearby frames through the side-profile imbalance and large empty space between child and adults."
+    }
+  ],
+  "ignoredOverrides": []
+}
+
+OK beat_074 4549047

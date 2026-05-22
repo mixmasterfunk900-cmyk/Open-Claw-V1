@@ -1,0 +1,13 @@
+GENERATE beat_068 attempt 1
+youtube-automation/projects/the-experiment-where-children-were-taught-to-fear/full_video_prep/approved_frames_draft/beat_068.png",
+      "mimeType": "image/png",
+      "size": 4629621,
+      "width": 2048,
+      "height": 1152,
+      "revisedPrompt": "Sparse melancholic 2D hand-drawn doodle illustration in The Experiment Channel style only. Rough pencil line art, near-black lines, muted pale tan, warm grey, faded blue-grey palette, flat lighting, wide negative space, minimal environment, no bright colors, no saturated colors, no logos, no watermarks, no readable text.\n\nBeat 068: symbolic sparse scene about learned fear, association, memory, and a childhood nervous system. Split composition showing before-and-after emotional meaning without text. Left side: infant Albert, very small vulnerable child in simple one-piece pale clothing, oversized hollow dark-circled eyes, sitting in empty pale space near a small harmless-looking white rat; the rat appears neutral and gentle. Right side: the same infant Albert slightly withdrawn, shoulders tense, hollow eyes wider, one hand near throat, subtle visual symbols of racing heart and locked throat using abstract pencil marks only, no words; the rat’s simple silhouette appears as a faint memory-shadow, not threatening. Between halves, a thin uneven vertical pencil divide that feels like an emotional fracture, not graphic.\n\nWatson: tall severe male researcher in dark sketch lines, distant in background as a rigid looming outline; Rayner: quiet adult researcher, small subdued outline beside him. Both with hollow dark-circled eyes, restrained, historically suggestive, non-graphic. Preserve continuity: same line weight and palette across whole sequence. Handmade sketchbook aesthetic, not photo, not 3D, not anime. Emotionally restrained, melancholic, visually distinct from nearby frames through the split before-after composition and abstract nervous-system marks. No readable text anywhere."
+    }
+  ],
+  "ignoredOverrides": []
+}
+
+OK beat_068 4629621

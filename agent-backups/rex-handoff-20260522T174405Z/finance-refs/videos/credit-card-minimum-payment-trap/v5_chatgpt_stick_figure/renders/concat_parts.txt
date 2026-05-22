@@ -1,0 +1,8 @@
+file '/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure/renders/part_01.mp4'
+file '/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure/renders/part_02.mp4'
+file '/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure/renders/part_03.mp4'
+file '/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure/renders/part_04.mp4'
+file '/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure/renders/part_05.mp4'
+file '/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure/renders/part_06.mp4'
+file '/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure/renders/part_07.mp4'
+file '/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure/renders/part_08.mp4'

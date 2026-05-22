@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "duration_seconds": 671.133333,
+  "duration_gate_seconds": 480.0,
+  "duration_gate_pass": true,
+  "voices": {
+    "john": "am_michael",
+    "laura": "af_bella",
+    "selected_voice_gate_pass": true
+  },
+  "visuals": {
+    "unique_final_frame_assets": 20,
+    "all_openai_provenance": true,
+    "no_local_placeholder_final_frames": true,
+    "note": "20 OpenAI/ChatGPT keyframes used for 20 dialogue sections. This is below the suggested ~80 because only the V5-approved sample style was locked; additional frames were generated in that style and reused with motion rather than mixing in rejected/non-stick-figure 80-frame V3 assets."
+  },
+  "subtitles": {
+    "style": "dynamic slot-build one word at a time, previous words hold slots, clears by phrase",
+    "y_position": 590,
+    "font_size": 50,
+    "phrase_count": 351,
+    "word_events": 1053,
+    "max_line_width_px": 976,
+    "overlap_risk": "low: one event per word, centered measured slots, phrase end clipped before next phrase start"
+  },
+  "outputs": {
+    "review_mp4": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/renders/credit-card-minimum-payment-trap_v5_chatgpt_stick_figure_full_review.mp4",
+    "clean_mp4": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/renders/credit-card-minimum-payment-trap_v5_chatgpt_stick_figure_full_clean.mp4",
+    "telegram_low_mp4": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/renders/credit-card-minimum-payment-trap_v5_chatgpt_stick_figure_full_telegram_low.mp4",
+    "audio_wav": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/renders/credit-card-minimum-payment-trap_v5_full_selected_voices_am_michael_af_bella.wav",
+    "contact_sheet": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/proof/v5_full_contact_sheet.jpg"
+  }
+}

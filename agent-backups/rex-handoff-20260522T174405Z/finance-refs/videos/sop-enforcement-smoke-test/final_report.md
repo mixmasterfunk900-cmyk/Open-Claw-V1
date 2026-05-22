@@ -1,0 +1,1 @@
+PASS_REVIEW_READY smoke60 no-subtitles. Subtitles disabled/manual. Faint zooms and fade transitions included. Vibe Zone path: media/practice/youtube-automation/finance-content/sop-enforcement-smoke-test/smoke60/

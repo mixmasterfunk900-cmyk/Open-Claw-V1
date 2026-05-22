@@ -1,0 +1,1 @@
+PASS: Character lock QA. Laura race/skin tone, age range, hair/face identity, and role remain consistent in sampled/direct-generated scene set. John race/skin tone, age range, hair/face identity, and mentor role remain consistent. Both remain 2D cartoon explainer characters; no role swap observed in proof sheet.

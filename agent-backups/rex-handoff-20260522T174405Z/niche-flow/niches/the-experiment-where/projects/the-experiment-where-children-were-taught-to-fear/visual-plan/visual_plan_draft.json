@@ -1,0 +1,911 @@
+{
+  "project": "the-experiment-where-children-were-taught-to-fear",
+  "title": "The Experiment Where Children Were Taught to Fear",
+  "niche": "the-experiment-where",
+  "target": "2000+ word corrected plan",
+  "beats": [
+    {
+      "id": "beat_001",
+      "frame_filename": "beat_001.png",
+      "narration": "In 1920, inside Johns Hopkins University, John B. Watson decided to find out whether fear could be built inside a child.",
+      "visual_description": "opening laboratory setup with Watson, Rayner, infant Albert, white rat, and steel bar; sparse, tense, fast-cut composition",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: opening laboratory setup with Watson, Rayner, infant Albert, white rat, and steel bar; sparse, tense, fast-cut composition. Narration context: In 1920, inside Johns Hopkins University, John B. Watson decided to find out whether fear could be built inside a child."
+    },
+    {
+      "id": "beat_002",
+      "frame_filename": "beat_002.png",
+      "narration": "To do it, he and Rosalie Rayner placed an infant in front of a white rat and gave the experiment one rule:",
+      "visual_description": "opening laboratory setup with Watson, Rayner, infant Albert, white rat, and steel bar; sparse, tense, fast-cut composition",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: opening laboratory setup with Watson, Rayner, infant Albert, white rat, and steel bar; sparse, tense, fast-cut composition. Narration context: To do it, he and Rosalie Rayner placed an infant in front of a white rat and gave the experiment one rule:"
+    },
+    {
+      "id": "beat_003",
+      "frame_filename": "beat_003.png",
+      "narration": "each time the child reached for the animal, a steel bar would be struck behind his head.",
+      "visual_description": "opening laboratory setup with Watson, Rayner, infant Albert, white rat, and steel bar; sparse, tense, fast-cut composition",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: opening laboratory setup with Watson, Rayner, infant Albert, white rat, and steel bar; sparse, tense, fast-cut composition. Narration context: each time the child reached for the animal, a steel bar would be struck behind his head."
+    },
+    {
+      "id": "beat_004",
+      "frame_filename": "beat_004.png",
+      "narration": "The child began to cry. Then he began to pull away from the rat before the sound even came.",
+      "visual_description": "opening laboratory setup with Watson, Rayner, infant Albert, white rat, and steel bar; sparse, tense, fast-cut composition",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: opening laboratory setup with Watson, Rayner, infant Albert, white rat, and steel bar; sparse, tense, fast-cut composition. Narration context: The child began to cry. Then he began to pull away from the rat before the sound even came."
+    },
+    {
+      "id": "beat_005",
+      "frame_filename": "beat_005.png",
+      "narration": "Soon, the fear spread. A rabbit. A dog. A fur coat. Cotton wool. A white Santa Claus mask.",
+      "visual_description": "opening laboratory setup with Watson, Rayner, infant Albert, white rat, and steel bar; sparse, tense, fast-cut composition",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: opening laboratory setup with Watson, Rayner, infant Albert, white rat, and steel bar; sparse, tense, fast-cut composition. Narration context: Soon, the fear spread. A rabbit. A dog. A fur coat. Cotton wool. A white Santa Claus mask."
+    },
+    {
+      "id": "beat_006",
+      "frame_filename": "beat_006.png",
+      "narration": "The experiment had worked. A child had been taught to fear something that had not hurt him.",
+      "visual_description": "opening laboratory setup with Watson, Rayner, infant Albert, white rat, and steel bar; sparse, tense, fast-cut composition",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: opening laboratory setup with Watson, Rayner, infant Albert, white rat, and steel bar; sparse, tense, fast-cut composition. Narration context: The experiment had worked. A child had been taught to fear something that had not hurt him."
+    },
+    {
+      "id": "beat_007",
+      "frame_filename": "beat_007.png",
+      "narration": "Watson called the infant Albert B. The world would remember him as Little Albert.",
+      "visual_description": "opening laboratory setup with Watson, Rayner, infant Albert, white rat, and steel bar; sparse, tense, fast-cut composition",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: opening laboratory setup with Watson, Rayner, infant Albert, white rat, and steel bar; sparse, tense, fast-cut composition. Narration context: Watson called the infant Albert B. The world would remember him as Little Albert."
+    },
+    {
+      "id": "beat_008",
+      "frame_filename": "beat_008.png",
+      "narration": "Albert was not chosen because he was unusual. That was part of the point. Watson and Rayner described him as emotionally stable",
+      "visual_description": "opening laboratory setup with Watson, Rayner, infant Albert, white rat, and steel bar; sparse, tense, fast-cut composition",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: opening laboratory setup with Watson, Rayner, infant Albert, white rat, and steel bar; sparse, tense, fast-cut composition. Narration context: Albert was not chosen because he was unusual. That was part of the point. Watson and Rayner described him as emotionally stable"
+    },
+    {
+      "id": "beat_009",
+      "frame_filename": "beat_009.png",
+      "narration": "at the start, a child who did not seem easily frightened by the objects placed in front of him.",
+      "visual_description": "child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette. Narration context: at the start, a child who did not seem easily frightened by the objects placed in front of him."
+    },
+    {
+      "id": "beat_010",
+      "frame_filename": "beat_010.png",
+      "narration": "The laboratory did not begin with terror. It began with curiosity.",
+      "visual_description": "Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects. Narration context: The laboratory did not begin with terror. It began with curiosity."
+    },
+    {
+      "id": "beat_011",
+      "frame_filename": "beat_011.png",
+      "narration": "A white rat was placed near him. Albert reached for it.",
+      "visual_description": "Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects. Narration context: A white rat was placed near him. Albert reached for it."
+    },
+    {
+      "id": "beat_012",
+      "frame_filename": "beat_012.png",
+      "narration": "There was no threat in the animal itself. The rat did not bite him. It did not scratch him.",
+      "visual_description": "Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects. Narration context: There was no threat in the animal itself. The rat did not bite him. It did not scratch him."
+    },
+    {
+      "id": "beat_013",
+      "frame_filename": "beat_013.png",
+      "narration": "It did not chase him across the room. It simply existed in the same space as the child.",
+      "visual_description": "child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette. Narration context: It did not chase him across the room. It simply existed in the same space as the child."
+    },
+    {
+      "id": "beat_014",
+      "frame_filename": "beat_014.png",
+      "narration": "Then Watson made the room answer for the rat.",
+      "visual_description": "John B. Watson as shadowed scientist figure with paper/manifesto motif, infant subject small in negative space",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: John B. Watson as shadowed scientist figure with paper/manifesto motif, infant subject small in negative space. Narration context: Then Watson made the room answer for the rat."
+    },
+    {
+      "id": "beat_015",
+      "frame_filename": "beat_015.png",
+      "narration": "Behind Albert, a metal bar was struck with a hammer. The sound was sudden enough to jolt him.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: Behind Albert, a metal bar was struck with a hammer. The sound was sudden enough to jolt him."
+    },
+    {
+      "id": "beat_016",
+      "frame_filename": "beat_016.png",
+      "narration": "His body reacted before he could understand what had happened. He startled. He fell forward. He began to cry.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: His body reacted before he could understand what had happened. He startled. He fell forward. He began to cry."
+    },
+    {
+      "id": "beat_017",
+      "frame_filename": "beat_017.png",
+      "narration": "The next time the rat appeared, the sound came again.",
+      "visual_description": "Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects. Narration context: The next time the rat appeared, the sound came again."
+    },
+    {
+      "id": "beat_018",
+      "frame_filename": "beat_018.png",
+      "narration": "Then again. The rat changed meaning. It was no longer a small white animal.",
+      "visual_description": "Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects. Narration context: Then again. The rat changed meaning. It was no longer a small white animal."
+    },
+    {
+      "id": "beat_019",
+      "frame_filename": "beat_019.png",
+      "narration": "It was the thing that came before pain.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: It was the thing that came before pain."
+    },
+    {
+      "id": "beat_020",
+      "frame_filename": "beat_020.png",
+      "narration": "That was the machinery Watson wanted to expose. He was not trying to prove that loud noise could frighten a baby.",
+      "visual_description": "John B. Watson as shadowed scientist figure with paper/manifesto motif, infant subject small in negative space",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: John B. Watson as shadowed scientist figure with paper/manifesto motif, infant subject small in negative space. Narration context: That was the machinery Watson wanted to expose. He was not trying to prove that loud noise could frighten a baby."
+    },
+    {
+      "id": "beat_021",
+      "frame_filename": "beat_021.png",
+      "narration": "Everyone already knew that. He was trying to prove that a neutral object could borrow fear from something else.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: Everyone already knew that. He was trying to prove that a neutral object could borrow fear from something else."
+    },
+    {
+      "id": "beat_022",
+      "frame_filename": "beat_022.png",
+      "narration": "Watson had spent years arguing that psychology should stop looking inward. In 1913, he published a paper often described as the behaviorist",
+      "visual_description": "John B. Watson as shadowed scientist figure with paper/manifesto motif, infant subject small in negative space",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: John B. Watson as shadowed scientist figure with paper/manifesto motif, infant subject small in negative space. Narration context: Watson had spent years arguing that psychology should stop looking inward. In 1913, he published a paper often described as the behaviorist"
+    },
+    {
+      "id": "beat_023",
+      "frame_filename": "beat_023.png",
+      "narration": "manifesto. His claim was blunt. Psychology should study behavior that could be observed, measured, predicted, and controlled.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: manifesto. His claim was blunt. Psychology should study behavior that could be observed, measured, predicted, and controlled."
+    },
+    {
+      "id": "beat_024",
+      "frame_filename": "beat_024.png",
+      "narration": "Thoughts were not enough. Feelings were not enough.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: Thoughts were not enough. Feelings were not enough."
+    },
+    {
+      "id": "beat_025",
+      "frame_filename": "beat_025.png",
+      "narration": "The body\u2019s response was the evidence. In Watson\u2019s vision, a child was not a mysterious soul unfolding from within.",
+      "visual_description": "John B. Watson as shadowed scientist figure with paper/manifesto motif, infant subject small in negative space",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: John B. Watson as shadowed scientist figure with paper/manifesto motif, infant subject small in negative space. Narration context: The body\u2019s response was the evidence. In Watson\u2019s vision, a child was not a mysterious soul unfolding from within."
+    },
+    {
+      "id": "beat_026",
+      "frame_filename": "beat_026.png",
+      "narration": "A child was a living system of reflexes, habits, and associations. If the world repeated the same pairing enough times, the child",
+      "visual_description": "child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette. Narration context: A child was a living system of reflexes, habits, and associations. If the world repeated the same pairing enough times, the child"
+    },
+    {
+      "id": "beat_027",
+      "frame_filename": "beat_027.png",
+      "narration": "would learn the connection. Albert became the proof.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: would learn the connection. Albert became the proof."
+    },
+    {
+      "id": "beat_028",
+      "frame_filename": "beat_028.png",
+      "narration": "The proof was small. The proof was sitting on a mattress. The proof could not consent.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: The proof was small. The proof was sitting on a mattress. The proof could not consent."
+    },
+    {
+      "id": "beat_029",
+      "frame_filename": "beat_029.png",
+      "narration": "At first, Watson and Rayner tested Albert with several objects. A white rat. A rabbit. A dog.",
+      "visual_description": "John B. Watson as shadowed scientist figure with paper/manifesto motif, infant subject small in negative space",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: John B. Watson as shadowed scientist figure with paper/manifesto motif, infant subject small in negative space. Narration context: At first, Watson and Rayner tested Albert with several objects. A white rat. A rabbit. A dog."
+    },
+    {
+      "id": "beat_030",
+      "frame_filename": "beat_030.png",
+      "narration": "A monkey. Masks. Burning newspaper. They reported that these things did not produce strong fear before the conditioning began.",
+      "visual_description": "observational fear learning with two rhesus monkeys and snake symbol, minimal research setting",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: observational fear learning with two rhesus monkeys and snake symbol, minimal research setting. Narration context: A monkey. Masks. Burning newspaper. They reported that these things did not produce strong fear before the conditioning began."
+    },
+    {
+      "id": "beat_031",
+      "frame_filename": "beat_031.png",
+      "narration": "After the pairings, the rat alone was enough.",
+      "visual_description": "Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects. Narration context: After the pairings, the rat alone was enough."
+    },
+    {
+      "id": "beat_032",
+      "frame_filename": "beat_032.png",
+      "narration": "Albert saw it and pulled back. He cried. He tried to crawl away.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: Albert saw it and pulled back. He cried. He tried to crawl away."
+    },
+    {
+      "id": "beat_033",
+      "frame_filename": "beat_033.png",
+      "narration": "The fear had moved from the sound into the animal.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: The fear had moved from the sound into the animal."
+    },
+    {
+      "id": "beat_034",
+      "frame_filename": "beat_034.png",
+      "narration": "Then it moved again. When Albert was shown a rabbit, he reacted. When he was shown a dog, he reacted.",
+      "visual_description": "Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects. Narration context: Then it moved again. When Albert was shown a rabbit, he reacted. When he was shown a dog, he reacted."
+    },
+    {
+      "id": "beat_035",
+      "frame_filename": "beat_035.png",
+      "narration": "When a fur coat was placed near him, he reacted. Cotton wool and a Santa Claus mask carried the same shadow.",
+      "visual_description": "Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects. Narration context: When a fur coat was placed near him, he reacted. Cotton wool and a Santa Claus mask carried the same shadow."
+    },
+    {
+      "id": "beat_036",
+      "frame_filename": "beat_036.png",
+      "narration": "His nervous system had built a category before language could inspect it.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: His nervous system had built a category before language could inspect it."
+    },
+    {
+      "id": "beat_037",
+      "frame_filename": "beat_037.png",
+      "narration": "White. Soft. Furry. Danger. This was the first thesis of the experiment: fear does not need truth.",
+      "visual_description": "Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects. Narration context: White. Soft. Furry. Danger. This was the first thesis of the experiment: fear does not need truth."
+    },
+    {
+      "id": "beat_038",
+      "frame_filename": "beat_038.png",
+      "narration": "It only needs association. That is why the experiment still feels disturbing more than a century later.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: It only needs association. That is why the experiment still feels disturbing more than a century later."
+    },
+    {
+      "id": "beat_039",
+      "frame_filename": "beat_039.png",
+      "narration": "The horror is not only that a child was frightened. The horror is that the fear was inaccurate, and it still worked.",
+      "visual_description": "Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects. Narration context: The horror is not only that a child was frightened. The horror is that the fear was inaccurate, and it still worked."
+    },
+    {
+      "id": "beat_040",
+      "frame_filename": "beat_040.png",
+      "narration": "The rat had done nothing. The body remembered it anyway.",
+      "visual_description": "Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects. Narration context: The rat had done nothing. The body remembered it anyway."
+    },
+    {
+      "id": "beat_041",
+      "frame_filename": "beat_041.png",
+      "narration": "Watson and Rayner published the work under the title \u201cConditioned Emotional Reactions\u201d in 1920. The paper was short.",
+      "visual_description": "John B. Watson as shadowed scientist figure with paper/manifesto motif, infant subject small in negative space",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: John B. Watson as shadowed scientist figure with paper/manifesto motif, infant subject small in negative space. Narration context: Watson and Rayner published the work under the title \u201cConditioned Emotional Reactions\u201d in 1920. The paper was short."
+    },
+    {
+      "id": "beat_042",
+      "frame_filename": "beat_042.png",
+      "narration": "The implication was not. If fear could be made this way, then parts of personality might not be fixed traits at all.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: The implication was not. If fear could be made this way, then parts of personality might not be fixed traits at all."
+    },
+    {
+      "id": "beat_043",
+      "frame_filename": "beat_043.png",
+      "narration": "They might be histories of pairing. A room becomes unsafe because of what happened there.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: They might be histories of pairing. A room becomes unsafe because of what happened there."
+    },
+    {
+      "id": "beat_044",
+      "frame_filename": "beat_044.png",
+      "narration": "A voice becomes threatening because of what followed it.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: A voice becomes threatening because of what followed it."
+    },
+    {
+      "id": "beat_045",
+      "frame_filename": "beat_045.png",
+      "narration": "A harmless animal becomes a signal because the body once learned the wrong lesson at the wrong time.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: A harmless animal becomes a signal because the body once learned the wrong lesson at the wrong time."
+    },
+    {
+      "id": "beat_046",
+      "frame_filename": "beat_046.png",
+      "narration": "The experiment did not end with Albert being carefully untaught. He left the hospital before systematic deconditioning could be completed.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: The experiment did not end with Albert being carefully untaught. He left the hospital before systematic deconditioning could be completed."
+    },
+    {
+      "id": "beat_047",
+      "frame_filename": "beat_047.png",
+      "narration": "That absence became part of the story. A fear was installed, then the record went quiet.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: That absence became part of the story. A fear was installed, then the record went quiet."
+    },
+    {
+      "id": "beat_048",
+      "frame_filename": "beat_048.png",
+      "narration": "What happened to Albert afterward is still disputed.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: What happened to Albert afterward is still disputed."
+    },
+    {
+      "id": "beat_049",
+      "frame_filename": "beat_049.png",
+      "narration": "In 2009, Hall P. Beck and colleagues argued that Little Albert may have been Douglas Merritte, a child connected to the hospital",
+      "visual_description": "child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette. Narration context: In 2009, Hall P. Beck and colleagues argued that Little Albert may have been Douglas Merritte, a child connected to the hospital"
+    },
+    {
+      "id": "beat_050",
+      "frame_filename": "beat_050.png",
+      "narration": "who died young. Later researchers challenged that identification and proposed William Barger instead. The archive does not give a clean ending.",
+      "visual_description": "unresolved archive motif with empty crib, indistinct file cards, missing child silhouette, no readable text",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: unresolved archive motif with empty crib, indistinct file cards, missing child silhouette, no readable text. Narration context: who died young. Later researchers challenged that identification and proposed William Barger instead. The archive does not give a clean ending."
+    },
+    {
+      "id": "beat_051",
+      "frame_filename": "beat_051.png",
+      "narration": "So the child remains partly hidden. A name in a paper. A face in an old film.",
+      "visual_description": "child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette. Narration context: So the child remains partly hidden. A name in a paper. A face in an old film."
+    },
+    {
+      "id": "beat_052",
+      "frame_filename": "beat_052.png",
+      "narration": "A nervous system used to make a point.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: A nervous system used to make a point."
+    },
+    {
+      "id": "beat_053",
+      "frame_filename": "beat_053.png",
+      "narration": "But Watson\u2019s point did not stay inside that laboratory.",
+      "visual_description": "John B. Watson as shadowed scientist figure with paper/manifesto motif, infant subject small in negative space",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: John B. Watson as shadowed scientist figure with paper/manifesto motif, infant subject small in negative space. Narration context: But Watson\u2019s point did not stay inside that laboratory."
+    },
+    {
+      "id": "beat_054",
+      "frame_filename": "beat_054.png",
+      "narration": "Decades later, fear learning appeared again in another form. In the 1980s, Susan Mineka, Michael Cook, and colleagues studied observational fear learning",
+      "visual_description": "observational fear learning with two rhesus monkeys and snake symbol, minimal research setting",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: observational fear learning with two rhesus monkeys and snake symbol, minimal research setting. Narration context: Decades later, fear learning appeared again in another form. In the 1980s, Susan Mineka, Michael Cook, and colleagues studied observational fear learning"
+    },
+    {
+      "id": "beat_055",
+      "frame_filename": "beat_055.png",
+      "narration": "in rhesus monkeys at the University of Wisconsin.",
+      "visual_description": "observational fear learning with two rhesus monkeys and snake symbol, minimal research setting",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: observational fear learning with two rhesus monkeys and snake symbol, minimal research setting. Narration context: in rhesus monkeys at the University of Wisconsin."
+    },
+    {
+      "id": "beat_056",
+      "frame_filename": "beat_056.png",
+      "narration": "Their work showed that a monkey did not always need direct injury to become afraid. One monkey could watch another monkey react",
+      "visual_description": "observational fear learning with two rhesus monkeys and snake symbol, minimal research setting",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: observational fear learning with two rhesus monkeys and snake symbol, minimal research setting. Narration context: Their work showed that a monkey did not always need direct injury to become afraid. One monkey could watch another monkey react"
+    },
+    {
+      "id": "beat_057",
+      "frame_filename": "beat_057.png",
+      "narration": "fearfully to a snake, and the observer could acquire fear from the reaction.",
+      "visual_description": "observational fear learning with two rhesus monkeys and snake symbol, minimal research setting",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: observational fear learning with two rhesus monkeys and snake symbol, minimal research setting. Narration context: fearfully to a snake, and the observer could acquire fear from the reaction."
+    },
+    {
+      "id": "beat_058",
+      "frame_filename": "beat_058.png",
+      "narration": "No bite was needed. No wound was needed.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: No bite was needed. No wound was needed."
+    },
+    {
+      "id": "beat_059",
+      "frame_filename": "beat_059.png",
+      "narration": "Fear moved through another body. That finding widened the Little Albert lesson. Fear was not only something the world could attach through",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: Fear moved through another body. That finding widened the Little Albert lesson. Fear was not only something the world could attach through"
+    },
+    {
+      "id": "beat_060",
+      "frame_filename": "beat_060.png",
+      "narration": "direct pain. It was something a nervous system could learn socially.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: direct pain. It was something a nervous system could learn socially."
+    },
+    {
+      "id": "beat_061",
+      "frame_filename": "beat_061.png",
+      "narration": "A child does not need to be bitten by a dog to become afraid of dogs.",
+      "visual_description": "Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects. Narration context: A child does not need to be bitten by a dog to become afraid of dogs."
+    },
+    {
+      "id": "beat_062",
+      "frame_filename": "beat_062.png",
+      "narration": "A child can watch an adult stiffen. The voice changes. The hand grips tighter. The body leans back.",
+      "visual_description": "child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette. Narration context: A child can watch an adult stiffen. The voice changes. The hand grips tighter. The body leans back."
+    },
+    {
+      "id": "beat_063",
+      "frame_filename": "beat_063.png",
+      "narration": "The lesson arrives before anyone explains it. Danger is not always taught in sentences.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: The lesson arrives before anyone explains it. Danger is not always taught in sentences."
+    },
+    {
+      "id": "beat_064",
+      "frame_filename": "beat_064.png",
+      "narration": "Sometimes it is taught in posture. Sometimes it is taught by silence.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: Sometimes it is taught in posture. Sometimes it is taught by silence."
+    },
+    {
+      "id": "beat_065",
+      "frame_filename": "beat_065.png",
+      "narration": "Sometimes it is taught by what everyone in the room refuses to touch.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: Sometimes it is taught by what everyone in the room refuses to touch."
+    },
+    {
+      "id": "beat_066",
+      "frame_filename": "beat_066.png",
+      "narration": "That is why childhood fear can feel older than memory. The learning can happen before the child has the words to store",
+      "visual_description": "child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette. Narration context: That is why childhood fear can feel older than memory. The learning can happen before the child has the words to store"
+    },
+    {
+      "id": "beat_067",
+      "frame_filename": "beat_067.png",
+      "narration": "it as a story. Later, as an adult, the person may only feel the result.",
+      "visual_description": "child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette. Narration context: it as a story. Later, as an adult, the person may only feel the result."
+    },
+    {
+      "id": "beat_068",
+      "frame_filename": "beat_068.png",
+      "narration": "A racing heart. A locked throat. A need to leave.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: A racing heart. A locked throat. A need to leave."
+    },
+    {
+      "id": "beat_069",
+      "frame_filename": "beat_069.png",
+      "narration": "The mind says nothing is happening. The body says something already happened.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: The mind says nothing is happening. The body says something already happened."
+    },
+    {
+      "id": "beat_070",
+      "frame_filename": "beat_070.png",
+      "narration": "In the 1990s, Joseph LeDoux at New York University helped map the machinery underneath this kind of learning.",
+      "visual_description": "minimal brain/amygdala or conditioning diagram rendered as rough hand-drawn symbolic scene",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: minimal brain/amygdala or conditioning diagram rendered as rough hand-drawn symbolic scene. Narration context: In the 1990s, Joseph LeDoux at New York University helped map the machinery underneath this kind of learning."
+    },
+    {
+      "id": "beat_071",
+      "frame_filename": "beat_071.png",
+      "narration": "His work on fear conditioning showed the amygdala\u2019s role in linking signals to threat. A sound, a sight, or a smell can",
+      "visual_description": "minimal brain/amygdala or conditioning diagram rendered as rough hand-drawn symbolic scene",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: minimal brain/amygdala or conditioning diagram rendered as rough hand-drawn symbolic scene. Narration context: His work on fear conditioning showed the amygdala\u2019s role in linking signals to threat. A sound, a sight, or a smell can"
+    },
+    {
+      "id": "beat_072",
+      "frame_filename": "beat_072.png",
+      "narration": "become tied to danger when the brain repeatedly pairs it with distress.",
+      "visual_description": "minimal brain/amygdala or conditioning diagram rendered as rough hand-drawn symbolic scene",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: minimal brain/amygdala or conditioning diagram rendered as rough hand-drawn symbolic scene. Narration context: become tied to danger when the brain repeatedly pairs it with distress."
+    },
+    {
+      "id": "beat_073",
+      "frame_filename": "beat_073.png",
+      "narration": "The mechanism is called classical conditioning. One thing happens beside another thing. The brain joins them.",
+      "visual_description": "minimal brain/amygdala or conditioning diagram rendered as rough hand-drawn symbolic scene",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: minimal brain/amygdala or conditioning diagram rendered as rough hand-drawn symbolic scene. Narration context: The mechanism is called classical conditioning. One thing happens beside another thing. The brain joins them."
+    },
+    {
+      "id": "beat_074",
+      "frame_filename": "beat_074.png",
+      "narration": "Later, the first thing can summon the feeling of the second thing, even when the second thing is gone.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: Later, the first thing can summon the feeling of the second thing, even when the second thing is gone."
+    },
+    {
+      "id": "beat_075",
+      "frame_filename": "beat_075.png",
+      "narration": "A rat becomes a noise. A hallway becomes footsteps.",
+      "visual_description": "Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects. Narration context: A rat becomes a noise. A hallway becomes footsteps."
+    },
+    {
+      "id": "beat_076",
+      "frame_filename": "beat_076.png",
+      "narration": "A face becomes an old warning. This is not the same as choosing a belief. It is faster than belief.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: A face becomes an old warning. This is not the same as choosing a belief. It is faster than belief."
+    },
+    {
+      "id": "beat_077",
+      "frame_filename": "beat_077.png",
+      "narration": "It is older than explanation. It is the body building a prediction about what comes next.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: It is older than explanation. It is the body building a prediction about what comes next."
+    },
+    {
+      "id": "beat_078",
+      "frame_filename": "beat_078.png",
+      "narration": "Elizabeth Phelps and colleagues at New York University later studied human fear learning and extinction, connecting conditioned fear with amygdala activity and",
+      "visual_description": "minimal brain/amygdala or conditioning diagram rendered as rough hand-drawn symbolic scene",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: minimal brain/amygdala or conditioning diagram rendered as rough hand-drawn symbolic scene. Narration context: Elizabeth Phelps and colleagues at New York University later studied human fear learning and extinction, connecting conditioned fear with amygdala activity and"
+    },
+    {
+      "id": "beat_079",
+      "frame_filename": "beat_079.png",
+      "narration": "with the difficulty of undoing learned threat. Extinction does not simply erase the original association. Often, it builds a new layer over",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: with the difficulty of undoing learned threat. Extinction does not simply erase the original association. Often, it builds a new layer over"
+    },
+    {
+      "id": "beat_080",
+      "frame_filename": "beat_080.png",
+      "narration": "it. The person learns, \u201cThis may be safe now.\u201d",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: it. The person learns, \u201cThis may be safe now.\u201d"
+    },
+    {
+      "id": "beat_081",
+      "frame_filename": "beat_081.png",
+      "narration": "But somewhere underneath, the older lesson can remain.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: But somewhere underneath, the older lesson can remain."
+    },
+    {
+      "id": "beat_082",
+      "frame_filename": "beat_082.png",
+      "narration": "That is why a fear can return under stress. That is why context matters. A person may feel calm in one room",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: That is why a fear can return under stress. That is why context matters. A person may feel calm in one room"
+    },
+    {
+      "id": "beat_083",
+      "frame_filename": "beat_083.png",
+      "narration": "and afraid in another, even when the object is the same. The brain is not only asking what is in front of",
+      "visual_description": "minimal brain/amygdala or conditioning diagram rendered as rough hand-drawn symbolic scene",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: minimal brain/amygdala or conditioning diagram rendered as rough hand-drawn symbolic scene. Narration context: and afraid in another, even when the object is the same. The brain is not only asking what is in front of"
+    },
+    {
+      "id": "beat_084",
+      "frame_filename": "beat_084.png",
+      "narration": "it. It is asking where it learned the rule.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: it. It is asking where it learned the rule."
+    },
+    {
+      "id": "beat_085",
+      "frame_filename": "beat_085.png",
+      "narration": "Little Albert\u2019s rat was not just a rat.",
+      "visual_description": "Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects. Narration context: Little Albert\u2019s rat was not just a rat."
+    },
+    {
+      "id": "beat_086",
+      "frame_filename": "beat_086.png",
+      "narration": "It was a context. It was a sound.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: It was a context. It was a sound."
+    },
+    {
+      "id": "beat_087",
+      "frame_filename": "beat_087.png",
+      "narration": "It was an adult\u2019s decision. It was a room that taught the child what the animal meant.",
+      "visual_description": "child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette. Narration context: It was an adult\u2019s decision. It was a room that taught the child what the animal meant."
+    },
+    {
+      "id": "beat_088",
+      "frame_filename": "beat_088.png",
+      "narration": "This is where the experiment stops being only a story about behaviorism and becomes a story about childhood.",
+      "visual_description": "child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette. Narration context: This is where the experiment stops being only a story about behaviorism and becomes a story about childhood."
+    },
+    {
+      "id": "beat_089",
+      "frame_filename": "beat_089.png",
+      "narration": "Children do not begin life with a finished map of the world. They borrow one. They borrow it from parents, teachers, rooms,",
+      "visual_description": "child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette. Narration context: Children do not begin life with a finished map of the world. They borrow one. They borrow it from parents, teachers, rooms,"
+    },
+    {
+      "id": "beat_090",
+      "frame_filename": "beat_090.png",
+      "narration": "punishments, routines, tones of voice, and the small movements adults do not know they are making.",
+      "visual_description": "child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette. Narration context: punishments, routines, tones of voice, and the small movements adults do not know they are making."
+    },
+    {
+      "id": "beat_091",
+      "frame_filename": "beat_091.png",
+      "narration": "A child learns which footsteps mean comfort. A child learns which silence means danger.",
+      "visual_description": "child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette. Narration context: A child learns which footsteps mean comfort. A child learns which silence means danger."
+    },
+    {
+      "id": "beat_092",
+      "frame_filename": "beat_092.png",
+      "narration": "A child learns whether reaching brings warmth or shock.",
+      "visual_description": "child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette. Narration context: A child learns whether reaching brings warmth or shock."
+    },
+    {
+      "id": "beat_093",
+      "frame_filename": "beat_093.png",
+      "narration": "Most of this learning is not planned. It is not written down. It happens because the child is always watching, and because",
+      "visual_description": "child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette. Narration context: Most of this learning is not planned. It is not written down. It happens because the child is always watching, and because"
+    },
+    {
+      "id": "beat_094",
+      "frame_filename": "beat_094.png",
+      "narration": "the body is designed to remember what might protect it.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: the body is designed to remember what might protect it."
+    },
+    {
+      "id": "beat_095",
+      "frame_filename": "beat_095.png",
+      "narration": "Watson manufactured fear with a rat and a steel bar. Ordinary life manufactures fear more quietly.",
+      "visual_description": "John B. Watson as shadowed scientist figure with paper/manifesto motif, infant subject small in negative space",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: John B. Watson as shadowed scientist figure with paper/manifesto motif, infant subject small in negative space. Narration context: Watson manufactured fear with a rat and a steel bar. Ordinary life manufactures fear more quietly."
+    },
+    {
+      "id": "beat_096",
+      "frame_filename": "beat_096.png",
+      "narration": "A door closes too hard. A parent flinches near water.",
+      "visual_description": "child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette. Narration context: A door closes too hard. A parent flinches near water."
+    },
+    {
+      "id": "beat_097",
+      "frame_filename": "beat_097.png",
+      "narration": "A classroom laughs at one mistake. A dog barks once while everyone panics.",
+      "visual_description": "Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects. Narration context: A classroom laughs at one mistake. A dog barks once while everyone panics."
+    },
+    {
+      "id": "beat_098",
+      "frame_filename": "beat_098.png",
+      "narration": "The event may last seconds. The association may last years.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: The event may last seconds. The association may last years."
+    },
+    {
+      "id": "beat_099",
+      "frame_filename": "beat_099.png",
+      "narration": "There is one edge case that changes the meaning of the entire story.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: There is one edge case that changes the meaning of the entire story."
+    },
+    {
+      "id": "beat_100",
+      "frame_filename": "beat_100.png",
+      "narration": "In 1924, Mary Cover Jones worked with a young child known as Peter. Peter was afraid of a rabbit.",
+      "visual_description": "Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects. Narration context: In 1924, Mary Cover Jones worked with a young child known as Peter. Peter was afraid of a rabbit."
+    },
+    {
+      "id": "beat_101",
+      "frame_filename": "beat_101.png",
+      "narration": "Jones did not try to shame the fear out of him. She did not tell him the rabbit was harmless and expect",
+      "visual_description": "Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects. Narration context: Jones did not try to shame the fear out of him. She did not tell him the rabbit was harmless and expect"
+    },
+    {
+      "id": "beat_102",
+      "frame_filename": "beat_102.png",
+      "narration": "the body to obey. She changed the pairing.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: the body to obey. She changed the pairing."
+    },
+    {
+      "id": "beat_103",
+      "frame_filename": "beat_103.png",
+      "narration": "The rabbit was kept at a distance while Peter ate food he enjoyed. Then, across repeated sessions, the rabbit was brought closer.",
+      "visual_description": "Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects. Narration context: The rabbit was kept at a distance while Peter ate food he enjoyed. Then, across repeated sessions, the rabbit was brought closer."
+    },
+    {
+      "id": "beat_104",
+      "frame_filename": "beat_104.png",
+      "narration": "The feared object was placed beside safety, not shock.",
+      "visual_description": "Mary Cover Jones counterconditioning scene with child Peter, rabbit at safe distance, calm sparse room",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: Mary Cover Jones counterconditioning scene with child Peter, rabbit at safe distance, calm sparse room. Narration context: The feared object was placed beside safety, not shock."
+    },
+    {
+      "id": "beat_105",
+      "frame_filename": "beat_105.png",
+      "narration": "Slowly, the meaning changed. The rabbit stopped being only a warning.",
+      "visual_description": "Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects. Narration context: Slowly, the meaning changed. The rabbit stopped being only a warning."
+    },
+    {
+      "id": "beat_106",
+      "frame_filename": "beat_106.png",
+      "narration": "It became something the child could tolerate. Jones\u2019s work became one of the early roots of behavior therapy.",
+      "visual_description": "Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects. Narration context: It became something the child could tolerate. Jones\u2019s work became one of the early roots of behavior therapy."
+    },
+    {
+      "id": "beat_107",
+      "frame_filename": "beat_107.png",
+      "narration": "It suggested that Watson had revealed only half of the machine. If fear can be attached, safety can also be attached.",
+      "visual_description": "John B. Watson as shadowed scientist figure with paper/manifesto motif, infant subject small in negative space",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: John B. Watson as shadowed scientist figure with paper/manifesto motif, infant subject small in negative space. Narration context: It suggested that Watson had revealed only half of the machine. If fear can be attached, safety can also be attached."
+    },
+    {
+      "id": "beat_108",
+      "frame_filename": "beat_108.png",
+      "narration": "If the body can learn the wrong meaning, it can sometimes learn a new one.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: If the body can learn the wrong meaning, it can sometimes learn a new one."
+    },
+    {
+      "id": "beat_109",
+      "frame_filename": "beat_109.png",
+      "narration": "But the repair is slower than the wound.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: But the repair is slower than the wound."
+    },
+    {
+      "id": "beat_110",
+      "frame_filename": "beat_110.png",
+      "narration": "Fear can be taught in a moment. Safety often has to be proven again and again.",
+      "visual_description": "Mary Cover Jones counterconditioning scene with child Peter, rabbit at safe distance, calm sparse room",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: Mary Cover Jones counterconditioning scene with child Peter, rabbit at safe distance, calm sparse room. Narration context: Fear can be taught in a moment. Safety often has to be proven again and again."
+    },
+    {
+      "id": "beat_111",
+      "frame_filename": "beat_111.png",
+      "narration": "That is the cruel asymmetry at the center of the experiment. One sudden sound can change the meaning of a harmless object.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: That is the cruel asymmetry at the center of the experiment. One sudden sound can change the meaning of a harmless object."
+    },
+    {
+      "id": "beat_112",
+      "frame_filename": "beat_112.png",
+      "narration": "Untangling that meaning can take patience, repetition, and a world that stops confirming the old rule.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: Untangling that meaning can take patience, repetition, and a world that stops confirming the old rule."
+    },
+    {
+      "id": "beat_113",
+      "frame_filename": "beat_113.png",
+      "narration": "Watson wanted to prove that emotions could be conditioned.",
+      "visual_description": "John B. Watson as shadowed scientist figure with paper/manifesto motif, infant subject small in negative space",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: John B. Watson as shadowed scientist figure with paper/manifesto motif, infant subject small in negative space. Narration context: Watson wanted to prove that emotions could be conditioned."
+    },
+    {
+      "id": "beat_114",
+      "frame_filename": "beat_114.png",
+      "narration": "He did. But the experiment also revealed something he did not fully control. Fear is not loyal to facts.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: He did. But the experiment also revealed something he did not fully control. Fear is not loyal to facts."
+    },
+    {
+      "id": "beat_115",
+      "frame_filename": "beat_115.png",
+      "narration": "It spreads by resemblance. It borrows shapes. It hides inside categories. It moves from one object to another before the mind can",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: It spreads by resemblance. It borrows shapes. It hides inside categories. It moves from one object to another before the mind can"
+    },
+    {
+      "id": "beat_116",
+      "frame_filename": "beat_116.png",
+      "narration": "draw a boundary around it. Albert was not afraid because the rat was dangerous.",
+      "visual_description": "Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects. Narration context: draw a boundary around it. Albert was not afraid because the rat was dangerous."
+    },
+    {
+      "id": "beat_117",
+      "frame_filename": "beat_117.png",
+      "narration": "He was afraid because the rat had been made to carry danger.",
+      "visual_description": "Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects. Narration context: He was afraid because the rat had been made to carry danger."
+    },
+    {
+      "id": "beat_118",
+      "frame_filename": "beat_118.png",
+      "narration": "That distinction matters. Many adult fears are built from the same confusion. Not because the person is weak.",
+      "visual_description": "child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette. Narration context: That distinction matters. Many adult fears are built from the same confusion. Not because the person is weak."
+    },
+    {
+      "id": "beat_119",
+      "frame_filename": "beat_119.png",
+      "narration": "Not because they are irrational. Because the nervous system is doing what it was designed to do.",
+      "visual_description": "Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects. Narration context: Not because they are irrational. Because the nervous system is doing what it was designed to do."
+    },
+    {
+      "id": "beat_120",
+      "frame_filename": "beat_120.png",
+      "narration": "It is using the past to predict the next second.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: It is using the past to predict the next second."
+    },
+    {
+      "id": "beat_121",
+      "frame_filename": "beat_121.png",
+      "narration": "Sometimes the prediction saves us. Sometimes it traps us.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: Sometimes the prediction saves us. Sometimes it traps us."
+    },
+    {
+      "id": "beat_122",
+      "frame_filename": "beat_122.png",
+      "narration": "The experiment where children were taught to fear was supposed to show control. A scientist could take an emotion, attach it to",
+      "visual_description": "child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: child learning fear from adult posture in sparse everyday room, hollow eyes and muted palette. Narration context: The experiment where children were taught to fear was supposed to show control. A scientist could take an emotion, attach it to"
+    },
+    {
+      "id": "beat_123",
+      "frame_filename": "beat_123.png",
+      "narration": "an object, and watch it appear on command.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: an object, and watch it appear on command."
+    },
+    {
+      "id": "beat_124",
+      "frame_filename": "beat_124.png",
+      "narration": "But what it revealed was less comforting. A human being can learn danger before they understand it.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: But what it revealed was less comforting. A human being can learn danger before they understand it."
+    },
+    {
+      "id": "beat_125",
+      "frame_filename": "beat_125.png",
+      "narration": "They can carry that learning after the danger is gone. They can fear the symbol, not the source.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: They can carry that learning after the danger is gone. They can fear the symbol, not the source."
+    },
+    {
+      "id": "beat_126",
+      "frame_filename": "beat_126.png",
+      "narration": "They can spend years reacting to a sound that no one else can hear.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: They can spend years reacting to a sound that no one else can hear."
+    },
+    {
+      "id": "beat_127",
+      "frame_filename": "beat_127.png",
+      "narration": "Albert reached for a white rat. The world answered with noise.",
+      "visual_description": "Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects. Narration context: Albert reached for a white rat. The world answered with noise."
+    },
+    {
+      "id": "beat_128",
+      "frame_filename": "beat_128.png",
+      "narration": "After that, the rat was never only a rat again.",
+      "visual_description": "Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: Little Albert and simple feared-object symbols in empty lab space, showing fear generalizing across white furry objects. Narration context: After that, the rat was never only a rat again."
+    },
+    {
+      "id": "beat_129",
+      "frame_filename": "beat_129.png",
+      "narration": "We are not only afraid of what hurt us. We are afraid of what was standing nearby when pain arrived.",
+      "visual_description": "symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system",
+      "image_prompt": "The Experiment Channel style only: sparse melancholic 2D hand-drawn doodle illustration, rough pencil line art, hollow dark-circled eyes where characters appear, muted pale tan/warm grey/faded blue-grey palette, near-black lines, flat lighting, wide negative space, minimal environment, no bright colours, no logos, no watermarks, no readable text unless explicitly a tiny date/term. Scene: symbolic sparse scene matching narration about learned fear, association, memory, and childhood nervous system. Narration context: We are not only afraid of what hurt us. We are afraid of what was standing nearby when pain arrived."
+    }
+  ]
+}

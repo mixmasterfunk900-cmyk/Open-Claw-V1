@@ -1,0 +1,59 @@
+{
+  "status": "one_minute_review_sample_not_final",
+  "style": "ChatGPT/OpenAI generated premium stick-figure explainer frames",
+  "runtime_seconds": 60,
+  "source_audio": "first 60 seconds of real finance voiceover",
+  "review_video": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure/renders/credit-card-minimum-payment-trap_v5_chatgpt_stick_figure_1min_review.mp4",
+  "clean_video": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure/renders/credit-card-minimum-payment-trap_v5_chatgpt_stick_figure_1min_clean.mp4",
+  "beats": [
+    {
+      "image": "frame_01_button_chain.png",
+      "start": 0.0,
+      "end": 7.5,
+      "rationale": "button chained to credit card: minimum-payment trap hook"
+    },
+    {
+      "image": "frame_02_groceries_subscription.png",
+      "start": 7.5,
+      "end": 15.0,
+      "rationale": "groceries become a recurring debt subscription"
+    },
+    {
+      "image": "frame_03_laura_laptop_credit.png",
+      "start": 15.0,
+      "end": 24.8,
+      "rationale": "Laura thinks minimum payment protects credit"
+    },
+    {
+      "image": "frame_04_late_vs_math.png",
+      "start": 24.8,
+      "end": 32.6,
+      "rationale": "late protection versus interest math"
+    },
+    {
+      "image": "frame_05_floor_not_plan.png",
+      "start": 32.6,
+      "end": 40.5,
+      "rationale": "minimum is a floor, not a plan"
+    },
+    {
+      "image": "frame_06_two_futures.png",
+      "start": 40.5,
+      "end": 47.8,
+      "rationale": "same balance, different payment futures"
+    },
+    {
+      "image": "frame_07_money_gap.png",
+      "start": 47.8,
+      "end": 55.0,
+      "rationale": "money gap in one picture"
+    },
+    {
+      "image": "frame_08_apr_bank_rent.png",
+      "start": 55.0,
+      "end": 60.0,
+      "rationale": "APR pressure and rent paid to bank"
+    }
+  ],
+  "notes": "Made for Masala change notes before committing to full 8+ minute V5 generation."
+}

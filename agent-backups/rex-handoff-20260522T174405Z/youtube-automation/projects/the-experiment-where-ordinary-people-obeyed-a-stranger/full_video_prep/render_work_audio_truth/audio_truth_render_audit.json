@@ -1,0 +1,1313 @@
+{
+  "planPath": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/visual_plan_draft.json",
+  "alignmentPath": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/transcription/experiment-where-ordinary-people-obeyed-a-stranger-final-audio.json",
+  "voiceover": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/voiceover_drop/experiment-where-ordinary-people-obeyed-a-stranger-final-audio.wav",
+  "output": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/renders/ordinary-people-obeyed-a-stranger-clean-regenerated-audio-truth-soft-subs.mp4",
+  "copyOut": null,
+  "approvedDir": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames",
+  "beats": 129,
+  "captions": 370,
+  "planWords": 2001,
+  "audioWords": 1997,
+  "wordRatio": 1.002,
+  "timingMethod": "exact-token-walk-from-whisper-word-timestamps",
+  "visualMotion": "per-beat 3.5% slow zoompan with subtle varied fade transitions",
+  "captionMode": "soft-mp4-mov_text-subtitle-track-no-burned-captions",
+  "avgBeatAlignmentScore": 0.987,
+  "weakBeatMatches": 2,
+  "audioDuration": 826.65,
+  "maxFrameDuration": 11.399999999999977,
+  "avgFrameDuration": 6.412480620155039,
+  "alignmentRows": [
+    {
+      "id": "beat_001",
+      "frame": "beat_001.png",
+      "words": 5,
+      "startIndex": 0,
+      "endIndex": 4,
+      "score": 1,
+      "start": 0,
+      "end": 4
+    },
+    {
+      "id": "beat_002",
+      "frame": "beat_002.png",
+      "words": 24,
+      "startIndex": 5,
+      "endIndex": 28,
+      "score": 1,
+      "start": 4,
+      "end": 11.76
+    },
+    {
+      "id": "beat_003",
+      "frame": "beat_003.png",
+      "words": 13,
+      "startIndex": 29,
+      "endIndex": 41,
+      "score": 1,
+      "start": 11.76,
+      "end": 16.02
+    },
+    {
+      "id": "beat_004",
+      "frame": "beat_004.png",
+      "words": 14,
+      "startIndex": 42,
+      "endIndex": 55,
+      "score": 1,
+      "start": 16.02,
+      "end": 21.78
+    },
+    {
+      "id": "beat_005",
+      "frame": "beat_005.png",
+      "words": 13,
+      "startIndex": 56,
+      "endIndex": 68,
+      "score": 1,
+      "start": 21.78,
+      "end": 26.9
+    },
+    {
+      "id": "beat_006",
+      "frame": "beat_006.png",
+      "words": 10,
+      "startIndex": 69,
+      "endIndex": 78,
+      "score": 1,
+      "start": 26.9,
+      "end": 31.28
+    },
+    {
+      "id": "beat_007",
+      "frame": "beat_007.png",
+      "words": 21,
+      "startIndex": 79,
+      "endIndex": 99,
+      "score": 1,
+      "start": 31.28,
+      "end": 39.74
+    },
+    {
+      "id": "beat_008",
+      "frame": "beat_008.png",
+      "words": 13,
+      "startIndex": 100,
+      "endIndex": 112,
+      "score": 1,
+      "start": 39.74,
+      "end": 44.72
+    },
+    {
+      "id": "beat_009",
+      "frame": "beat_009.png",
+      "words": 21,
+      "startIndex": 113,
+      "endIndex": 133,
+      "score": 1,
+      "start": 44.72,
+      "end": 52.28
+    },
+    {
+      "id": "beat_010",
+      "frame": "beat_010.png",
+      "words": 8,
+      "startIndex": 134,
+      "endIndex": 141,
+      "score": 1,
+      "start": 52.28,
+      "end": 55.27
+    },
+    {
+      "id": "beat_011",
+      "frame": "beat_011.png",
+      "words": 14,
+      "startIndex": 142,
+      "endIndex": 155,
+      "score": 1,
+      "start": 55.27,
+      "end": 62.48
+    },
+    {
+      "id": "beat_012",
+      "frame": "beat_012.png",
+      "words": 18,
+      "startIndex": 156,
+      "endIndex": 173,
+      "score": 0.5,
+      "start": 62.48,
+      "end": 70.66
+    },
+    {
+      "id": "beat_013",
+      "frame": "beat_013.png",
+      "words": 13,
+      "startIndex": 171,
+      "endIndex": 183,
+      "score": 1,
+      "start": 69.5,
+      "end": 75.16
+    },
+    {
+      "id": "beat_014",
+      "frame": "beat_014.png",
+      "words": 9,
+      "startIndex": 184,
+      "endIndex": 192,
+      "score": 0.889,
+      "start": 75.16,
+      "end": 78.2
+    },
+    {
+      "id": "beat_015",
+      "frame": "beat_015.png",
+      "words": 16,
+      "startIndex": 193,
+      "endIndex": 208,
+      "score": 0.375,
+      "start": 78.2,
+      "end": 85.3
+    },
+    {
+      "id": "beat_016",
+      "frame": "beat_016.png",
+      "words": 13,
+      "startIndex": 206,
+      "endIndex": 218,
+      "score": 1,
+      "start": 84.28,
+      "end": 90.78
+    },
+    {
+      "id": "beat_017",
+      "frame": "beat_017.png",
+      "words": 9,
+      "startIndex": 219,
+      "endIndex": 227,
+      "score": 1,
+      "start": 90.78,
+      "end": 94.8
+    },
+    {
+      "id": "beat_018",
+      "frame": "beat_018.png",
+      "words": 22,
+      "startIndex": 230,
+      "endIndex": 251,
+      "score": 0.955,
+      "start": 96.42,
+      "end": 104.6
+    },
+    {
+      "id": "beat_019",
+      "frame": "beat_019.png",
+      "words": 17,
+      "startIndex": 252,
+      "endIndex": 268,
+      "score": 1,
+      "start": 104.6,
+      "end": 111
+    },
+    {
+      "id": "beat_020",
+      "frame": "beat_020.png",
+      "words": 15,
+      "startIndex": 269,
+      "endIndex": 283,
+      "score": 1,
+      "start": 111,
+      "end": 117.92
+    },
+    {
+      "id": "beat_021",
+      "frame": "beat_021.png",
+      "words": 17,
+      "startIndex": 284,
+      "endIndex": 300,
+      "score": 1,
+      "start": 117.92,
+      "end": 123.96
+    },
+    {
+      "id": "beat_022",
+      "frame": "beat_022.png",
+      "words": 7,
+      "startIndex": 301,
+      "endIndex": 307,
+      "score": 1,
+      "start": 123.96,
+      "end": 127.44
+    },
+    {
+      "id": "beat_023",
+      "frame": "beat_023.png",
+      "words": 15,
+      "startIndex": 308,
+      "endIndex": 322,
+      "score": 1,
+      "start": 127.44,
+      "end": 133.7
+    },
+    {
+      "id": "beat_024",
+      "frame": "beat_024.png",
+      "words": 19,
+      "startIndex": 323,
+      "endIndex": 341,
+      "score": 1,
+      "start": 133.7,
+      "end": 140.02
+    },
+    {
+      "id": "beat_025",
+      "frame": "beat_025.png",
+      "words": 6,
+      "startIndex": 342,
+      "endIndex": 347,
+      "score": 1,
+      "start": 140.02,
+      "end": 142.2
+    },
+    {
+      "id": "beat_026",
+      "frame": "beat_026.png",
+      "words": 16,
+      "startIndex": 348,
+      "endIndex": 363,
+      "score": 1,
+      "start": 142.2,
+      "end": 148.4
+    },
+    {
+      "id": "beat_027",
+      "frame": "beat_027.png",
+      "words": 20,
+      "startIndex": 364,
+      "endIndex": 383,
+      "score": 1,
+      "start": 148.4,
+      "end": 157.18
+    },
+    {
+      "id": "beat_028",
+      "frame": "beat_028.png",
+      "words": 19,
+      "startIndex": 384,
+      "endIndex": 402,
+      "score": 1,
+      "start": 157.18,
+      "end": 167.6
+    },
+    {
+      "id": "beat_029",
+      "frame": "beat_029.png",
+      "words": 7,
+      "startIndex": 403,
+      "endIndex": 409,
+      "score": 1,
+      "start": 167.6,
+      "end": 170.12
+    },
+    {
+      "id": "beat_030",
+      "frame": "beat_030.png",
+      "words": 11,
+      "startIndex": 410,
+      "endIndex": 420,
+      "score": 1,
+      "start": 170.12,
+      "end": 173.72
+    },
+    {
+      "id": "beat_031",
+      "frame": "beat_031.png",
+      "words": 19,
+      "startIndex": 421,
+      "endIndex": 439,
+      "score": 1,
+      "start": 173.72,
+      "end": 182.3
+    },
+    {
+      "id": "beat_032",
+      "frame": "beat_032.png",
+      "words": 3,
+      "startIndex": 440,
+      "endIndex": 442,
+      "score": 1,
+      "start": 182.3,
+      "end": 183.81
+    },
+    {
+      "id": "beat_033",
+      "frame": "beat_033.png",
+      "words": 21,
+      "startIndex": 443,
+      "endIndex": 463,
+      "score": 1,
+      "start": 183.81,
+      "end": 191.72
+    },
+    {
+      "id": "beat_034",
+      "frame": "beat_034.png",
+      "words": 21,
+      "startIndex": 464,
+      "endIndex": 484,
+      "score": 1,
+      "start": 191.72,
+      "end": 199.5
+    },
+    {
+      "id": "beat_035",
+      "frame": "beat_035.png",
+      "words": 15,
+      "startIndex": 485,
+      "endIndex": 499,
+      "score": 1,
+      "start": 199.5,
+      "end": 204.72
+    },
+    {
+      "id": "beat_036",
+      "frame": "beat_036.png",
+      "words": 12,
+      "startIndex": 500,
+      "endIndex": 511,
+      "score": 1,
+      "start": 204.72,
+      "end": 210.72
+    },
+    {
+      "id": "beat_037",
+      "frame": "beat_037.png",
+      "words": 10,
+      "startIndex": 512,
+      "endIndex": 521,
+      "score": 1,
+      "start": 210.72,
+      "end": 214.16
+    },
+    {
+      "id": "beat_038",
+      "frame": "beat_038.png",
+      "words": 19,
+      "startIndex": 522,
+      "endIndex": 540,
+      "score": 1,
+      "start": 214.16,
+      "end": 221.6
+    },
+    {
+      "id": "beat_039",
+      "frame": "beat_039.png",
+      "words": 17,
+      "startIndex": 541,
+      "endIndex": 557,
+      "score": 1,
+      "start": 221.6,
+      "end": 228.78
+    },
+    {
+      "id": "beat_040",
+      "frame": "beat_040.png",
+      "words": 11,
+      "startIndex": 558,
+      "endIndex": 568,
+      "score": 1,
+      "start": 228.78,
+      "end": 235.86
+    },
+    {
+      "id": "beat_041",
+      "frame": "beat_041.png",
+      "words": 15,
+      "startIndex": 569,
+      "endIndex": 583,
+      "score": 1,
+      "start": 235.86,
+      "end": 242.3
+    },
+    {
+      "id": "beat_042",
+      "frame": "beat_042.png",
+      "words": 20,
+      "startIndex": 584,
+      "endIndex": 603,
+      "score": 1,
+      "start": 242.3,
+      "end": 248.72
+    },
+    {
+      "id": "beat_043",
+      "frame": "beat_043.png",
+      "words": 13,
+      "startIndex": 604,
+      "endIndex": 616,
+      "score": 1,
+      "start": 248.72,
+      "end": 252.72
+    },
+    {
+      "id": "beat_044",
+      "frame": "beat_044.png",
+      "words": 14,
+      "startIndex": 617,
+      "endIndex": 630,
+      "score": 1,
+      "start": 252.72,
+      "end": 258
+    },
+    {
+      "id": "beat_045",
+      "frame": "beat_045.png",
+      "words": 22,
+      "startIndex": 631,
+      "endIndex": 652,
+      "score": 1,
+      "start": 258,
+      "end": 266.66
+    },
+    {
+      "id": "beat_046",
+      "frame": "beat_046.png",
+      "words": 16,
+      "startIndex": 653,
+      "endIndex": 668,
+      "score": 1,
+      "start": 266.66,
+      "end": 272.96
+    },
+    {
+      "id": "beat_047",
+      "frame": "beat_047.png",
+      "words": 21,
+      "startIndex": 669,
+      "endIndex": 689,
+      "score": 1,
+      "start": 272.96,
+      "end": 281.64
+    },
+    {
+      "id": "beat_048",
+      "frame": "beat_048.png",
+      "words": 17,
+      "startIndex": 690,
+      "endIndex": 706,
+      "score": 1,
+      "start": 281.64,
+      "end": 288.78
+    },
+    {
+      "id": "beat_049",
+      "frame": "beat_049.png",
+      "words": 20,
+      "startIndex": 707,
+      "endIndex": 726,
+      "score": 1,
+      "start": 288.78,
+      "end": 296.48
+    },
+    {
+      "id": "beat_050",
+      "frame": "beat_050.png",
+      "words": 17,
+      "startIndex": 727,
+      "endIndex": 743,
+      "score": 1,
+      "start": 296.48,
+      "end": 303.68
+    },
+    {
+      "id": "beat_051",
+      "frame": "beat_051.png",
+      "words": 9,
+      "startIndex": 744,
+      "endIndex": 752,
+      "score": 1,
+      "start": 303.68,
+      "end": 308.02
+    },
+    {
+      "id": "beat_052",
+      "frame": "beat_052.png",
+      "words": 19,
+      "startIndex": 753,
+      "endIndex": 771,
+      "score": 1,
+      "start": 308.02,
+      "end": 315.91
+    },
+    {
+      "id": "beat_053",
+      "frame": "beat_053.png",
+      "words": 17,
+      "startIndex": 772,
+      "endIndex": 788,
+      "score": 1,
+      "start": 315.91,
+      "end": 322.16
+    },
+    {
+      "id": "beat_054",
+      "frame": "beat_054.png",
+      "words": 14,
+      "startIndex": 789,
+      "endIndex": 802,
+      "score": 1,
+      "start": 322.16,
+      "end": 327.02
+    },
+    {
+      "id": "beat_055",
+      "frame": "beat_055.png",
+      "words": 23,
+      "startIndex": 803,
+      "endIndex": 825,
+      "score": 1,
+      "start": 327.02,
+      "end": 335.44
+    },
+    {
+      "id": "beat_056",
+      "frame": "beat_056.png",
+      "words": 17,
+      "startIndex": 826,
+      "endIndex": 842,
+      "score": 1,
+      "start": 335.44,
+      "end": 342.84
+    },
+    {
+      "id": "beat_057",
+      "frame": "beat_057.png",
+      "words": 16,
+      "startIndex": 843,
+      "endIndex": 858,
+      "score": 1,
+      "start": 342.84,
+      "end": 348.64
+    },
+    {
+      "id": "beat_058",
+      "frame": "beat_058.png",
+      "words": 12,
+      "startIndex": 859,
+      "endIndex": 870,
+      "score": 1,
+      "start": 348.64,
+      "end": 352.44
+    },
+    {
+      "id": "beat_059",
+      "frame": "beat_059.png",
+      "words": 20,
+      "startIndex": 871,
+      "endIndex": 890,
+      "score": 1,
+      "start": 352.44,
+      "end": 359.86
+    },
+    {
+      "id": "beat_060",
+      "frame": "beat_060.png",
+      "words": 15,
+      "startIndex": 891,
+      "endIndex": 905,
+      "score": 0.933,
+      "start": 359.86,
+      "end": 366.68
+    },
+    {
+      "id": "beat_061",
+      "frame": "beat_061.png",
+      "words": 9,
+      "startIndex": 906,
+      "endIndex": 914,
+      "score": 1,
+      "start": 366.68,
+      "end": 371.2
+    },
+    {
+      "id": "beat_062",
+      "frame": "beat_062.png",
+      "words": 20,
+      "startIndex": 915,
+      "endIndex": 934,
+      "score": 1,
+      "start": 371.2,
+      "end": 378.62
+    },
+    {
+      "id": "beat_063",
+      "frame": "beat_063.png",
+      "words": 11,
+      "startIndex": 935,
+      "endIndex": 945,
+      "score": 0.909,
+      "start": 378.62,
+      "end": 383.78
+    },
+    {
+      "id": "beat_064",
+      "frame": "beat_064.png",
+      "words": 14,
+      "startIndex": 946,
+      "endIndex": 959,
+      "score": 1,
+      "start": 383.78,
+      "end": 389.82
+    },
+    {
+      "id": "beat_065",
+      "frame": "beat_065.png",
+      "words": 11,
+      "startIndex": 960,
+      "endIndex": 970,
+      "score": 0.909,
+      "start": 389.82,
+      "end": 393.44
+    },
+    {
+      "id": "beat_066",
+      "frame": "beat_066.png",
+      "words": 11,
+      "startIndex": 971,
+      "endIndex": 981,
+      "score": 1,
+      "start": 393.44,
+      "end": 398.36
+    },
+    {
+      "id": "beat_067",
+      "frame": "beat_067.png",
+      "words": 17,
+      "startIndex": 982,
+      "endIndex": 998,
+      "score": 1,
+      "start": 398.36,
+      "end": 405.88
+    },
+    {
+      "id": "beat_068",
+      "frame": "beat_068.png",
+      "words": 20,
+      "startIndex": 999,
+      "endIndex": 1018,
+      "score": 1,
+      "start": 405.88,
+      "end": 414.68
+    },
+    {
+      "id": "beat_069",
+      "frame": "beat_069.png",
+      "words": 19,
+      "startIndex": 1019,
+      "endIndex": 1037,
+      "score": 1,
+      "start": 414.68,
+      "end": 421.96
+    },
+    {
+      "id": "beat_070",
+      "frame": "beat_070.png",
+      "words": 15,
+      "startIndex": 1038,
+      "endIndex": 1052,
+      "score": 1,
+      "start": 421.96,
+      "end": 427.92
+    },
+    {
+      "id": "beat_071",
+      "frame": "beat_071.png",
+      "words": 12,
+      "startIndex": 1053,
+      "endIndex": 1064,
+      "score": 1,
+      "start": 427.92,
+      "end": 434.1
+    },
+    {
+      "id": "beat_072",
+      "frame": "beat_072.png",
+      "words": 21,
+      "startIndex": 1065,
+      "endIndex": 1085,
+      "score": 0.952,
+      "start": 434.1,
+      "end": 443.8
+    },
+    {
+      "id": "beat_073",
+      "frame": "beat_073.png",
+      "words": 15,
+      "startIndex": 1086,
+      "endIndex": 1100,
+      "score": 1,
+      "start": 443.8,
+      "end": 450.9
+    },
+    {
+      "id": "beat_074",
+      "frame": "beat_074.png",
+      "words": 21,
+      "startIndex": 1101,
+      "endIndex": 1121,
+      "score": 0.952,
+      "start": 450.9,
+      "end": 459.56
+    },
+    {
+      "id": "beat_075",
+      "frame": "beat_075.png",
+      "words": 20,
+      "startIndex": 1122,
+      "endIndex": 1141,
+      "score": 1,
+      "start": 459.56,
+      "end": 466.58
+    },
+    {
+      "id": "beat_076",
+      "frame": "beat_076.png",
+      "words": 14,
+      "startIndex": 1142,
+      "endIndex": 1155,
+      "score": 1,
+      "start": 466.58,
+      "end": 472.5
+    },
+    {
+      "id": "beat_077",
+      "frame": "beat_077.png",
+      "words": 12,
+      "startIndex": 1156,
+      "endIndex": 1167,
+      "score": 1,
+      "start": 472.5,
+      "end": 476.92
+    },
+    {
+      "id": "beat_078",
+      "frame": "beat_078.png",
+      "words": 17,
+      "startIndex": 1168,
+      "endIndex": 1184,
+      "score": 1,
+      "start": 476.92,
+      "end": 484.48
+    },
+    {
+      "id": "beat_079",
+      "frame": "beat_079.png",
+      "words": 19,
+      "startIndex": 1185,
+      "endIndex": 1203,
+      "score": 1,
+      "start": 484.48,
+      "end": 494.42
+    },
+    {
+      "id": "beat_080",
+      "frame": "beat_080.png",
+      "words": 9,
+      "startIndex": 1204,
+      "endIndex": 1212,
+      "score": 1,
+      "start": 494.42,
+      "end": 498.24
+    },
+    {
+      "id": "beat_081",
+      "frame": "beat_081.png",
+      "words": 13,
+      "startIndex": 1213,
+      "endIndex": 1225,
+      "score": 1,
+      "start": 498.24,
+      "end": 504.9
+    },
+    {
+      "id": "beat_082",
+      "frame": "beat_082.png",
+      "words": 20,
+      "startIndex": 1226,
+      "endIndex": 1245,
+      "score": 1,
+      "start": 504.9,
+      "end": 513.12
+    },
+    {
+      "id": "beat_083",
+      "frame": "beat_083.png",
+      "words": 19,
+      "startIndex": 1246,
+      "endIndex": 1264,
+      "score": 1,
+      "start": 513.12,
+      "end": 522.14
+    },
+    {
+      "id": "beat_084",
+      "frame": "beat_084.png",
+      "words": 14,
+      "startIndex": 1265,
+      "endIndex": 1278,
+      "score": 1,
+      "start": 522.14,
+      "end": 528.14
+    },
+    {
+      "id": "beat_085",
+      "frame": "beat_085.png",
+      "words": 9,
+      "startIndex": 1279,
+      "endIndex": 1287,
+      "score": 1,
+      "start": 528.14,
+      "end": 530.98
+    },
+    {
+      "id": "beat_086",
+      "frame": "beat_086.png",
+      "words": 20,
+      "startIndex": 1288,
+      "endIndex": 1307,
+      "score": 0.95,
+      "start": 530.98,
+      "end": 540.1
+    },
+    {
+      "id": "beat_087",
+      "frame": "beat_087.png",
+      "words": 16,
+      "startIndex": 1308,
+      "endIndex": 1323,
+      "score": 1,
+      "start": 540.1,
+      "end": 546.94
+    },
+    {
+      "id": "beat_088",
+      "frame": "beat_088.png",
+      "words": 6,
+      "startIndex": 1324,
+      "endIndex": 1329,
+      "score": 1,
+      "start": 546.94,
+      "end": 550.62
+    },
+    {
+      "id": "beat_089",
+      "frame": "beat_089.png",
+      "words": 21,
+      "startIndex": 1330,
+      "endIndex": 1350,
+      "score": 1,
+      "start": 550.62,
+      "end": 558.9
+    },
+    {
+      "id": "beat_090",
+      "frame": "beat_090.png",
+      "words": 22,
+      "startIndex": 1351,
+      "endIndex": 1372,
+      "score": 1,
+      "start": 558.9,
+      "end": 568.3
+    },
+    {
+      "id": "beat_091",
+      "frame": "beat_091.png",
+      "words": 11,
+      "startIndex": 1373,
+      "endIndex": 1383,
+      "score": 1,
+      "start": 568.3,
+      "end": 572.28
+    },
+    {
+      "id": "beat_092",
+      "frame": "beat_092.png",
+      "words": 11,
+      "startIndex": 1384,
+      "endIndex": 1394,
+      "score": 1,
+      "start": 572.28,
+      "end": 577.28
+    },
+    {
+      "id": "beat_093",
+      "frame": "beat_093.png",
+      "words": 11,
+      "startIndex": 1395,
+      "endIndex": 1405,
+      "score": 1,
+      "start": 577.28,
+      "end": 581.56
+    },
+    {
+      "id": "beat_094",
+      "frame": "beat_094.png",
+      "words": 15,
+      "startIndex": 1406,
+      "endIndex": 1420,
+      "score": 1,
+      "start": 581.56,
+      "end": 586.92
+    },
+    {
+      "id": "beat_095",
+      "frame": "beat_095.png",
+      "words": 7,
+      "startIndex": 1421,
+      "endIndex": 1427,
+      "score": 1,
+      "start": 586.92,
+      "end": 590.18
+    },
+    {
+      "id": "beat_096",
+      "frame": "beat_096.png",
+      "words": 14,
+      "startIndex": 1428,
+      "endIndex": 1441,
+      "score": 1,
+      "start": 590.18,
+      "end": 596.6
+    },
+    {
+      "id": "beat_097",
+      "frame": "beat_097.png",
+      "words": 16,
+      "startIndex": 1442,
+      "endIndex": 1457,
+      "score": 1,
+      "start": 596.6,
+      "end": 602.82
+    },
+    {
+      "id": "beat_098",
+      "frame": "beat_098.png",
+      "words": 10,
+      "startIndex": 1458,
+      "endIndex": 1467,
+      "score": 1,
+      "start": 602.82,
+      "end": 606.92
+    },
+    {
+      "id": "beat_099",
+      "frame": "beat_099.png",
+      "words": 6,
+      "startIndex": 1468,
+      "endIndex": 1473,
+      "score": 1,
+      "start": 606.92,
+      "end": 609.74
+    },
+    {
+      "id": "beat_100",
+      "frame": "beat_100.png",
+      "words": 16,
+      "startIndex": 1474,
+      "endIndex": 1489,
+      "score": 1,
+      "start": 609.74,
+      "end": 615.36
+    },
+    {
+      "id": "beat_101",
+      "frame": "beat_101.png",
+      "words": 20,
+      "startIndex": 1490,
+      "endIndex": 1509,
+      "score": 1,
+      "start": 615.36,
+      "end": 623.3
+    },
+    {
+      "id": "beat_102",
+      "frame": "beat_102.png",
+      "words": 9,
+      "startIndex": 1510,
+      "endIndex": 1518,
+      "score": 1,
+      "start": 623.3,
+      "end": 627.14
+    },
+    {
+      "id": "beat_103",
+      "frame": "beat_103.png",
+      "words": 21,
+      "startIndex": 1519,
+      "endIndex": 1539,
+      "score": 1,
+      "start": 627.14,
+      "end": 636.22
+    },
+    {
+      "id": "beat_104",
+      "frame": "beat_104.png",
+      "words": 22,
+      "startIndex": 1540,
+      "endIndex": 1561,
+      "score": 1,
+      "start": 636.22,
+      "end": 647.04
+    },
+    {
+      "id": "beat_105",
+      "frame": "beat_105.png",
+      "words": 7,
+      "startIndex": 1562,
+      "endIndex": 1568,
+      "score": 1,
+      "start": 647.04,
+      "end": 650.36
+    },
+    {
+      "id": "beat_106",
+      "frame": "beat_106.png",
+      "words": 16,
+      "startIndex": 1569,
+      "endIndex": 1584,
+      "score": 1,
+      "start": 650.36,
+      "end": 656.68
+    },
+    {
+      "id": "beat_107",
+      "frame": "beat_107.png",
+      "words": 10,
+      "startIndex": 1585,
+      "endIndex": 1594,
+      "score": 1,
+      "start": 656.68,
+      "end": 661.92
+    },
+    {
+      "id": "beat_108",
+      "frame": "beat_108.png",
+      "words": 15,
+      "startIndex": 1595,
+      "endIndex": 1609,
+      "score": 1,
+      "start": 661.92,
+      "end": 668.06
+    },
+    {
+      "id": "beat_109",
+      "frame": "beat_109.png",
+      "words": 22,
+      "startIndex": 1610,
+      "endIndex": 1631,
+      "score": 1,
+      "start": 668.06,
+      "end": 677.04
+    },
+    {
+      "id": "beat_110",
+      "frame": "beat_110.png",
+      "words": 20,
+      "startIndex": 1632,
+      "endIndex": 1651,
+      "score": 1,
+      "start": 677.04,
+      "end": 687.77
+    },
+    {
+      "id": "beat_111",
+      "frame": "beat_111.png",
+      "words": 21,
+      "startIndex": 1652,
+      "endIndex": 1672,
+      "score": 1,
+      "start": 687.77,
+      "end": 694.59
+    },
+    {
+      "id": "beat_112",
+      "frame": "beat_112.png",
+      "words": 11,
+      "startIndex": 1673,
+      "endIndex": 1683,
+      "score": 1,
+      "start": 694.59,
+      "end": 699.37
+    },
+    {
+      "id": "beat_113",
+      "frame": "beat_113.png",
+      "words": 13,
+      "startIndex": 1684,
+      "endIndex": 1696,
+      "score": 1,
+      "start": 699.37,
+      "end": 703.33
+    },
+    {
+      "id": "beat_114",
+      "frame": "beat_114.png",
+      "words": 20,
+      "startIndex": 1697,
+      "endIndex": 1716,
+      "score": 1,
+      "start": 703.33,
+      "end": 711.5899999999999
+    },
+    {
+      "id": "beat_115",
+      "frame": "beat_115.png",
+      "words": 16,
+      "startIndex": 1717,
+      "endIndex": 1732,
+      "score": 1,
+      "start": 711.5899999999999,
+      "end": 718.11
+    },
+    {
+      "id": "beat_116",
+      "frame": "beat_116.png",
+      "words": 15,
+      "startIndex": 1733,
+      "endIndex": 1747,
+      "score": 1,
+      "start": 718.11,
+      "end": 724.39
+    },
+    {
+      "id": "beat_117",
+      "frame": "beat_117.png",
+      "words": 18,
+      "startIndex": 1748,
+      "endIndex": 1765,
+      "score": 1,
+      "start": 724.39,
+      "end": 732.57
+    },
+    {
+      "id": "beat_118",
+      "frame": "beat_118.png",
+      "words": 19,
+      "startIndex": 1766,
+      "endIndex": 1784,
+      "score": 1,
+      "start": 732.57,
+      "end": 741.33
+    },
+    {
+      "id": "beat_119",
+      "frame": "beat_119.png",
+      "words": 20,
+      "startIndex": 1785,
+      "endIndex": 1804,
+      "score": 1,
+      "start": 741.33,
+      "end": 749.47
+    },
+    {
+      "id": "beat_120",
+      "frame": "beat_120.png",
+      "words": 22,
+      "startIndex": 1805,
+      "endIndex": 1826,
+      "score": 1,
+      "start": 749.47,
+      "end": 760.87
+    },
+    {
+      "id": "beat_121",
+      "frame": "beat_121.png",
+      "words": 21,
+      "startIndex": 1827,
+      "endIndex": 1847,
+      "score": 1,
+      "start": 760.87,
+      "end": 768.45
+    },
+    {
+      "id": "beat_122",
+      "frame": "beat_122.png",
+      "words": 18,
+      "startIndex": 1848,
+      "endIndex": 1865,
+      "score": 1,
+      "start": 768.45,
+      "end": 776.23
+    },
+    {
+      "id": "beat_123",
+      "frame": "beat_123.png",
+      "words": 20,
+      "startIndex": 1866,
+      "endIndex": 1885,
+      "score": 1,
+      "start": 776.23,
+      "end": 784.17
+    },
+    {
+      "id": "beat_124",
+      "frame": "beat_124.png",
+      "words": 18,
+      "startIndex": 1886,
+      "endIndex": 1903,
+      "score": 1,
+      "start": 784.17,
+      "end": 790.81
+    },
+    {
+      "id": "beat_125",
+      "frame": "beat_125.png",
+      "words": 22,
+      "startIndex": 1904,
+      "endIndex": 1925,
+      "score": 1,
+      "start": 790.81,
+      "end": 801.17
+    },
+    {
+      "id": "beat_126",
+      "frame": "beat_126.png",
+      "words": 18,
+      "startIndex": 1926,
+      "endIndex": 1943,
+      "score": 1,
+      "start": 801.17,
+      "end": 807.17
+    },
+    {
+      "id": "beat_127",
+      "frame": "beat_127.png",
+      "words": 16,
+      "startIndex": 1944,
+      "endIndex": 1959,
+      "score": 1,
+      "start": 807.17,
+      "end": 813.81
+    },
+    {
+      "id": "beat_128",
+      "frame": "beat_128.png",
+      "words": 20,
+      "startIndex": 1960,
+      "endIndex": 1979,
+      "score": 1,
+      "start": 813.81,
+      "end": 821.17
+    },
+    {
+      "id": "beat_129",
+      "frame": "beat_129.png",
+      "words": 17,
+      "startIndex": 1980,
+      "endIndex": 1996,
+      "score": 1,
+      "start": 821.17,
+      "end": 826.65
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "provider": "openai/gpt-image-2",
+  "model": "openai/gpt-image-2",
+  "source": "OpenAI image_generate tool; beat-specific prompts from visual_plan_v2_132.json plus nearby script context from alignment/dog-staring-final-voiceover.json",
+  "frameCount": 20,
+  "totalTargetFrameCount": 132,
+  "uniqueGeneratedSourceFrames": 20,
+  "placeholder": false,
+  "storyboard": false,
+  "partial": true,
+  "completedBeats": [
+    "beat_001",
+    "beat_002",
+    "beat_003",
+    "beat_004",
+    "beat_005",
+    "beat_006",
+    "beat_007",
+    "beat_008",
+    "beat_009",
+    "beat_010",
+    "beat_011",
+    "beat_012",
+    "beat_013",
+    "beat_014",
+    "beat_015",
+    "beat_016",
+    "beat_017",
+    "beat_018",
+    "beat_019",
+    "beat_020"
+  ],
+  "nextBeat": "beat_021",
+  "contactSheets": [
+    "qa_contact_sheets_rebuild/beats_001_020.jpg"
+  ],
+  "qualityGate": "rebuild_quality_gate_001_020.log"
+}

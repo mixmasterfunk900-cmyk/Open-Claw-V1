@@ -1,0 +1,19 @@
+{
+  "styleContract": "dog-psychology-v1",
+  "auditedAt": "2026-05-19",
+  "status": "fail",
+  "singleSceneFrames": true,
+  "styleMatchesBible": "partial",
+  "characterContinuity": false,
+  "scriptMatchedProgression": "partial",
+  "noForbiddenGraphics": true,
+  "findings": [
+    "Mostly closer to the locked frame style than Zoomies/Guilty, but still not production-approved because it lacks explicit visual SOP audit and style contract.",
+    "Character continuity is not locked strongly enough across the full video.",
+    "Thumbnail set is photoreal/contact-sheet option style, not the agreed Dog Psychology thumbnail style."
+  ],
+  "requiredFix": [
+    "Add styleContract and per-beat provenance only after human/vision contact-sheet pass.",
+    "Regenerate or reject thumbnails into single 16:9 hand-drawn thumbnails."
+  ]
+}

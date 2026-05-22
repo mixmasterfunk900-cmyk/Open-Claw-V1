@@ -1,0 +1,1 @@
+Laura character lock: mid-20s woman; dark brown shoulder-length slightly wavy hair; round face; large dark brown expressive eyes; natural light brown skin tone; casual-smart muted teal hoodie or crewneck, jeans, sneakers; curious but slightly anxious audience-surrogate energy; cartoon explainer proportions only; never photorealistic.

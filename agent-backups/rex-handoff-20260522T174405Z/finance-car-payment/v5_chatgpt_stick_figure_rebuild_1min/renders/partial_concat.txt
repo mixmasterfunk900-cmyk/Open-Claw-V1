@@ -1,0 +1,4 @@
+file '/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/v5_chatgpt_stick_figure_rebuild_1min/renders/partial_part_001.mp4'
+file '/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/v5_chatgpt_stick_figure_rebuild_1min/renders/partial_part_002.mp4'
+file '/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/v5_chatgpt_stick_figure_rebuild_1min/renders/partial_part_003.mp4'
+file '/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/v5_chatgpt_stick_figure_rebuild_1min/renders/partial_part_004.mp4'

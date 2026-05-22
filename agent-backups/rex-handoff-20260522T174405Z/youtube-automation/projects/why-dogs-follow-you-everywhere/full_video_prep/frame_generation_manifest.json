@@ -1,0 +1,409 @@
+{
+  "provider": "openai/gpt-image-2",
+  "model": "gpt-image-2",
+  "source": "OpenClaw image_generate tool",
+  "generatedAt": "2026-05-19T12:44:00.302353Z",
+  "frameCount": 114,
+  "placeholder": false,
+  "storyboard": false,
+  "approvedFramesDir": "approved_frames",
+  "uniqueGeneratedSourceFrames": 86,
+  "sourceFiles": [
+    "/root/.openclaw/media/tool-image-generation/follow-unique-batch-001-004---2b861e0e-2c1b-4955-bb13-ee2a462591ad.png",
+    "/root/.openclaw/media/tool-image-generation/follow-unique-batch-001-004---2fd69f0c-9d52-4400-bc41-104e7911a03b.png",
+    "/root/.openclaw/media/tool-image-generation/follow-unique-batch-001-004---99e7ae9f-07f2-4b11-899c-e25fb776946d.png",
+    "/root/.openclaw/media/tool-image-generation/follow-unique-batch-001-004---d0cb66b1-0933-44ca-9e2c-389297169500.png",
+    "/root/.openclaw/media/tool-image-generation/follow-unique-batch-005-008---0be7457b-2166-494c-96ac-e8ea2c701125.png",
+    "/root/.openclaw/media/tool-image-generation/follow-unique-batch-005-008---0f03982b-c0c5-44d9-a983-3419f2df8c24.png",
+    "/root/.openclaw/media/tool-image-generation/follow-unique-batch-005-008---1e985e98-88a8-4bd8-bb32-103fdf5b0837.png",
+    "/root/.openclaw/media/tool-image-generation/follow-unique-batch-005-008---b19ba6fa-ab49-4f58-8a7e-859f2655eec1.png",
+    "/root/.openclaw/media/tool-image-generation/follow-unique-batch-009-012---1fd740f3-5942-4105-9fae-eac7714070ad.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-010---fc0c79ad-38ba-4be7-9bce-dea6788a2136.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-011---6ded71b4-3589-482f-9662-4320af6fe6a2.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-012---85ec21ac-cf63-43d6-af84-f6b93164fc7a.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-013---9e33d1ed-a767-4c5f-9029-d608b8d60b76.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-014---0e8aeeda-3f29-4170-84a9-6eb29ec57526.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-015---7e16be71-ab04-4d54-b73d-eab7fec41de3.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-016---3087def4-3439-428b-8824-faf32bd9dce5.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-017---b3911580-fff0-4433-8123-a985622e9cc8.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-018---67ad9399-3c32-4211-b211-66178f63fea2.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-019---0193ad9e-c98b-4807-a8d7-2a5828e6c47d.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-020---8d5d3b6c-241e-4fb6-80da-63f0eecd14fe.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-021---90cd41e3-197b-4382-9508-a3fd30d551bc.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-022---139b8964-cd81-4201-8e7e-4cf1c836b15b.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-023---643746b2-7c2e-46ad-9ff7-77d2066f80eb.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-024---65297edd-4865-487e-96ff-cc7e8dc5a8d8.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-025---5e9f1de9-fa4b-40ac-86ec-82cde1d6ae55.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-026---334d9f89-f806-4c2e-ae94-b67e11d3cf55.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-027---58e66ba8-e994-4599-ae0c-244c42ec355d.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-028---59dbfa18-c682-4496-a564-a55ad77338a3.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-029---26906814-c285-43ca-ab9a-42badd7d35f8.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-030---907d8da2-a786-4c32-83e8-dcb76b4569ce.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-031---ff749cdb-096f-42f4-8dc9-5b557b0972ca.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-032---911f2988-57f2-4ff9-8631-c284332d6085.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-033---41091b71-a76e-4666-b893-9e295b5223fe.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-034---2ae8d38c-4175-4212-9d85-bb023e7f8f01.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-035---8283209d-f6a9-46c9-a0c4-388123526bc4.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-036---3fc87c41-8b8a-411a-ab0c-6f2e93abb3b3.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-037---c7db3e3c-25b0-48ef-b842-915d0164c69d.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-038---01de4426-ec09-430e-a990-4bff431c700a.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-039---4c263b38-7a4d-4cfe-bbc8-a1a17ca0ed5b.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-040---f2232d63-2db9-42c4-93d3-ca96738e33de.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-041---fc53c95b-5865-402c-af84-5da4c005699f.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-042---b1eb34df-72a2-4602-b4f4-b697c0224c9b.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-043---2ebfca60-3d44-4b4b-ab48-90f35b13bda0.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-044---2540e508-c3c0-4fd1-ba40-8f64e8da56e3.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-045---e158ce84-c84a-4ef5-8c59-d9d89f08eed2.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-046---32c0bc46-4fbd-4f12-98da-bc5d833d448b.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-047---7fde80a9-dfc5-47e2-9e03-509690f3a8c3.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-048---94a79ba9-9c81-4e0a-abce-e56c8fed0514.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-049---933a24ac-cdf3-443b-bebc-73d1d37dcbaf.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-050---30912447-8f60-4a78-b552-7e3d03ed25d8.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-051---2e744af7-c29a-4e27-8fb1-259a186d86a4.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-052---7d5fca81-41a6-4e4f-8dfc-52806b6e6383.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-053---d45378e3-ff30-4e48-9417-acc139c08762.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-054---f0225139-708b-4c25-91e2-291a9bf7a0c1.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-055---d8685601-b5a0-4a5d-9637-e31deb71432e.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-056---ec90a4c1-0f92-49d1-986c-9ee653ec2214.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-057---8ae0076d-4c6b-4cd1-b891-8a34846d5f7c.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-058---7f51a8ac-1aa8-4ba5-9aa4-8f16c9805214.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-059---0b63bf67-0953-4057-a400-572f6f9c0b1b.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-060---115d648a-c889-4fec-ae26-b75d0a1be7f0.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-061---4437f011-d08a-460c-9033-6f5891b110a0.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-062---894a227c-0164-46a2-8f2b-fc1c959cac90.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-063---2ec3e9b2-7de2-44cc-a555-c288924c8a4c.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-064---0e8a7787-54f5-4227-abde-8163195ce7fc.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-065---e4f1bac1-740d-4ae4-95ac-13f409e76dd2.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-066---2339ee32-29bd-4d22-9586-e2c8bbf08545.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-067---549f2423-3a24-4015-90bb-cd2da9adc08d.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-068---35daf45f-d0e5-44f1-8346-822560bd31c7.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-069---5f3c8f67-ecc9-40ef-a5f5-9bcd1b323691.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-070---94aac40f-1b0e-40a8-bde4-9ac7fa1d500d.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-071---01bb17d3-af74-4eef-b67d-d2e9a3f957aa.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-072---79a536e4-ee26-411d-acbd-4df7feccd638.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-073---6eac3eca-a823-4009-9ed5-8be8c0282ef0.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-074---19c24123-fe95-4424-af45-2294aacb6acf.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-075---500f30ff-f8f7-4212-98a0-ee0d0e200138.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-076---d6cf6469-e257-4158-b2c9-1c39b7e310f7.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-077---ee3740e6-88f0-4e7d-97aa-1aaf555eb140.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-078---edfe619a-7a9b-48c5-82be-ef5fa1d6cc0b.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-079---c7504dca-f9eb-4234-8604-451745ce2bbc.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-080---7346eb76-f332-4897-a14e-6672cdac846d.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-081---89f47995-e8ef-45df-9b88-0abf63caf496.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-082---5660639d-e42e-47f1-8dde-997ed968d13d.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-083---622d0056-ddad-4e1c-a902-d684712acb11.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-084---244e4625-3de3-49a9-84f5-4c4f725b5e4b.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-085---e093e3a6-3c21-4a41-b733-0b5bd31b0912.png",
+    "/root/.openclaw/media/tool-image-generation/dog-follow-beat-086---a41dc75c-23b5-42d8-9d77-a708b21a7a40.png"
+  ],
+  "replacedFrames": [
+    {
+      "frame": "beat_010.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-010---fc0c79ad-38ba-4be7-9bce-dea6788a2136.png"
+    },
+    {
+      "frame": "beat_011.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-011---6ded71b4-3589-482f-9662-4320af6fe6a2.png"
+    },
+    {
+      "frame": "beat_012.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-012---85ec21ac-cf63-43d6-af84-f6b93164fc7a.png"
+    },
+    {
+      "frame": "beat_013.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-013---9e33d1ed-a767-4c5f-9029-d608b8d60b76.png"
+    },
+    {
+      "frame": "beat_014.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-014---0e8aeeda-3f29-4170-84a9-6eb29ec57526.png"
+    },
+    {
+      "frame": "beat_015.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-015---7e16be71-ab04-4d54-b73d-eab7fec41de3.png"
+    },
+    {
+      "frame": "beat_016.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-016---3087def4-3439-428b-8824-faf32bd9dce5.png"
+    },
+    {
+      "frame": "beat_017.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-017---b3911580-fff0-4433-8123-a985622e9cc8.png"
+    },
+    {
+      "frame": "beat_018.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-018---67ad9399-3c32-4211-b211-66178f63fea2.png"
+    },
+    {
+      "frame": "beat_019.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-019---0193ad9e-c98b-4807-a8d7-2a5828e6c47d.png"
+    },
+    {
+      "frame": "beat_020.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-020---8d5d3b6c-241e-4fb6-80da-63f0eecd14fe.png"
+    },
+    {
+      "frame": "beat_021.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-021---90cd41e3-197b-4382-9508-a3fd30d551bc.png"
+    },
+    {
+      "frame": "beat_022.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-022---139b8964-cd81-4201-8e7e-4cf1c836b15b.png"
+    },
+    {
+      "frame": "beat_023.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-023---643746b2-7c2e-46ad-9ff7-77d2066f80eb.png"
+    },
+    {
+      "frame": "beat_024.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-024---65297edd-4865-487e-96ff-cc7e8dc5a8d8.png"
+    },
+    {
+      "frame": "beat_025.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-025---5e9f1de9-fa4b-40ac-86ec-82cde1d6ae55.png"
+    },
+    {
+      "frame": "beat_026.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-026---334d9f89-f806-4c2e-ae94-b67e11d3cf55.png"
+    },
+    {
+      "frame": "beat_027.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-027---58e66ba8-e994-4599-ae0c-244c42ec355d.png"
+    },
+    {
+      "frame": "beat_028.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-028---59dbfa18-c682-4496-a564-a55ad77338a3.png"
+    },
+    {
+      "frame": "beat_029.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-029---26906814-c285-43ca-ab9a-42badd7d35f8.png"
+    },
+    {
+      "frame": "beat_030.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-030---907d8da2-a786-4c32-83e8-dcb76b4569ce.png"
+    },
+    {
+      "frame": "beat_031.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-031---ff749cdb-096f-42f4-8dc9-5b557b0972ca.png"
+    },
+    {
+      "frame": "beat_032.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-032---911f2988-57f2-4ff9-8631-c284332d6085.png"
+    },
+    {
+      "frame": "beat_033.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-033---41091b71-a76e-4666-b893-9e295b5223fe.png"
+    },
+    {
+      "frame": "beat_034.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-034---2ae8d38c-4175-4212-9d85-bb023e7f8f01.png"
+    },
+    {
+      "frame": "beat_035.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-035---8283209d-f6a9-46c9-a0c4-388123526bc4.png"
+    },
+    {
+      "frame": "beat_036.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-036---3fc87c41-8b8a-411a-ab0c-6f2e93abb3b3.png"
+    },
+    {
+      "frame": "beat_037.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-037---c7db3e3c-25b0-48ef-b842-915d0164c69d.png"
+    },
+    {
+      "frame": "beat_038.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-038---01de4426-ec09-430e-a990-4bff431c700a.png"
+    },
+    {
+      "frame": "beat_039.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-039---4c263b38-7a4d-4cfe-bbc8-a1a17ca0ed5b.png"
+    },
+    {
+      "frame": "beat_040.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-040---f2232d63-2db9-42c4-93d3-ca96738e33de.png"
+    },
+    {
+      "frame": "beat_041.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-041---fc53c95b-5865-402c-af84-5da4c005699f.png"
+    },
+    {
+      "frame": "beat_042.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-042---b1eb34df-72a2-4602-b4f4-b697c0224c9b.png"
+    },
+    {
+      "frame": "beat_043.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-043---2ebfca60-3d44-4b4b-ab48-90f35b13bda0.png"
+    },
+    {
+      "frame": "beat_044.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-044---2540e508-c3c0-4fd1-ba40-8f64e8da56e3.png"
+    },
+    {
+      "frame": "beat_045.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-045---e158ce84-c84a-4ef5-8c59-d9d89f08eed2.png"
+    },
+    {
+      "frame": "beat_046.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-046---32c0bc46-4fbd-4f12-98da-bc5d833d448b.png"
+    },
+    {
+      "frame": "beat_047.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-047---7fde80a9-dfc5-47e2-9e03-509690f3a8c3.png"
+    },
+    {
+      "frame": "beat_048.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-048---94a79ba9-9c81-4e0a-abce-e56c8fed0514.png"
+    },
+    {
+      "frame": "beat_049.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-049---933a24ac-cdf3-443b-bebc-73d1d37dcbaf.png"
+    },
+    {
+      "frame": "beat_050.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-050---30912447-8f60-4a78-b552-7e3d03ed25d8.png"
+    },
+    {
+      "frame": "beat_051.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-051---2e744af7-c29a-4e27-8fb1-259a186d86a4.png"
+    },
+    {
+      "frame": "beat_052.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-052---7d5fca81-41a6-4e4f-8dfc-52806b6e6383.png"
+    },
+    {
+      "frame": "beat_053.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-053---d45378e3-ff30-4e48-9417-acc139c08762.png"
+    },
+    {
+      "frame": "beat_054.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-054---f0225139-708b-4c25-91e2-291a9bf7a0c1.png"
+    },
+    {
+      "frame": "beat_055.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-055---d8685601-b5a0-4a5d-9637-e31deb71432e.png"
+    },
+    {
+      "frame": "beat_056.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-056---ec90a4c1-0f92-49d1-986c-9ee653ec2214.png"
+    },
+    {
+      "frame": "beat_057.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-057---8ae0076d-4c6b-4cd1-b891-8a34846d5f7c.png"
+    },
+    {
+      "frame": "beat_058.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-058---7f51a8ac-1aa8-4ba5-9aa4-8f16c9805214.png"
+    },
+    {
+      "frame": "beat_059.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-059---0b63bf67-0953-4057-a400-572f6f9c0b1b.png"
+    },
+    {
+      "frame": "beat_060.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-060---115d648a-c889-4fec-ae26-b75d0a1be7f0.png"
+    },
+    {
+      "frame": "beat_061.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-061---4437f011-d08a-460c-9033-6f5891b110a0.png"
+    },
+    {
+      "frame": "beat_062.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-062---894a227c-0164-46a2-8f2b-fc1c959cac90.png"
+    },
+    {
+      "frame": "beat_063.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-063---2ec3e9b2-7de2-44cc-a555-c288924c8a4c.png"
+    },
+    {
+      "frame": "beat_064.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-064---0e8a7787-54f5-4227-abde-8163195ce7fc.png"
+    },
+    {
+      "frame": "beat_065.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-065---e4f1bac1-740d-4ae4-95ac-13f409e76dd2.png"
+    },
+    {
+      "frame": "beat_066.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-066---2339ee32-29bd-4d22-9586-e2c8bbf08545.png"
+    },
+    {
+      "frame": "beat_067.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-067---549f2423-3a24-4015-90bb-cd2da9adc08d.png"
+    },
+    {
+      "frame": "beat_068.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-068---35daf45f-d0e5-44f1-8346-822560bd31c7.png"
+    },
+    {
+      "frame": "beat_069.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-069---5f3c8f67-ecc9-40ef-a5f5-9bcd1b323691.png"
+    },
+    {
+      "frame": "beat_070.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-070---94aac40f-1b0e-40a8-bde4-9ac7fa1d500d.png"
+    },
+    {
+      "frame": "beat_071.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-071---01bb17d3-af74-4eef-b67d-d2e9a3f957aa.png"
+    },
+    {
+      "frame": "beat_072.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-072---79a536e4-ee26-411d-acbd-4df7feccd638.png"
+    },
+    {
+      "frame": "beat_073.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-073---6eac3eca-a823-4009-9ed5-8be8c0282ef0.png"
+    },
+    {
+      "frame": "beat_074.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-074---19c24123-fe95-4424-af45-2294aacb6acf.png"
+    },
+    {
+      "frame": "beat_075.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-075---500f30ff-f8f7-4212-98a0-ee0d0e200138.png"
+    },
+    {
+      "frame": "beat_076.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-076---d6cf6469-e257-4158-b2c9-1c39b7e310f7.png"
+    },
+    {
+      "frame": "beat_077.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-077---ee3740e6-88f0-4e7d-97aa-1aaf555eb140.png"
+    },
+    {
+      "frame": "beat_078.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-078---edfe619a-7a9b-48c5-82be-ef5fa1d6cc0b.png"
+    },
+    {
+      "frame": "beat_079.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-079---c7504dca-f9eb-4234-8604-451745ce2bbc.png"
+    },
+    {
+      "frame": "beat_080.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-080---7346eb76-f332-4897-a14e-6672cdac846d.png"
+    },
+    {
+      "frame": "beat_081.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-081---89f47995-e8ef-45df-9b88-0abf63caf496.png"
+    },
+    {
+      "frame": "beat_082.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-082---5660639d-e42e-47f1-8dde-997ed968d13d.png"
+    },
+    {
+      "frame": "beat_083.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-083---622d0056-ddad-4e1c-a902-d684712acb11.png"
+    },
+    {
+      "frame": "beat_084.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-084---244e4625-3de3-49a9-84f5-4c4f725b5e4b.png"
+    },
+    {
+      "frame": "beat_085.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-085---e093e3a6-3c21-4a41-b733-0b5bd31b0912.png"
+    },
+    {
+      "frame": "beat_086.png",
+      "source": "/root/.openclaw/media/tool-image-generation/dog-follow-beat-086---a41dc75c-23b5-42d8-9d77-a708b21a7a40.png"
+    }
+  ]
+}

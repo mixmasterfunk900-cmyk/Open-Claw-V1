@@ -1,0 +1,1090 @@
+{
+  "final_frame_files": 120,
+  "unique_source_files": 120,
+  "provider": "openai",
+  "models_used": [
+    "gpt-image-2"
+  ],
+  "items": [
+    {
+      "beat_id": 1,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_001.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_001---01269f0e-a9c4-4c4e-b0ed-d767f19c8ca6.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "726b4fa924aeac34bb3dd79b221e29ac5c5565d886258711bd29b81560c32e5f",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 2,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_002.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_001---5861d5b0-eb69-48f3-bb85-61d31acde092.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "9a9d6b0248cfe4557670c60c205b1cf006313eced8e8f4cd6906a700930aef2d",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 3,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_003.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_001---a1b0f357-1668-4514-b8b4-e16fdd87ab5a.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "a2ec9a7347c7e1cbdb08d523a18f8b61105f516144389ae27ca469a06152ebac",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 4,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_004.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_001---ebb59743-f341-4705-8c93-d7b35eaab999.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "f513c775dcd1685654c63794155a249d53a05e805aede31ec793bddc04854a4e",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 5,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_005.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_002---0b8062ae-95d3-4d33-a492-67fcde01d017.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "e973254629de61764b6a4b96102386418c7fe34dd35c70c7e14e6b1b9df25f25",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 6,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_006.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_002---38527da6-1415-4a27-a11f-eeb05c65d54f.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "fb5239ac08c5ffd3579f2acec5406fea17940f25279ffac55cd4afce64a5c398",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 7,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_007.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_002---98d0d22b-ea1b-4d09-a0b3-f281b22c7deb.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "d76d9ca33e945e0d774bae179b34e04db303c7ec8eba7690ba4d98373faed4da",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 8,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_008.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_002---d4606878-e4c3-4a7a-8269-b76a40f958c3.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "79d9e3ef9996345c9cb19cf7c49c93e7a9991f550525df5d05a8d4a8bb8e79c8",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 9,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_009.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_003---194a4ada-0c8b-47ae-84ca-7de4727216ce.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "79f8fe1464edd50073ae5d86119c46bd63bfa6a7161809a4cf2de8968757b932",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 10,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_010.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_003---36d2e549-b4cd-4aa4-9aaa-9b8aa6a7b4e3.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "66db7cd7afaed0f3ace912e0fec7b017f290acc165ce4c6a5b2f5e02377623ac",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 11,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_011.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_003---67b7d51a-1b35-4121-a1ef-15ff911970f0.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "eef3744ba1bef917ef0c364dee1fc3d8ae7472fadfd1114e5603b15cccd8893e",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 12,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_012.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_003---ae89c148-c077-47fa-a23c-06a2f6735b0d.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "d0d0f55d0a6703956dc02a935e8fdd1c7b7e009b48df4ae6bdaf3f2f562465db",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 13,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_013.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_004---5f4fa696-6a53-4df1-b8aa-ab5af5d387c6.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "7584ab106d2c42fd6d6336d656a9e4032f1c0cc4d5fdcac84804834343119e45",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 14,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_014.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_004---7b495ee5-6785-48ba-b52e-889d4a9a5f4c.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "39b01080c6fa0f80bb5457dd7aab86810366b0a5baa7dfbd47a2b333a8863d68",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 15,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_015.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_004---c9912857-7c0c-4c12-813d-2ef409c73c70.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "8cdba2f08e85530dfd169a79c6a644323ca0a88082c55f20f0fca3ea60b9981e",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 16,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_016.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_004---db10fb1d-44c4-476b-b1d4-14300e38661b.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "4e4065519295689a41ed8296807eba354e8889b9b00871180aaccb51d3557bbc",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 17,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_017.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_005---764e36f5-5f02-44fe-97df-5e11caf849f6.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "1713bc817ef695e8e6ea23fcdb20563971fb145f3e8674bf471adc620c7f6ff4",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 18,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_018.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_005---90b0290e-5b1d-452f-adf7-6a2055d967ee.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "d2acb9df70b96ca646ec99be39cb60d6c9bbc0b8c2a83b4354738e40694fb661",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 19,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_019.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_005---9171e74c-3c30-457c-a3bf-40d7f444b775.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "23f3e4b6fa8b68248958e4064c6a91e724c4c10166f99159304438c6f42f4a17",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 20,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_020.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_005---dcb78eba-c5d1-474b-83c1-0280737262cb.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "d0899ea408bb99babeb04d9988de3a78ff15b49f461b1d16fcd666a8e4e9d701",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 21,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_021.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_006---551e5f49-82fa-4d40-9755-7e54656d0f95.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "ae45fe9bce310d68651c1971fdf049079a45195383f2780f79103274899b5d4b",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 22,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_022.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_006---8aa66560-84e8-497f-aa54-126426fa1f0a.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "f5f347a5ac8dad5b5a29d9844d4f053fb46c926f57ba21017ed25f4fcc3a12b3",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 23,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_023.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_006---cc26f8f2-e527-451e-894b-102714bfeb2f.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "82d593bd74c5b14b39c0942a3da7ac80524a433819eb9f576e12dde768fc8da9",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 24,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_024.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_006---fb4730f9-f5cb-436d-a15e-dada302456b7.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "410205b1da8a65a81e308ce54cdb7a6e1da2244b607eb67e7a8ad5d3385af0a0",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 25,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_025.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_007---b2a28754-cab5-43d1-93f9-d68f987f2b4b.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "4f5f9a4f357b55ffae8d4207d4620c661e1bc6855526fb9713662f0a27d68926",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 26,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_026.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_007---e1c4d207-fd5c-41b6-982f-2ed1440053cd.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "0a41fdcff960531e678586114c73af52e2af93a198e6e6526634bc58cec96bf5",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 27,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_027.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_007---ef5e0e8e-a5e6-4f55-88c7-d8ea9163d5af.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "79f1f7cae02e9814cd4d43f3e6baeb232f92b46d2ce75e0aa7666d200ab7ccfd",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 28,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_028.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_007---f0378a6c-db5d-4ce2-80e3-a6fbf02bf186.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "1826250acc5d7158560e6b7d2ade25bd245508a73bdb0cf598cdb97fd562c70c",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 29,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_029.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_008---9a1a2af5-a02a-4864-88bb-a3e14e2eaedf.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "1e37698501a0107509146c68f63756283698f4f09938f90c1ea357f5c221206a",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 30,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_030.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_008---9fa8a71c-b97f-431a-bdb1-09570a61741f.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "7ce122c598507af098b2cbbbb451645829e96179cc5f4c2ee08b801297c52657",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 31,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_031.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_008---cc980e77-6a24-490e-bf3c-7e0d109a1013.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "c3d9b583f40a4ffb6b5e2532e1145cf9f6478356d499f08e9f6f102574327ac9",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 32,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_032.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_008---cdfd64de-903f-4d46-aa9b-113b80ae1365.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "04f961373d4ad8877f200dabc3d872c3715b0b1347b1fff5168c9be0821dfce0",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 33,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_033.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_009---15d305fe-cb54-4819-ba00-798ab6ff1412.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "91e63c2d86aa71d217d95d9a3f92e9d84fab7aa567be21b77b79538a72307635",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 34,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_034.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_009---642188da-a167-4b3c-9e50-5f7f88f53a01.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "068590796cd2d01d092fe6b15a730b5bd50da2ec01f1d4df5b0cccb404a9dbd8",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 35,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_035.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_009---86b52597-2932-4632-8850-cf18e4e62613.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "a2309df424f69b09e022cffafedb78d5786804fa3590e07b07abcefc78b5577c",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 36,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_036.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_009---d98235ba-f292-45be-8d45-3488ddec4c38.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "3a5a24fb1d70ceee0e12d7e762b6f8f85a8a5372663ad6d9d713abe1a4790a65",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 37,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_037.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_010---a2949829-34a7-4548-bd57-b931f2b82864.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "02d0501e62224bc3b520365190c328a0e91cef0ba0e5ef1311659d0257ec9d20",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 38,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_038.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_010---a7a67067-7fba-4267-954e-825fe108d300.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "653404d715f0bab8db96c42061d162abd7a3f76aad336458afff8ba0d4f9d604",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 39,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_039.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_010---d78e42b6-5768-499a-9fe1-b2cacaa48208.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "904f0a8a7c952d6da7b1de05fad1f893c4bc77c33b4a7003d42a598a1a86feb3",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 40,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_040.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_010---e28d23cf-5998-409c-921e-7ec649ac84f0.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "fcb3754949318895b7a41474f7667ac706759324fabc4f6c51c584b08ec00c69",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 41,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_041.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_011---0fe6f801-1676-43d0-8efb-5077c2d71385.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "c4723c3266eb15f73d7a688e42c7b7c2233ad8c7e91edc8061a62b1dd59571e6",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 42,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_042.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_011---2b20d38e-21fb-406b-8e37-ea29413e72d4.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "ee803200d9bdd51aa5516bf30f23166e7fbc71a4ef0a810df2730cc0b50495a0",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 43,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_043.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_011---35e3414c-2557-4b4a-ae1e-bf73a20cb801.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "9747ddb1f3f5635e99d44ed2db4e43505e690509753f5df43fe98ae89ebb1f6f",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 44,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_044.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_011---90bdca40-3e78-4db8-b6d5-56cf4cd79884.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "3047c455cc0d9092d28898d324e648d681eedde202828f7b7aca9d88ab03531c",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 45,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_045.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_012_retry---362e9bc4-8a3d-4941-872b-b730d2c3f266.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "df60396b456acc1e2543dbff25f620e47a200d346dc06b4c406d89b94643b632",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 46,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_046.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_012_retry---e0187990-e801-4c59-911a-6cc587404cbb.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "d382fe5b1bed9c1e3854ac83c63dbe83d74ee2ddacb6996f4dd680b703a0aa76",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 47,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_047.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_012_retry---e37a02b1-39b0-4e84-b7ec-fb2fa14f6b6b.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "454efe37bc25851cdaa23374a273c1aff32f5fc3e8e1e61705a01bcf54db041d",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 48,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_048.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_012_retry---f2eb2f00-ec96-4867-bbc7-7ee6f6f5c048.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "c1c7d0ecd28ac98533e501d8f41a4851af96f912635aaa4fe53cf6d0597dbe59",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 49,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_049.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_013---0f9b3948-9b6a-43ee-89a8-d6b327e9ed1e.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "f0a5d56829d5fb212bb3ddbda34af4fd1f5d4071b89b9047c0e839b7075bb6a7",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 50,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_050.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_013---470f2410-6fa6-4a13-ac81-4ca3d944e41f.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "6939b3c9d6a5b66c74de9344ba6449a17b4c156720eb023ac66565b2cdbc01ae",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 51,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_051.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_013---9e1fe0c4-fec4-4d93-a62f-2af43fc6a42d.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "fc6cf451b284c528e5f62d69db9768036c629d8c4cc6ebee864c0f72058f1c96",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 52,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_052.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_013---b3bd9e35-e4ec-4797-9ef8-a22ef7534161.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "4e712d74b9c72d912992830f145d7b6a78af89faa4c4f6e036a36c0cb02b2b78",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 53,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_053.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_014---4b2201a6-605b-4a32-ba8d-34141aa667e3.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "e6f8ca8818c3b2583255421cb1e3345f767583bc11ef662d54cb6e8049540094",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 54,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_054.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_014---aa73dd64-8431-4128-958a-09ca6d8feac3.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "0fa93a2daa1fe2c435adaf58684d1e7afb706343c8ffd2e417653f4168d20051",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 55,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_055.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_014---d2c5c254-da21-4a52-ba88-cdb6637605c6.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "19c83289ddc50aeace124635be9d4459b40cb3d8779c5fa01c715a1c0778f706",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 56,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_056.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_014---ed1657a3-9d88-4edb-b968-67bf4ecdba44.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "d2f11876f54b1329ecc77440fef4c018fc632a89d7be956f489f8801388d03e0",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 57,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_057.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_015---1ded6457-1a76-4cb8-8cb4-636bfc6ace3c.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "5aab4810fc6fc19c74a9d8aadbf46d707bb212869048ae9cd890c27abf3f168c",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 58,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_058.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_015---534a4c90-ff78-4760-b61a-8c43cb2559dd.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "69b6833d680b11e524a0a992115cd9bd4e6c89fc23b9709104d11486fcd25218",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 59,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_059.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_015---8a23853c-89a2-4a7d-bc22-13cd0efc6426.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "b21ff515838a56d4e93dd486b41dac4aed151342b82d9f9225a4059c9f63a544",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 60,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_060.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_015---eb320638-3f9f-44eb-8ff6-816e5ac432e9.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "155b509b496e938fb36b620795604514b7f74ca6c3736fe77ea641fbc8952a1c",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 61,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_061.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_015_retry---1d3f6162-74d5-40b3-85c7-b58b563a5110.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "be5d70d8832a5665f702aa86322bb48131d3044f87fd63c1da17d7d1a289e166",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 62,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_062.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_015_retry---42af3d7f-1395-48e3-9b77-06222627bea2.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "f67426d70e564d39b5a7f3e915d262b0d2fda3f0605b410a049addfb4aabad3f",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 63,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_063.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_015_retry---e9974069-1d16-4c9e-be8d-517d7b6139d3.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "d7479a7bd66067090a47513837b79a91b36b180c292ea4fd99ecefad1200ece6",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 64,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_064.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_015_retry---f459412e-c10a-4298-bd7f-5036c6043aae.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "5f299cba4b7fe7888a92c543c8e098a34c17fb966294bb50565085412982b8c6",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 65,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_065.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_016---4d6fdc89-cfa1-4b05-a1d9-b02cbab2d56e.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "784efb47ba288ca2639cb68d518ddf271827f1c5b1172454e0dda471e85d39fd",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 66,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_066.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_016---97295058-0e22-4b21-84dc-2d6102436e8a.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "7f3c81100b84892f2e03d4aaa09e210acf4a4a9eaada74799650da1db2dc57ec",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 67,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_067.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_016---a77ad26e-dc9c-43ba-86b0-164ef6007867.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "f89daaac2020e0c554ee98d04b46aad0152c2b571f76047c64c668948ad2e59e",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 68,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_068.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_016---beb752cd-6945-4490-a21f-14c0daa28678.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "e1f9a292ae9bf5e6e0159510e2e506f8ca7c2b9b75c7056cc456145bb5490044",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 69,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_069.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_017---27f61788-5aa3-4e9b-989d-2b8e8a2be013.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "5841bc5ee00fa2db16be3e5ea9e020d67ad378965c5061cb351e0867780a2f9d",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 70,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_070.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_017---48da2033-20b7-4395-ac9a-958249674594.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "2db69f435bc5222307998ae4a94074eaec4a22325ee53e2fa39fed5cbfe35454",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 71,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_071.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_017---79e8ed90-463b-4d90-94ca-dafc4b128522.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "96388eaf6f10cacb66fc96d115523a777bb3e39f4148e0bfb3a9cd5fbd20c6b0",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 72,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_072.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_017---e891b817-14a4-4b50-9831-a50da5b5144d.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "74951b081be785db3cc4a543045e50012275b14677543decc0ef073008cb9c8e",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 73,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_073.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_018---017b5d4c-6b3a-40ab-ab3f-2b24c681e5e2.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "c158c6d60ffca47b285474afc6732eed15c568a3cd209ed9f3d275bf6aeb632b",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 74,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_074.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_018---294d434e-9785-4c2c-bd42-dc174f43d787.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "2cb7ade6fb46f9c1c0efb82bb3c5a23f00644c9eec3f94aa647fef8527a76e9d",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 75,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_075.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_018---589e0042-070b-4974-9e4c-4086d3b6655b.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "dfe31ced97221cc186e346d81393a1fe16be1b7e9839db36f864997af7d8c934",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 76,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_076.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_018---d4aa72d4-581e-467d-a0f3-fbd25cc8445a.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "a6ff378a63f2c5ba1cc29f25956b8ee07373855e2fec2229b285a47ae79c58a8",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 77,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_077.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_019---000529e4-a01b-4f79-a921-82eb8085174d.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "6069892b24a9bcf2688f43167332dd633dfc909b5d5898b622d18d4e09cd6149",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 78,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_078.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_019---0607a033-5e21-46a8-93b6-ab21c2ec7a7b.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "a28939ed7a5b2256c0566f0f61ba16a765f387a0b33df0e2b9df945d70e36587",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 79,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_079.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_019---30b518cb-08c2-4c69-9426-79af33eb8965.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "0c1731bd97ad0c51ab2eb1f84cf93223e82635503acba0162bd030f62ee46017",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 80,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_080.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_019---b545aaea-1979-4136-9c58-8dad7fbe223f.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "8963fdf12bdb3c3e85ccd28e8005c3caeeb08d73c03267e38086f86f525c1a14",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 81,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_081.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_020---1da20bb7-6b86-4f12-8518-89b380a04167.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "1af52c7fc199850ca20c008d300f949bea298d21afa33935fd24b0cb7cfe65cb",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 82,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_082.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_020---2873b2b6-c782-489e-ad11-fc2634232e35.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "6ea227b704f99f60de17ced10f0044c207f743815127eefced66c0a07af3bae9",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 83,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_083.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_020---3a21c5dd-53cb-4964-8a88-9b262c1a72f0.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "c8b4c3e3a0c814a7a3c744972c0fa662b3eb78273deb37eef1c806766e890d62",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 84,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_084.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_020---bfadaf59-13d5-4533-80d3-bdc0993517be.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "0e80da35f90ed18d8ce9165eeedf06462b27bc218a3a24bbc8161355e1b2192c",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 85,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_085.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_021---2faf8c97-7c38-4158-b5f5-7edf50973480.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "5d1ba42de5407e13cc6fd6298388837b2547b69a36421587fb72cc38be73a296",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 86,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_086.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_021---3fd9f1d3-da23-4856-baa2-164aa87780d9.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "eebd8f622c5d056de1420332ebe9ffcdc6ed6ba51d72ce32c0e242819c68e8bb",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 87,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_087.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_021---b95a3281-2c49-4f5b-bc1c-ccd06bd4a811.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "040516940c6810cac29f38fa21327a377aa5647cbdf9a2c8ebbddb938d41a7e3",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 88,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_088.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_021---c5135f8e-1479-4a26-9149-a9a588d77f95.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "76b38146885cb8912bcc141db94a606db997887df7a7bbc0855517331aa2a59b",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 89,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_089.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_022---127f561d-5a19-4172-ac8f-3fd05f5fd469.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "c468a1e20fb5e7f66f645fb7a1dfe6c1138ea8a81cb757cbccff14af44936bc5",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 90,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_090.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_022---b83a8917-980f-4f1c-9831-fa2f5e6b0e60.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "23bc3f4a77fc03d12ed4e7d0808d9e620b8ae36e3abb87a55829c4599a875d40",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 91,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_091.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_022---c96ab0ba-c05f-4724-b6db-af24b2885ed0.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "84cc5e4694228c1e20c6925491b619dba085ffa0aeb1e0afedb993e2ce7a8a41",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 92,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_092.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_022---fb8a60db-58ed-4b37-8a41-f5439e43566b.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "a88f0b850f28f9da2948af2293948f18d5a300a6814b022c7441ae289ee1c07b",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 93,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_093.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_023---4ae2863c-dc69-4e11-812b-c7b7febc2264.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "2ca890b898935607a6794660c68f7615e36ffa180a10065176e0b0aa9148db55",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 94,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_094.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_023---53205c48-6273-42dd-bae8-c9684f1a878b.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "f4ac3e839cf4a4fb50702a36c5b722d2a8e1c8b313b3e704809949e3bcae5df6",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 95,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_095.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_023---d7790c8e-1fd5-413c-a888-346b0251d7fe.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "142f3b624911a4ba0ac6dc7a6808150968df26757d2448548c75973971b98635",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 96,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_096.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_023---ed732ab4-c6c5-4c88-b9fc-400cf04dddd9.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "6090a998bf6e46d0977822baf710f9b429eb425f294a2dccd5a30acb4bb4f79d",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 97,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_097.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_024---55f580ba-7aed-4f8b-815d-e1ed9eb81c36.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "675f8c3d1353172024a67ee5eafc94144c4d3fde3e5a1b7bc6846b5d143ef17c",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 98,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_098.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_024---8f6f12e8-7527-439a-b526-d594f0f0d56b.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "3759e19f29cd229746c37ad68366f4eb6ef889b70d8ba5136dc9354f1af605eb",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 99,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_099.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_024---e3fbde58-a151-4672-b4ef-7c97e6fb7c17.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "a372b3e6fbb2ba6bd55f3cdacb8ac1e0ab343e85e4081ed9f251b79b854fcb78",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 100,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_100.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_024---f93e99f0-19f8-49e3-975e-01345ea883ca.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "ae3b79344f79bfe13b3aa8879e99825d15d9f5427699c5ac23de9e47cca4e1fa",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 101,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_101.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_025---0c5aab92-ac18-41b4-bbc3-bde299fc7e18.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "66a037964d2c08fad4056f4eb6b83cec73c475cca52041ae86291e617602f898",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 102,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_102.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_025---5eadc422-c281-4cb0-b6e8-e23d48adea60.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "93721504b8401452be3f6b78f95d4206af78fa586c4ef40c20572d87d006799b",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 103,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_103.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_025---935ca4d8-3e21-4880-9583-4e1aac601ec0.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "4775c46e98f54a91e63edf2e6c0158ae9d4a7fe73025b9af02dc530d0de70f17",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 104,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_104.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_025---edd44aa3-0e06-4620-840c-c71e2065775e.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "0cae2f7efadc05ae45e0fba59cc422fb30030f34f6421fa0bf4621ce3c3891e4",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 105,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_105.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_026---0f6601ed-0fb2-498d-ad8c-e2b9faabe5e5.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "95f69a943f0b5206c15cd6b3f09e45242ed295d55c25cf4759418424119848f9",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 106,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_106.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_026---acb13fbe-93b4-4bc8-9f63-6cb110a6d18e.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "d580011ee404b8ea002938807705d21c9b5dee9aadac04d9a4b2e4af9e02d217",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 107,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_107.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_026---b3a2326f-e3c6-4b4e-bed3-cafd41af3d16.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "8b1f6334a15313c57f9e77a8c9ff5a2d92f6d74fc14f6e206580a5fdf3ca5e39",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 108,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_108.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_026---f2483c93-e993-4594-9c27-4e3368b5cf85.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "71ec7b65eaef7805815818fc4886f25be2d402b9f53ccc581f6d5f0b37c5a3b2",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 109,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_109.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_027_retry---5ceb9a73-4a6e-47ce-be06-a70ec2c5aceb.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "f8f31bcb7060e4e60b143fde8ea4aa2f36e5a3226bcb2c8045cd5193fd664922",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 110,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_110.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_027_retry---926ccd9a-3061-4e89-bcd9-8df60ef83d8b.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "d4f4272adc4c38aaf2aa7bf409a7a28cbb53b6672add78514fc7a89fcc883a2f",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 111,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_111.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_027_retry---db0d9004-3b61-4d71-98d6-9c9ad0287feb.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "067a638de61f87212b33923635c3e698f383c17cd4ee774a57e12dc5d9ba9d1c",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 112,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_112.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_027_retry---eeedd406-2d20-4062-a5e0-4e4796158037.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "52810c7671ca9fdd1fc1ef01b774c1fd73883732b8755a2dea6a79e6f7d239f7",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 113,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_113.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_028---07be3578-f236-4407-8fb9-2a86bce276e6.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "c7160fbf6ec16f547763b1667b2395df6460865d663e9258ffebe945f2415586",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 114,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_114.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_028---9fb282fa-deb4-4fbe-8838-533be895dcdf.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "c06b24369f27d395e29486a384192c200a5aad008583cb9a4f703668a089803b",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 115,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_115.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_028---dbafb891-13f5-4c3c-941b-e165186672a8.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "f99b60d97cfd63787ffa0f90bfbc1c56c9f59a73320521facfdf8456e7ef9477",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 116,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_116.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_028---e3f8ac24-bb61-44fa-9ee3-b4444bd93bea.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "80aa0c0c08897a4d8b1448fd74aa90aed2b3a7ec27e5cd5e2514acd0faace362",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 117,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_117.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_029---5395c595-ae65-4632-a191-b201479df5c9.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "91fd04c4dd8f752960b347944e451cb2bc6b3730b7bc0469d222da26da63afcf",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 118,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_118.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_029---6200dab1-ad8a-4d01-bd32-8453e80535f5.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "854dea8eee036d6682a38a9407c894f64f44fc237c5c59987932b1b7d0727b06",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 119,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_119.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_029---ae8f96d4-65a8-4a93-94e5-24e7088f6a2e.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "7f5f64787134e246f9ec5fbc497ea4a309da7d430e6050aeb0ddadd4db342af3",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    },
+    {
+      "beat_id": 120,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/frames/frame_120.png",
+      "source": "/root/.openclaw/media/tool-image-generation/bnpl_v5_final_group_029---c34d672a-ee11-42fd-81d3-50ecc2cc38d3.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "3dd25ac425708aac1740fd667e73e16f8abfe73b5c95fc3c470c9a9530ce4aa3",
+      "note": "OpenAI gpt-image-2 BNPL V5 generated frame"
+    }
+  ]
+}

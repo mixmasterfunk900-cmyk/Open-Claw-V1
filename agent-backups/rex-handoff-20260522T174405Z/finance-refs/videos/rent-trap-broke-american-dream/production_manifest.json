@@ -1,0 +1,77 @@
+{
+  "sop_version": "2.0",
+  "channel": "Laura & John's Money Gap",
+  "project_root": "/root/.openclaw/workspace/youtube-automation-finance",
+  "video_slug": "rent-trap-broke-american-dream",
+  "video_dir": "/root/.openclaw/workspace/youtube-automation-finance/videos/rent-trap-broke-american-dream",
+  "created_at": "2026-05-20T18:33:34.939063+00:00",
+  "topic_input": "Gen Z rent burden and the rent trap that broke the American Dream",
+  "topic_discovery_used": true,
+  "topic_ledger_checked": true,
+  "image_model": "ChatGPT Images 2.0 via OpenClaw frontier GPT image generation path",
+  "tts_tool": "hexgrad/kokoro",
+  "retry_policy": "3_attempts_then_debug_agent",
+  "human_checkpoints": 0,
+  "assumptions": [
+    "No topic was supplied, so Phase -1 was required.",
+    "YouTube auto-upload remains disabled by channel config; Vibe Zone local add is enabled.",
+    "Drive archive is attempted only if credentials/tooling are available.",
+    "First passing Kokoro pair auto-locked: am_michael for John, af_heart for Laura."
+  ],
+  "agents_spawned": [
+    "Director",
+    "Manager",
+    "Topic Discovery A/B",
+    "Duplicate Ledger",
+    "Research",
+    "Scripter",
+    "Voice Casting",
+    "TTS",
+    "Image Prompt Planner",
+    "Assembler",
+    "QA",
+    "Archive"
+  ],
+  "phase_status": {
+    "-1": "complete",
+    "0": "complete",
+    "1": "complete",
+    "2": "complete",
+    "3": "complete",
+    "4": "complete",
+    "5": "complete",
+    "6": "complete",
+    "7": "complete",
+    "8": "complete",
+    "9": "complete_with_drive_partial",
+    "10": "complete"
+  },
+  "tracker_requirement": "Create/save Google Sheet tracker in Drive folder 10hjKYn8QrwM2K9w1rs1vdP1VFdmFwt-y if credentials/tooling allow; otherwise maintain local CSV/Markdown fallback.",
+  "tracker": {
+    "local_csv": "/root/.openclaw/workspace/youtube-automation-finance/videos/rent-trap-broke-american-dream/logs/project_tracker.csv",
+    "local_markdown": "/root/.openclaw/workspace/youtube-automation-finance/videos/rent-trap-broke-american-dream/logs/project_tracker.md",
+    "drive_folder_id": "10hjKYn8QrwM2K9w1rs1vdP1VFdmFwt-y",
+    "sheet_status": "complete_uploaded_as_project_tracker_xlsx_via_rclone_import",
+    "allowed_status_values": [
+      "planned",
+      "in_progress",
+      "waiting",
+      "complete",
+      "blocked"
+    ],
+    "updated_at": "2026-05-20T18:54:20.627581+00:00",
+    "drive_tracker_files": [
+      "project_tracker.xlsx",
+      "project_tracker.md"
+    ]
+  },
+  "upload_archive": {
+    "youtube": "not_attempted_disabled_by_channel_config",
+    "vibe_zone": "complete",
+    "vibe_zone_path": "/root/.openclaw/workspace/vibe-zone/media/exports/rent-trap-broke-american-dream",
+    "drive_status": "partial_fallback_local",
+    "drive_folder_id": "10hjKYn8QrwM2K9w1rs1vdP1VFdmFwt-y",
+    "drive_notes": "rclone remote available; tracker and small assets uploaded; final_video.mp4 copy reported complete; burned-caption upload stalled/retried then was killed; verification listing hit Google Drive API rateLimitExceeded"
+  },
+  "completed_at": "2026-05-20T18:54:20.627581+00:00"
+}

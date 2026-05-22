@@ -1,0 +1,20 @@
+{
+  "john_voice": "Ryan",
+  "laura_voice": "Serena",
+  "engine": "qwen3-tts-local-oss",
+  "rejected_not_used": [
+    "af_heart"
+  ],
+  "reason": "Masala selected this corrected pair from Finance V5 voice auditions.",
+  "john_voice_status": "approved_by_masala_2026-05-21",
+  "john_voice_role": "John / American documentary narrator",
+  "laura_voice_status": "approved_by_masala_2026-05-21",
+  "notes": "Masala selected Qwen3 OSS John American documentary (Ryan) and Serena warm for Laura.",
+  "laura_voice_role": "Laura / young warm American cohost",
+  "model": "Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice",
+  "venv": "/root/.openclaw/workspace/.venv-qwen-tts",
+  "john_voice_label": "john_american_02_ryan_documentary",
+  "john_instruct": "American older male finance narrator. Documentary style, grounded, confident, calm, natural pacing, not robotic.",
+  "laura_voice_label": "laura_american_01_serena_warm",
+  "laura_instruct": "Young American woman cohost. Warm, clear, curious, conversational, natural Gen Z student energy, not robotic, American accent."
+}

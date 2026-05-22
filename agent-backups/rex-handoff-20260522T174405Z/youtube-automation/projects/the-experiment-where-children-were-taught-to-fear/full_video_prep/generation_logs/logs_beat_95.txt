@@ -1,0 +1,13 @@
+GENERATE beat_095 attempt 1
+enclaw/workspace/youtube-automation/projects/the-experiment-where-children-were-taught-to-fear/full_video_prep/approved_frames_draft/beat_095.png",
+      "mimeType": "image/png",
+      "size": 4344322,
+      "width": 2048,
+      "height": 1152,
+      "revisedPrompt": "Sparse melancholic 2D hand-drawn doodle illustration in The Experiment Channel style. Rough pencil line art, near-black sketch lines, muted pale tan, warm grey, faded blue-grey palette only, flat lighting, wide negative space, minimal environment, handmade sketchbook aesthetic. No bright colors, no saturated colors, no logos, no watermarks, no readable text.\n\nBeat 095: a single isolated object in wide negative space: a crumpled paper manifesto motif lying on a bare floor, drawn as blank folded sheets with no readable writing, its shadow subtly forming the severe silhouette of John B. Watson as a tall shadowed scientist figure. In the far negative space, infant Albert appears very small and vulnerable in simple one-piece pale clothing, oversized hollow dark-circled eyes, standing or sitting motionless, emotionally distant. Faint emotional echo lines radiate softly from the paper/shadow toward the child, suggesting quiet manufactured fear rather than violence. Optional tiny harmless white rat barely indicated near the edge of the composition, small and non-threatening; a steel bar suggested only as a simple dull grey line in the shadow, non-graphic. Rayner absent or only an indistinct quiet adult researcher echo in the background if needed, but keep the single-object focus dominant.\n\nComposition: visually distinct from nearby frames by centering the blank crumpled manifesto/paper as the main object, isolated in negative space; Watson appears indirectly through shadow and paper motif, not a detailed portrait. Hollow dark-circled eyes on any visible character. Historically suggestive, emotionally restrained, melancholic, non-graphic. Not photo, not 3D, not anime."
+    }
+  ],
+  "ignoredOverrides": []
+}
+
+OK beat_095 4344322

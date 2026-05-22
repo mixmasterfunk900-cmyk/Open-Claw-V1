@@ -1,0 +1,4 @@
+- **Federal Reserve Bank of New York Household Debt and Credit Report** — https://www.newyorkfed.org/microeconomics/hhdc — Used for trillion-plus credit-card balance context and delinquency/balance framing.
+- **Federal Reserve Bank of Philadelphia Large Bank Credit Card and Mortgage Data Q1 2025** — https://www.philadelphiafed.org/surveys-and-data/2025-q1-large-bank — Used for historically high borrowing-cost and elevated interest-cost language.
+- **LendingTree Average Credit Card Interest Rate in US Today** — https://www.lendingtree.com/credit-cards/study/average-credit-card-interest-rate-in-america/ — Used for current new-card APR range around 23-24%.
+- **Motley Fool Credit Card Debt Statistics** — https://www.fool.com/money/research/credit-card-debt-statistics/ — Secondary consumer-facing debt/APR context; not used as sole source for key claims.

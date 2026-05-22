@@ -1,0 +1,14 @@
+project,video_slug,phase,task_or_phase,status,updated_at_utc,notes
+Laura & Johns Money Gap,rent-trap-broke-american-dream,-1,Topic discovery & duplicate ledger check,complete,2026-05-20T18:54:20.627581+00:00,10 candidates scored; ledger empty; rent trap selected
+Laura & Johns Money Gap,rent-trap-broke-american-dream,0,Initialise project + manifest,complete,2026-05-20T18:54:20.627581+00:00,Complete
+Laura & Johns Money Gap,rent-trap-broke-american-dream,1,Script idea research,complete,2026-05-20T18:54:20.627581+00:00,Complete
+Laura & Johns Money Gap,rent-trap-broke-american-dream,2,Title & thumbnail combos,complete,2026-05-20T18:54:20.627581+00:00,Complete
+Laura & Johns Money Gap,rent-trap-broke-american-dream,3,Deep research & citations,complete,2026-05-20T18:54:20.627581+00:00,Complete
+Laura & Johns Money Gap,rent-trap-broke-american-dream,4,Scripting + manager QA,complete,2026-05-20T18:54:20.627581+00:00,Complete
+Laura & Johns Money Gap,rent-trap-broke-american-dream,5,Voiceover script + Kokoro audio,complete,2026-05-20T18:54:20.627581+00:00,Complete
+Laura & Johns Money Gap,rent-trap-broke-american-dream,6,Scene extraction + image generation,complete,2026-05-20T18:54:20.627581+00:00,Complete with logged reuse optimization
+Laura & Johns Money Gap,rent-trap-broke-american-dream,7,"Subtitles, motion, transitions, assembly",complete,2026-05-20T18:54:20.627581+00:00,Final and burned-caption MP4 created
+Laura & Johns Money Gap,rent-trap-broke-american-dream,8,Full QA checklist + repair loop,complete,2026-05-20T18:54:20.627581+00:00,PASS with notes
+Laura & Johns Money Gap,rent-trap-broke-american-dream,9,Upload/archive/logging,complete,2026-05-20T18:54:20.627581+00:00,Vibe Zone complete; YouTube disabled; Drive partial/fallback local
+Laura & Johns Money Gap,rent-trap-broke-american-dream,10,Post-upload/final report,complete,2026-05-20T18:54:20.627581+00:00,Final report saved
+Laura & Johns Money Gap,rent-trap-broke-american-dream,SHEET,Google Sheet tracker in Drive folder,complete,2026-05-20T18:54:20.627581+00:00,Uploaded tracker via rclone import as project_tracker.xlsx plus Markdown; local CSV/MD retained

@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "version": "Finance V5 full run",
+  "runtime_seconds": 671.133333,
+  "john_voice": "am_michael",
+  "laura_voice": "af_bella",
+  "outputs": {
+    "review_mp4": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/renders/credit-card-minimum-payment-trap_v5_chatgpt_stick_figure_full_review.mp4",
+    "clean_mp4": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/renders/credit-card-minimum-payment-trap_v5_chatgpt_stick_figure_full_clean.mp4",
+    "telegram_low_mp4": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/renders/credit-card-minimum-payment-trap_v5_chatgpt_stick_figure_full_telegram_low.mp4",
+    "audio_wav": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/renders/credit-card-minimum-payment-trap_v5_full_selected_voices_am_michael_af_bella.wav",
+    "contact_sheet": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/proof/v5_full_contact_sheet.jpg"
+  },
+  "qa_report": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/qa/v5_full_qa_report.md",
+  "vibe_zone_destination": "/root/.openclaw/workspace/vibe-zone/media/practice/youtube-automation/finance-content/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full",
+  "beat_manifest": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/v5_full_beat_manifest.json",
+  "image_generation_manifest": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/v5_full_image_generation_manifest.json"
+}

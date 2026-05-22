@@ -1,0 +1,1 @@
+PASS: Editing/render proof QA. Final render uses actual faint motion: 2000x1125 scale with time-varying crop sinusoidal drift/zoom feel; cuts are the transition plan, no static slideshow export. Motion is subtle and not distracting.

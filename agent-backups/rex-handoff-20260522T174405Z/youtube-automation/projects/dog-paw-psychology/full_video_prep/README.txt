@@ -1,0 +1,1 @@
+Drop the final voiceover here as final_voiceover.wav, or pass a voiceover path to scripts/stitch_dog_paw_full_video.mjs.\n

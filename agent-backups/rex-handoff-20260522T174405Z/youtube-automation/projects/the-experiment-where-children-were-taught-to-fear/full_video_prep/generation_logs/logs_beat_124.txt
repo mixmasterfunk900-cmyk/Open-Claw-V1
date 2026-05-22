@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-children-were-taught-to-fear/full_video_prep/./generate_one_frame.py", line 19, in <module>
+    else:
+  ^^^^^^^^
+  File "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-children-were-taught-to-fear/full_video_prep/./generate_one_frame.py", line 15, in prompt_for
+    lower=(nar+' '+scene).lower()
+                      ^^^^
+NameError: name 'CHAR' is not defined

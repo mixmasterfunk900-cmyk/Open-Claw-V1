@@ -1,0 +1,115 @@
+{
+  "status": "PASS",
+  "intended_frame_count": 12,
+  "generated_frame_count": 12,
+  "items": [
+    {
+      "index": 1,
+      "path": "youtube-automation-finance/videos/car-payment-trap/v5_chatgpt_stick_figure_rebuild_1min/frames/frame_001.png",
+      "sha256": "007d153e455da3689b1bafac0cd01582824d84c54aaddab1a332416fd03541fa",
+      "provider": "openai",
+      "model": "openai/gpt-image-2",
+      "fallback_used": false,
+      "local_placeholder": false
+    },
+    {
+      "index": 2,
+      "path": "youtube-automation-finance/videos/car-payment-trap/v5_chatgpt_stick_figure_rebuild_1min/frames/frame_002.png",
+      "sha256": "5d7788d323ec14b7cbbb7e6154922ef2746d3bc650cf9d37fabf5ab279966d06",
+      "provider": "openai",
+      "model": "openai/gpt-image-2",
+      "fallback_used": false,
+      "local_placeholder": false
+    },
+    {
+      "index": 3,
+      "path": "youtube-automation-finance/videos/car-payment-trap/v5_chatgpt_stick_figure_rebuild_1min/frames/frame_003.png",
+      "sha256": "f84227ddd85f1aba56550480cd9595aeeb657b4e855b77096abd8e5d5ffc0f38",
+      "provider": "openai",
+      "model": "openai/gpt-image-2",
+      "fallback_used": false,
+      "local_placeholder": false
+    },
+    {
+      "index": 4,
+      "path": "youtube-automation-finance/videos/car-payment-trap/v5_chatgpt_stick_figure_rebuild_1min/frames/frame_004.png",
+      "sha256": "ba85613258773e6fd2fde783b3b062d00c96dc4b7dd234a85f3f431889a9a243",
+      "provider": "openai",
+      "model": "openai/gpt-image-2",
+      "fallback_used": false,
+      "local_placeholder": false
+    },
+    {
+      "index": 5,
+      "path": "youtube-automation-finance/videos/car-payment-trap/v5_chatgpt_stick_figure_rebuild_1min/frames/frame_005.png",
+      "sha256": "b5ab24ead3e44ae951d5d23dfbde0135de65b2fb6565d8e6a98fe48173fe2a36",
+      "provider": "openai",
+      "model": "openai/gpt-image-2",
+      "fallback_used": false,
+      "local_placeholder": false
+    },
+    {
+      "index": 6,
+      "path": "youtube-automation-finance/videos/car-payment-trap/v5_chatgpt_stick_figure_rebuild_1min/frames/frame_006.png",
+      "sha256": "2dc01fadd344e4f0b804de9b69cf4f822b3bcd73f7ffab7cc0030491a3d043d2",
+      "provider": "openai",
+      "model": "openai/gpt-image-2",
+      "fallback_used": false,
+      "local_placeholder": false
+    },
+    {
+      "index": 7,
+      "path": "youtube-automation-finance/videos/car-payment-trap/v5_chatgpt_stick_figure_rebuild_1min/frames/frame_007.png",
+      "sha256": "6c68a33b28713f4d11034af1fd110d355e43077cba15b3df329bb110c25ebefe",
+      "provider": "openai",
+      "model": "openai/gpt-image-2",
+      "fallback_used": false,
+      "local_placeholder": false
+    },
+    {
+      "index": 8,
+      "path": "youtube-automation-finance/videos/car-payment-trap/v5_chatgpt_stick_figure_rebuild_1min/frames/frame_008.png",
+      "sha256": "a5b6f0dafa742a3dfd61b4bcf957208290983a6de8c10366ce2a9a852eb073ab",
+      "provider": "openai",
+      "model": "openai/gpt-image-2",
+      "fallback_used": false,
+      "local_placeholder": false
+    },
+    {
+      "index": 9,
+      "path": "youtube-automation-finance/videos/car-payment-trap/v5_chatgpt_stick_figure_rebuild_1min/frames/frame_009.png",
+      "sha256": "f1c0b0aba6ab1db46f260c78f5c1adcf8beb5c278f7ac9a497f7f599b2e9275a",
+      "provider": "openai",
+      "model": "openai/gpt-image-2",
+      "fallback_used": false,
+      "local_placeholder": false
+    },
+    {
+      "index": 10,
+      "path": "youtube-automation-finance/videos/car-payment-trap/v5_chatgpt_stick_figure_rebuild_1min/frames/frame_010.png",
+      "sha256": "adb9e901558d70555d7b29eee408406177837329fe093adf60a94cb131231b39",
+      "provider": "openai",
+      "model": "openai/gpt-image-2",
+      "fallback_used": false,
+      "local_placeholder": false
+    },
+    {
+      "index": 11,
+      "path": "youtube-automation-finance/videos/car-payment-trap/v5_chatgpt_stick_figure_rebuild_1min/frames/frame_011.png",
+      "sha256": "58fabd6aeebb1b05a1cddb5da3dbbb25a9f210162754b7fbf20ab1bf1e56761d",
+      "provider": "openai",
+      "model": "openai/gpt-image-2",
+      "fallback_used": false,
+      "local_placeholder": false
+    },
+    {
+      "index": 12,
+      "path": "youtube-automation-finance/videos/car-payment-trap/v5_chatgpt_stick_figure_rebuild_1min/frames/frame_012.png",
+      "sha256": "afa1c4d3427047ff10af13c3cb46db85007cc9ef6ab9d7b5f643cb620990f014",
+      "provider": "openai",
+      "model": "openai/gpt-image-2",
+      "fallback_used": false,
+      "local_placeholder": false
+    }
+  ]
+}

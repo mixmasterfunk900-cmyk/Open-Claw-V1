@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "runtime_seconds": 676.475,
+  "audio_runtime_seconds": 676.475,
+  "frame_count": 135,
+  "min_visual_beat_duration": 5.011,
+  "avg_visual_beat_duration": 5.011,
+  "max_visual_beat_duration": 5.011,
+  "max_visual_beat_duration_lte_6_PASS": true,
+  "min_visual_beat_duration_gte_4_PASS": true,
+  "runtime_gte_480_PASS": true,
+  "john_voice": "am_michael",
+  "laura_voice": "af_bella",
+  "voices_PASS": true,
+  "subtitle_slot_build_y_values": [
+    590
+  ],
+  "subtitle_y_around_590_PASS": true,
+  "subtitle_not_bottom_edge_650_PASS": true,
+  "provenance_count": 135,
+  "unique_openai_source_files": 135,
+  "final_frames_openai_provenance_PASS": true,
+  "outputs": {
+    "review_mp4": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/renders/credit-card-minimum-payment-trap_v5_4to6s_review.mp4",
+    "clean_mp4": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/renders/credit-card-minimum-payment-trap_v5_4to6s_clean.mp4",
+    "telegram_low_mp4": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/renders/credit-card-minimum-payment-trap_v5_4to6s_telegram_low.mp4",
+    "audio_wav": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/renders/credit-card-minimum-payment-trap_v5_full_selected_voices_am_michael_af_bella.wav",
+    "beat_manifest": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/v5_full_4to6s_beat_manifest.json",
+    "image_generation_manifest": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/v5_full_4to6s_image_generation_manifest.json",
+    "contact_sheet": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/proof/v5_4to6s_contact_sheet.jpg"
+  }
+}

@@ -1,0 +1,260 @@
+[
+  {
+    "beat": "beat_001",
+    "choice": "BR",
+    "quality": "weak",
+    "reason": "Best available lab/interior setup, but it does not specifically establish Yale in 1961."
+  },
+  {
+    "beat": "beat_002",
+    "choice": "TR",
+    "quality": "pass",
+    "reason": "Lab-coated authority figure fits the question of obedience to a stranger telling someone to hurt another person."
+  },
+  {
+    "beat": "beat_003",
+    "choice": "BL",
+    "quality": "weak",
+    "reason": "Basement-like lab environment works tonally, but it does not show men arriving from New Haven."
+  },
+  {
+    "beat": "beat_004",
+    "choice": "BL",
+    "quality": "pass",
+    "reason": "Shock generator and voltage switches are clearly visible and match the 15-to-450-volt machine."
+  },
+  {
+    "beat": "beat_005",
+    "choice": "TR",
+    "quality": "weak",
+    "reason": "Teacher, generator, and authority imply the rule to increase shocks, but the frame has some split-line/artifact issues."
+  },
+  {
+    "beat": "beat_006",
+    "choice": "BL",
+    "quality": "weak",
+    "reason": "Shows a participant appealing toward the authority, matching the continue/stop tension, but has split artifacting."
+  },
+  {
+    "beat": "beat_007",
+    "choice": "BL",
+    "quality": "weak",
+    "reason": "Conveys obedience/protest in the experiment, but cannot represent the 26-out-of-40 statistic or fake shocks directly."
+  },
+  {
+    "beat": "beat_008",
+    "choice": "TL",
+    "quality": "pass",
+    "reason": "Experimenter instructing the subject fits the memory-and-learning cover story and real obedience."
+  },
+  {
+    "beat": "beat_009",
+    "choice": "TL",
+    "quality": "weak",
+    "reason": "Science-lab authority is clear, but the frame does not show the men's mistaken expectations or contrast with soldiers/prisoners."
+  },
+  {
+    "beat": "beat_010",
+    "choice": "BR",
+    "quality": "weak",
+    "reason": "Ordinary subject at the apparatus is usable, but the idea that they were not selected for cruelty is indirect."
+  },
+  {
+    "beat": "beat_011",
+    "choice": "TL",
+    "quality": "fail",
+    "reason": "Fallback only; it does not convey varied occupations, ages, or ordinary-worker diversity."
+  },
+  {
+    "beat": "beat_012",
+    "choice": "TL",
+    "quality": "fail",
+    "reason": "Fallback only; no advertisement, payment, or recruitment detail is visible."
+  },
+  {
+    "beat": "beat_013",
+    "choice": "BL",
+    "quality": "pass",
+    "reason": "Room, generator, and authority arrangement strongly conveys responsibility being shifted by the setup."
+  },
+  {
+    "beat": "beat_014",
+    "choice": "TR",
+    "quality": "pass",
+    "reason": "Grey shock generator is centered and visually clear."
+  },
+  {
+    "beat": "beat_015",
+    "choice": "BR",
+    "quality": "pass",
+    "reason": "Close view of the switch panel supports the narration about thirty switches and voltage range."
+  },
+  {
+    "beat": "beat_016",
+    "choice": "TR",
+    "quality": "fail",
+    "reason": "Least-bad fallback; it avoids worse artifacts, but the shock labels are not readable enough to show the progression to danger severe shock."
+  },
+  {
+    "beat": "beat_017",
+    "choice": "BR",
+    "quality": "weak",
+    "reason": "Generator markings are suggested, but the final letter labels/XXX are not clearly readable."
+  },
+  {
+    "beat": "beat_018",
+    "choice": "BR",
+    "quality": "weak",
+    "reason": "Learner/partition setup is implied, but the strap, heart condition, electrode, and XXX detail are not clear."
+  },
+  {
+    "beat": "beat_019",
+    "choice": "BR",
+    "quality": "pass",
+    "reason": "Observer/teacher setup matches watching the learner and then returning to the shock machine."
+  },
+  {
+    "beat": "beat_020",
+    "choice": "TL",
+    "quality": "weak",
+    "reason": "Authority over seated subject suggests escalation, but wrong answers and learner complaints are not explicit."
+  },
+  {
+    "beat": "beat_021",
+    "choice": "BL",
+    "quality": "weak",
+    "reason": "Separated-room tension fits the learner's distress, but heart trouble and 150 volts are not visible."
+  },
+  {
+    "beat": "beat_022",
+    "choice": "BL",
+    "quality": "weak",
+    "reason": "Isolated learner/room reads as refusal or silence, but the 300-volt refusal is indirect."
+  },
+  {
+    "beat": "beat_023",
+    "choice": "BL",
+    "quality": "pass",
+    "reason": "Teacher hesitation and spatial separation fit the silent learner moment."
+  },
+  {
+    "beat": "beat_024",
+    "choice": "BL",
+    "quality": "weak",
+    "reason": "The authority/learner arrangement implies concern and responsibility tension, but the question is not explicit."
+  },
+  {
+    "beat": "beat_025",
+    "choice": "BL",
+    "quality": "pass",
+    "reason": "Calm experimenter with clipboard supports the point that he did not threaten the participant."
+  },
+  {
+    "beat": "beat_026",
+    "choice": "BL",
+    "quality": "pass",
+    "reason": "Institutional calm and distance fit the lack of shouting or physical coercion."
+  },
+  {
+    "beat": "beat_027",
+    "choice": "BL",
+    "quality": "pass",
+    "reason": "Experimenter prompting posture matches the scripted prods to continue."
+  },
+  {
+    "beat": "beat_028",
+    "choice": "TR",
+    "quality": "pass",
+    "reason": "Machine and controlled learner setup clearly support violence by instruction rather than appetite."
+  },
+  {
+    "beat": "beat_029",
+    "choice": "BR",
+    "quality": "weak",
+    "reason": "Moral confrontation is visible, but the broad claim that Milgram was asking a large question remains abstract."
+  },
+  {
+    "beat": "beat_030",
+    "choice": "BL",
+    "quality": "fail",
+    "reason": "Fallback only; no Eichmann trial, courtroom, or historical trial reference is visible."
+  },
+  {
+    "beat": "beat_031",
+    "choice": "TL",
+    "quality": "weak",
+    "reason": "Bureaucratic/order atmosphere is suggested, but trains, signatures, offices, and duty are not directly represented."
+  },
+  {
+    "beat": "beat_032",
+    "choice": "BL",
+    "quality": "fail",
+    "reason": "Fallback only; the image does not convey Milgram's Jewish identity."
+  },
+  {
+    "beat": "beat_033",
+    "choice": "TR",
+    "quality": "fail",
+    "reason": "Fallback only; it is a vague historical-looking frame and does not show New York 1933, Europe, or paperwork."
+  },
+  {
+    "beat": "beat_034",
+    "choice": "TR",
+    "quality": "weak",
+    "reason": "Academic/Yale-lab atmosphere is usable, but Milgram as assistant professor and the lab-question framing are not specific."
+  },
+  {
+    "beat": "beat_035",
+    "choice": "TL",
+    "quality": "pass",
+    "reason": "Ordinary people at the shock board under authority fits the question of Americans harming because authority told them to."
+  },
+  {
+    "beat": "beat_036",
+    "choice": "TL",
+    "quality": "weak",
+    "reason": "Clipboard/survey implication fits predictions, but the frame has split artifacting and is not explicit."
+  },
+  {
+    "beat": "beat_037",
+    "choice": "BL",
+    "quality": "weak",
+    "reason": "Lone shock machine can imply expectations around completion, but predicted 'almost nobody' is abstract."
+  },
+  {
+    "beat": "beat_038",
+    "choice": "BL",
+    "quality": "weak",
+    "reason": "Empty generator room suggests the prediction gap, but one-in-a-hundred/few-abnormal framing is indirect."
+  },
+  {
+    "beat": "beat_039",
+    "choice": "BL",
+    "quality": "weak",
+    "reason": "Shows apparatus and an isolated participant, but does not strongly convey suffering while obeying or lack of cruelty."
+  },
+  {
+    "beat": "beat_040",
+    "choice": "TL",
+    "quality": "pass",
+    "reason": "Anxious physical strain is visible and fits sweating, trembling, stuttering, and self-directed distress."
+  },
+  {
+    "beat": "beat_041",
+    "choice": "TL",
+    "quality": "pass",
+    "reason": "Distressed participant pressing or facing the switch action fits arguing while still continuing."
+  },
+  {
+    "beat": "beat_042",
+    "choice": "TL",
+    "quality": "weak",
+    "reason": "Distress supports the hard-to-watch point, but artifacting makes it less clean for final use."
+  },
+  {
+    "beat": "beat_043",
+    "choice": "BL",
+    "quality": "pass",
+    "reason": "Authority presence behind the subject conveys displaced responsibility to the person giving orders."
+  }
+]

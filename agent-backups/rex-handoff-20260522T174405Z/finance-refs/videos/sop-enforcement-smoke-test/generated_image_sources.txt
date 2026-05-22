@@ -1,0 +1,12 @@
+/root/.openclaw/media/tool-image-generation/sop_smoke_scene_001---db449784-f6e2-4ea6-aeb5-b58125e5a14c.png
+/root/.openclaw/media/tool-image-generation/sop_smoke_scene_002---70546c69-9c93-4412-81ec-286366646d2c.png
+/root/.openclaw/media/tool-image-generation/sop_smoke_scene_003---b1b37572-ad0b-40b8-a2a0-deecde64b170.png
+/root/.openclaw/media/tool-image-generation/sop_smoke_scene_004---a6cfcce1-bf48-4c57-aca3-c46df2bb74bf.png
+/root/.openclaw/media/tool-image-generation/sop_smoke_scene_005---992fc29b-d5e8-49e3-ac8b-cd106b6ea441.png
+/root/.openclaw/media/tool-image-generation/sop_smoke_scene_006---fd431cfd-e9bf-46c1-8982-4e22238efb2b.png
+/root/.openclaw/media/tool-image-generation/sop_smoke_scene_007---32c4e42d-f498-432f-a3e9-a664275bc67c.png
+/root/.openclaw/media/tool-image-generation/sop_smoke_scene_008---74f04738-4371-4a79-a4b1-f0de872679be.png
+/root/.openclaw/media/tool-image-generation/sop_smoke_scene_009---53a0857f-5525-4762-a1f1-9089d53fec33.png
+/root/.openclaw/media/tool-image-generation/sop_smoke_scene_010---9ee97e91-e3d9-408a-92ac-2dc715d10fa7.png
+/root/.openclaw/media/tool-image-generation/sop_smoke_scene_011---cdf68324-f12c-46eb-ac77-a22d4f4255b3.png
+/root/.openclaw/media/tool-image-generation/sop_smoke_scene_012---876145a4-6ef3-464b-bdd2-548be524beb0.png

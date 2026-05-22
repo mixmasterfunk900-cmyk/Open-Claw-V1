@@ -1,0 +1,20 @@
+GENERATE beat_014 attempt 1
+generate",
+  "transport": "local",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "attempts": [],
+  "outputs": [
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-children-were-taught-to-fear/full_video_prep/approved_frames_draft/beat_014.png",
+      "mimeType": "image/png",
+      "size": 4544704,
+      "width": 2048,
+      "height": 1152,
+      "revisedPrompt": "Sparse melancholic 2D hand-drawn doodle illustration in The Experiment Channel style. Rough pencil line art, near-black uneven lines, muted pale tan, warm grey, and faded blue-grey palette only, flat lighting, wide negative space, minimal environment, handmade sketchbook aesthetic; not photo, not 3D, not anime. No bright colors, no saturated colors, no logos, no watermarks, no readable text.\n\nBeat 014 scene: side-profile power-imbalance composition. John B. Watson appears as a tall severe male researcher, a shadowed scientist figure occupying the left foreground in side profile, looming large, rendered with dark sketch lines and hollow dark-circled eyes. His posture is rigid and authoritative. Around him, abstract sheets of paper / manifesto motif are suggested as blank pale rectangles and loose pages, with no text or symbols, forming a quiet oppressive frame. In the far right lower negative space sits infant Albert, very small and vulnerable, oversized hollow eyes, simple one-piece pale clothing, tiny body turned slightly away, isolated and still. Rayner appears only subtly as a quiet adult researcher in the mid-background, small compared to Watson but still larger than the infant, with the same hollow eyes, standing still and restrained. A small harmless-looking white rat is near the infant, drawn softly and non-threatening. Minimal room: just a faint floor line and pale wall wash. Emotionally restrained, historically suggestive, non-graphic. Preserve consistent line weight and muted palette across all characters."
+    }
+  ],
+  "ignoredOverrides": []
+}
+
+OK beat_014 4544704

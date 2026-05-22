@@ -1,0 +1,79 @@
+[
+  {
+    "voice": "am_liam",
+    "speed": 0.9,
+    "role": "John older male option",
+    "text": "Laura, the most expensive button in modern money is not buy now. It is minimum payment. It looks polite, but the math is not polite.",
+    "name": "john_am_liam",
+    "wav": "/root/.openclaw/workspace/youtube-automation-finance/voice_auditions/finance_v5/john_am_liam.wav",
+    "ogg": "/root/.openclaw/workspace/youtube-automation-finance/voice_auditions/finance_v5/john_am_liam.ogg",
+    "mp3": "/root/.openclaw/workspace/youtube-automation-finance/voice_auditions/finance_v5/john_am_liam.mp3",
+    "duration_seconds": 8.3
+  },
+  {
+    "voice": "am_michael",
+    "speed": 0.88,
+    "role": "John older male option",
+    "text": "The minimum payment protects you from being late. It does not protect you from the interest. That is the part most people miss.",
+    "name": "john_am_michael",
+    "wav": "/root/.openclaw/workspace/youtube-automation-finance/voice_auditions/finance_v5/john_am_michael.wav",
+    "ogg": "/root/.openclaw/workspace/youtube-automation-finance/voice_auditions/finance_v5/john_am_michael.ogg",
+    "mp3": "/root/.openclaw/workspace/youtube-automation-finance/voice_auditions/finance_v5/john_am_michael.mp3",
+    "duration_seconds": 9.07
+  },
+  {
+    "voice": "am_adam",
+    "speed": 0.9,
+    "role": "John older male option",
+    "text": "A credit card can be a payment tool. The trap begins when the bill becomes a loan with no finish line.",
+    "name": "john_am_adam",
+    "wav": "/root/.openclaw/workspace/youtube-automation-finance/voice_auditions/finance_v5/john_am_adam.wav",
+    "ogg": "/root/.openclaw/workspace/youtube-automation-finance/voice_auditions/finance_v5/john_am_adam.ogg",
+    "mp3": "/root/.openclaw/workspace/youtube-automation-finance/voice_auditions/finance_v5/john_am_adam.mp3",
+    "duration_seconds": 7.33
+  },
+  {
+    "voice": "am_santa",
+    "speed": 0.92,
+    "role": "John older male option",
+    "text": "Every dollar above the minimum is not just a dollar. It is a little eviction notice for future interest.",
+    "name": "john_am_santa",
+    "wav": "/root/.openclaw/workspace/youtube-automation-finance/voice_auditions/finance_v5/john_am_santa.wav",
+    "ogg": "/root/.openclaw/workspace/youtube-automation-finance/voice_auditions/finance_v5/john_am_santa.ogg",
+    "mp3": "/root/.openclaw/workspace/youtube-automation-finance/voice_auditions/finance_v5/john_am_santa.mp3",
+    "duration_seconds": 7.25
+  },
+  {
+    "voice": "af_nova",
+    "speed": 0.96,
+    "role": "Laura young woman option",
+    "text": "That sounds dramatic. I thought minimum payment meant you were doing the right thing and protecting your credit.",
+    "name": "laura_af_nova",
+    "wav": "/root/.openclaw/workspace/youtube-automation-finance/voice_auditions/finance_v5/laura_af_nova.wav",
+    "ogg": "/root/.openclaw/workspace/youtube-automation-finance/voice_auditions/finance_v5/laura_af_nova.ogg",
+    "mp3": "/root/.openclaw/workspace/youtube-automation-finance/voice_auditions/finance_v5/laura_af_nova.mp3",
+    "duration_seconds": 6.45
+  },
+  {
+    "voice": "af_bella",
+    "speed": 0.98,
+    "role": "Laura young woman option",
+    "text": "So the danger is not the card existing. It is carrying the balance slowly when the interest rate is that high.",
+    "name": "laura_af_bella",
+    "wav": "/root/.openclaw/workspace/youtube-automation-finance/voice_auditions/finance_v5/laura_af_bella.wav",
+    "ogg": "/root/.openclaw/workspace/youtube-automation-finance/voice_auditions/finance_v5/laura_af_bella.ogg",
+    "mp3": "/root/.openclaw/workspace/youtube-automation-finance/voice_auditions/finance_v5/laura_af_bella.mp3",
+    "duration_seconds": 7.08
+  },
+  {
+    "voice": "af_heart",
+    "speed": 0.98,
+    "role": "Laura young woman option",
+    "text": "But what if someone really cannot pay more right now? Telling them to just pay it off faster can sound useless.",
+    "name": "laura_af_heart",
+    "wav": "/root/.openclaw/workspace/youtube-automation-finance/voice_auditions/finance_v5/laura_af_heart.wav",
+    "ogg": "/root/.openclaw/workspace/youtube-automation-finance/voice_auditions/finance_v5/laura_af_heart.ogg",
+    "mp3": "/root/.openclaw/workspace/youtube-automation-finance/voice_auditions/finance_v5/laura_af_heart.mp3",
+    "duration_seconds": 6.45
+  }
+]

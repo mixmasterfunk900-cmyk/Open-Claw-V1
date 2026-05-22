@@ -1,0 +1,138 @@
+{
+  "items": [
+    {
+      "beat_id": 1,
+      "prompt": "one full-frame finance-v5-stick-animation smoke scene; no collage/grid/contact-sheet; single scene only",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/sop-enforcement-smoke-test/scenes/scene_001.png",
+      "sha256": "f276b16d0f397bc566ac178ad34a1708c0be4ea5db25eb10d9bba76dc1e5aef2",
+      "reused": false,
+      "fallback_used": false,
+      "attempts": 1
+    },
+    {
+      "beat_id": 2,
+      "prompt": "one full-frame finance-v5-stick-animation smoke scene; no collage/grid/contact-sheet; single scene only",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/sop-enforcement-smoke-test/scenes/scene_002.png",
+      "sha256": "04d71b2589a20e94037a95d7fa6f7db2f65d13d5dac17629ce27534bea9788b5",
+      "reused": false,
+      "fallback_used": false,
+      "attempts": 1
+    },
+    {
+      "beat_id": 3,
+      "prompt": "one full-frame finance-v5-stick-animation smoke scene; no collage/grid/contact-sheet; single scene only",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/sop-enforcement-smoke-test/scenes/scene_003.png",
+      "sha256": "697ae5d36539b94ca149cfd12bedaaeb651cc833a0d6b5128d2fe0978a350fa0",
+      "reused": false,
+      "fallback_used": false,
+      "attempts": 1
+    },
+    {
+      "beat_id": 4,
+      "prompt": "one full-frame finance-v5-stick-animation smoke scene; no collage/grid/contact-sheet; single scene only",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/sop-enforcement-smoke-test/scenes/scene_004.png",
+      "sha256": "83daa6778ad112de1ecf9e76bb99d532debfe9589d2749976624db6a6e093cdd",
+      "reused": false,
+      "fallback_used": false,
+      "attempts": 2,
+      "repair_note": "Repaired to remove internal storyboard/timeline feel."
+    },
+    {
+      "beat_id": 5,
+      "prompt": "one full-frame finance-v5-stick-animation smoke scene; no collage/grid/contact-sheet; single scene only",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/sop-enforcement-smoke-test/scenes/scene_005.png",
+      "sha256": "3ff44e177a6f94443c5aea3825cb4512570b66ec0779c6d05cefbb0c47de0fbf",
+      "reused": false,
+      "fallback_used": false,
+      "attempts": 1
+    },
+    {
+      "beat_id": 6,
+      "prompt": "one full-frame finance-v5-stick-animation smoke scene; no collage/grid/contact-sheet; single scene only",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/sop-enforcement-smoke-test/scenes/scene_006.png",
+      "sha256": "57130ff6e128a791c236ff85f26224c93e3799aaf9e50270b74a98327f7d8a87",
+      "reused": false,
+      "fallback_used": false,
+      "attempts": 1
+    },
+    {
+      "beat_id": 7,
+      "prompt": "one full-frame finance-v5-stick-animation smoke scene; no collage/grid/contact-sheet; single scene only",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/sop-enforcement-smoke-test/scenes/scene_007.png",
+      "sha256": "22ffc93c3c4d77df17b9e2f2566798b5a64e8bdfec71b1223cb6b44105c4b80b",
+      "reused": false,
+      "fallback_used": false,
+      "attempts": 1
+    },
+    {
+      "beat_id": 8,
+      "prompt": "one full-frame finance-v5-stick-animation smoke scene; no collage/grid/contact-sheet; single scene only",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/sop-enforcement-smoke-test/scenes/scene_008.png",
+      "sha256": "f11d5032bffd4a16282215608433fc2b22a924b17742194426c77b46cceeca02",
+      "reused": false,
+      "fallback_used": false,
+      "attempts": 1
+    },
+    {
+      "beat_id": 9,
+      "prompt": "one full-frame finance-v5-stick-animation smoke scene; no collage/grid/contact-sheet; single scene only",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/sop-enforcement-smoke-test/scenes/scene_009.png",
+      "sha256": "ff909307527b2333e3228b611f100b62bcbb71aad01b9b79645738c66e34b847",
+      "reused": false,
+      "fallback_used": false,
+      "attempts": 1
+    },
+    {
+      "beat_id": 10,
+      "prompt": "one full-frame finance-v5-stick-animation smoke scene; no collage/grid/contact-sheet; single scene only",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/sop-enforcement-smoke-test/scenes/scene_010.png",
+      "sha256": "f283bfc45bee472583477b02f06241a400ee4d98af6a7c5da9ff30338c1bd296",
+      "reused": false,
+      "fallback_used": false,
+      "attempts": 1
+    },
+    {
+      "beat_id": 11,
+      "prompt": "one full-frame finance-v5-stick-animation smoke scene; no collage/grid/contact-sheet; single scene only",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/sop-enforcement-smoke-test/scenes/scene_011.png",
+      "sha256": "d2024a3ca19f63c261412fb7eb307fcd59853ccc3a83bfa5d20b7e03ca7771d3",
+      "reused": false,
+      "fallback_used": false,
+      "attempts": 1
+    },
+    {
+      "beat_id": 12,
+      "prompt": "one full-frame finance-v5-stick-animation smoke scene; no collage/grid/contact-sheet; single scene only",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/sop-enforcement-smoke-test/scenes/scene_012.png",
+      "sha256": "ba80674e6d2074cebadd1055c95a25e975b4e8d4ef97d9d21db96abc9bd2646d",
+      "reused": false,
+      "fallback_used": false,
+      "attempts": 2,
+      "repair_note": "Repaired to remove readable in-image text for no-subtitle direction."
+    }
+  ]
+}

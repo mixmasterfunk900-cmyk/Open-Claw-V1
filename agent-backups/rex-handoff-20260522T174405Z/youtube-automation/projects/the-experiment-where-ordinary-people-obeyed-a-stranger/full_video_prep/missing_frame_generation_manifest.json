@@ -1,0 +1,600 @@
+{
+  "generated_at_utc": "2026-05-20T09:11:04Z",
+  "project": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger",
+  "approved_frames_dir": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft",
+  "requested_missing_range": "beat_072 through beat_129",
+  "generated_count": 58,
+  "model": "openai/gpt-image-2",
+  "prompt_safety_note": "Prompts rewritten to symbolic academic psychology / institutional pressure / moral conflict, avoiding graphic harm, coercion, horror, violence, electric shock details, explicit injury, logos, watermarks, and readable text.",
+  "generated": [
+    {
+      "beat": "beat_072",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_072---54698171-61d2-41b7-874f-8e342156aab2.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_072.png"
+    },
+    {
+      "beat": "beat_073",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_073---00e0b519-bf58-4cee-94ee-4bc70b957533.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_073.png"
+    },
+    {
+      "beat": "beat_074",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_074---c91bd781-b66e-4ac9-80b3-a5ad1436592a.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_074.png"
+    },
+    {
+      "beat": "beat_075",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_075---d6bb9cc2-f6e0-4b06-a4c1-6bc96016a414.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_075.png"
+    },
+    {
+      "beat": "beat_076",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_076---54efa16d-1b5c-44cb-bcb9-6f37e73f0bd3.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_076.png"
+    },
+    {
+      "beat": "beat_077",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_077---a37ad464-3ca7-4ec8-9edc-a6dc187105b2.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_077.png"
+    },
+    {
+      "beat": "beat_078",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_078---3c7f9418-9999-46c6-8712-d92b33f6362c.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_078.png"
+    },
+    {
+      "beat": "beat_079",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_079---2fa9b35b-e89c-4d12-af66-3f772c8ae169.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_079.png"
+    },
+    {
+      "beat": "beat_080",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_080---a3ca7f3c-6912-4e1f-b548-00c46400af26.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_080.png"
+    },
+    {
+      "beat": "beat_081",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_081---d8f9f291-0a78-44ca-8d77-44c49f50bfc5.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_081.png"
+    },
+    {
+      "beat": "beat_082",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_082---761c89aa-80ac-4fdd-99c0-192c60119385.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_082.png"
+    },
+    {
+      "beat": "beat_083",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_083---009c44bf-f121-4042-bfab-ef3f3825dfee.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_083.png"
+    },
+    {
+      "beat": "beat_084",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_084---59528b58-23a8-4090-9c8c-4d1d276e440a.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_084.png"
+    },
+    {
+      "beat": "beat_085",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_085---6ef123c0-3e33-44b8-a0f2-93ee7dd24556.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_085.png"
+    },
+    {
+      "beat": "beat_086",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_086---7aa50949-3256-4588-b9ce-1a895c067ee3.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_086.png"
+    },
+    {
+      "beat": "beat_087",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_087---a4adf0c5-2c6e-452a-ae77-696786da6a3f.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_087.png"
+    },
+    {
+      "beat": "beat_088",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_088---098e779b-39f2-468b-96e2-d0c895bffd69.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_088.png"
+    },
+    {
+      "beat": "beat_089",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_089---0fa53a44-ee17-4830-9aa9-520b0167f235.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_089.png"
+    },
+    {
+      "beat": "beat_090",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_090---1c2e94b8-df56-476d-a6c7-b04a80712a78.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_090.png"
+    },
+    {
+      "beat": "beat_091",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_091---06e51267-7bb4-4862-be9e-71b26c05164f.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_091.png"
+    },
+    {
+      "beat": "beat_092",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_092---b7b8b136-1f29-40a8-9996-c5fbca9138f1.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_092.png"
+    },
+    {
+      "beat": "beat_093",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_093---44d8ecc9-d5a7-447c-9f3d-bcdb86883a7b.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_093.png"
+    },
+    {
+      "beat": "beat_094",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_094---8bc780ce-d66f-4f99-8d12-1e17759df6a4.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_094.png"
+    },
+    {
+      "beat": "beat_095",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_095---c0ed6e24-7855-4d65-96e7-bce5dfd36f71.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_095.png"
+    },
+    {
+      "beat": "beat_096",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_096---11b70a0b-f814-46ea-a364-ff6175369519.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_096.png"
+    },
+    {
+      "beat": "beat_097",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_097---569a9112-4a43-4ab6-a6fc-330e98160ee4.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_097.png"
+    },
+    {
+      "beat": "beat_098",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_098---f2296857-2222-48ac-8b76-02dfd096246a.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_098.png"
+    },
+    {
+      "beat": "beat_099",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_099---e39be035-8109-4d8b-8aa6-7de82c947f37.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_099.png"
+    },
+    {
+      "beat": "beat_100",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_100---bd3251b1-47a5-4159-94cb-74ecf89e080b.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_100.png"
+    },
+    {
+      "beat": "beat_101",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_101---c1683f3e-5c32-45d7-8264-b337894523e0.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_101.png"
+    },
+    {
+      "beat": "beat_102",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_102---fe2200c1-f2bb-4e9a-b632-29b0d9683516.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_102.png"
+    },
+    {
+      "beat": "beat_103",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_103---21119fff-230f-4c4b-ad75-1cad659810d9.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_103.png"
+    },
+    {
+      "beat": "beat_104",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_104---e7513794-1933-4b15-8859-cf4bfc841afc.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_104.png"
+    },
+    {
+      "beat": "beat_105",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_105---7010407b-9aa0-4d51-8d95-f301acdd66b8.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_105.png"
+    },
+    {
+      "beat": "beat_106",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_106---087758fc-80ab-44df-80c5-6a1ada3b86b0.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_106.png"
+    },
+    {
+      "beat": "beat_107",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_107---4bc32c70-1b6e-4955-bc44-172d65c5ebb3.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_107.png"
+    },
+    {
+      "beat": "beat_108",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_108---d0050175-916d-4088-b2de-c85786b12e22.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_108.png"
+    },
+    {
+      "beat": "beat_109",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_109---99d24a9a-3332-4212-a562-689bd0128b80.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_109.png"
+    },
+    {
+      "beat": "beat_110",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_110---5ff9e271-42f7-431a-9daa-1c22633eafa0.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_110.png"
+    },
+    {
+      "beat": "beat_111",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_111---aa8e33e2-8212-4dfa-88fb-6acf7bae97db.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_111.png"
+    },
+    {
+      "beat": "beat_112",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_112---5ffbff2a-2a8d-476d-ba19-090bd9d3c1fc.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_112.png"
+    },
+    {
+      "beat": "beat_113",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_113---366a5b46-4cbe-49cf-95c2-3be1b0afa11f.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_113.png"
+    },
+    {
+      "beat": "beat_114",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_114---de7597c8-2022-4a7a-9b2f-121e48dbe4a0.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_114.png"
+    },
+    {
+      "beat": "beat_115",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_115---2077b494-a590-469c-aa2d-26309df41cef.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_115.png"
+    },
+    {
+      "beat": "beat_116",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_116---5b90d575-bbb8-4ed4-bf22-707d5537e973.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_116.png"
+    },
+    {
+      "beat": "beat_117",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_117---c95494f9-8850-44e0-bc22-e5387a865ee7.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_117.png"
+    },
+    {
+      "beat": "beat_118",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_118---be40abe8-ddbc-45b6-a13c-818051618eca.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_118.png"
+    },
+    {
+      "beat": "beat_119",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_119---4a4d9225-3022-497d-b2cf-ad5948f15b84.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_119.png"
+    },
+    {
+      "beat": "beat_120",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_120---4e81535c-879d-41e5-9897-7e761530c9e1.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_120.png"
+    },
+    {
+      "beat": "beat_121",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_121---afb4a1d0-41e5-4098-8e04-0ae327ed56c0.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_121.png"
+    },
+    {
+      "beat": "beat_122",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_122---1019a67c-30d9-4d2f-af8e-fa6b7226579b.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_122.png"
+    },
+    {
+      "beat": "beat_123",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_123---fdba6353-6830-414b-bc48-52c379c5fcc7.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_123.png"
+    },
+    {
+      "beat": "beat_124",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_124---d3315506-89cc-4bd8-a05a-f0bdf01c075f.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_124.png"
+    },
+    {
+      "beat": "beat_125",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_125---3a2a9c59-d995-424a-8d62-e37ec7fb49b7.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_125.png"
+    },
+    {
+      "beat": "beat_126",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_126---ead9dea5-fda2-4d0a-b687-53262ebbedac.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_126.png"
+    },
+    {
+      "beat": "beat_127",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_127---dddf1137-b4fd-41a7-9ef5-036996e96d06.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_127.png"
+    },
+    {
+      "beat": "beat_128",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_128---ba79800c-e728-4333-8c73-f9b1c9d12f6b.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_128.png"
+    },
+    {
+      "beat": "beat_129",
+      "model": "openai/gpt-image-2",
+      "source_media_path": "/root/.openclaw/media/tool-image-generation/beat_129---11dd9eb3-6b47-457e-b6b8-7dcd61dadd51.png",
+      "approved_frame_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_draft/beat_129.png"
+    }
+  ],
+  "generation_failures": [],
+  "verification": {
+    "expected_total_frames": 129,
+    "existing_valid_png_count": 129,
+    "missing_beats": [],
+    "invalid_png_beats": [],
+    "generated_dimensions": {
+      "beat_072": [
+        2048,
+        1152
+      ],
+      "beat_073": [
+        2048,
+        1152
+      ],
+      "beat_074": [
+        2048,
+        1152
+      ],
+      "beat_075": [
+        2048,
+        1152
+      ],
+      "beat_076": [
+        2048,
+        1152
+      ],
+      "beat_077": [
+        2048,
+        1152
+      ],
+      "beat_078": [
+        2048,
+        1152
+      ],
+      "beat_079": [
+        2048,
+        1152
+      ],
+      "beat_080": [
+        2048,
+        1152
+      ],
+      "beat_081": [
+        2048,
+        1152
+      ],
+      "beat_082": [
+        2048,
+        1152
+      ],
+      "beat_083": [
+        2048,
+        1152
+      ],
+      "beat_084": [
+        2048,
+        1152
+      ],
+      "beat_085": [
+        2048,
+        1152
+      ],
+      "beat_086": [
+        2048,
+        1152
+      ],
+      "beat_087": [
+        2048,
+        1152
+      ],
+      "beat_088": [
+        2048,
+        1152
+      ],
+      "beat_089": [
+        2048,
+        1152
+      ],
+      "beat_090": [
+        2048,
+        1152
+      ],
+      "beat_091": [
+        2048,
+        1152
+      ],
+      "beat_092": [
+        2048,
+        1152
+      ],
+      "beat_093": [
+        2048,
+        1152
+      ],
+      "beat_094": [
+        2048,
+        1152
+      ],
+      "beat_095": [
+        2048,
+        1152
+      ],
+      "beat_096": [
+        2048,
+        1152
+      ],
+      "beat_097": [
+        2048,
+        1152
+      ],
+      "beat_098": [
+        2048,
+        1152
+      ],
+      "beat_099": [
+        2048,
+        1152
+      ],
+      "beat_100": [
+        2048,
+        1152
+      ],
+      "beat_101": [
+        2048,
+        1152
+      ],
+      "beat_102": [
+        2048,
+        1152
+      ],
+      "beat_103": [
+        2048,
+        1152
+      ],
+      "beat_104": [
+        2048,
+        1152
+      ],
+      "beat_105": [
+        2048,
+        1152
+      ],
+      "beat_106": [
+        2048,
+        1152
+      ],
+      "beat_107": [
+        2048,
+        1152
+      ],
+      "beat_108": [
+        2048,
+        1152
+      ],
+      "beat_109": [
+        2048,
+        1152
+      ],
+      "beat_110": [
+        2048,
+        1152
+      ],
+      "beat_111": [
+        2048,
+        1152
+      ],
+      "beat_112": [
+        2048,
+        1152
+      ],
+      "beat_113": [
+        2048,
+        1152
+      ],
+      "beat_114": [
+        2048,
+        1152
+      ],
+      "beat_115": [
+        2048,
+        1152
+      ],
+      "beat_116": [
+        2048,
+        1152
+      ],
+      "beat_117": [
+        2048,
+        1152
+      ],
+      "beat_118": [
+        2048,
+        1152
+      ],
+      "beat_119": [
+        2048,
+        1152
+      ],
+      "beat_120": [
+        2048,
+        1152
+      ],
+      "beat_121": [
+        2048,
+        1152
+      ],
+      "beat_122": [
+        2048,
+        1152
+      ],
+      "beat_123": [
+        2048,
+        1152
+      ],
+      "beat_124": [
+        2048,
+        1152
+      ],
+      "beat_125": [
+        2048,
+        1152
+      ],
+      "beat_126": [
+        2048,
+        1152
+      ],
+      "beat_127": [
+        2048,
+        1152
+      ],
+      "beat_128": [
+        2048,
+        1152
+      ],
+      "beat_129": [
+        2048,
+        1152
+      ]
+    }
+  }
+}

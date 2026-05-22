@@ -1,0 +1,17 @@
+GENERATE beat_028 attempt 1
+,
+  "attempts": [],
+  "outputs": [
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-children-were-taught-to-fear/full_video_prep/approved_frames_draft/beat_028.png",
+      "mimeType": "image/png",
+      "size": 3799570,
+      "width": 2048,
+      "height": 1152,
+      "revisedPrompt": "Sparse melancholic 2D hand-drawn doodle illustration in The Experiment Channel style. Rough pencil line art, near-black lines, muted pale tan, warm grey, faded blue-grey palette only, flat lighting, wide negative space, minimal environment, handmade sketchbook aesthetic. No bright colours, no saturated colours, no logos, no watermark, no readable text.\n\nBeat 028: symbolic split composition showing before-and-after emotional meaning without text, visually distinct while preserving continuity. Left side: a very small vulnerable infant Albert sitting on a simple pale mattress in empty space, oversized hollow dark-circled eyes, simple one-piece pale clothing, body relaxed but fragile; nearby a small harmless-looking white rat, soft outline, neutral. Right side: the same infant on the same sparse mattress, more withdrawn and tense, oversized hollow eyes turned toward an empty shape or faint memory echo of the rat; the harmless rat shape appears as a pale faded silhouette in the negative space, suggesting learned fear, association, memory, and childhood nervous system without literal horror. Between the two halves, a thin uneven vertical pencil seam or gap, no text. In the far background, very faint sketchy silhouettes of Watson, a tall severe male researcher in dark sketch lines, and Rayner, a quiet adult researcher, observing at a distance, restrained and historically suggestive. Emotional tone: small proof, sitting on a mattress, could not consent. Non-graphic, melancholic, restrained. Hollow dark-circled eyes on every human character. Consistent line weight and palette. Not photo, not 3D, not anime."
+    }
+  ],
+  "ignoredOverrides": []
+}
+
+OK beat_028 3799570

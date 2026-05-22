@@ -1,0 +1,870 @@
+{
+  "sop_version": "V4",
+  "video_slug": "credit-card-minimum-payment-trap",
+  "style": "deterministic local stick-figure animation throughout; no image-generation character drift",
+  "google_flow_access": "not configured on this host; google provider requires GEMINI_API_KEY / GOOGLE_API_KEY",
+  "beat_processing": "beats generated from actual dialogue_segments.json timings and segment text, max ~4 seconds per spoken visual beat; old padded silent tail is trimmed",
+  "subtitle_change": "about 30% smaller than V3 (Fontsize 15 vs 22), lower on screen (MarginV 30 vs 55), with shorter subtitle line wrapping to reduce visual collisions",
+  "renders": {
+    "clean_master": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v4_stick_figure/renders/credit-card-minimum-payment-trap_v4_stick_figure_clean_master.mp4",
+    "burned_caption_review": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v4_stick_figure/renders/credit-card-minimum-payment-trap_v4_stick_figure_burned_captions_review.mp4"
+  },
+  "vibe_zone_destination": "/root/.openclaw/workspace/vibe-zone/media/practice/youtube-automation/finance-content/credit-card-minimum-payment-trap/v4_stick_figure",
+  "beats": [
+    {
+      "beat_id": 1,
+      "start": 0.0,
+      "end": 3.59,
+      "speaker": "JOHN",
+      "text": "Laura, the most expensive button in modern money is not buy",
+      "visual": "button_chain",
+      "rationale": "minimum-payment button/chained card line"
+    },
+    {
+      "beat_id": 2,
+      "start": 3.59,
+      "end": 7.18,
+      "speaker": "JOHN",
+      "text": "buy now. It is minimum payment. It looks polite. It looks responsible.",
+      "visual": "button_chain",
+      "rationale": "minimum-payment button/chained card line"
+    },
+    {
+      "beat_id": 3,
+      "start": 7.18,
+      "end": 10.77,
+      "speaker": "JOHN",
+      "text": "responsible. But when a card balance sits behind it at twenty-plus",
+      "visual": "grocery_subscription",
+      "rationale": "groceries becoming recurring debt"
+    },
+    {
+      "beat_id": 4,
+      "start": 10.77,
+      "end": 14.36,
+      "speaker": "JOHN",
+      "text": "twenty-plus percent interest, that button can turn last month's groceries into a",
+      "visual": "button_chain",
+      "rationale": "minimum-payment button/chained card line"
+    },
+    {
+      "beat_id": 5,
+      "start": 14.36,
+      "end": 17.95,
+      "speaker": "JOHN",
+      "text": "a subscription you keep paying long after the food is gone.",
+      "visual": "grocery_subscription",
+      "rationale": "groceries becoming recurring debt"
+    },
+    {
+      "beat_id": 6,
+      "start": 18.37,
+      "end": 21.657,
+      "speaker": "LAURA",
+      "text": "That sounds dramatic. I thought minimum payment meant you",
+      "visual": "button_chain",
+      "rationale": "minimum-payment button/chained card line"
+    },
+    {
+      "beat_id": 7,
+      "start": 21.657,
+      "end": 24.945,
+      "speaker": "LAURA",
+      "text": "were doing the right thing and protecting your credit.",
+      "visual": "credit_shield",
+      "rationale": "minimum prevents lateness but not interest"
+    },
+    {
+      "beat_id": 8,
+      "start": 25.365,
+      "end": 29.08,
+      "speaker": "JOHN",
+      "text": "It protects you from being late. It does not protect you from the",
+      "visual": "credit_shield",
+      "rationale": "minimum prevents lateness but not interest"
+    },
+    {
+      "beat_id": 9,
+      "start": 29.08,
+      "end": 32.795,
+      "speaker": "JOHN",
+      "text": "the math. Today we are going to separate those two ideas. We will show",
+      "visual": "floor_stairs",
+      "rationale": "floor versus payoff plan"
+    },
+    {
+      "beat_id": 10,
+      "start": 32.795,
+      "end": 36.51,
+      "speaker": "JOHN",
+      "text": "show why the minimum is a floor, not a plan; how interest gets ahead",
+      "visual": "button_chain",
+      "rationale": "minimum-payment button/chained card line"
+    },
+    {
+      "beat_id": 11,
+      "start": 36.51,
+      "end": 40.225,
+      "speaker": "JOHN",
+      "text": "ahead of good intentions; and why two people with the same balance can live",
+      "visual": "john_explains",
+      "rationale": "John explanation beat"
+    },
+    {
+      "beat_id": 12,
+      "start": 40.225,
+      "end": 43.94,
+      "speaker": "JOHN",
+      "text": "live totally different futures depending on the size of the payment they choose.",
+      "visual": "john_explains",
+      "rationale": "John explanation beat"
+    },
+    {
+      "beat_id": 13,
+      "start": 44.36,
+      "end": 47.806,
+      "speaker": "JOHN",
+      "text": "Here is the money gap in one picture. The New York",
+      "visual": "john_explains",
+      "rationale": "John explanation beat"
+    },
+    {
+      "beat_id": 14,
+      "start": 47.806,
+      "end": 51.253,
+      "speaker": "JOHN",
+      "text": "York Fed tracks more than a trillion dollars of credit card",
+      "visual": "debt_mountain",
+      "rationale": "large national balance/stat context"
+    },
+    {
+      "beat_id": 15,
+      "start": 51.253,
+      "end": 54.699,
+      "speaker": "JOHN",
+      "text": "card balances across American households, while market trackers show new-card offers",
+      "visual": "debt_mountain",
+      "rationale": "large national balance/stat context"
+    },
+    {
+      "beat_id": 16,
+      "start": 54.699,
+      "end": 58.146,
+      "speaker": "JOHN",
+      "text": "offers around the low-to-mid twenties for annual percentage rates. The Philadelphia",
+      "visual": "apr_meter",
+      "rationale": "APR/interest-rate pressure"
+    },
+    {
+      "beat_id": 17,
+      "start": 58.146,
+      "end": 61.592,
+      "speaker": "JOHN",
+      "text": "Philadelphia Fed says borrowing costs remain historically high for people who",
+      "visual": "apr_meter",
+      "rationale": "APR/interest-rate pressure"
+    },
+    {
+      "beat_id": 18,
+      "start": 61.592,
+      "end": 65.039,
+      "speaker": "JOHN",
+      "text": "who carry balances. That means the penalty for moving slowly is",
+      "visual": "debt_mountain",
+      "rationale": "large national balance/stat context"
+    },
+    {
+      "beat_id": 19,
+      "start": 65.039,
+      "end": 68.485,
+      "speaker": "JOHN",
+      "text": "is not abstract. It is monthly rent paid to the bank.",
+      "visual": "bank_rent",
+      "rationale": "interest as rent paid to bank"
+    },
+    {
+      "beat_id": 20,
+      "start": 68.905,
+      "end": 72.43,
+      "speaker": "LAURA",
+      "text": "So the danger is not the card existing. It is carrying",
+      "visual": "tool_vs_loan",
+      "rationale": "card as tool versus loan"
+    },
+    {
+      "beat_id": 21,
+      "start": 72.43,
+      "end": 75.955,
+      "speaker": "LAURA",
+      "text": "carrying the balance slowly when the interest rate is that high.",
+      "visual": "apr_meter",
+      "rationale": "APR/interest-rate pressure"
+    },
+    {
+      "beat_id": 22,
+      "start": 76.375,
+      "end": 80.117,
+      "speaker": "JOHN",
+      "text": "Exactly. A credit card can be a payment tool. The trap begins when",
+      "visual": "john_explains",
+      "rationale": "John explanation beat"
+    },
+    {
+      "beat_id": 23,
+      "start": 80.117,
+      "end": 83.858,
+      "speaker": "JOHN",
+      "text": "when the bill becomes a loan and the loan has no finish line.",
+      "visual": "finish_line",
+      "rationale": "current account is not a payoff finish line"
+    },
+    {
+      "beat_id": 24,
+      "start": 83.858,
+      "end": 87.6,
+      "speaker": "JOHN",
+      "text": "Minimum payments are usually calculated to keep the account current, not to get",
+      "visual": "button_chain",
+      "rationale": "minimum-payment button/chained card line"
+    },
+    {
+      "beat_id": 25,
+      "start": 87.6,
+      "end": 91.342,
+      "speaker": "JOHN",
+      "text": "get you free quickly. In the early months, a big part of that",
+      "visual": "john_explains",
+      "rationale": "John explanation beat"
+    },
+    {
+      "beat_id": 26,
+      "start": 91.342,
+      "end": 95.083,
+      "speaker": "JOHN",
+      "text": "small payment is swallowed by interest before it touches the principal. You feel",
+      "visual": "interest_bites",
+      "rationale": "interest eating payment before principal"
+    },
+    {
+      "beat_id": 27,
+      "start": 95.083,
+      "end": 98.825,
+      "speaker": "JOHN",
+      "text": "feel movement because money left your checking account. But the balance barely flinched.",
+      "visual": "interest_bites",
+      "rationale": "interest eating payment before principal"
+    },
+    {
+      "beat_id": 28,
+      "start": 99.245,
+      "end": 102.759,
+      "speaker": "JOHN",
+      "text": "This is where Laura and I see different worlds. When I was",
+      "visual": "laura_question",
+      "rationale": "Laura/audience question beat"
+    },
+    {
+      "beat_id": 29,
+      "start": 102.759,
+      "end": 106.274,
+      "speaker": "JOHN",
+      "text": "was younger, a normal mistake could still be expensive, but the internet did",
+      "visual": "john_explains",
+      "rationale": "John explanation beat"
+    },
+    {
+      "beat_id": 30,
+      "start": 106.274,
+      "end": 109.788,
+      "speaker": "JOHN",
+      "text": "did not put a purchase button in every quiet moment. Today, a phone",
+      "visual": "button_chain",
+      "rationale": "minimum-payment button/chained card line"
+    },
+    {
+      "beat_id": 31,
+      "start": 109.788,
+      "end": 113.302,
+      "speaker": "JOHN",
+      "text": "phone can offer clothes, food delivery, travel points, emergency vet bills, and",
+      "visual": "phone_buttons",
+      "rationale": "phone purchase buttons everywhere"
+    },
+    {
+      "beat_id": 32,
+      "start": 113.302,
+      "end": 116.816,
+      "speaker": "JOHN",
+      "text": "and a balance transfer ad before breakfast. The old lecture was do not",
+      "visual": "phone_buttons",
+      "rationale": "phone purchase buttons everywhere"
+    },
+    {
+      "beat_id": 33,
+      "start": 116.816,
+      "end": 120.331,
+      "speaker": "JOHN",
+      "text": "not buy what you cannot afford. The new lecture has to be more",
+      "visual": "john_explains",
+      "rationale": "John explanation beat"
+    },
+    {
+      "beat_id": 34,
+      "start": 120.331,
+      "end": 123.845,
+      "speaker": "JOHN",
+      "text": "more precise: do not let yesterday's emergency become tomorrow's default monthly bill.",
+      "visual": "emergency_bill",
+      "rationale": "emergency becoming monthly default"
+    },
+    {
+      "beat_id": 35,
+      "start": 124.265,
+      "end": 127.653,
+      "speaker": "LAURA",
+      "text": "But what if someone really cannot pay more right now? Telling",
+      "visual": "tight_budget",
+      "rationale": "tight-budget empathy beat"
+    },
+    {
+      "beat_id": 36,
+      "start": 127.653,
+      "end": 131.04,
+      "speaker": "LAURA",
+      "text": "Telling them to just pay it off faster can sound useless.",
+      "visual": "tight_budget",
+      "rationale": "tight-budget empathy beat"
+    },
+    {
+      "beat_id": 37,
+      "start": 131.46,
+      "end": 135.218,
+      "speaker": "JOHN",
+      "text": "That is fair. This is not a shame video. Minimum payments can be a",
+      "visual": "button_chain",
+      "rationale": "minimum-payment button/chained card line"
+    },
+    {
+      "beat_id": 38,
+      "start": 135.218,
+      "end": 138.977,
+      "speaker": "JOHN",
+      "text": "a lifeboat during a hard month. The problem is when the lifeboat becomes the",
+      "visual": "lifeboat_house",
+      "rationale": "lifeboat becoming permanent home"
+    },
+    {
+      "beat_id": 39,
+      "start": 138.977,
+      "end": 142.735,
+      "speaker": "JOHN",
+      "text": "house. If money is tight, the first win may be stopping the balance from",
+      "visual": "lifeboat_house",
+      "rationale": "lifeboat becoming permanent home"
+    },
+    {
+      "beat_id": 40,
+      "start": 142.735,
+      "end": 146.493,
+      "speaker": "JOHN",
+      "text": "from growing: no new charges on that card, autopay at least the minimum, and",
+      "visual": "button_chain",
+      "rationale": "minimum-payment button/chained card line"
+    },
+    {
+      "beat_id": 41,
+      "start": 146.493,
+      "end": 150.252,
+      "speaker": "JOHN",
+      "text": "a written number for the real extra payment, even if it starts tiny. A",
+      "visual": "john_explains",
+      "rationale": "John explanation beat"
+    },
+    {
+      "beat_id": 42,
+      "start": 150.252,
+      "end": 154.01,
+      "speaker": "JOHN",
+      "text": "A plan that adds twenty dollars is better than a wish that adds zero.",
+      "visual": "floor_stairs",
+      "rationale": "floor versus payoff plan"
+    },
+    {
+      "beat_id": 43,
+      "start": 154.43,
+      "end": 158.097,
+      "speaker": "JOHN",
+      "text": "Think about a five-thousand-dollar balance at roughly twenty-four percent APR. If",
+      "visual": "apr_meter",
+      "rationale": "APR/interest-rate pressure"
+    },
+    {
+      "beat_id": 44,
+      "start": 158.097,
+      "end": 161.763,
+      "speaker": "JOHN",
+      "text": "If you only make a tiny payment that mostly follows the issuer's",
+      "visual": "help_call",
+      "rationale": "early help options"
+    },
+    {
+      "beat_id": 45,
+      "start": 161.763,
+      "end": 165.43,
+      "speaker": "JOHN",
+      "text": "issuer's minimum, the payoff path can stretch for years and the",
+      "visual": "button_chain",
+      "rationale": "minimum-payment button/chained card line"
+    },
+    {
+      "beat_id": 46,
+      "start": 165.43,
+      "end": 169.097,
+      "speaker": "JOHN",
+      "text": "interest can become a second purchase. Raise the payment, and the",
+      "visual": "interest_bites",
+      "rationale": "interest eating payment before principal"
+    },
+    {
+      "beat_id": 47,
+      "start": 169.097,
+      "end": 172.763,
+      "speaker": "JOHN",
+      "text": "the graph changes shape. Not because the bank became kind, but because",
+      "visual": "principal_attack",
+      "rationale": "fixed payment attacks principal"
+    },
+    {
+      "beat_id": 48,
+      "start": 172.763,
+      "end": 176.43,
+      "speaker": "JOHN",
+      "text": "because principal finally gets attacked faster than interest can rebuild it.",
+      "visual": "interest_bites",
+      "rationale": "interest eating payment before principal"
+    },
+    {
+      "beat_id": 49,
+      "start": 176.85,
+      "end": 180.621,
+      "speaker": "JOHN",
+      "text": "The best image is a snowball in reverse. Minimum payment is a",
+      "visual": "button_chain",
+      "rationale": "minimum-payment button/chained card line"
+    },
+    {
+      "beat_id": 50,
+      "start": 180.621,
+      "end": 184.392,
+      "speaker": "JOHN",
+      "text": "a spoon against a snowbank. A focused payment is a shovel. A",
+      "visual": "spoon_shovel",
+      "rationale": "snowbank/spoon/shovel metaphor"
+    },
+    {
+      "beat_id": 51,
+      "start": 184.392,
+      "end": 188.162,
+      "speaker": "JOHN",
+      "text": "A balance transfer can be a temporary snowplow, but only if the",
+      "visual": "transfer_bridge",
+      "rationale": "balance-transfer bridge with deadlines"
+    },
+    {
+      "beat_id": 52,
+      "start": 188.162,
+      "end": 191.933,
+      "speaker": "JOHN",
+      "text": "transfer fee, deadline, and behavior change all make sense. Consolidation is not",
+      "visual": "transfer_bridge",
+      "rationale": "balance-transfer bridge with deadlines"
+    },
+    {
+      "beat_id": 53,
+      "start": 191.933,
+      "end": 195.704,
+      "speaker": "JOHN",
+      "text": "not magic. Lower APR helps, but the habit that created the balance",
+      "visual": "apr_meter",
+      "rationale": "APR/interest-rate pressure"
+    },
+    {
+      "beat_id": 54,
+      "start": 195.704,
+      "end": 199.475,
+      "speaker": "JOHN",
+      "text": "balance has to be locked out or the old card simply refills.",
+      "visual": "refill_card",
+      "rationale": "consolidation only works if old card does not refill"
+    },
+    {
+      "beat_id": 55,
+      "start": 199.895,
+      "end": 202.858,
+      "speaker": "LAURA",
+      "text": "So what would you actually do this week,",
+      "visual": "john_explains",
+      "rationale": "John explanation beat"
+    },
+    {
+      "beat_id": 56,
+      "start": 202.858,
+      "end": 205.82,
+      "speaker": "LAURA",
+      "text": "week, without pretending everyone has a giant surplus?",
+      "visual": "laura_question",
+      "rationale": "Laura/audience question beat"
+    },
+    {
+      "beat_id": 57,
+      "start": 206.24,
+      "end": 209.776,
+      "speaker": "JOHN",
+      "text": "Four steps. First, write the real balance, APR, minimum, and due date",
+      "visual": "button_chain",
+      "rationale": "minimum-payment button/chained card line"
+    },
+    {
+      "beat_id": 58,
+      "start": 209.776,
+      "end": 213.311,
+      "speaker": "JOHN",
+      "text": "date in one place. Second, freeze new spending on that card while",
+      "visual": "four_steps",
+      "rationale": "four-step action plan"
+    },
+    {
+      "beat_id": 59,
+      "start": 213.311,
+      "end": 216.847,
+      "speaker": "JOHN",
+      "text": "while it is in payoff mode. Third, choose a fixed payment above the",
+      "visual": "four_steps",
+      "rationale": "four-step action plan"
+    },
+    {
+      "beat_id": 60,
+      "start": 216.847,
+      "end": 220.383,
+      "speaker": "JOHN",
+      "text": "the minimum and keep it fixed even as the minimum falls. That",
+      "visual": "button_chain",
+      "rationale": "minimum-payment button/chained card line"
+    },
+    {
+      "beat_id": 61,
+      "start": 220.383,
+      "end": 223.919,
+      "speaker": "JOHN",
+      "text": "That fixed-payment trick is powerful because every month more of the same payment",
+      "visual": "john_explains",
+      "rationale": "John explanation beat"
+    },
+    {
+      "beat_id": 62,
+      "start": 223.919,
+      "end": 227.454,
+      "speaker": "JOHN",
+      "text": "payment goes to principal. Fourth, if credit and discipline allow, compare a",
+      "visual": "interest_bites",
+      "rationale": "interest eating payment before principal"
+    },
+    {
+      "beat_id": 63,
+      "start": 227.454,
+      "end": 230.99,
+      "speaker": "JOHN",
+      "text": "a balance transfer or personal loan only after checking fees and deadlines.",
+      "visual": "transfer_bridge",
+      "rationale": "balance-transfer bridge with deadlines"
+    },
+    {
+      "beat_id": 64,
+      "start": 231.41,
+      "end": 235.068,
+      "speaker": "JOHN",
+      "text": "Then pick a method. Avalanche means extra money goes to the",
+      "visual": "avalanche_snowball",
+      "rationale": "avalanche versus snowball methods"
+    },
+    {
+      "beat_id": 65,
+      "start": 235.068,
+      "end": 238.727,
+      "speaker": "JOHN",
+      "text": "the highest APR first, which is mathematically strongest. Snowball means extra money",
+      "visual": "floor_stairs",
+      "rationale": "floor versus payoff plan"
+    },
+    {
+      "beat_id": 66,
+      "start": 238.727,
+      "end": 242.385,
+      "speaker": "JOHN",
+      "text": "money goes to the smallest balance first, which can be emotionally",
+      "visual": "four_steps",
+      "rationale": "four-step action plan"
+    },
+    {
+      "beat_id": 67,
+      "start": 242.385,
+      "end": 246.043,
+      "speaker": "JOHN",
+      "text": "strongest. The right method is the one you will actually finish.",
+      "visual": "john_explains",
+      "rationale": "John explanation beat"
+    },
+    {
+      "beat_id": 68,
+      "start": 246.043,
+      "end": 249.702,
+      "speaker": "JOHN",
+      "text": "finish. But never let the minimum-payment number choose your strategy for you.",
+      "visual": "button_chain",
+      "rationale": "minimum-payment button/chained card line"
+    },
+    {
+      "beat_id": 69,
+      "start": 249.702,
+      "end": 253.36,
+      "speaker": "JOHN",
+      "text": "you. That number works for the lender's system, not your freedom.",
+      "visual": "freedom_key",
+      "rationale": "do not let lender minimum choose strategy"
+    },
+    {
+      "beat_id": 70,
+      "start": 253.78,
+      "end": 257.47,
+      "speaker": "JOHN",
+      "text": "There is also a credit-score wrinkle. Paying on time matters. Utilization",
+      "visual": "utilization_gauge",
+      "rationale": "credit utilization pressure"
+    },
+    {
+      "beat_id": 71,
+      "start": 257.47,
+      "end": 261.16,
+      "speaker": "JOHN",
+      "text": "Utilization matters too: a high balance compared with the card limit",
+      "visual": "utilization_gauge",
+      "rationale": "credit utilization pressure"
+    },
+    {
+      "beat_id": 72,
+      "start": 261.16,
+      "end": 264.85,
+      "speaker": "JOHN",
+      "text": "limit can weigh on your score. Paying down the balance can help",
+      "visual": "john_explains",
+      "rationale": "John explanation beat"
+    },
+    {
+      "beat_id": 73,
+      "start": 264.85,
+      "end": 268.54,
+      "speaker": "JOHN",
+      "text": "help that pressure. But chasing points while paying interest is usually",
+      "visual": "interest_bites",
+      "rationale": "interest eating payment before principal"
+    },
+    {
+      "beat_id": 74,
+      "start": 268.54,
+      "end": 272.23,
+      "speaker": "JOHN",
+      "text": "usually losing the game. Rewards are confetti. Interest is the invoice.",
+      "visual": "interest_bites",
+      "rationale": "interest eating payment before principal"
+    },
+    {
+      "beat_id": 75,
+      "start": 272.65,
+      "end": 275.163,
+      "speaker": "LAURA",
+      "text": "What about people who use one card to",
+      "visual": "write_one_card",
+      "rationale": "single-card starting-line exercise"
+    },
+    {
+      "beat_id": 76,
+      "start": 275.163,
+      "end": 277.675,
+      "speaker": "LAURA",
+      "text": "to pay another or keep opening new ones?",
+      "visual": "stacked_cards_alarm",
+      "rationale": "debt-to-pay-debt smoke alarm"
+    },
+    {
+      "beat_id": 77,
+      "start": 278.095,
+      "end": 281.962,
+      "speaker": "JOHN",
+      "text": "That is the smoke alarm. If one debt needs another debt to breathe,",
+      "visual": "john_explains",
+      "rationale": "John explanation beat"
+    },
+    {
+      "beat_id": 78,
+      "start": 281.962,
+      "end": 285.828,
+      "speaker": "JOHN",
+      "text": "breathe, pause and get help early. A nonprofit credit counselor, hardship plan, or direct",
+      "visual": "floor_stairs",
+      "rationale": "floor versus payoff plan"
+    },
+    {
+      "beat_id": 79,
+      "start": 285.828,
+      "end": 289.695,
+      "speaker": "JOHN",
+      "text": "direct call to the issuer can be less glamorous than a hack video, but",
+      "visual": "help_call",
+      "rationale": "early help options"
+    },
+    {
+      "beat_id": 80,
+      "start": 289.695,
+      "end": 293.562,
+      "speaker": "JOHN",
+      "text": "but it can stop the spiral. And if the balance came from a true",
+      "visual": "john_explains",
+      "rationale": "John explanation beat"
+    },
+    {
+      "beat_id": 81,
+      "start": 293.562,
+      "end": 297.428,
+      "speaker": "JOHN",
+      "text": "true emergency, the follow-up goal is not guilt. It is building a small emergency",
+      "visual": "emergency_bill",
+      "rationale": "emergency becoming monthly default"
+    },
+    {
+      "beat_id": 82,
+      "start": 297.428,
+      "end": 301.295,
+      "speaker": "JOHN",
+      "text": "emergency buffer so the next surprise does not land on twenty-four percent interest.",
+      "visual": "interest_bites",
+      "rationale": "interest eating payment before principal"
+    },
+    {
+      "beat_id": 83,
+      "start": 301.715,
+      "end": 305.28,
+      "speaker": "JOHN",
+      "text": "Here is the reframe I want you to keep. The minimum payment",
+      "visual": "button_chain",
+      "rationale": "minimum-payment button/chained card line"
+    },
+    {
+      "beat_id": 84,
+      "start": 305.28,
+      "end": 308.845,
+      "speaker": "JOHN",
+      "text": "is not a moral grade. It is a warning label. It says",
+      "visual": "warning_paycheck",
+      "rationale": "minimum payment as warning label"
+    },
+    {
+      "beat_id": 85,
+      "start": 308.845,
+      "end": 312.41,
+      "speaker": "JOHN",
+      "text": "you have kept the account alive, but the debt is still renting",
+      "visual": "john_explains",
+      "rationale": "John explanation beat"
+    },
+    {
+      "beat_id": 86,
+      "start": 312.41,
+      "end": 315.975,
+      "speaker": "JOHN",
+      "text": "space in your future paycheck. Every dollar above the minimum is not",
+      "visual": "button_chain",
+      "rationale": "minimum-payment button/chained card line"
+    },
+    {
+      "beat_id": 87,
+      "start": 315.975,
+      "end": 319.54,
+      "speaker": "JOHN",
+      "text": "just a dollar. It is a little eviction notice for future interest.",
+      "visual": "interest_bites",
+      "rationale": "interest eating payment before principal"
+    },
+    {
+      "beat_id": 88,
+      "start": 319.96,
+      "end": 323.11,
+      "speaker": "LAURA",
+      "text": "So the goal is not to fear credit cards. It",
+      "visual": "john_explains",
+      "rationale": "John explanation beat"
+    },
+    {
+      "beat_id": 89,
+      "start": 323.11,
+      "end": 326.26,
+      "speaker": "LAURA",
+      "text": "It is to stop letting the card write the timeline.",
+      "visual": "timeline_control",
+      "rationale": "owner controls payoff timeline"
+    },
+    {
+      "beat_id": 90,
+      "start": 326.68,
+      "end": 330.37,
+      "speaker": "JOHN",
+      "text": "Exactly. If this helped, write down one card, one APR, and",
+      "visual": "apr_meter",
+      "rationale": "APR/interest-rate pressure"
+    },
+    {
+      "beat_id": 91,
+      "start": 330.37,
+      "end": 334.06,
+      "speaker": "JOHN",
+      "text": "and one fixed payment before you watch the next video. Not personalized",
+      "visual": "fixed_payment",
+      "rationale": "fixed payment stays above falling minimum"
+    },
+    {
+      "beat_id": 92,
+      "start": 334.06,
+      "end": 337.75,
+      "speaker": "JOHN",
+      "text": "personalized financial advice, just a clean starting line. Because the quietest",
+      "visual": "john_explains",
+      "rationale": "John explanation beat"
+    },
+    {
+      "beat_id": 93,
+      "start": 337.75,
+      "end": 341.44,
+      "speaker": "JOHN",
+      "text": "quietest money gap is the one that looks like only twenty-five dollars",
+      "visual": "john_explains",
+      "rationale": "John explanation beat"
+    },
+    {
+      "beat_id": 94,
+      "start": 341.44,
+      "end": 345.13,
+      "speaker": "JOHN",
+      "text": "dollars due today, while tomorrow is quietly billed for the rest.",
+      "visual": "today_tomorrow",
+      "rationale": "small due today bills tomorrow"
+    },
+    {
+      "beat_id": 95,
+      "start": 345.13,
+      "end": 345.88,
+      "speaker": "JOHN",
+      "text": "outro hold",
+      "visual": "write_one_card",
+      "rationale": "audio tail hold"
+    }
+  ]
+}

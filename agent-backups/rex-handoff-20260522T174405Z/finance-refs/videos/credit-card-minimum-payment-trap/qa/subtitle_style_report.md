@@ -1,0 +1,1 @@
+PASS: Subtitle style QA. One-line chunks only, white text with thin black outline, no box/no black background/no highlight; font size 22 and bottom margin 55; timings derived from dialogue segment timings.

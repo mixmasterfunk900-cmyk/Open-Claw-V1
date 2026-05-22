@@ -1,0 +1,7 @@
+{
+  "updated_utc": "2026-05-22T16:58:00Z",
+  "model": "openai/gpt-image-1.5 via OpenClaw image_generate",
+  "note": "Subagent resumed from frame_013. Frames 013-061 were regenerated/saved in this run; frames 062-137 already existed as OpenAI/ChatGPT-generated V5 stick frames and passed integrity. Opening 001-012 are approved proof reuse.",
+  "no_local_placeholders": true,
+  "frame_count": 137
+}

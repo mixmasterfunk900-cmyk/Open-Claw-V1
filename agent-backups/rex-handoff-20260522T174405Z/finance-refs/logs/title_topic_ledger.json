@@ -1,0 +1,59 @@
+{
+  "channel": "Laura & John's Money Gap",
+  "niche": "finance",
+  "purpose": "Prevent repeated topics, titles, stat-bombs, and core angles across Finance videos.",
+  "entries": [
+    {
+      "video_slug": "rent-trap-broke-american-dream",
+      "status": "completed",
+      "selected_topic": "Gen Z rent burden and the rent trap that broke the American Dream",
+      "winning_title": "The Rent Trap That Broke the American Dream",
+      "runner_up_titles": [
+        "Why Rent Feels Impossible Now",
+        "The Bill That Stole Gen Z\u2019s Future",
+        "Rent Isn\u2019t Temporary Anymore"
+      ],
+      "core_angle": "Rent is no longer a temporary launchpad; it is a subscription fee on adulthood that blocks saving before young workers can start.",
+      "stat_bomb": "Redfin ~67% Gen Z struggle with housing payments; StreetEasy 58.2% adult Gen Z renters rent-burdened in 2022.",
+      "created_at": "2026-05-20T18:33:34.939063+00:00",
+      "completed_at": "2026-05-20T18:54:20.627581+00:00",
+      "final_video_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/rent-trap-broke-american-dream/final_video.mp4",
+      "vibe_zone_path": "/root/.openclaw/workspace/vibe-zone/media/exports/rent-trap-broke-american-dream",
+      "drive_status": "partial_fallback_local",
+      "notes": "First Finance run completed locally; Drive tracker uploaded, archive verification rate-limited."
+    },
+    {
+      "video_slug": "credit-card-minimum-payment-trap",
+      "status": "completed_v3_ready_local",
+      "selected_topic": "How credit-card minimum payments turn everyday balances into a long-running interest subscription for younger households.",
+      "winning_title": "The Minimum Payment Trap Is Eating Your Paycheck",
+      "core_angle": "Credit-card minimum payments keep accounts current but can turn ordinary balances into long-running interest subscriptions.",
+      "stat_bomb": "U.S. credit-card balances are trillion-dollar scale while new-card APRs sit in low/mid-20% market range.",
+      "created_at": "",
+      "completed_at": "2026-05-20T22:22:22+00:00",
+      "final_video_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/renders/credit-card-minimum-payment-trap_clean_master.mp4",
+      "vibe_zone_path": "/root/.openclaw/workspace/vibe-zone/media/exports/finance/credit-card-minimum-payment-trap",
+      "drive_status": "archive_attempted",
+      "notes": "V3 hard gates passed locally after image artifact repair; no YouTube upload."
+    },
+    {
+      "video_slug": "car-payment-trap",
+      "status": "script_only_in_progress",
+      "selected_topic": "How long car loans and monthly-payment shopping turn transportation into a paycheck trap for younger households.",
+      "winning_title": "The Car Payment Trap Is Eating Your Paycheck",
+      "runner_up_titles": [
+        "The $700 Payment Nobody Warned You About",
+        "Your Car Loan Has a Finish Line Problem",
+        "The Monthly Payment Trick"
+      ],
+      "core_angle": "Car buyers are trained to ask whether the monthly payment fits, while the real trap is the full loan cost, long term, interest, insurance, negative equity, and the way one car decision can lock up years of cash flow.",
+      "stat_bomb": "Experian reports average monthly payments around the mid-$700s for new vehicles and low/mid-$500s for used vehicles in 2025 context; New York Fed household debt reports put auto-loan balances around the $1.6T scale and track elevated delinquency pressure.",
+      "created_at": "2026-05-21T18:58:04.641311+00:00",
+      "completed_at": null,
+      "final_video_path": null,
+      "vibe_zone_path": null,
+      "drive_status": "not_started",
+      "notes": "SOP script-only step completed; no voice/image/render/upload started."
+    }
+  ]
+}

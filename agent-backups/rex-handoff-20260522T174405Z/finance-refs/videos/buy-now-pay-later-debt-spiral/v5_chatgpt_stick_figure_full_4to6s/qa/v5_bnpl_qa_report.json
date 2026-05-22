@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "runtime_seconds": 690.78,
+  "runtime_gte_480_PASS": true,
+  "frame_count": 120,
+  "visual_beat_duration": 5.756499308333333,
+  "visual_beat_duration_4to6_PASS": true,
+  "john_voice": "am_michael",
+  "laura_voice": "af_bella",
+  "voices_PASS": true,
+  "subtitle_y": 590,
+  "subtitle_y_PASS": true,
+  "openai_frame_provenance_PASS": true,
+  "unique_openai_source_files": 120,
+  "outputs": {
+    "review_mp4": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/renders/buy-now-pay-later-debt-spiral_v5_4to6s_review.mp4",
+    "clean_mp4": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/renders/buy-now-pay-later-debt-spiral_v5_4to6s_clean.mp4",
+    "telegram_low_mp4": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/renders/buy-now-pay-later-debt-spiral_v5_4to6s_telegram_low.mp4",
+    "audio_wav": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/renders/buy-now-pay-later-debt-spiral_v5_voiceover_am_michael_af_bella.wav",
+    "script": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/voiceover_script.txt",
+    "contact_sheet": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/proof/v5_bnpl_contact_sheet.jpg",
+    "beat_manifest": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/v5_bnpl_4to6s_beat_manifest.json",
+    "image_generation_manifest": "/root/.openclaw/workspace/youtube-automation-finance/videos/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s/v5_bnpl_image_generation_manifest.json"
+  },
+  "vibe_zone_destination": "/root/.openclaw/workspace/vibe-zone/media/practice/youtube-automation/finance-content/buy-now-pay-later-debt-spiral/v5_chatgpt_stick_figure_full_4to6s"
+}

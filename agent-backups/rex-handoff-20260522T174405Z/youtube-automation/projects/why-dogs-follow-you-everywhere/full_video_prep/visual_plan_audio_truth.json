@@ -1,0 +1,1036 @@
+{
+  "script": "Why Dogs Follow You Everywhere",
+  "audio_file": "voiceover_drop/why-dogs-follow-you-everywhere-final-voiceover.wav",
+  "alignment_file": "alignment/why-dogs-follow-you-everywhere-final-voiceover.json",
+  "target_frame_count": 114,
+  "audio_duration_seconds": 672.0,
+  "beat_duration_goal_seconds": 5.0,
+  "beats": [
+    {
+      "id": "beat_001",
+      "start_audio_est": 0.0,
+      "end_audio_est": 5.74,
+      "duration_audio_est": 5.74,
+      "frame_filename": "beat_001.png",
+      "narration": "Your dog follows you everywhere, not sometimes, everywhere. You stand up from the sofa",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: sofa-to-kitchen follow moment, dynamic hook composition. Visual should match narration: \"Your dog follows you everywhere, not sometimes, everywhere. You stand up from the sofa\"."
+    },
+    {
+      "id": "beat_002",
+      "start_audio_est": 5.74,
+      "end_audio_est": 11.54,
+      "duration_audio_est": 5.8,
+      "frame_filename": "beat_002.png",
+      "narration": "and the paws start tapping behind you. You walk into the kitchen and suddenly there is a nose",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: bathroom door betrayal with patient dog outside, dynamic hook composition. Visual should match narration: \"and the paws start tapping behind you. You walk into the kitchen and suddenly there is a nose\"."
+    },
+    {
+      "id": "beat_003",
+      "start_audio_est": 11.54,
+      "end_audio_est": 17.34,
+      "duration_audio_est": 5.8,
+      "frame_filename": "beat_003.png",
+      "narration": "at your knee. You go to the bathroom and your dog acts like the door is a personal betrayal.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: secure-base owner/dog room scene, dynamic hook composition. Visual should match narration: \"at your knee. You go to the bathroom and your dog acts like the door is a personal betrayal.\"."
+    },
+    {
+      "id": "beat_004",
+      "start_audio_est": 18.14,
+      "end_audio_est": 24.3,
+      "duration_audio_est": 6.16,
+      "frame_filename": "beat_004.png",
+      "narration": "You turn around in the hallway and they are already there, looking at you as if they have been assigned to",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: dog checking owner face before moving, dynamic hook composition. Visual should match narration: \"You turn around in the hallway and they are already there, looking at you as if they have been assigned to\"."
+    },
+    {
+      "id": "beat_005",
+      "start_audio_est": 24.3,
+      "end_audio_est": 29.24,
+      "duration_audio_est": 4.94,
+      "frame_filename": "beat_005.png",
+      "narration": "your emotional security detail. Most people explain this in one of two ways.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm shadowing in warm hallway, dynamic hook composition. Visual should match narration: \"your emotional security detail. Most people explain this in one of two ways.\"."
+    },
+    {
+      "id": "beat_006",
+      "start_audio_est": 30.08,
+      "end_audio_est": 36.12,
+      "duration_audio_est": 6.04,
+      "frame_filename": "beat_006.png",
+      "narration": "Either they say, my dog just loves me. Or they say, my dog has separation anxiety.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: owner practicing short separation with treat mat, dynamic hook composition. Visual should match narration: \"Either they say, my dog just loves me. Or they say, my dog has separation anxiety.\"."
+    },
+    {
+      "id": "beat_007",
+      "start_audio_est": 36.74,
+      "end_audio_est": 42.04,
+      "duration_audio_est": 5.3,
+      "frame_filename": "beat_007.png",
+      "narration": "And the truth is, either one can be partly true. But both answers are too small.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: sofa-to-kitchen follow moment, dynamic hook composition. Visual should match narration: \"And the truth is, either one can be partly true. But both answers are too small.\"."
+    },
+    {
+      "id": "beat_008",
+      "start_audio_est": 42.44,
+      "end_audio_est": 48.26,
+      "duration_audio_est": 5.82,
+      "frame_filename": "beat_008.png",
+      "narration": "Because a dog following you around the house is not one behavior with one meaning. It is a whole cluster of",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: bathroom door betrayal with patient dog outside, dynamic hook composition. Visual should match narration: \"Because a dog following you around the house is not one behavior with one meaning. It is a whole cluster of\"."
+    },
+    {
+      "id": "beat_009",
+      "start_audio_est": 48.26,
+      "end_audio_est": 52.76,
+      "duration_audio_est": 4.5,
+      "frame_filename": "beat_009.png",
+      "narration": "possible meanings wearing the same little shadow costume. Sometimes it is love.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: secure-base owner/dog room scene. Visual should match narration: \"possible meanings wearing the same little shadow costume. Sometimes it is love.\"."
+    },
+    {
+      "id": "beat_010",
+      "start_audio_est": 53.56,
+      "end_audio_est": 59.34,
+      "duration_audio_est": 5.78,
+      "frame_filename": "beat_010.png",
+      "narration": "Sometimes it is habit. Sometimes it is prediction. Sometimes it is insecurity.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: dog checking owner face before moving. Visual should match narration: \"Sometimes it is habit. Sometimes it is prediction. Sometimes it is insecurity.\"."
+    },
+    {
+      "id": "beat_011",
+      "start_audio_est": 60.38,
+      "end_audio_est": 66.16,
+      "duration_audio_est": 5.78,
+      "frame_filename": "beat_011.png",
+      "narration": "Sometimes it is boredom. Sometimes it is a health change. And sometimes it is a",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm shadowing in warm hallway. Visual should match narration: \"Sometimes it is boredom. Sometimes it is a health change. And sometimes it is a\"."
+    },
+    {
+      "id": "beat_012",
+      "start_audio_est": 66.16,
+      "end_audio_est": 71.88,
+      "duration_audio_est": 5.72,
+      "frame_filename": "beat_012.png",
+      "narration": "dog quietly using you as the safest landmark in the room. Start with the least",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: owner practicing short separation with treat mat. Visual should match narration: \"dog quietly using you as the safest landmark in the room. Start with the least\"."
+    },
+    {
+      "id": "beat_013",
+      "start_audio_est": 71.88,
+      "end_audio_est": 77.8,
+      "duration_audio_est": 5.92,
+      "frame_filename": "beat_013.png",
+      "narration": "magical reason. Your movement matters. A dog's day is built around human signals.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: sofa-to-kitchen follow moment. Visual should match narration: \"magical reason. Your movement matters. A dog's day is built around human signals.\"."
+    },
+    {
+      "id": "beat_014",
+      "start_audio_est": 78.76,
+      "end_audio_est": 84.74,
+      "duration_audio_est": 5.98,
+      "frame_filename": "beat_014.png",
+      "narration": "Your hand goes to a cupboard and food might happen. Your shoes go on and outside might",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: bathroom door betrayal with patient dog outside. Visual should match narration: \"Your hand goes to a cupboard and food might happen. Your shoes go on and outside might\"."
+    },
+    {
+      "id": "beat_015",
+      "start_audio_est": 84.74,
+      "end_audio_est": 90.6,
+      "duration_audio_est": 5.86,
+      "frame_filename": "beat_015.png",
+      "narration": "happen. Your laptop closes and attention might happen. Your keys make a sound",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: secure-base owner/dog room scene. Visual should match narration: \"happen. Your laptop closes and attention might happen. Your keys make a sound\"."
+    },
+    {
+      "id": "beat_016",
+      "start_audio_est": 90.6,
+      "end_audio_est": 96.38,
+      "duration_audio_est": 5.78,
+      "frame_filename": "beat_016.png",
+      "narration": "and the entire emotional weather system of the house might change. Dogs are astonishing",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: dog checking owner face before moving. Visual should match narration: \"and the entire emotional weather system of the house might change. Dogs are astonishing\"."
+    },
+    {
+      "id": "beat_017",
+      "start_audio_est": 96.38,
+      "end_audio_est": 101.04,
+      "duration_audio_est": 4.66,
+      "frame_filename": "beat_017.png",
+      "narration": "pattern readers. They do not need to understand your calendar to learn your rituals.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm shadowing in warm hallway. Visual should match narration: \"pattern readers. They do not need to understand your calendar to learn your rituals.\"."
+    },
+    {
+      "id": "beat_018",
+      "start_audio_est": 101.82,
+      "end_audio_est": 107.36,
+      "duration_audio_est": 5.54,
+      "frame_filename": "beat_018.png",
+      "narration": "They do not need to know the word dinner to know the exact body movement that usually happens before dinner.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: owner practicing short separation with treat mat. Visual should match narration: \"They do not need to know the word dinner to know the exact body movement that usually happens before dinner.\"."
+    },
+    {
+      "id": "beat_019",
+      "start_audio_est": 108.08,
+      "end_audio_est": 112.54,
+      "duration_audio_est": 4.46,
+      "frame_filename": "beat_019.png",
+      "narration": "They do not need a spreadsheet to track that the kitchen has historically been profitable.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: sofa-to-kitchen follow moment. Visual should match narration: \"They do not need a spreadsheet to track that the kitchen has historically been profitable.\"."
+    },
+    {
+      "id": "beat_020",
+      "start_audio_est": 113.24,
+      "end_audio_est": 118.64,
+      "duration_audio_est": 5.4,
+      "frame_filename": "beat_020.png",
+      "narration": "So when your dog follows you into a room, the first explanation may be very practical.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: bathroom door betrayal with patient dog outside. Visual should match narration: \"So when your dog follows you into a room, the first explanation may be very practical.\"."
+    },
+    {
+      "id": "beat_021",
+      "start_audio_est": 119.36,
+      "end_audio_est": 125.2,
+      "duration_audio_est": 5.84,
+      "frame_filename": "beat_021.png",
+      "narration": "They are not saying I cannot survive without you. They may be saying important things happen",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: secure-base owner/dog room scene. Visual should match narration: \"They are not saying I cannot survive without you. They may be saying important things happen\"."
+    },
+    {
+      "id": "beat_022",
+      "start_audio_est": 125.2,
+      "end_audio_est": 131.5,
+      "duration_audio_est": 6.3,
+      "frame_filename": "beat_022.png",
+      "narration": "when this human moves. I should probably attend the meeting. That kind of following is learned and",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: dog checking owner face before moving. Visual should match narration: \"when this human moves. I should probably attend the meeting. That kind of following is learned and\"."
+    },
+    {
+      "id": "beat_023",
+      "start_audio_est": 131.5,
+      "end_audio_est": 137.38,
+      "duration_audio_est": 5.88,
+      "frame_filename": "beat_023.png",
+      "narration": "we reinforce it constantly without noticing. The dog follows. We look down and smile.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm shadowing in warm hallway. Visual should match narration: \"we reinforce it constantly without noticing. The dog follows. We look down and smile.\"."
+    },
+    {
+      "id": "beat_024",
+      "start_audio_est": 138.02,
+      "end_audio_est": 142.88,
+      "duration_audio_est": 4.86,
+      "frame_filename": "beat_024.png",
+      "narration": "The dog follows. We speak to them. The dog follows. We scratch their head.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: owner practicing short separation with treat mat. Visual should match narration: \"The dog follows. We speak to them. The dog follows. We scratch their head.\"."
+    },
+    {
+      "id": "beat_025",
+      "start_audio_est": 143.62,
+      "end_audio_est": 149.2,
+      "duration_audio_est": 5.58,
+      "frame_filename": "beat_025.png",
+      "narration": "The dog follows. Once in a while, we open the fridge, drop a crumb, grab the leash,",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: sofa-to-kitchen follow moment. Visual should match narration: \"The dog follows. Once in a while, we open the fridge, drop a crumb, grab the leash,\"."
+    },
+    {
+      "id": "beat_026",
+      "start_audio_est": 149.42,
+      "end_audio_est": 155.28,
+      "duration_audio_est": 5.86,
+      "frame_filename": "beat_026.png",
+      "narration": "or start a game. From the dog's point of view, following is a low cost behavior with",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: bathroom door betrayal with patient dog outside. Visual should match narration: \"or start a game. From the dog's point of view, following is a low cost behavior with\"."
+    },
+    {
+      "id": "beat_027",
+      "start_audio_est": 155.28,
+      "end_audio_est": 160.12,
+      "duration_audio_est": 4.84,
+      "frame_filename": "beat_027.png",
+      "narration": "a surprisingly good reward history. But the story does not stop at rewards.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: secure-base owner/dog room scene. Visual should match narration: \"a surprisingly good reward history. But the story does not stop at rewards.\"."
+    },
+    {
+      "id": "beat_028",
+      "start_audio_est": 160.9,
+      "end_audio_est": 166.52,
+      "duration_audio_est": 5.62,
+      "frame_filename": "beat_028.png",
+      "narration": "Dogs are social animals. Many were selected for generations to work near humans, watch humans,",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: dog checking owner face before moving. Visual should match narration: \"Dogs are social animals. Many were selected for generations to work near humans, watch humans,\"."
+    },
+    {
+      "id": "beat_029",
+      "start_audio_est": 166.76,
+      "end_audio_est": 172.12,
+      "duration_audio_est": 5.36,
+      "frame_filename": "beat_029.png",
+      "narration": "and respond to human movement. Some breeds are more naturally people focused than others.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm shadowing in warm hallway. Visual should match narration: \"and respond to human movement. Some breeds are more naturally people focused than others.\"."
+    },
+    {
+      "id": "beat_030",
+      "start_audio_est": 172.96,
+      "end_audio_est": 179.06,
+      "duration_audio_est": 6.1,
+      "frame_filename": "beat_030.png",
+      "narration": "Some individual dogs are simply more socially sticky. A dog who wants to be near you is not automatically",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: owner practicing short separation with treat mat. Visual should match narration: \"Some individual dogs are simply more socially sticky. A dog who wants to be near you is not automatically\"."
+    },
+    {
+      "id": "beat_031",
+      "start_audio_est": 179.06,
+      "end_audio_est": 184.48,
+      "duration_audio_est": 5.42,
+      "frame_filename": "beat_031.png",
+      "narration": "broken. Closeness can be a normal part of the bond. The important question is not,",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: sofa-to-kitchen follow moment. Visual should match narration: \"broken. Closeness can be a normal part of the bond. The important question is not,\"."
+    },
+    {
+      "id": "beat_032",
+      "start_audio_est": 184.86,
+      "end_audio_est": 190.72,
+      "duration_audio_est": 5.86,
+      "frame_filename": "beat_032.png",
+      "narration": "does my dog follow me? The important question is, can my dog relax when they cannot",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: bathroom door betrayal with patient dog outside. Visual should match narration: \"does my dog follow me? The important question is, can my dog relax when they cannot\"."
+    },
+    {
+      "id": "beat_033",
+      "start_audio_est": 190.72,
+      "end_audio_est": 196.78,
+      "duration_audio_est": 6.06,
+      "frame_filename": "beat_033.png",
+      "narration": "follow me? That is the line many people miss. A relaxed shadow looks different",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: secure-base owner/dog room scene. Visual should match narration: \"follow me? That is the line many people miss. A relaxed shadow looks different\"."
+    },
+    {
+      "id": "beat_034",
+      "start_audio_est": 196.78,
+      "end_audio_est": 202.92,
+      "duration_audio_est": 6.14,
+      "frame_filename": "beat_034.png",
+      "narration": "from an anxious shadow. A relaxed dog follows with a loose body. They may wag softly.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: dog checking owner face before moving. Visual should match narration: \"from an anxious shadow. A relaxed dog follows with a loose body. They may wag softly.\"."
+    },
+    {
+      "id": "beat_035",
+      "start_audio_est": 203.86,
+      "end_audio_est": 209.92,
+      "duration_audio_est": 6.06,
+      "frame_filename": "beat_035.png",
+      "narration": "They may lie down when you stop. They may choose distance sometimes. If a baby gate separates",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm shadowing in warm hallway. Visual should match narration: \"They may lie down when you stop. They may choose distance sometimes. If a baby gate separates\"."
+    },
+    {
+      "id": "beat_036",
+      "start_audio_est": 209.92,
+      "end_audio_est": 215.72,
+      "duration_audio_est": 5.8,
+      "frame_filename": "beat_036.png",
+      "narration": "you for a minute, they may watch, but they can recover. If you leave the room, they",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: owner practicing short separation with treat mat. Visual should match narration: \"you for a minute, they may watch, but they can recover. If you leave the room, they\"."
+    },
+    {
+      "id": "beat_037",
+      "start_audio_est": 215.72,
+      "end_audio_est": 221.1,
+      "duration_audio_est": 5.38,
+      "frame_filename": "beat_037.png",
+      "narration": "may notice, but the world does not end. That dog may simply prefer your company.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: sofa-to-kitchen follow moment. Visual should match narration: \"may notice, but the world does not end. That dog may simply prefer your company.\"."
+    },
+    {
+      "id": "beat_038",
+      "start_audio_est": 221.98,
+      "end_audio_est": 226.8,
+      "duration_audio_est": 4.82,
+      "frame_filename": "beat_038.png",
+      "narration": "An anxious dog looks different. They cannot settle unless they are touching you.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: bathroom door betrayal with patient dog outside. Visual should match narration: \"An anxious dog looks different. They cannot settle unless they are touching you.\"."
+    },
+    {
+      "id": "beat_039",
+      "start_audio_est": 227.44,
+      "end_audio_est": 233.14,
+      "duration_audio_est": 5.7,
+      "frame_filename": "beat_039.png",
+      "narration": "They spring up every time you shift in your chair. They pace at closed doors. They bark, wine,",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: secure-base owner/dog room scene. Visual should match narration: \"They spring up every time you shift in your chair. They pace at closed doors. They bark, wine,\"."
+    },
+    {
+      "id": "beat_040",
+      "start_audio_est": 233.6,
+      "end_audio_est": 238.82,
+      "duration_audio_est": 5.22,
+      "frame_filename": "beat_040.png",
+      "narration": "drool, shake, scratch, or chew when separated. They may ignore food when alone.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: dog checking owner face before moving. Visual should match narration: \"drool, shake, scratch, or chew when separated. They may ignore food when alone.\"."
+    },
+    {
+      "id": "beat_041",
+      "start_audio_est": 239.48,
+      "end_audio_est": 245.74,
+      "duration_audio_est": 6.26,
+      "frame_filename": "beat_041.png",
+      "narration": "They may panic before you even leave because they have learned the departure pattern. That is not cute clingingness.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm shadowing in warm hallway. Visual should match narration: \"They may panic before you even leave because they have learned the departure pattern. That is not cute clingingness.\"."
+    },
+    {
+      "id": "beat_042",
+      "start_audio_est": 246.24,
+      "end_audio_est": 252.3,
+      "duration_audio_est": 6.06,
+      "frame_filename": "beat_042.png",
+      "narration": "That is distress. And distress needs support. Not a nickname. This is where attachment",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: owner practicing short separation with treat mat. Visual should match narration: \"That is distress. And distress needs support. Not a nickname. This is where attachment\"."
+    },
+    {
+      "id": "beat_043",
+      "start_audio_est": 252.3,
+      "end_audio_est": 258.44,
+      "duration_audio_est": 6.14,
+      "frame_filename": "beat_043.png",
+      "narration": "research helps, but only if we do not oversimplify it. Dogs can form strong attachment",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: sofa-to-kitchen follow moment. Visual should match narration: \"research helps, but only if we do not oversimplify it. Dogs can form strong attachment\"."
+    },
+    {
+      "id": "beat_044",
+      "start_audio_est": 258.44,
+      "end_audio_est": 263.98,
+      "duration_audio_est": 5.54,
+      "frame_filename": "beat_044.png",
+      "narration": "relationships with humans. In some studies, owners appear to function like a secure base.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: bathroom door betrayal with patient dog outside. Visual should match narration: \"relationships with humans. In some studies, owners appear to function like a secure base.\"."
+    },
+    {
+      "id": "beat_045",
+      "start_audio_est": 264.74,
+      "end_audio_est": 270.82,
+      "duration_audio_est": 6.08,
+      "frame_filename": "beat_045.png",
+      "narration": "That means the person is not only a source of treats. The person can make exploration feel safer.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: secure-base owner/dog room scene. Visual should match narration: \"That means the person is not only a source of treats. The person can make exploration feel safer.\"."
+    },
+    {
+      "id": "beat_046",
+      "start_audio_est": 271.2,
+      "end_audio_est": 277.0,
+      "duration_audio_est": 5.8,
+      "frame_filename": "beat_046.png",
+      "narration": "A dog may check where their owner is before approaching something unfamiliar. They may work more confidently",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: dog checking owner face before moving. Visual should match narration: \"A dog may check where their owner is before approaching something unfamiliar. They may work more confidently\"."
+    },
+    {
+      "id": "beat_047",
+      "start_audio_est": 277.0,
+      "end_audio_est": 281.88,
+      "duration_audio_est": 4.88,
+      "frame_filename": "beat_047.png",
+      "narration": "when their person is present. They may use the human as a reference point for what the room means.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm shadowing in warm hallway. Visual should match narration: \"when their person is present. They may use the human as a reference point for what the room means.\"."
+    },
+    {
+      "id": "beat_048",
+      "start_audio_est": 282.86,
+      "end_audio_est": 287.88,
+      "duration_audio_est": 5.02,
+      "frame_filename": "beat_048.png",
+      "narration": "So your dog following you may sometimes be less like obsession and more like orientation.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: owner practicing short separation with treat mat. Visual should match narration: \"So your dog following you may sometimes be less like obsession and more like orientation.\"."
+    },
+    {
+      "id": "beat_049",
+      "start_audio_est": 288.74,
+      "end_audio_est": 294.1,
+      "duration_audio_est": 5.36,
+      "frame_filename": "beat_049.png",
+      "narration": "You are the moving home base. You are the familiar signal in a noisy world.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: sofa-to-kitchen follow moment. Visual should match narration: \"You are the moving home base. You are the familiar signal in a noisy world.\"."
+    },
+    {
+      "id": "beat_050",
+      "start_audio_est": 294.88,
+      "end_audio_est": 300.16,
+      "duration_audio_est": 5.28,
+      "frame_filename": "beat_050.png",
+      "narration": "You are the creature who opens doors, explains routines, changes emotional tone,",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: bathroom door betrayal with patient dog outside. Visual should match narration: \"You are the creature who opens doors, explains routines, changes emotional tone,\"."
+    },
+    {
+      "id": "beat_051",
+      "start_audio_est": 300.42,
+      "end_audio_est": 305.1,
+      "duration_audio_est": 4.68,
+      "frame_filename": "beat_051.png",
+      "narration": "and gives the room its meaning. Imagine the house from your dog's point of view.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: secure-base owner/dog room scene. Visual should match narration: \"and gives the room its meaning. Imagine the house from your dog's point of view.\"."
+    },
+    {
+      "id": "beat_052",
+      "start_audio_est": 305.74,
+      "end_audio_est": 311.54,
+      "duration_audio_est": 5.8,
+      "frame_filename": "beat_052.png",
+      "narration": "They do not understand rent. They do not understand work calls. They do not understand why one",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: dog checking owner face before moving. Visual should match narration: \"They do not understand rent. They do not understand work calls. They do not understand why one\"."
+    },
+    {
+      "id": "beat_053",
+      "start_audio_est": 311.54,
+      "end_audio_est": 317.32,
+      "duration_audio_est": 5.78,
+      "frame_filename": "beat_053.png",
+      "narration": "phone notification makes your shoulders rise and another one makes you laugh. But they can notice",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm shadowing in warm hallway. Visual should match narration: \"phone notification makes your shoulders rise and another one makes you laugh. But they can notice\"."
+    },
+    {
+      "id": "beat_054",
+      "start_audio_est": 317.32,
+      "end_audio_est": 322.72,
+      "duration_audio_est": 5.4,
+      "frame_filename": "beat_054.png",
+      "narration": "the shift. They can notice your breathing. They can notice whether your voice is warm or flat.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: owner practicing short separation with treat mat. Visual should match narration: \"the shift. They can notice your breathing. They can notice whether your voice is warm or flat.\"."
+    },
+    {
+      "id": "beat_055",
+      "start_audio_est": 323.42,
+      "end_audio_est": 327.74,
+      "duration_audio_est": 4.32,
+      "frame_filename": "beat_055.png",
+      "narration": "They can notice whether the room feels normal or strange. So they follow.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: sofa-to-kitchen follow moment. Visual should match narration: \"They can notice whether the room feels normal or strange. So they follow.\"."
+    },
+    {
+      "id": "beat_056",
+      "start_audio_est": 328.38,
+      "end_audio_est": 334.1,
+      "duration_audio_est": 5.72,
+      "frame_filename": "beat_056.png",
+      "narration": "Not always to demand something. Sometimes to gather information. Sometimes to stay",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: bathroom door betrayal with patient dog outside. Visual should match narration: \"Not always to demand something. Sometimes to gather information. Sometimes to stay\"."
+    },
+    {
+      "id": "beat_057",
+      "start_audio_est": 334.1,
+      "end_audio_est": 339.34,
+      "duration_audio_est": 5.24,
+      "frame_filename": "beat_057.png",
+      "narration": "attached to the safest signal they know. But there is another reason following can increase.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: secure-base owner/dog room scene. Visual should match narration: \"attached to the safest signal they know. But there is another reason following can increase.\"."
+    },
+    {
+      "id": "beat_058",
+      "start_audio_est": 339.98,
+      "end_audio_est": 345.78,
+      "duration_audio_est": 5.8,
+      "frame_filename": "beat_058.png",
+      "narration": "And this one owners often miss. Change. A puppy may follow because the",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: dog checking owner face before moving. Visual should match narration: \"And this one owners often miss. Change. A puppy may follow because the\"."
+    },
+    {
+      "id": "beat_059",
+      "start_audio_est": 345.78,
+      "end_audio_est": 351.68,
+      "duration_audio_est": 5.9,
+      "frame_filename": "beat_059.png",
+      "narration": "world is huge and you are the map. A newly adopted dog may follow because they",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm shadowing in warm hallway. Visual should match narration: \"world is huge and you are the map. A newly adopted dog may follow because they\"."
+    },
+    {
+      "id": "beat_060",
+      "start_audio_est": 351.68,
+      "end_audio_est": 357.36,
+      "duration_audio_est": 5.68,
+      "frame_filename": "beat_060.png",
+      "narration": "do not yet trust the house. A dog after a move may follow because the old landmarks disappeared.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: owner practicing short separation with treat mat. Visual should match narration: \"do not yet trust the house. A dog after a move may follow because the old landmarks disappeared.\"."
+    },
+    {
+      "id": "beat_061",
+      "start_audio_est": 358.16,
+      "end_audio_est": 363.98,
+      "duration_audio_est": 5.82,
+      "frame_filename": "beat_061.png",
+      "narration": "A dog after a baby arrives, a schedule changes or people start leaving. More often may follow",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: sofa-to-kitchen follow moment. Visual should match narration: \"A dog after a baby arrives, a schedule changes or people start leaving. More often may follow\"."
+    },
+    {
+      "id": "beat_062",
+      "start_audio_est": 363.98,
+      "end_audio_est": 370.04,
+      "duration_audio_est": 6.06,
+      "frame_filename": "beat_062.png",
+      "narration": "because the rules of the home became less predictable. And an older dog who suddenly starts shadowing",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: bathroom door betrayal with patient dog outside. Visual should match narration: \"because the rules of the home became less predictable. And an older dog who suddenly starts shadowing\"."
+    },
+    {
+      "id": "beat_063",
+      "start_audio_est": 370.04,
+      "end_audio_est": 374.46,
+      "duration_audio_est": 4.42,
+      "frame_filename": "beat_063.png",
+      "narration": "you may not be making an emotional statement at all. They may be losing hearing.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: secure-base owner/dog room scene. Visual should match narration: \"you may not be making an emotional statement at all. They may be losing hearing.\"."
+    },
+    {
+      "id": "beat_064",
+      "start_audio_est": 374.96,
+      "end_audio_est": 379.32,
+      "duration_audio_est": 4.36,
+      "frame_filename": "beat_064.png",
+      "narration": "They may be losing vision. They may be in pain. They may be confused.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: dog checking owner face before moving. Visual should match narration: \"They may be losing vision. They may be in pain. They may be confused.\"."
+    },
+    {
+      "id": "beat_065",
+      "start_audio_est": 379.9,
+      "end_audio_est": 385.92,
+      "duration_audio_est": 6.02,
+      "frame_filename": "beat_065.png",
+      "narration": "They may be less confident navigating the house alone. A sudden change in following deserves curiosity",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm shadowing in warm hallway. Visual should match narration: \"They may be less confident navigating the house alone. A sudden change in following deserves curiosity\"."
+    },
+    {
+      "id": "beat_066",
+      "start_audio_est": 385.92,
+      "end_audio_est": 392.06,
+      "duration_audio_est": 6.14,
+      "frame_filename": "beat_066.png",
+      "narration": "before interpretation. Do not just say that is adorable. Ask what changed.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: owner practicing short separation with treat mat. Visual should match narration: \"before interpretation. Do not just say that is adorable. Ask what changed.\"."
+    },
+    {
+      "id": "beat_067",
+      "start_audio_est": 392.58,
+      "end_audio_est": 396.94,
+      "duration_audio_est": 4.36,
+      "frame_filename": "beat_067.png",
+      "narration": "When did it start? What else is different? Can the dog still rest?",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: sofa-to-kitchen follow moment. Visual should match narration: \"When did it start? What else is different? Can the dog still rest?\"."
+    },
+    {
+      "id": "beat_068",
+      "start_audio_est": 397.74,
+      "end_audio_est": 403.92,
+      "duration_audio_est": 6.18,
+      "frame_filename": "beat_068.png",
+      "narration": "Can the dog still eat? Can the dog still sleep away from me? Is the behavior flexible or",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: bathroom door betrayal with patient dog outside. Visual should match narration: \"Can the dog still eat? Can the dog still sleep away from me? Is the behavior flexible or\"."
+    },
+    {
+      "id": "beat_069",
+      "start_audio_est": 403.92,
+      "end_audio_est": 409.78,
+      "duration_audio_est": 5.86,
+      "frame_filename": "beat_069.png",
+      "narration": "does it look compulsive? That word flexible is the key. Healthy attachment",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: secure-base owner/dog room scene. Visual should match narration: \"does it look compulsive? That word flexible is the key. Healthy attachment\"."
+    },
+    {
+      "id": "beat_070",
+      "start_audio_est": 409.78,
+      "end_audio_est": 414.8,
+      "duration_audio_est": 5.02,
+      "frame_filename": "beat_070.png",
+      "narration": "has flexibility. The dog enjoys closeness but can choose distance.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: dog checking owner face before moving. Visual should match narration: \"has flexibility. The dog enjoys closeness but can choose distance.\"."
+    },
+    {
+      "id": "beat_071",
+      "start_audio_est": 415.84,
+      "end_audio_est": 421.98,
+      "duration_audio_est": 6.14,
+      "frame_filename": "beat_071.png",
+      "narration": "The dog prefers you but can recover without you. The dog notices separation but",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm shadowing in warm hallway. Visual should match narration: \"The dog prefers you but can recover without you. The dog notices separation but\"."
+    },
+    {
+      "id": "beat_072",
+      "start_audio_est": 421.98,
+      "end_audio_est": 426.42,
+      "duration_audio_est": 4.44,
+      "frame_filename": "beat_072.png",
+      "narration": "does not collapse under it. Anxious attachment has no flexibility.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: owner practicing short separation with treat mat. Visual should match narration: \"does not collapse under it. Anxious attachment has no flexibility.\"."
+    },
+    {
+      "id": "beat_073",
+      "start_audio_est": 427.14,
+      "end_audio_est": 432.9,
+      "duration_audio_est": 5.76,
+      "frame_filename": "beat_073.png",
+      "narration": "The dog is not choosing closeness anymore. The dog is chasing safety. So what do you do if your",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: sofa-to-kitchen follow moment. Visual should match narration: \"The dog is not choosing closeness anymore. The dog is chasing safety. So what do you do if your\"."
+    },
+    {
+      "id": "beat_074",
+      "start_audio_est": 432.9,
+      "end_audio_est": 437.3,
+      "duration_audio_est": 4.4,
+      "frame_filename": "beat_074.png",
+      "narration": "dog follows you everywhere? First, stop making it a moral issue.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: bathroom door betrayal with patient dog outside. Visual should match narration: \"dog follows you everywhere? First, stop making it a moral issue.\"."
+    },
+    {
+      "id": "beat_075",
+      "start_audio_est": 438.04,
+      "end_audio_est": 443.78,
+      "duration_audio_est": 5.74,
+      "frame_filename": "beat_075.png",
+      "narration": "Your dog is not being needy to annoy you. Your dog is not trying to dominate you by walking into the bathroom.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: secure-base owner/dog room scene. Visual should match narration: \"Your dog is not being needy to annoy you. Your dog is not trying to dominate you by walking into the bathroom.\"."
+    },
+    {
+      "id": "beat_076",
+      "start_audio_est": 444.56,
+      "end_audio_est": 449.38,
+      "duration_audio_est": 4.82,
+      "frame_filename": "beat_076.png",
+      "narration": "Your dog is communicating a need, a habit, a prediction, or a feeling.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: dog checking owner face before moving. Visual should match narration: \"Your dog is communicating a need, a habit, a prediction, or a feeling.\"."
+    },
+    {
+      "id": "beat_077",
+      "start_audio_est": 450.04,
+      "end_audio_est": 456.02,
+      "duration_audio_est": 5.98,
+      "frame_filename": "beat_077.png",
+      "narration": "Second, look at the body. Loose face or tight face. Soft movement",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm shadowing in warm hallway. Visual should match narration: \"Second, look at the body. Loose face or tight face. Soft movement\"."
+    },
+    {
+      "id": "beat_078",
+      "start_audio_est": 456.02,
+      "end_audio_est": 461.38,
+      "duration_audio_est": 5.36,
+      "frame_filename": "beat_078.png",
+      "narration": "or frantic movement. Can they settle when you stop? Can they disengage?",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: owner practicing short separation with treat mat. Visual should match narration: \"or frantic movement. Can they settle when you stop? Can they disengage?\"."
+    },
+    {
+      "id": "beat_079",
+      "start_audio_est": 462.28,
+      "end_audio_est": 467.02,
+      "duration_audio_est": 4.74,
+      "frame_filename": "beat_079.png",
+      "narration": "What happens if a door closes for 30 seconds? Third, look at the pattern.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: sofa-to-kitchen follow moment. Visual should match narration: \"What happens if a door closes for 30 seconds? Third, look at the pattern.\"."
+    },
+    {
+      "id": "beat_080",
+      "start_audio_est": 467.86,
+      "end_audio_est": 472.62,
+      "duration_audio_est": 4.76,
+      "frame_filename": "beat_080.png",
+      "narration": "Does it happen around food times? Before walks? After long boring periods?",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: bathroom door betrayal with patient dog outside. Visual should match narration: \"Does it happen around food times? Before walks? After long boring periods?\"."
+    },
+    {
+      "id": "beat_081",
+      "start_audio_est": 473.18,
+      "end_audio_est": 478.28,
+      "duration_audio_est": 5.1,
+      "frame_filename": "beat_081.png",
+      "narration": "During storms or noises? Only with one person? Only after schedule changes?",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: secure-base owner/dog room scene. Visual should match narration: \"During storms or noises? Only with one person? Only after schedule changes?\"."
+    },
+    {
+      "id": "beat_082",
+      "start_audio_est": 479.08,
+      "end_audio_est": 485.24,
+      "duration_audio_est": 6.16,
+      "frame_filename": "beat_082.png",
+      "narration": "Only recently? The trigger tells you more than the behavior alone. Fourth, build independence",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: dog checking owner face before moving. Visual should match narration: \"Only recently? The trigger tells you more than the behavior alone. Fourth, build independence\"."
+    },
+    {
+      "id": "beat_083",
+      "start_audio_est": 485.24,
+      "end_audio_est": 490.98,
+      "duration_audio_est": 5.74,
+      "frame_filename": "beat_083.png",
+      "narration": "without punishing love. That means tiny, boring practice. Reward calm on",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm shadowing in warm hallway. Visual should match narration: \"without punishing love. That means tiny, boring practice. Reward calm on\"."
+    },
+    {
+      "id": "beat_084",
+      "start_audio_est": 490.98,
+      "end_audio_est": 496.2,
+      "duration_audio_est": 5.22,
+      "frame_filename": "beat_084.png",
+      "narration": "a mat while you move one step away. Give a safe chew before you leave the room.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: owner practicing short separation with treat mat. Visual should match narration: \"a mat while you move one step away. Give a safe chew before you leave the room.\"."
+    },
+    {
+      "id": "beat_085",
+      "start_audio_est": 497.18,
+      "end_audio_est": 502.26,
+      "duration_audio_est": 5.08,
+      "frame_filename": "beat_085.png",
+      "narration": "Practice short separations that end before panic starts. Make departures less dramatic.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: sofa-to-kitchen follow moment. Visual should match narration: \"Practice short separations that end before panic starts. Make departures less dramatic.\"."
+    },
+    {
+      "id": "beat_086",
+      "start_audio_est": 503.2,
+      "end_audio_est": 507.98,
+      "duration_audio_est": 4.78,
+      "frame_filename": "beat_086.png",
+      "narration": "Make returns calm. Let the dog learn that distance does not mean disappearance.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: bathroom door betrayal with patient dog outside. Visual should match narration: \"Make returns calm. Let the dog learn that distance does not mean disappearance.\"."
+    },
+    {
+      "id": "beat_087",
+      "start_audio_est": 508.84,
+      "end_audio_est": 513.44,
+      "duration_audio_est": 4.6,
+      "frame_filename": "beat_087.png",
+      "narration": "And if your dog is panicking, get help from a vet or qualified behavior professional.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: secure-base owner/dog room scene. Visual should match narration: \"And if your dog is panicking, get help from a vet or qualified behavior professional.\"."
+    },
+    {
+      "id": "beat_088",
+      "start_audio_est": 514.06,
+      "end_audio_est": 518.28,
+      "duration_audio_est": 4.22,
+      "frame_filename": "beat_088.png",
+      "narration": "Because true separation distress is not fixed by telling a dog to get over it.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: dog checking owner face before moving. Visual should match narration: \"Because true separation distress is not fixed by telling a dog to get over it.\"."
+    },
+    {
+      "id": "beat_089",
+      "start_audio_est": 518.86,
+      "end_audio_est": 524.6,
+      "duration_audio_est": 5.74,
+      "frame_filename": "beat_089.png",
+      "narration": "It is treated carefully, gradually and sometimes medically. The mistake is thinking the shadow",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm shadowing in warm hallway. Visual should match narration: \"It is treated carefully, gradually and sometimes medically. The mistake is thinking the shadow\"."
+    },
+    {
+      "id": "beat_090",
+      "start_audio_est": 524.6,
+      "end_audio_est": 528.98,
+      "duration_audio_est": 4.38,
+      "frame_filename": "beat_090.png",
+      "narration": "itself is the whole story. It is not. The shadow is a clue.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: owner practicing short separation with treat mat. Visual should match narration: \"itself is the whole story. It is not. The shadow is a clue.\"."
+    },
+    {
+      "id": "beat_091",
+      "start_audio_est": 530.04,
+      "end_audio_est": 536.16,
+      "duration_audio_est": 6.12,
+      "frame_filename": "beat_091.png",
+      "narration": "Your dog may follow because you are exciting, because you are useful, because you are safe, because",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: sofa-to-kitchen follow moment. Visual should match narration: \"Your dog may follow because you are exciting, because you are useful, because you are safe, because\"."
+    },
+    {
+      "id": "beat_092",
+      "start_audio_est": 536.16,
+      "end_audio_est": 542.04,
+      "duration_audio_est": 5.88,
+      "frame_filename": "beat_092.png",
+      "narration": "the kitchen pays dividends, because the house changed, because their body changed, because",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: bathroom door betrayal with patient dog outside. Visual should match narration: \"the kitchen pays dividends, because the house changed, because their body changed, because\"."
+    },
+    {
+      "id": "beat_093",
+      "start_audio_est": 542.04,
+      "end_audio_est": 547.8,
+      "duration_audio_est": 5.76,
+      "frame_filename": "beat_093.png",
+      "narration": "being away from you is genuinely hard. There is one practical test I would give almost every",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: secure-base owner/dog room scene. Visual should match narration: \"being away from you is genuinely hard. There is one practical test I would give almost every\"."
+    },
+    {
+      "id": "beat_094",
+      "start_audio_est": 547.8,
+      "end_audio_est": 553.7,
+      "duration_audio_est": 5.9,
+      "frame_filename": "beat_094.png",
+      "narration": "owner. Create a tiny separation that is too easy to fail, not leaving the house for",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: dog checking owner face before moving. Visual should match narration: \"owner. Create a tiny separation that is too easy to fail, not leaving the house for\"."
+    },
+    {
+      "id": "beat_095",
+      "start_audio_est": 553.7,
+      "end_audio_est": 558.3,
+      "duration_audio_est": 4.6,
+      "frame_filename": "beat_095.png",
+      "narration": "an hour, not closing the door and waiting for barking. Something smaller?",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm shadowing in warm hallway. Visual should match narration: \"an hour, not closing the door and waiting for barking. Something smaller?\"."
+    },
+    {
+      "id": "beat_096",
+      "start_audio_est": 559.1,
+      "end_audio_est": 564.94,
+      "duration_audio_est": 5.84,
+      "frame_filename": "beat_096.png",
+      "narration": "Step over a baby gate for three seconds while your dog has a chew. Walk to the other side of the room and come",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: owner practicing short separation with treat mat. Visual should match narration: \"Step over a baby gate for three seconds while your dog has a chew. Walk to the other side of the room and come\"."
+    },
+    {
+      "id": "beat_097",
+      "start_audio_est": 564.94,
+      "end_audio_est": 569.8,
+      "duration_audio_est": 4.86,
+      "frame_filename": "beat_097.png",
+      "narration": "back before they panic. Close a door for one breath, then reopen it calmly.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: sofa-to-kitchen follow moment. Visual should match narration: \"back before they panic. Close a door for one breath, then reopen it calmly.\"."
+    },
+    {
+      "id": "beat_098",
+      "start_audio_est": 570.54,
+      "end_audio_est": 576.26,
+      "duration_audio_est": 5.72,
+      "frame_filename": "beat_098.png",
+      "narration": "If the dog can handle that, build slowly. If they cannot, you have learned something",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: bathroom door betrayal with patient dog outside. Visual should match narration: \"If the dog can handle that, build slowly. If they cannot, you have learned something\"."
+    },
+    {
+      "id": "beat_099",
+      "start_audio_est": 576.26,
+      "end_audio_est": 580.9,
+      "duration_audio_est": 4.64,
+      "frame_filename": "beat_099.png",
+      "narration": "important without flooding them. The goal is not to prove your dog is fine.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: secure-base owner/dog room scene. Visual should match narration: \"important without flooding them. The goal is not to prove your dog is fine.\"."
+    },
+    {
+      "id": "beat_100",
+      "start_audio_est": 581.62,
+      "end_audio_est": 587.5,
+      "duration_audio_est": 5.88,
+      "frame_filename": "beat_100.png",
+      "narration": "The goal is to find the distance where your dog can still think. Training only works there.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: dog checking owner face before moving. Visual should match narration: \"The goal is to find the distance where your dog can still think. Training only works there.\"."
+    },
+    {
+      "id": "beat_101",
+      "start_audio_est": 588.38,
+      "end_audio_est": 594.22,
+      "duration_audio_est": 5.84,
+      "frame_filename": "beat_101.png",
+      "narration": "Once panic starts, the lesson is usually gone. That is why robust independence is built",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm shadowing in warm hallway. Visual should match narration: \"Once panic starts, the lesson is usually gone. That is why robust independence is built\"."
+    },
+    {
+      "id": "beat_102",
+      "start_audio_est": 594.22,
+      "end_audio_est": 600.18,
+      "duration_audio_est": 5.96,
+      "frame_filename": "beat_102.png",
+      "narration": "in tiny repetitions, not dramatic tests. And it is why owners should not feel embarrassed",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: owner practicing short separation with treat mat. Visual should match narration: \"in tiny repetitions, not dramatic tests. And it is why owners should not feel embarrassed\"."
+    },
+    {
+      "id": "beat_103",
+      "start_audio_est": 600.18,
+      "end_audio_est": 605.42,
+      "duration_audio_est": 5.24,
+      "frame_filename": "beat_103.png",
+      "narration": "if the answer is, my dog needs help. Needing help is not a character flaw.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: sofa-to-kitchen follow moment. Visual should match narration: \"if the answer is, my dog needs help. Needing help is not a character flaw.\"."
+    },
+    {
+      "id": "beat_104",
+      "start_audio_est": 606.0,
+      "end_audio_est": 611.88,
+      "duration_audio_est": 5.88,
+      "frame_filename": "beat_104.png",
+      "narration": "It is information. So the next time your dog appears behind you for the 10th time that morning, do not",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: bathroom door betrayal with patient dog outside. Visual should match narration: \"It is information. So the next time your dog appears behind you for the 10th time that morning, do not\"."
+    },
+    {
+      "id": "beat_105",
+      "start_audio_est": 611.88,
+      "end_audio_est": 618.14,
+      "duration_audio_est": 6.26,
+      "frame_filename": "beat_105.png",
+      "narration": "just ask, why are you so clingy? Ask the better question. Are you relaxed or",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: secure-base owner/dog room scene. Visual should match narration: \"just ask, why are you so clingy? Ask the better question. Are you relaxed or\"."
+    },
+    {
+      "id": "beat_106",
+      "start_audio_est": 618.14,
+      "end_audio_est": 623.86,
+      "duration_audio_est": 5.72,
+      "frame_filename": "beat_106.png",
+      "narration": "are you worried? Are you choosing me or chasing safety? Are you following love,",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: dog checking owner face before moving. Visual should match narration: \"are you worried? Are you choosing me or chasing safety? Are you following love,\"."
+    },
+    {
+      "id": "beat_107",
+      "start_audio_est": 624.34,
+      "end_audio_est": 630.28,
+      "duration_audio_est": 5.94,
+      "frame_filename": "beat_107.png",
+      "narration": "habit, routine or fear? Because the same small shadow can mean very different things.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm shadowing in warm hallway. Visual should match narration: \"habit, routine or fear? Because the same small shadow can mean very different things.\"."
+    },
+    {
+      "id": "beat_108",
+      "start_audio_est": 630.86,
+      "end_audio_est": 636.24,
+      "duration_audio_est": 5.38,
+      "frame_filename": "beat_108.png",
+      "narration": "And once you know which shadow you are looking at, you can respond with something better than a joke.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: owner practicing short separation with treat mat. Visual should match narration: \"And once you know which shadow you are looking at, you can respond with something better than a joke.\"."
+    },
+    {
+      "id": "beat_109",
+      "start_audio_est": 636.88,
+      "end_audio_est": 642.96,
+      "duration_audio_est": 6.08,
+      "frame_filename": "beat_109.png",
+      "narration": "You can respond with understanding. And in the next video, we are going from the quiet shadow to",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: sofa-to-kitchen follow moment. Visual should match narration: \"You can respond with understanding. And in the next video, we are going from the quiet shadow to\"."
+    },
+    {
+      "id": "beat_110",
+      "start_audio_est": 642.96,
+      "end_audio_est": 649.04,
+      "duration_audio_est": 6.08,
+      "frame_filename": "beat_110.png",
+      "narration": "the total opposite. The moment your dog suddenly explodes across the room for no obvious",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: bathroom door betrayal with patient dog outside. Visual should match narration: \"the total opposite. The moment your dog suddenly explodes across the room for no obvious\"."
+    },
+    {
+      "id": "beat_111",
+      "start_audio_est": 649.04,
+      "end_audio_est": 654.96,
+      "duration_audio_est": 5.92,
+      "frame_filename": "beat_111.png",
+      "narration": "reason. The zoomies. Because if following tells us how dogs use closeness",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: secure-base owner/dog room scene. Visual should match narration: \"reason. The zoomies. Because if following tells us how dogs use closeness\"."
+    },
+    {
+      "id": "beat_112",
+      "start_audio_est": 654.96,
+      "end_audio_est": 661.14,
+      "duration_audio_est": 6.18,
+      "frame_filename": "beat_112.png",
+      "narration": "and safety, zoomies tell us what happens when energy, excitement, stress or relief has",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: dog checking owner face before moving. Visual should match narration: \"and safety, zoomies tell us what happens when energy, excitement, stress or relief has\"."
+    },
+    {
+      "id": "beat_113",
+      "start_audio_est": 661.14,
+      "end_audio_est": 666.82,
+      "duration_audio_est": 5.68,
+      "frame_filename": "beat_113.png",
+      "narration": "nowhere else to go. So next, we are going to break down why dogs get zoomies,",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm shadowing in warm hallway. Visual should match narration: \"nowhere else to go. So next, we are going to break down why dogs get zoomies,\"."
+    },
+    {
+      "id": "beat_114",
+      "start_audio_est": 667.24,
+      "end_audio_est": 672.0,
+      "duration_audio_est": 4.76,
+      "frame_filename": "beat_114.png",
+      "narration": "what fraps actually are, and how to tell joyful chaos from a dog who is overwhelmed.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: owner practicing short separation with treat mat. Visual should match narration: \"what fraps actually are, and how to tell joyful chaos from a dog who is overwhelmed.\"."
+    }
+  ]
+}

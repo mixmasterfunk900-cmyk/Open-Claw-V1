@@ -1,0 +1,2 @@
+slug,status,video_ready_local,vibe_zone_ready,drive_archive,sheets_tracker
+car-payment-trap,PASS,True,True,not_attempted,fallback_local

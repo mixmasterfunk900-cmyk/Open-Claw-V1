@@ -1,0 +1,9 @@
+{
+  "provider": "openai/gpt-image-2",
+  "source": "OpenClaw image_generate tool",
+  "project": "the-experiment-where-children-were-taught-to-fear",
+  "count": 4,
+  "sop": "The Experiment Channel Thumbnail SOP",
+  "style": "Authority vs Subject / hollow-eyed toddler / sparse melancholic doodle",
+  "placeholder": false
+}

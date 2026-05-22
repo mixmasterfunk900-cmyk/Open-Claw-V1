@@ -1,0 +1,16 @@
+{
+  "agents": [
+    "Director",
+    "Manager",
+    "Topic Discovery A/B",
+    "Duplicate Ledger",
+    "Research",
+    "Scripter",
+    "Voice Casting",
+    "TTS",
+    "Image Prompt Planner",
+    "Assembler",
+    "QA",
+    "Archive"
+  ]
+}

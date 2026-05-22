@@ -1,0 +1,1198 @@
+{
+  "script": "Why Your Dog Stares At You From Across The Room",
+  "target_frame_count": 132,
+  "audio_file": "voiceover_drop/dog-staring-final-voiceover.wav",
+  "audio_duration_seconds": 695.602018,
+  "beat_duration_goal_seconds": 5.27,
+  "beats": [
+    {
+      "id": "beat_001",
+      "start_audio_est": 0.0,
+      "end_audio_est": 3.921,
+      "duration_audio_est": 3.921,
+      "frame_filename": "beat_001.png",
+      "narration": "Your dog is staring at you from across the room.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: wide hallway-to-living-room view, dog staring from distance while owner works at laptop. Visual should match narration: \"Your dog is staring at you from across the room.\"."
+    },
+    {
+      "id": "beat_002",
+      "start_audio_est": 3.921,
+      "end_audio_est": 8.234,
+      "duration_audio_est": 4.313,
+      "frame_filename": "beat_002.png",
+      "narration": "Not barking. Not moving. Just watching. Maybe you are making coffee.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: extreme close-up of calm dog eyes reflecting warm room light and owner silhouette. Visual should match narration: \"Not barking. Not moving. Just watching. Maybe you are making coffee.\"."
+    },
+    {
+      "id": "beat_003",
+      "start_audio_est": 8.234,
+      "end_audio_est": 11.872,
+      "duration_audio_est": 3.638,
+      "frame_filename": "beat_003.png",
+      "narration": "Maybe you are working at a laptop.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: kitchen/fridge routine scene, dog watching from floor with quiet anticipation. Visual should match narration: \"Maybe you are working at a laptop.\"."
+    },
+    {
+      "id": "beat_004",
+      "start_audio_est": 11.872,
+      "end_audio_est": 19.149,
+      "duration_audio_est": 7.277,
+      "frame_filename": "beat_004.png",
+      "narration": "Maybe you looked up from your phone and caught those eyes already fixed on you, as if your dog had been waiting for you to notice.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: owner pauses with phone while dog watches from rug, warm awkward discovery moment. Visual should match narration: \"Maybe you looked up from your phone and caught those eyes already fixed on you, as if your dog had been waiting for you to notice.\"."
+    },
+    {
+      "id": "beat_005",
+      "start_audio_est": 19.149,
+      "end_audio_est": 23.462,
+      "duration_audio_est": 4.313,
+      "frame_filename": "beat_005.png",
+      "narration": "Most people laugh it off. They say, \u201cMy dog is weird.\u201d",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: empty doorway and still dog posture, quiet across-the-room stare. Visual should match narration: \"Most people laugh it off. They say, \u201cMy dog is weird.\u201d\"."
+    },
+    {
+      "id": "beat_006",
+      "start_audio_est": 23.462,
+      "end_audio_est": 30.128,
+      "duration_audio_est": 6.666,
+      "frame_filename": "beat_006.png",
+      "narration": "Or, \u201cThey want food.\u201d Or, \u201cThey are judging me.\u201d And sometimes, honestly, food is exactly the answer.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: dog body language study: soft eyes, loose ears, relaxed mouth, no tension. Visual should match narration: \"Or, \u201cThey want food.\u201d Or, \u201cThey are judging me.\u201d And sometimes, honestly, food is exactly the answer.\"."
+    },
+    {
+      "id": "beat_007",
+      "start_audio_est": 30.128,
+      "end_audio_est": 33.766,
+      "duration_audio_est": 3.638,
+      "frame_filename": "beat_007.png",
+      "narration": "Dogs learn routines very quickly.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: owner making coffee while dog watches from threshold, normal household ritual. Visual should match narration: \"Dogs learn routines very quickly.\"."
+    },
+    {
+      "id": "beat_008",
+      "start_audio_est": 33.766,
+      "end_audio_est": 41.043,
+      "duration_audio_est": 7.277,
+      "frame_filename": "beat_008.png",
+      "narration": "If you usually stand up before dinner, pick up keys before a walk, or open one cupboard before treats appear, your dog may stare because your body has become a weather forecast.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: dog near treat cupboard but not cartoonish, routine prediction visual. Visual should match narration: \"If you usually stand up before dinner, pick up keys before a walk, or open one cupboard before treats appear, your dog may stare because your body has become a weather forecast.\"."
+    },
+    {
+      "id": "beat_009",
+      "start_audio_est": 41.043,
+      "end_audio_est": 46.532,
+      "duration_audio_est": 5.489,
+      "frame_filename": "beat_009.png",
+      "narration": "They are watching for the first sign that something good is about to happen.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: no leash/no bowl/no door objects arranged subtly around calm dog. Visual should match narration: \"They are watching for the first sign that something good is about to happen.\"."
+    },
+    {
+      "id": "beat_010",
+      "start_audio_est": 46.532,
+      "end_audio_est": 50.845,
+      "duration_audio_est": 4.313,
+      "frame_filename": "beat_010.png",
+      "narration": "But that is not the stare I want to talk about.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: owner face as warm weather-map metaphor without text: light shifting around face. Visual should match narration: \"But that is not the stare I want to talk about.\"."
+    },
+    {
+      "id": "beat_011",
+      "start_audio_est": 50.845,
+      "end_audio_est": 56.727,
+      "duration_audio_est": 5.882,
+      "frame_filename": "beat_011.png",
+      "narration": "I want to talk about the quiet stare that happens when nothing obvious is coming.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: dog noticing owner shoulders tense after looking at blank phone screen. Visual should match narration: \"I want to talk about the quiet stare that happens when nothing obvious is coming.\"."
+    },
+    {
+      "id": "beat_012",
+      "start_audio_est": 56.727,
+      "end_audio_est": 63.0,
+      "duration_audio_est": 6.273,
+      "frame_filename": "beat_012.png",
+      "narration": "No leash. No bowl. No treat bag. No door. Your dog is just looking at you.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: dog looking because owner is the center of meaning in the room. Visual should match narration: \"No leash. No bowl. No treat bag. No door. Your dog is just looking at you.\"."
+    },
+    {
+      "id": "beat_013",
+      "start_audio_est": 63.0,
+      "end_audio_est": 67.705,
+      "duration_audio_est": 4.705,
+      "frame_filename": "beat_013.png",
+      "narration": "And the strange thing is, the stare does not always feel empty.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"And the strange thing is, the stare does not always feel empty.\"."
+    },
+    {
+      "id": "beat_014",
+      "start_audio_est": 67.705,
+      "end_audio_est": 72.802,
+      "duration_audio_est": 5.097,
+      "frame_filename": "beat_014.png",
+      "narration": "Sometimes it feels like a question. Sometimes it feels like a check-in.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"Sometimes it feels like a question. Sometimes it feels like a check-in.\"."
+    },
+    {
+      "id": "beat_015",
+      "start_audio_est": 72.802,
+      "end_audio_est": 78.291,
+      "duration_audio_est": 5.489,
+      "frame_filename": "beat_015.png",
+      "narration": "Sometimes it feels like your dog is using your face to understand the room.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"Sometimes it feels like your dog is using your face to understand the room.\"."
+    },
+    {
+      "id": "beat_016",
+      "start_audio_est": 78.291,
+      "end_audio_est": 82.996,
+      "duration_audio_est": 4.705,
+      "frame_filename": "beat_016.png",
+      "narration": "And that may be closer to the truth than most people realize.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"And that may be closer to the truth than most people realize.\"."
+    },
+    {
+      "id": "beat_017",
+      "start_audio_est": 82.996,
+      "end_audio_est": 87.309,
+      "duration_audio_est": 4.313,
+      "frame_filename": "beat_017.png",
+      "narration": "Because for a dog, your face is not just your face.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"Because for a dog, your face is not just your face.\"."
+    },
+    {
+      "id": "beat_018",
+      "start_audio_est": 87.309,
+      "end_audio_est": 92.014,
+      "duration_audio_est": 4.705,
+      "frame_filename": "beat_018.png",
+      "narration": "It is information. It is weather. It is permission. It is safety.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"It is information. It is weather. It is permission. It is safety.\"."
+    },
+    {
+      "id": "beat_019",
+      "start_audio_est": 92.014,
+      "end_audio_est": 98.287,
+      "duration_audio_est": 6.273,
+      "frame_filename": "beat_019.png",
+      "narration": "It is the place where the room gets interpreted. A dog does not understand your calendar.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"It is the place where the room gets interpreted. A dog does not understand your calendar.\"."
+    },
+    {
+      "id": "beat_020",
+      "start_audio_est": 98.287,
+      "end_audio_est": 101.926,
+      "duration_audio_est": 3.639,
+      "frame_filename": "beat_020.png",
+      "narration": "A dog does not understand your inbox.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"A dog does not understand your inbox.\"."
+    },
+    {
+      "id": "beat_021",
+      "start_audio_est": 101.926,
+      "end_audio_est": 108.591,
+      "duration_audio_est": 6.665,
+      "frame_filename": "beat_021.png",
+      "narration": "A dog does not know why you suddenly became tense after reading one message on a screen.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"A dog does not know why you suddenly became tense after reading one message on a screen.\"."
+    },
+    {
+      "id": "beat_022",
+      "start_audio_est": 108.591,
+      "end_audio_est": 113.296,
+      "duration_audio_est": 4.705,
+      "frame_filename": "beat_022.png",
+      "narration": "But your dog may notice that your breathing changed. Your shoulders rose.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"But your dog may notice that your breathing changed. Your shoulders rose.\"."
+    },
+    {
+      "id": "beat_023",
+      "start_audio_est": 113.296,
+      "end_audio_est": 117.217,
+      "duration_audio_est": 3.921,
+      "frame_filename": "beat_023.png",
+      "narration": "Your voice got flatter. Your attention disappeared. So they look.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"Your voice got flatter. Your attention disappeared. So they look.\"."
+    },
+    {
+      "id": "beat_024",
+      "start_audio_est": 117.217,
+      "end_audio_est": 120.856,
+      "duration_audio_est": 3.639,
+      "frame_filename": "beat_024.png",
+      "narration": "Not because they are trying to be creepy.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"Not because they are trying to be creepy.\"."
+    },
+    {
+      "id": "beat_025",
+      "start_audio_est": 120.856,
+      "end_audio_est": 126.345,
+      "duration_audio_est": 5.489,
+      "frame_filename": "beat_025.png",
+      "narration": "Because you are one of the most important sources of meaning in their world.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"Because you are one of the most important sources of meaning in their world.\"."
+    },
+    {
+      "id": "beat_026",
+      "start_audio_est": 126.345,
+      "end_audio_est": 130.266,
+      "duration_audio_est": 3.921,
+      "frame_filename": "beat_026.png",
+      "narration": "There is a name for part of this. Social referencing.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: clear social-referencing triangle: dog glances between harmless unfamiliar object and calm owner face before deciding what to do. Visual should match narration: \"There is a name for part of this. Social referencing.\"."
+    },
+    {
+      "id": "beat_027",
+      "start_audio_est": 130.266,
+      "end_audio_est": 137.543,
+      "duration_audio_est": 7.277,
+      "frame_filename": "beat_027.png",
+      "narration": "It is what happens when an animal looks to another individual to decide how to respond to something uncertain.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"It is what happens when an animal looks to another individual to decide how to respond to something uncertain.\"."
+    },
+    {
+      "id": "beat_028",
+      "start_audio_est": 137.543,
+      "end_audio_est": 141.181,
+      "duration_audio_est": 3.638,
+      "frame_filename": "beat_028.png",
+      "narration": "Human babies do this.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"Human babies do this.\"."
+    },
+    {
+      "id": "beat_029",
+      "start_audio_est": 141.181,
+      "end_audio_est": 148.458,
+      "duration_audio_est": 7.277,
+      "frame_filename": "beat_029.png",
+      "narration": "If something unfamiliar appears, they often look to a caregiver\u2019s face before deciding whether to approach, freeze, or back away.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: clear social-referencing triangle: dog glances between harmless unfamiliar object and calm owner face before deciding what to do. Visual should match narration: \"If something unfamiliar appears, they often look to a caregiver\u2019s face before deciding whether to approach, freeze, or back away.\"."
+    },
+    {
+      "id": "beat_030",
+      "start_audio_est": 148.458,
+      "end_audio_est": 152.097,
+      "duration_audio_est": 3.639,
+      "frame_filename": "beat_030.png",
+      "narration": "Dogs can do a version of this too.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"Dogs can do a version of this too.\"."
+    },
+    {
+      "id": "beat_031",
+      "start_audio_est": 152.097,
+      "end_audio_est": 159.374,
+      "duration_audio_est": 7.277,
+      "frame_filename": "beat_031.png",
+      "narration": "In 2012, researchers Isabella Merola, Emanuela Prato-Previde, and Sarah Marshall-Pescini studied dogs facing a novel, potentially worrying object \u2014 an electric fan with streamers attached.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: clear social-referencing triangle: dog glances between harmless unfamiliar object and calm owner face before deciding what to do. Visual should match narration: \"In 2012, researchers Isabella Merola, Emanuela Prato-Previde, and Sarah Marshall-Pescini studied dogs facing a novel, potentially worrying object \u2014 an electric fan with streamers attached.\"."
+    },
+    {
+      "id": "beat_032",
+      "start_audio_est": 159.374,
+      "end_audio_est": 164.471,
+      "duration_audio_est": 5.097,
+      "frame_filename": "beat_032.png",
+      "narration": "The dogs did not only inspect the object. They looked to the human.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: clear social-referencing triangle: dog glances between harmless unfamiliar object and calm owner face before deciding what to do. Visual should match narration: \"The dogs did not only inspect the object. They looked to the human.\"."
+    },
+    {
+      "id": "beat_033",
+      "start_audio_est": 164.471,
+      "end_audio_est": 169.176,
+      "duration_audio_est": 4.705,
+      "frame_filename": "beat_033.png",
+      "narration": "And when the owner gave emotional cues, the dog\u2019s behavior changed.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"And when the owner gave emotional cues, the dog\u2019s behavior changed.\"."
+    },
+    {
+      "id": "beat_034",
+      "start_audio_est": 169.176,
+      "end_audio_est": 174.665,
+      "duration_audio_est": 5.489,
+      "frame_filename": "beat_034.png",
+      "narration": "A positive message made dogs more likely to approach and stay near the object.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: clear social-referencing triangle: dog glances between harmless unfamiliar object and calm owner face before deciding what to do. Visual should match narration: \"A positive message made dogs more likely to approach and stay near the object.\"."
+    },
+    {
+      "id": "beat_035",
+      "start_audio_est": 174.665,
+      "end_audio_est": 178.304,
+      "duration_audio_est": 3.639,
+      "frame_filename": "beat_035.png",
+      "narration": "A negative message made them more cautious.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: clear social-referencing triangle: dog glances between harmless unfamiliar object and calm owner face before deciding what to do. Visual should match narration: \"A negative message made them more cautious.\"."
+    },
+    {
+      "id": "beat_036",
+      "start_audio_est": 178.304,
+      "end_audio_est": 182.617,
+      "duration_audio_est": 4.313,
+      "frame_filename": "beat_036.png",
+      "narration": "The important detail is not that dogs are secretly tiny scientists.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: body-language contrast scene: relaxed soft dog posture versus separate subtle tense posture vignette, no text labels. Visual should match narration: \"The important detail is not that dogs are secretly tiny scientists.\"."
+    },
+    {
+      "id": "beat_037",
+      "start_audio_est": 182.617,
+      "end_audio_est": 186.929,
+      "duration_audio_est": 4.312,
+      "frame_filename": "beat_037.png",
+      "narration": "The important detail is that dogs use us to read situations.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: body-language contrast scene: relaxed soft dog posture versus separate subtle tense posture vignette, no text labels. Visual should match narration: \"The important detail is that dogs use us to read situations.\"."
+    },
+    {
+      "id": "beat_038",
+      "start_audio_est": 186.929,
+      "end_audio_est": 194.206,
+      "duration_audio_est": 7.277,
+      "frame_filename": "beat_038.png",
+      "narration": "Your dog may stare at you because your reaction helps decide what kind of world they are standing in.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"Your dog may stare at you because your reaction helps decide what kind of world they are standing in.\"."
+    },
+    {
+      "id": "beat_039",
+      "start_audio_est": 194.206,
+      "end_audio_est": 198.911,
+      "duration_audio_est": 4.705,
+      "frame_filename": "beat_039.png",
+      "narration": "Safe world. Interesting world. Something-is-wrong world. Time-to-move world.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"Safe world. Interesting world. Something-is-wrong world. Time-to-move world.\"."
+    },
+    {
+      "id": "beat_040",
+      "start_audio_est": 198.911,
+      "end_audio_est": 205.577,
+      "duration_audio_est": 6.666,
+      "frame_filename": "beat_040.png",
+      "narration": "That is why your dog may stare after a strange noise. Or when a visitor walks in.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: domestic clue scene with dog looking toward owner and nearby household object like door, bowl, toy under couch, or couch spot. Visual should match narration: \"That is why your dog may stare after a strange noise. Or when a visitor walks in.\"."
+    },
+    {
+      "id": "beat_041",
+      "start_audio_est": 205.577,
+      "end_audio_est": 210.674,
+      "duration_audio_est": 5.097,
+      "frame_filename": "beat_041.png",
+      "narration": "Or when you suddenly stop moving in the middle of a normal routine.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"Or when you suddenly stop moving in the middle of a normal routine.\"."
+    },
+    {
+      "id": "beat_042",
+      "start_audio_est": 210.674,
+      "end_audio_est": 217.339,
+      "duration_audio_est": 6.665,
+      "frame_filename": "beat_042.png",
+      "narration": "They are not always asking, \u201cWhat do I get?\u201d Sometimes they are asking, \u201cWhat does this mean?\u201d",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"They are not always asking, \u201cWhat do I get?\u201d Sometimes they are asking, \u201cWhat does this mean?\u201d\"."
+    },
+    {
+      "id": "beat_043",
+      "start_audio_est": 217.339,
+      "end_audio_est": 222.044,
+      "duration_audio_est": 4.705,
+      "frame_filename": "beat_043.png",
+      "narration": "But there is another layer. The stare is not only about information.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"But there is another layer. The stare is not only about information.\"."
+    },
+    {
+      "id": "beat_044",
+      "start_audio_est": 222.044,
+      "end_audio_est": 225.683,
+      "duration_audio_est": 3.639,
+      "frame_filename": "beat_044.png",
+      "narration": "It can also be about attachment.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"It can also be about attachment.\"."
+    },
+    {
+      "id": "beat_045",
+      "start_audio_est": 225.683,
+      "end_audio_est": 232.96,
+      "duration_audio_est": 7.277,
+      "frame_filename": "beat_045.png",
+      "narration": "In 2015, researchers at Azabu University in Japan published a study in Science on dog-human gaze and oxytocin.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: warm mutual gaze bonding scene between dog and owner, intimate but scientific, with subtle research-lab or home-study mood. Visual should match narration: \"In 2015, researchers at Azabu University in Japan published a study in Science on dog-human gaze and oxytocin.\"."
+    },
+    {
+      "id": "beat_046",
+      "start_audio_est": 232.96,
+      "end_audio_est": 236.881,
+      "duration_audio_est": 3.921,
+      "frame_filename": "beat_046.png",
+      "narration": "Oxytocin is one of the chemicals involved in social bonding.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: warm mutual gaze bonding scene between dog and owner, intimate but scientific, with subtle research-lab or home-study mood. Visual should match narration: \"Oxytocin is one of the chemicals involved in social bonding.\"."
+    },
+    {
+      "id": "beat_047",
+      "start_audio_est": 236.881,
+      "end_audio_est": 243.546,
+      "duration_audio_est": 6.665,
+      "frame_filename": "beat_047.png",
+      "narration": "The researchers found that when dogs gazed longer at their owners, owners showed increases in urinary oxytocin.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: warm mutual gaze bonding scene between dog and owner, intimate but scientific, with subtle research-lab or home-study mood. Visual should match narration: \"The researchers found that when dogs gazed longer at their owners, owners showed increases in urinary oxytocin.\"."
+    },
+    {
+      "id": "beat_048",
+      "start_audio_est": 243.546,
+      "end_audio_est": 248.643,
+      "duration_audio_est": 5.097,
+      "frame_filename": "beat_048.png",
+      "narration": "Owners then interacted more with their dogs, and the dogs\u2019 oxytocin rose too.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: warm mutual gaze bonding scene between dog and owner, intimate but scientific, with subtle research-lab or home-study mood. Visual should match narration: \"Owners then interacted more with their dogs, and the dogs\u2019 oxytocin rose too.\"."
+    },
+    {
+      "id": "beat_049",
+      "start_audio_est": 248.643,
+      "end_audio_est": 253.348,
+      "duration_audio_est": 4.705,
+      "frame_filename": "beat_049.png",
+      "narration": "Hand-raised wolves did not show the same human-directed gaze loop.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: warm mutual gaze bonding scene between dog and owner, intimate but scientific, with subtle research-lab or home-study mood. Visual should match narration: \"Hand-raised wolves did not show the same human-directed gaze loop.\"."
+    },
+    {
+      "id": "beat_050",
+      "start_audio_est": 253.348,
+      "end_audio_est": 259.229,
+      "duration_audio_est": 5.881,
+      "frame_filename": "beat_050.png",
+      "narration": "That matters. Because it suggests that your dog\u2019s gaze is not just passive looking.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: warm mutual gaze bonding scene between dog and owner, intimate but scientific, with subtle research-lab or home-study mood. Visual should match narration: \"That matters. Because it suggests that your dog\u2019s gaze is not just passive looking.\"."
+    },
+    {
+      "id": "beat_051",
+      "start_audio_est": 259.229,
+      "end_audio_est": 265.895,
+      "duration_audio_est": 6.666,
+      "frame_filename": "beat_051.png",
+      "narration": "In the right context, mutual gaze can be part of a bonding system between dogs and humans.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: warm mutual gaze bonding scene between dog and owner, intimate but scientific, with subtle research-lab or home-study mood. Visual should match narration: \"In the right context, mutual gaze can be part of a bonding system between dogs and humans.\"."
+    },
+    {
+      "id": "beat_052",
+      "start_audio_est": 265.895,
+      "end_audio_est": 270.6,
+      "duration_audio_est": 4.705,
+      "frame_filename": "beat_052.png",
+      "narration": "Your dog looks. You look back. Your face softens. Your voice changes.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: warm mutual gaze bonding scene between dog and owner, intimate but scientific, with subtle research-lab or home-study mood. Visual should match narration: \"Your dog looks. You look back. Your face softens. Your voice changes.\"."
+    },
+    {
+      "id": "beat_053",
+      "start_audio_est": 270.6,
+      "end_audio_est": 276.089,
+      "duration_audio_est": 5.489,
+      "frame_filename": "beat_053.png",
+      "narration": "Maybe your hand reaches down. The relationship warms up. And the dog learns something.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: warm mutual gaze bonding scene between dog and owner, intimate but scientific, with subtle research-lab or home-study mood. Visual should match narration: \"Maybe your hand reaches down. The relationship warms up. And the dog learns something.\"."
+    },
+    {
+      "id": "beat_054",
+      "start_audio_est": 276.089,
+      "end_audio_est": 280.01,
+      "duration_audio_est": 3.921,
+      "frame_filename": "beat_054.png",
+      "narration": "Looking at you can bring you back. Not just physically.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"Looking at you can bring you back. Not just physically.\"."
+    },
+    {
+      "id": "beat_055",
+      "start_audio_est": 280.01,
+      "end_audio_est": 283.648,
+      "duration_audio_est": 3.638,
+      "frame_filename": "beat_055.png",
+      "narration": "Emotionally. This is where people usually make the mistake.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"Emotionally. This is where people usually make the mistake.\"."
+    },
+    {
+      "id": "beat_056",
+      "start_audio_est": 283.648,
+      "end_audio_est": 290.314,
+      "duration_audio_est": 6.666,
+      "frame_filename": "beat_056.png",
+      "narration": "They hear about oxytocin and immediately turn every stare into, \u201cMy dog is saying I love you.\u201d",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: warm mutual gaze bonding scene between dog and owner, intimate but scientific, with subtle research-lab or home-study mood. Visual should match narration: \"They hear about oxytocin and immediately turn every stare into, \u201cMy dog is saying I love you.\u201d\"."
+    },
+    {
+      "id": "beat_057",
+      "start_audio_est": 290.314,
+      "end_audio_est": 295.019,
+      "duration_audio_est": 4.705,
+      "frame_filename": "beat_057.png",
+      "narration": "That is too simple. A dog\u2019s stare is not one sentence.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"That is too simple. A dog\u2019s stare is not one sentence.\"."
+    },
+    {
+      "id": "beat_058",
+      "start_audio_est": 295.019,
+      "end_audio_est": 298.657,
+      "duration_audio_est": 3.638,
+      "frame_filename": "beat_058.png",
+      "narration": "It is a signal inside a scene.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"It is a signal inside a scene.\"."
+    },
+    {
+      "id": "beat_059",
+      "start_audio_est": 298.657,
+      "end_audio_est": 305.934,
+      "duration_audio_est": 7.277,
+      "frame_filename": "beat_059.png",
+      "narration": "A soft stare with loose eyes, relaxed ears, a low tail, and a body that can look away may be social.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: body-language contrast scene: relaxed soft dog posture versus separate subtle tense posture vignette, no text labels. Visual should match narration: \"A soft stare with loose eyes, relaxed ears, a low tail, and a body that can look away may be social.\"."
+    },
+    {
+      "id": "beat_060",
+      "start_audio_est": 305.934,
+      "end_audio_est": 312.6,
+      "duration_audio_est": 6.666,
+      "frame_filename": "beat_060.png",
+      "narration": "A hard stare with a stiff body, closed mouth, forward weight, and no blinking may be tension.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: body-language contrast scene: relaxed soft dog posture versus separate subtle tense posture vignette, no text labels. Visual should match narration: \"A hard stare with a stiff body, closed mouth, forward weight, and no blinking may be tension.\"."
+    },
+    {
+      "id": "beat_061",
+      "start_audio_est": 312.6,
+      "end_audio_est": 317.305,
+      "duration_audio_est": 4.705,
+      "frame_filename": "beat_061.png",
+      "narration": "A stare at the treat cupboard is probably not a spiritual event.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: domestic clue scene with dog looking toward owner and nearby household object like door, bowl, toy under couch, or couch spot. Visual should match narration: \"A stare at the treat cupboard is probably not a spiritual event.\"."
+    },
+    {
+      "id": "beat_062",
+      "start_audio_est": 317.305,
+      "end_audio_est": 320.943,
+      "duration_audio_est": 3.638,
+      "frame_filename": "beat_062.png",
+      "narration": "A stare during dinner is probably about dinner.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: domestic clue scene with dog looking toward owner and nearby household object like door, bowl, toy under couch, or couch spot. Visual should match narration: \"A stare during dinner is probably about dinner.\"."
+    },
+    {
+      "id": "beat_063",
+      "start_audio_est": 320.943,
+      "end_audio_est": 327.609,
+      "duration_audio_est": 6.666,
+      "frame_filename": "beat_063.png",
+      "narration": "A stare from a dog who is panting, pacing, clinging, or unable to settle may be stress.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: gentle caution scene: dog looking confused in familiar room while owner observes with concern, respectful non-alarming tone. Visual should match narration: \"A stare from a dog who is panting, pacing, clinging, or unable to settle may be stress.\"."
+    },
+    {
+      "id": "beat_064",
+      "start_audio_est": 327.609,
+      "end_audio_est": 331.53,
+      "duration_audio_est": 3.921,
+      "frame_filename": "beat_064.png",
+      "narration": "So the question is not, \u201cWhy does my dog stare?\u201d",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"So the question is not, \u201cWhy does my dog stare?\u201d\"."
+    },
+    {
+      "id": "beat_065",
+      "start_audio_est": 331.53,
+      "end_audio_est": 337.411,
+      "duration_audio_est": 5.881,
+      "frame_filename": "beat_065.png",
+      "narration": "The better question is, \u201cWhat else is the body saying while the eyes are looking?\u201d",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"The better question is, \u201cWhat else is the body saying while the eyes are looking?\u201d\"."
+    },
+    {
+      "id": "beat_066",
+      "start_audio_est": 337.411,
+      "end_audio_est": 342.508,
+      "duration_audio_est": 5.097,
+      "frame_filename": "beat_066.png",
+      "narration": "Because dogs do not communicate in isolated body parts. They communicate in patterns.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"Because dogs do not communicate in isolated body parts. They communicate in patterns.\"."
+    },
+    {
+      "id": "beat_067",
+      "start_audio_est": 342.508,
+      "end_audio_est": 347.213,
+      "duration_audio_est": 4.705,
+      "frame_filename": "beat_067.png",
+      "narration": "Eyes plus ears. Eyes plus mouth. Eyes plus posture. Eyes plus timing.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: body-language contrast scene: relaxed soft dog posture versus separate subtle tense posture vignette, no text labels. Visual should match narration: \"Eyes plus ears. Eyes plus mouth. Eyes plus posture. Eyes plus timing.\"."
+    },
+    {
+      "id": "beat_068",
+      "start_audio_est": 347.213,
+      "end_audio_est": 353.094,
+      "duration_audio_est": 5.881,
+      "frame_filename": "beat_068.png",
+      "narration": "Eyes plus what happened thirty seconds before. That last part matters more than people think.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"Eyes plus what happened thirty seconds before. That last part matters more than people think.\"."
+    },
+    {
+      "id": "beat_069",
+      "start_audio_est": 353.094,
+      "end_audio_est": 359.76,
+      "duration_audio_est": 6.666,
+      "frame_filename": "beat_069.png",
+      "narration": "If your dog stares at you right before the normal walk time, the stare may be anticipation.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: domestic clue scene with dog looking toward owner and nearby household object like door, bowl, toy under couch, or couch spot. Visual should match narration: \"If your dog stares at you right before the normal walk time, the stare may be anticipation.\"."
+    },
+    {
+      "id": "beat_070",
+      "start_audio_est": 359.76,
+      "end_audio_est": 365.249,
+      "duration_audio_est": 5.489,
+      "frame_filename": "beat_070.png",
+      "narration": "If your dog stares after hearing a noise outside, it may be social referencing.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: clear social-referencing triangle: dog glances between harmless unfamiliar object and calm owner face before deciding what to do. Visual should match narration: \"If your dog stares after hearing a noise outside, it may be social referencing.\"."
+    },
+    {
+      "id": "beat_071",
+      "start_audio_est": 365.249,
+      "end_audio_est": 372.526,
+      "duration_audio_est": 7.277,
+      "frame_filename": "beat_071.png",
+      "narration": "If your dog stares while you cry, move slowly, or sit silently in a way you normally do not, it may be attention to your emotional state.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"If your dog stares while you cry, move slowly, or sit silently in a way you normally do not, it may be attention to your emotional state.\"."
+    },
+    {
+      "id": "beat_072",
+      "start_audio_est": 372.526,
+      "end_audio_est": 379.583,
+      "duration_audio_est": 7.057,
+      "frame_filename": "beat_072.png",
+      "narration": "If your dog stares from the couch while already relaxed, it may simply be contact at a distance.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: domestic clue scene with dog looking toward owner and nearby household object like door, bowl, toy under couch, or couch spot. Visual should match narration: \"If your dog stares from the couch while already relaxed, it may simply be contact at a distance.\"."
+    },
+    {
+      "id": "beat_073",
+      "start_audio_est": 379.583,
+      "end_audio_est": 383.222,
+      "duration_audio_est": 3.639,
+      "frame_filename": "beat_073.png",
+      "narration": "A way of staying socially connected without touching.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"A way of staying socially connected without touching.\"."
+    },
+    {
+      "id": "beat_074",
+      "start_audio_est": 383.222,
+      "end_audio_est": 388.711,
+      "duration_audio_est": 5.489,
+      "frame_filename": "beat_074.png",
+      "narration": "That may sound small, but it fits with something else we know about dogs.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"That may sound small, but it fits with something else we know about dogs.\"."
+    },
+    {
+      "id": "beat_075",
+      "start_audio_est": 388.711,
+      "end_audio_est": 395.988,
+      "duration_audio_est": 7.277,
+      "frame_filename": "beat_075.png",
+      "narration": "In a 2013 study from the University of Vienna and the Clever Dog Lab, researchers tested whether domestic dogs show a secure base effect with their owners.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: secure-base research scene: dog works on simple puzzle or explores calmly while owner presence anchors the room. Visual should match narration: \"In a 2013 study from the University of Vienna and the Clever Dog Lab, researchers tested whether domestic dogs show a secure base effect with their owners.\"."
+    },
+    {
+      "id": "beat_076",
+      "start_audio_est": 395.988,
+      "end_audio_est": 399.909,
+      "duration_audio_est": 3.921,
+      "frame_filename": "beat_076.png",
+      "narration": "Dogs worked on a problem-solving task under different conditions.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: secure-base research scene: dog works on simple puzzle or explores calmly while owner presence anchors the room. Visual should match narration: \"Dogs worked on a problem-solving task under different conditions.\"."
+    },
+    {
+      "id": "beat_077",
+      "start_audio_est": 399.909,
+      "end_audio_est": 403.83,
+      "duration_audio_est": 3.921,
+      "frame_filename": "beat_077.png",
+      "narration": "Owner absent. Owner present but silent. Owner present and encouraging.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: secure-base research scene: dog works on simple puzzle or explores calmly while owner presence anchors the room. Visual should match narration: \"Owner absent. Owner present but silent. Owner present and encouraging.\"."
+    },
+    {
+      "id": "beat_078",
+      "start_audio_est": 403.83,
+      "end_audio_est": 411.107,
+      "duration_audio_est": 7.277,
+      "frame_filename": "beat_078.png",
+      "narration": "The dogs spent more time working when their owner was present, even when the owner did not actively encourage them.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"The dogs spent more time working when their owner was present, even when the owner did not actively encourage them.\"."
+    },
+    {
+      "id": "beat_079",
+      "start_audio_est": 411.107,
+      "end_audio_est": 414.745,
+      "duration_audio_est": 3.638,
+      "frame_filename": "beat_079.png",
+      "narration": "An unfamiliar human did not have the same effect.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: clear social-referencing triangle: dog glances between harmless unfamiliar object and calm owner face before deciding what to do. Visual should match narration: \"An unfamiliar human did not have the same effect.\"."
+    },
+    {
+      "id": "beat_080",
+      "start_audio_est": 414.745,
+      "end_audio_est": 419.45,
+      "duration_audio_est": 4.705,
+      "frame_filename": "beat_080.png",
+      "narration": "In other words, the dog did not just need a person nearby.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"In other words, the dog did not just need a person nearby.\"."
+    },
+    {
+      "id": "beat_081",
+      "start_audio_est": 419.45,
+      "end_audio_est": 424.155,
+      "duration_audio_est": 4.705,
+      "frame_filename": "beat_081.png",
+      "narration": "The dog needed their person. That is what a secure base is.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: secure-base research scene: dog works on simple puzzle or explores calmly while owner presence anchors the room. Visual should match narration: \"The dog needed their person. That is what a secure base is.\"."
+    },
+    {
+      "id": "beat_082",
+      "start_audio_est": 424.155,
+      "end_audio_est": 428.86,
+      "duration_audio_est": 4.705,
+      "frame_filename": "beat_082.png",
+      "narration": "A specific attachment figure whose presence makes exploration and emotional regulation easier.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"A specific attachment figure whose presence makes exploration and emotional regulation easier.\"."
+    },
+    {
+      "id": "beat_083",
+      "start_audio_est": 428.86,
+      "end_audio_est": 435.526,
+      "duration_audio_est": 6.666,
+      "frame_filename": "beat_083.png",
+      "narration": "Now think about the stare again. Your dog may look at you before moving toward something uncertain.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"Now think about the stare again. Your dog may look at you before moving toward something uncertain.\"."
+    },
+    {
+      "id": "beat_084",
+      "start_audio_est": 435.526,
+      "end_audio_est": 441.407,
+      "duration_audio_est": 5.881,
+      "frame_filename": "beat_084.png",
+      "narration": "They may look at you before settling. They may look at you after a sound.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"They may look at you before settling. They may look at you after a sound.\"."
+    },
+    {
+      "id": "beat_085",
+      "start_audio_est": 441.407,
+      "end_audio_est": 445.045,
+      "duration_audio_est": 3.638,
+      "frame_filename": "beat_085.png",
+      "narration": "They may look at you when the room changes.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"They may look at you when the room changes.\"."
+    },
+    {
+      "id": "beat_086",
+      "start_audio_est": 445.045,
+      "end_audio_est": 449.358,
+      "duration_audio_est": 4.313,
+      "frame_filename": "beat_086.png",
+      "narration": "The stare can be a way of locating the secure base.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: secure-base research scene: dog works on simple puzzle or explores calmly while owner presence anchors the room. Visual should match narration: \"The stare can be a way of locating the secure base.\"."
+    },
+    {
+      "id": "beat_087",
+      "start_audio_est": 449.358,
+      "end_audio_est": 454.063,
+      "duration_audio_est": 4.705,
+      "frame_filename": "beat_087.png",
+      "narration": "Not always dramatically. Not always anxiously. Sometimes just quietly. Are you there?",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"Not always dramatically. Not always anxiously. Sometimes just quietly. Are you there?\"."
+    },
+    {
+      "id": "beat_088",
+      "start_audio_est": 454.063,
+      "end_audio_est": 457.702,
+      "duration_audio_est": 3.639,
+      "frame_filename": "beat_088.png",
+      "narration": "Are you calm? Are we okay?",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"Are you calm? Are we okay?\"."
+    },
+    {
+      "id": "beat_089",
+      "start_audio_est": 457.702,
+      "end_audio_est": 462.407,
+      "duration_audio_est": 4.705,
+      "frame_filename": "beat_089.png",
+      "narration": "This is why the same stare can feel different in different dogs.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"This is why the same stare can feel different in different dogs.\"."
+    },
+    {
+      "id": "beat_090",
+      "start_audio_est": 462.407,
+      "end_audio_est": 466.045,
+      "duration_audio_est": 3.638,
+      "frame_filename": "beat_090.png",
+      "narration": "Some dogs stare like they are making a request.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"Some dogs stare like they are making a request.\"."
+    },
+    {
+      "id": "beat_091",
+      "start_audio_est": 466.045,
+      "end_audio_est": 469.684,
+      "duration_audio_est": 3.639,
+      "frame_filename": "beat_091.png",
+      "narration": "Some dogs stare like they are waiting for instructions.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"Some dogs stare like they are waiting for instructions.\"."
+    },
+    {
+      "id": "beat_092",
+      "start_audio_est": 469.684,
+      "end_audio_est": 475.565,
+      "duration_audio_est": 5.881,
+      "frame_filename": "beat_092.png",
+      "narration": "Some dogs stare like they are checking whether you noticed the same thing they noticed.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"Some dogs stare like they are checking whether you noticed the same thing they noticed.\"."
+    },
+    {
+      "id": "beat_093",
+      "start_audio_est": 475.565,
+      "end_audio_est": 479.878,
+      "duration_audio_est": 4.313,
+      "frame_filename": "beat_093.png",
+      "narration": "Some dogs stare because your attention is the thing they want.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"Some dogs stare because your attention is the thing they want.\"."
+    },
+    {
+      "id": "beat_094",
+      "start_audio_est": 479.878,
+      "end_audio_est": 485.367,
+      "duration_audio_est": 5.489,
+      "frame_filename": "beat_094.png",
+      "narration": "And some dogs stare because looking at you is part of how they rest.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"And some dogs stare because looking at you is part of how they rest.\"."
+    },
+    {
+      "id": "beat_095",
+      "start_audio_est": 485.367,
+      "end_audio_est": 491.641,
+      "duration_audio_est": 6.274,
+      "frame_filename": "beat_095.png",
+      "narration": "That last one is easy to miss. We tend to think connection has to be active.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"That last one is easy to miss. We tend to think connection has to be active.\"."
+    },
+    {
+      "id": "beat_096",
+      "start_audio_est": 491.641,
+      "end_audio_est": 497.13,
+      "duration_audio_est": 5.489,
+      "frame_filename": "beat_096.png",
+      "narration": "Petting. Playing. Talking. Walking. But social animals often maintain connection more quietly than that.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: domestic clue scene with dog looking toward owner and nearby household object like door, bowl, toy under couch, or couch spot. Visual should match narration: \"Petting. Playing. Talking. Walking. But social animals often maintain connection more quietly than that.\"."
+    },
+    {
+      "id": "beat_097",
+      "start_audio_est": 497.13,
+      "end_audio_est": 501.051,
+      "duration_audio_est": 3.921,
+      "frame_filename": "beat_097.png",
+      "narration": "A glance across the room. A body angled toward yours.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"A glance across the room. A body angled toward yours.\"."
+    },
+    {
+      "id": "beat_098",
+      "start_audio_est": 501.051,
+      "end_audio_est": 507.716,
+      "duration_audio_est": 6.665,
+      "frame_filename": "beat_098.png",
+      "narration": "A dog choosing the spot where they can see you. A head lifted when your chair moves.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"A dog choosing the spot where they can see you. A head lifted when your chair moves.\"."
+    },
+    {
+      "id": "beat_099",
+      "start_audio_est": 507.716,
+      "end_audio_est": 512.421,
+      "duration_audio_est": 4.705,
+      "frame_filename": "beat_099.png",
+      "narration": "A stare that ends as soon as you look back and soften.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: warm mutual gaze bonding scene between dog and owner, intimate but scientific, with subtle research-lab or home-study mood. Visual should match narration: \"A stare that ends as soon as you look back and soften.\"."
+    },
+    {
+      "id": "beat_100",
+      "start_audio_est": 512.421,
+      "end_audio_est": 518.302,
+      "duration_audio_est": 5.881,
+      "frame_filename": "beat_100.png",
+      "narration": "The dog may not need anything more than confirmation. The invisible line is still open.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"The dog may not need anything more than confirmation. The invisible line is still open.\"."
+    },
+    {
+      "id": "beat_101",
+      "start_audio_est": 518.302,
+      "end_audio_est": 523.791,
+      "duration_audio_est": 5.489,
+      "frame_filename": "beat_101.png",
+      "narration": "But there is a warning side too. If the stare changes suddenly, pay attention.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"But there is a warning side too. If the stare changes suddenly, pay attention.\"."
+    },
+    {
+      "id": "beat_102",
+      "start_audio_est": 523.791,
+      "end_audio_est": 531.068,
+      "duration_audio_est": 7.277,
+      "frame_filename": "beat_102.png",
+      "narration": "If your dog begins staring at walls, corners, empty spaces, or you in a way that feels confused or unlike them, that is not something to romanticize.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: body-language contrast scene: relaxed soft dog posture versus separate subtle tense posture vignette, no text labels. Visual should match narration: \"If your dog begins staring at walls, corners, empty spaces, or you in a way that feels confused or unlike them, that is not something to romanticize.\"."
+    },
+    {
+      "id": "beat_103",
+      "start_audio_est": 531.068,
+      "end_audio_est": 538.345,
+      "duration_audio_est": 7.277,
+      "frame_filename": "beat_103.png",
+      "narration": "If the stare comes with disorientation, sudden clinginess, pain signs, changes in appetite, pacing, head pressing, seizures, or unusual aggression, that deserves veterinary attention.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: gentle caution scene: dog looking confused in familiar room while owner observes with concern, respectful non-alarming tone. Visual should match narration: \"If the stare comes with disorientation, sudden clinginess, pain signs, changes in appetite, pacing, head pressing, seizures, or unusual aggression, that deserves veterinary attention.\"."
+    },
+    {
+      "id": "beat_104",
+      "start_audio_est": 538.345,
+      "end_audio_est": 544.227,
+      "duration_audio_est": 5.882,
+      "frame_filename": "beat_104.png",
+      "narration": "The behavior is not the whole message. The change in the behavior is the message.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"The behavior is not the whole message. The change in the behavior is the message.\"."
+    },
+    {
+      "id": "beat_105",
+      "start_audio_est": 544.227,
+      "end_audio_est": 551.504,
+      "duration_audio_est": 7.277,
+      "frame_filename": "beat_105.png",
+      "narration": "A dog who has always watched you from the doorway while you cook may just be following a household ritual.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: domestic clue scene with dog looking toward owner and nearby household object like door, bowl, toy under couch, or couch spot. Visual should match narration: \"A dog who has always watched you from the doorway while you cook may just be following a household ritual.\"."
+    },
+    {
+      "id": "beat_106",
+      "start_audio_est": 551.504,
+      "end_audio_est": 558.781,
+      "duration_audio_est": 7.277,
+      "frame_filename": "beat_106.png",
+      "narration": "A dog who suddenly cannot stop staring, cannot settle, or seems lost in familiar rooms may be telling you something is different.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"A dog who suddenly cannot stop staring, cannot settle, or seems lost in familiar rooms may be telling you something is different.\"."
+    },
+    {
+      "id": "beat_107",
+      "start_audio_est": 558.781,
+      "end_audio_est": 564.27,
+      "duration_audio_est": 5.489,
+      "frame_filename": "beat_107.png",
+      "narration": "Not panic. Attention. So what should you do when you catch your dog staring?",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"Not panic. Attention. So what should you do when you catch your dog staring?\"."
+    },
+    {
+      "id": "beat_108",
+      "start_audio_est": 564.27,
+      "end_audio_est": 568.975,
+      "duration_audio_est": 4.705,
+      "frame_filename": "beat_108.png",
+      "narration": "First, do not punish the stare. Your dog is giving you information.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"First, do not punish the stare. Your dog is giving you information.\"."
+    },
+    {
+      "id": "beat_109",
+      "start_audio_est": 568.975,
+      "end_audio_est": 576.252,
+      "duration_audio_est": 7.277,
+      "frame_filename": "beat_109.png",
+      "narration": "Second, do not automatically reward every stare with food, or you may teach the dog that staring is a vending machine button.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"Second, do not automatically reward every stare with food, or you may teach the dog that staring is a vending machine button.\"."
+    },
+    {
+      "id": "beat_110",
+      "start_audio_est": 576.252,
+      "end_audio_est": 581.741,
+      "duration_audio_est": 5.489,
+      "frame_filename": "beat_110.png",
+      "narration": "Third, read the scene. If the body is soft, you can simply acknowledge them.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"Third, read the scene. If the body is soft, you can simply acknowledge them.\"."
+    },
+    {
+      "id": "beat_111",
+      "start_audio_est": 581.741,
+      "end_audio_est": 586.838,
+      "duration_audio_est": 5.097,
+      "frame_filename": "beat_111.png",
+      "narration": "Look back gently. Say their name. Offer calm contact if they want it.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: warm mutual gaze bonding scene between dog and owner, intimate but scientific, with subtle research-lab or home-study mood. Visual should match narration: \"Look back gently. Say their name. Offer calm contact if they want it.\"."
+    },
+    {
+      "id": "beat_112",
+      "start_audio_est": 586.838,
+      "end_audio_est": 594.115,
+      "duration_audio_est": 7.277,
+      "frame_filename": "beat_112.png",
+      "narration": "If the stare is pointed at something specific, ask what they may be trying to draw your attention toward.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"If the stare is pointed at something specific, ask what they may be trying to draw your attention toward.\"."
+    },
+    {
+      "id": "beat_113",
+      "start_audio_est": 594.115,
+      "end_audio_est": 598.428,
+      "duration_audio_est": 4.313,
+      "frame_filename": "beat_113.png",
+      "narration": "The door. The bowl. A sound. A toy under the couch.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: domestic clue scene with dog looking toward owner and nearby household object like door, bowl, toy under couch, or couch spot. Visual should match narration: \"The door. The bowl. A sound. A toy under the couch.\"."
+    },
+    {
+      "id": "beat_114",
+      "start_audio_est": 598.428,
+      "end_audio_est": 602.349,
+      "duration_audio_est": 3.921,
+      "frame_filename": "beat_114.png",
+      "narration": "If the stare is tense, give space and lower pressure.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: body-language contrast scene: relaxed soft dog posture versus separate subtle tense posture vignette, no text labels. Visual should match narration: \"If the stare is tense, give space and lower pressure.\"."
+    },
+    {
+      "id": "beat_115",
+      "start_audio_est": 602.349,
+      "end_audio_est": 607.446,
+      "duration_audio_est": 5.097,
+      "frame_filename": "beat_115.png",
+      "narration": "Do not lean over the dog. Do not force face-to-face contact.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"Do not lean over the dog. Do not force face-to-face contact.\"."
+    },
+    {
+      "id": "beat_116",
+      "start_audio_est": 607.446,
+      "end_audio_est": 611.759,
+      "duration_audio_est": 4.313,
+      "frame_filename": "beat_116.png",
+      "narration": "Do not turn it into a dominance contest. Eyes can bond.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: warm mutual gaze bonding scene between dog and owner, intimate but scientific, with subtle research-lab or home-study mood. Visual should match narration: \"Do not turn it into a dominance contest. Eyes can bond.\"."
+    },
+    {
+      "id": "beat_117",
+      "start_audio_est": 611.759,
+      "end_audio_est": 616.464,
+      "duration_audio_est": 4.705,
+      "frame_filename": "beat_117.png",
+      "narration": "But eyes can also pressure. The difference is the body around them.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: body-language contrast scene: relaxed soft dog posture versus separate subtle tense posture vignette, no text labels. Visual should match narration: \"But eyes can also pressure. The difference is the body around them.\"."
+    },
+    {
+      "id": "beat_118",
+      "start_audio_est": 616.464,
+      "end_audio_est": 623.129,
+      "duration_audio_est": 6.665,
+      "frame_filename": "beat_118.png",
+      "narration": "And maybe that is the real lesson. Your dog\u2019s stare is not weird. It is old.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"And maybe that is the real lesson. Your dog\u2019s stare is not weird. It is old.\"."
+    },
+    {
+      "id": "beat_119",
+      "start_audio_est": 623.129,
+      "end_audio_est": 629.403,
+      "duration_audio_est": 6.274,
+      "frame_filename": "beat_119.png",
+      "narration": "It comes from an animal that learned to live beside a species whose faces changed everything.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"It comes from an animal that learned to live beside a species whose faces changed everything.\"."
+    },
+    {
+      "id": "beat_120",
+      "start_audio_est": 629.403,
+      "end_audio_est": 634.108,
+      "duration_audio_est": 4.705,
+      "frame_filename": "beat_120.png",
+      "narration": "Your face predicts routines. Your face explains uncertainty. Your face invites contact.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"Your face predicts routines. Your face explains uncertainty. Your face invites contact.\"."
+    },
+    {
+      "id": "beat_121",
+      "start_audio_est": 634.108,
+      "end_audio_est": 638.421,
+      "duration_audio_est": 4.313,
+      "frame_filename": "beat_121.png",
+      "narration": "Your face can help turn a room from unsafe to safe.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"Your face can help turn a room from unsafe to safe.\"."
+    },
+    {
+      "id": "beat_122",
+      "start_audio_est": 638.421,
+      "end_audio_est": 644.694,
+      "duration_audio_est": 6.273,
+      "frame_filename": "beat_122.png",
+      "narration": "So when your dog watches you from across the room, they may not be judging you.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"So when your dog watches you from across the room, they may not be judging you.\"."
+    },
+    {
+      "id": "beat_123",
+      "start_audio_est": 644.694,
+      "end_audio_est": 650.183,
+      "duration_audio_est": 5.489,
+      "frame_filename": "beat_123.png",
+      "narration": "They may not be plotting. They may not even be asking for anything obvious.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"They may not be plotting. They may not even be asking for anything obvious.\"."
+    },
+    {
+      "id": "beat_124",
+      "start_audio_est": 650.183,
+      "end_audio_est": 654.496,
+      "duration_audio_est": 4.313,
+      "frame_filename": "beat_124.png",
+      "narration": "They may be reading the most important signal in their environment.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"They may be reading the most important signal in their environment.\"."
+    },
+    {
+      "id": "beat_125",
+      "start_audio_est": 654.496,
+      "end_audio_est": 659.201,
+      "duration_audio_est": 4.705,
+      "frame_filename": "beat_125.png",
+      "narration": "You. And if you want to understand your dog better, start there.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"You. And if you want to understand your dog better, start there.\"."
+    },
+    {
+      "id": "beat_126",
+      "start_audio_est": 659.201,
+      "end_audio_est": 662.84,
+      "duration_audio_est": 3.639,
+      "frame_filename": "beat_126.png",
+      "narration": "Do not only ask why they are staring.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"Do not only ask why they are staring.\"."
+    },
+    {
+      "id": "beat_127",
+      "start_audio_est": 662.84,
+      "end_audio_est": 666.76,
+      "duration_audio_est": 3.92,
+      "frame_filename": "beat_127.png",
+      "narration": "Ask what your face means to them in that moment.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"Ask what your face means to them in that moment.\"."
+    },
+    {
+      "id": "beat_128",
+      "start_audio_est": 666.76,
+      "end_audio_est": 672.25,
+      "duration_audio_est": 5.49,
+      "frame_filename": "beat_128.png",
+      "narration": "Because to your dog, your face may be more than something to look at.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"Because to your dog, your face may be more than something to look at.\"."
+    },
+    {
+      "id": "beat_129",
+      "start_audio_est": 672.25,
+      "end_audio_est": 676.562,
+      "duration_audio_est": 4.312,
+      "frame_filename": "beat_129.png",
+      "narration": "It may be the place where the whole room gets translated.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: varied cozy home scene showing dog watching owner from across room with clear emotional context and fresh composition. Visual should match narration: \"It may be the place where the whole room gets translated.\"."
+    },
+    {
+      "id": "beat_130",
+      "start_audio_est": 676.562,
+      "end_audio_est": 682.052,
+      "duration_audio_est": 5.49,
+      "frame_filename": "beat_130.png",
+      "narration": "If your dog does this, watch them tonight. What happens right before the stare?",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: closing scene: owner softly looks back at dog across cozy room, calm reflective ending with open emotional question. Visual should match narration: \"If your dog does this, watch them tonight. What happens right before the stare?\"."
+    },
+    {
+      "id": "beat_131",
+      "start_audio_est": 682.052,
+      "end_audio_est": 688.325,
+      "duration_audio_est": 6.273,
+      "frame_filename": "beat_131.png",
+      "narration": "What does their body do while they look? And what changes when you gently look back?",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: warm mutual gaze bonding scene between dog and owner, intimate but scientific, with subtle research-lab or home-study mood. Visual should match narration: \"What does their body do while they look? And what changes when you gently look back?\"."
+    },
+    {
+      "id": "beat_132",
+      "start_audio_est": 688.325,
+      "end_audio_est": 695.602,
+      "duration_audio_est": 7.277,
+      "frame_filename": "beat_132.png",
+      "narration": "Tell me in the comments: does your dog stare when they want something, when they are unsure, or when they are just quietly checking in?",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, amber domestic lighting, golden medium-sized dog, black-haired owner in dusty coral/terracotta sweater when visible. No readable text, numbers, labels, logos, watermark, arrows, or clipart. Correct anatomy: one dog only, no extra paws or warped muzzle; natural human hands only when visible. Scene: closing scene: owner softly looks back at dog across cozy room, calm reflective ending with open emotional question. Visual should match narration: \"Tell me in the comments: does your dog stare when they want something, when they are unsure, or when they are just quietly checking in?\"."
+    }
+  ],
+  "retiming_method": "V2 repaired plan: script split to shorter ~5 second visual beats against real 695.602s WAV; target comfortably over 100 frames; final subtitle timing comes from Whisper alignment."
+}

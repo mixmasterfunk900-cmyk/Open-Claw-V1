@@ -1,0 +1,73 @@
+{
+  "sop_version": "V4",
+  "run_id": "finance-v2-rerun-20260520T191342Z",
+  "video_slug": "credit-card-minimum-payment-trap",
+  "topic_source": "topic discovery because no topic supplied",
+  "selected_topic": "How credit-card minimum payments turn everyday balances into a long-running interest subscription for younger households.",
+  "winning_title": "The Minimum Payment Trap Is Eating Your Paycheck",
+  "image_model_policy": "openai/gpt-image-2 via OpenClaw image_generate; strict direct one full-frame 16:9 image per beat; no visible grids/collages/contact-sheet composites; no local fallback marked passing.",
+  "voice_lock_policy": "auto-lock first passing non-rejected Kokoro pair; am_michael and af_heart forbidden for this run",
+  "drive_folder_id": "10hjKYn8QrwM2K9w1rs1vdP1VFdmFwt-y",
+  "vibe_zone_destination": "/root/.openclaw/workspace/vibe-zone/media/exports/finance/credit-card-minimum-payment-trap",
+  "phase_status": {
+    "00": "planned",
+    "01": "planned",
+    "02": "planned",
+    "03": "planned",
+    "04": "planned",
+    "05": "planned",
+    "06": "planned",
+    "07": "planned",
+    "08": "planned",
+    "09": "waiting_direct_per_beat_generation",
+    "10": "planned",
+    "11": "planned",
+    "12": "planned",
+    "13": "planned",
+    "14": "planned",
+    "15": "planned",
+    "16": "planned"
+  },
+  "qa_gates": {
+    "character_lock_qa": "pass",
+    "style_lock_qa": "pass",
+    "no_image_reuse_qa": "pass",
+    "script_visual_alignment_qa": "pass",
+    "frontier_model_provenance_qa": "pass",
+    "editing_render_proof_qa": "pass",
+    "subtitle_style_qa": "pass",
+    "final_proof_package_qa": "pass",
+    "historical_regression_qa": "pass",
+    "tracker_freshness_qa": "pass"
+  },
+  "completion_rule": "Do not mark complete/count toward 5 unless V3 historical regression QA passes; if irreparable, log failure and continue to next non-duplicate topic.",
+  "overnight_objective": "Complete 5 Finance V3 videos tonight if possible; this run is Video 1 only if V3 QA passes.",
+  "renders": {
+    "clean_master": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/renders/credit-card-minimum-payment-trap_clean_master.mp4",
+    "burned_caption_review": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/renders/credit-card-minimum-payment-trap_burned_captions_review.mp4"
+  },
+  "VIDEO_READY_LOCAL": true,
+  "VIBE_ZONE_READY": true,
+  "updated_at": "2026-05-20T22:20:48+00:00",
+  "vibe_zone_path": "/root/.openclaw/workspace/vibe-zone/media/exports/finance/credit-card-minimum-payment-trap",
+  "completed_at": "2026-05-20T22:22:22+00:00",
+  "v4_renders": {
+    "clean_master": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v4_stick_figure/renders/credit-card-minimum-payment-trap_v4_stick_figure_clean_master.mp4",
+    "burned_caption_review": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v4_stick_figure/renders/credit-card-minimum-payment-trap_v4_stick_figure_burned_captions_review.mp4"
+  },
+  "v4_vibe_zone_destination": "/root/.openclaw/workspace/vibe-zone/media/practice/youtube-automation/finance-content/credit-card-minimum-payment-trap/v4_stick_figure",
+  "v4_status": "REJECTED_BY_MASALA",
+  "current_review_candidate": "NONE__V4_REJECTED__V5_REQUIRED",
+  "current_review_candidate_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v4_stick_figure/renders/credit-card-minimum-payment-trap_v4_stick_figure_burned_captions_review.mp4",
+  "current_vibe_zone_review_path": "/root/.openclaw/workspace/vibe-zone/media/practice/youtube-automation/finance-content/credit-card-minimum-payment-trap/v4_stick_figure/credit-card-minimum-payment-trap_v4_stick_figure_burned_captions_review.mp4",
+  "V4_READY_FOR_REVIEW": false,
+  "v5_locked_direction": "ChatGPT/OpenAI image generation with high-quality consistent stick-figure/simple explainer style; minimum runtime >= 8 minutes; no local placeholder shortcut.",
+  "hard_runtime_gate_seconds": 480,
+  "v5_full_run_20_keyframes_status": "REJECTED_NOT_REVIEW_READY",
+  "v5_full_run_rejection_reason": "Used 20 keyframes over ~671s; violates required 4-6s visual beat cadence.",
+  "v5_visual_beat_hard_gate_seconds": {
+    "min": 4,
+    "max": 6,
+    "target_avg": 5
+  }
+}

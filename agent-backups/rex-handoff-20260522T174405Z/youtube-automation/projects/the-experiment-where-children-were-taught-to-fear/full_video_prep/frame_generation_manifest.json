@@ -1,0 +1,2136 @@
+{
+  "project": "the-experiment-where-children-were-taught-to-fear",
+  "title": "The Experiment Where Children Were Taught to Fear",
+  "niche": "the-experiment-where",
+  "source_script": "scripts/script_v1.md",
+  "source_visual_plan": "full_video_prep/visual_plan_draft.json",
+  "corrected_plan_note": "Uses corrected 2000+ word script / 129-beat visual plan. Old 40-beat plan is obsolete and not counted.",
+  "sop_used": "youtube-automation-niche-flow-repo/niches/the-experiment-where/sop/ExperimentChannel_Visual_SOP.md",
+  "dog_sops_used": false,
+  "model": "openai/gpt-image-2",
+  "generation_method": "OpenClaw image generation / OpenAI real image-gen frames, verified by file integrity and contact-sheet image QA.",
+  "generated_at_utc": "2026-05-20T14:06:27Z",
+  "last_verified_at_utc": "2026-05-20T17:06:26Z",
+  "frame_count_expected": 129,
+  "frame_count_generated": 129,
+  "unique_sha256_count": 129,
+  "missing_frames": [],
+  "extra_pngs": [],
+  "invalid_frames": [],
+  "contact_sheets": [
+    {
+      "path": "contact_sheets/contact_sheet_beats_001_030.png",
+      "bytes": 3186902,
+      "dimensions": [
+        1632,
+        1116
+      ]
+    },
+    {
+      "path": "contact_sheets/contact_sheet_beats_031_060.png",
+      "bytes": 3405946,
+      "dimensions": [
+        1632,
+        1116
+      ]
+    },
+    {
+      "path": "contact_sheets/contact_sheet_beats_061_090.png",
+      "bytes": 3416309,
+      "dimensions": [
+        1632,
+        1116
+      ]
+    },
+    {
+      "path": "contact_sheets/contact_sheet_beats_091_120.png",
+      "bytes": 3264229,
+      "dimensions": [
+        1632,
+        1116
+      ]
+    },
+    {
+      "path": "contact_sheets/contact_sheet_beats_121_129.png",
+      "bytes": 922434,
+      "dimensions": [
+        984,
+        564
+      ]
+    }
+  ],
+  "contact_sheets_missing": [],
+  "notes": [
+    "Keepalive verification PASS at 2026-05-20T17:06:26Z: 129 expected PNGs, 0 missing, 0 extra, 0 invalid, 129 unique hashes, all 2048x1152.",
+    "Vision QA PASS: real generated sparse melancholic doodle frames; no placeholder/black/error/watermark panels.",
+    "Variation after beat 30 PASS: closeups, wide rooms, overhead/diagram compositions, corridor views, symbolic props, animals, researchers, and different subject spacing.",
+    "Minor watchlist: some very sparse or faint/low-contrast panels (not blockers), and a few diagram-heavy/repeated institutional-room compositions.",
+    "Final render intentionally not run; blocked until final audio/Whisper timestamp gate is confirmed."
+  ],
+  "frames": [
+    {
+      "id": "beat_001",
+      "beat_index": 1,
+      "filename": "beat_001.png",
+      "path": "approved_frames_draft/beat_001.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3804524,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "db9e677b441e9840e83112145dd85d498af165c6b6bed858fad709de87e0049a",
+      "generation_log": null,
+      "retry_log": null
+    },
+    {
+      "id": "beat_002",
+      "beat_index": 2,
+      "filename": "beat_002.png",
+      "path": "approved_frames_draft/beat_002.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4264450,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "f8ca931965b805195530d09b09251860640bac2a71ec90f7f0881290089566f7",
+      "generation_log": null,
+      "retry_log": null
+    },
+    {
+      "id": "beat_003",
+      "beat_index": 3,
+      "filename": "beat_003.png",
+      "path": "approved_frames_draft/beat_003.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3355222,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "55aa5eeaed7104f667591f44bb2ac3b484e5f22675cecd9bcec371634d921fb8",
+      "generation_log": "generation_logs/logs_beat_3.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_004",
+      "beat_index": 4,
+      "filename": "beat_004.png",
+      "path": "approved_frames_draft/beat_004.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3775892,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "8da65f11fecc620b541d0220efa26410fde092f33f788e062705c65e90527e90",
+      "generation_log": "generation_logs/logs_beat_4.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_005",
+      "beat_index": 5,
+      "filename": "beat_005.png",
+      "path": "approved_frames_draft/beat_005.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4707353,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "b349ced0c221c9fae2a9547fed8190a71554295978d32f82d756c29cf8a8dfcb",
+      "generation_log": "generation_logs/logs_beat_5.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_006",
+      "beat_index": 6,
+      "filename": "beat_006.png",
+      "path": "approved_frames_draft/beat_006.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4235169,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "0ab2b7eba4462c565f3613d4f3add92dcb80e7bd42addada8ac4afa892fa676e",
+      "generation_log": "generation_logs/logs_beat_6.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_007",
+      "beat_index": 7,
+      "filename": "beat_007.png",
+      "path": "approved_frames_draft/beat_007.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3967813,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "f6a168b5c885591486bdd4fa7e74c56ad85d6a2766a107ffaaddb50d933f4fd0",
+      "generation_log": "generation_logs/logs_beat_7.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_008",
+      "beat_index": 8,
+      "filename": "beat_008.png",
+      "path": "approved_frames_draft/beat_008.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3646152,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "0ee3292f2acad98c21d555ed0f069286fb7b95e47ea35cceb228cd6c42307321",
+      "generation_log": "generation_logs/logs_beat_8.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_009",
+      "beat_index": 9,
+      "filename": "beat_009.png",
+      "path": "approved_frames_draft/beat_009.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4148191,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "d99dd0e2004c12b4d0d5eb46e45dfff392ffb59c3fe26b4161e846eef314a991",
+      "generation_log": "generation_logs/logs_beat_9.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_010",
+      "beat_index": 10,
+      "filename": "beat_010.png",
+      "path": "approved_frames_draft/beat_010.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3584388,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "63c466ee1d436f471b9c323a001099f6f222c762012e78fdd86ca8735fcb3d2c",
+      "generation_log": "generation_logs/logs_beat_10.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_011",
+      "beat_index": 11,
+      "filename": "beat_011.png",
+      "path": "approved_frames_draft/beat_011.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3961179,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "66ea730a5393430178a6e3500e1c32a1efdafb5804b53e0de0b09da98f9bc03b",
+      "generation_log": "generation_logs/logs_beat_11.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_012",
+      "beat_index": 12,
+      "filename": "beat_012.png",
+      "path": "approved_frames_draft/beat_012.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4553624,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "7c6c2af243119107c6bc6c40a2b258e19ce76326c3721ef0684cf400807203ef",
+      "generation_log": "generation_logs/logs_beat_12.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_013",
+      "beat_index": 13,
+      "filename": "beat_013.png",
+      "path": "approved_frames_draft/beat_013.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4785846,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "8e1466fe2c1c06dce7328a17a54cb11fd4f5438d78b3b17b652cc7a8a78af095",
+      "generation_log": "generation_logs/logs_beat_13.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_014",
+      "beat_index": 14,
+      "filename": "beat_014.png",
+      "path": "approved_frames_draft/beat_014.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 2478686,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "613820e660bf4b34ae659dcf3c99575da36eaf812ab8d1f84351b26f55424e67",
+      "generation_log": "generation_logs/logs_beat_14.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_015",
+      "beat_index": 15,
+      "filename": "beat_015.png",
+      "path": "approved_frames_draft/beat_015.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3770909,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "0a25e581c93b2310a37fa06b8fea2f19669006d9f92004ec5fa2c1afe43b77e7",
+      "generation_log": "generation_logs/logs_beat_15.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_016",
+      "beat_index": 16,
+      "filename": "beat_016.png",
+      "path": "approved_frames_draft/beat_016.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3726103,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "eb6f522d9965e4739df043851eb9aa39c756a492e2854baadffcd29e81907dc2",
+      "generation_log": "generation_logs/logs_beat_16.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_017",
+      "beat_index": 17,
+      "filename": "beat_017.png",
+      "path": "approved_frames_draft/beat_017.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4018073,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "2248314bd38b02c62abddaea37cdad01839b696316b601911e5bc941b377a39b",
+      "generation_log": "generation_logs/logs_beat_17.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_018",
+      "beat_index": 18,
+      "filename": "beat_018.png",
+      "path": "approved_frames_draft/beat_018.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3837918,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "6b0e07457329ebd7b5d4abce56a407fe1edb256de1080982ff52d9e2331179ca",
+      "generation_log": "generation_logs/logs_beat_18.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_019",
+      "beat_index": 19,
+      "filename": "beat_019.png",
+      "path": "approved_frames_draft/beat_019.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4620938,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "6cc2de99ccf888892cdae88c214610ee53e6d70a7d253667d20e9f82c99302d5",
+      "generation_log": "generation_logs/logs_beat_19.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_020",
+      "beat_index": 20,
+      "filename": "beat_020.png",
+      "path": "approved_frames_draft/beat_020.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3985729,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "fff587c8289b09acda0f9b079014fa18257d3ffd2d4b9e2755d356fd54248d3f",
+      "generation_log": "generation_logs/logs_beat_20.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_021",
+      "beat_index": 21,
+      "filename": "beat_021.png",
+      "path": "approved_frames_draft/beat_021.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4035664,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "7df1e20f5b9b44200e17d9605f59f30a478e7fdd7dfe22841d473deea0f43cb5",
+      "generation_log": "generation_logs/logs_beat_21.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_022",
+      "beat_index": 22,
+      "filename": "beat_022.png",
+      "path": "approved_frames_draft/beat_022.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3361261,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "40e7ac5d1d46203ec60493a646cfd5c064d106ea22b2119f465e18ee8c6ab744",
+      "generation_log": "generation_logs/logs_beat_22.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_023",
+      "beat_index": 23,
+      "filename": "beat_023.png",
+      "path": "approved_frames_draft/beat_023.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4159708,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "d089b2ba53262bb46368174350c6b8586b7a96200213bd21c6c7f3deda839e5e",
+      "generation_log": "generation_logs/logs_beat_23.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_024",
+      "beat_index": 24,
+      "filename": "beat_024.png",
+      "path": "approved_frames_draft/beat_024.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3532823,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "844c9d347c1326e10b8e1f50c1b40a5384baaa503fe18c5ac60409933a0e9b9a",
+      "generation_log": "generation_logs/logs_beat_24.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_025",
+      "beat_index": 25,
+      "filename": "beat_025.png",
+      "path": "approved_frames_draft/beat_025.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3917552,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "8ba7f6848e0e07ad11bae1ec300a22b9d19157fd65e931fcb2754b66c3ad3bd2",
+      "generation_log": "generation_logs/logs_beat_25.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_026",
+      "beat_index": 26,
+      "filename": "beat_026.png",
+      "path": "approved_frames_draft/beat_026.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4537095,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "11f248228f3c5d0398122895218c05109ff0855419c119553951e9f7daa9b4fe",
+      "generation_log": "generation_logs/logs_beat_26.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_027",
+      "beat_index": 27,
+      "filename": "beat_027.png",
+      "path": "approved_frames_draft/beat_027.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3850545,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "0e0d0a5a9ab89c835e59f69c1556ed5282fed58744c404dacc19236abe8e128f",
+      "generation_log": "generation_logs/logs_beat_27.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_028",
+      "beat_index": 28,
+      "filename": "beat_028.png",
+      "path": "approved_frames_draft/beat_028.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4333826,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "91038e2fe39be962b1739c330a7fb778e731570515f2724d05978d8d12a7aa65",
+      "generation_log": "generation_logs/logs_beat_28.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_029",
+      "beat_index": 29,
+      "filename": "beat_029.png",
+      "path": "approved_frames_draft/beat_029.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3894424,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "9b541800059d88e7786ef34375addd49a4f7e2a7f4df31e4232b323a5a61d095",
+      "generation_log": "generation_logs/logs_beat_29.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_030",
+      "beat_index": 30,
+      "filename": "beat_030.png",
+      "path": "approved_frames_draft/beat_030.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4077545,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "4fdb0df7365e600e5d853938e202685ae75cce33abb736d0b1b82b957243bc59",
+      "generation_log": "generation_logs/logs_beat_30.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_031",
+      "beat_index": 31,
+      "filename": "beat_031.png",
+      "path": "approved_frames_draft/beat_031.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4436218,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "17d00578ae8d0e4f6a1de7320059ed91b22ec63df97f1613c102cb9541c19cce",
+      "generation_log": "generation_logs/logs_beat_31.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_032",
+      "beat_index": 32,
+      "filename": "beat_032.png",
+      "path": "approved_frames_draft/beat_032.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4011800,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "0767609c6df603362edb30cd4e1209e52b34c2ade2d80e204fed9af0a9955859",
+      "generation_log": "generation_logs/logs_beat_32.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_033",
+      "beat_index": 33,
+      "filename": "beat_033.png",
+      "path": "approved_frames_draft/beat_033.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4234184,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "c4fb364817741e844b0da6e88f5ee1c99d682589a419aaa985eed11dcbc2b571",
+      "generation_log": "generation_logs/logs_beat_33.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_034",
+      "beat_index": 34,
+      "filename": "beat_034.png",
+      "path": "approved_frames_draft/beat_034.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4247443,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "52dece1eba58fb7664bdbcea4c7fe1f497a75512392e50ace890f5266835f6db",
+      "generation_log": "generation_logs/logs_beat_34.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_035",
+      "beat_index": 35,
+      "filename": "beat_035.png",
+      "path": "approved_frames_draft/beat_035.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3775206,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "16b04d006463c13107d36aa0effe8a9257330ae4d6f322ac8b8f310b08d062c1",
+      "generation_log": "generation_logs/logs_beat_35.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_036",
+      "beat_index": 36,
+      "filename": "beat_036.png",
+      "path": "approved_frames_draft/beat_036.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3306557,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "a4f69fd1675bb5a59896ca4c29933f6d9c1b4f815e50271774461156dcc56e6e",
+      "generation_log": "generation_logs/logs_beat_36.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_037",
+      "beat_index": 37,
+      "filename": "beat_037.png",
+      "path": "approved_frames_draft/beat_037.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3894076,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "4d97160eb93f07f59519187e3e2f55a325788ac58845e7920169be0707c336c3",
+      "generation_log": "generation_logs/logs_beat_37.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_038",
+      "beat_index": 38,
+      "filename": "beat_038.png",
+      "path": "approved_frames_draft/beat_038.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4271337,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "353f773f08798752df6d26c4ae1c94df93130f22050bdccc3d2180c633a4b2c9",
+      "generation_log": "generation_logs/logs_beat_38.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_039",
+      "beat_index": 39,
+      "filename": "beat_039.png",
+      "path": "approved_frames_draft/beat_039.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4141589,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "793925fb79b4e7c270fcb944ada98abb3c84d6a1389ff04302543c3f295f64d4",
+      "generation_log": "generation_logs/logs_beat_39.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_040",
+      "beat_index": 40,
+      "filename": "beat_040.png",
+      "path": "approved_frames_draft/beat_040.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4488581,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "499c9ef592815f7af4cccfffbd708d4b4e15a619e25da590d2bd5a8e8884e3fe",
+      "generation_log": "generation_logs/logs_beat_40.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_041",
+      "beat_index": 41,
+      "filename": "beat_041.png",
+      "path": "approved_frames_draft/beat_041.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4247508,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "053c9f85bfaa27865e79e9905a95d5b944b7c82b929f60ac32b7814c736c2b7c",
+      "generation_log": "generation_logs/logs_beat_41.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_042",
+      "beat_index": 42,
+      "filename": "beat_042.png",
+      "path": "approved_frames_draft/beat_042.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3822257,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "59ab02fb0a5e3d2079ab3120944fc9cb623df2f18605dc438d038699853ed5e8",
+      "generation_log": "generation_logs/logs_beat_42.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_043",
+      "beat_index": 43,
+      "filename": "beat_043.png",
+      "path": "approved_frames_draft/beat_043.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4239781,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "5988c065c3bd42decaf8abef49f8ca6081bff091b3a70298d655dd13357acb9c",
+      "generation_log": "generation_logs/logs_beat_43.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_044",
+      "beat_index": 44,
+      "filename": "beat_044.png",
+      "path": "approved_frames_draft/beat_044.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3878484,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "2b4bbe68b133d90b610968e6eea8f8b443899ab2eb916a70e532e9bba0b41c1c",
+      "generation_log": "generation_logs/logs_beat_44.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_045",
+      "beat_index": 45,
+      "filename": "beat_045.png",
+      "path": "approved_frames_draft/beat_045.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3846454,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "f45764addd02d69405340774d0059f1e3267c5446193e1cf9b97cc978bf21502",
+      "generation_log": "generation_logs/logs_beat_45.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_046",
+      "beat_index": 46,
+      "filename": "beat_046.png",
+      "path": "approved_frames_draft/beat_046.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4143452,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "5938b1fcf52ba2ca237a36d718949d3900f3a75357f571200f6fb4ff291fb49c",
+      "generation_log": "generation_logs/logs_beat_46.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_047",
+      "beat_index": 47,
+      "filename": "beat_047.png",
+      "path": "approved_frames_draft/beat_047.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3878226,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "d6443493b42ed7144df8594fcb511d0927b7631fcf677f99f2b5dd240648a4a9",
+      "generation_log": "generation_logs/logs_beat_47.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_048",
+      "beat_index": 48,
+      "filename": "beat_048.png",
+      "path": "approved_frames_draft/beat_048.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4250284,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "e400b33e49c7f33c5d36095f9691839791f60f8d54d4ada13e77cc61eaf93b57",
+      "generation_log": "generation_logs/logs_beat_48.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_049",
+      "beat_index": 49,
+      "filename": "beat_049.png",
+      "path": "approved_frames_draft/beat_049.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3849327,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "3a362aad19c1326845f2eb60535de0877ca67d773b75ec304197416474916527",
+      "generation_log": "generation_logs/logs_beat_49.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_050",
+      "beat_index": 50,
+      "filename": "beat_050.png",
+      "path": "approved_frames_draft/beat_050.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4834295,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "cd966487f5cf5a7d632e12465ec498c5953c281c0d68e84c3035fd16e817990d",
+      "generation_log": "generation_logs/logs_beat_50.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_051",
+      "beat_index": 51,
+      "filename": "beat_051.png",
+      "path": "approved_frames_draft/beat_051.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 5011744,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "d6476247d8df42d7c8ac063d544e4d6dda658072a52a624a13c04151351953c8",
+      "generation_log": "generation_logs/logs_beat_51.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_052",
+      "beat_index": 52,
+      "filename": "beat_052.png",
+      "path": "approved_frames_draft/beat_052.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3859071,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "c88285c876fb1908561afa4c8da0bbdd27046026f61b7232fb96d9aa3fb7c401",
+      "generation_log": "generation_logs/logs_beat_52.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_053",
+      "beat_index": 53,
+      "filename": "beat_053.png",
+      "path": "approved_frames_draft/beat_053.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4126974,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "56a26f58ce3ced49c0366a3eb6a06d4a472d85b7cff0aba46a881639736c3206",
+      "generation_log": "generation_logs/logs_beat_53.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_054",
+      "beat_index": 54,
+      "filename": "beat_054.png",
+      "path": "approved_frames_draft/beat_054.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4377131,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "522e17068cbd20e26fd6d4f5fa951c1b90775ceaa6da7f25b35a594e5bce8094",
+      "generation_log": "generation_logs/logs_beat_54.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_055",
+      "beat_index": 55,
+      "filename": "beat_055.png",
+      "path": "approved_frames_draft/beat_055.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3742952,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "9ba9e5f64bd32e3f038e93a6d26a770a8c6f554c5b1df2df57031f09beeb7c3d",
+      "generation_log": "generation_logs/logs_beat_55.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_056",
+      "beat_index": 56,
+      "filename": "beat_056.png",
+      "path": "approved_frames_draft/beat_056.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4111786,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "b72ff0bd589b423bed6a45783bc0a2981c7f88e5143a76235083713b2ad353f2",
+      "generation_log": "generation_logs/logs_beat_56.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_057",
+      "beat_index": 57,
+      "filename": "beat_057.png",
+      "path": "approved_frames_draft/beat_057.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4125409,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "c970fed1f924d74dc8944cb29cc19b9258daf76ca83b1d869d9a0c2f6e8f74b6",
+      "generation_log": "generation_logs/logs_beat_57.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_058",
+      "beat_index": 58,
+      "filename": "beat_058.png",
+      "path": "approved_frames_draft/beat_058.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4288295,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "d33061ff1eefce7a960dcff7ff663a5a1eaceda8b9fa4a5d4f1e2511b2b3895a",
+      "generation_log": "generation_logs/logs_beat_58.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_059",
+      "beat_index": 59,
+      "filename": "beat_059.png",
+      "path": "approved_frames_draft/beat_059.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3964609,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "c74938dc0bffa98c7f49f645412d539500bf8496c90417d4b6a14ad4f1a78eb1",
+      "generation_log": "generation_logs/logs_beat_59.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_060",
+      "beat_index": 60,
+      "filename": "beat_060.png",
+      "path": "approved_frames_draft/beat_060.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4230930,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "1a963fb801088d6f186c3fcbbbb60b226b36aa9b7e93f95e2993cf947f90f445",
+      "generation_log": "generation_logs/logs_beat_60.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_061",
+      "beat_index": 61,
+      "filename": "beat_061.png",
+      "path": "approved_frames_draft/beat_061.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4339813,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "2c765f9098e88a4cefed9d8cb37895ae3530ac307e1816b13d93ec0a70cd12ce",
+      "generation_log": "generation_logs/logs_beat_61.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_062",
+      "beat_index": 62,
+      "filename": "beat_062.png",
+      "path": "approved_frames_draft/beat_062.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4463963,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "025db49331fc78282717ab91d64f23ee964ab9ffb84f410d34340ed2fb2113bc",
+      "generation_log": "generation_logs/logs_beat_62.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_063",
+      "beat_index": 63,
+      "filename": "beat_063.png",
+      "path": "approved_frames_draft/beat_063.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4149535,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "e30176e9f3b364aad9a535ec1b7f661ea12a8717f517e83c45f1c9d6fe6374b9",
+      "generation_log": "generation_logs/logs_beat_63.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_064",
+      "beat_index": 64,
+      "filename": "beat_064.png",
+      "path": "approved_frames_draft/beat_064.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3847067,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "fce539bfa6f1db2a9222ac82563fca098b5ae5312f1268b7fea769eaa1de3e91",
+      "generation_log": "generation_logs/logs_beat_64.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_065",
+      "beat_index": 65,
+      "filename": "beat_065.png",
+      "path": "approved_frames_draft/beat_065.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3786914,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "0b2eda8371d7dc81676815cf2b67e877051bf901c2f769f0b0c14aaee2279ab1",
+      "generation_log": "generation_logs/logs_beat_65.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_066",
+      "beat_index": 66,
+      "filename": "beat_066.png",
+      "path": "approved_frames_draft/beat_066.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4551448,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "370ec3e30ba951eece46bada3a2cec14a5729478a1e61a7092d488bdc8619c9c",
+      "generation_log": "generation_logs/logs_beat_66.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_067",
+      "beat_index": 67,
+      "filename": "beat_067.png",
+      "path": "approved_frames_draft/beat_067.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4266745,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "00080b648c500d2e6dbe75b63c7a0e21eb063c75264ce4287160ab1fc55710ba",
+      "generation_log": "generation_logs/logs_beat_67.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_068",
+      "beat_index": 68,
+      "filename": "beat_068.png",
+      "path": "approved_frames_draft/beat_068.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4629621,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "f0aa3826e961a5317a3e9085ae47f34dd02ae2150b441203cd6f00b319ebd808",
+      "generation_log": "generation_logs/logs_beat_68.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_069",
+      "beat_index": 69,
+      "filename": "beat_069.png",
+      "path": "approved_frames_draft/beat_069.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3434912,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "9eba4c250982379676dd8e468f61e2e2d76e7a9d32a37b9c1af46aa755e3c2f7",
+      "generation_log": "generation_logs/logs_beat_69.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_070",
+      "beat_index": 70,
+      "filename": "beat_070.png",
+      "path": "approved_frames_draft/beat_070.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4518435,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "2e977533a62b454e376a426f9f8a83042241049b87f69b1b80406b03805944f2",
+      "generation_log": "generation_logs/logs_beat_70.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_071",
+      "beat_index": 71,
+      "filename": "beat_071.png",
+      "path": "approved_frames_draft/beat_071.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4376763,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "d10fd7c6d05509dd984c078f8bf8f4790c94e2990dfcb779a8b7d8043c349d1c",
+      "generation_log": "generation_logs/logs_beat_71.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_072",
+      "beat_index": 72,
+      "filename": "beat_072.png",
+      "path": "approved_frames_draft/beat_072.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3844397,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "ea6ec603c3ef8e1f30041ec992612b3f1b2463b71bf5b7f73ad8ab30aed889dc",
+      "generation_log": "generation_logs/logs_beat_72.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_073",
+      "beat_index": 73,
+      "filename": "beat_073.png",
+      "path": "approved_frames_draft/beat_073.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4587389,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "faf7c8b33f470b796e0c1a83702f2e7ae56dc6c5a17baa6108408202a34cc101",
+      "generation_log": "generation_logs/logs_beat_73.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_074",
+      "beat_index": 74,
+      "filename": "beat_074.png",
+      "path": "approved_frames_draft/beat_074.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4549047,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "bc6ee7d110998585983bd76e340f3c52632e489d17bc9dca9327bff656b49238",
+      "generation_log": "generation_logs/logs_beat_74.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_075",
+      "beat_index": 75,
+      "filename": "beat_075.png",
+      "path": "approved_frames_draft/beat_075.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3387988,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "02d80f6904e79d8a4d8d8b71a641d59572fb94455f6c5dbede13c5405376377e",
+      "generation_log": "generation_logs/logs_beat_75.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_076",
+      "beat_index": 76,
+      "filename": "beat_076.png",
+      "path": "approved_frames_draft/beat_076.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3910769,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "d949f85b22da56b07aac4ec642c955360b0d4f1bde7b44e7e64591ef48c5f89d",
+      "generation_log": "generation_logs/logs_beat_76.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_077",
+      "beat_index": 77,
+      "filename": "beat_077.png",
+      "path": "approved_frames_draft/beat_077.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3863298,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "cb56e13c4303f009d115f0680aadbddee30ac21e06f3384fc228eedb76523ddd",
+      "generation_log": "generation_logs/logs_beat_77.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_078",
+      "beat_index": 78,
+      "filename": "beat_078.png",
+      "path": "approved_frames_draft/beat_078.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4340391,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "e4da44c2ad97983c8fddd2267bc45eedd9b1bf5e3a0d62b557a830192114155f",
+      "generation_log": "generation_logs/logs_beat_78.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_079",
+      "beat_index": 79,
+      "filename": "beat_079.png",
+      "path": "approved_frames_draft/beat_079.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3763479,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "01fd75fe749fe4b8d1bee1fc62a1064151409897aaf7e3e40ed8e43858f62333",
+      "generation_log": "generation_logs/logs_beat_79.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_080",
+      "beat_index": 80,
+      "filename": "beat_080.png",
+      "path": "approved_frames_draft/beat_080.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4648620,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "e266b4060dffc31658481cb75c350480ef5f1a37b75240ff39bb798836ffbc71",
+      "generation_log": "generation_logs/logs_beat_80.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_081",
+      "beat_index": 81,
+      "filename": "beat_081.png",
+      "path": "approved_frames_draft/beat_081.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3991201,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "84cd003ed67467fc9ed57da5423554e10bdbfd05f838145bb621b23dc8adc762",
+      "generation_log": "generation_logs/logs_beat_81.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_082",
+      "beat_index": 82,
+      "filename": "beat_082.png",
+      "path": "approved_frames_draft/beat_082.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3653920,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "acb5b7ce40c9bc514e55c28703e59441bd14306f07eb762f417dbfb710526d43",
+      "generation_log": "generation_logs/logs_beat_82.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_083",
+      "beat_index": 83,
+      "filename": "beat_083.png",
+      "path": "approved_frames_draft/beat_083.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4894560,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "f5a0472df55b75571c03175f320163684e807b20b89e7896357bce2a13572b02",
+      "generation_log": "generation_logs/logs_beat_83.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_084",
+      "beat_index": 84,
+      "filename": "beat_084.png",
+      "path": "approved_frames_draft/beat_084.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4528399,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "91e308035aa7e81f5731b907fdd4531dbba553eb1ac136f3d09a4495aa77ced8",
+      "generation_log": "generation_logs/logs_beat_84.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_085",
+      "beat_index": 85,
+      "filename": "beat_085.png",
+      "path": "approved_frames_draft/beat_085.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3427924,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "4b43f8f22eb785918e573868eeae24726b161bfa79a060a8a15757e533603b63",
+      "generation_log": "generation_logs/logs_beat_85.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_086",
+      "beat_index": 86,
+      "filename": "beat_086.png",
+      "path": "approved_frames_draft/beat_086.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3685467,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "10d2384bfc46829cc52a3b5f4e0dae261d6680499d6299d2061fe432b5e4c919",
+      "generation_log": "generation_logs/logs_beat_86.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_087",
+      "beat_index": 87,
+      "filename": "beat_087.png",
+      "path": "approved_frames_draft/beat_087.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4241991,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "db46bad1aef702f2eee569dbd3dd8363a271586138dc39767ab6c438b3ff0ef4",
+      "generation_log": "generation_logs/logs_beat_87.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_088",
+      "beat_index": 88,
+      "filename": "beat_088.png",
+      "path": "approved_frames_draft/beat_088.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4580066,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "53d2757ad03142c9c763758307b5deeacdbeb21e64994ee8056c360f616ca4dd",
+      "generation_log": "generation_logs/logs_beat_88.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_089",
+      "beat_index": 89,
+      "filename": "beat_089.png",
+      "path": "approved_frames_draft/beat_089.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4364350,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "ecd727c4f5e03bf1db13412cc5c16555d6476fc0add2251041c7dc15d59a0cc0",
+      "generation_log": "generation_logs/logs_beat_89.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_090",
+      "beat_index": 90,
+      "filename": "beat_090.png",
+      "path": "approved_frames_draft/beat_090.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4384496,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "988f8c840a77f7ec10e49b1e279af5e31ba0f69414f3f199f8152c268ef22e79",
+      "generation_log": "generation_logs/logs_beat_90.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_091",
+      "beat_index": 91,
+      "filename": "beat_091.png",
+      "path": "approved_frames_draft/beat_091.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4152151,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "3316d5c927cb47f21e6fc5cceda3a9a8a34319dfb338aa306cf959f4eb323cf7",
+      "generation_log": "generation_logs/logs_beat_91.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_092",
+      "beat_index": 92,
+      "filename": "beat_092.png",
+      "path": "approved_frames_draft/beat_092.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3789168,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "5257ae67fd4d9e9a559df91a59571d57bdd849a1de848620ca145ae173a586c4",
+      "generation_log": "generation_logs/logs_beat_92.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_093",
+      "beat_index": 93,
+      "filename": "beat_093.png",
+      "path": "approved_frames_draft/beat_093.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4235325,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "088d4a0ae27864fea2c79d152f94ca7afa8e97488fb20db39395a382e5deef04",
+      "generation_log": "generation_logs/logs_beat_93.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_094",
+      "beat_index": 94,
+      "filename": "beat_094.png",
+      "path": "approved_frames_draft/beat_094.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3456741,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "5e7d85a7a73449e74fd8703c7fc09778d02f3c3664197fe2a36b00e524c18597",
+      "generation_log": "generation_logs/logs_beat_94.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_095",
+      "beat_index": 95,
+      "filename": "beat_095.png",
+      "path": "approved_frames_draft/beat_095.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4344322,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "fc301d873dd1dd35eee61838c3e0408e6badf78926fd94b71ae4d1b51c068edf",
+      "generation_log": "generation_logs/logs_beat_95.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_096",
+      "beat_index": 96,
+      "filename": "beat_096.png",
+      "path": "approved_frames_draft/beat_096.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3734694,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "8be384d8ee221281ed9cf095d051a031c65f6f6967519e61c366c86cbc766cb4",
+      "generation_log": "generation_logs/logs_beat_96.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_097",
+      "beat_index": 97,
+      "filename": "beat_097.png",
+      "path": "approved_frames_draft/beat_097.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3806632,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "5aca57e86050b76fa31845017fbae0b83c34d1851d5bacba37b5e0d21273fdd2",
+      "generation_log": "generation_logs/logs_beat_97.txt",
+      "retry_log": "generation_logs/logs_retry_beat_97.txt"
+    },
+    {
+      "id": "beat_098",
+      "beat_index": 98,
+      "filename": "beat_098.png",
+      "path": "approved_frames_draft/beat_098.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4163402,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "db336068df42d7b81f5d07469be6127918941a93c7349b3cd13a74344607f6b0",
+      "generation_log": "generation_logs/logs_beat_98.txt",
+      "retry_log": "generation_logs/logs_retry_beat_98.txt"
+    },
+    {
+      "id": "beat_099",
+      "beat_index": 99,
+      "filename": "beat_099.png",
+      "path": "approved_frames_draft/beat_099.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3888362,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "45c8871edf87c1fb61d1b2f77511535d92aacd99dc1724a5bb1a38b21c3f3556",
+      "generation_log": "generation_logs/logs_beat_99.txt",
+      "retry_log": "generation_logs/logs_retry_beat_99.txt"
+    },
+    {
+      "id": "beat_100",
+      "beat_index": 100,
+      "filename": "beat_100.png",
+      "path": "approved_frames_draft/beat_100.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4476574,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "9a9a334fd8503b5dceaf1fce7cdfc951ad843199b014143edc684836ee002417",
+      "generation_log": "generation_logs/logs_beat_100.txt",
+      "retry_log": "generation_logs/logs_retry_beat_100.txt"
+    },
+    {
+      "id": "beat_101",
+      "beat_index": 101,
+      "filename": "beat_101.png",
+      "path": "approved_frames_draft/beat_101.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3548924,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "10c95a585a65f6fcad974a45d070fd5ad60ac46534b2dace0771ad7baf7abf61",
+      "generation_log": "generation_logs/logs_beat_101.txt",
+      "retry_log": "generation_logs/logs_retry_beat_101.txt"
+    },
+    {
+      "id": "beat_102",
+      "beat_index": 102,
+      "filename": "beat_102.png",
+      "path": "approved_frames_draft/beat_102.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3915474,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "b4a7c153c94e62b303b146984bdb11ab06feba1c1597fe8e80a6901dc694672e",
+      "generation_log": "generation_logs/logs_beat_102.txt",
+      "retry_log": "generation_logs/logs_retry_beat_102.txt"
+    },
+    {
+      "id": "beat_103",
+      "beat_index": 103,
+      "filename": "beat_103.png",
+      "path": "approved_frames_draft/beat_103.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4532337,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "b16d5c601a55bbfee758d7ff29073f9364b5917dbdc4d3f9e1f93cfde84be17a",
+      "generation_log": "generation_logs/logs_beat_103.txt",
+      "retry_log": "generation_logs/logs_retry_beat_103.txt"
+    },
+    {
+      "id": "beat_104",
+      "beat_index": 104,
+      "filename": "beat_104.png",
+      "path": "approved_frames_draft/beat_104.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4681013,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "591f38f16f7b9581b814a7aa8a79850d2e53f6a3ad721019face767ee5ba0607",
+      "generation_log": "generation_logs/logs_beat_104.txt",
+      "retry_log": "generation_logs/logs_retry_beat_104.txt"
+    },
+    {
+      "id": "beat_105",
+      "beat_index": 105,
+      "filename": "beat_105.png",
+      "path": "approved_frames_draft/beat_105.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3852213,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "8650a5526c78fc41a9d769dd727f65652158cb0b8053a327bfc9ae00614a1b10",
+      "generation_log": "generation_logs/logs_beat_105.txt",
+      "retry_log": "generation_logs/logs_retry_beat_105.txt"
+    },
+    {
+      "id": "beat_106",
+      "beat_index": 106,
+      "filename": "beat_106.png",
+      "path": "approved_frames_draft/beat_106.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3700524,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "e00b8713e962d0b3a87e7edb9ad2263c0ce475738f3d30d531a98b54638af61f",
+      "generation_log": "generation_logs/logs_beat_106.txt",
+      "retry_log": "generation_logs/logs_retry_beat_106.txt"
+    },
+    {
+      "id": "beat_107",
+      "beat_index": 107,
+      "filename": "beat_107.png",
+      "path": "approved_frames_draft/beat_107.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3859930,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "f1d2b6d8cd007d5e1644eb4b80a512ae5389270cee96d609753f7d31955246a0",
+      "generation_log": "generation_logs/logs_beat_107.txt",
+      "retry_log": "generation_logs/logs_retry_beat_107.txt"
+    },
+    {
+      "id": "beat_108",
+      "beat_index": 108,
+      "filename": "beat_108.png",
+      "path": "approved_frames_draft/beat_108.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4052882,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "e842c2847f7e028a2e5548b569d7e5f9fd1d7411e43b38110e3580258763ebd9",
+      "generation_log": "generation_logs/logs_beat_108.txt",
+      "retry_log": "generation_logs/logs_retry_beat_108.txt"
+    },
+    {
+      "id": "beat_109",
+      "beat_index": 109,
+      "filename": "beat_109.png",
+      "path": "approved_frames_draft/beat_109.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4610029,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "ce8bbf952ddef37e6b80a564f1524ebdf9b6335bb37a11a23368e76a9e56237b",
+      "generation_log": "generation_logs/logs_beat_109.txt",
+      "retry_log": "generation_logs/logs_retry_beat_109.txt"
+    },
+    {
+      "id": "beat_110",
+      "beat_index": 110,
+      "filename": "beat_110.png",
+      "path": "approved_frames_draft/beat_110.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3733914,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "7f23030a9754e77a80dae796bc4c3f1ca03207601005bae79ce1e8e3eceb2bfb",
+      "generation_log": "generation_logs/logs_beat_110.txt",
+      "retry_log": "generation_logs/logs_retry_beat_110.txt"
+    },
+    {
+      "id": "beat_111",
+      "beat_index": 111,
+      "filename": "beat_111.png",
+      "path": "approved_frames_draft/beat_111.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4049394,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "aaf7188d04ff71d0bb81118681b9be93ae11cba91e1b94fe492d0891edc14749",
+      "generation_log": "generation_logs/logs_beat_111.txt",
+      "retry_log": "generation_logs/logs_retry_beat_111.txt"
+    },
+    {
+      "id": "beat_112",
+      "beat_index": 112,
+      "filename": "beat_112.png",
+      "path": "approved_frames_draft/beat_112.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3637705,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "910016d2f7bee5339b77e8fd8f911fec44336b7f58282d9a6d6f61f87f775e76",
+      "generation_log": "generation_logs/logs_beat_112.txt",
+      "retry_log": "generation_logs/logs_retry_beat_112.txt"
+    },
+    {
+      "id": "beat_113",
+      "beat_index": 113,
+      "filename": "beat_113.png",
+      "path": "approved_frames_draft/beat_113.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3964737,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "c12fc42ded84d99b6dea1fd82e94eeb66a4091749e421f448e68c4bb715671a1",
+      "generation_log": "generation_logs/logs_beat_113.txt",
+      "retry_log": "generation_logs/logs_retry_beat_113.txt"
+    },
+    {
+      "id": "beat_114",
+      "beat_index": 114,
+      "filename": "beat_114.png",
+      "path": "approved_frames_draft/beat_114.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3672869,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "5d9e3b98ca10b07252de8b0709b018894a68d04b374a9e6d6d1cf3b0708fe845",
+      "generation_log": "generation_logs/logs_beat_114.txt",
+      "retry_log": "generation_logs/logs_retry_beat_114.txt"
+    },
+    {
+      "id": "beat_115",
+      "beat_index": 115,
+      "filename": "beat_115.png",
+      "path": "approved_frames_draft/beat_115.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4335575,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "03a1ee9d50e0b2b4ea888540b5acb03a965fb70bc77ed00cb024ddfe31b594cd",
+      "generation_log": "generation_logs/logs_beat_115.txt",
+      "retry_log": "generation_logs/logs_retry_beat_115.txt"
+    },
+    {
+      "id": "beat_116",
+      "beat_index": 116,
+      "filename": "beat_116.png",
+      "path": "approved_frames_draft/beat_116.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3126645,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "0ae4db8c7e43a52f19baef928916bca2d703242817b2aee4cd6d8cdf2b09833c",
+      "generation_log": "generation_logs/logs_beat_116.txt",
+      "retry_log": "generation_logs/logs_retry_beat_116.txt"
+    },
+    {
+      "id": "beat_117",
+      "beat_index": 117,
+      "filename": "beat_117.png",
+      "path": "approved_frames_draft/beat_117.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3610674,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "97590108ae4844d5bce95d95135c712432bc7498eb114478997e5ab43bdf5de0",
+      "generation_log": "generation_logs/logs_beat_117.txt",
+      "retry_log": "generation_logs/logs_retry_beat_117.txt"
+    },
+    {
+      "id": "beat_118",
+      "beat_index": 118,
+      "filename": "beat_118.png",
+      "path": "approved_frames_draft/beat_118.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4527273,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "e407c4d877c3f9776853dad2ff527d5912f824a2e829e09613f5dee5de270416",
+      "generation_log": "generation_logs/logs_beat_118.txt",
+      "retry_log": "generation_logs/logs_retry_beat_118.txt"
+    },
+    {
+      "id": "beat_119",
+      "beat_index": 119,
+      "filename": "beat_119.png",
+      "path": "approved_frames_draft/beat_119.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4032108,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "ef7858ca154a2e197b1db560df393356dde22da23663978e932f296fdeeff71c",
+      "generation_log": "generation_logs/logs_beat_119.txt",
+      "retry_log": "generation_logs/logs_retry_beat_119.txt"
+    },
+    {
+      "id": "beat_120",
+      "beat_index": 120,
+      "filename": "beat_120.png",
+      "path": "approved_frames_draft/beat_120.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3403541,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "32a2ebc79b2c809adc6edbc0f6eb41a65a9c0ffd96db94bc7b9150bb49225796",
+      "generation_log": "generation_logs/logs_beat_120.txt",
+      "retry_log": "generation_logs/logs_retry_beat_120.txt"
+    },
+    {
+      "id": "beat_121",
+      "beat_index": 121,
+      "filename": "beat_121.png",
+      "path": "approved_frames_draft/beat_121.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3881984,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "a782614d6b3a8b80c6a193749f6a6f5f777d6ea3375fa0a148bcd0c01beb6a8a",
+      "generation_log": "generation_logs/logs_beat_121.txt",
+      "retry_log": "generation_logs/logs_retry_beat_121.txt"
+    },
+    {
+      "id": "beat_122",
+      "beat_index": 122,
+      "filename": "beat_122.png",
+      "path": "approved_frames_draft/beat_122.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4444802,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "19665ca13af5bc812b4db12ba8da0c35aa11fae992580dedd32f6b68245348f6",
+      "generation_log": "generation_logs/logs_beat_122.txt",
+      "retry_log": "generation_logs/logs_retry_beat_122.txt"
+    },
+    {
+      "id": "beat_123",
+      "beat_index": 123,
+      "filename": "beat_123.png",
+      "path": "approved_frames_draft/beat_123.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4004458,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "81ca9e46a64e93bb2dbd6692e508fac30d0182cc4be1bd66d9fc28689e733992",
+      "generation_log": "generation_logs/logs_beat_123.txt",
+      "retry_log": "generation_logs/logs_retry_beat_123.txt"
+    },
+    {
+      "id": "beat_124",
+      "beat_index": 124,
+      "filename": "beat_124.png",
+      "path": "approved_frames_draft/beat_124.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3758692,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "4a115e688bdce58152b30ee6469253f8512ed2c999464af6d12d6e9b60069363",
+      "generation_log": "generation_logs/logs_beat_124.txt",
+      "retry_log": "generation_logs/logs_retry_beat_124.txt"
+    },
+    {
+      "id": "beat_125",
+      "beat_index": 125,
+      "filename": "beat_125.png",
+      "path": "approved_frames_draft/beat_125.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4022301,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "26e266e20fffd5efca9e45066cd892848a15a9aa1a657d08cc87c57303565317",
+      "generation_log": "generation_logs/logs_beat_125.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_126",
+      "beat_index": 126,
+      "filename": "beat_126.png",
+      "path": "approved_frames_draft/beat_126.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 3580559,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "1ebc666bb816cb41b5d4d91c66f4aeb75832fcae51825224538da2f0929a6623",
+      "generation_log": "generation_logs/logs_beat_126.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_127",
+      "beat_index": 127,
+      "filename": "beat_127.png",
+      "path": "approved_frames_draft/beat_127.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4078511,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "96f216c20c16af0529b7fddfe85bfaa792909e02c14fc9c041cf018e3a387a1a",
+      "generation_log": "generation_logs/logs_beat_127.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_128",
+      "beat_index": 128,
+      "filename": "beat_128.png",
+      "path": "approved_frames_draft/beat_128.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4003257,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "e82ac56bbc91bd4faae0f839dcfa7e2ddbfe9ac7e2e4feb602371e326621bbc5",
+      "generation_log": "generation_logs/logs_beat_128.txt",
+      "retry_log": null
+    },
+    {
+      "id": "beat_129",
+      "beat_index": 129,
+      "filename": "beat_129.png",
+      "path": "approved_frames_draft/beat_129.png",
+      "status": "verified_openai_generated_png",
+      "model": "openai/gpt-image-2",
+      "bytes": 4170665,
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "sha256": "fb43567af703027d99e5c9e7e3e0d2a8a26e2cb13eb85b8910182b1dc0ae0f26",
+      "generation_log": "generation_logs/logs_beat_129.txt",
+      "retry_log": null
+    }
+  ]
+}

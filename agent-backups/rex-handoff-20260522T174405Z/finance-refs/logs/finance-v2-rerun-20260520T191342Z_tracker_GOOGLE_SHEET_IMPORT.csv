@@ -1,0 +1,18 @@
+task_id,phase,task,status,owner,started_at,completed_at,blocker,output_path,notes
+00,Tracker,Create Google Sheet/local tracker,in_progress,Rex,, ,,,Must be first deliverable
+01,Topic Discovery,Select non-duplicate finance topic,planned,Director,,,,,
+02,Project Init,Create video dir and manifest,planned,Director,,,,,
+03,Research/Title,Research topic and choose title,planned,Director,,,,,
+04,Script,Write and fact-QA script,planned,Director,,,,,
+05,Voice,Select new voices and generate audio,planned,Director,,,,,Old am_michael/af_heart rejected
+06,Character Lock,Create/load Laura and John references,planned,Director,,,,,
+07,Style Lock,Lock cartoon style,planned,Director,,,,,
+08,Beat Manifest,Build timestamped image beat manifest,planned,Director,,,,,
+09,Images,Generate unique frontier GPT image per beat,planned,Director,,,,,
+10,Image QA,Character/style/no-reuse/script alignment QA,planned,Director,,,,,
+11,Editing,Create motion/transition plan,planned,Director,,,,,
+12,Render,Render clean master and burned-caption review copy,planned,Director,,,,,
+13,Subtitles,One-line white outlined subtitle style QA,planned,Director,,,,,
+14,Final QA,Proof package and hard gates,planned,Director,,,,,
+15,Vibe/Drive,Add to Vibe Zone and archive to Drive,planned,Director,,,,,
+16,Report/Ledger,Final report and title ledger update,planned,Director,,,,,

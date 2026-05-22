@@ -1,0 +1,6320 @@
+[
+  {
+    "word": "Laura",
+    "start": 0.0,
+    "end": 0.339,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 0.339,
+    "end": 0.677,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "most",
+    "start": 0.677,
+    "end": 1.016,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "expensive",
+    "start": 1.016,
+    "end": 1.355,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "button",
+    "start": 1.355,
+    "end": 1.693,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "in",
+    "start": 1.693,
+    "end": 2.032,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "modern",
+    "start": 2.032,
+    "end": 2.371,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "money",
+    "start": 2.371,
+    "end": 2.709,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 2.709,
+    "end": 3.048,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "not",
+    "start": 3.048,
+    "end": 3.387,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "buy",
+    "start": 3.387,
+    "end": 3.725,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "now.",
+    "start": 3.725,
+    "end": 4.064,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "It",
+    "start": 4.064,
+    "end": 4.403,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 4.403,
+    "end": 4.742,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "minimum",
+    "start": 4.742,
+    "end": 5.08,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "payment.",
+    "start": 5.08,
+    "end": 5.419,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "It",
+    "start": 5.419,
+    "end": 5.758,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "looks",
+    "start": 5.758,
+    "end": 6.096,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "polite.",
+    "start": 6.096,
+    "end": 6.435,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "It",
+    "start": 6.435,
+    "end": 6.774,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "looks",
+    "start": 6.774,
+    "end": 7.112,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "responsible.",
+    "start": 7.112,
+    "end": 7.451,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "But",
+    "start": 7.451,
+    "end": 7.79,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "when",
+    "start": 7.79,
+    "end": 8.128,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 8.128,
+    "end": 8.467,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "card",
+    "start": 8.467,
+    "end": 8.806,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "balance",
+    "start": 8.806,
+    "end": 9.144,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "sits",
+    "start": 9.144,
+    "end": 9.483,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "behind",
+    "start": 9.483,
+    "end": 9.822,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "it",
+    "start": 9.822,
+    "end": 10.16,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "at",
+    "start": 10.16,
+    "end": 10.499,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "twenty-plus",
+    "start": 10.499,
+    "end": 10.838,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "percent",
+    "start": 10.838,
+    "end": 11.176,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "interest",
+    "start": 11.176,
+    "end": 11.515,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "that",
+    "start": 11.515,
+    "end": 11.854,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "button",
+    "start": 11.854,
+    "end": 12.192,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "can",
+    "start": 12.192,
+    "end": 12.531,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "turn",
+    "start": 12.531,
+    "end": 12.87,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "last",
+    "start": 12.87,
+    "end": 13.208,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "month's",
+    "start": 13.208,
+    "end": 13.547,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "groceries",
+    "start": 13.547,
+    "end": 13.886,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "into",
+    "start": 13.886,
+    "end": 14.225,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 14.225,
+    "end": 14.563,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "subscription",
+    "start": 14.563,
+    "end": 14.902,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "you",
+    "start": 14.902,
+    "end": 15.241,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "keep",
+    "start": 15.241,
+    "end": 15.579,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "paying",
+    "start": 15.579,
+    "end": 15.918,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "long",
+    "start": 15.918,
+    "end": 16.257,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "after",
+    "start": 16.257,
+    "end": 16.595,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 16.595,
+    "end": 16.934,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "food",
+    "start": 16.934,
+    "end": 17.273,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 17.273,
+    "end": 17.611,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "gone.",
+    "start": 17.611,
+    "end": 17.95,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "That",
+    "start": 18.37,
+    "end": 18.735,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "sounds",
+    "start": 18.735,
+    "end": 19.101,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "dramatic.",
+    "start": 19.101,
+    "end": 19.466,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "I",
+    "start": 19.466,
+    "end": 19.831,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "thought",
+    "start": 19.831,
+    "end": 20.196,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "minimum",
+    "start": 20.196,
+    "end": 20.562,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "payment",
+    "start": 20.562,
+    "end": 20.927,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "meant",
+    "start": 20.927,
+    "end": 21.292,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "you",
+    "start": 21.292,
+    "end": 21.657,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "were",
+    "start": 21.657,
+    "end": 22.023,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "doing",
+    "start": 22.023,
+    "end": 22.388,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "the",
+    "start": 22.388,
+    "end": 22.753,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "right",
+    "start": 22.753,
+    "end": 23.119,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "thing",
+    "start": 23.119,
+    "end": 23.484,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "and",
+    "start": 23.484,
+    "end": 23.849,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "protecting",
+    "start": 23.849,
+    "end": 24.214,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "your",
+    "start": 24.214,
+    "end": 24.58,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "credit.",
+    "start": 24.58,
+    "end": 24.945,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "It",
+    "start": 25.365,
+    "end": 25.655,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "protects",
+    "start": 25.655,
+    "end": 25.945,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "you",
+    "start": 25.945,
+    "end": 26.236,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "from",
+    "start": 26.236,
+    "end": 26.526,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "being",
+    "start": 26.526,
+    "end": 26.816,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "late.",
+    "start": 26.816,
+    "end": 27.106,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "It",
+    "start": 27.106,
+    "end": 27.397,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "does",
+    "start": 27.397,
+    "end": 27.687,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "not",
+    "start": 27.687,
+    "end": 27.977,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "protect",
+    "start": 27.977,
+    "end": 28.267,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "you",
+    "start": 28.267,
+    "end": 28.558,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "from",
+    "start": 28.558,
+    "end": 28.848,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 28.848,
+    "end": 29.138,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "math.",
+    "start": 29.138,
+    "end": 29.428,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "Today",
+    "start": 29.428,
+    "end": 29.719,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "we",
+    "start": 29.719,
+    "end": 30.009,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "are",
+    "start": 30.009,
+    "end": 30.299,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "going",
+    "start": 30.299,
+    "end": 30.589,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "to",
+    "start": 30.589,
+    "end": 30.879,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "separate",
+    "start": 30.879,
+    "end": 31.17,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "those",
+    "start": 31.17,
+    "end": 31.46,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "two",
+    "start": 31.46,
+    "end": 31.75,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "ideas.",
+    "start": 31.75,
+    "end": 32.04,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "We",
+    "start": 32.04,
+    "end": 32.331,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "will",
+    "start": 32.331,
+    "end": 32.621,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "show",
+    "start": 32.621,
+    "end": 32.911,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "why",
+    "start": 32.911,
+    "end": 33.201,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 33.201,
+    "end": 33.492,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "minimum",
+    "start": 33.492,
+    "end": 33.782,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 33.782,
+    "end": 34.072,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 34.072,
+    "end": 34.362,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "floor",
+    "start": 34.362,
+    "end": 34.652,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "not",
+    "start": 34.652,
+    "end": 34.943,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 34.943,
+    "end": 35.233,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "plan",
+    "start": 35.233,
+    "end": 35.523,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "how",
+    "start": 35.523,
+    "end": 35.813,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "interest",
+    "start": 35.813,
+    "end": 36.104,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "gets",
+    "start": 36.104,
+    "end": 36.394,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "ahead",
+    "start": 36.394,
+    "end": 36.684,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "of",
+    "start": 36.684,
+    "end": 36.974,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "good",
+    "start": 36.974,
+    "end": 37.265,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "intentions",
+    "start": 37.265,
+    "end": 37.555,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "and",
+    "start": 37.555,
+    "end": 37.845,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "why",
+    "start": 37.845,
+    "end": 38.135,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "two",
+    "start": 38.135,
+    "end": 38.426,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "people",
+    "start": 38.426,
+    "end": 38.716,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "with",
+    "start": 38.716,
+    "end": 39.006,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 39.006,
+    "end": 39.296,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "same",
+    "start": 39.296,
+    "end": 39.586,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "balance",
+    "start": 39.586,
+    "end": 39.877,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "can",
+    "start": 39.877,
+    "end": 40.167,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "live",
+    "start": 40.167,
+    "end": 40.457,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "totally",
+    "start": 40.457,
+    "end": 40.747,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "different",
+    "start": 40.747,
+    "end": 41.038,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "futures",
+    "start": 41.038,
+    "end": 41.328,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "depending",
+    "start": 41.328,
+    "end": 41.618,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "on",
+    "start": 41.618,
+    "end": 41.908,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 41.908,
+    "end": 42.199,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "size",
+    "start": 42.199,
+    "end": 42.489,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "of",
+    "start": 42.489,
+    "end": 42.779,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 42.779,
+    "end": 43.069,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "payment",
+    "start": 43.069,
+    "end": 43.36,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "they",
+    "start": 43.36,
+    "end": 43.65,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "choose.",
+    "start": 43.65,
+    "end": 43.94,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "Here",
+    "start": 44.36,
+    "end": 44.7,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 44.7,
+    "end": 45.04,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 45.04,
+    "end": 45.379,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "money",
+    "start": 45.379,
+    "end": 45.719,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "gap",
+    "start": 45.719,
+    "end": 46.059,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "in",
+    "start": 46.059,
+    "end": 46.399,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "one",
+    "start": 46.399,
+    "end": 46.739,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "picture.",
+    "start": 46.739,
+    "end": 47.078,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "The",
+    "start": 47.078,
+    "end": 47.418,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "New",
+    "start": 47.418,
+    "end": 47.758,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "York",
+    "start": 47.758,
+    "end": 48.098,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "Fed",
+    "start": 48.098,
+    "end": 48.437,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "tracks",
+    "start": 48.437,
+    "end": 48.777,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "more",
+    "start": 48.777,
+    "end": 49.117,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "than",
+    "start": 49.117,
+    "end": 49.457,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 49.457,
+    "end": 49.797,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "trillion",
+    "start": 49.797,
+    "end": 50.136,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "dollars",
+    "start": 50.136,
+    "end": 50.476,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "of",
+    "start": 50.476,
+    "end": 50.816,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "credit",
+    "start": 50.816,
+    "end": 51.156,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "card",
+    "start": 51.156,
+    "end": 51.496,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "balances",
+    "start": 51.496,
+    "end": 51.835,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "across",
+    "start": 51.835,
+    "end": 52.175,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "American",
+    "start": 52.175,
+    "end": 52.515,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "households",
+    "start": 52.515,
+    "end": 52.855,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "while",
+    "start": 52.855,
+    "end": 53.195,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "market",
+    "start": 53.195,
+    "end": 53.534,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "trackers",
+    "start": 53.534,
+    "end": 53.874,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "show",
+    "start": 53.874,
+    "end": 54.214,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "new-card",
+    "start": 54.214,
+    "end": 54.554,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "offers",
+    "start": 54.554,
+    "end": 54.893,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "around",
+    "start": 54.893,
+    "end": 55.233,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 55.233,
+    "end": 55.573,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "low-to-mid",
+    "start": 55.573,
+    "end": 55.913,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "twenties",
+    "start": 55.913,
+    "end": 56.253,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "for",
+    "start": 56.253,
+    "end": 56.592,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "annual",
+    "start": 56.592,
+    "end": 56.932,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "percentage",
+    "start": 56.932,
+    "end": 57.272,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "rates.",
+    "start": 57.272,
+    "end": 57.612,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "The",
+    "start": 57.612,
+    "end": 57.952,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "Philadelphia",
+    "start": 57.952,
+    "end": 58.291,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "Fed",
+    "start": 58.291,
+    "end": 58.631,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "says",
+    "start": 58.631,
+    "end": 58.971,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "borrowing",
+    "start": 58.971,
+    "end": 59.311,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "costs",
+    "start": 59.311,
+    "end": 59.65,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "remain",
+    "start": 59.65,
+    "end": 59.99,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "historically",
+    "start": 59.99,
+    "end": 60.33,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "high",
+    "start": 60.33,
+    "end": 60.67,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "for",
+    "start": 60.67,
+    "end": 61.01,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "people",
+    "start": 61.01,
+    "end": 61.349,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "who",
+    "start": 61.349,
+    "end": 61.689,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "carry",
+    "start": 61.689,
+    "end": 62.029,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "balances.",
+    "start": 62.029,
+    "end": 62.369,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "That",
+    "start": 62.369,
+    "end": 62.709,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "means",
+    "start": 62.709,
+    "end": 63.048,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 63.048,
+    "end": 63.388,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "penalty",
+    "start": 63.388,
+    "end": 63.728,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "for",
+    "start": 63.728,
+    "end": 64.068,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "moving",
+    "start": 64.068,
+    "end": 64.408,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "slowly",
+    "start": 64.408,
+    "end": 64.747,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 64.747,
+    "end": 65.087,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "not",
+    "start": 65.087,
+    "end": 65.427,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "abstract.",
+    "start": 65.427,
+    "end": 65.767,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "It",
+    "start": 65.767,
+    "end": 66.106,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 66.106,
+    "end": 66.446,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "monthly",
+    "start": 66.446,
+    "end": 66.786,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "rent",
+    "start": 66.786,
+    "end": 67.126,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "paid",
+    "start": 67.126,
+    "end": 67.466,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "to",
+    "start": 67.466,
+    "end": 67.805,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 67.805,
+    "end": 68.145,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "bank.",
+    "start": 68.145,
+    "end": 68.485,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "So",
+    "start": 68.905,
+    "end": 69.241,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "the",
+    "start": 69.241,
+    "end": 69.576,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "danger",
+    "start": 69.576,
+    "end": 69.912,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "is",
+    "start": 69.912,
+    "end": 70.248,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "not",
+    "start": 70.248,
+    "end": 70.584,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "the",
+    "start": 70.584,
+    "end": 70.919,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "card",
+    "start": 70.919,
+    "end": 71.255,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "existing.",
+    "start": 71.255,
+    "end": 71.591,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "It",
+    "start": 71.591,
+    "end": 71.926,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "is",
+    "start": 71.926,
+    "end": 72.262,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "carrying",
+    "start": 72.262,
+    "end": 72.598,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "the",
+    "start": 72.598,
+    "end": 72.934,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "balance",
+    "start": 72.934,
+    "end": 73.269,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "slowly",
+    "start": 73.269,
+    "end": 73.605,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "when",
+    "start": 73.605,
+    "end": 73.941,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "the",
+    "start": 73.941,
+    "end": 74.276,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "interest",
+    "start": 74.276,
+    "end": 74.612,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "rate",
+    "start": 74.612,
+    "end": 74.948,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "is",
+    "start": 74.948,
+    "end": 75.284,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "that",
+    "start": 75.284,
+    "end": 75.619,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "high.",
+    "start": 75.619,
+    "end": 75.955,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "Exactly.",
+    "start": 76.375,
+    "end": 76.674,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "A",
+    "start": 76.674,
+    "end": 76.974,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "credit",
+    "start": 76.974,
+    "end": 77.273,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "card",
+    "start": 77.273,
+    "end": 77.572,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "can",
+    "start": 77.572,
+    "end": 77.872,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "be",
+    "start": 77.872,
+    "end": 78.171,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 78.171,
+    "end": 78.47,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "payment",
+    "start": 78.47,
+    "end": 78.77,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "tool.",
+    "start": 78.77,
+    "end": 79.069,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "The",
+    "start": 79.069,
+    "end": 79.368,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "trap",
+    "start": 79.368,
+    "end": 79.668,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "begins",
+    "start": 79.668,
+    "end": 79.967,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "when",
+    "start": 79.967,
+    "end": 80.266,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 80.266,
+    "end": 80.566,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "bill",
+    "start": 80.566,
+    "end": 80.865,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "becomes",
+    "start": 80.865,
+    "end": 81.164,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 81.164,
+    "end": 81.464,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "loan",
+    "start": 81.464,
+    "end": 81.763,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "and",
+    "start": 81.763,
+    "end": 82.062,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 82.062,
+    "end": 82.362,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "loan",
+    "start": 82.362,
+    "end": 82.661,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "has",
+    "start": 82.661,
+    "end": 82.96,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "no",
+    "start": 82.96,
+    "end": 83.26,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "finish",
+    "start": 83.26,
+    "end": 83.559,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "line.",
+    "start": 83.559,
+    "end": 83.858,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "Minimum",
+    "start": 83.858,
+    "end": 84.158,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "payments",
+    "start": 84.158,
+    "end": 84.457,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "are",
+    "start": 84.457,
+    "end": 84.756,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "usually",
+    "start": 84.756,
+    "end": 85.056,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "calculated",
+    "start": 85.056,
+    "end": 85.355,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "to",
+    "start": 85.355,
+    "end": 85.654,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "keep",
+    "start": 85.654,
+    "end": 85.954,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 85.954,
+    "end": 86.253,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "account",
+    "start": 86.253,
+    "end": 86.552,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "current",
+    "start": 86.552,
+    "end": 86.852,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "not",
+    "start": 86.852,
+    "end": 87.151,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "to",
+    "start": 87.151,
+    "end": 87.45,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "get",
+    "start": 87.45,
+    "end": 87.75,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "you",
+    "start": 87.75,
+    "end": 88.049,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "free",
+    "start": 88.049,
+    "end": 88.348,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "quickly.",
+    "start": 88.348,
+    "end": 88.648,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "In",
+    "start": 88.648,
+    "end": 88.947,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 88.947,
+    "end": 89.246,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "early",
+    "start": 89.246,
+    "end": 89.546,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "months",
+    "start": 89.546,
+    "end": 89.845,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 89.845,
+    "end": 90.144,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "big",
+    "start": 90.144,
+    "end": 90.444,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "part",
+    "start": 90.444,
+    "end": 90.743,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "of",
+    "start": 90.743,
+    "end": 91.042,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "that",
+    "start": 91.042,
+    "end": 91.342,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "small",
+    "start": 91.342,
+    "end": 91.641,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "payment",
+    "start": 91.641,
+    "end": 91.94,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 91.94,
+    "end": 92.24,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "swallowed",
+    "start": 92.24,
+    "end": 92.539,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "by",
+    "start": 92.539,
+    "end": 92.838,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "interest",
+    "start": 92.838,
+    "end": 93.138,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "before",
+    "start": 93.138,
+    "end": 93.437,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "it",
+    "start": 93.437,
+    "end": 93.736,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "touches",
+    "start": 93.736,
+    "end": 94.036,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 94.036,
+    "end": 94.335,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "principal.",
+    "start": 94.335,
+    "end": 94.634,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "You",
+    "start": 94.634,
+    "end": 94.934,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "feel",
+    "start": 94.934,
+    "end": 95.233,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "movement",
+    "start": 95.233,
+    "end": 95.532,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "because",
+    "start": 95.532,
+    "end": 95.832,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "money",
+    "start": 95.832,
+    "end": 96.131,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "left",
+    "start": 96.131,
+    "end": 96.43,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "your",
+    "start": 96.43,
+    "end": 96.73,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "checking",
+    "start": 96.73,
+    "end": 97.029,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "account.",
+    "start": 97.029,
+    "end": 97.328,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "But",
+    "start": 97.328,
+    "end": 97.628,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 97.628,
+    "end": 97.927,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "balance",
+    "start": 97.927,
+    "end": 98.226,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "barely",
+    "start": 98.226,
+    "end": 98.526,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "flinched.",
+    "start": 98.526,
+    "end": 98.825,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "This",
+    "start": 99.245,
+    "end": 99.545,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 99.545,
+    "end": 99.845,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "where",
+    "start": 99.845,
+    "end": 100.145,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "Laura",
+    "start": 100.145,
+    "end": 100.445,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "and",
+    "start": 100.445,
+    "end": 100.745,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "I",
+    "start": 100.745,
+    "end": 101.045,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "see",
+    "start": 101.045,
+    "end": 101.345,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "different",
+    "start": 101.345,
+    "end": 101.645,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "worlds.",
+    "start": 101.645,
+    "end": 101.945,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "When",
+    "start": 101.945,
+    "end": 102.245,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "I",
+    "start": 102.245,
+    "end": 102.545,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "was",
+    "start": 102.545,
+    "end": 102.845,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "younger",
+    "start": 102.845,
+    "end": 103.145,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 103.145,
+    "end": 103.445,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "normal",
+    "start": 103.445,
+    "end": 103.745,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "mistake",
+    "start": 103.745,
+    "end": 104.045,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "could",
+    "start": 104.045,
+    "end": 104.345,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "still",
+    "start": 104.345,
+    "end": 104.645,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "be",
+    "start": 104.645,
+    "end": 104.945,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "expensive",
+    "start": 104.945,
+    "end": 105.245,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "but",
+    "start": 105.245,
+    "end": 105.545,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 105.545,
+    "end": 105.845,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "internet",
+    "start": 105.845,
+    "end": 106.145,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "did",
+    "start": 106.145,
+    "end": 106.445,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "not",
+    "start": 106.445,
+    "end": 106.745,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "put",
+    "start": 106.745,
+    "end": 107.045,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 107.045,
+    "end": 107.345,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "purchase",
+    "start": 107.345,
+    "end": 107.645,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "button",
+    "start": 107.645,
+    "end": 107.945,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "in",
+    "start": 107.945,
+    "end": 108.245,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "every",
+    "start": 108.245,
+    "end": 108.545,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "quiet",
+    "start": 108.545,
+    "end": 108.845,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "moment.",
+    "start": 108.845,
+    "end": 109.145,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "Today",
+    "start": 109.145,
+    "end": 109.445,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 109.445,
+    "end": 109.745,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "phone",
+    "start": 109.745,
+    "end": 110.045,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "can",
+    "start": 110.045,
+    "end": 110.345,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "offer",
+    "start": 110.345,
+    "end": 110.645,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "clothes",
+    "start": 110.645,
+    "end": 110.945,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "food",
+    "start": 110.945,
+    "end": 111.245,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "delivery",
+    "start": 111.245,
+    "end": 111.545,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "travel",
+    "start": 111.545,
+    "end": 111.845,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "points",
+    "start": 111.845,
+    "end": 112.145,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "emergency",
+    "start": 112.145,
+    "end": 112.445,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "vet",
+    "start": 112.445,
+    "end": 112.745,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "bills",
+    "start": 112.745,
+    "end": 113.045,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "and",
+    "start": 113.045,
+    "end": 113.345,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 113.345,
+    "end": 113.645,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "balance",
+    "start": 113.645,
+    "end": 113.945,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "transfer",
+    "start": 113.945,
+    "end": 114.245,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "ad",
+    "start": 114.245,
+    "end": 114.545,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "before",
+    "start": 114.545,
+    "end": 114.845,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "breakfast.",
+    "start": 114.845,
+    "end": 115.145,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "The",
+    "start": 115.145,
+    "end": 115.445,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "old",
+    "start": 115.445,
+    "end": 115.745,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "lecture",
+    "start": 115.745,
+    "end": 116.045,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "was",
+    "start": 116.045,
+    "end": 116.345,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "do",
+    "start": 116.345,
+    "end": 116.645,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "not",
+    "start": 116.645,
+    "end": 116.945,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "buy",
+    "start": 116.945,
+    "end": 117.245,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "what",
+    "start": 117.245,
+    "end": 117.545,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "you",
+    "start": 117.545,
+    "end": 117.845,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "cannot",
+    "start": 117.845,
+    "end": 118.145,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "afford.",
+    "start": 118.145,
+    "end": 118.445,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "The",
+    "start": 118.445,
+    "end": 118.745,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "new",
+    "start": 118.745,
+    "end": 119.045,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "lecture",
+    "start": 119.045,
+    "end": 119.345,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "has",
+    "start": 119.345,
+    "end": 119.645,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "to",
+    "start": 119.645,
+    "end": 119.945,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "be",
+    "start": 119.945,
+    "end": 120.245,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "more",
+    "start": 120.245,
+    "end": 120.545,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "precise",
+    "start": 120.545,
+    "end": 120.845,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "do",
+    "start": 120.845,
+    "end": 121.145,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "not",
+    "start": 121.145,
+    "end": 121.445,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "let",
+    "start": 121.445,
+    "end": 121.745,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "yesterday's",
+    "start": 121.745,
+    "end": 122.045,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "emergency",
+    "start": 122.045,
+    "end": 122.345,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "become",
+    "start": 122.345,
+    "end": 122.645,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "tomorrow's",
+    "start": 122.645,
+    "end": 122.945,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "default",
+    "start": 122.945,
+    "end": 123.245,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "monthly",
+    "start": 123.245,
+    "end": 123.545,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "bill.",
+    "start": 123.545,
+    "end": 123.845,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "But",
+    "start": 124.265,
+    "end": 124.588,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "what",
+    "start": 124.588,
+    "end": 124.91,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "if",
+    "start": 124.91,
+    "end": 125.233,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "someone",
+    "start": 125.233,
+    "end": 125.555,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "really",
+    "start": 125.555,
+    "end": 125.878,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "cannot",
+    "start": 125.878,
+    "end": 126.201,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "pay",
+    "start": 126.201,
+    "end": 126.523,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "more",
+    "start": 126.523,
+    "end": 126.846,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "right",
+    "start": 126.846,
+    "end": 127.169,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "now",
+    "start": 127.169,
+    "end": 127.491,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "Telling",
+    "start": 127.491,
+    "end": 127.814,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "them",
+    "start": 127.814,
+    "end": 128.136,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "to",
+    "start": 128.136,
+    "end": 128.459,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "just",
+    "start": 128.459,
+    "end": 128.782,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "pay",
+    "start": 128.782,
+    "end": 129.104,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "it",
+    "start": 129.104,
+    "end": 129.427,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "off",
+    "start": 129.427,
+    "end": 129.75,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "faster",
+    "start": 129.75,
+    "end": 130.072,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "can",
+    "start": 130.072,
+    "end": 130.395,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "sound",
+    "start": 130.395,
+    "end": 130.717,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "useless.",
+    "start": 130.717,
+    "end": 131.04,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "That",
+    "start": 131.46,
+    "end": 131.738,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 131.738,
+    "end": 132.017,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "fair.",
+    "start": 132.017,
+    "end": 132.295,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "This",
+    "start": 132.295,
+    "end": 132.574,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 132.574,
+    "end": 132.852,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "not",
+    "start": 132.852,
+    "end": 133.13,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 133.13,
+    "end": 133.409,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "shame",
+    "start": 133.409,
+    "end": 133.687,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "video.",
+    "start": 133.687,
+    "end": 133.966,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "Minimum",
+    "start": 133.966,
+    "end": 134.244,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "payments",
+    "start": 134.244,
+    "end": 134.522,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "can",
+    "start": 134.522,
+    "end": 134.801,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "be",
+    "start": 134.801,
+    "end": 135.079,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 135.079,
+    "end": 135.358,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "lifeboat",
+    "start": 135.358,
+    "end": 135.636,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "during",
+    "start": 135.636,
+    "end": 135.914,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 135.914,
+    "end": 136.193,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "hard",
+    "start": 136.193,
+    "end": 136.471,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "month.",
+    "start": 136.471,
+    "end": 136.75,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "The",
+    "start": 136.75,
+    "end": 137.028,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "problem",
+    "start": 137.028,
+    "end": 137.306,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 137.306,
+    "end": 137.585,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "when",
+    "start": 137.585,
+    "end": 137.863,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 137.863,
+    "end": 138.141,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "lifeboat",
+    "start": 138.141,
+    "end": 138.42,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "becomes",
+    "start": 138.42,
+    "end": 138.698,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 138.698,
+    "end": 138.977,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "house.",
+    "start": 138.977,
+    "end": 139.255,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "If",
+    "start": 139.255,
+    "end": 139.533,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "money",
+    "start": 139.533,
+    "end": 139.812,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 139.812,
+    "end": 140.09,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "tight",
+    "start": 140.09,
+    "end": 140.369,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 140.369,
+    "end": 140.647,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "first",
+    "start": 140.647,
+    "end": 140.925,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "win",
+    "start": 140.925,
+    "end": 141.204,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "may",
+    "start": 141.204,
+    "end": 141.482,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "be",
+    "start": 141.482,
+    "end": 141.761,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "stopping",
+    "start": 141.761,
+    "end": 142.039,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 142.039,
+    "end": 142.317,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "balance",
+    "start": 142.317,
+    "end": 142.596,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "from",
+    "start": 142.596,
+    "end": 142.874,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "growing",
+    "start": 142.874,
+    "end": 143.153,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "no",
+    "start": 143.153,
+    "end": 143.431,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "new",
+    "start": 143.431,
+    "end": 143.709,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "charges",
+    "start": 143.709,
+    "end": 143.988,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "on",
+    "start": 143.988,
+    "end": 144.266,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "that",
+    "start": 144.266,
+    "end": 144.545,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "card",
+    "start": 144.545,
+    "end": 144.823,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "autopay",
+    "start": 144.823,
+    "end": 145.101,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "at",
+    "start": 145.101,
+    "end": 145.38,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "least",
+    "start": 145.38,
+    "end": 145.658,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 145.658,
+    "end": 145.937,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "minimum",
+    "start": 145.937,
+    "end": 146.215,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "and",
+    "start": 146.215,
+    "end": 146.493,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 146.493,
+    "end": 146.772,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "written",
+    "start": 146.772,
+    "end": 147.05,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "number",
+    "start": 147.05,
+    "end": 147.329,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "for",
+    "start": 147.329,
+    "end": 147.607,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 147.607,
+    "end": 147.885,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "real",
+    "start": 147.885,
+    "end": 148.164,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "extra",
+    "start": 148.164,
+    "end": 148.442,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "payment",
+    "start": 148.442,
+    "end": 148.72,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "even",
+    "start": 148.72,
+    "end": 148.999,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "if",
+    "start": 148.999,
+    "end": 149.277,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "it",
+    "start": 149.277,
+    "end": 149.556,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "starts",
+    "start": 149.556,
+    "end": 149.834,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "tiny.",
+    "start": 149.834,
+    "end": 150.112,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "A",
+    "start": 150.112,
+    "end": 150.391,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "plan",
+    "start": 150.391,
+    "end": 150.669,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "that",
+    "start": 150.669,
+    "end": 150.948,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "adds",
+    "start": 150.948,
+    "end": 151.226,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "twenty",
+    "start": 151.226,
+    "end": 151.504,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "dollars",
+    "start": 151.504,
+    "end": 151.783,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 151.783,
+    "end": 152.061,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "better",
+    "start": 152.061,
+    "end": 152.34,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "than",
+    "start": 152.34,
+    "end": 152.618,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 152.618,
+    "end": 152.896,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "wish",
+    "start": 152.896,
+    "end": 153.175,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "that",
+    "start": 153.175,
+    "end": 153.453,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "adds",
+    "start": 153.453,
+    "end": 153.732,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "zero.",
+    "start": 153.732,
+    "end": 154.01,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "Think",
+    "start": 154.43,
+    "end": 154.774,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "about",
+    "start": 154.774,
+    "end": 155.118,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 155.118,
+    "end": 155.461,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "five-thousand-dollar",
+    "start": 155.461,
+    "end": 155.805,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "balance",
+    "start": 155.805,
+    "end": 156.149,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "at",
+    "start": 156.149,
+    "end": 156.493,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "roughly",
+    "start": 156.493,
+    "end": 156.836,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "twenty-four",
+    "start": 156.836,
+    "end": 157.18,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "percent",
+    "start": 157.18,
+    "end": 157.524,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "APR.",
+    "start": 157.524,
+    "end": 157.868,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "If",
+    "start": 157.868,
+    "end": 158.211,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "you",
+    "start": 158.211,
+    "end": 158.555,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "only",
+    "start": 158.555,
+    "end": 158.899,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "make",
+    "start": 158.899,
+    "end": 159.243,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 159.243,
+    "end": 159.586,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "tiny",
+    "start": 159.586,
+    "end": 159.93,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "payment",
+    "start": 159.93,
+    "end": 160.274,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "that",
+    "start": 160.274,
+    "end": 160.618,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "mostly",
+    "start": 160.618,
+    "end": 160.961,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "follows",
+    "start": 160.961,
+    "end": 161.305,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 161.305,
+    "end": 161.649,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "issuer's",
+    "start": 161.649,
+    "end": 161.993,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "minimum",
+    "start": 161.993,
+    "end": 162.336,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 162.336,
+    "end": 162.68,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "payoff",
+    "start": 162.68,
+    "end": 163.024,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "path",
+    "start": 163.024,
+    "end": 163.368,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "can",
+    "start": 163.368,
+    "end": 163.711,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "stretch",
+    "start": 163.711,
+    "end": 164.055,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "for",
+    "start": 164.055,
+    "end": 164.399,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "years",
+    "start": 164.399,
+    "end": 164.743,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "and",
+    "start": 164.743,
+    "end": 165.086,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 165.086,
+    "end": 165.43,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "interest",
+    "start": 165.43,
+    "end": 165.774,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "can",
+    "start": 165.774,
+    "end": 166.118,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "become",
+    "start": 166.118,
+    "end": 166.461,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 166.461,
+    "end": 166.805,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "second",
+    "start": 166.805,
+    "end": 167.149,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "purchase.",
+    "start": 167.149,
+    "end": 167.493,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "Raise",
+    "start": 167.493,
+    "end": 167.836,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 167.836,
+    "end": 168.18,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "payment",
+    "start": 168.18,
+    "end": 168.524,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "and",
+    "start": 168.524,
+    "end": 168.868,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 168.868,
+    "end": 169.211,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "graph",
+    "start": 169.211,
+    "end": 169.555,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "changes",
+    "start": 169.555,
+    "end": 169.899,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "shape.",
+    "start": 169.899,
+    "end": 170.243,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "Not",
+    "start": 170.243,
+    "end": 170.586,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "because",
+    "start": 170.586,
+    "end": 170.93,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 170.93,
+    "end": 171.274,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "bank",
+    "start": 171.274,
+    "end": 171.618,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "became",
+    "start": 171.618,
+    "end": 171.961,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "kind",
+    "start": 171.961,
+    "end": 172.305,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "but",
+    "start": 172.305,
+    "end": 172.649,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "because",
+    "start": 172.649,
+    "end": 172.993,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "principal",
+    "start": 172.993,
+    "end": 173.336,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "finally",
+    "start": 173.336,
+    "end": 173.68,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "gets",
+    "start": 173.68,
+    "end": 174.024,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "attacked",
+    "start": 174.024,
+    "end": 174.368,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "faster",
+    "start": 174.368,
+    "end": 174.711,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "than",
+    "start": 174.711,
+    "end": 175.055,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "interest",
+    "start": 175.055,
+    "end": 175.399,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "can",
+    "start": 175.399,
+    "end": 175.743,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "rebuild",
+    "start": 175.743,
+    "end": 176.086,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "it.",
+    "start": 176.086,
+    "end": 176.43,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "The",
+    "start": 176.85,
+    "end": 177.183,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "best",
+    "start": 177.183,
+    "end": 177.515,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "image",
+    "start": 177.515,
+    "end": 177.848,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 177.848,
+    "end": 178.181,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 178.181,
+    "end": 178.514,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "snowball",
+    "start": 178.514,
+    "end": 178.846,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "in",
+    "start": 178.846,
+    "end": 179.179,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "reverse.",
+    "start": 179.179,
+    "end": 179.512,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "Minimum",
+    "start": 179.512,
+    "end": 179.844,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "payment",
+    "start": 179.844,
+    "end": 180.177,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 180.177,
+    "end": 180.51,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 180.51,
+    "end": 180.843,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "spoon",
+    "start": 180.843,
+    "end": 181.175,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "against",
+    "start": 181.175,
+    "end": 181.508,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 181.508,
+    "end": 181.841,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "snowbank.",
+    "start": 181.841,
+    "end": 182.174,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "A",
+    "start": 182.174,
+    "end": 182.506,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "focused",
+    "start": 182.506,
+    "end": 182.839,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "payment",
+    "start": 182.839,
+    "end": 183.172,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 183.172,
+    "end": 183.504,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 183.504,
+    "end": 183.837,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "shovel.",
+    "start": 183.837,
+    "end": 184.17,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "A",
+    "start": 184.17,
+    "end": 184.503,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "balance",
+    "start": 184.503,
+    "end": 184.835,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "transfer",
+    "start": 184.835,
+    "end": 185.168,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "can",
+    "start": 185.168,
+    "end": 185.501,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "be",
+    "start": 185.501,
+    "end": 185.833,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 185.833,
+    "end": 186.166,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "temporary",
+    "start": 186.166,
+    "end": 186.499,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "snowplow",
+    "start": 186.499,
+    "end": 186.832,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "but",
+    "start": 186.832,
+    "end": 187.164,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "only",
+    "start": 187.164,
+    "end": 187.497,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "if",
+    "start": 187.497,
+    "end": 187.83,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 187.83,
+    "end": 188.162,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "transfer",
+    "start": 188.162,
+    "end": 188.495,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "fee",
+    "start": 188.495,
+    "end": 188.828,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "deadline",
+    "start": 188.828,
+    "end": 189.161,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "and",
+    "start": 189.161,
+    "end": 189.493,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "behavior",
+    "start": 189.493,
+    "end": 189.826,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "change",
+    "start": 189.826,
+    "end": 190.159,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "all",
+    "start": 190.159,
+    "end": 190.492,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "make",
+    "start": 190.492,
+    "end": 190.824,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "sense.",
+    "start": 190.824,
+    "end": 191.157,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "Consolidation",
+    "start": 191.157,
+    "end": 191.49,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 191.49,
+    "end": 191.822,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "not",
+    "start": 191.822,
+    "end": 192.155,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "magic.",
+    "start": 192.155,
+    "end": 192.488,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "Lower",
+    "start": 192.488,
+    "end": 192.821,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "APR",
+    "start": 192.821,
+    "end": 193.153,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "helps",
+    "start": 193.153,
+    "end": 193.486,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "but",
+    "start": 193.486,
+    "end": 193.819,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 193.819,
+    "end": 194.151,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "habit",
+    "start": 194.151,
+    "end": 194.484,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "that",
+    "start": 194.484,
+    "end": 194.817,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "created",
+    "start": 194.817,
+    "end": 195.15,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 195.15,
+    "end": 195.482,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "balance",
+    "start": 195.482,
+    "end": 195.815,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "has",
+    "start": 195.815,
+    "end": 196.148,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "to",
+    "start": 196.148,
+    "end": 196.481,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "be",
+    "start": 196.481,
+    "end": 196.813,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "locked",
+    "start": 196.813,
+    "end": 197.146,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "out",
+    "start": 197.146,
+    "end": 197.479,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "or",
+    "start": 197.479,
+    "end": 197.811,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 197.811,
+    "end": 198.144,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "old",
+    "start": 198.144,
+    "end": 198.477,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "card",
+    "start": 198.477,
+    "end": 198.81,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "simply",
+    "start": 198.81,
+    "end": 199.142,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "refills.",
+    "start": 199.142,
+    "end": 199.475,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "So",
+    "start": 199.895,
+    "end": 200.29,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "what",
+    "start": 200.29,
+    "end": 200.685,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "would",
+    "start": 200.685,
+    "end": 201.08,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "you",
+    "start": 201.08,
+    "end": 201.475,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "actually",
+    "start": 201.475,
+    "end": 201.87,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "do",
+    "start": 201.87,
+    "end": 202.265,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "this",
+    "start": 202.265,
+    "end": 202.66,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "week",
+    "start": 202.66,
+    "end": 203.055,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "without",
+    "start": 203.055,
+    "end": 203.45,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "pretending",
+    "start": 203.45,
+    "end": 203.845,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "everyone",
+    "start": 203.845,
+    "end": 204.24,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "has",
+    "start": 204.24,
+    "end": 204.635,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "a",
+    "start": 204.635,
+    "end": 205.03,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "giant",
+    "start": 205.03,
+    "end": 205.425,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "surplus",
+    "start": 205.425,
+    "end": 205.82,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "Four",
+    "start": 206.24,
+    "end": 206.549,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "steps.",
+    "start": 206.549,
+    "end": 206.859,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "First",
+    "start": 206.859,
+    "end": 207.168,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "write",
+    "start": 207.168,
+    "end": 207.478,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 207.478,
+    "end": 207.787,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "real",
+    "start": 207.787,
+    "end": 208.096,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "balance",
+    "start": 208.096,
+    "end": 208.406,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "APR",
+    "start": 208.406,
+    "end": 208.715,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "minimum",
+    "start": 208.715,
+    "end": 209.024,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "and",
+    "start": 209.024,
+    "end": 209.334,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "due",
+    "start": 209.334,
+    "end": 209.643,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "date",
+    "start": 209.643,
+    "end": 209.953,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "in",
+    "start": 209.953,
+    "end": 210.262,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "one",
+    "start": 210.262,
+    "end": 210.571,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "place.",
+    "start": 210.571,
+    "end": 210.881,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "Second",
+    "start": 210.881,
+    "end": 211.19,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "freeze",
+    "start": 211.19,
+    "end": 211.499,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "new",
+    "start": 211.499,
+    "end": 211.809,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "spending",
+    "start": 211.809,
+    "end": 212.118,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "on",
+    "start": 212.118,
+    "end": 212.428,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "that",
+    "start": 212.428,
+    "end": 212.737,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "card",
+    "start": 212.737,
+    "end": 213.046,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "while",
+    "start": 213.046,
+    "end": 213.356,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "it",
+    "start": 213.356,
+    "end": 213.665,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 213.665,
+    "end": 213.974,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "in",
+    "start": 213.974,
+    "end": 214.284,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "payoff",
+    "start": 214.284,
+    "end": 214.593,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "mode.",
+    "start": 214.593,
+    "end": 214.903,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "Third",
+    "start": 214.903,
+    "end": 215.212,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "choose",
+    "start": 215.212,
+    "end": 215.521,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 215.521,
+    "end": 215.831,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "fixed",
+    "start": 215.831,
+    "end": 216.14,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "payment",
+    "start": 216.14,
+    "end": 216.449,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "above",
+    "start": 216.449,
+    "end": 216.759,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 216.759,
+    "end": 217.068,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "minimum",
+    "start": 217.068,
+    "end": 217.377,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "and",
+    "start": 217.377,
+    "end": 217.687,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "keep",
+    "start": 217.687,
+    "end": 217.996,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "it",
+    "start": 217.996,
+    "end": 218.306,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "fixed",
+    "start": 218.306,
+    "end": 218.615,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "even",
+    "start": 218.615,
+    "end": 218.924,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "as",
+    "start": 218.924,
+    "end": 219.234,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 219.234,
+    "end": 219.543,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "minimum",
+    "start": 219.543,
+    "end": 219.853,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "falls.",
+    "start": 219.853,
+    "end": 220.162,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "That",
+    "start": 220.162,
+    "end": 220.471,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "fixed-payment",
+    "start": 220.471,
+    "end": 220.781,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "trick",
+    "start": 220.781,
+    "end": 221.09,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 221.09,
+    "end": 221.399,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "powerful",
+    "start": 221.399,
+    "end": 221.709,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "because",
+    "start": 221.709,
+    "end": 222.018,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "every",
+    "start": 222.018,
+    "end": 222.328,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "month",
+    "start": 222.328,
+    "end": 222.637,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "more",
+    "start": 222.637,
+    "end": 222.946,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "of",
+    "start": 222.946,
+    "end": 223.256,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 223.256,
+    "end": 223.565,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "same",
+    "start": 223.565,
+    "end": 223.874,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "payment",
+    "start": 223.874,
+    "end": 224.184,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "goes",
+    "start": 224.184,
+    "end": 224.493,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "to",
+    "start": 224.493,
+    "end": 224.803,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "principal.",
+    "start": 224.803,
+    "end": 225.112,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "Fourth",
+    "start": 225.112,
+    "end": 225.421,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "if",
+    "start": 225.421,
+    "end": 225.731,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "credit",
+    "start": 225.731,
+    "end": 226.04,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "and",
+    "start": 226.04,
+    "end": 226.349,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "discipline",
+    "start": 226.349,
+    "end": 226.659,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "allow",
+    "start": 226.659,
+    "end": 226.968,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "compare",
+    "start": 226.968,
+    "end": 227.278,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 227.278,
+    "end": 227.587,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "balance",
+    "start": 227.587,
+    "end": 227.896,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "transfer",
+    "start": 227.896,
+    "end": 228.206,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "or",
+    "start": 228.206,
+    "end": 228.515,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "personal",
+    "start": 228.515,
+    "end": 228.824,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "loan",
+    "start": 228.824,
+    "end": 229.134,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "only",
+    "start": 229.134,
+    "end": 229.443,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "after",
+    "start": 229.443,
+    "end": 229.752,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "checking",
+    "start": 229.752,
+    "end": 230.062,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "fees",
+    "start": 230.062,
+    "end": 230.371,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "and",
+    "start": 230.371,
+    "end": 230.681,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "deadlines.",
+    "start": 230.681,
+    "end": 230.99,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "Then",
+    "start": 231.41,
+    "end": 231.753,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "pick",
+    "start": 231.753,
+    "end": 232.096,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 232.096,
+    "end": 232.439,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "method.",
+    "start": 232.439,
+    "end": 232.782,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "Avalanche",
+    "start": 232.782,
+    "end": 233.125,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "means",
+    "start": 233.125,
+    "end": 233.468,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "extra",
+    "start": 233.468,
+    "end": 233.811,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "money",
+    "start": 233.811,
+    "end": 234.154,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "goes",
+    "start": 234.154,
+    "end": 234.497,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "to",
+    "start": 234.497,
+    "end": 234.84,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 234.84,
+    "end": 235.183,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "highest",
+    "start": 235.183,
+    "end": 235.526,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "APR",
+    "start": 235.526,
+    "end": 235.869,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "first",
+    "start": 235.869,
+    "end": 236.212,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "which",
+    "start": 236.212,
+    "end": 236.555,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 236.555,
+    "end": 236.898,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "mathematically",
+    "start": 236.898,
+    "end": 237.24,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "strongest.",
+    "start": 237.24,
+    "end": 237.583,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "Snowball",
+    "start": 237.583,
+    "end": 237.926,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "means",
+    "start": 237.926,
+    "end": 238.269,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "extra",
+    "start": 238.269,
+    "end": 238.612,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "money",
+    "start": 238.612,
+    "end": 238.955,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "goes",
+    "start": 238.955,
+    "end": 239.298,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "to",
+    "start": 239.298,
+    "end": 239.641,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 239.641,
+    "end": 239.984,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "smallest",
+    "start": 239.984,
+    "end": 240.327,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "balance",
+    "start": 240.327,
+    "end": 240.67,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "first",
+    "start": 240.67,
+    "end": 241.013,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "which",
+    "start": 241.013,
+    "end": 241.356,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "can",
+    "start": 241.356,
+    "end": 241.699,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "be",
+    "start": 241.699,
+    "end": 242.042,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "emotionally",
+    "start": 242.042,
+    "end": 242.385,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "strongest.",
+    "start": 242.385,
+    "end": 242.728,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "The",
+    "start": 242.728,
+    "end": 243.071,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "right",
+    "start": 243.071,
+    "end": 243.414,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "method",
+    "start": 243.414,
+    "end": 243.757,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 243.757,
+    "end": 244.1,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 244.1,
+    "end": 244.443,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "one",
+    "start": 244.443,
+    "end": 244.786,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "you",
+    "start": 244.786,
+    "end": 245.129,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "will",
+    "start": 245.129,
+    "end": 245.472,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "actually",
+    "start": 245.472,
+    "end": 245.815,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "finish.",
+    "start": 245.815,
+    "end": 246.158,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "But",
+    "start": 246.158,
+    "end": 246.501,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "never",
+    "start": 246.501,
+    "end": 246.844,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "let",
+    "start": 246.844,
+    "end": 247.187,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 247.187,
+    "end": 247.53,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "minimum-payment",
+    "start": 247.53,
+    "end": 247.873,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "number",
+    "start": 247.873,
+    "end": 248.215,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "choose",
+    "start": 248.215,
+    "end": 248.558,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "your",
+    "start": 248.558,
+    "end": 248.901,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "strategy",
+    "start": 248.901,
+    "end": 249.244,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "for",
+    "start": 249.244,
+    "end": 249.587,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "you.",
+    "start": 249.587,
+    "end": 249.93,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "That",
+    "start": 249.93,
+    "end": 250.273,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "number",
+    "start": 250.273,
+    "end": 250.616,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "works",
+    "start": 250.616,
+    "end": 250.959,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "for",
+    "start": 250.959,
+    "end": 251.302,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 251.302,
+    "end": 251.645,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "lender's",
+    "start": 251.645,
+    "end": 251.988,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "system",
+    "start": 251.988,
+    "end": 252.331,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "not",
+    "start": 252.331,
+    "end": 252.674,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "your",
+    "start": 252.674,
+    "end": 253.017,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "freedom.",
+    "start": 253.017,
+    "end": 253.36,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "There",
+    "start": 253.78,
+    "end": 254.135,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 254.135,
+    "end": 254.49,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "also",
+    "start": 254.49,
+    "end": 254.844,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 254.844,
+    "end": 255.199,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "credit-score",
+    "start": 255.199,
+    "end": 255.554,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "wrinkle.",
+    "start": 255.554,
+    "end": 255.909,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "Paying",
+    "start": 255.909,
+    "end": 256.264,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "on",
+    "start": 256.264,
+    "end": 256.618,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "time",
+    "start": 256.618,
+    "end": 256.973,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "matters.",
+    "start": 256.973,
+    "end": 257.328,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "Utilization",
+    "start": 257.328,
+    "end": 257.683,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "matters",
+    "start": 257.683,
+    "end": 258.038,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "too",
+    "start": 258.038,
+    "end": 258.392,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 258.392,
+    "end": 258.747,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "high",
+    "start": 258.747,
+    "end": 259.102,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "balance",
+    "start": 259.102,
+    "end": 259.457,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "compared",
+    "start": 259.457,
+    "end": 259.812,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "with",
+    "start": 259.812,
+    "end": 260.167,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 260.167,
+    "end": 260.521,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "card",
+    "start": 260.521,
+    "end": 260.876,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "limit",
+    "start": 260.876,
+    "end": 261.231,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "can",
+    "start": 261.231,
+    "end": 261.586,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "weigh",
+    "start": 261.586,
+    "end": 261.941,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "on",
+    "start": 261.941,
+    "end": 262.295,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "your",
+    "start": 262.295,
+    "end": 262.65,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "score.",
+    "start": 262.65,
+    "end": 263.005,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "Paying",
+    "start": 263.005,
+    "end": 263.36,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "down",
+    "start": 263.36,
+    "end": 263.715,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 263.715,
+    "end": 264.069,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "balance",
+    "start": 264.069,
+    "end": 264.424,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "can",
+    "start": 264.424,
+    "end": 264.779,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "help",
+    "start": 264.779,
+    "end": 265.134,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "that",
+    "start": 265.134,
+    "end": 265.489,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "pressure.",
+    "start": 265.489,
+    "end": 265.843,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "But",
+    "start": 265.843,
+    "end": 266.198,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "chasing",
+    "start": 266.198,
+    "end": 266.553,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "points",
+    "start": 266.553,
+    "end": 266.908,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "while",
+    "start": 266.908,
+    "end": 267.263,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "paying",
+    "start": 267.263,
+    "end": 267.618,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "interest",
+    "start": 267.618,
+    "end": 267.972,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 267.972,
+    "end": 268.327,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "usually",
+    "start": 268.327,
+    "end": 268.682,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "losing",
+    "start": 268.682,
+    "end": 269.037,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 269.037,
+    "end": 269.392,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "game.",
+    "start": 269.392,
+    "end": 269.746,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "Rewards",
+    "start": 269.746,
+    "end": 270.101,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "are",
+    "start": 270.101,
+    "end": 270.456,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "confetti.",
+    "start": 270.456,
+    "end": 270.811,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "Interest",
+    "start": 270.811,
+    "end": 271.166,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 271.166,
+    "end": 271.52,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 271.52,
+    "end": 271.875,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "invoice.",
+    "start": 271.875,
+    "end": 272.23,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "What",
+    "start": 272.65,
+    "end": 272.985,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "about",
+    "start": 272.985,
+    "end": 273.32,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "people",
+    "start": 273.32,
+    "end": 273.655,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "who",
+    "start": 273.655,
+    "end": 273.99,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "use",
+    "start": 273.99,
+    "end": 274.325,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "one",
+    "start": 274.325,
+    "end": 274.66,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "card",
+    "start": 274.66,
+    "end": 274.995,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "to",
+    "start": 274.995,
+    "end": 275.33,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "pay",
+    "start": 275.33,
+    "end": 275.665,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "another",
+    "start": 275.665,
+    "end": 276.0,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "or",
+    "start": 276.0,
+    "end": 276.335,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "keep",
+    "start": 276.335,
+    "end": 276.67,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "opening",
+    "start": 276.67,
+    "end": 277.005,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "new",
+    "start": 277.005,
+    "end": 277.34,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "ones",
+    "start": 277.34,
+    "end": 277.675,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "That",
+    "start": 278.095,
+    "end": 278.396,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 278.396,
+    "end": 278.698,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 278.698,
+    "end": 278.999,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "smoke",
+    "start": 278.999,
+    "end": 279.3,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "alarm.",
+    "start": 279.3,
+    "end": 279.601,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "If",
+    "start": 279.601,
+    "end": 279.903,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "one",
+    "start": 279.903,
+    "end": 280.204,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "debt",
+    "start": 280.204,
+    "end": 280.505,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "needs",
+    "start": 280.505,
+    "end": 280.807,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "another",
+    "start": 280.807,
+    "end": 281.108,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "debt",
+    "start": 281.108,
+    "end": 281.409,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "to",
+    "start": 281.409,
+    "end": 281.711,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "breathe",
+    "start": 281.711,
+    "end": 282.012,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "pause",
+    "start": 282.012,
+    "end": 282.313,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "and",
+    "start": 282.313,
+    "end": 282.614,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "get",
+    "start": 282.614,
+    "end": 282.916,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "help",
+    "start": 282.916,
+    "end": 283.217,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "early.",
+    "start": 283.217,
+    "end": 283.518,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "A",
+    "start": 283.518,
+    "end": 283.82,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "nonprofit",
+    "start": 283.82,
+    "end": 284.121,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "credit",
+    "start": 284.121,
+    "end": 284.422,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "counselor",
+    "start": 284.422,
+    "end": 284.724,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "hardship",
+    "start": 284.724,
+    "end": 285.025,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "plan",
+    "start": 285.025,
+    "end": 285.326,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "or",
+    "start": 285.326,
+    "end": 285.627,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "direct",
+    "start": 285.627,
+    "end": 285.929,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "call",
+    "start": 285.929,
+    "end": 286.23,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "to",
+    "start": 286.23,
+    "end": 286.531,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 286.531,
+    "end": 286.833,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "issuer",
+    "start": 286.833,
+    "end": 287.134,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "can",
+    "start": 287.134,
+    "end": 287.435,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "be",
+    "start": 287.435,
+    "end": 287.737,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "less",
+    "start": 287.737,
+    "end": 288.038,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "glamorous",
+    "start": 288.038,
+    "end": 288.339,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "than",
+    "start": 288.339,
+    "end": 288.64,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 288.64,
+    "end": 288.942,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "hack",
+    "start": 288.942,
+    "end": 289.243,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "video",
+    "start": 289.243,
+    "end": 289.544,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "but",
+    "start": 289.544,
+    "end": 289.846,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "it",
+    "start": 289.846,
+    "end": 290.147,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "can",
+    "start": 290.147,
+    "end": 290.448,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "stop",
+    "start": 290.448,
+    "end": 290.75,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 290.75,
+    "end": 291.051,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "spiral.",
+    "start": 291.051,
+    "end": 291.352,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "And",
+    "start": 291.352,
+    "end": 291.653,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "if",
+    "start": 291.653,
+    "end": 291.955,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 291.955,
+    "end": 292.256,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "balance",
+    "start": 292.256,
+    "end": 292.557,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "came",
+    "start": 292.557,
+    "end": 292.859,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "from",
+    "start": 292.859,
+    "end": 293.16,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 293.16,
+    "end": 293.461,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "true",
+    "start": 293.461,
+    "end": 293.763,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "emergency",
+    "start": 293.763,
+    "end": 294.064,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 294.064,
+    "end": 294.365,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "follow-up",
+    "start": 294.365,
+    "end": 294.666,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "goal",
+    "start": 294.666,
+    "end": 294.968,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 294.968,
+    "end": 295.269,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "not",
+    "start": 295.269,
+    "end": 295.57,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "guilt.",
+    "start": 295.57,
+    "end": 295.872,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "It",
+    "start": 295.872,
+    "end": 296.173,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 296.173,
+    "end": 296.474,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "building",
+    "start": 296.474,
+    "end": 296.776,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 296.776,
+    "end": 297.077,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "small",
+    "start": 297.077,
+    "end": 297.378,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "emergency",
+    "start": 297.378,
+    "end": 297.679,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "buffer",
+    "start": 297.679,
+    "end": 297.981,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "so",
+    "start": 297.981,
+    "end": 298.282,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 298.282,
+    "end": 298.583,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "next",
+    "start": 298.583,
+    "end": 298.885,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "surprise",
+    "start": 298.885,
+    "end": 299.186,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "does",
+    "start": 299.186,
+    "end": 299.487,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "not",
+    "start": 299.487,
+    "end": 299.789,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "land",
+    "start": 299.789,
+    "end": 300.09,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "on",
+    "start": 300.09,
+    "end": 300.391,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "twenty-four",
+    "start": 300.391,
+    "end": 300.692,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "percent",
+    "start": 300.692,
+    "end": 300.994,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "interest.",
+    "start": 300.994,
+    "end": 301.295,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "Here",
+    "start": 301.715,
+    "end": 302.012,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 302.012,
+    "end": 302.309,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 302.309,
+    "end": 302.606,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "reframe",
+    "start": 302.606,
+    "end": 302.903,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "I",
+    "start": 302.903,
+    "end": 303.2,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "want",
+    "start": 303.2,
+    "end": 303.498,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "you",
+    "start": 303.498,
+    "end": 303.795,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "to",
+    "start": 303.795,
+    "end": 304.092,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "keep.",
+    "start": 304.092,
+    "end": 304.389,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "The",
+    "start": 304.389,
+    "end": 304.686,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "minimum",
+    "start": 304.686,
+    "end": 304.983,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "payment",
+    "start": 304.983,
+    "end": 305.28,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 305.28,
+    "end": 305.577,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "not",
+    "start": 305.577,
+    "end": 305.874,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 305.874,
+    "end": 306.171,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "moral",
+    "start": 306.171,
+    "end": 306.468,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "grade.",
+    "start": 306.468,
+    "end": 306.765,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "It",
+    "start": 306.765,
+    "end": 307.062,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 307.062,
+    "end": 307.36,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 307.36,
+    "end": 307.657,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "warning",
+    "start": 307.657,
+    "end": 307.954,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "label.",
+    "start": 307.954,
+    "end": 308.251,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "It",
+    "start": 308.251,
+    "end": 308.548,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "says",
+    "start": 308.548,
+    "end": 308.845,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "you",
+    "start": 308.845,
+    "end": 309.142,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "have",
+    "start": 309.142,
+    "end": 309.439,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "kept",
+    "start": 309.439,
+    "end": 309.736,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 309.736,
+    "end": 310.033,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "account",
+    "start": 310.033,
+    "end": 310.33,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "alive",
+    "start": 310.33,
+    "end": 310.627,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "but",
+    "start": 310.627,
+    "end": 310.925,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 310.925,
+    "end": 311.222,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "debt",
+    "start": 311.222,
+    "end": 311.519,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 311.519,
+    "end": 311.816,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "still",
+    "start": 311.816,
+    "end": 312.113,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "renting",
+    "start": 312.113,
+    "end": 312.41,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "space",
+    "start": 312.41,
+    "end": 312.707,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "in",
+    "start": 312.707,
+    "end": 313.004,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "your",
+    "start": 313.004,
+    "end": 313.301,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "future",
+    "start": 313.301,
+    "end": 313.598,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "paycheck.",
+    "start": 313.598,
+    "end": 313.895,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "Every",
+    "start": 313.895,
+    "end": 314.192,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "dollar",
+    "start": 314.192,
+    "end": 314.49,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "above",
+    "start": 314.49,
+    "end": 314.787,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 314.787,
+    "end": 315.084,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "minimum",
+    "start": 315.084,
+    "end": 315.381,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 315.381,
+    "end": 315.678,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "not",
+    "start": 315.678,
+    "end": 315.975,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "just",
+    "start": 315.975,
+    "end": 316.272,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 316.272,
+    "end": 316.569,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "dollar.",
+    "start": 316.569,
+    "end": 316.866,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "It",
+    "start": 316.866,
+    "end": 317.163,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 317.163,
+    "end": 317.46,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 317.46,
+    "end": 317.757,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "little",
+    "start": 317.757,
+    "end": 318.055,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "eviction",
+    "start": 318.055,
+    "end": 318.352,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "notice",
+    "start": 318.352,
+    "end": 318.649,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "for",
+    "start": 318.649,
+    "end": 318.946,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "future",
+    "start": 318.946,
+    "end": 319.243,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "interest.",
+    "start": 319.243,
+    "end": 319.54,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "So",
+    "start": 319.96,
+    "end": 320.292,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "the",
+    "start": 320.292,
+    "end": 320.623,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "goal",
+    "start": 320.623,
+    "end": 320.955,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "is",
+    "start": 320.955,
+    "end": 321.286,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "not",
+    "start": 321.286,
+    "end": 321.618,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "to",
+    "start": 321.618,
+    "end": 321.949,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "fear",
+    "start": 321.949,
+    "end": 322.281,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "credit",
+    "start": 322.281,
+    "end": 322.613,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "cards.",
+    "start": 322.613,
+    "end": 322.944,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "It",
+    "start": 322.944,
+    "end": 323.276,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "is",
+    "start": 323.276,
+    "end": 323.607,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "to",
+    "start": 323.607,
+    "end": 323.939,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "stop",
+    "start": 323.939,
+    "end": 324.271,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "letting",
+    "start": 324.271,
+    "end": 324.602,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "the",
+    "start": 324.602,
+    "end": 324.934,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "card",
+    "start": 324.934,
+    "end": 325.265,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "write",
+    "start": 325.265,
+    "end": 325.597,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "the",
+    "start": 325.597,
+    "end": 325.928,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "timeline.",
+    "start": 325.928,
+    "end": 326.26,
+    "speaker": "LAURA"
+  },
+  {
+    "word": "Exactly.",
+    "start": 326.68,
+    "end": 327.028,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "If",
+    "start": 327.028,
+    "end": 327.376,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "this",
+    "start": 327.376,
+    "end": 327.724,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "helped",
+    "start": 327.724,
+    "end": 328.072,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "write",
+    "start": 328.072,
+    "end": 328.421,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "down",
+    "start": 328.421,
+    "end": 328.769,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "one",
+    "start": 328.769,
+    "end": 329.117,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "card",
+    "start": 329.117,
+    "end": 329.465,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "one",
+    "start": 329.465,
+    "end": 329.813,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "APR",
+    "start": 329.813,
+    "end": 330.161,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "and",
+    "start": 330.161,
+    "end": 330.509,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "one",
+    "start": 330.509,
+    "end": 330.857,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "fixed",
+    "start": 330.857,
+    "end": 331.205,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "payment",
+    "start": 331.205,
+    "end": 331.554,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "before",
+    "start": 331.554,
+    "end": 331.902,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "you",
+    "start": 331.902,
+    "end": 332.25,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "watch",
+    "start": 332.25,
+    "end": 332.598,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 332.598,
+    "end": 332.946,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "next",
+    "start": 332.946,
+    "end": 333.294,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "video.",
+    "start": 333.294,
+    "end": 333.642,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "Not",
+    "start": 333.642,
+    "end": 333.99,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "personalized",
+    "start": 333.99,
+    "end": 334.338,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "financial",
+    "start": 334.338,
+    "end": 334.687,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "advice",
+    "start": 334.687,
+    "end": 335.035,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "just",
+    "start": 335.035,
+    "end": 335.383,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "a",
+    "start": 335.383,
+    "end": 335.731,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "clean",
+    "start": 335.731,
+    "end": 336.079,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "starting",
+    "start": 336.079,
+    "end": 336.427,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "line.",
+    "start": 336.427,
+    "end": 336.775,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "Because",
+    "start": 336.775,
+    "end": 337.123,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 337.123,
+    "end": 337.472,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "quietest",
+    "start": 337.472,
+    "end": 337.82,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "money",
+    "start": 337.82,
+    "end": 338.168,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "gap",
+    "start": 338.168,
+    "end": 338.516,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 338.516,
+    "end": 338.864,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 338.864,
+    "end": 339.212,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "one",
+    "start": 339.212,
+    "end": 339.56,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "that",
+    "start": 339.56,
+    "end": 339.908,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "looks",
+    "start": 339.908,
+    "end": 340.256,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "like",
+    "start": 340.256,
+    "end": 340.605,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "only",
+    "start": 340.605,
+    "end": 340.953,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "twenty-five",
+    "start": 340.953,
+    "end": 341.301,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "dollars",
+    "start": 341.301,
+    "end": 341.649,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "due",
+    "start": 341.649,
+    "end": 341.997,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "today",
+    "start": 341.997,
+    "end": 342.345,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "while",
+    "start": 342.345,
+    "end": 342.693,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "tomorrow",
+    "start": 342.693,
+    "end": 343.041,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "is",
+    "start": 343.041,
+    "end": 343.389,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "quietly",
+    "start": 343.389,
+    "end": 343.738,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "billed",
+    "start": 343.738,
+    "end": 344.086,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "for",
+    "start": 344.086,
+    "end": 344.434,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "the",
+    "start": 344.434,
+    "end": 344.782,
+    "speaker": "JOHN"
+  },
+  {
+    "word": "rest.",
+    "start": 344.782,
+    "end": 345.13,
+    "speaker": "JOHN"
+  }
+]

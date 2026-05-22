@@ -1,0 +1,63 @@
+# Clean Frame Regeneration Report — beats 044-086
+
+- Project: `/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger`
+- Output directory: `/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen`
+- Manifest: `/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/clean_regen_reports/regen_044_086_manifest.json`
+- Frames generated: 43
+- Final status: PASS for all beats 044-086
+- Normalization: all final PNGs verified at 2048x1152; ffmpeg used scale-contain + pad to avoid cropping heads/subjects.
+- QA: image-model content QA checked single-frame composition, no collage/panels, no overlays/logos/readable labels, no cropped heads/headless bodies, and sober documentary tone.
+
+## Retries
+- beat_050: retried — readable clock numerals in first QA; final QA PASS.
+- beat_062: retried — awkward headless/cropped background observer in first QA; final QA PASS.
+- beat_064: retried — headless/cropped torso in first QA; final QA PASS.
+- beat_078: retried — readable clock numbers in first QA; final QA PASS.
+- beat_079: retried — faceless/unnatural figure in first QA; final QA PASS.
+- beat_081: retried — readable key labels then cropped hand; second retry used no people; final QA PASS.
+- beat_082: retried — visible monitor logo in first QA; final QA PASS.
+
+## Output files
+- `beat_044.png` — PASS — 2048x1152
+- `beat_045.png` — PASS — 2048x1152
+- `beat_046.png` — PASS — 2048x1152
+- `beat_047.png` — PASS — 2048x1152
+- `beat_048.png` — PASS — 2048x1152
+- `beat_049.png` — PASS — 2048x1152
+- `beat_050.png` — PASS — 2048x1152
+- `beat_051.png` — PASS — 2048x1152
+- `beat_052.png` — PASS — 2048x1152
+- `beat_053.png` — PASS — 2048x1152
+- `beat_054.png` — PASS — 2048x1152
+- `beat_055.png` — PASS — 2048x1152
+- `beat_056.png` — PASS — 2048x1152
+- `beat_057.png` — PASS — 2048x1152
+- `beat_058.png` — PASS — 2048x1152
+- `beat_059.png` — PASS — 2048x1152
+- `beat_060.png` — PASS — 2048x1152
+- `beat_061.png` — PASS — 2048x1152
+- `beat_062.png` — PASS — 2048x1152
+- `beat_063.png` — PASS — 2048x1152
+- `beat_064.png` — PASS — 2048x1152
+- `beat_065.png` — PASS — 2048x1152
+- `beat_066.png` — PASS — 2048x1152
+- `beat_067.png` — PASS — 2048x1152
+- `beat_068.png` — PASS — 2048x1152
+- `beat_069.png` — PASS — 2048x1152
+- `beat_070.png` — PASS — 2048x1152
+- `beat_071.png` — PASS — 2048x1152
+- `beat_072.png` — PASS — 2048x1152
+- `beat_073.png` — PASS — 2048x1152
+- `beat_074.png` — PASS — 2048x1152
+- `beat_075.png` — PASS — 2048x1152
+- `beat_076.png` — PASS — 2048x1152
+- `beat_077.png` — PASS — 2048x1152
+- `beat_078.png` — PASS — 2048x1152
+- `beat_079.png` — PASS — 2048x1152
+- `beat_080.png` — PASS — 2048x1152
+- `beat_081.png` — PASS — 2048x1152
+- `beat_082.png` — PASS — 2048x1152
+- `beat_083.png` — PASS — 2048x1152
+- `beat_084.png` — PASS — 2048x1152
+- `beat_085.png` — PASS — 2048x1152
+- `beat_086.png` — PASS — 2048x1152

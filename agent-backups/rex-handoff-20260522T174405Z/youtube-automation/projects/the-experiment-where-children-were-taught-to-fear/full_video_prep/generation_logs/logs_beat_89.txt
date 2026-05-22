@@ -1,0 +1,20 @@
+GENERATE beat_089 attempt 1
+mage.generate",
+  "transport": "local",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "attempts": [],
+  "outputs": [
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-children-were-taught-to-fear/full_video_prep/approved_frames_draft/beat_089.png",
+      "mimeType": "image/png",
+      "size": 4364350,
+      "width": 2048,
+      "height": 1152,
+      "revisedPrompt": "Sparse melancholic 2D hand-drawn doodle illustration in The Experiment Channel style. Rough pencil line art, near-black uneven sketch lines, flat lighting, muted pale tan, warm grey, and faded blue-grey palette only; no bright or saturated colours. Wide negative space, minimal environment, handmade sketchbook aesthetic, not photo, not 3D, not anime.\n\nBeat 089: distant hallway / doorway framing a sparse laboratory as an unsafe space. Composition: viewer stands far back in a dim, empty hallway; an open doorway frames a small everyday room beyond. Inside the room, infant Albert appears as a very small vulnerable child in simple one-piece pale clothing, oversized hollow dark-circled eyes, standing or sitting low near the center-left, looking toward the adults. Watson is a tall severe male researcher, rigid posture, dark sketch lines, looming but non-graphic; Rayner is a quiet adult researcher nearby, reserved, observing. A small harmless-looking white rat sits on the floor or low table, not threatening. Emphasis on child learning fear from adult posture: the adults’ stiff stance and looming silhouettes make the room feel unsafe, while the child’s hollow eyes reflect borrowed anxiety. Minimal props: a plain chair, small table, bare wall, doorway edges, long empty floor. Historically suggestive early psychology lab / everyday room, emotionally restrained, non-graphic.\n\nNo readable text, no logos, no watermarks. Maintain same line weight and palette across all characters; hollow dark-circled eyes on every character."
+    }
+  ],
+  "ignoredOverrides": []
+}
+
+OK beat_089 4364350

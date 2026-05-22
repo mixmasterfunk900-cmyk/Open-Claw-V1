@@ -1,0 +1,64 @@
+{
+  "items": [
+    {
+      "beat_id": 1,
+      "motion": "slow zoom",
+      "transition": "soft cut"
+    },
+    {
+      "beat_id": 2,
+      "motion": "slow zoom",
+      "transition": "soft cut"
+    },
+    {
+      "beat_id": 3,
+      "motion": "slow zoom",
+      "transition": "soft cut"
+    },
+    {
+      "beat_id": 4,
+      "motion": "slow zoom",
+      "transition": "soft cut"
+    },
+    {
+      "beat_id": 5,
+      "motion": "slow zoom",
+      "transition": "soft cut"
+    },
+    {
+      "beat_id": 6,
+      "motion": "slow zoom",
+      "transition": "soft cut"
+    },
+    {
+      "beat_id": 7,
+      "motion": "slow zoom",
+      "transition": "soft cut"
+    },
+    {
+      "beat_id": 8,
+      "motion": "slow zoom",
+      "transition": "soft cut"
+    },
+    {
+      "beat_id": 9,
+      "motion": "slow zoom",
+      "transition": "soft cut"
+    },
+    {
+      "beat_id": 10,
+      "motion": "slow zoom",
+      "transition": "soft cut"
+    },
+    {
+      "beat_id": 11,
+      "motion": "slow zoom",
+      "transition": "soft cut"
+    },
+    {
+      "beat_id": 12,
+      "motion": "slow zoom",
+      "transition": "soft cut"
+    }
+  ]
+}

@@ -1,0 +1,505 @@
+{
+  "model": "openai image generation / ChatGPT style",
+  "prompts": [
+    {
+      "frame_id": "frame_013",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: reliable car tool versus subscription chain. Section MONEY_GAP. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_014",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: payment front door with hidden costs behind. Section MONEY_GAP. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_015",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: car needed for work school groceries safety. Section MONEY_GAP. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_016",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: reliable car tool versus subscription chain. Section MONEY_GAP. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_017",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: payment front door with hidden costs behind. Section MONEY_GAP. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_018",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: car needed for work school groceries safety. Section MONEY_GAP. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_019",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: reliable car tool versus subscription chain. Section MONEY_GAP. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_020",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: payment front door with hidden costs behind. Section MONEY_GAP. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_021",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: car needed for work school groceries safety. Section MONEY_GAP. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_022",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: big auto-loan balance mountain. Section STAT_BOMB. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_023",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: new and used payment signs. Section STAT_BOMB. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_024",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: rent-sized money tied to shrinking car. Section STAT_BOMB. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_025",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: big auto-loan balance mountain. Section STAT_BOMB. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_026",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: new and used payment signs. Section STAT_BOMB. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_027",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: rent-sized money tied to shrinking car. Section STAT_BOMB. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_028",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: big auto-loan balance mountain. Section STAT_BOMB. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_029",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: new and used payment signs. Section STAT_BOMB. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_030",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: rent-sized money tied to shrinking car. Section STAT_BOMB. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_031",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section MECHANISM_1. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_032",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section MECHANISM_1. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_033",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section MECHANISM_1. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_034",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section MECHANISM_1. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_035",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section MECHANISM_1. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_036",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section MECHANISM_1. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_037",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section MECHANISM_1. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_038",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section MECHANISM_1. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_039",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section MECHANISM_1. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_040",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section MECHANISM_1. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_041",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section MECHANISM_1. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_042",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section MECHANISM_2. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_043",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section MECHANISM_2. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_044",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section MECHANISM_2. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_045",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section MECHANISM_2. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_046",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section MECHANISM_2. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_047",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section MECHANISM_2. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_048",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section MECHANISM_2. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_049",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section MECHANISM_2. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_050",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section MECHANISM_2. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_051",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section MECHANISM_2. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_052",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section MECHANISM_2. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_053",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section MECHANISM_3. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_054",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section MECHANISM_3. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_055",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section MECHANISM_3. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_056",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section MECHANISM_3. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_057",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section MECHANISM_3. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_058",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section MECHANISM_3. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_059",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section MECHANISM_3. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_060",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section MECHANISM_3. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_061",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section MECHANISM_3. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_062",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section EMOTIONAL_REALITY. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_063",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section EMOTIONAL_REALITY. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_064",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section EMOTIONAL_REALITY. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_065",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section EMOTIONAL_REALITY. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_066",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section EMOTIONAL_REALITY. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_067",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section EMOTIONAL_REALITY. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_068",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section EMOTIONAL_REALITY. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_069",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section EMOTIONAL_REALITY. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_070",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section EMOTIONAL_REALITY. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_071",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section EMOTIONAL_REALITY. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_072",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section EMOTIONAL_REALITY. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_073",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section WARNING_SIGNS. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_074",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section WARNING_SIGNS. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_075",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section WARNING_SIGNS. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_076",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section WARNING_SIGNS. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_077",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section WARNING_SIGNS. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_078",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section WARNING_SIGNS. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_079",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section WARNING_SIGNS. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_080",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section WARNING_SIGNS. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_081",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section WARNING_SIGNS. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_082",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section WARNING_SIGNS. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_083",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section PRACTICAL_RULES. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_084",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section PRACTICAL_RULES. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_085",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section PRACTICAL_RULES. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_086",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section PRACTICAL_RULES. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_087",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section PRACTICAL_RULES. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_088",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section PRACTICAL_RULES. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_089",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section PRACTICAL_RULES. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_090",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section PRACTICAL_RULES. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_091",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section PRACTICAL_RULES. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_092",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section PRACTICAL_RULES. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_093",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section PRACTICAL_RULES. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_094",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section PRACTICAL_RULES. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_095",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section PRACTICAL_RULES. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_096",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section PRACTICAL_RULES. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_097",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section PRACTICAL_RULES. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_098",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section PRACTICAL_RULES. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_099",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section REPAIR_PLAN. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_100",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section REPAIR_PLAN. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_101",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section REPAIR_PLAN. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_102",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section REPAIR_PLAN. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_103",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section REPAIR_PLAN. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_104",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section REPAIR_PLAN. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_105",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section REPAIR_PLAN. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_106",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section REPAIR_PLAN. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_107",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section REPAIR_PLAN. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_108",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section REPAIR_PLAN. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_109",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section REPAIR_PLAN. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_110",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section REPAIR_PLAN. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_111",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section SYSTEM_POINT. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_112",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section SYSTEM_POINT. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_113",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section SYSTEM_POINT. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_114",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section SYSTEM_POINT. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_115",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section SYSTEM_POINT. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_116",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section SYSTEM_POINT. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_117",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section SYSTEM_POINT. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_118",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section SYSTEM_POINT. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_119",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section SYSTEM_POINT. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_120",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section CHECKLIST. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_121",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section CHECKLIST. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_122",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section CHECKLIST. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_123",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section CHECKLIST. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_124",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section CHECKLIST. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_125",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section CHECKLIST. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_126",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section CHECKLIST. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_127",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section CHECKLIST. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_128",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: simple finance metaphor. Section CHECKLIST. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_129",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: calm checklist beside keys. Section CLOSE. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_130",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: shiny car with long tail. Section CLOSE. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_131",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: paycheck carries life not paper. Section CLOSE. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_132",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: calm checklist beside keys. Section CLOSE. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_133",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: shiny car with long tail. Section CLOSE. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_134",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: paycheck carries life not paper. Section CLOSE. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_135",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: calm checklist beside keys. Section CLOSE. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_136",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: shiny car with long tail. Section CLOSE. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    },
+    {
+      "frame_id": "frame_137",
+      "prompt": "simple black marker stick-figure finance explainer on warm white/cream background; John is a black stick figure with tiny blue tie; Laura is a black stick figure with small teal scarf; minimal teal yellow red accent; no realism; no dense text; no panels; no collage; wide 16:9 YouTube frame. Scene: paycheck carries life not paper. Section CLOSE. Show John and Laura as recurring stick-figure cohosts with a simple car-loan metaphor. If text appears, use only 1-3 large readable words, e.g. PAYMENT, PRICE, TERM, RISK. Keep composition uncluttered and consistent with a hand-drawn ChatGPT/OpenAI stick figure explainer."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+GENERATE beat_016 attempt 1
+
+      "path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-children-were-taught-to-fear/full_video_prep/approved_frames_draft/beat_016.png",
+      "mimeType": "image/png",
+      "size": 3726103,
+      "width": 2048,
+      "height": 1152,
+      "revisedPrompt": "Sparse melancholic 2D hand-drawn doodle illustration in The Experiment Channel style. Rough pencil line art with near-black lines, muted pale tan, warm grey, and faded blue-grey palette, flat lighting, wide negative space, minimal environment, no bright colours, no saturated colours, no logos, no watermarks, no readable text. Handmade sketchbook aesthetic, not photo, not 3D, not anime.\n\nBeat 016 symbolic scene about learned fear, association, memory, and a childhood nervous system. An abstract association chain made from simple drawn objects connected by one thin wavering line across an otherwise empty pale background: a tiny harmless white rat silhouette, a simple metal bar shape, a small jagged sound-mark symbol without text, a fragile infant nervous-system-like branching doodle, and a tiny vulnerable infant Albert at the end. Infant Albert is very small, in simple one-piece pale clothing, oversized hollow dark-circled eyes, startled posture, tipped forward slightly as if his body reacted before understanding, a restrained tear shape near his face. Include faint ghostly memory echoes around the chain, like pale grey repeated outlines, but keep sparse and non-graphic. Watson appears only as a tall severe shadow-like male researcher outline in the far background, and Rayner as a quiet adult researcher outline farther aside, both with hollow dark-circled eyes, subdued and minimal. The white rat is small and harmless-looking. Same line weight and palette throughout. Composition visually distinct: abstract chain diagram rather than literal laboratory scene, melancholic, historically suggestive, emotionally restrained, large negative space."
+    }
+  ],
+  "ignoredOverrides": []
+}
+
+OK beat_016 3726103

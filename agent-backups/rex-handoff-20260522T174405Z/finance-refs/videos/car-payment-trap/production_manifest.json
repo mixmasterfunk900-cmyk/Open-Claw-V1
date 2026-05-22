@@ -1,0 +1,27 @@
+{
+  "sop_version": "2.0+v5_enforcement_script_only",
+  "channel": "Laura & John's Money Gap",
+  "project_root": "/root/.openclaw/workspace/youtube-automation-finance",
+  "video_slug": "car-payment-trap",
+  "video_dir": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap",
+  "created_at": "2026-05-21T18:58:04.641311+00:00",
+  "topic_input": "How long car loans and monthly-payment shopping turn transportation into a paycheck trap for younger households.",
+  "topic_discovery_used": true,
+  "topic_ledger_checked": true,
+  "image_model": "not_started_script_only",
+  "tts_tool": "not_started_script_only",
+  "voice_lock": "qwen3 Ryan documentary + Serena warm selected but not used in this script-only step",
+  "human_checkpoints": 0,
+  "assumptions": [
+    "User requested script only; no voice/image/render phases were started."
+  ],
+  "phase_status": {
+    "01": "complete",
+    "03": "complete",
+    "04": "complete"
+  },
+  "qa_gates": {
+    "SCRIPT_QA": "pass",
+    "FACT_QA": "pass_preliminary_citation_backed"
+  }
+}

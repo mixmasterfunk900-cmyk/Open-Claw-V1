@@ -1,0 +1,70 @@
+{
+  "channel": "Laura & John's Money Gap",
+  "niche": "finance",
+  "isolated_from": [
+    "youtube-automation dog content",
+    "the-experiment-where projects"
+  ],
+  "canonical_sop_v1_frozen": "docs/versions/LAURA_JOHN_MONEY_GAP_DIRECTOR_SOP_V1_LATEST.md",
+  "active_sop": "docs/sop_v2/00_MASTER_PROTOCOL.md + docs/sop_v3/",
+  "active_sop_version": "V3",
+  "default_upload_privacy": "private",
+  "upload_policy": {
+    "youtube": "do_not_auto_upload_to_youtube_unless_later_explicitly_enabled",
+    "vibe_zone": "upload/add completed QA-passed finance videos to Vibe Zone automatically",
+    "drive": {
+      "enabled": true,
+      "folder_url": "https://drive.google.com/drive/folders/10hjKYn8QrwM2K9w1rs1vdP1VFdmFwt-y?usp=sharing",
+      "folder_id": "10hjKYn8QrwM2K9w1rs1vdP1VFdmFwt-y",
+      "fallback": "local_saves_if_drive_fails"
+    },
+    "sheets": "create_project_tracker_sheet_if_credentials_allow_else_local_csv_markdown"
+  },
+  "tts_tool": "hexgrad/kokoro",
+  "voice_lock_policy": "auto_lock_first_passing_john_laura_voice_pair; user will reject final output if unhappy",
+  "image_generation": {
+    "provider_policy": "use_the_GPT_frontier_image_model_linked_to_OpenClaw_for_generation",
+    "do_not_substitute_lower_tier_model_without_logging_debug_reason": true,
+    "sop_label": "ChatGPT Images 2.0",
+    "v2_gate": "per_beat_model_provenance_required"
+  },
+  "duration_policy": {
+    "minimum_minutes": 8,
+    "target_minutes": 20,
+    "anything_over_minimum_is_valid_if_QA_passes": true
+  },
+  "v2_hard_gates": [
+    "character_lock_qa",
+    "style_lock_qa",
+    "no_image_reuse_qa",
+    "script_visual_alignment_qa",
+    "frontier_model_provenance_qa",
+    "editing_render_proof_qa",
+    "subtitle_style_qa",
+    "final_proof_package_qa"
+  ],
+  "status": "v2_modular_sop_active",
+  "v3_extensions": [
+    "historical_regression_qa",
+    "checkpoint_schedule",
+    "tracker_update_every_5_minutes"
+  ],
+  "tracker_policy": {
+    "update_cadence_minutes": 5,
+    "owner": "Reporting/Tracker Agent",
+    "sync": "google_sheet_or_drive_else_local",
+    "must_not_block_build_agents": true
+  },
+  "v3_hard_gates": [
+    "character_lock_qa",
+    "style_lock_qa",
+    "no_image_reuse_qa",
+    "script_visual_alignment_qa",
+    "frontier_model_provenance_qa",
+    "editing_render_proof_qa",
+    "subtitle_style_qa",
+    "final_proof_package_qa",
+    "historical_regression_qa",
+    "tracker_freshness_qa"
+  ]
+}

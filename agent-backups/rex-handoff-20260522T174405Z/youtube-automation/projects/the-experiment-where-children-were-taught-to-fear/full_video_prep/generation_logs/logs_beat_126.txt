@@ -1,0 +1,20 @@
+GENERATE beat_126 attempt 1
+",
+  "transport": "local",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "attempts": [],
+  "outputs": [
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-children-were-taught-to-fear/full_video_prep/approved_frames_draft/beat_126.png",
+      "mimeType": "image/png",
+      "size": 3580559,
+      "width": 2048,
+      "height": 1152,
+      "revisedPrompt": "Sparse melancholic 2D hand-drawn doodle illustration in The Experiment Channel style. Rough pencil line art, near-black thin sketch lines, muted pale tan, warm grey, and faded blue-grey palette only; flat lighting; wide negative space; minimal environment; no bright or saturated colours, no logos, no watermarks, no readable text.\n\nBeat 126 symbolic scene: an abstract association chain made from simple drawn objects connected by one wavering thin pencil line, visually distinct and sparse. On the far left, a tiny harmless-looking white rat silhouette with hollow dark-circled eyes; connected to a small simple bell shape or sound-wave mark; connected to a faint knot-like scribble representing memory; connected to a small stylized child subject seated far apart in wide negative space, fully clothed in plain pale clothing, oversized hollow eyes, non-realistic, non-graphic, emotionally restrained. The line continues past the child into empty space like an unheard sound. Include subtle symbolic hints of learned fear and childhood nervous system: a fragile branching nerve-like doodle in faded blue-grey, barely visible, not anatomical or graphic. No Watson or Rayner unless only as absent faint observer-like pencil marks; keep the focus on association, memory, learned fear.\n\nHandmade sketchbook aesthetic, not photo, not 3D, not anime. Hollow dark-circled eyes on every character. Maintain same line weight and palette across the sequence. Composition: mostly blank pale tan background, objects small and isolated, melancholic restraint."
+    }
+  ],
+  "ignoredOverrides": []
+}
+
+OK beat_126 3580559

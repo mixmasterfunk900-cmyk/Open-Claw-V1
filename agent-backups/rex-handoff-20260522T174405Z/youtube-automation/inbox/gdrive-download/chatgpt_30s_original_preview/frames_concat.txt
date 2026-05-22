@@ -1,0 +1,13 @@
+file 'C:/Users/ry_bo/Documents/New project/output/dog-paw-psychology/chatgpt_30s_original_preview/frames/frame_01.png'
+duration 5
+file 'C:/Users/ry_bo/Documents/New project/output/dog-paw-psychology/chatgpt_30s_original_preview/frames/frame_02.png'
+duration 5
+file 'C:/Users/ry_bo/Documents/New project/output/dog-paw-psychology/chatgpt_30s_original_preview/frames/frame_03.png'
+duration 5
+file 'C:/Users/ry_bo/Documents/New project/output/dog-paw-psychology/chatgpt_30s_original_preview/frames/frame_04.png'
+duration 5
+file 'C:/Users/ry_bo/Documents/New project/output/dog-paw-psychology/chatgpt_30s_original_preview/frames/frame_05.png'
+duration 5
+file 'C:/Users/ry_bo/Documents/New project/output/dog-paw-psychology/chatgpt_30s_original_preview/frames/frame_06.png'
+duration 5
+file 'C:/Users/ry_bo/Documents/New project/output/dog-paw-psychology/chatgpt_30s_original_preview/frames/frame_06.png'

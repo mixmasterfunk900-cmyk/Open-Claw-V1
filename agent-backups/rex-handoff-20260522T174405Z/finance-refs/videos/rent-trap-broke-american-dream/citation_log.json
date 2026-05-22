@@ -1,0 +1,27 @@
+[
+  {
+    "source": "Redfin News",
+    "claim": "Half of Americans struggle to pay rent or mortgage, with Gen Z hit hardest; web search result cited 67% for Gen Z.",
+    "url": "https://www.redfin.com/news/struggle-to-pay-housing-gen-z/"
+  },
+  {
+    "source": "StreetEasy",
+    "claim": "58.2% of adult Gen Z renters were rent-burdened in 2022.",
+    "url": "https://streeteasy.com/blog/3-in-5-gen-z-renters-are-rent-burdened/"
+  },
+  {
+    "source": "Federal Reserve Bank of New York",
+    "claim": "Household Debt and Credit Report tracks household debt categories and stress signals.",
+    "url": "https://www.newyorkfed.org/microeconomics/hhdc"
+  },
+  {
+    "source": "Experian",
+    "claim": "Average American debt by age and consumer debt trends provide context for younger borrowers.",
+    "url": "https://www.experian.com/blogs/ask-experian/research/consumer-debt-study/"
+  },
+  {
+    "source": "U.S. Census / ACS concept",
+    "claim": "Rent burden means housing costs above 30% of income, widely used in housing analysis.",
+    "url": "https://www.census.gov/programs-surveys/acs"
+  }
+]

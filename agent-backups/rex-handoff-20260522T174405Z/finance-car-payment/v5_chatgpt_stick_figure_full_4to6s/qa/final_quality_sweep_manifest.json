@@ -1,0 +1,35 @@
+{
+  "status": "final_quality_sweep_required",
+  "created_utc": "2026-05-22T17:29:00Z",
+  "basis": "Post-repair 40-sample rendered contact-sheet QA still showed clear/strong concerns for dense tiny text, panelized layouts, or clutter in sampled tiles. Quality is priority; do not call final until sweep passes.",
+  "sample_sheet": "qa/render_visual_audit_sample_sheet_40_postrepair_labeled_4x10.jpg",
+  "candidate_frames_to_inspect": [
+    {"frame_id":"frame_001","timestamp":"00:00:00","note":"approved-proof reuse; inspect individually before deciding whether to preserve or regenerate"},
+    {"frame_id":"frame_004","timestamp":"00:00:17","note":"approved-proof reuse; inspect individually before deciding whether to preserve or regenerate"},
+    {"frame_id":"frame_024","timestamp":"00:01:59","note":"previously repaired but still flagged in broad sheet; inspect individually"},
+    {"frame_id":"frame_035","timestamp":"00:02:50","note":"panelized/contact-sheet or tiny text concern"},
+    {"frame_id":"frame_065","timestamp":"00:05:23","note":"dense/clutter concern"},
+    {"frame_id":"frame_069","timestamp":"00:05:40","note":"dense/clutter concern"},
+    {"frame_id":"frame_072","timestamp":"00:05:57","note":"dense/clutter concern"},
+    {"frame_id":"frame_075","timestamp":"00:06:14","note":"dense/clutter concern"},
+    {"frame_id":"frame_079","timestamp":"00:06:31","note":"dense/clutter concern"},
+    {"frame_id":"frame_082","timestamp":"00:06:48","note":"dense/clutter concern"},
+    {"frame_id":"frame_086","timestamp":"00:07:05","note":"dense forms/checklists concern"},
+    {"frame_id":"frame_089","timestamp":"00:07:22","note":"previously repaired but still flagged in broad sheet; inspect individually"},
+    {"frame_id":"frame_092","timestamp":"00:07:39","note":"previously repaired but still flagged in broad sheet; inspect individually"},
+    {"frame_id":"frame_099","timestamp":"00:08:13","note":"dense flow/process concern"},
+    {"frame_id":"frame_103","timestamp":"00:08:30","note":"dense/panel concern"},
+    {"frame_id":"frame_109","timestamp":"00:09:04","note":"dense flow/process concern"},
+    {"frame_id":"frame_123","timestamp":"00:10:12","note":"checklist/tiny text concern"}
+  ],
+  "visual_gates": [
+    "simple black marker stick-figure finance explainer",
+    "warm cream/white background",
+    "John tiny blue tie, Laura teal scarf when present",
+    "no realism/generic editorial-cartoon/3D drift",
+    "no panels/collages/contact sheets inside a frame",
+    "no dense or tiny unreadable text; prefer zero text, max 1-2 very large words",
+    "one clean full-frame scene per beat"
+  ],
+  "required_action": "Inspect candidates individually. Regenerate any clear failures with OpenAI/ChatGPT image generation final frames only, QA replacements, rerender repaired segments/full MP4, rerun contact-sheet QA, mirror to Vibe Zone. If approved-proof frames 001/004 are the only remaining concerns, explicitly report whether preserving the Masala-approved proof is safer than replacing them."
+}

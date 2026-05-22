@@ -1,0 +1,1926 @@
+{
+  "status": "pass",
+  "image_count": 137,
+  "unique_hashes": 137,
+  "issues": [],
+  "images": [
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_001.png",
+      "sha256": "504e2d1ca495f9b15127defd6738e25afb5188c0b63df1dc015b4fbdfe486556",
+      "size": 3004198,
+      "resolution": [
+        2048,
+        1152
+      ],
+      "stddev": [
+        71.32326454750435,
+        64.49776750448838,
+        61.09218381364967
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_002.png",
+      "sha256": "a86d11c695e453a75c2d760e1267ceeafd36d2d09d968d4208ac8f85ffe5f3c7",
+      "size": 3652805,
+      "resolution": [
+        2048,
+        1152
+      ],
+      "stddev": [
+        66.07168022504213,
+        51.02187624899951,
+        49.09873600527424
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_003.png",
+      "sha256": "cc65cc09867ba23885db3d66daa9212edecc88e2c55274f6a7417594a2862203",
+      "size": 24354,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        34.59042865093518,
+        30.11232030019513,
+        28.86648827991853
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_004.png",
+      "sha256": "bd1c9bf5e51c331b6a27aa4bce7395ae988950c544e603c1109a23ac86370b6f",
+      "size": 30270,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        37.841752580763334,
+        37.83653528355233,
+        35.67951494314358
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_005.png",
+      "sha256": "f92a6bbf14a812f6107f5dd26aeb5d97673f5d15a210963fba1e2f1dc3ef941b",
+      "size": 34078,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        35.994291318746235,
+        35.320713622864815,
+        35.20004009363068
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_006.png",
+      "sha256": "26bd1f473e34a846fa201929d991c132d50ce615d7d1ed93b89b8ec94b9a858b",
+      "size": 33263,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        40.04391523437958,
+        37.7257953293847,
+        36.37281456395169
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_007.png",
+      "sha256": "bd227119ee29b6ce2a16d811d863f7834d0c4b8522fdb207630cc92a5655e3f3",
+      "size": 37007,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        36.98831919384705,
+        32.913775125426156,
+        33.79353441388851
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_008.png",
+      "sha256": "ae4851351786efd2664de66f9868935a2377e6c18642cb2e363855a0869d99d0",
+      "size": 27606,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        32.230291037848055,
+        26.706850821356294,
+        25.72444915533095
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_009.png",
+      "sha256": "011f913cf64b7d5f2ce63e448ce7ee17d674931467c38ad18a1a178c4920e733",
+      "size": 29990,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        33.17405358025521,
+        26.83962759056397,
+        25.059941692524472
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_010.png",
+      "sha256": "2ee301062b71d2ba1b98f2f1d3064c48a382eaccdb4578fc6659d945ed1fcd8a",
+      "size": 32333,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        34.870167183453844,
+        31.4779470121445,
+        35.195792580647364
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_011.png",
+      "sha256": "4410e79c4bb32f9970853ace5cfe8e03740e2319b9012ece52d626e25c09b46b",
+      "size": 24446,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        34.95837276899453,
+        29.73072939211257,
+        28.753841093043533
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_012.png",
+      "sha256": "df1d98c14b35c344dd17faa924c9ac35b58ed887f05f94ae4cc446c54074035f",
+      "size": 28098,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        38.94783735844785,
+        32.73603970767665,
+        31.366600918097657
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_013.png",
+      "sha256": "3144a0aa1dc5ad20aaeca588baea2d47c7fa1b57182af3c43ee765f032277c90",
+      "size": 34893,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        35.175119136439655,
+        35.639188577237746,
+        35.335942781435854
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_014.png",
+      "sha256": "d9b64f1a2560d4a94346d3a696882851ad8f578db72c681118399f25eb031224",
+      "size": 31254,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        36.82424670762077,
+        36.30327879407121,
+        37.1546151736077
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_015.png",
+      "sha256": "3e744e56fbbc745fc5eefa0f5a538a19bf7549806c1e2bd90b2dd0cd344ed5ea",
+      "size": 33815,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        32.463696347087485,
+        34.78302037690897,
+        35.791466640616534
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_016.png",
+      "sha256": "abde3b569d42f774d9a774f2b486b94b4faafbb38cb06212752cd03d193ed89a",
+      "size": 31465,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        33.60953753615981,
+        32.612199216715446,
+        31.7529693229282
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_017.png",
+      "sha256": "295b7fa5d9e4ddae4b48bd4d0056146248c374ca53d0923256c1fc7d35b9114f",
+      "size": 28651,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        33.32748005101479,
+        26.788894510775375,
+        25.514320589988845
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_018.png",
+      "sha256": "974a3202ed47be81b65b371cbedca432ba22699198c59203c54fb5c6ea15111e",
+      "size": 28662,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        35.40521586854255,
+        31.975331293079346,
+        35.53751183793722
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_019.png",
+      "sha256": "7d94b5da5580510676adc673da1fbb6b3f3820c8cbd91869caa771e6305050aa",
+      "size": 22825,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        34.70043916888663,
+        30.013089645630007,
+        29.215011248882035
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_020.png",
+      "sha256": "70be9d2d64e237f02a9da8ff5a7d772ee4c6294bad0ec172d39dd13a35929455",
+      "size": 27178,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        35.86442428476413,
+        31.576919190247438,
+        32.35398451028273
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_021.png",
+      "sha256": "9a34c0975bc71618335cec35e1658ad544e89a5870163f2c36f7176be5f8a299",
+      "size": 34283,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        40.074039176614356,
+        33.02044806482991,
+        29.16321485532825
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_022.png",
+      "sha256": "99a14494712ea6f78372b3eae5f3e5a7989ee75c4320b46a21182eb52b37a097",
+      "size": 25641,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        36.910840981297675,
+        33.11904730654836,
+        30.61598602934155
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_023.png",
+      "sha256": "cea9fb9bed4f2e69aef837f803ec3dff684a5a4db5bb44ad9194b6303a937769",
+      "size": 32437,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        38.804151126627026,
+        33.25713517272415,
+        33.31383872184335
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_024.png",
+      "sha256": "7b809b77e2a806c120fedcead1f3ee354f02980325effe7120c5a6541666bdc2",
+      "size": 29732,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        32.012625086621085,
+        26.514061675554327,
+        25.330233902356824
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_025.png",
+      "sha256": "090e980c534bdc0ae130ed5003935ab3f9d3273fa380cbadd38d8bc40e28aba3",
+      "size": 26419,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        32.18338310159524,
+        27.630040310581865,
+        26.044316100055873
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_026.png",
+      "sha256": "af7ad47447535f7576e89d686e5a094319721c5c4fd9d3ab01e04034c0e23f5f",
+      "size": 32185,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        35.03321909122316,
+        31.38810298543904,
+        34.786661739796706
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_027.png",
+      "sha256": "d2da883c1884e993963f04dadc2d291f1c330efc07ae05711c6e6b38f81d0dc1",
+      "size": 24549,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        34.65946857507465,
+        29.91336344758742,
+        28.779427119174358
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_028.png",
+      "sha256": "cb8d811d7dc1114989e57f8b7911dfab116214fe65a14955f1afce2adf058689",
+      "size": 30138,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        36.63693957517439,
+        32.76106525569348,
+        30.43399611392456
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_029.png",
+      "sha256": "20ce4845f85440b6a722e87e87af0510bfa9e6cc0baf7fdcd9e50d1c7e68252d",
+      "size": 36920,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        42.48490685932379,
+        37.22985243383711,
+        35.95919441152794
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_030.png",
+      "sha256": "710b1bb49573d2e0b77e0b25ae0d4735b2a3b2b914358b39ab4be0090b623734",
+      "size": 27155,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        32.950151720339576,
+        35.13263243336089,
+        34.852962052873664
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_031.png",
+      "sha256": "aee0eb504a826832abd495f4424894b869ef9029aabc716bb748b5896d4af719",
+      "size": 37679,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        39.066584793508206,
+        38.28395027039915,
+        38.83911750416623
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_032.png",
+      "sha256": "7f08d00236d10f1c3df0cc10dc562dbfbf50a3bc798a5ba652ea65c3dc2bdc0f",
+      "size": 26135,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        32.18136352044841,
+        26.6652143942106,
+        25.516462252481116
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_033.png",
+      "sha256": "db1c4fc872f06283f902baa8ae008abd9a90d3c69491671a239b42445e974db2",
+      "size": 27407,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        32.990779026205324,
+        27.069933290120296,
+        24.577190231699294
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_034.png",
+      "sha256": "d810b4f430292e09da466603a4508b3abafb01ffe2a66bd5986b15bab5dd102a",
+      "size": 32115,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        35.20602439982371,
+        31.786345100944846,
+        35.80606706409187
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_035.png",
+      "sha256": "2398ab4a5c3f46286e541f8577f4d983223dcdca2eaa8291dcfe2c71f99d7a93",
+      "size": 24253,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        36.28912996991522,
+        35.554318114817434,
+        34.667611143076336
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_036.png",
+      "sha256": "17d6632ba68f283b9f5812a18d7a87d3da5492c9abca7267e2d5e29b73f31072",
+      "size": 29031,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        33.05822555266698,
+        35.35754397769976,
+        34.88589091370106
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_037.png",
+      "sha256": "180a57b60c5c9d347899d4fc92cc6cf46d27b9c461be7f27ee3be94d8964fe93",
+      "size": 33394,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        35.877596035129855,
+        35.60957902438576,
+        34.123704579255346
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_038.png",
+      "sha256": "2a077fd22199d9e5418290352decc85db5060845a682a16c4d37b475b42b179b",
+      "size": 30099,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        35.60140686840128,
+        31.53364274124602,
+        32.55967838104553
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_039.png",
+      "sha256": "c9f611c2ef46b285095a8fef2381cd6125973f24adcc9d34d9c63d228851bf3f",
+      "size": 36194,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        37.992064946100385,
+        32.336057515271925,
+        32.59760602779459
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_040.png",
+      "sha256": "99284b0a30d464e74cfe370d92f70f1fbcae93f0a36e6c6bf8cd1970d0228a35",
+      "size": 29659,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        32.176449514377765,
+        26.168172991003487,
+        25.344186195050852
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_041.png",
+      "sha256": "058e79747f56688d2638e68506d34ed4584f837f9fd20f1706bc565d909f304c",
+      "size": 28674,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        33.46660832698244,
+        27.26737979321269,
+        25.4452796225084
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_042.png",
+      "sha256": "752137f020d3069a9d51de126b92e8bbb72ac545d4f09294043e9b2eb5884cb4",
+      "size": 32565,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        34.70080040507821,
+        31.58120146176198,
+        35.293330374219195
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_043.png",
+      "sha256": "652d2f1e047761867759400796438094b09b5377b0a542ac778ad7b8a8487baa",
+      "size": 23647,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        34.75020527320353,
+        29.857503721300024,
+        28.99667919651859
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_044.png",
+      "sha256": "0ff1fe098ba68539e294a7d14712dfd8e1a6496581b927e94541403d8e14b7a7",
+      "size": 28472,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        35.791014873462956,
+        31.787683532812082,
+        32.586566041912214
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_045.png",
+      "sha256": "8973a0be9d175c1f319db9fab39ac5a60f373cc88a50fa556642661160128032",
+      "size": 34763,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        40.001620742203656,
+        32.66554414947306,
+        29.148721172100156
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_046.png",
+      "sha256": "cdd0469f53ce59d956e3198245d4cc948b92162a3bd8ad59c48aa1141d6206dd",
+      "size": 28070,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        36.71944108734593,
+        32.92913647935172,
+        30.378896848106667
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_047.png",
+      "sha256": "abb06643e29c21b9c1e951e9341ffcf7e256068126dad438b18bc63fa8f1ed6c",
+      "size": 36384,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        39.99693218230109,
+        38.2354004941262,
+        38.06742873033736
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_048.png",
+      "sha256": "4baed1961001a43d8b5f74f7b3494cc7b9ce906dae09b22ccb0a9d568e539805",
+      "size": 30504,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        24.10560469775996,
+        29.685681504626565,
+        29.99640748450179
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_049.png",
+      "sha256": "55890493e785d957b8b392fb3cf6702b492efc5fd170141cf86bb9b1e928e5bf",
+      "size": 26941,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        32.26624405734075,
+        27.569352400047542,
+        25.967728545097952
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_050.png",
+      "sha256": "8f87727f8b42bd19ebb0b9648e4b93babd74be25f63bccb0d8e1c594269a1f72",
+      "size": 30570,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        35.26087283715893,
+        31.946667601590867,
+        35.64363489201069
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_051.png",
+      "sha256": "9783afe36e174e83e3aded713a85281c0de163e6a31a83d136fd3b8d2d6f6024",
+      "size": 24278,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        34.7177137555805,
+        29.98160969660349,
+        28.841022145541988
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_052.png",
+      "sha256": "acbfa65fa16b944243f4d17f6e561712d39755b46b8d7548f8268f76d43245d2",
+      "size": 30639,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        36.67090458114106,
+        32.52048684154208,
+        31.27098400584037
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_053.png",
+      "sha256": "4a52b737d8b9e4714d4ff63e8be3094a3a97ab88e6d96f285848471cf449863a",
+      "size": 33742,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        41.36130060066248,
+        32.95280009175621,
+        32.27272042143936
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_054.png",
+      "sha256": "fe69071a3d9c929b3a891d0ebd92458016d6901e99888e631627974a3fe4c80e",
+      "size": 32183,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        39.10153603870081,
+        32.28043237869651,
+        30.99757557378269
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_055.png",
+      "sha256": "a7750969e5020bcb386cc490628a7f7671dc9d254de74a4fb27f598b0e53d248",
+      "size": 33758,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        37.38634239250816,
+        33.222350302606024,
+        32.98612417086014
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_056.png",
+      "sha256": "c7d09813105875e6d95f80fb89896d95fe1cb4ecc9a6a4247a1f43c15670591e",
+      "size": 29824,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        31.866907212137345,
+        26.607866878200642,
+        25.843158612540932
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_057.png",
+      "sha256": "c27b78ae06e05752cdd70a9b8c3871a5a2eee78aafab5e086eb0802a0812c8a0",
+      "size": 28074,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        33.249472829351056,
+        27.234526179072464,
+        25.187684897748355
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_058.png",
+      "sha256": "8ee2192ab66c84e3504deab3c7e586d6c4731185a03c55dafc2704dd858050d5",
+      "size": 30821,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        35.29719065881898,
+        32.0382092347691,
+        35.3036989963287
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_059.png",
+      "sha256": "30579a9caed121b35e8c75897d11ae40463a25cafc0bba413ea1c2a1a1db34fd",
+      "size": 24668,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        36.48058458490242,
+        35.67920403239413,
+        34.92720211382252
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_060.png",
+      "sha256": "cdaa873bc64a1b224298ccc074506d48124720eed25eb2a77508e106d81b1000",
+      "size": 30266,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        39.80123649119251,
+        37.2957208314176,
+        36.16028565408684
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_061.png",
+      "sha256": "6f667b788f12b3d789a55de3d7287ba9836a11db4542937dff9fab3cfe741fb0",
+      "size": 33239,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        35.6244246801305,
+        35.14982280498334,
+        34.008876724556195
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_062.png",
+      "sha256": "000f63b8554830e34cc5d19732401f070c29bae2b5ca4c11fff7744d100d201b",
+      "size": 28613,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        35.72721128236484,
+        31.398715113007366,
+        32.13037894373951
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_063.png",
+      "sha256": "9a9dcc54f152142a4c77ef07a1391662b581b0af457cd055b141df9320a4f526",
+      "size": 36487,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        37.966552487249984,
+        33.16175775973901,
+        32.6534058961411
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_064.png",
+      "sha256": "ddadecd160040fcac72402d1052853c3814d4bfb7c286c0b6dbbb4bf5c0f5cd7",
+      "size": 27110,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        32.16769631512847,
+        26.420824909474007,
+        25.277622047476175
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_065.png",
+      "sha256": "f91f91c33152666679bf250751e535c5bd89533325e99b4463333c315bb0023a",
+      "size": 26971,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        33.66251584995461,
+        27.111467459196717,
+        25.465873237296577
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_066.png",
+      "sha256": "14c410abf1c66b0ea721d364f7949e0d0336c4a32ff6682e4d7f78f1f1b58b0d",
+      "size": 31033,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        35.130139730193534,
+        32.52023071796686,
+        36.20818589415842
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_067.png",
+      "sha256": "23d53a8fcf49a4f5b850c765b74183ea467600d56177e89c576031095f7a9faa",
+      "size": 24308,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        34.56506639889189,
+        29.69831438239154,
+        28.798290530032187
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_068.png",
+      "sha256": "cc506943b226c652ddef546929b7dbc73d43b18647e8f0f6a0b90e0608c26594",
+      "size": 33177,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        37.40965047625069,
+        37.18873965083296,
+        37.93835486078139
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_069.png",
+      "sha256": "2bceb50b737434176ab1e988db588da2fe2ebacfd9e9f4a0db501df758657427",
+      "size": 33951,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        34.69792274847556,
+        35.581145048341476,
+        32.60608670830169
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_070.png",
+      "sha256": "724297eb4de551957f0ded9903ba57f962a7ba33a83b228738d69936517a8755",
+      "size": 29503,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        37.77692531551497,
+        37.68325972191471,
+        35.43556121977568
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_071.png",
+      "sha256": "f98f615c4753d91566300184af1b727b8ccae957be44d17c57b7e71f90a249f1",
+      "size": 36298,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        38.42225463367073,
+        32.451940168565834,
+        33.15540295620291
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_072.png",
+      "sha256": "ce528e28919f433c63cf79701a03ea4c93808649fa704029bdbae0f2ba996e6a",
+      "size": 29102,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        32.17456991414226,
+        26.98334445695798,
+        25.23431920835503
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_073.png",
+      "sha256": "056c5f6f5d3491f18d6d068413ec27a347b704d2f840a73e6ec9b0a936833c37",
+      "size": 29502,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        32.08764460133657,
+        27.472428949899147,
+        26.00707372434191
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_074.png",
+      "sha256": "32d585782dca539bfade5be74dd1dec4b2b8ccdb54605a16c8934ef47bce6e82",
+      "size": 30889,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        35.326235384013195,
+        32.06274970207109,
+        35.08607880394453
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_075.png",
+      "sha256": "04b84f1e657a535ecdda1b6eee3d1610c74be2b4056e33edab8856e9c5fbcc8b",
+      "size": 23717,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        34.72491459529995,
+        29.84759656790923,
+        28.935358942212535
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_076.png",
+      "sha256": "759071ff4c1056960d8111a32a406881c103a412e11f7f2c91aa49bbc6c64e9f",
+      "size": 29115,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        36.76605151442912,
+        32.76590687842938,
+        30.86350848498652
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_077.png",
+      "sha256": "36749310b67a0094f62b4969c087e52fde316e5ab37cc453a2e7645c1457f670",
+      "size": 35144,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        41.21419332231632,
+        31.82800005135908,
+        31.906987053893907
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_078.png",
+      "sha256": "4b6c0ef70d7779e3115ba628b7984c5a7f48adbb69142a25c996afd4e2c86d45",
+      "size": 28563,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        38.899191775659745,
+        32.460198960776495,
+        31.160975456136867
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_079.png",
+      "sha256": "77e1c72df5023dcd15a45a17d191c9deac663564c8af8d68097b628ee4e6d70b",
+      "size": 35428,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        38.986953439160615,
+        38.83012864211006,
+        39.269433331565004
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_080.png",
+      "sha256": "a2eeaa0a18c88c2e299c423a5bc99ed38ad3dd0cea6fff917573873ad218c4c6",
+      "size": 32472,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        34.06711893974519,
+        33.49741659359303,
+        32.32165259895857
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_081.png",
+      "sha256": "660f7951fb7ce98e492225fd0ad735366967a905665fea07987aa0236eb01a2a",
+      "size": 29424,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        33.068177649597224,
+        26.904829705975757,
+        25.245730171955852
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_082.png",
+      "sha256": "a2df096efe1cc745b78650bf7cbe363f12457ff6a90abb2c2703dc858e59bb75",
+      "size": 30076,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        34.925838354617206,
+        32.331265798324274,
+        35.12892278952757
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_083.png",
+      "sha256": "c2dec2d1d8c88f2277b74cb0e52fb0e97ff1b528f4a0985f277c6d44372974c9",
+      "size": 23570,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        34.75580896619412,
+        29.87477230121706,
+        28.733029996734896
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_084.png",
+      "sha256": "367d72c0c19776cf867840cf38ce9fbf95c88769d3f02485ec6491bd5e8ed8df",
+      "size": 30115,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        38.87440147958064,
+        32.49823760118489,
+        30.949801684073954
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_085.png",
+      "sha256": "69ba2be41398fc8834e56ebd5ad77f043e18f2494be78e72a711a5ed48cbe473",
+      "size": 34117,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        35.6263586093987,
+        34.53730185548762,
+        33.80141819857634
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_086.png",
+      "sha256": "2e081525cd5f16af61b338683bc9d58bdf7096506e6d88e37316956788a3aae1",
+      "size": 31057,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        35.75649198221181,
+        31.82014450469436,
+        33.12698741231376
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_087.png",
+      "sha256": "887b0f660eed205393d5345ba519bbc124ff74f9923f4162a7226213f3f0a55b",
+      "size": 35835,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        38.11918487085768,
+        32.708657674054905,
+        33.209226421994195
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_088.png",
+      "sha256": "1250545885b951b59dbd0fed6bd820e52977b86a05b8d90106f2a4256658e666",
+      "size": 33023,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        33.071132368629435,
+        32.25386629988895,
+        31.66680835288518
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_089.png",
+      "sha256": "0786011dff729b82ca55d13382e1d92d91b822d0bb4d32dfca772734d0cc62b2",
+      "size": 30162,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        34.90345109162531,
+        33.09132516601786,
+        31.567778820529973
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_090.png",
+      "sha256": "b5acdce2e16ffd663b3dc55e5752d42054472fb99f6be9086be0ac88d1da490f",
+      "size": 30603,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        35.23833213988289,
+        31.95914691293367,
+        35.319015946126996
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_091.png",
+      "sha256": "c7d348f0143c18449aa0e4363741813da5b29a8baed2145406ef906b5ca353fa",
+      "size": 24136,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        34.64668549560059,
+        29.72181180140968,
+        28.720787858908693
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_092.png",
+      "sha256": "4e21592f4067cfc5b3dd87fd0ca920ef4d38240406e6cb177c54c465726911a4",
+      "size": 31877,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        35.65422431585387,
+        31.27089543730699,
+        32.450718733537244
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_093.png",
+      "sha256": "d648c4a38dc761be65e9d1c43743c1fcb24b1803988b4529f9f2c4b39527dd70",
+      "size": 36005,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        39.58311178549472,
+        33.092044350943986,
+        29.235978710059126
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_094.png",
+      "sha256": "16dbe5ee157d66bb6a708335c8e23f55023dfe525add30464e657b34ddb6edcb",
+      "size": 29329,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        36.71091046644948,
+        32.83045634768908,
+        30.318490461066677
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_095.png",
+      "sha256": "c65a3949ee5b86fc1aa7f39f294641dace86a3580a468fd9d5d13683c8836abb",
+      "size": 35147,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        38.675498939084974,
+        32.4807549442557,
+        33.706945766671765
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_096.png",
+      "sha256": "075d715e7369cb2847f0c5a3810889c9d95dd1e3a2ec5b296996458bb410db81",
+      "size": 31342,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        33.34775988055584,
+        32.234824059686495,
+        31.772249798881937
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_097.png",
+      "sha256": "451b6614783bc30469ff38bf566469f2952e54661edc9dd5faca919cd950629c",
+      "size": 30966,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        33.82602545486965,
+        33.81893738220149,
+        33.292679033213844
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_098.png",
+      "sha256": "5fca8d7a95b75528bd913b69cce1019333f0dadce76a49a0070deda39409a82d",
+      "size": 29340,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        34.93152730994207,
+        31.377101536739914,
+        35.065614101075106
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_099.png",
+      "sha256": "aac0008a6156afe5706d8b45789ed046a958673f90fa94bcd26ea2c47bc15fda",
+      "size": 25614,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        34.662311406437986,
+        29.659627981932086,
+        28.88905349101942
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_100.png",
+      "sha256": "1961990f153a535da97a30fb25aa883409a5a073866922e9954826f61565cbc4",
+      "size": 30256,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        36.65818055730225,
+        32.757390231387774,
+        31.03502055550761
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_101.png",
+      "sha256": "a20fe802ac70abadeb8087e2f3df43bbe71c8f9d57d8d9c8a04a7a264948570d",
+      "size": 35271,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        41.45481185413863,
+        32.19731270497011,
+        31.900224748700026
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_102.png",
+      "sha256": "5a3a4138c8b0c41317106c379e85958532d63501990d445cb433bdf50255f202",
+      "size": 29138,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        39.00253046359752,
+        32.459888882216184,
+        31.28702185977746
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_103.png",
+      "sha256": "8bf6f8fa26c2d1c5db28dc7535594204b5bec155ab5398f61156d92c148c95cb",
+      "size": 32534,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        37.6630311206174,
+        33.285576590752264,
+        33.579827062160504
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_104.png",
+      "sha256": "a1085f52d292e2947f9042e529a8d7d6846de71187d67dbef150b9f665f533d3",
+      "size": 29527,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        32.08250086868994,
+        26.33249421544781,
+        25.13446052020048
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_105.png",
+      "sha256": "43327a8ce9a65a7ee78d3334797fc3c0fa9f455355d252200e8632d33e98d346",
+      "size": 28951,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        33.006345747672846,
+        27.122668563013228,
+        24.734482677721097
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_106.png",
+      "sha256": "7723d17afd64e3700f3eb9842f40dcfd518771398570280ccc0984530f785727",
+      "size": 32954,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        34.935753618010615,
+        31.794780341552872,
+        35.60214830088729
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_107.png",
+      "sha256": "34d8a211c4701af380327a3411df11654167476daaafc707dfcc6f4a65483221",
+      "size": 25377,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        34.597557197435826,
+        29.90068236884076,
+        29.09101198044309
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_108.png",
+      "sha256": "706755b83690a2704d73553b3310b7565a6ff1604ac6baae7c33871a7294dd94",
+      "size": 31934,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        40.23185776309311,
+        37.69730360343243,
+        36.29966232337634
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_109.png",
+      "sha256": "dff3993b9ba8bf70492ec198580fb2836f2ff355e89f500727d970f2e2da3839",
+      "size": 36778,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        36.97982337039284,
+        39.72606195019092,
+        38.387103719911096
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_110.png",
+      "sha256": "02e61c40e57b5322421c77dba8957c2e48a4a2867dbae4fefde603f2f45c254a",
+      "size": 29557,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        35.84182523979243,
+        31.579449182220333,
+        32.26968560630114
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_111.png",
+      "sha256": "20e097a2df3dc5f27aea503ff78da569ddb59e064029c44333aa89a5bfcfa530",
+      "size": 36351,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        38.247535189324054,
+        32.699286021533304,
+        32.485202945741584
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_112.png",
+      "sha256": "75b4d65adad62ef4007d89c45a4e1c775f1c6733221f0e9bec6a57674d34986d",
+      "size": 26607,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        32.34483457645885,
+        26.673699552781738,
+        25.323255783157453
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_113.png",
+      "sha256": "77c22e0e0d4b80842d95fe50f2211a3d855d3653b81806c7e1073d87a1b1ae48",
+      "size": 25197,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        33.819590153115136,
+        27.343103128319193,
+        25.838504219737455
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_114.png",
+      "sha256": "d57e3176ad200b4bc9a7c7783001c1e255735f9b3e6a66e16d1dcd33c95f65c7",
+      "size": 28305,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        35.49146450786159,
+        32.07468353871035,
+        35.75692925437923
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_115.png",
+      "sha256": "a8cee145eed711b79cf9d08473d5d05ff2cee08474b260fa2d5cb62a214276bb",
+      "size": 24552,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        34.668298121520145,
+        30.04521361806611,
+        29.05415911595621
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_116.png",
+      "sha256": "1103fb5f11f4b48d3e3678ea2af4b545ecf39141d25be02db0136b8f45292a27",
+      "size": 32672,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        36.49129303341534,
+        36.72968920162384,
+        37.14663581949329
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_117.png",
+      "sha256": "b4a5ca42982bf3a1c4b4bff020761bb3ed855ed6388c1960d0e301873daf74f0",
+      "size": 32310,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        34.48866163177821,
+        35.530481267909664,
+        32.99598074181877
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_118.png",
+      "sha256": "31b46d85f72ad40dd15be36eaf9ed37f7341c0491c474e196309abad13b18657",
+      "size": 29629,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        36.83279786625233,
+        32.817541237974325,
+        30.26017786760727
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_119.png",
+      "sha256": "75d931b09820e41d86ad575de4df361b7a95d314e8727809cd87586bb521ac9a",
+      "size": 36455,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        38.31776174395806,
+        32.45180114819637,
+        32.61501809682951
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_120.png",
+      "sha256": "6bd27cac41a58f0ba487186bdf4877c23197931784be1a89350b532e7f3ac59d",
+      "size": 31310,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        33.99729571662528,
+        33.316640817942485,
+        32.23487534681651
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_121.png",
+      "sha256": "ba0422603cd1fe81344705224d23510a87214791fc1ae05cd980cb6a1040a7ba",
+      "size": 30231,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        33.860921134907805,
+        33.26246949767064,
+        32.13101190510339
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_122.png",
+      "sha256": "e876270a745ef04dbac19a235cd7cbb92a18167ee8fa640887d2c2782b102671",
+      "size": 30591,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        35.30259286801096,
+        31.998022422028463,
+        35.65615639802097
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_123.png",
+      "sha256": "e1c115a6eb5a0e2463f940955e8a22b78cbefbc817b92513be4af61286769627",
+      "size": 23257,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        34.83483373201494,
+        29.87723934425761,
+        28.855418798946932
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_124.png",
+      "sha256": "e82af7bd00cee13fe7d0097e6fe0e548b9902f2aa7ccc2b07697c4d15a7b5868",
+      "size": 27526,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        36.85980932691353,
+        33.14873411522354,
+        30.64412446437576
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_125.png",
+      "sha256": "1ffd183cb745bde198c029d4f951c0843b3439d7170cf34c81bebf133c3d6e3c",
+      "size": 33280,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        41.34262112978759,
+        32.48051832721834,
+        31.79837130981549
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_126.png",
+      "sha256": "540a2ab11bdb5ae43a2946106dbcda21693b4eb2d280244bf4222a1469861be7",
+      "size": 28836,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        38.855693075217935,
+        32.67040182440299,
+        31.077663970231303
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_127.png",
+      "sha256": "e4243c7213109e828cd5b79d01fd395109ca10a01cbe93d8af6623bd33dced12",
+      "size": 34565,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        39.32387175181258,
+        38.71641050338612,
+        38.551759303115624
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_128.png",
+      "sha256": "02f444c86eea22a901c3fc6bd0aecd88bb7e011fcb8f0b6cd0e3d8364b270152",
+      "size": 28769,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        31.886728030599787,
+        26.478892701846373,
+        25.66067537288289
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_129.png",
+      "sha256": "2ac0f5956f67d7d2a63a73d3726845def9894a2d27f05062a9348ca00ea27db0",
+      "size": 25314,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        33.24530932263054,
+        27.10301321021183,
+        25.137738369139633
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_130.png",
+      "sha256": "8ddee363edcd09244edae038c696edb5aa22ce6997dad5a2e44ffe1b5a02a78e",
+      "size": 30092,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        34.76077448518453,
+        31.759322040758953,
+        36.086489202031125
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_131.png",
+      "sha256": "93596fe389785f0eb0498c0db298fc3d097208e8caf3221b432e1f2705499554",
+      "size": 23417,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        34.710747398503784,
+        29.981754079486677,
+        28.944144782524262
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_132.png",
+      "sha256": "9b7ee808af902e4be52b65199ea90f6c2bfaa60eae3c4f4144a3c78bce0549d7",
+      "size": 29909,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        38.92266621043342,
+        32.61931028778592,
+        31.07311645172845
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_133.png",
+      "sha256": "b5035edc522cb634757e71ed60e5c2fa545a3083dbad9dfbf32bc24f4e265213",
+      "size": 31647,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        35.786822344247334,
+        35.27268918919369,
+        33.616456354479155
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_134.png",
+      "sha256": "1b8db16a3ff9c64c687cdb0444128cc714d38b74c795b60ede7af2e89cf00990",
+      "size": 32811,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        37.12857123285136,
+        37.62946252131998,
+        38.197479274864904
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_135.png",
+      "sha256": "8443f2d8a188892ee95346622b09c68e13000dd3e49ec50af144ccac00ba53e6",
+      "size": 34134,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        38.10907579752061,
+        32.23800952226317,
+        32.0060346384348
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_136.png",
+      "sha256": "05ce82aff46e6fa196cc620c85c4a11afcfcee2a6eedb589efc48e7fd86b1b69",
+      "size": 30401,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        31.692336904698788,
+        26.285559253431813,
+        25.485459133724977
+      ]
+    },
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_137.png",
+      "sha256": "ba47c431243a7052da08e3bf9231a04afe3f2cf6c01a54e95040778934966048",
+      "size": 29590,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "stddev": [
+        33.711551425192425,
+        26.84431801662395,
+        25.80986554225031
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "provider": "openai/gpt-image-2",
+  "model": "openai/gpt-image-2",
+  "source": "OpenAI image_generate tool; beat-specific prompts from visual_plan_v2_132.json plus nearby script context; targeted contact-sheet QA replacements through 2026-05-19.",
+  "frameCount": 132,
+  "uniqueGeneratedSourceFrames": 132,
+  "placeholder": false,
+  "storyboard": false,
+  "promotedFrom": "approved_frames_rebuild",
+  "contactSheets": [
+    "qa_contact_sheets_rebuild/beats_1_20.jpg",
+    "qa_contact_sheets_rebuild/beats_21_40.jpg",
+    "qa_contact_sheets_rebuild/beats_41_60.jpg",
+    "qa_contact_sheets_rebuild/beats_61_80.jpg",
+    "qa_contact_sheets_rebuild/beats_81_100.jpg",
+    "qa_contact_sheets_rebuild/beats_101_120.jpg",
+    "qa_contact_sheets_rebuild/beats_121_132.jpg"
+  ],
+  "qualityGate": "rebuild_quality_gate_132.log",
+  "visualQa": "PASS via image contact-sheet QA; minor style/identity variance only, no serious blockers.",
+  "updatedAtUtc": "2026-05-19T20:57:15Z"
+}

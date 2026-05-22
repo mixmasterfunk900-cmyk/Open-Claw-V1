@@ -1,0 +1,1227 @@
+{
+  "final_frame_files": 135,
+  "unique_source_files": 135,
+  "provider": "openai",
+  "models_used": [
+    "ChatGPT/OpenAI",
+    "gpt-image-1-mini",
+    "gpt-image-2"
+  ],
+  "items": [
+    {
+      "beat_id": 1,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_001.png",
+      "source": "/root/.openclaw/media/tool-image-generation/finance_v5_4to6_group_001---b2cc4395-7358-4066-8c1b-c58d2e76f586.png",
+      "provider": "openai",
+      "model": "gpt-image-1-mini",
+      "sha256": "5b5c13eceb8ef154db54d5ad3d40d7d91e6bb9242a574fe571fd7c9cf0376eda",
+      "note": "openai/gpt-image-1-mini image_generate corrected run"
+    },
+    {
+      "beat_id": 2,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_002.png",
+      "source": "/root/.openclaw/media/tool-image-generation/finance_v5_4to6_group_001---dd3861e4-0f7c-43e9-95f6-8a66afdeb5cd.png",
+      "provider": "openai",
+      "model": "gpt-image-1-mini",
+      "sha256": "b1dd7af9940fc313489ab820c3bd0da3c6a395db7e1adf7555b5e9ea6fc62227",
+      "note": "openai/gpt-image-1-mini image_generate corrected run"
+    },
+    {
+      "beat_id": 3,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_003.png",
+      "source": "/root/.openclaw/media/tool-image-generation/finance_v5_4to6_group_001---118c908e-11e3-4cdb-be41-bac32bcd6983.png",
+      "provider": "openai",
+      "model": "gpt-image-1-mini",
+      "sha256": "21d6ebc6b6e7818dfad15413931732843e9a04a7b738af54720939daf977d49e",
+      "note": "openai/gpt-image-1-mini image_generate corrected run"
+    },
+    {
+      "beat_id": 4,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_004.png",
+      "source": "/root/.openclaw/media/tool-image-generation/finance_v5_4to6_group_001---07a05ee7-905d-4a95-8922-96eb62a849a9.png",
+      "provider": "openai",
+      "model": "gpt-image-1-mini",
+      "sha256": "c38362d19058db40a0ce7ede661ece13071ce5d1c19787702d08508baa776185",
+      "note": "openai/gpt-image-1-mini image_generate corrected run"
+    },
+    {
+      "beat_id": 5,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_005.png",
+      "source": "/root/.openclaw/media/tool-image-generation/finance_v5_4to6_group_002---925943dd-945d-4c99-9136-3795856326ec.png",
+      "provider": "openai",
+      "model": "gpt-image-1-mini",
+      "sha256": "65e6c8f2f6adb1428cfab4095d06347221e38a41409f8bbd08fa715af098e102",
+      "note": "openai/gpt-image-1-mini image_generate corrected run"
+    },
+    {
+      "beat_id": 6,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_006.png",
+      "source": "/root/.openclaw/media/tool-image-generation/finance_v5_4to6_group_002---619a07c2-1040-48a6-826c-ee88bbb7218e.png",
+      "provider": "openai",
+      "model": "gpt-image-1-mini",
+      "sha256": "5fef766e1ae98582e70f09fd66ef48282f74b1ca1d593af1af6c7736a4b58b42",
+      "note": "openai/gpt-image-1-mini image_generate corrected run"
+    },
+    {
+      "beat_id": 7,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_007.png",
+      "source": "/root/.openclaw/media/tool-image-generation/finance_v5_4to6_group_002---43383a2f-63c0-49a1-a98a-e4e3490bfc5a.png",
+      "provider": "openai",
+      "model": "gpt-image-1-mini",
+      "sha256": "f80e37f7bb76cbd8e98effbc4a50f5a9716b1dfb6ba5c83b34aad71034ff4484",
+      "note": "openai/gpt-image-1-mini image_generate corrected run"
+    },
+    {
+      "beat_id": 8,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_008.png",
+      "source": "/root/.openclaw/media/tool-image-generation/finance_v5_4to6_group_002---0c30cde7-5653-4b2d-b0f3-3a1f4c7881cd.png",
+      "provider": "openai",
+      "model": "gpt-image-1-mini",
+      "sha256": "1521f9f0b4d1fc838ee988344d87b21374554e635af92c459acd7c08b50899a4",
+      "note": "openai/gpt-image-1-mini image_generate corrected run"
+    },
+    {
+      "beat_id": 9,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_009.png",
+      "source": "/root/.openclaw/media/tool-image-generation/finance_v5_4to6_group_004---fd0b0eca-f7ee-4193-8fbb-50a87725a75c.png",
+      "provider": "openai",
+      "model": "gpt-image-1-mini",
+      "sha256": "07d16cb4625318e68d675e79d788e00b95585f11c2e0ed50306f04d190ae0cb0",
+      "note": "openai/gpt-image-1-mini image_generate corrected run"
+    },
+    {
+      "beat_id": 10,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_010.png",
+      "source": "/root/.openclaw/media/tool-image-generation/finance_v5_4to6_group_004---a7a8211d-e5cc-4571-812d-f24f945213bd.png",
+      "provider": "openai",
+      "model": "gpt-image-1-mini",
+      "sha256": "01b20cee22fbb871ac7853604ef66c1fc01dc68f8ab7add7ac9d3d84cc1324e2",
+      "note": "openai/gpt-image-1-mini image_generate corrected run"
+    },
+    {
+      "beat_id": 11,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_011.png",
+      "source": "/root/.openclaw/media/tool-image-generation/finance_v5_4to6_group_004---2d4b5e5c-4d66-4f32-99ae-e05ebb0dd6fb.png",
+      "provider": "openai",
+      "model": "gpt-image-1-mini",
+      "sha256": "622e6f650800bd4ff10c913a943239530ff729c4db5ae47f9d30b16cfa33118e",
+      "note": "openai/gpt-image-1-mini image_generate corrected run"
+    },
+    {
+      "beat_id": 12,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_012.png",
+      "source": "/root/.openclaw/media/tool-image-generation/finance_v5_4to6_group_004---f6421a74-1b6a-4d21-b38e-410d19a26e18.png",
+      "provider": "openai",
+      "model": "gpt-image-1-mini",
+      "sha256": "4dcf951ff08d09918df796d88bdb0b1b301a288b3af6185ac6d9ac435ade266f",
+      "note": "openai/gpt-image-1-mini image_generate corrected run"
+    },
+    {
+      "beat_id": 13,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_013.png",
+      "source": "/root/.openclaw/media/tool-image-generation/finance_v5_4to6_group_005---2d6ef399-c43a-460f-923c-68e945147503.png",
+      "provider": "openai",
+      "model": "gpt-image-1-mini",
+      "sha256": "892f5f60a452d7f382da296a3cb178d2b5dd45f707e87d70e38153288bfe591e",
+      "note": "openai/gpt-image-1-mini image_generate corrected run"
+    },
+    {
+      "beat_id": 14,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_014.png",
+      "source": "/root/.openclaw/media/tool-image-generation/finance_v5_4to6_group_005---9cd1e06e-5be2-47bb-8fda-74d93d91a6cc.png",
+      "provider": "openai",
+      "model": "gpt-image-1-mini",
+      "sha256": "51bb6ca4c1272b31192c6ae1ec2ff41caf1a80b601962e971d3133e3c3610a98",
+      "note": "openai/gpt-image-1-mini image_generate corrected run"
+    },
+    {
+      "beat_id": 15,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_015.png",
+      "source": "/root/.openclaw/media/tool-image-generation/finance_v5_4to6_group_005---93eed021-8f5a-43e8-892a-585ad04136b3.png",
+      "provider": "openai",
+      "model": "gpt-image-1-mini",
+      "sha256": "8f75259c763bce5cef080bbdb63f583dc509b7674ad33c032ac49535a244c843",
+      "note": "openai/gpt-image-1-mini image_generate corrected run"
+    },
+    {
+      "beat_id": 16,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_016.png",
+      "source": "/root/.openclaw/media/tool-image-generation/finance_v5_4to6_group_005---2f422fc3-217e-4d2e-a619-c2a6eaaa557e.png",
+      "provider": "openai",
+      "model": "gpt-image-1-mini",
+      "sha256": "c492e46ddb769feb0e8a4487ca42f83066ab3f081133b8250db7a39d3abb64f1",
+      "note": "openai/gpt-image-1-mini image_generate corrected run"
+    },
+    {
+      "beat_id": 17,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_017.png",
+      "source": "/root/.openclaw/media/tool-image-generation/finance_v5_4to6_group_006---f4791576-28e3-4a07-8622-2bcd2e5071b7.png",
+      "provider": "openai",
+      "model": "gpt-image-1-mini",
+      "sha256": "57a15d1564353bb3bc9e2105591ced00bb21f655f80a8f1989eb1d5788e365b6",
+      "note": "openai/gpt-image-1-mini image_generate corrected run"
+    },
+    {
+      "beat_id": 18,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_018.png",
+      "source": "/root/.openclaw/media/tool-image-generation/finance_v5_4to6_group_006---594bcbb0-d39a-44b1-9ae2-5990e06b60cf.png",
+      "provider": "openai",
+      "model": "gpt-image-1-mini",
+      "sha256": "c23affb1e4713d935987cc7da0f46b2894824e31e9b3b08f5360d459dc1d3d46",
+      "note": "openai/gpt-image-1-mini image_generate corrected run"
+    },
+    {
+      "beat_id": 19,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_019.png",
+      "source": "/root/.openclaw/media/tool-image-generation/finance_v5_4to6_group_006---fec581c9-4c3b-4fa4-8fd9-a6047d821b4d.png",
+      "provider": "openai",
+      "model": "gpt-image-1-mini",
+      "sha256": "ff17e88969329628d8024aabcf4a4e6d91efe7448c7a6631531fc0a95ad71b01",
+      "note": "openai/gpt-image-1-mini image_generate corrected run"
+    },
+    {
+      "beat_id": 20,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_020.png",
+      "source": "/root/.openclaw/media/tool-image-generation/finance_v5_4to6_group_006---4aaf830f-7b47-4e6e-ac97-e6a2f3311dce.png",
+      "provider": "openai",
+      "model": "gpt-image-1-mini",
+      "sha256": "8f6f737f137b438f0a1832d52eb56100afa390181b230f42208364b8146252f1",
+      "note": "openai/gpt-image-1-mini image_generate corrected run"
+    },
+    {
+      "beat_id": 21,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_021.png",
+      "source": "/root/.openclaw/media/tool-image-generation/finance_v5_4to6_group_007---d01bbac6-66e3-4586-b7d7-39ba926f4311.png",
+      "provider": "openai",
+      "model": "gpt-image-1-mini",
+      "sha256": "211d860f2e8cdfd6210b66659e808f3f87fddb8d845f3f0a9ad452f3c89e464f",
+      "note": "openai/gpt-image-1-mini image_generate corrected run"
+    },
+    {
+      "beat_id": 22,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_022.png",
+      "source": "/root/.openclaw/media/tool-image-generation/finance_v5_4to6_group_007---98370662-14a6-4fb9-9c3f-7839541e2fab.png",
+      "provider": "openai",
+      "model": "gpt-image-1-mini",
+      "sha256": "19737c62ff8c8c5a5e548144838bf9cdedd89a1236130f5b8679d64fdf71cc13",
+      "note": "openai/gpt-image-1-mini image_generate corrected run"
+    },
+    {
+      "beat_id": 23,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_023.png",
+      "source": "/root/.openclaw/media/tool-image-generation/finance_v5_4to6_group_007---3c2b510f-4509-47d7-8caa-4200265b14af.png",
+      "provider": "openai",
+      "model": "gpt-image-1-mini",
+      "sha256": "27fe24d869663604de3040416801cd8e7084e09813dcd9066b150662fe264ee9",
+      "note": "openai/gpt-image-1-mini image_generate corrected run"
+    },
+    {
+      "beat_id": 24,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_024.png",
+      "source": "/root/.openclaw/media/tool-image-generation/finance_v5_4to6_group_007---85b1ea8d-ce5e-44a6-af39-861b1118af7e.png",
+      "provider": "openai",
+      "model": "gpt-image-1-mini",
+      "sha256": "fc4cf89e1bb6457c21f05a4da77ac560f158b024bb1ec5c4c3200dc8cb2a2fca",
+      "note": "openai/gpt-image-1-mini image_generate corrected run"
+    },
+    {
+      "beat_id": 25,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_025.png",
+      "source": "/root/.openclaw/media/tool-image-generation/finance_v5_4to6_group_008---c26002ee-afd4-4172-b7f0-e648f45a57b9.png",
+      "provider": "openai",
+      "model": "gpt-image-1-mini",
+      "sha256": "97cc0fc6de2a3ddc3f0962be8178781c66ceedff2d73fc172307cfd896446d6e",
+      "note": "openai/gpt-image-1-mini image_generate corrected run"
+    },
+    {
+      "beat_id": 26,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_026.png",
+      "source": "/root/.openclaw/media/tool-image-generation/finance_v5_4to6_group_008---6193dbf0-abfb-43db-8142-df5ee88dd42c.png",
+      "provider": "openai",
+      "model": "gpt-image-1-mini",
+      "sha256": "73fe2a82abd13a7349536ffb54ac6820599aaa6a8e64d38ebf44c95db9a881c8",
+      "note": "openai/gpt-image-1-mini image_generate corrected run"
+    },
+    {
+      "beat_id": 27,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_027.png",
+      "source": "/root/.openclaw/media/tool-image-generation/finance_v5_4to6_group_008---52300944-bc64-4988-9521-476672f2708b.png",
+      "provider": "openai",
+      "model": "gpt-image-1-mini",
+      "sha256": "c4802703c3d02c5dfa62598957948adbbf869386f7e9709e42de2ec67686842b",
+      "note": "openai/gpt-image-1-mini image_generate corrected run"
+    },
+    {
+      "beat_id": 28,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_028.png",
+      "source": "/root/.openclaw/media/tool-image-generation/finance_v5_4to6_group_008---6fa738e5-89c1-43f0-bd60-0c5b1b468e6e.png",
+      "provider": "openai",
+      "model": "gpt-image-1-mini",
+      "sha256": "ab76a4103e624d3c68bc43cc461ca896b69737896353000f63290d7586966844",
+      "note": "openai/gpt-image-1-mini image_generate corrected run"
+    },
+    {
+      "beat_id": 29,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_029.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_001.png",
+      "provider": "openai",
+      "model": "ChatGPT/OpenAI",
+      "sha256": "ed59c5849b1c8d840a60013242f45a76d2821cb7ab56eacd70c81f0e2d9e9853",
+      "note": "openai/ChatGPT V5 full rejected-run source frame reused as OpenAI asset"
+    },
+    {
+      "beat_id": 30,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_030.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_002.png",
+      "provider": "openai",
+      "model": "ChatGPT/OpenAI",
+      "sha256": "6b91f1032c00adf4e7630517256b2378a853265c7c13184d101751a78025f86a",
+      "note": "openai/ChatGPT V5 full rejected-run source frame reused as OpenAI asset"
+    },
+    {
+      "beat_id": 31,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_031.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_003.png",
+      "provider": "openai",
+      "model": "ChatGPT/OpenAI",
+      "sha256": "401d2586929485bfa2f895c2c86108e1b2bb36c9e8e39ce3e9ed1c7bbd0c259b",
+      "note": "openai/ChatGPT V5 full rejected-run source frame reused as OpenAI asset"
+    },
+    {
+      "beat_id": 32,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_032.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_004.png",
+      "provider": "openai",
+      "model": "ChatGPT/OpenAI",
+      "sha256": "015605529223ea6ad28374fd6e5ffd2e1602fa29f53fcba9996200afa990513b",
+      "note": "openai/ChatGPT V5 full rejected-run source frame reused as OpenAI asset"
+    },
+    {
+      "beat_id": 33,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_033.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_005.png",
+      "provider": "openai",
+      "model": "ChatGPT/OpenAI",
+      "sha256": "0949b4ae647cf440acc2ad7b3e04cb24bd7eb56f7c6cc749f4986ca36a1bccf3",
+      "note": "openai/ChatGPT V5 full rejected-run source frame reused as OpenAI asset"
+    },
+    {
+      "beat_id": 34,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_034.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_006.png",
+      "provider": "openai",
+      "model": "ChatGPT/OpenAI",
+      "sha256": "65021ec355b8bd0a6438a30950de68f5a6c2eca2fafa644adb8a4588a7b0e916",
+      "note": "openai/ChatGPT V5 full rejected-run source frame reused as OpenAI asset"
+    },
+    {
+      "beat_id": 35,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_035.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_007.png",
+      "provider": "openai",
+      "model": "ChatGPT/OpenAI",
+      "sha256": "a54f438ab092d5c5338b2941ab1a45a1a4d1fdbdcef04e66ae0f792e1693d2e5",
+      "note": "openai/ChatGPT V5 full rejected-run source frame reused as OpenAI asset"
+    },
+    {
+      "beat_id": 36,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_036.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_008.png",
+      "provider": "openai",
+      "model": "ChatGPT/OpenAI",
+      "sha256": "17a1cf024083ce078eb25747bed200064847a5221f49bd8cfe9e8f6d6f8e339b",
+      "note": "openai/ChatGPT V5 full rejected-run source frame reused as OpenAI asset"
+    },
+    {
+      "beat_id": 37,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_037.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_009.png",
+      "provider": "openai",
+      "model": "ChatGPT/OpenAI",
+      "sha256": "53cc9d9dced59754fd1faf1881b754bbdb25c7c5bf02adf5c0e3231f4b2dc273",
+      "note": "openai/ChatGPT V5 full rejected-run source frame reused as OpenAI asset"
+    },
+    {
+      "beat_id": 38,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_038.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_010.png",
+      "provider": "openai",
+      "model": "ChatGPT/OpenAI",
+      "sha256": "bde4650acf4f8215ca3b5f714a6cfe832677e8838e45d9768ff5c254a8c6b87f",
+      "note": "openai/ChatGPT V5 full rejected-run source frame reused as OpenAI asset"
+    },
+    {
+      "beat_id": 39,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_039.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_011.png",
+      "provider": "openai",
+      "model": "ChatGPT/OpenAI",
+      "sha256": "856e80424a74bb1fc5fd7b9f41eca1d11cc496fd71f72ce68444cb7ba0cfc169",
+      "note": "openai/ChatGPT V5 full rejected-run source frame reused as OpenAI asset"
+    },
+    {
+      "beat_id": 40,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_040.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_012.png",
+      "provider": "openai",
+      "model": "ChatGPT/OpenAI",
+      "sha256": "620402ddc0e43bfe1c599b09c6adf4b70ad5e9d5abf02cc009f95692a42418e9",
+      "note": "openai/ChatGPT V5 full rejected-run source frame reused as OpenAI asset"
+    },
+    {
+      "beat_id": 41,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_041.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_013.png",
+      "provider": "openai",
+      "model": "ChatGPT/OpenAI",
+      "sha256": "7a5bda539c81243bb18ffe3c246d442a47c86ea0427d8dc69863529753b36e81",
+      "note": "openai/ChatGPT V5 full rejected-run source frame reused as OpenAI asset"
+    },
+    {
+      "beat_id": 42,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_042.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_014.png",
+      "provider": "openai",
+      "model": "ChatGPT/OpenAI",
+      "sha256": "652f7d377b56d770418eeafa2dab89e29bfda1d794e396b51b43d35a3c3ae618",
+      "note": "openai/ChatGPT V5 full rejected-run source frame reused as OpenAI asset"
+    },
+    {
+      "beat_id": 43,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_043.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_015.png",
+      "provider": "openai",
+      "model": "ChatGPT/OpenAI",
+      "sha256": "1ab33e804b7def282133b104a32b9ee08f398199dc6a96377301b1954080cbbd",
+      "note": "openai/ChatGPT V5 full rejected-run source frame reused as OpenAI asset"
+    },
+    {
+      "beat_id": 44,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_044.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_016.png",
+      "provider": "openai",
+      "model": "ChatGPT/OpenAI",
+      "sha256": "4169e2c173ebfeefb42da354d78d822ed691d7a5db0ae519b32b5489b8e43ac0",
+      "note": "openai/ChatGPT V5 full rejected-run source frame reused as OpenAI asset"
+    },
+    {
+      "beat_id": 45,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_045.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_017.png",
+      "provider": "openai",
+      "model": "ChatGPT/OpenAI",
+      "sha256": "02bf2765fff5b90b6618a1bb62424598081c9ce1e5a492cbaa895160e88b4df9",
+      "note": "openai/ChatGPT V5 full rejected-run source frame reused as OpenAI asset"
+    },
+    {
+      "beat_id": 46,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_046.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_018.png",
+      "provider": "openai",
+      "model": "ChatGPT/OpenAI",
+      "sha256": "fb393418f46db023bf8f48ee8024f55e854c4912bb021f7cf06fe8d74ef921c1",
+      "note": "openai/ChatGPT V5 full rejected-run source frame reused as OpenAI asset"
+    },
+    {
+      "beat_id": 47,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_047.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_019.png",
+      "provider": "openai",
+      "model": "ChatGPT/OpenAI",
+      "sha256": "f89b7e2fd9063885f5d1f1cf57b4a33d15ec04b7cabf6669545e3879963a9a7e",
+      "note": "openai/ChatGPT V5 full rejected-run source frame reused as OpenAI asset"
+    },
+    {
+      "beat_id": 48,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_048.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_020.png",
+      "provider": "openai",
+      "model": "ChatGPT/OpenAI",
+      "sha256": "fa8aab4a050697a7a727ac4eba319ab7bc676664b4ae9b9522d296059158a520",
+      "note": "openai/ChatGPT V5 full rejected-run source frame reused as OpenAI asset"
+    },
+    {
+      "beat_id": 49,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_049.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure/frames/frame_01_button_chain.png",
+      "provider": "openai",
+      "model": "ChatGPT/OpenAI",
+      "sha256": "ed59c5849b1c8d840a60013242f45a76d2821cb7ab56eacd70c81f0e2d9e9853",
+      "note": "openai/ChatGPT V5 one-minute approved style frame reused as OpenAI asset"
+    },
+    {
+      "beat_id": 50,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_050.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure/frames/frame_02_groceries_subscription.png",
+      "provider": "openai",
+      "model": "ChatGPT/OpenAI",
+      "sha256": "6b91f1032c00adf4e7630517256b2378a853265c7c13184d101751a78025f86a",
+      "note": "openai/ChatGPT V5 one-minute approved style frame reused as OpenAI asset"
+    },
+    {
+      "beat_id": 51,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_051.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure/frames/frame_03_laura_laptop_credit.png",
+      "provider": "openai",
+      "model": "ChatGPT/OpenAI",
+      "sha256": "401d2586929485bfa2f895c2c86108e1b2bb36c9e8e39ce3e9ed1c7bbd0c259b",
+      "note": "openai/ChatGPT V5 one-minute approved style frame reused as OpenAI asset"
+    },
+    {
+      "beat_id": 52,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_052.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure/frames/frame_04_late_vs_math.png",
+      "provider": "openai",
+      "model": "ChatGPT/OpenAI",
+      "sha256": "015605529223ea6ad28374fd6e5ffd2e1602fa29f53fcba9996200afa990513b",
+      "note": "openai/ChatGPT V5 one-minute approved style frame reused as OpenAI asset"
+    },
+    {
+      "beat_id": 53,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_053.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure/frames/frame_05_floor_not_plan.png",
+      "provider": "openai",
+      "model": "ChatGPT/OpenAI",
+      "sha256": "0949b4ae647cf440acc2ad7b3e04cb24bd7eb56f7c6cc749f4986ca36a1bccf3",
+      "note": "openai/ChatGPT V5 one-minute approved style frame reused as OpenAI asset"
+    },
+    {
+      "beat_id": 54,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_054.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure/frames/frame_06_two_futures.png",
+      "provider": "openai",
+      "model": "ChatGPT/OpenAI",
+      "sha256": "65021ec355b8bd0a6438a30950de68f5a6c2eca2fafa644adb8a4588a7b0e916",
+      "note": "openai/ChatGPT V5 one-minute approved style frame reused as OpenAI asset"
+    },
+    {
+      "beat_id": 55,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_055.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure/frames/frame_07_money_gap.png",
+      "provider": "openai",
+      "model": "ChatGPT/OpenAI",
+      "sha256": "a54f438ab092d5c5338b2941ab1a45a1a4d1fdbdcef04e66ae0f792e1693d2e5",
+      "note": "openai/ChatGPT V5 one-minute approved style frame reused as OpenAI asset"
+    },
+    {
+      "beat_id": 56,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_056.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure/frames/frame_08_apr_bank_rent.png",
+      "provider": "openai",
+      "model": "ChatGPT/OpenAI",
+      "sha256": "17a1cf024083ce078eb25747bed200064847a5221f49bd8cfe9e8f6d6f8e339b",
+      "note": "openai/ChatGPT V5 one-minute approved style frame reused as OpenAI asset"
+    },
+    {
+      "beat_id": 57,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_057.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_001.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "c83b43cdf8669a0084e83ef8763f6478655f91674a68fbbd3e521a363f7e940d",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 58,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_058.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_002.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "db32003ac5b91088a554e1f0a70bddeb131d18fa1cd6a7bb558ea1ed74541ffd",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 59,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_059.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_003.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "060d9219f31b0d67e0d7d9744b364cbb0711cc79f7af1e528c6ad60329f97c4c",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 60,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_060.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_004.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "ea0dc84290771e33e5bf88808ec7fe8159f39f083dfbc3e083c7e17574db9b83",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 61,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_061.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_005.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "bcfc9ce9f9591891199828dc13d2bf9049a8f07e9bfb4601058729af5277d5cb",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 62,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_062.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_006.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "92ca92d0f02972fc7e614c6a344566b0afa5a8a64adaf68622674546f105d994",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 63,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_063.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_007.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "ff565f4d4d97c5428e8512d6ab9d76cdd541de22749848432e4003f583748cc2",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 64,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_064.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_008.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "315fdb71ce69e481441fee476a8a255283f177d7ccac71f210ca5da6284b5be0",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 65,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_065.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_009.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "d16c4ef18280122f4ded688777556d087a414c1d77afb7729667a32b633267de",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 66,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_066.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_010.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "3bea6b87e3dcc0f050a466a47546136402c2ba51774a8e191c5842c272655fc3",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 67,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_067.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_011.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "c3bad679b667551d68c5b6ad0da60387eb624d784d35e2fe20d50b8d41f010ff",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 68,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_068.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_012.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "5a52e4a356257cffb21b804307c42f77295993645d604c9f53646c047603b450",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 69,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_069.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_013.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "0b0188f87bf9fc70e71749a258d82a120dd7d10a43e50b2436b6644bed283323",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 70,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_070.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_014.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "022ed531753036d6516453406856a6401f4e64e4bea8e6332271666fed4e29d2",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 71,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_071.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_015.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "49d4567d7e738a5f23f62c6a5f94b91a50c57bb8889dee1011d686d8ca31a286",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 72,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_072.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_016.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "953dafefa6fcd59560c317e161c516655a3bd76876d3fc16b9b8260ec77c9a7f",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 73,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_073.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_017.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "9dc58584cd51e57550853d8bd05ccb917a4cf422c37595e87ed6f48606fbf689",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 74,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_074.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_018.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "2a4516fde4a238898d29289fe342c32c5734263412d0f46323a2ef971788a0e6",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 75,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_075.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_019.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "51a259cedcb3a22780ef5a7083ed71454e5164787abb2d46e322361e81cf7e30",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 76,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_076.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_020.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "049f06c1a1b68770e4ff4b18775085764b01cbb8cdc8a07aed69dbbc9efa09f6",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 77,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_077.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_021.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "f2bd043068223e5748bac9928cc5a724b8abc5a8df73c328403de57ae237a205",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 78,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_078.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_022.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "df65085e1e314b73b1e86d6ef4e2e77faddaea6ecfc9f0346fc5cc360845ca14",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 79,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_079.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_023.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "550fee03533a6ec7be6d37d3118642942c8d2edb6c3ffae48c5da97e15837885",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 80,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_080.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_024.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "e410d99529856f6ada2a4e0f00116577ae62947eba221db8aaa296e5561f8632",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 81,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_081.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_025.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "bc70e883a3ab12baecd70c77b9df996b4e8706e58affd2bb1e65d5f8333edb5e",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 82,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_082.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_026.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "a2a8ce4ac2c8c67b2535e86a77fe5a41209fab96855652f1b62ca2e483f1fc86",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 83,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_083.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_027.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "de6233a23371d37ead3d9a926a0b32e9eb828f69878083403dd441a98a6cc3a9",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 84,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_084.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_028.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "c5949107f8e7b7a85dff5f62b1e4b42da2aae7d8bbaa43bacff63730382dcd64",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 85,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_085.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_029.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "048ac2c9e5c64da90ce21ec6f9d173ffa177e965a337b2f645c2c88529b2159e",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 86,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_086.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_030.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "ae24fc4369c111214d287fbd823659fc6d2ba5069b3d6439c0405b481bab52d1",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 87,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_087.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_031.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "a5c0629e4d91201d6ee54c36e92450e910259496ca6ed89b66660e6ed56cb22f",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 88,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_088.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_032.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "969a2725e6bd314dcfc97009edbc6d46e4af9254ed7ccad320cc9de0ef5f3d9a",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 89,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_089.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_033.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "721da5cf1016a69752b0a5ba19af5f0cfd4b5e59fce9d66b03a780dfb4470876",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 90,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_090.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_034.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "22acb51ff2c8998232b9db41048e95666155e5594bf09b20855e62bd7a85ebeb",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 91,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_091.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_035.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "d1650d730963057e8b3028ac19d6afcf1e421279e78527ba3c3ca9a077b24176",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 92,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_092.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_036.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "4f8304d6c5e886ec299960926740464d7357fe11e42fce75a98f98e8c8372f63",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 93,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_093.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_037.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "c745b549b41d1b75c06ff149c1825106544ec2d82477a23e6ab6ddf628dcd49c",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 94,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_094.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_038.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "899f4e4cb5ef404aeb8259dc562c4366599f3ee1e14ea7ffc5662d9a58e4e2ae",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 95,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_095.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_039.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "1505fae62d504c7858c5c20380c422e5d24f37c7d47d52877036e19ac9f857af",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 96,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_096.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_040.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "ea9f394866a12ff22ed6f1d4500e193bcb400b2ecc3086773e42642e20635413",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 97,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_097.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_041.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "4f4561ab3aa9549fec07c31a9b66b860a288b37d021ba2f3107c95d5b7ef32a3",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 98,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_098.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_042.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "6ca5481d246d2420d8a146ab883f3071785b4bfa725203268b28260f21de90c2",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 99,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_099.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_043.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "047e2d90e4ce234d4108bbbcf721b7666f2aaafe05328ff63f06478c8056f383",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 100,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_100.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_044.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "4803cda6cecf36f0595e4ecb60ae52d4592b473721afd3232278c9529df7a082",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 101,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_101.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_045.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "261773bdd2c01ca8156dae2333516cae1b0e9d39c88e6d5f3dbb7c40523f71d8",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 102,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_102.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_046.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "4f209d31bd7e84f6c4ac00497fed733ec2035a3b40b77026893a1315fc076a2a",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 103,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_103.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_047.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "0e4010b6b643835dbce0af27491ebb7b354c31989665c30666327a7c8302f45b",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 104,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_104.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_048.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "ab7e1a053fec1d2e3eb6e9a2effd8d1876ebc7ce41209628bc634a21c3b7663e",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 105,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_105.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_049.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "1672dc62c76a27c1fb40948d1532c7e83c8559b040a2e9e7cd6f09adda9f1b9c",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 106,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_106.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_050.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "f04ba1f73ce3c48496195d3f007a87cb2b7b82c58e6cc8ef06b44e1a76adcbf1",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 107,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_107.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_051.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "7e7da55da8cee56c386e4f2d14d9c22a722eb587a31d1937f188da0f18457aff",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 108,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_108.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_052.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "17bdab30d6f8de1c6a23b56ef8646b769e0849ad3bd9f8b7371fc19a833d1d4e",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 109,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_109.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_053.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "0f832856eb82cc3b47b3ddff83ffeda04e09767ae4c3b7d7f0ba68c47a970cf6",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 110,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_110.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_054.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "1402a7f00889a28ada82a03c9d5549e9271f67acdb638ee00e456f4b35d59d1e",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 111,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_111.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_055.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "735acac9d56450d41fbcf2586aa9c86b1f8f919c0ebff29894b125ad27fc2e1e",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 112,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_112.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_056.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "557c55c0cc861561a939e2f6fef72967204db59caf86632b2d25ad50b158432a",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 113,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_113.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_057.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "65dfaf0bc4e2f014717e72b77a408ce7dca9344aa8874334b1c7bdd059b743f6",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 114,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_114.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_058.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "6316e0215dc9ccfcc2f53124baae0cbbacbff1c7afd6af179c16d73b04034861",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 115,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_115.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_059.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "f737d1b651ccb5ef95e114e33401fc8af4dc36cddc752897537e69a57e3915e6",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 116,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_116.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_060.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "1c0ce72e0a61f59e4df436424b9f54da2f8aab2f7c41bd6ec26c2b29538ba066",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 117,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_117.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_061.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "031a123a1b1dda5c3aa1a01dec05b4f470ac2aed6027776311aba3fb80a1cec5",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 118,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_118.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_062.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "7ff330e786005390bfe541a38ca0281f110b6cbb3cfba18ec40a642d7068a060",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 119,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_119.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_063.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "e003104410792523e067328fff8fe35faa8fa41b0be32657aad1e906a4474602",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 120,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_120.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_064.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "9514d020cdc430ed9fd96228bd24a347e93d9dc4e2dfcb7ebafd97fd441ac6a7",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 121,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_121.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_065.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "ac3a147198891b0c312f6edc82fb2ba860fc606702d0ccd8b0539a181ebdab4e",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 122,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_122.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_066.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "a10413de15bde9946ae02435242b4b9e6f9a25c006f1a5f7a3ce5295c187558f",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 123,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_123.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_067.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "d7280252686b7500fe630d7feb36ab6c426025e87aa2591311db25ed325f3d92",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 124,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_124.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_068.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "766695af480b0924fc128dd6ac5433decda21f10a43b862245d782f809df8036",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 125,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_125.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_069.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "0ae27e38560c351c6e803e0cbbd644458e067c857fcb2419866409364039c076",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 126,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_126.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_070.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "6d81881a470bce7893b970878dfc1d8af396c2d81cf91766a4abbef32f68008a",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 127,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_127.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_071.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "ffdbf8f7939c26f920d9c32727a5cb896f43dc989173c505950568f0d3062f27",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 128,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_128.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_072.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "536610caa6d042f6d0abfbad76a1aacdfc714ea02e44b3dbed6086fb62d30938",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 129,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_129.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_073.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "82592dda554791bcba8bdcea1b75603d33dc3856f954d8d7330553cf2430f4c2",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 130,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_130.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_074.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "3ceed39071f975ca3627f207e4c65e3844c873e80d41a15d8495ee123bf9ff64",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 131,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_131.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_075.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "e7d5d0fb4267008a9f3dbe3b18df8feea3319a0b537133179b563b476fabc0be",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 132,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_132.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_076.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "742e9f921379c7170cc45232b5cee4f8271a0c1a8d4df40bf7c3db33670a96fa",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 133,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_133.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_077.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "174f80d5a361a97866b00ea66257e1b62e3f7f688a876274fa0c78514a30fad8",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 134,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_134.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_078.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "d5c29f70fe6a52cbaaa172e153a0c270cdf9ef9e3119737883b3db1970ff63d7",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    },
+    {
+      "beat_id": 135,
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full_4to6s/frames/frame_135.png",
+      "source": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/scenes/scene_079.png",
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "sha256": "c8a833c2e3a4ff799f9040706d568cb002322b9feac1bb49b6b4c300b4ead87e",
+      "note": "openai/gpt-image-2 original 80-beat scene asset reused as OpenAI asset"
+    }
+  ]
+}

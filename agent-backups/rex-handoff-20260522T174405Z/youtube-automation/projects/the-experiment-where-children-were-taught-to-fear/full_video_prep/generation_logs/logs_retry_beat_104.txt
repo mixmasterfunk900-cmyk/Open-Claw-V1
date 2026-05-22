@@ -1,0 +1,23 @@
+GENERATE beat_104 attempt 1
+ai-codex mode=oauth transport=codex-responses requestedModel=gpt-image-2 responsesModel=gpt-5.5 timeoutMs=240000
+{
+  "ok": true,
+  "capability": "image.generate",
+  "transport": "local",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "attempts": [],
+  "outputs": [
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-children-were-taught-to-fear/full_video_prep/approved_frames_draft/beat_104.png",
+      "mimeType": "image/png",
+      "size": 4681013,
+      "width": 2048,
+      "height": 1152,
+      "revisedPrompt": "Sparse melancholic 2D hand-drawn doodle illustration in The Experiment Channel style. Rough pencil line art with near-black lines, muted pale tan, warm grey, and faded blue-grey palette, flat lighting, wide negative space, minimal environment, no bright or saturated colours, no logos, no watermarks, no readable text. Handmade sketchbook aesthetic, not photo, not 3D, not anime.\n\nBeat 104: Mary Cover Jones counterconditioning scene with child Peter. Calm sparse room, historically suggestive and emotionally restrained. Side profile power-imbalance composition: two adult researchers are drawn large in the foreground/side, quiet and watchful, one suggesting Mary Cover Jones through simple period clothing and severe sketch lines; the child Peter is small, stylized, fully clothed, seated apart with oversized hollow dark-circled eyes and plain pale clothing. A small harmless-looking white rabbit sits at a safe distance from Peter, placed near a quiet symbol of safety such as a simple small table with a plain bowl or cup, but no text. The feared object is beside safety, not shock. Adults loom large by scale and framing, child remains small in wide negative space. Calm sparse room with only a faint floor line and minimal chair shapes. Every visible character has hollow dark-circled eyes. Same line weight and palette across the whole image. Non-graphic, restrained, melancholic."
+    }
+  ],
+  "ignoredOverrides": []
+}
+
+OK beat_104 4681013

@@ -1,0 +1,11 @@
+{
+  "REGRESSION_QA_PASS": true,
+  "failures": [],
+  "warnings": [],
+  "passes": [
+    "Tracker ownership/status regression checks passed",
+    "Image uniqueness/provenance/full-frame regression checks executed",
+    "Proof package presence checks executed",
+    "Render regression checks executed where files exist"
+  ]
+}

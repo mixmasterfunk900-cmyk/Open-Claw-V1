@@ -1,0 +1,20 @@
+{
+  "styleContract": "dog-psychology-v1",
+  "auditedAt": "2026-05-19",
+  "status": "fail",
+  "singleSceneFrames": true,
+  "styleMatchesBible": false,
+  "characterContinuity": false,
+  "scriptMatchedProgression": false,
+  "noForbiddenGraphics": true,
+  "findings": [
+    "Already held as visual QA failure: polished frames but dog continuity breaks and overall look drifts cinematic/storybook instead of locked charcoal educational explainer.",
+    "29 approved frames are not 16:9 (1536x1024), so they violate the YouTube 16:9 frame SOP.",
+    "Manifest lacks dog-psychology-v1 style contract and per-beat provenance."
+  ],
+  "requiredFix": [
+    "Regenerate off-style/non-16:9 beats as single 16:9 hand-drawn warm-paper frames.",
+    "Create per-beat manifest with styleContract dog-psychology-v1.",
+    "Run contact-sheet visual QA before render."
+  ]
+}

@@ -1,0 +1,13 @@
+GENERATE beat_120 attempt 1
+ects/the-experiment-where-children-were-taught-to-fear/full_video_prep/approved_frames_draft/beat_120.png",
+      "mimeType": "image/png",
+      "size": 3403541,
+      "width": 2048,
+      "height": 1152,
+      "revisedPrompt": "Sparse melancholic 2D hand-drawn doodle illustration in The Experiment Channel style. Rough pencil line art, near-black uneven sketch lines, muted pale tan, warm grey, faded blue-grey palette only; flat lighting; wide negative space; minimal environment; handmade sketchbook aesthetic, not photo, not 3D, not anime. No logos, no watermarks, no readable text.\n\nBeat 120 symbolic still life: an emotionally cold, quiet minimal desk-paper-mattress arrangement suggesting learned fear, association, memory, and a childhood nervous system using the past to predict the next second. Composition: mostly empty pale tan room/page. At lower left, a thin institutional mattress in faded blue-grey, simplified and unoccupied, with a small soft crease. Center-right, a bare desk surface or small table drawn as simple planes in warm grey. On the desk, a few blank papers slightly overlapping, one faint outline of a bell-like shape and one faint outline of a small harmless white rat as memory impressions, not readable text. A thin looping pencil line travels from the paper toward the mattress like a nervous-system pathway or remembered association, ending in a tiny shadowed knot. Optional tiny metronome-like tick mark or second-hand shape, abstract and silent, no numbers. No characters present, or only implied traces; if any child is suggested, use only an empty small pale chair far away in wide negative space, no figure. Hollow-eye motif may appear only as two tiny dark circles lightly sketched on a blank paper, symbolic, not a face. Sparse, melancholic, non-graphic, historically suggestive, emotionally restrained. Make visually distinct from nearby frames through desk-paper-mattress still life and cold quiet negative space."
+    }
+  ],
+  "ignoredOverrides": []
+}
+
+OK beat_120 3403541

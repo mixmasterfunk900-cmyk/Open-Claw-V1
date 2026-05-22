@@ -1,0 +1,13 @@
+GENERATE beat_024 attempt 1
+taught-to-fear/full_video_prep/approved_frames_draft/beat_024.png",
+      "mimeType": "image/png",
+      "size": 4100679,
+      "width": 2048,
+      "height": 1152,
+      "revisedPrompt": "Sparse melancholic 2D hand-drawn doodle illustration in The Experiment Channel style. Rough pencil line art, near-black lines, flat lighting, muted pale tan, warm grey, faded blue-grey palette only; no bright or saturated colors. Handmade sketchbook aesthetic, not photo, not 3D, not anime. Wide negative space, minimal environment, non-graphic, historically suggestive, emotionally restrained. Beat 024: symbolic sparse scene about learned fear, association, memory, and childhood nervous system; narration context: “Thoughts were not enough. Feelings were not enough.” No readable text.\n\nComposition: side profile power-imbalance arrangement. On the left foreground, Watson, a tall severe male researcher, looms large in side profile, drawn with hollow dark-circled eyes, long dark coat shape, rigid posture, his silhouette taking up much of the vertical space. Slightly behind him stands Rayner, a quiet adult researcher, also large compared to the child, subdued posture, hollow dark-circled eyes, simple muted clothing. On the right lower side, infant Albert is very small and vulnerable, seated or crouched in simple one-piece pale clothing, oversized hollow eyes looking toward the adults; body small and tense but restrained. Near Albert, a small harmless-looking white rat sits still, tiny and pale, not threatening.\n\nSymbolic visual motif: faint loose pencil arcs or ghostly thread-like lines connecting the rat, the child’s head/heart area, and a few abstract faded blue-grey memory shapes in the empty background, suggesting association and nervous-system imprinting without literal labels. Adults should feel large and distant, child small in open space. Same line weight and palette across characters. No logos, no watermarks, no readable text, no date."
+    }
+  ],
+  "ignoredOverrides": []
+}
+
+OK beat_024 4100679

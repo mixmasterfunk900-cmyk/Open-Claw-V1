@@ -1,0 +1,742 @@
+{
+  "project": "the-experiment-where-ordinary-people-obeyed-a-stranger",
+  "range": "beat_044-beat_086",
+  "output_dir": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen",
+  "total": 43,
+  "passed": 43,
+  "failed": 0,
+  "beats": [
+    {
+      "beat": "beat_044",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_044.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_044_raw---3646a5e4-241a-4747-a19c-512bccb543ba.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "In Milgram's own account, obedience grew from what he later called an agentic state.",
+      "source_visual_description": "symbolic ordinary hand separated from a shadowed command above it, responsibility drawn as a thin broken thread",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_045",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_045.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_045_raw---f311771f-a449-4fb1-a1cf-6fed24e8f24f.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "A person stops experiencing himself as the author of an action and begins experiencing himself as the instrument of someone else's purpose.",
+      "source_visual_description": "ordinary person in sparse laboratory moral conflict, seated at simple desk, lab-coated authority nearby, learner unseen beyond wall",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_046",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_046.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_046_raw---1d9d1d74-b023-4b80-a57e-4ca15dd9d2e6.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "The hand is still his. The command is not. The shock is delivered through that gap.",
+      "source_visual_description": "ordinary person in sparse laboratory moral conflict, seated at simple desk, lab-coated authority nearby, learner unseen beyond wall",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_047",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_047.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_047_raw---eef86543-1ba4-439c-b08c-7fa095c5806a.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "But the clean textbook version is too simple. Later researchers and writers returned to the archives and found a messier machine.",
+      "source_visual_description": "quiet archive table with tape reels and folders, one small researcher figure with hollow eyes, lots of blank space",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_048",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_048.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_048_raw---65b6e981-dd50-4979-bc99-0583fcfdf7cb.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "Gina Perry, in her 2013 book *Behind the Shock Machine*, argued that some participants doubted the setup,",
+      "source_visual_description": "quiet archive table with tape reels and folders, one small researcher figure with hollow eyes, lots of blank space",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_049",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_049.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_049_raw---fa7e83d8-6819-420c-8a4d-1abb93d71165.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "some sessions strayed from the official script, and the comforting story of careful debriefing was less secure than Milgram suggested.",
+      "source_visual_description": "ordinary person in sparse laboratory moral conflict, seated at simple desk, lab-coated authority nearby, learner unseen beyond wall",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_050",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_050.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_050_raw_retry---aff4d553-892c-4487-bbf1-0b8d15676336.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "That matters. If a participant did not believe the shocks were real, his obedience means something different.",
+      "source_visual_description": "ordinary person in sparse laboratory moral conflict, seated at simple desk, lab-coated authority nearby, learner unseen beyond wall",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "readable clock numerals in first QA"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_051",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_051.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_051_raw---1ae147c5-2a49-4ae0-bb43-364b886f6a70.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "If an experimenter improvised pressure beyond the scripted prods,",
+      "source_visual_description": "ordinary person in sparse laboratory moral conflict, seated at simple desk, lab-coated authority nearby, learner unseen beyond wall",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_052",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_052.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_052_raw---0e3d1f1d-b75c-45e4-a539-2cfe85ca34aa.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "the study becomes less a pure test of obedience and more a record of persuasion, uncertainty, and institutional bullying.",
+      "source_visual_description": "modern abstract office desk with blank monitor, ordinary figure processing a file, distant unseen harmed person reduced to a small mark",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_053",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_053.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_053_raw---55676146-44bd-4677-a281-f3692f01ea6d.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "So the honest version is not the myth. The honest version is worse in a quieter way.",
+      "source_visual_description": "ordinary person in sparse laboratory moral conflict, seated at simple desk, lab-coated authority nearby, learner unseen beyond wall",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_054",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_054.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_054_raw---7e98ed56-6449-412e-b60c-c37328edf343.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "The experiment does not show that every person becomes a monster when told to.",
+      "source_visual_description": "ordinary person in sparse laboratory moral conflict, seated at simple desk, lab-coated authority nearby, learner unseen beyond wall",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_055",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_055.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_055_raw---5610d57d-c1b6-43b8-ae8b-40e3df8331f2.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "It shows how many small conditions must be arranged before a decent person can keep doing harm while wishing the harm would stop.",
+      "source_visual_description": "ordinary person in sparse laboratory moral conflict, seated at simple desk, lab-coated authority nearby, learner unseen beyond wall",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_056",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_056.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_056_raw---6e1a8a85-b62e-4e19-b49a-c9e9f1baf0dc.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "The victim must be in another room. The authority must appear legitimate. The task must begin gently.",
+      "source_visual_description": "ordinary person in sparse laboratory moral conflict, seated at simple desk, lab-coated authority nearby, learner unseen beyond wall",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_057",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_057.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_057_raw---a5ad808a-3e72-4af3-89d6-6de18154e3e0.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "The voltage must rise one step at a time. The action must be framed as useful.",
+      "source_visual_description": "ordinary person in sparse laboratory moral conflict, seated at simple desk, lab-coated authority nearby, learner unseen beyond wall",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_058",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_058.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_058_raw---2613b399-c6d0-4e5c-a30e-fcf50c4c534b.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "The next switch must feel like a continuation of the last one.",
+      "source_visual_description": "close view of simple hand-drawn shock generator with one ordinary hand hovering above switches, authority shadow behind, learner absent beyond wall",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_059",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_059.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_059_raw---4e2f1de9-3c03-4350-a19e-f58d464197fb.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "No single moment has to feel like a decision to become cruel. That is the trap. In 2009, Jerry M.",
+      "source_visual_description": "modern ethical replication room, sparse table and stopped switch at 150 volts, clinical but handmade and empty",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_060",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_060.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_060_raw---76f8fac2-166d-4907-bc7d-06b1e93d267c.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "Burger at Santa Clara University built a partial replication designed to survive modern ethics review.",
+      "source_visual_description": "modern ethical replication room, sparse table and stopped switch at 150 volts, clinical but handmade and empty",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_061",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_061.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_061_raw---fb95d7ab-dd70-4852-8fcf-2bf37474638b.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "He did not let participants continue to 450 volts.",
+      "source_visual_description": "close view of simple hand-drawn shock generator with one ordinary hand hovering above switches, authority shadow behind, learner absent beyond wall",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_062",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_062.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_062_raw_retry---285dca4d-a539-4796-9dc2-494e8e602baa.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "He stopped the procedure at 150 volts, the point where Milgram's learner first made a clear demand to be released.",
+      "source_visual_description": "close view of simple hand-drawn shock generator with one ordinary hand hovering above switches, authority shadow behind, learner absent beyond wall",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "awkward headless/cropped background observer in first QA"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_063",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_063.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_063_raw---72c71dfe-caa1-4223-9cfe-8e56914dadfc.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "Burger called it the 150-volt solution. The logic was grim.",
+      "source_visual_description": "modern ethical replication room, sparse table and stopped switch at 150 volts, clinical but handmade and empty",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_064",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_064.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_064_raw_retry---382c1ab1-a24b-4f89-9d80-b25ab53434f7.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "In Milgram's original studies, most people who passed 150 volts kept going much farther.",
+      "source_visual_description": "close view of simple hand-drawn shock generator with one ordinary hand hovering above switches, authority shadow behind, learner absent beyond wall",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "headless/cropped torso in first QA"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_065",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_065.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_065_raw---3862bee4-3f34-4787-9ef9-6c9b0c871b85.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "So Burger treated that point as the edge of the cliff.",
+      "source_visual_description": "modern ethical replication room, sparse table and stopped switch at 150 volts, clinical but handmade and empty",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_066",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_066.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_066_raw---5b3a75ce-4c14-41b1-ae86-a45e06a04823.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "He screened participants more carefully. He reminded them they could withdraw.",
+      "source_visual_description": "ordinary person in sparse laboratory moral conflict, seated at simple desk, lab-coated authority nearby, learner unseen beyond wall",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_067",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_067.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_067_raw---f30401ff-266f-4dee-a879-683c3529fe79.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "He debriefed them quickly. He reduced the sample shock. Even then, many continued past the learner's protest.",
+      "source_visual_description": "empty divided room, learner represented as small hollow-eyed figure behind a thin wall, teacher alone at desk in foreground",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_068",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_068.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_068_raw---5e911e53-4266-401b-816f-6d702765c0be.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "The point is not that 2009 recreated 1961. It did not. The point is that the door was still there.",
+      "source_visual_description": "modern ethical replication room, sparse table and stopped switch at 150 volts, clinical but handmade and empty",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_069",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_069.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_069_raw---9821c781-d0e6-43c9-a153-0892b173eecc.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "Even with guardrails, even after decades of ethical debate, even in a culture that already knew the name Milgram,",
+      "source_visual_description": "ordinary person in sparse laboratory moral conflict, seated at simple desk, lab-coated authority nearby, learner unseen beyond wall",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_070",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_070.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_070_raw---3a07611d-2881-45e1-b721-c3f0b2070337.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "a stranger with institutional authority could still make ordinary people step toward the same darkness.",
+      "source_visual_description": "modern abstract office desk with blank monitor, ordinary figure processing a file, distant unseen harmed person reduced to a small mark",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_071",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_071.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_071_raw---f7fa7eb9-f586-4bd1-9ccb-be024b2fd91f.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "The second modern parallel came from a different direction. In 2012, S.",
+      "source_visual_description": "ordinary person in sparse laboratory moral conflict, seated at simple desk, lab-coated authority nearby, learner unseen beyond wall",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_072",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_072.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_072_raw---a13602ca-75c6-4a9a-af17-724d01a711d0.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "Alexander Haslam at the University of Queensland and Stephen Reicher at the University of St Andrews challenged the phrase blind obedience.",
+      "source_visual_description": "small ordinary figures facing a tall abstract institution shape, all hollow-eyed, muted blue-grey background",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_073",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_073.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_073_raw---8d7190cb-1f69-45b7-ace1-eb9fd5344ceb.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "In *PLOS Biology*, they argued that people do not simply follow authority like empty machines.",
+      "source_visual_description": "ordinary person in sparse laboratory moral conflict, seated at simple desk, lab-coated authority nearby, learner unseen beyond wall",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_074",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_074.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_074_raw---e84b9695-d073-48cf-a39c-d2935779e7fc.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "They often follow when they identify with the authority's project and believe the project is right. They called this engaged followership.",
+      "source_visual_description": "small ordinary figures facing a tall abstract institution shape, all hollow-eyed, muted blue-grey background",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_075",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_075.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_075_raw---a5ea7325-c15f-4f7a-9a67-6f6c88d3eaf9.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "That phrase changes the shape of the horror. The participant is not only obeying a man. He is helping science.",
+      "source_visual_description": "ordinary person in sparse laboratory moral conflict, seated at simple desk, lab-coated authority nearby, learner unseen beyond wall",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_076",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_076.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_076_raw---bed6c283-8580-43c4-a074-4d4e49dcb46f.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "He is contributing to knowledge. He is doing something unpleasant for a higher purpose.",
+      "source_visual_description": "ordinary person in sparse laboratory moral conflict, seated at simple desk, lab-coated authority nearby, learner unseen beyond wall",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_077",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_077.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_077_raw---fdcdce03-f6d2-46b4-9d5b-e0c8b72ab9e3.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "This helps explain why one of Milgram's prods carried so much force.",
+      "source_visual_description": "ordinary person in sparse laboratory moral conflict, seated at simple desk, lab-coated authority nearby, learner unseen beyond wall",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_078",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_078.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_078_raw_retry---58013b59-5e4d-48fb-9a0f-5801da72c256.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "Not \u201cI will punish you.\u201d Not \u201cI am stronger than you.\u201d The sentence was colder than that.",
+      "source_visual_description": "ordinary person in sparse laboratory moral conflict, seated at simple desk, lab-coated authority nearby, learner unseen beyond wall",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "readable clock numbers in first QA"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_079",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_079.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_079_raw_retry---de3e6543-72c7-49ed-8b23-793fdd62b0b6.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "The experiment requires that you continue. The command hid inside the mission. And missions can make harm feel clean.",
+      "source_visual_description": "featureless lab-coated authority figure looming over small seated ordinary person, no speech bubbles, pressure shown by scale and posture",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "faceless/unnatural figure in first QA"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_080",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_080.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_080_raw---5015ba22-c1b1-4516-b639-6a248a1864e8.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "This is where the experiment reaches beyond the laboratory.",
+      "source_visual_description": "ordinary person in sparse laboratory moral conflict, seated at simple desk, lab-coated authority nearby, learner unseen beyond wall",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_081",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_081.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_081_raw_retry2---4c53c692-fddf-4e0d-86a5-4aaae12ce34a.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "Modern institutions rarely ask ordinary people to flip a switch labeled 450 volts.",
+      "source_visual_description": "close view of simple hand-drawn shock generator with one ordinary hand hovering above switches, authority shadow behind, learner absent beyond wall",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "readable key labels then cropped hand; second retry used no people"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_082",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_082.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_082_raw_retry---f3875c08-b573-4d73-a1ed-0eb2ce15f495.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "They ask them to process the file. Apply the policy. Follow the escalation path. Deny the claim. Remove the person.",
+      "source_visual_description": "modern abstract office desk with blank monitor, ordinary figure processing a file, distant unseen harmed person reduced to a small mark",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "visible monitor logo in first QA"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_083",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_083.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_083_raw---ecaa394a-4eed-4c29-b926-bb3f10460235.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "Move the number. Trust the system. The language changes. The distance remains. A screen replaces the wall between rooms.",
+      "source_visual_description": "modern abstract office desk with blank monitor, ordinary figure processing a file, distant unseen harmed person reduced to a small mark",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_084",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_084.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_084_raw---44a1b634-4b0d-4b04-87fa-817c9daa60b4.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "A metric replaces the scream. A supervisor replaces the man in the lab coat.",
+      "source_visual_description": "ordinary person in sparse laboratory moral conflict, seated at simple desk, lab-coated authority nearby, learner unseen beyond wall",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_085",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_085.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_085_raw---7b716172-270c-4c87-b3f4-99e2d3f307ba.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "The learner is no longer heard through a speaker.",
+      "source_visual_description": "empty divided room, learner represented as small hollow-eyed figure behind a thin wall, teacher alone at desk in foreground",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    },
+    {
+      "beat": "beat_086",
+      "output_path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-ordinary-people-obeyed-a-stranger/full_video_prep/approved_frames_clean_regen/beat_086.png",
+      "raw_generation_path": "/root/.openclaw/media/tool-image-generation/beat_086_raw---abd4fccb-5611-47e8-9a6a-fbb1709b115a.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "source_narration": "He is reduced to a case, a ticket, a risk score, a target, an exception. The mechanism is moral displacement.",
+      "source_visual_description": "symbolic ordinary hand separated from a shadowed command above it, responsibility drawn as a thin broken thread",
+      "qa": {
+        "status": "PASS",
+        "method": "image model content QA + PNG dimension check",
+        "notes": "Accepted on first QA pass"
+      },
+      "normalization": "ffmpeg scale contain + pad to 2048x1152; no cropping"
+    }
+  ],
+  "issues": []
+}

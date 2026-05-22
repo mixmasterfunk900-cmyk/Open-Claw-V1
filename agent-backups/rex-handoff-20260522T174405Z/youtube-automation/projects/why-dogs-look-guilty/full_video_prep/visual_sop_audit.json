@@ -1,0 +1,21 @@
+{
+  "styleContract": "dog-psychology-v1",
+  "auditedAt": "2026-05-19",
+  "status": "fail",
+  "singleSceneFrames": false,
+  "styleMatchesBible": false,
+  "characterContinuity": false,
+  "scriptMatchedProgression": "partial",
+  "noForbiddenGraphics": false,
+  "findings": [
+    "Closer than Zoomies in theme, but still failed: 46 likely contact-sheet/multi-panel frames detected.",
+    "Manifest source files are named like multi-beat batch generations; 72 batch-pattern source files found.",
+    "Dog/owner identity and props/settings drift across the video.",
+    "Thumbnail options are photoreal/tabloid/contact-sheet style, not the agreed hand-drawn thumbnail style."
+  ],
+  "requiredFix": [
+    "Regenerate contact-sheet frames as single 16:9 story frames.",
+    "Rebuild thumbnails as single branded hand-drawn thumbnails.",
+    "Require passing visual and thumbnail audits before render/copy."
+  ]
+}

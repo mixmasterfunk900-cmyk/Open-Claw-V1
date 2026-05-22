@@ -1,0 +1,692 @@
+{
+  "provider_required": "OpenClaw frontier GPT image generation",
+  "model_required": "frontier/GPT image model",
+  "one_scene_per_prompt": true,
+  "prompts": [
+    {
+      "beat_id": 1,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 1: John in dealership finance desk, showing monthly-payment framing. Emotion: cautious documentary clarity. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_001.png"
+    },
+    {
+      "beat_id": 2,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 2: John in apartment kitchen with laptop and transit keys, showing paycheck pressure. Emotion: stressed but thoughtful. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_002.png"
+    },
+    {
+      "beat_id": 3,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 3: John in split-screen explainer space, showing generational money gap. Emotion: honest tension. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_003.png"
+    },
+    {
+      "beat_id": 4,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 4: John and Laura in symbolic car loan paperwork and calendar pages, showing long loan chain. Emotion: warning. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_004.png"
+    },
+    {
+      "beat_id": 5,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 5: Laura in parking lot beside modest used car, showing real total car cost. Emotion: concerned. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_005.png"
+    },
+    {
+      "beat_id": 6,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 6: John and Laura in kitchen table finance lesson, showing negative equity and debt container. Emotion: grounded. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_006.png"
+    },
+    {
+      "beat_id": 7,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 7: John in abstract budget map with car costs orbiting paycheck, showing insurance repairs fuel and risk. Emotion: analytical. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_007.png"
+    },
+    {
+      "beat_id": 8,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 8: John in warm studio conversation backdrop, showing practical checklist and walk-away number. Emotion: calm plan. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_008.png"
+    },
+    {
+      "beat_id": 9,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 9: John in dealership finance desk, showing monthly-payment framing. Emotion: cautious documentary clarity. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_009.png"
+    },
+    {
+      "beat_id": 10,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 10: John in apartment kitchen with laptop and transit keys, showing paycheck pressure. Emotion: stressed but thoughtful. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_010.png"
+    },
+    {
+      "beat_id": 11,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 11: John in split-screen explainer space, showing generational money gap. Emotion: honest tension. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_011.png"
+    },
+    {
+      "beat_id": 12,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 12: John in symbolic car loan paperwork and calendar pages, showing long loan chain. Emotion: warning. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_012.png"
+    },
+    {
+      "beat_id": 13,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 13: John in parking lot beside modest used car, showing real total car cost. Emotion: concerned. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_013.png"
+    },
+    {
+      "beat_id": 14,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 14: John and Laura in kitchen table finance lesson, showing negative equity and debt container. Emotion: grounded. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_014.png"
+    },
+    {
+      "beat_id": 15,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 15: Laura in abstract budget map with car costs orbiting paycheck, showing insurance repairs fuel and risk. Emotion: analytical. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_015.png"
+    },
+    {
+      "beat_id": 16,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 16: John and Laura in warm studio conversation backdrop, showing practical checklist and walk-away number. Emotion: calm plan. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_016.png"
+    },
+    {
+      "beat_id": 17,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 17: John in dealership finance desk, showing monthly-payment framing. Emotion: cautious documentary clarity. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_017.png"
+    },
+    {
+      "beat_id": 18,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 18: John in apartment kitchen with laptop and transit keys, showing paycheck pressure. Emotion: stressed but thoughtful. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_018.png"
+    },
+    {
+      "beat_id": 19,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 19: John in split-screen explainer space, showing generational money gap. Emotion: honest tension. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_019.png"
+    },
+    {
+      "beat_id": 20,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 20: John in symbolic car loan paperwork and calendar pages, showing long loan chain. Emotion: warning. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_020.png"
+    },
+    {
+      "beat_id": 21,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 21: John in parking lot beside modest used car, showing real total car cost. Emotion: concerned. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_021.png"
+    },
+    {
+      "beat_id": 22,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 22: John in kitchen table finance lesson, showing negative equity and debt container. Emotion: grounded. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_022.png"
+    },
+    {
+      "beat_id": 23,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 23: John in abstract budget map with car costs orbiting paycheck, showing insurance repairs fuel and risk. Emotion: analytical. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_023.png"
+    },
+    {
+      "beat_id": 24,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 24: John in warm studio conversation backdrop, showing practical checklist and walk-away number. Emotion: calm plan. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_024.png"
+    },
+    {
+      "beat_id": 25,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 25: John in dealership finance desk, showing monthly-payment framing. Emotion: cautious documentary clarity. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_025.png"
+    },
+    {
+      "beat_id": 26,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 26: John in apartment kitchen with laptop and transit keys, showing paycheck pressure. Emotion: stressed but thoughtful. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_026.png"
+    },
+    {
+      "beat_id": 27,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 27: John in split-screen explainer space, showing generational money gap. Emotion: honest tension. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_027.png"
+    },
+    {
+      "beat_id": 28,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 28: John in symbolic car loan paperwork and calendar pages, showing long loan chain. Emotion: warning. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_028.png"
+    },
+    {
+      "beat_id": 29,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 29: John and Laura in parking lot beside modest used car, showing real total car cost. Emotion: concerned. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_029.png"
+    },
+    {
+      "beat_id": 30,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 30: Laura in kitchen table finance lesson, showing negative equity and debt container. Emotion: grounded. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_030.png"
+    },
+    {
+      "beat_id": 31,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 31: John and Laura in abstract budget map with car costs orbiting paycheck, showing insurance repairs fuel and risk. Emotion: analytical. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_031.png"
+    },
+    {
+      "beat_id": 32,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 32: John in warm studio conversation backdrop, showing practical checklist and walk-away number. Emotion: calm plan. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_032.png"
+    },
+    {
+      "beat_id": 33,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 33: John in dealership finance desk, showing monthly-payment framing. Emotion: cautious documentary clarity. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_033.png"
+    },
+    {
+      "beat_id": 34,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 34: John in apartment kitchen with laptop and transit keys, showing paycheck pressure. Emotion: stressed but thoughtful. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_034.png"
+    },
+    {
+      "beat_id": 35,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 35: John and Laura in split-screen explainer space, showing generational money gap. Emotion: honest tension. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_035.png"
+    },
+    {
+      "beat_id": 36,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 36: Laura in symbolic car loan paperwork and calendar pages, showing long loan chain. Emotion: warning. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_036.png"
+    },
+    {
+      "beat_id": 37,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 37: John in parking lot beside modest used car, showing real total car cost. Emotion: concerned. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_037.png"
+    },
+    {
+      "beat_id": 38,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 38: John in kitchen table finance lesson, showing negative equity and debt container. Emotion: grounded. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_038.png"
+    },
+    {
+      "beat_id": 39,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 39: John in abstract budget map with car costs orbiting paycheck, showing insurance repairs fuel and risk. Emotion: analytical. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_039.png"
+    },
+    {
+      "beat_id": 40,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 40: John in warm studio conversation backdrop, showing practical checklist and walk-away number. Emotion: calm plan. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_040.png"
+    },
+    {
+      "beat_id": 41,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 41: John in dealership finance desk, showing monthly-payment framing. Emotion: cautious documentary clarity. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_041.png"
+    },
+    {
+      "beat_id": 42,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 42: John in apartment kitchen with laptop and transit keys, showing paycheck pressure. Emotion: stressed but thoughtful. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_042.png"
+    },
+    {
+      "beat_id": 43,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 43: John in split-screen explainer space, showing generational money gap. Emotion: honest tension. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_043.png"
+    },
+    {
+      "beat_id": 44,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 44: John in symbolic car loan paperwork and calendar pages, showing long loan chain. Emotion: warning. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_044.png"
+    },
+    {
+      "beat_id": 45,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 45: John in parking lot beside modest used car, showing real total car cost. Emotion: concerned. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_045.png"
+    },
+    {
+      "beat_id": 46,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 46: John in kitchen table finance lesson, showing negative equity and debt container. Emotion: grounded. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_046.png"
+    },
+    {
+      "beat_id": 47,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 47: John and Laura in abstract budget map with car costs orbiting paycheck, showing insurance repairs fuel and risk. Emotion: analytical. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_047.png"
+    },
+    {
+      "beat_id": 48,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 48: Laura in warm studio conversation backdrop, showing practical checklist and walk-away number. Emotion: calm plan. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_048.png"
+    },
+    {
+      "beat_id": 49,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 49: John in dealership finance desk, showing monthly-payment framing. Emotion: cautious documentary clarity. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_049.png"
+    },
+    {
+      "beat_id": 50,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 50: John in apartment kitchen with laptop and transit keys, showing paycheck pressure. Emotion: stressed but thoughtful. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_050.png"
+    },
+    {
+      "beat_id": 51,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 51: John in split-screen explainer space, showing generational money gap. Emotion: honest tension. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_051.png"
+    },
+    {
+      "beat_id": 52,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 52: John in symbolic car loan paperwork and calendar pages, showing long loan chain. Emotion: warning. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_052.png"
+    },
+    {
+      "beat_id": 53,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 53: John in parking lot beside modest used car, showing real total car cost. Emotion: concerned. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_053.png"
+    },
+    {
+      "beat_id": 54,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 54: John in kitchen table finance lesson, showing negative equity and debt container. Emotion: grounded. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_054.png"
+    },
+    {
+      "beat_id": 55,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 55: John in abstract budget map with car costs orbiting paycheck, showing insurance repairs fuel and risk. Emotion: analytical. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_055.png"
+    },
+    {
+      "beat_id": 56,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 56: John in warm studio conversation backdrop, showing practical checklist and walk-away number. Emotion: calm plan. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_056.png"
+    },
+    {
+      "beat_id": 57,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 57: John in dealership finance desk, showing monthly-payment framing. Emotion: cautious documentary clarity. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_057.png"
+    },
+    {
+      "beat_id": 58,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 58: John in apartment kitchen with laptop and transit keys, showing paycheck pressure. Emotion: stressed but thoughtful. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_058.png"
+    },
+    {
+      "beat_id": 59,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 59: John and Laura in split-screen explainer space, showing generational money gap. Emotion: honest tension. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_059.png"
+    },
+    {
+      "beat_id": 60,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 60: John and Laura in symbolic car loan paperwork and calendar pages, showing long loan chain. Emotion: warning. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_060.png"
+    },
+    {
+      "beat_id": 61,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 61: John in parking lot beside modest used car, showing real total car cost. Emotion: concerned. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_061.png"
+    },
+    {
+      "beat_id": 62,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 62: John in kitchen table finance lesson, showing negative equity and debt container. Emotion: grounded. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_062.png"
+    },
+    {
+      "beat_id": 63,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 63: John in abstract budget map with car costs orbiting paycheck, showing insurance repairs fuel and risk. Emotion: analytical. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_063.png"
+    },
+    {
+      "beat_id": 64,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 64: John in warm studio conversation backdrop, showing practical checklist and walk-away number. Emotion: calm plan. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_064.png"
+    },
+    {
+      "beat_id": 65,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 65: John in dealership finance desk, showing monthly-payment framing. Emotion: cautious documentary clarity. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_065.png"
+    },
+    {
+      "beat_id": 66,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 66: John in apartment kitchen with laptop and transit keys, showing paycheck pressure. Emotion: stressed but thoughtful. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_066.png"
+    },
+    {
+      "beat_id": 67,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 67: John in split-screen explainer space, showing generational money gap. Emotion: honest tension. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_067.png"
+    },
+    {
+      "beat_id": 68,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 68: John and Laura in symbolic car loan paperwork and calendar pages, showing long loan chain. Emotion: warning. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_068.png"
+    },
+    {
+      "beat_id": 69,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 69: Laura in parking lot beside modest used car, showing real total car cost. Emotion: concerned. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_069.png"
+    },
+    {
+      "beat_id": 70,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 70: John and Laura in kitchen table finance lesson, showing negative equity and debt container. Emotion: grounded. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_070.png"
+    },
+    {
+      "beat_id": 71,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 71: John in abstract budget map with car costs orbiting paycheck, showing insurance repairs fuel and risk. Emotion: analytical. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_071.png"
+    },
+    {
+      "beat_id": 72,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 72: John in warm studio conversation backdrop, showing practical checklist and walk-away number. Emotion: calm plan. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_072.png"
+    },
+    {
+      "beat_id": 73,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 73: John in dealership finance desk, showing monthly-payment framing. Emotion: cautious documentary clarity. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_073.png"
+    },
+    {
+      "beat_id": 74,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 74: John in apartment kitchen with laptop and transit keys, showing paycheck pressure. Emotion: stressed but thoughtful. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_074.png"
+    },
+    {
+      "beat_id": 75,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 75: John in split-screen explainer space, showing generational money gap. Emotion: honest tension. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_075.png"
+    },
+    {
+      "beat_id": 76,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 76: John in symbolic car loan paperwork and calendar pages, showing long loan chain. Emotion: warning. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_076.png"
+    },
+    {
+      "beat_id": 77,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 77: John in parking lot beside modest used car, showing real total car cost. Emotion: concerned. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_077.png"
+    },
+    {
+      "beat_id": 78,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 78: John in kitchen table finance lesson, showing negative equity and debt container. Emotion: grounded. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_078.png"
+    },
+    {
+      "beat_id": 79,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 79: John and Laura in abstract budget map with car costs orbiting paycheck, showing insurance repairs fuel and risk. Emotion: analytical. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_079.png"
+    },
+    {
+      "beat_id": 80,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 80: John and Laura in warm studio conversation backdrop, showing practical checklist and walk-away number. Emotion: calm plan. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_080.png"
+    },
+    {
+      "beat_id": 81,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 81: John in dealership finance desk, showing monthly-payment framing. Emotion: cautious documentary clarity. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_081.png"
+    },
+    {
+      "beat_id": 82,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 82: John in apartment kitchen with laptop and transit keys, showing paycheck pressure. Emotion: stressed but thoughtful. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_082.png"
+    },
+    {
+      "beat_id": 83,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 83: John in split-screen explainer space, showing generational money gap. Emotion: honest tension. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_083.png"
+    },
+    {
+      "beat_id": 84,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 84: John in symbolic car loan paperwork and calendar pages, showing long loan chain. Emotion: warning. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_084.png"
+    },
+    {
+      "beat_id": 85,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 85: John in parking lot beside modest used car, showing real total car cost. Emotion: concerned. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_085.png"
+    },
+    {
+      "beat_id": 86,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 86: John in kitchen table finance lesson, showing negative equity and debt container. Emotion: grounded. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_086.png"
+    },
+    {
+      "beat_id": 87,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 87: John in abstract budget map with car costs orbiting paycheck, showing insurance repairs fuel and risk. Emotion: analytical. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_087.png"
+    },
+    {
+      "beat_id": 88,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 88: John and Laura in warm studio conversation backdrop, showing practical checklist and walk-away number. Emotion: calm plan. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_088.png"
+    },
+    {
+      "beat_id": 89,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 89: John and Laura in dealership finance desk, showing monthly-payment framing. Emotion: cautious documentary clarity. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_089.png"
+    },
+    {
+      "beat_id": 90,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 90: John in apartment kitchen with laptop and transit keys, showing paycheck pressure. Emotion: stressed but thoughtful. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_090.png"
+    },
+    {
+      "beat_id": 91,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 91: John in split-screen explainer space, showing generational money gap. Emotion: honest tension. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_091.png"
+    },
+    {
+      "beat_id": 92,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 92: John in symbolic car loan paperwork and calendar pages, showing long loan chain. Emotion: warning. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_092.png"
+    },
+    {
+      "beat_id": 93,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 93: John in parking lot beside modest used car, showing real total car cost. Emotion: concerned. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_093.png"
+    },
+    {
+      "beat_id": 94,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 94: John in kitchen table finance lesson, showing negative equity and debt container. Emotion: grounded. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_094.png"
+    },
+    {
+      "beat_id": 95,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 95: John in abstract budget map with car costs orbiting paycheck, showing insurance repairs fuel and risk. Emotion: analytical. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_095.png"
+    },
+    {
+      "beat_id": 96,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 96: John and Laura in warm studio conversation backdrop, showing practical checklist and walk-away number. Emotion: calm plan. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_096.png"
+    },
+    {
+      "beat_id": 97,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 97: John and Laura in dealership finance desk, showing monthly-payment framing. Emotion: cautious documentary clarity. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_097.png"
+    },
+    {
+      "beat_id": 98,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 98: John in apartment kitchen with laptop and transit keys, showing paycheck pressure. Emotion: stressed but thoughtful. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_098.png"
+    },
+    {
+      "beat_id": 99,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 99: John in split-screen explainer space, showing generational money gap. Emotion: honest tension. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_099.png"
+    },
+    {
+      "beat_id": 100,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 100: John in symbolic car loan paperwork and calendar pages, showing long loan chain. Emotion: warning. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_100.png"
+    },
+    {
+      "beat_id": 101,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 101: John in parking lot beside modest used car, showing real total car cost. Emotion: concerned. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_101.png"
+    },
+    {
+      "beat_id": 102,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 102: John in kitchen table finance lesson, showing negative equity and debt container. Emotion: grounded. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_102.png"
+    },
+    {
+      "beat_id": 103,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 103: John in abstract budget map with car costs orbiting paycheck, showing insurance repairs fuel and risk. Emotion: analytical. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_103.png"
+    },
+    {
+      "beat_id": 104,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 104: John in warm studio conversation backdrop, showing practical checklist and walk-away number. Emotion: calm plan. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_104.png"
+    },
+    {
+      "beat_id": 105,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 105: John in dealership finance desk, showing monthly-payment framing. Emotion: cautious documentary clarity. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_105.png"
+    },
+    {
+      "beat_id": 106,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 106: John in apartment kitchen with laptop and transit keys, showing paycheck pressure. Emotion: stressed but thoughtful. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_106.png"
+    },
+    {
+      "beat_id": 107,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 107: John in split-screen explainer space, showing generational money gap. Emotion: honest tension. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_107.png"
+    },
+    {
+      "beat_id": 108,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 108: John and Laura in symbolic car loan paperwork and calendar pages, showing long loan chain. Emotion: warning. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_108.png"
+    },
+    {
+      "beat_id": 109,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 109: John and Laura in parking lot beside modest used car, showing real total car cost. Emotion: concerned. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_109.png"
+    },
+    {
+      "beat_id": 110,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 110: John in kitchen table finance lesson, showing negative equity and debt container. Emotion: grounded. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_110.png"
+    },
+    {
+      "beat_id": 111,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 111: John in abstract budget map with car costs orbiting paycheck, showing insurance repairs fuel and risk. Emotion: analytical. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_111.png"
+    },
+    {
+      "beat_id": 112,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 112: John in warm studio conversation backdrop, showing practical checklist and walk-away number. Emotion: calm plan. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_112.png"
+    },
+    {
+      "beat_id": 113,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 113: John in dealership finance desk, showing monthly-payment framing. Emotion: cautious documentary clarity. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_113.png"
+    },
+    {
+      "beat_id": 114,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 114: John in apartment kitchen with laptop and transit keys, showing paycheck pressure. Emotion: stressed but thoughtful. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_114.png"
+    },
+    {
+      "beat_id": 115,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 115: John in split-screen explainer space, showing generational money gap. Emotion: honest tension. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_115.png"
+    },
+    {
+      "beat_id": 116,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 116: John and Laura in symbolic car loan paperwork and calendar pages, showing long loan chain. Emotion: warning. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_116.png"
+    },
+    {
+      "beat_id": 117,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 117: Laura in parking lot beside modest used car, showing real total car cost. Emotion: concerned. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_117.png"
+    },
+    {
+      "beat_id": 118,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 118: John in kitchen table finance lesson, showing negative equity and debt container. Emotion: grounded. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_118.png"
+    },
+    {
+      "beat_id": 119,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 119: John in abstract budget map with car costs orbiting paycheck, showing insurance repairs fuel and risk. Emotion: analytical. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_119.png"
+    },
+    {
+      "beat_id": 120,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 120: John and Laura in warm studio conversation backdrop, showing practical checklist and walk-away number. Emotion: calm plan. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_120.png"
+    },
+    {
+      "beat_id": 121,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 121: John and Laura in dealership finance desk, showing monthly-payment framing. Emotion: cautious documentary clarity. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_121.png"
+    },
+    {
+      "beat_id": 122,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 122: John in apartment kitchen with laptop and transit keys, showing paycheck pressure. Emotion: stressed but thoughtful. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_122.png"
+    },
+    {
+      "beat_id": 123,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 123: John in split-screen explainer space, showing generational money gap. Emotion: honest tension. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_123.png"
+    },
+    {
+      "beat_id": 124,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 124: John in symbolic car loan paperwork and calendar pages, showing long loan chain. Emotion: warning. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_124.png"
+    },
+    {
+      "beat_id": 125,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 125: John in parking lot beside modest used car, showing real total car cost. Emotion: concerned. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_125.png"
+    },
+    {
+      "beat_id": 126,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 126: John in kitchen table finance lesson, showing negative equity and debt container. Emotion: grounded. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_126.png"
+    },
+    {
+      "beat_id": 127,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 127: John and Laura in abstract budget map with car costs orbiting paycheck, showing insurance repairs fuel and risk. Emotion: analytical. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_127.png"
+    },
+    {
+      "beat_id": 128,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 128: John in warm studio conversation backdrop, showing practical checklist and walk-away number. Emotion: calm plan. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_128.png"
+    },
+    {
+      "beat_id": 129,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 129: John in dealership finance desk, showing monthly-payment framing. Emotion: cautious documentary clarity. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_129.png"
+    },
+    {
+      "beat_id": 130,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 130: John in apartment kitchen with laptop and transit keys, showing paycheck pressure. Emotion: stressed but thoughtful. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_130.png"
+    },
+    {
+      "beat_id": 131,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 131: John in split-screen explainer space, showing generational money gap. Emotion: honest tension. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_131.png"
+    },
+    {
+      "beat_id": 132,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 132: John in symbolic car loan paperwork and calendar pages, showing long loan chain. Emotion: warning. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_132.png"
+    },
+    {
+      "beat_id": 133,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 133: John in parking lot beside modest used car, showing real total car cost. Emotion: concerned. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_133.png"
+    },
+    {
+      "beat_id": 134,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 134: John and Laura in kitchen table finance lesson, showing negative equity and debt container. Emotion: grounded. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_134.png"
+    },
+    {
+      "beat_id": 135,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 135: John in abstract budget map with car costs orbiting paycheck, showing insurance repairs fuel and risk. Emotion: analytical. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_135.png"
+    },
+    {
+      "beat_id": 136,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 136: John in warm studio conversation backdrop, showing practical checklist and walk-away number. Emotion: calm plan. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_136.png"
+    },
+    {
+      "beat_id": 137,
+      "prompt": "Single full-frame 16:9 editorial cartoon scene for a finance explainer video. One coherent scene only, not a collage, not a grid, not panels, not a contact sheet. Scene 137: John in dealership finance desk, showing monthly-payment framing. Emotion: cautious documentary clarity. Consistent characters: John is an older American male finance narrator with kind serious expression, neat casual shirt; Laura is a young American woman cohost with warm curious expression, simple modern outfit. Warm cream background, muted teal and soft coral accents, clean line art, polished YouTube documentary explainer illustration, cinematic composition, full-frame, no readable text, no logos, no watermark.",
+      "image_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/scenes/scene_137.png"
+    }
+  ]
+}

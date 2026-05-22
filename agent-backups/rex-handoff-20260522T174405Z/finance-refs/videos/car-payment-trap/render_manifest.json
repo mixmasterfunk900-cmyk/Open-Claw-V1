@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "no_burned_subtitles": true,
+  "clean_master": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/renders/car-payment-trap_clean_master.mp4",
+  "review_copy_no_captions": "/root/.openclaw/workspace/youtube-automation-finance/videos/car-payment-trap/renders/car-payment-trap_burned_captions_review.mp4",
+  "audio_duration_seconds": 681.76,
+  "beat_count": 137,
+  "motion": "ffmpeg zoompan/parallax on every beat",
+  "transitions": "visible hard cuts between generated beats; beat manifest records transition intent"
+}

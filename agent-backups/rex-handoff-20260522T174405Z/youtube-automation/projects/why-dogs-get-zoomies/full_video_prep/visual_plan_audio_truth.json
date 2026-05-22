@@ -1,0 +1,1063 @@
+{
+  "script": "Why Dogs Get Zoomies",
+  "audio_file": "voiceover_drop/why-dogs-get-zoomies-final-voiceover.wav",
+  "alignment_file": "alignment/why-dogs-get-zoomies-final-voiceover.json",
+  "target_frame_count": 117,
+  "audio_duration_seconds": 689.5,
+  "beat_duration_goal_seconds": 5.0,
+  "beats": [
+    {
+      "id": "beat_001",
+      "start_audio_est": 0.0,
+      "end_audio_est": 5.7,
+      "duration_audio_est": 5.7,
+      "frame_filename": "beat_001.png",
+      "narration": "Your dog suddenly loses their mind. One second, they are normal. The next second, they are sprinting",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: quiet dog becoming sofa race-car blur, dynamic hook composition. Visual should match narration: \"Your dog suddenly loses their mind. One second, they are normal. The next second, they are sprinting\"."
+    },
+    {
+      "id": "beat_002",
+      "start_audio_est": 5.7,
+      "end_audio_est": 11.42,
+      "duration_audio_est": 5.72,
+      "frame_filename": "beat_002.png",
+      "narration": "through the house like a tiny furry race car. Around the sofa, across the rug, back",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: post-bath towel rocket in bathroom, dynamic hook composition. Visual should match narration: \"through the house like a tiny furry race car. Around the sofa, across the rug, back\"."
+    },
+    {
+      "id": "beat_003",
+      "start_audio_est": 11.42,
+      "end_audio_est": 17.16,
+      "duration_audio_est": 5.74,
+      "frame_filename": "beat_003.png",
+      "narration": "through the hallway. One impossible turn in the kitchen. Then another lap for no clear reason.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: puppy evening witching-hour with tired owner, dynamic hook composition. Visual should match narration: \"through the hallway. One impossible turn in the kitchen. Then another lap for no clear reason.\"."
+    },
+    {
+      "id": "beat_004",
+      "start_audio_est": 17.96,
+      "end_audio_est": 23.88,
+      "duration_audio_est": 5.92,
+      "frame_filename": "beat_004.png",
+      "narration": "Their body is curved, their eyes are bright. Their legs are moving faster than the floor can emotionally handle",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: energy release visual as glowing household rhythm, no labels, dynamic hook composition. Visual should match narration: \"Their body is curved, their eyes are bright. Their legs are moving faster than the floor can emotionally handle\"."
+    },
+    {
+      "id": "beat_005",
+      "start_audio_est": 23.88,
+      "end_audio_est": 29.18,
+      "duration_audio_est": 5.3,
+      "frame_filename": "beat_005.png",
+      "narration": "and you are standing there wondering if your dog has been possessed by pure Wi -Fi signal.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: loose joyful sprint in safe yard, dynamic hook composition. Visual should match narration: \"and you are standing there wondering if your dog has been possessed by pure Wi -Fi signal.\"."
+    },
+    {
+      "id": "beat_006",
+      "start_audio_est": 30.0,
+      "end_audio_est": 35.7,
+      "duration_audio_est": 5.7,
+      "frame_filename": "beat_006.png",
+      "narration": "Then it stops. Just like that. They pant. They look at you. Maybe they grab a toy.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm redirect to toy before bedtime, dynamic hook composition. Visual should match narration: \"Then it stops. Just like that. They pant. They look at you. Maybe they grab a toy.\"."
+    },
+    {
+      "id": "beat_007",
+      "start_audio_est": 36.4,
+      "end_audio_est": 41.34,
+      "duration_audio_est": 4.94,
+      "frame_filename": "beat_007.png",
+      "narration": "Maybe they collapse on the floor as if nothing unusual happened. These are the zoomies.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: quiet dog becoming sofa race-car blur, dynamic hook composition. Visual should match narration: \"Maybe they collapse on the floor as if nothing unusual happened. These are the zoomies.\"."
+    },
+    {
+      "id": "beat_008",
+      "start_audio_est": 41.92,
+      "end_audio_est": 46.26,
+      "duration_audio_est": 4.34,
+      "frame_filename": "beat_008.png",
+      "narration": "The more formal term is frenetic random activity periods or fraps.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: post-bath towel rocket in bathroom, dynamic hook composition. Visual should match narration: \"The more formal term is frenetic random activity periods or fraps.\"."
+    },
+    {
+      "id": "beat_009",
+      "start_audio_est": 46.92,
+      "end_audio_est": 51.36,
+      "duration_audio_est": 4.44,
+      "frame_filename": "beat_009.png",
+      "narration": "Which is a very serious scientific phrase for your dog briefly becoming a living pinball.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: puppy evening witching-hour with tired owner. Visual should match narration: \"Which is a very serious scientific phrase for your dog briefly becoming a living pinball.\"."
+    },
+    {
+      "id": "beat_010",
+      "start_audio_est": 52.12,
+      "end_audio_est": 56.96,
+      "duration_audio_est": 4.84,
+      "frame_filename": "beat_010.png",
+      "narration": "Most people explain zoomies in one sentence. They say, my dog is just crazy.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: energy release visual as glowing household rhythm, no labels. Visual should match narration: \"Most people explain zoomies in one sentence. They say, my dog is just crazy.\"."
+    },
+    {
+      "id": "beat_011",
+      "start_audio_est": 57.68,
+      "end_audio_est": 63.36,
+      "duration_audio_est": 5.68,
+      "frame_filename": "beat_011.png",
+      "narration": "Or my dog needs to burn energy. And sometimes, yes, energy is part of it.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: loose joyful sprint in safe yard. Visual should match narration: \"Or my dog needs to burn energy. And sometimes, yes, energy is part of it.\"."
+    },
+    {
+      "id": "beat_012",
+      "start_audio_est": 63.74,
+      "end_audio_est": 69.5,
+      "duration_audio_est": 5.76,
+      "frame_filename": "beat_012.png",
+      "narration": "But the truth is more interesting than that. Because zoomies are not only about how much energy",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm redirect to toy before bedtime. Visual should match narration: \"But the truth is more interesting than that. Because zoomies are not only about how much energy\"."
+    },
+    {
+      "id": "beat_013",
+      "start_audio_est": 69.5,
+      "end_audio_est": 75.4,
+      "duration_audio_est": 5.9,
+      "frame_filename": "beat_013.png",
+      "narration": "a dog has. They are about what kind of energy it is, where it came from, and whether the dog",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: quiet dog becoming sofa race-car blur. Visual should match narration: \"a dog has. They are about what kind of energy it is, where it came from, and whether the dog\"."
+    },
+    {
+      "id": "beat_014",
+      "start_audio_est": 75.4,
+      "end_audio_est": 79.9,
+      "duration_audio_est": 4.5,
+      "frame_filename": "beat_014.png",
+      "narration": "can come back down afterward. Most of the time, zoomies are normal.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: post-bath towel rocket in bathroom. Visual should match narration: \"can come back down afterward. Most of the time, zoomies are normal.\"."
+    },
+    {
+      "id": "beat_015",
+      "start_audio_est": 80.68,
+      "end_audio_est": 85.84,
+      "duration_audio_est": 5.16,
+      "frame_filename": "beat_015.png",
+      "narration": "They are not proof your dog is badly trained. They are not proof your dog is trying to annoy you.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: puppy evening witching-hour with tired owner. Visual should match narration: \"They are not proof your dog is badly trained. They are not proof your dog is trying to annoy you.\"."
+    },
+    {
+      "id": "beat_016",
+      "start_audio_est": 86.38,
+      "end_audio_est": 91.06,
+      "duration_audio_est": 4.68,
+      "frame_filename": "beat_016.png",
+      "narration": "They are not usually a medical mystery. But they are not completely meaningless either.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: energy release visual as glowing household rhythm, no labels. Visual should match narration: \"They are not usually a medical mystery. But they are not completely meaningless either.\"."
+    },
+    {
+      "id": "beat_017",
+      "start_audio_est": 91.88,
+      "end_audio_est": 96.62,
+      "duration_audio_est": 4.74,
+      "frame_filename": "beat_017.png",
+      "narration": "Zoomies are often a release. A release of energy. A release of excitement.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: loose joyful sprint in safe yard. Visual should match narration: \"Zoomies are often a release. A release of energy. A release of excitement.\"."
+    },
+    {
+      "id": "beat_018",
+      "start_audio_est": 97.22,
+      "end_audio_est": 103.4,
+      "duration_audio_est": 6.18,
+      "frame_filename": "beat_018.png",
+      "narration": "A release of stress. A release of frustration. A release of being asked to hold still when",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm redirect to toy before bedtime. Visual should match narration: \"A release of stress. A release of frustration. A release of being asked to hold still when\"."
+    },
+    {
+      "id": "beat_019",
+      "start_audio_est": 103.4,
+      "end_audio_est": 108.86,
+      "duration_audio_est": 5.46,
+      "frame_filename": "beat_019.png",
+      "narration": "the body really wanted to move. To understand them, stop looking only at the running.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: quiet dog becoming sofa race-car blur. Visual should match narration: \"the body really wanted to move. To understand them, stop looking only at the running.\"."
+    },
+    {
+      "id": "beat_020",
+      "start_audio_est": 109.58,
+      "end_audio_est": 114.14,
+      "duration_audio_est": 4.56,
+      "frame_filename": "beat_020.png",
+      "narration": "Look at what happened before the running. Because zoomies are rarely random to the nervous system.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: post-bath towel rocket in bathroom. Visual should match narration: \"Look at what happened before the running. Because zoomies are rarely random to the nervous system.\"."
+    },
+    {
+      "id": "beat_021",
+      "start_audio_est": 114.6,
+      "end_audio_est": 120.3,
+      "duration_audio_est": 5.7,
+      "frame_filename": "beat_021.png",
+      "narration": "They only look random to us because we notice the explosion more than the build up. Think of your dog like a",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: puppy evening witching-hour with tired owner. Visual should match narration: \"They only look random to us because we notice the explosion more than the build up. Think of your dog like a\"."
+    },
+    {
+      "id": "beat_022",
+      "start_audio_est": 120.3,
+      "end_audio_est": 125.1,
+      "duration_audio_est": 4.8,
+      "frame_filename": "beat_022.png",
+      "narration": "battery. Energy goes in. Waiting goes in. Excitement goes in.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: energy release visual as glowing household rhythm, no labels. Visual should match narration: \"battery. Energy goes in. Waiting goes in. Excitement goes in.\"."
+    },
+    {
+      "id": "beat_023",
+      "start_audio_est": 125.64,
+      "end_audio_est": 130.82,
+      "duration_audio_est": 5.18,
+      "frame_filename": "beat_023.png",
+      "narration": "Noise goes in. Frustration goes in. Restraint goes in. A bath goes in.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: loose joyful sprint in safe yard. Visual should match narration: \"Noise goes in. Frustration goes in. Restraint goes in. A bath goes in.\"."
+    },
+    {
+      "id": "beat_024",
+      "start_audio_est": 131.34,
+      "end_audio_est": 136.16,
+      "duration_audio_est": 4.82,
+      "frame_filename": "beat_024.png",
+      "narration": "A vet visit goes in. A boring afternoon goes in. A visitor arriving goes in.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm redirect to toy before bedtime. Visual should match narration: \"A vet visit goes in. A boring afternoon goes in. A visitor arriving goes in.\"."
+    },
+    {
+      "id": "beat_025",
+      "start_audio_est": 136.66,
+      "end_audio_est": 142.18,
+      "duration_audio_est": 5.52,
+      "frame_filename": "beat_025.png",
+      "narration": "At some point, the body wants to discharge. Humans may discharge by sighing, pacing,",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: quiet dog becoming sofa race-car blur. Visual should match narration: \"At some point, the body wants to discharge. Humans may discharge by sighing, pacing,\"."
+    },
+    {
+      "id": "beat_026",
+      "start_audio_est": 142.72,
+      "end_audio_est": 148.04,
+      "duration_audio_est": 5.32,
+      "frame_filename": "beat_026.png",
+      "narration": "scrolling, talking or going for a run. Dogs often discharge with their whole body.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: post-bath towel rocket in bathroom. Visual should match narration: \"scrolling, talking or going for a run. Dogs often discharge with their whole body.\"."
+    },
+    {
+      "id": "beat_027",
+      "start_audio_est": 148.68,
+      "end_audio_est": 153.84,
+      "duration_audio_est": 5.16,
+      "frame_filename": "beat_027.png",
+      "narration": "They shake. They stretch. They play bow. They sprint. They loop.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: puppy evening witching-hour with tired owner. Visual should match narration: \"They shake. They stretch. They play bow. They sprint. They loop.\"."
+    },
+    {
+      "id": "beat_028",
+      "start_audio_est": 154.46,
+      "end_audio_est": 160.22,
+      "duration_audio_est": 5.76,
+      "frame_filename": "beat_028.png",
+      "narration": "They zoom. That is why zoomies often happen after confinement. A dog comes out of a crate.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: energy release visual as glowing household rhythm, no labels. Visual should match narration: \"They zoom. That is why zoomies often happen after confinement. A dog comes out of a crate.\"."
+    },
+    {
+      "id": "beat_029",
+      "start_audio_est": 160.78,
+      "end_audio_est": 165.88,
+      "duration_audio_est": 5.1,
+      "frame_filename": "beat_029.png",
+      "narration": "A dog gets released from a car. A puppy has been trying very hard to behave in the living room.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: loose joyful sprint in safe yard. Visual should match narration: \"A dog gets released from a car. A puppy has been trying very hard to behave in the living room.\"."
+    },
+    {
+      "id": "beat_030",
+      "start_audio_est": 166.52,
+      "end_audio_est": 172.46,
+      "duration_audio_est": 5.94,
+      "frame_filename": "beat_030.png",
+      "narration": "A young dog has been waiting while humans talked for too long. The moment the space opens, the body says,",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm redirect to toy before bedtime. Visual should match narration: \"A young dog has been waiting while humans talked for too long. The moment the space opens, the body says,\"."
+    },
+    {
+      "id": "beat_031",
+      "start_audio_est": 172.46,
+      "end_audio_est": 176.9,
+      "duration_audio_est": 4.44,
+      "frame_filename": "beat_031.png",
+      "narration": "finally. Not finally, I will walk politely in a straight line.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: quiet dog becoming sofa race-car blur. Visual should match narration: \"finally. Not finally, I will walk politely in a straight line.\"."
+    },
+    {
+      "id": "beat_032",
+      "start_audio_est": 177.7,
+      "end_audio_est": 183.24,
+      "duration_audio_est": 5.54,
+      "frame_filename": "beat_032.png",
+      "narration": "Finally, I will become weather. This is also why zoomies after a bath are so common.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: post-bath towel rocket in bathroom. Visual should match narration: \"Finally, I will become weather. This is also why zoomies after a bath are so common.\"."
+    },
+    {
+      "id": "beat_033",
+      "start_audio_est": 184.26,
+      "end_audio_est": 189.56,
+      "duration_audio_est": 5.3,
+      "frame_filename": "beat_033.png",
+      "narration": "People joke that dogs are angry about being clean. Sometimes the smell change may be part of it.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: puppy evening witching-hour with tired owner. Visual should match narration: \"People joke that dogs are angry about being clean. Sometimes the smell change may be part of it.\"."
+    },
+    {
+      "id": "beat_034",
+      "start_audio_est": 190.06,
+      "end_audio_est": 195.7,
+      "duration_audio_est": 5.64,
+      "frame_filename": "beat_034.png",
+      "narration": "But a bath is also a huge sensory event. Water on the body. Hands holding still.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: energy release visual as glowing household rhythm, no labels. Visual should match narration: \"But a bath is also a huge sensory event. Water on the body. Hands holding still.\"."
+    },
+    {
+      "id": "beat_035",
+      "start_audio_est": 196.52,
+      "end_audio_est": 201.26,
+      "duration_audio_est": 4.74,
+      "frame_filename": "beat_035.png",
+      "narration": "Soaps smells. Slippery floors. Towel pressure. Temperature changes.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: loose joyful sprint in safe yard. Visual should match narration: \"Soaps smells. Slippery floors. Towel pressure. Temperature changes.\"."
+    },
+    {
+      "id": "beat_036",
+      "start_audio_est": 201.96,
+      "end_audio_est": 207.78,
+      "duration_audio_est": 5.82,
+      "frame_filename": "beat_036.png",
+      "narration": "Being controlled in a small space. Even a dog who tolerates baths may leave the bathroom",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm redirect to toy before bedtime. Visual should match narration: \"Being controlled in a small space. Even a dog who tolerates baths may leave the bathroom\"."
+    },
+    {
+      "id": "beat_037",
+      "start_audio_est": 207.78,
+      "end_audio_est": 212.38,
+      "duration_audio_est": 4.6,
+      "frame_filename": "beat_037.png",
+      "narration": "loaded with sensation. When the restraint ends, movement pours out.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: quiet dog becoming sofa race-car blur. Visual should match narration: \"loaded with sensation. When the restraint ends, movement pours out.\"."
+    },
+    {
+      "id": "beat_038",
+      "start_audio_est": 213.02,
+      "end_audio_est": 218.42,
+      "duration_audio_est": 5.4,
+      "frame_filename": "beat_038.png",
+      "narration": "The zoomies say, I survived the weird wet ritual. And now I need my body back.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: post-bath towel rocket in bathroom. Visual should match narration: \"The zoomies say, I survived the weird wet ritual. And now I need my body back.\"."
+    },
+    {
+      "id": "beat_039",
+      "start_audio_est": 219.2,
+      "end_audio_est": 225.1,
+      "duration_audio_est": 5.9,
+      "frame_filename": "beat_039.png",
+      "narration": "Zoomies can happen after grooming for the same reason. After a vet visit, after a training session,",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: puppy evening witching-hour with tired owner. Visual should match narration: \"Zoomies can happen after grooming for the same reason. After a vet visit, after a training session,\"."
+    },
+    {
+      "id": "beat_040",
+      "start_audio_est": 225.56,
+      "end_audio_est": 231.5,
+      "duration_audio_est": 5.94,
+      "frame_filename": "beat_040.png",
+      "narration": "after anything that requires a dog to suppress impulses, cooperate, wait, and hold themselves",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: energy release visual as glowing household rhythm, no labels. Visual should match narration: \"after anything that requires a dog to suppress impulses, cooperate, wait, and hold themselves\"."
+    },
+    {
+      "id": "beat_041",
+      "start_audio_est": 231.5,
+      "end_audio_est": 237.34,
+      "duration_audio_est": 5.84,
+      "frame_filename": "beat_041.png",
+      "narration": "together. The body keeps score. Then the body runs. But zoomies are not only",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: loose joyful sprint in safe yard. Visual should match narration: \"together. The body keeps score. Then the body runs. But zoomies are not only\"."
+    },
+    {
+      "id": "beat_042",
+      "start_audio_est": 237.34,
+      "end_audio_est": 243.0,
+      "duration_audio_est": 5.66,
+      "frame_filename": "beat_042.png",
+      "narration": "stress release. They can also be joy. You come home and your dog explodes into loops.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm redirect to toy before bedtime. Visual should match narration: \"stress release. They can also be joy. You come home and your dog explodes into loops.\"."
+    },
+    {
+      "id": "beat_043",
+      "start_audio_est": 243.9,
+      "end_audio_est": 249.7,
+      "duration_audio_est": 5.8,
+      "frame_filename": "beat_043.png",
+      "narration": "The leash appears and they sprint in circles. A friend dog arrives and suddenly the garden becomes a",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: quiet dog becoming sofa race-car blur. Visual should match narration: \"The leash appears and they sprint in circles. A friend dog arrives and suddenly the garden becomes a\"."
+    },
+    {
+      "id": "beat_044",
+      "start_audio_est": 249.7,
+      "end_audio_est": 255.72,
+      "duration_audio_est": 6.02,
+      "frame_filename": "beat_044.png",
+      "narration": "racetrack. Snow falls. Fresh grass appears. A toy squeaks at exactly",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: post-bath towel rocket in bathroom. Visual should match narration: \"racetrack. Snow falls. Fresh grass appears. A toy squeaks at exactly\"."
+    },
+    {
+      "id": "beat_045",
+      "start_audio_est": 255.72,
+      "end_audio_est": 261.74,
+      "duration_audio_est": 6.02,
+      "frame_filename": "beat_045.png",
+      "narration": "the right emotional frequency. The dog is not escaping pressure. The dog is",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: puppy evening witching-hour with tired owner. Visual should match narration: \"the right emotional frequency. The dog is not escaping pressure. The dog is\"."
+    },
+    {
+      "id": "beat_046",
+      "start_audio_est": 261.74,
+      "end_audio_est": 267.9,
+      "duration_audio_est": 6.16,
+      "frame_filename": "beat_046.png",
+      "narration": "expressing delight. Too much good feeling to stand still. That is one of the reasons zoomies",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: energy release visual as glowing household rhythm, no labels. Visual should match narration: \"expressing delight. Too much good feeling to stand still. That is one of the reasons zoomies\"."
+    },
+    {
+      "id": "beat_047",
+      "start_audio_est": 267.9,
+      "end_audio_est": 273.54,
+      "duration_audio_est": 5.64,
+      "frame_filename": "beat_047.png",
+      "narration": "are funny to humans. They are emotion made visible. A feeling so big,",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: loose joyful sprint in safe yard. Visual should match narration: \"are funny to humans. They are emotion made visible. A feeling so big,\"."
+    },
+    {
+      "id": "beat_048",
+      "start_audio_est": 273.68,
+      "end_audio_est": 279.16,
+      "duration_audio_est": 5.48,
+      "frame_filename": "beat_048.png",
+      "narration": "it needs corners. There is also the evening version. A puppy seems fine all day.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm redirect to toy before bedtime. Visual should match narration: \"it needs corners. There is also the evening version. A puppy seems fine all day.\"."
+    },
+    {
+      "id": "beat_049",
+      "start_audio_est": 279.72,
+      "end_audio_est": 285.6,
+      "duration_audio_est": 5.88,
+      "frame_filename": "beat_049.png",
+      "narration": "Then at night, they transform into a tiny chaos machine. People call this the witching",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: quiet dog becoming sofa race-car blur. Visual should match narration: \"Then at night, they transform into a tiny chaos machine. People call this the witching\"."
+    },
+    {
+      "id": "beat_050",
+      "start_audio_est": 285.6,
+      "end_audio_est": 290.9,
+      "duration_audio_est": 5.3,
+      "frame_filename": "beat_050.png",
+      "narration": "hour. Often the puppy is not being evil. They are tired, overstimulated,",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: post-bath towel rocket in bathroom. Visual should match narration: \"hour. Often the puppy is not being evil. They are tired, overstimulated,\"."
+    },
+    {
+      "id": "beat_051",
+      "start_audio_est": 291.54,
+      "end_audio_est": 297.26,
+      "duration_audio_est": 5.72,
+      "frame_filename": "beat_051.png",
+      "narration": "under -skilled at settling. Maybe they needed more naps. Maybe they had too much activity and not",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: puppy evening witching-hour with tired owner. Visual should match narration: \"under -skilled at settling. Maybe they needed more naps. Maybe they had too much activity and not\"."
+    },
+    {
+      "id": "beat_052",
+      "start_audio_est": 297.26,
+      "end_audio_est": 302.82,
+      "duration_audio_est": 5.56,
+      "frame_filename": "beat_052.png",
+      "narration": "enough decompression. Maybe the household got loud right when their brain was running out of battery.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: energy release visual as glowing household rhythm, no labels. Visual should match narration: \"enough decompression. Maybe the household got loud right when their brain was running out of battery.\"."
+    },
+    {
+      "id": "beat_053",
+      "start_audio_est": 303.66,
+      "end_audio_est": 309.42,
+      "duration_audio_est": 5.76,
+      "frame_filename": "beat_053.png",
+      "narration": "Young dogs can look wild when they are actually exhausted. That is important. Because the answer",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: loose joyful sprint in safe yard. Visual should match narration: \"Young dogs can look wild when they are actually exhausted. That is important. Because the answer\"."
+    },
+    {
+      "id": "beat_054",
+      "start_audio_est": 309.42,
+      "end_audio_est": 314.42,
+      "duration_audio_est": 5.0,
+      "frame_filename": "beat_054.png",
+      "narration": "to every zoomie is not more exercise. Sometimes the answer is safer movement.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm redirect to toy before bedtime. Visual should match narration: \"to every zoomie is not more exercise. Sometimes the answer is safer movement.\"."
+    },
+    {
+      "id": "beat_055",
+      "start_audio_est": 315.18,
+      "end_audio_est": 321.04,
+      "duration_audio_est": 5.86,
+      "frame_filename": "beat_055.png",
+      "narration": "Sometimes it is a karma routine. Sometimes it is a chew, a toilet break, dimmer lights,",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: quiet dog becoming sofa race-car blur. Visual should match narration: \"Sometimes it is a karma routine. Sometimes it is a chew, a toilet break, dimmer lights,\"."
+    },
+    {
+      "id": "beat_056",
+      "start_audio_est": 321.52,
+      "end_audio_est": 327.24,
+      "duration_audio_est": 5.72,
+      "frame_filename": "beat_056.png",
+      "narration": "and sleep. If you only add more stimulation to an overstimulated dog, you may",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: post-bath towel rocket in bathroom. Visual should match narration: \"and sleep. If you only add more stimulation to an overstimulated dog, you may\"."
+    },
+    {
+      "id": "beat_057",
+      "start_audio_est": 327.24,
+      "end_audio_est": 333.06,
+      "duration_audio_est": 5.82,
+      "frame_filename": "beat_057.png",
+      "narration": "pour fuel on the fire. Then there are post -poop zoomies. A dog finishes their business",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: puppy evening witching-hour with tired owner. Visual should match narration: \"pour fuel on the fire. Then there are post -poop zoomies. A dog finishes their business\"."
+    },
+    {
+      "id": "beat_058",
+      "start_audio_est": 333.06,
+      "end_audio_est": 338.66,
+      "duration_audio_est": 5.6,
+      "frame_filename": "beat_058.png",
+      "narration": "and suddenly runs like they have been personally freed from taxation. There may be relief.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: energy release visual as glowing household rhythm, no labels. Visual should match narration: \"and suddenly runs like they have been personally freed from taxation. There may be relief.\"."
+    },
+    {
+      "id": "beat_059",
+      "start_audio_est": 339.4,
+      "end_audio_est": 345.54,
+      "duration_audio_est": 6.14,
+      "frame_filename": "beat_059.png",
+      "narration": "There may be excitement. There may be habit. There may be the simple physical feeling of being lighter",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: loose joyful sprint in safe yard. Visual should match narration: \"There may be excitement. There may be habit. There may be the simple physical feeling of being lighter\"."
+    },
+    {
+      "id": "beat_060",
+      "start_audio_est": 345.54,
+      "end_audio_est": 351.46,
+      "duration_audio_est": 5.92,
+      "frame_filename": "beat_060.png",
+      "narration": "and ready to move. We do not need to pretend every version has one grand explanation.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm redirect to toy before bedtime. Visual should match narration: \"and ready to move. We do not need to pretend every version has one grand explanation.\"."
+    },
+    {
+      "id": "beat_061",
+      "start_audio_est": 352.18,
+      "end_audio_est": 358.02,
+      "duration_audio_est": 5.84,
+      "frame_filename": "beat_061.png",
+      "narration": "The useful point is that the trigger matters. After poop, after bath, after waiting,",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: quiet dog becoming sofa race-car blur. Visual should match narration: \"The useful point is that the trigger matters. After poop, after bath, after waiting,\"."
+    },
+    {
+      "id": "beat_062",
+      "start_audio_est": 358.74,
+      "end_audio_est": 364.5,
+      "duration_audio_est": 5.76,
+      "frame_filename": "beat_062.png",
+      "narration": "after fear, after play, after being alone, after getting released into open",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: post-bath towel rocket in bathroom. Visual should match narration: \"after fear, after play, after being alone, after getting released into open\"."
+    },
+    {
+      "id": "beat_063",
+      "start_audio_est": 364.5,
+      "end_audio_est": 370.32,
+      "duration_audio_est": 5.82,
+      "frame_filename": "beat_063.png",
+      "narration": "space, the zoomie is the visible part of a hidden buildup. So when should you worry?",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: puppy evening witching-hour with tired owner. Visual should match narration: \"space, the zoomie is the visible part of a hidden buildup. So when should you worry?\"."
+    },
+    {
+      "id": "beat_064",
+      "start_audio_est": 370.88,
+      "end_audio_est": 375.72,
+      "duration_audio_est": 4.84,
+      "frame_filename": "beat_064.png",
+      "narration": "Look at the body quality. Happy zoomies are usually loose. The dog curves.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: energy release visual as glowing household rhythm, no labels. Visual should match narration: \"Look at the body quality. Happy zoomies are usually loose. The dog curves.\"."
+    },
+    {
+      "id": "beat_065",
+      "start_audio_est": 376.32,
+      "end_audio_est": 382.08,
+      "duration_audio_est": 5.76,
+      "frame_filename": "beat_065.png",
+      "narration": "The tail is free. The mouth may be open. They may play bow. They dodge around you",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: loose joyful sprint in safe yard. Visual should match narration: \"The tail is free. The mouth may be open. They may play bow. They dodge around you\"."
+    },
+    {
+      "id": "beat_066",
+      "start_audio_est": 382.08,
+      "end_audio_est": 387.36,
+      "duration_audio_est": 5.28,
+      "frame_filename": "beat_066.png",
+      "narration": "rather than slam into you. They can hear you eventually. They settle afterward.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm redirect to toy before bedtime. Visual should match narration: \"rather than slam into you. They can hear you eventually. They settle afterward.\"."
+    },
+    {
+      "id": "beat_067",
+      "start_audio_est": 388.06,
+      "end_audio_est": 392.94,
+      "duration_audio_est": 4.88,
+      "frame_filename": "beat_067.png",
+      "narration": "The episode is brief. Stress movement looks different. The body may be stiff.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: quiet dog becoming sofa race-car blur. Visual should match narration: \"The episode is brief. Stress movement looks different. The body may be stiff.\"."
+    },
+    {
+      "id": "beat_068",
+      "start_audio_est": 393.64,
+      "end_audio_est": 399.36,
+      "duration_audio_est": 5.72,
+      "frame_filename": "beat_068.png",
+      "narration": "The tail may be tucked. The dog may look panicked rather than playful. They may crash into",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: post-bath towel rocket in bathroom. Visual should match narration: \"The tail may be tucked. The dog may look panicked rather than playful. They may crash into\"."
+    },
+    {
+      "id": "beat_069",
+      "start_audio_est": 399.36,
+      "end_audio_est": 404.16,
+      "duration_audio_est": 4.8,
+      "frame_filename": "beat_069.png",
+      "narration": "things. They may not recover. They may repeat the behavior compulsively.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: puppy evening witching-hour with tired owner. Visual should match narration: \"things. They may not recover. They may repeat the behavior compulsively.\"."
+    },
+    {
+      "id": "beat_070",
+      "start_audio_est": 404.76,
+      "end_audio_est": 410.52,
+      "duration_audio_est": 5.76,
+      "frame_filename": "beat_070.png",
+      "narration": "It may happen around fear triggers. That is when you stop laughing and start asking what the dog is",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: energy release visual as glowing household rhythm, no labels. Visual should match narration: \"It may happen around fear triggers. That is when you stop laughing and start asking what the dog is\"."
+    },
+    {
+      "id": "beat_071",
+      "start_audio_est": 410.52,
+      "end_audio_est": 415.84,
+      "duration_audio_est": 5.32,
+      "frame_filename": "beat_071.png",
+      "narration": "coping with. A dog who runs joyfully after a bath needs a safe landing zone.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: loose joyful sprint in safe yard. Visual should match narration: \"coping with. A dog who runs joyfully after a bath needs a safe landing zone.\"."
+    },
+    {
+      "id": "beat_072",
+      "start_audio_est": 416.66,
+      "end_audio_est": 421.06,
+      "duration_audio_est": 4.4,
+      "frame_filename": "beat_072.png",
+      "narration": "A dog who bolts in panic after a bath needs the bath itself made less scary.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm redirect to toy before bedtime. Visual should match narration: \"A dog who bolts in panic after a bath needs the bath itself made less scary.\"."
+    },
+    {
+      "id": "beat_073",
+      "start_audio_est": 421.74,
+      "end_audio_est": 427.6,
+      "duration_audio_est": 5.86,
+      "frame_filename": "beat_073.png",
+      "narration": "A dog who zooms in the yard needs space. A dog who zooms on slippery floors near stairs",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: quiet dog becoming sofa race-car blur. Visual should match narration: \"A dog who zooms in the yard needs space. A dog who zooms on slippery floors near stairs\"."
+    },
+    {
+      "id": "beat_074",
+      "start_audio_est": 427.6,
+      "end_audio_est": 432.68,
+      "duration_audio_est": 5.08,
+      "frame_filename": "beat_074.png",
+      "narration": "needs management before injury happens. Safety is the first rule.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: post-bath towel rocket in bathroom. Visual should match narration: \"needs management before injury happens. Safety is the first rule.\"."
+    },
+    {
+      "id": "beat_075",
+      "start_audio_est": 433.6,
+      "end_audio_est": 439.42,
+      "duration_audio_est": 5.82,
+      "frame_filename": "beat_075.png",
+      "narration": "Do not chase a zooming dog toward a road. Do not create a game that teaches them to run faster through dangerous",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: puppy evening witching-hour with tired owner. Visual should match narration: \"Do not chase a zooming dog toward a road. Do not create a game that teaches them to run faster through dangerous\"."
+    },
+    {
+      "id": "beat_076",
+      "start_audio_est": 439.42,
+      "end_audio_est": 445.3,
+      "duration_audio_est": 5.88,
+      "frame_filename": "beat_076.png",
+      "narration": "spaces. Block stairs if needed. Clear obstacles. Use a yard, hallway",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: energy release visual as glowing household rhythm, no labels. Visual should match narration: \"spaces. Block stairs if needed. Clear obstacles. Use a yard, hallway\"."
+    },
+    {
+      "id": "beat_077",
+      "start_audio_est": 445.3,
+      "end_audio_est": 450.76,
+      "duration_audio_est": 5.46,
+      "frame_filename": "beat_077.png",
+      "narration": "matting, or safe room when you know a trigger is coming. If post bath zoomies happen every time,",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: loose joyful sprint in safe yard. Visual should match narration: \"matting, or safe room when you know a trigger is coming. If post bath zoomies happen every time,\"."
+    },
+    {
+      "id": "beat_078",
+      "start_audio_est": 451.2,
+      "end_audio_est": 456.4,
+      "duration_audio_est": 5.2,
+      "frame_filename": "beat_078.png",
+      "narration": "plan them. Open the bathroom door only when the route is safe. Have towels down.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm redirect to toy before bedtime. Visual should match narration: \"plan them. Open the bathroom door only when the route is safe. Have towels down.\"."
+    },
+    {
+      "id": "beat_079",
+      "start_audio_est": 457.24,
+      "end_audio_est": 463.4,
+      "duration_audio_est": 6.16,
+      "frame_filename": "beat_079.png",
+      "narration": "Keep other pets and small children out of the collision zone. Let the dog discharge without turning the house into",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: quiet dog becoming sofa race-car blur. Visual should match narration: \"Keep other pets and small children out of the collision zone. Let the dog discharge without turning the house into\"."
+    },
+    {
+      "id": "beat_080",
+      "start_audio_est": 463.4,
+      "end_audio_est": 468.9,
+      "duration_audio_est": 5.5,
+      "frame_filename": "beat_080.png",
+      "narration": "a demolition derby. And if evening zoomies are constant, zoom out from the moment.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: post-bath towel rocket in bathroom. Visual should match narration: \"a demolition derby. And if evening zoomies are constant, zoom out from the moment.\"."
+    },
+    {
+      "id": "beat_081",
+      "start_audio_est": 469.62,
+      "end_audio_est": 474.44,
+      "duration_audio_est": 4.82,
+      "frame_filename": "beat_081.png",
+      "narration": "Did the dog get enough sniffing today? Not just steps. Did they get enough rest?",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: puppy evening witching-hour with tired owner. Visual should match narration: \"Did the dog get enough sniffing today? Not just steps. Did they get enough rest?\"."
+    },
+    {
+      "id": "beat_082",
+      "start_audio_est": 475.36,
+      "end_audio_est": 481.42,
+      "duration_audio_est": 6.06,
+      "frame_filename": "beat_082.png",
+      "narration": "Were they asked to behave for too long? Did they have legal outlets for chewing, chasing, tugging,",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: energy release visual as glowing household rhythm, no labels. Visual should match narration: \"Were they asked to behave for too long? Did they have legal outlets for chewing, chasing, tugging,\"."
+    },
+    {
+      "id": "beat_083",
+      "start_audio_est": 481.6,
+      "end_audio_est": 486.6,
+      "duration_audio_est": 5.0,
+      "frame_filename": "beat_083.png",
+      "narration": "searching, and thinking? A dog's nervous system does not only need exercise.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: loose joyful sprint in safe yard. Visual should match narration: \"searching, and thinking? A dog's nervous system does not only need exercise.\"."
+    },
+    {
+      "id": "beat_084",
+      "start_audio_est": 487.28,
+      "end_audio_est": 493.12,
+      "duration_audio_est": 5.84,
+      "frame_filename": "beat_084.png",
+      "narration": "It needs the right rhythm of activity and recovery. That rhythm is where many households accidentally",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm redirect to toy before bedtime. Visual should match narration: \"It needs the right rhythm of activity and recovery. That rhythm is where many households accidentally\"."
+    },
+    {
+      "id": "beat_085",
+      "start_audio_est": 493.12,
+      "end_audio_est": 498.36,
+      "duration_audio_est": 5.24,
+      "frame_filename": "beat_085.png",
+      "narration": "fail. They understimulate the dog all day, then overstimulate the dog at night.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: quiet dog becoming sofa race-car blur. Visual should match narration: \"fail. They understimulate the dog all day, then overstimulate the dog at night.\"."
+    },
+    {
+      "id": "beat_086",
+      "start_audio_est": 498.96,
+      "end_audio_est": 504.72,
+      "duration_audio_est": 5.76,
+      "frame_filename": "beat_086.png",
+      "narration": "Or they exercise the dog physically, but never give them mental decompression. Or they keep a",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: post-bath towel rocket in bathroom. Visual should match narration: \"Or they exercise the dog physically, but never give them mental decompression. Or they keep a\"."
+    },
+    {
+      "id": "beat_087",
+      "start_audio_est": 504.72,
+      "end_audio_est": 510.68,
+      "duration_audio_est": 5.96,
+      "frame_filename": "beat_087.png",
+      "narration": "puppy awake too long and mistake exhaustion for rebellion. Zoomies can be a clue that the day's rhythm",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: puppy evening witching-hour with tired owner. Visual should match narration: \"puppy awake too long and mistake exhaustion for rebellion. Zoomies can be a clue that the day's rhythm\"."
+    },
+    {
+      "id": "beat_088",
+      "start_audio_est": 510.68,
+      "end_audio_est": 515.8,
+      "duration_audio_est": 5.12,
+      "frame_filename": "beat_088.png",
+      "narration": "needs adjustment. Not always. Sometimes a zoomie is just a zoomie.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: energy release visual as glowing household rhythm, no labels. Visual should match narration: \"needs adjustment. Not always. Sometimes a zoomie is just a zoomie.\"."
+    },
+    {
+      "id": "beat_089",
+      "start_audio_est": 516.66,
+      "end_audio_est": 522.78,
+      "duration_audio_est": 6.12,
+      "frame_filename": "beat_089.png",
+      "narration": "But when it happens predictably, listen to the pattern. The funniest thing about zoomies is that humans often",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: loose joyful sprint in safe yard. Visual should match narration: \"But when it happens predictably, listen to the pattern. The funniest thing about zoomies is that humans often\"."
+    },
+    {
+      "id": "beat_090",
+      "start_audio_est": 522.78,
+      "end_audio_est": 527.64,
+      "duration_audio_est": 4.86,
+      "frame_filename": "beat_090.png",
+      "narration": "ask, how do I stop this? But the better question is, should I stop this?",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm redirect to toy before bedtime. Visual should match narration: \"ask, how do I stop this? But the better question is, should I stop this?\"."
+    },
+    {
+      "id": "beat_091",
+      "start_audio_est": 528.38,
+      "end_audio_est": 534.14,
+      "duration_audio_est": 5.76,
+      "frame_filename": "beat_091.png",
+      "narration": "If the dog is loose, safe, joyful, and able to settle, you may not need",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: quiet dog becoming sofa race-car blur. Visual should match narration: \"If the dog is loose, safe, joyful, and able to settle, you may not need\"."
+    },
+    {
+      "id": "beat_092",
+      "start_audio_est": 534.14,
+      "end_audio_est": 539.86,
+      "duration_audio_est": 5.72,
+      "frame_filename": "beat_092.png",
+      "narration": "to stop it. You may just need to protect the space. Movement is part of being a dog.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: post-bath towel rocket in bathroom. Visual should match narration: \"to stop it. You may just need to protect the space. Movement is part of being a dog.\"."
+    },
+    {
+      "id": "beat_093",
+      "start_audio_est": 540.68,
+      "end_audio_est": 546.04,
+      "duration_audio_est": 5.36,
+      "frame_filename": "beat_093.png",
+      "narration": "Joyful physical release is not a behavior problem. It is a living body doing living body things.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: puppy evening witching-hour with tired owner. Visual should match narration: \"Joyful physical release is not a behavior problem. It is a living body doing living body things.\"."
+    },
+    {
+      "id": "beat_094",
+      "start_audio_est": 546.92,
+      "end_audio_est": 552.18,
+      "duration_audio_est": 5.26,
+      "frame_filename": "beat_094.png",
+      "narration": "But if the zoomies are dangerous, panicked, obsessive, or impossible to interrupt over time,",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: energy release visual as glowing household rhythm, no labels. Visual should match narration: \"But if the zoomies are dangerous, panicked, obsessive, or impossible to interrupt over time,\"."
+    },
+    {
+      "id": "beat_095",
+      "start_audio_est": 552.76,
+      "end_audio_est": 557.98,
+      "duration_audio_est": 5.22,
+      "frame_filename": "beat_095.png",
+      "narration": "then the goal is not to punish the running. The goal is to understand the pressure underneath it.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: loose joyful sprint in safe yard. Visual should match narration: \"then the goal is not to punish the running. The goal is to understand the pressure underneath it.\"."
+    },
+    {
+      "id": "beat_096",
+      "start_audio_est": 558.68,
+      "end_audio_est": 564.38,
+      "duration_audio_est": 5.7,
+      "frame_filename": "beat_096.png",
+      "narration": "Too much energy, too much stress, too little sleep, too much restraint, too",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm redirect to toy before bedtime. Visual should match narration: \"Too much energy, too much stress, too little sleep, too much restraint, too\"."
+    },
+    {
+      "id": "beat_097",
+      "start_audio_est": 564.38,
+      "end_audio_est": 569.24,
+      "duration_audio_est": 4.86,
+      "frame_filename": "beat_097.png",
+      "narration": "little safe outlet. Too many scary events. The running is the smoke.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: quiet dog becoming sofa race-car blur. Visual should match narration: \"little safe outlet. Too many scary events. The running is the smoke.\"."
+    },
+    {
+      "id": "beat_098",
+      "start_audio_est": 570.0,
+      "end_audio_est": 575.8,
+      "duration_audio_est": 5.8,
+      "frame_filename": "beat_098.png",
+      "narration": "Find the fire. A useful owner trick is to keep a zoomie diary for one week, not a dramatic one,",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: post-bath towel rocket in bathroom. Visual should match narration: \"Find the fire. A useful owner trick is to keep a zoomie diary for one week, not a dramatic one,\"."
+    },
+    {
+      "id": "beat_099",
+      "start_audio_est": 576.08,
+      "end_audio_est": 581.24,
+      "duration_audio_est": 5.16,
+      "frame_filename": "beat_099.png",
+      "narration": "just a quick pattern check. What time did it happen? What happened 10 minutes before?",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: puppy evening witching-hour with tired owner. Visual should match narration: \"just a quick pattern check. What time did it happen? What happened 10 minutes before?\"."
+    },
+    {
+      "id": "beat_100",
+      "start_audio_est": 582.18,
+      "end_audio_est": 588.1,
+      "duration_audio_est": 5.92,
+      "frame_filename": "beat_100.png",
+      "narration": "Was the dog tired, excited, wet, confined, frustrated, or overstimulated?",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: energy release visual as glowing household rhythm, no labels. Visual should match narration: \"Was the dog tired, excited, wet, confined, frustrated, or overstimulated?\"."
+    },
+    {
+      "id": "beat_101",
+      "start_audio_est": 588.9,
+      "end_audio_est": 594.64,
+      "duration_audio_est": 5.74,
+      "frame_filename": "beat_101.png",
+      "narration": "Did they settle afterward? Did the movement look loose or tense? After a few days,",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: loose joyful sprint in safe yard. Visual should match narration: \"Did they settle afterward? Did the movement look loose or tense? After a few days,\"."
+    },
+    {
+      "id": "beat_102",
+      "start_audio_est": 594.98,
+      "end_audio_est": 601.36,
+      "duration_audio_est": 6.38,
+      "frame_filename": "beat_102.png",
+      "narration": "the behavior that looked random often becomes obvious. Maybe every zoomie happens after the evening walk because",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm redirect to toy before bedtime. Visual should match narration: \"the behavior that looked random often becomes obvious. Maybe every zoomie happens after the evening walk because\"."
+    },
+    {
+      "id": "beat_103",
+      "start_audio_est": 601.36,
+      "end_audio_est": 607.12,
+      "duration_audio_est": 5.76,
+      "frame_filename": "beat_103.png",
+      "narration": "the walk is too exciting and ends abruptly. Maybe it happens before bed because the puppy has been awake",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: quiet dog becoming sofa race-car blur. Visual should match narration: \"the walk is too exciting and ends abruptly. Maybe it happens before bed because the puppy has been awake\"."
+    },
+    {
+      "id": "beat_104",
+      "start_audio_est": 607.12,
+      "end_audio_est": 612.16,
+      "duration_audio_est": 5.04,
+      "frame_filename": "beat_104.png",
+      "narration": "too long. Maybe it happens after baths because the bathroom routine is stressful.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: post-bath towel rocket in bathroom. Visual should match narration: \"too long. Maybe it happens after baths because the bathroom routine is stressful.\"."
+    },
+    {
+      "id": "beat_105",
+      "start_audio_est": 612.92,
+      "end_audio_est": 618.22,
+      "duration_audio_est": 5.3,
+      "frame_filename": "beat_105.png",
+      "narration": "Maybe it happens after being alone because the dog needs decompression before expecting calm.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: puppy evening witching-hour with tired owner. Visual should match narration: \"Maybe it happens after being alone because the dog needs decompression before expecting calm.\"."
+    },
+    {
+      "id": "beat_106",
+      "start_audio_est": 619.06,
+      "end_audio_est": 624.92,
+      "duration_audio_est": 5.86,
+      "frame_filename": "beat_106.png",
+      "narration": "That diary turns chaos into a training plan. You do not have to guess whether your dog needs more",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: energy release visual as glowing household rhythm, no labels. Visual should match narration: \"That diary turns chaos into a training plan. You do not have to guess whether your dog needs more\"."
+    },
+    {
+      "id": "beat_107",
+      "start_audio_est": 624.92,
+      "end_audio_est": 630.82,
+      "duration_audio_est": 5.9,
+      "frame_filename": "beat_107.png",
+      "narration": "exercise, less stimulation, more sleep, or a safer outlet. The pattern starts",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: loose joyful sprint in safe yard. Visual should match narration: \"exercise, less stimulation, more sleep, or a safer outlet. The pattern starts\"."
+    },
+    {
+      "id": "beat_108",
+      "start_audio_est": 630.82,
+      "end_audio_est": 636.64,
+      "duration_audio_est": 5.82,
+      "frame_filename": "beat_108.png",
+      "narration": "telling you. So the next time your dog launches across the room and performs three illegal turns around",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm redirect to toy before bedtime. Visual should match narration: \"telling you. So the next time your dog launches across the room and performs three illegal turns around\"."
+    },
+    {
+      "id": "beat_109",
+      "start_audio_est": 636.64,
+      "end_audio_est": 642.4,
+      "duration_audio_est": 5.76,
+      "frame_filename": "beat_109.png",
+      "narration": "the coffee table, do not just ask, why are you insane? Ask what came before.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: quiet dog becoming sofa race-car blur. Visual should match narration: \"the coffee table, do not just ask, why are you insane? Ask what came before.\"."
+    },
+    {
+      "id": "beat_110",
+      "start_audio_est": 643.08,
+      "end_audio_est": 648.3,
+      "duration_audio_est": 5.22,
+      "frame_filename": "beat_110.png",
+      "narration": "Were they excited, released, stressed, over tired, joyful, unsafe?",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: post-bath towel rocket in bathroom. Visual should match narration: \"Were they excited, released, stressed, over tired, joyful, unsafe?\"."
+    },
+    {
+      "id": "beat_111",
+      "start_audio_est": 649.06,
+      "end_audio_est": 653.84,
+      "duration_audio_est": 4.78,
+      "frame_filename": "beat_111.png",
+      "narration": "Because zoomies are not meaningless chaos. They are a message from the nervous system.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: puppy evening witching-hour with tired owner. Visual should match narration: \"Because zoomies are not meaningless chaos. They are a message from the nervous system.\"."
+    },
+    {
+      "id": "beat_112",
+      "start_audio_est": 654.56,
+      "end_audio_est": 659.64,
+      "duration_audio_est": 5.08,
+      "frame_filename": "beat_112.png",
+      "narration": "Most of the time, that message is simple. I had too much in me. Now I need to run it out.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: energy release visual as glowing household rhythm, no labels. Visual should match narration: \"Most of the time, that message is simple. I had too much in me. Now I need to run it out.\"."
+    },
+    {
+      "id": "beat_113",
+      "start_audio_est": 660.34,
+      "end_audio_est": 665.82,
+      "duration_audio_est": 5.48,
+      "frame_filename": "beat_113.png",
+      "narration": "And in the next video, we are going to look at another behavior humans read wrong all the time.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: loose joyful sprint in safe yard. Visual should match narration: \"And in the next video, we are going to look at another behavior humans read wrong all the time.\"."
+    },
+    {
+      "id": "beat_114",
+      "start_audio_est": 666.62,
+      "end_audio_est": 671.9,
+      "duration_audio_est": 5.28,
+      "frame_filename": "beat_114.png",
+      "narration": "The guilty look. That face your dog gives you when there is a chewed shoe, a tipped bin,",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: calm redirect to toy before bedtime. Visual should match narration: \"The guilty look. That face your dog gives you when there is a chewed shoe, a tipped bin,\"."
+    },
+    {
+      "id": "beat_115",
+      "start_audio_est": 672.28,
+      "end_audio_est": 677.72,
+      "duration_audio_est": 5.44,
+      "frame_filename": "beat_115.png",
+      "narration": "or a shredded tissue on the floor. Because just like zoomies are not always random madness,",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: quiet dog becoming sofa race-car blur. Visual should match narration: \"or a shredded tissue on the floor. Because just like zoomies are not always random madness,\"."
+    },
+    {
+      "id": "beat_116",
+      "start_audio_est": 678.46,
+      "end_audio_est": 684.22,
+      "duration_audio_est": 5.76,
+      "frame_filename": "beat_116.png",
+      "narration": "the guilty look is not always guilt. So next, we are going to look at what your dog may actually",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: post-bath towel rocket in bathroom. Visual should match narration: \"the guilty look is not always guilt. So next, we are going to look at what your dog may actually\"."
+    },
+    {
+      "id": "beat_117",
+      "start_audio_est": 684.22,
+      "end_audio_est": 689.5,
+      "duration_audio_est": 5.28,
+      "frame_filename": "beat_117.png",
+      "narration": "be saying when they look guilty and why that face can trick owners into the wrong training response.",
+      "image_prompt": "Premium original hand-drawn educational YouTube explainer frame, 16:9 landscape. Warm cream paper texture, confident charcoal linework, soft watercolor grain, golden dog/beagle, terracotta/coral owner sweater, no readable generated text/logos/watermarks/arrows. Scene: puppy evening witching-hour with tired owner. Visual should match narration: \"be saying when they look guilty and why that face can trick owners into the wrong training response.\"."
+    }
+  ]
+}

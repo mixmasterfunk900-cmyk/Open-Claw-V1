@@ -1,0 +1,19 @@
+{
+  "sop_version": "2.0+v5_enforcement_smoke60",
+  "channel": "Laura & John's Money Gap",
+  "project_root": "/root/.openclaw/workspace/youtube-automation-finance",
+  "video_slug": "sop-enforcement-smoke-test",
+  "video_dir": "/root/.openclaw/workspace/youtube-automation-finance/videos/sop-enforcement-smoke-test",
+  "created_at": "2026-05-21T17:59:17.816372+00:00",
+  "topic_input": "SOP enforcement smoke test",
+  "topic_discovery_used": false,
+  "topic_ledger_checked": true,
+  "image_model": "OpenAI GPT image generation via OpenClaw",
+  "tts_tool": "kokoro",
+  "human_checkpoints": 0,
+  "assumptions": [
+    "This is a 60-second smoke test using --profile smoke60, not a full upload candidate."
+  ],
+  "phase_status": {},
+  "qa_gates": {}
+}

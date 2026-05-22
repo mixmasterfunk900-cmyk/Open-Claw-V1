@@ -1,0 +1,226 @@
+{
+  "policy": "Finance V5 full run. Every final frame asset is sourced from OpenAI/ChatGPT image generation. No local generated doodles/placeholders are used as final frames.",
+  "unique_openai_frame_count": 20,
+  "items": [
+    {
+      "index": 1,
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_001.png",
+      "source_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure/frames/frame_01_button_chain.png",
+      "provider": "openai",
+      "model": "approved_v5_sample_openai",
+      "description": "button chain / minimum payment trap",
+      "sha256": "ed59c5849b1c8d840a60013242f45a76d2821cb7ab56eacd70c81f0e2d9e9853",
+      "fallback_used": false,
+      "local_placeholder": false
+    },
+    {
+      "index": 2,
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_002.png",
+      "source_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure/frames/frame_02_groceries_subscription.png",
+      "provider": "openai",
+      "model": "approved_v5_sample_openai",
+      "description": "groceries become subscription",
+      "sha256": "6b91f1032c00adf4e7630517256b2378a853265c7c13184d101751a78025f86a",
+      "fallback_used": false,
+      "local_placeholder": false
+    },
+    {
+      "index": 3,
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_003.png",
+      "source_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure/frames/frame_03_laura_laptop_credit.png",
+      "provider": "openai",
+      "model": "approved_v5_sample_openai",
+      "description": "Laura credit protection question",
+      "sha256": "401d2586929485bfa2f895c2c86108e1b2bb36c9e8e39ce3e9ed1c7bbd0c259b",
+      "fallback_used": false,
+      "local_placeholder": false
+    },
+    {
+      "index": 4,
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_004.png",
+      "source_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure/frames/frame_04_late_vs_math.png",
+      "provider": "openai",
+      "model": "approved_v5_sample_openai",
+      "description": "late versus math",
+      "sha256": "015605529223ea6ad28374fd6e5ffd2e1602fa29f53fcba9996200afa990513b",
+      "fallback_used": false,
+      "local_placeholder": false
+    },
+    {
+      "index": 5,
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_005.png",
+      "source_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure/frames/frame_05_floor_not_plan.png",
+      "provider": "openai",
+      "model": "approved_v5_sample_openai",
+      "description": "floor not plan",
+      "sha256": "0949b4ae647cf440acc2ad7b3e04cb24bd7eb56f7c6cc749f4986ca36a1bccf3",
+      "fallback_used": false,
+      "local_placeholder": false
+    },
+    {
+      "index": 6,
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_006.png",
+      "source_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure/frames/frame_06_two_futures.png",
+      "provider": "openai",
+      "model": "approved_v5_sample_openai",
+      "description": "two different futures",
+      "sha256": "65021ec355b8bd0a6438a30950de68f5a6c2eca2fafa644adb8a4588a7b0e916",
+      "fallback_used": false,
+      "local_placeholder": false
+    },
+    {
+      "index": 7,
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_007.png",
+      "source_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure/frames/frame_07_money_gap.png",
+      "provider": "openai",
+      "model": "approved_v5_sample_openai",
+      "description": "money gap",
+      "sha256": "a54f438ab092d5c5338b2941ab1a45a1a4d1fdbdcef04e66ae0f792e1693d2e5",
+      "fallback_used": false,
+      "local_placeholder": false
+    },
+    {
+      "index": 8,
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_008.png",
+      "source_path": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure/frames/frame_08_apr_bank_rent.png",
+      "provider": "openai",
+      "model": "approved_v5_sample_openai",
+      "description": "APR bank rent",
+      "sha256": "17a1cf024083ce078eb25747bed200064847a5221f49bd8cfe9e8f6d6f8e339b",
+      "fallback_used": false,
+      "local_placeholder": false
+    },
+    {
+      "index": 9,
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_009.png",
+      "source_path": "/root/.openclaw/media/tool-image-generation/v5_full_extra_set1---ecfd7625-2460-4bad-a858-cf20a2eb09aa.png",
+      "provider": "openai",
+      "model": "openai/gpt-image-2",
+      "description": "bill becomes loan no finish line",
+      "sha256": "53cc9d9dced59754fd1faf1881b754bbdb25c7c5bf02adf5c0e3231f4b2dc273",
+      "fallback_used": false,
+      "local_placeholder": false
+    },
+    {
+      "index": 10,
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_010.png",
+      "source_path": "/root/.openclaw/media/tool-image-generation/v5_full_extra_set1---239237a3-fcf2-4501-a7a1-a532e5001117.png",
+      "provider": "openai",
+      "model": "openai/gpt-image-2",
+      "description": "interest swallows payment",
+      "sha256": "bde4650acf4f8215ca3b5f714a6cfe832677e8838e45d9768ff5c254a8c6b87f",
+      "fallback_used": false,
+      "local_placeholder": false
+    },
+    {
+      "index": 11,
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_011.png",
+      "source_path": "/root/.openclaw/media/tool-image-generation/v5_full_extra_set1---d3d652ca-3713-4b51-9f74-801f96dfed49.png",
+      "provider": "openai",
+      "model": "openai/gpt-image-2",
+      "description": "phone purchase buttons everywhere",
+      "sha256": "856e80424a74bb1fc5fd7b9f41eca1d11cc496fd71f72ce68444cb7ba0cfc169",
+      "fallback_used": false,
+      "local_placeholder": false
+    },
+    {
+      "index": 12,
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_012.png",
+      "source_path": "/root/.openclaw/media/tool-image-generation/v5_full_extra_set1---dd5dbde7-eb42-45dd-a01b-70f45e132f1f.png",
+      "provider": "openai",
+      "model": "openai/gpt-image-2",
+      "description": "lifeboat becomes house",
+      "sha256": "620402ddc0e43bfe1c599b09c6adf4b70ad5e9d5abf02cc009f95692a42418e9",
+      "fallback_used": false,
+      "local_placeholder": false
+    },
+    {
+      "index": 13,
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_013.png",
+      "source_path": "/root/.openclaw/media/tool-image-generation/v5_full_extra_set2---43052087-fbab-4c17-8b0c-ce5f0d5bf1ee.png",
+      "provider": "openai",
+      "model": "openai/gpt-image-2",
+      "description": "$5000 at 24 APR graph",
+      "sha256": "7a5bda539c81243bb18ffe3c246d442a47c86ea0427d8dc69863529753b36e81",
+      "fallback_used": false,
+      "local_placeholder": false
+    },
+    {
+      "index": 14,
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_014.png",
+      "source_path": "/root/.openclaw/media/tool-image-generation/v5_full_extra_set2---66986e28-7574-432b-bec8-a500d2e65566.png",
+      "provider": "openai",
+      "model": "openai/gpt-image-2",
+      "description": "spoon vs shovel snowbank",
+      "sha256": "652f7d377b56d770418eeafa2dab89e29bfda1d794e396b51b43d35a3c3ae618",
+      "fallback_used": false,
+      "local_placeholder": false
+    },
+    {
+      "index": 15,
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_015.png",
+      "source_path": "/root/.openclaw/media/tool-image-generation/v5_full_extra_set2---1cbe1527-e4ee-4cc5-bdb6-6577be276dff.png",
+      "provider": "openai",
+      "model": "openai/gpt-image-2",
+      "description": "balance transfer snowplow caution",
+      "sha256": "1ab33e804b7def282133b104a32b9ee08f398199dc6a96377301b1954080cbbd",
+      "fallback_used": false,
+      "local_placeholder": false
+    },
+    {
+      "index": 16,
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_016.png",
+      "source_path": "/root/.openclaw/media/tool-image-generation/v5_full_extra_set2---e7bbac1d-208e-4e80-a455-89591511fe94.png",
+      "provider": "openai",
+      "model": "openai/gpt-image-2",
+      "description": "four step payoff checklist",
+      "sha256": "4169e2c173ebfeefb42da354d78d822ed691d7a5db0ae519b32b5489b8e43ac0",
+      "fallback_used": false,
+      "local_placeholder": false
+    },
+    {
+      "index": 17,
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_017.png",
+      "source_path": "/root/.openclaw/media/tool-image-generation/v5_full_extra_set3---2d9fe5f9-33e2-4ff7-9662-e5d2eaf50c3a.png",
+      "provider": "openai",
+      "model": "openai/gpt-image-2",
+      "description": "avalanche vs snowball",
+      "sha256": "02bf2765fff5b90b6618a1bb62424598081c9ce1e5a492cbaa895160e88b4df9",
+      "fallback_used": false,
+      "local_placeholder": false
+    },
+    {
+      "index": 18,
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_018.png",
+      "source_path": "/root/.openclaw/media/tool-image-generation/v5_full_extra_set3---377c0c85-9b30-4596-bdff-af14a030a8e7.png",
+      "provider": "openai",
+      "model": "openai/gpt-image-2",
+      "description": "utilization gauge rewards vs interest",
+      "sha256": "fb393418f46db023bf8f48ee8024f55e854c4912bb021f7cf06fe8d74ef921c1",
+      "fallback_used": false,
+      "local_placeholder": false
+    },
+    {
+      "index": 19,
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_019.png",
+      "source_path": "/root/.openclaw/media/tool-image-generation/v5_full_extra_set3---d546ce01-99e7-4093-a87c-1ff32f697899.png",
+      "provider": "openai",
+      "model": "openai/gpt-image-2",
+      "description": "debt smoke alarm help",
+      "sha256": "f89b7e2fd9063885f5d1f1cf57b4a33d15ec04b7cabf6669545e3879963a9a7e",
+      "fallback_used": false,
+      "local_placeholder": false
+    },
+    {
+      "index": 20,
+      "path": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_020.png",
+      "source_path": "/root/.openclaw/media/tool-image-generation/v5_full_extra_set3---3bda8454-d34d-4a0b-a492-c30fb3d3cf1f.png",
+      "provider": "openai",
+      "model": "openai/gpt-image-2",
+      "description": "warning label future paycheck",
+      "sha256": "fa8aab4a050697a7a727ac4eba319ab7bc676664b4ae9b9522d296059158a520",
+      "fallback_used": false,
+      "local_placeholder": false
+    }
+  ]
+}

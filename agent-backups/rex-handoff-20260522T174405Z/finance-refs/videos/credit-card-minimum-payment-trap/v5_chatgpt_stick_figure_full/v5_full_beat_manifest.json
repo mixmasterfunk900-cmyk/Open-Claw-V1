@@ -1,0 +1,205 @@
+{
+  "audio_duration_seconds": 676.475,
+  "beats": [
+    {
+      "beat_id": 1,
+      "start": 0.0,
+      "end": 34.975,
+      "duration": 34.975,
+      "speaker": "JOHN",
+      "text": "Laura, the most expensive button in modern money is not buy now. It is minimum payment. It looks polite. It looks responsible. But when a card balance sits behind it at twenty-plus percent interest, that button can turn last month's groceries into a subscription you keep paying long after the food is gone.",
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_001.png",
+      "visual_description": "button chain / minimum payment trap"
+    },
+    {
+      "beat_id": 2,
+      "start": 35.125,
+      "end": 46.275,
+      "duration": 11.149999999999999,
+      "speaker": "LAURA",
+      "text": "That sounds dramatic. I thought minimum payment meant you were doing the right thing and protecting your credit.",
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_002.png",
+      "visual_description": "groceries become subscription"
+    },
+    {
+      "beat_id": 3,
+      "start": 46.324999999999996,
+      "end": 83.69999999999999,
+      "duration": 37.37499999999999,
+      "speaker": "JOHN",
+      "text": "It protects you from being late. It does not protect you from the math. Today we are going to separate those two ideas. We will show why the minimum is a floor, not a plan; how interest gets ahead of good intentions; and why two people with the same balance can live totally different futures depending on the size of the payment they choose.",
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_003.png",
+      "visual_description": "Laura credit protection question"
+    },
+    {
+      "beat_id": 4,
+      "start": 83.85,
+      "end": 131.95,
+      "duration": 48.099999999999994,
+      "speaker": "JOHN",
+      "text": "Here is the money gap in one picture. The New York Fed tracks more than a trillion dollars of credit card balances across American households, while market trackers show new-card offers around the low-to-mid twenties for annual percentage rates. The Philadelphia Fed says borrowing costs remain historically high for people who carry balances. That means the penalty for moving slowly is not abstract. It is monthly rent paid to the bank.",
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_004.png",
+      "visual_description": "late versus math"
+    },
+    {
+      "beat_id": 5,
+      "start": 132.54999999999998,
+      "end": 144.1,
+      "duration": 11.550000000000011,
+      "speaker": "LAURA",
+      "text": "So the danger is not the card existing. It is carrying the balance slowly when the interest rate is that high.",
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_005.png",
+      "visual_description": "floor not plan"
+    },
+    {
+      "beat_id": 6,
+      "start": 144.15,
+      "end": 189.97500000000002,
+      "duration": 45.82500000000002,
+      "speaker": "JOHN",
+      "text": "Exactly. A credit card can be a payment tool. The trap begins when the bill becomes a loan and the loan has no finish line. Minimum payments are usually calculated to keep the account current, not to get you free quickly. In the early months, a big part of that small payment is swallowed by interest before it touches the principal. You feel movement because money left your checking account. But the balance barely flinched.",
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_006.png",
+      "visual_description": "two different futures"
+    },
+    {
+      "beat_id": 7,
+      "start": 190.12500000000003,
+      "end": 242.90000000000003,
+      "duration": 52.775000000000006,
+      "speaker": "JOHN",
+      "text": "This is where Laura and I see different worlds. When I was younger, a normal mistake could still be expensive, but the internet did not put a purchase button in every quiet moment. Today, a phone can offer clothes, food delivery, travel points, emergency vet bills, and a balance transfer ad before breakfast. The old lecture was do not buy what you cannot afford. The new lecture has to be more precise: do not let yesterday's emergency become tomorrow's default monthly bill.",
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_007.png",
+      "visual_description": "money gap"
+    },
+    {
+      "beat_id": 8,
+      "start": 243.50000000000003,
+      "end": 254.57500000000002,
+      "duration": 11.074999999999989,
+      "speaker": "LAURA",
+      "text": "But what if someone really cannot pay more right now? Telling them to just pay it off faster can sound useless.",
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_008.png",
+      "visual_description": "APR bank rent"
+    },
+    {
+      "beat_id": 9,
+      "start": 254.62500000000003,
+      "end": 301.45000000000005,
+      "duration": 46.82500000000002,
+      "speaker": "JOHN",
+      "text": "That is fair. This is not a shame video. Minimum payments can be a lifeboat during a hard month. The problem is when the lifeboat becomes the house. If money is tight, the first win may be stopping the balance from growing: no new charges on that card, autopay at least the minimum, and a written number for the real extra payment, even if it starts tiny. A plan that adds twenty dollars is better than a wish that adds zero.",
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_009.png",
+      "visual_description": "bill becomes loan no finish line"
+    },
+    {
+      "beat_id": 10,
+      "start": 301.6,
+      "end": 345.925,
+      "duration": 44.32499999999999,
+      "speaker": "JOHN",
+      "text": "Think about a five-thousand-dollar balance at roughly twenty-four percent APR. If you only make a tiny payment that mostly follows the issuer's minimum, the payoff path can stretch for years and the interest can become a second purchase. Raise the payment, and the graph changes shape. Not because the bank became kind, but because principal finally gets attacked faster than interest can rebuild it.",
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_010.png",
+      "visual_description": "interest swallows payment"
+    },
+    {
+      "beat_id": 11,
+      "start": 346.52500000000003,
+      "end": 392.1,
+      "duration": 45.57499999999999,
+      "speaker": "JOHN",
+      "text": "The best image is a snowball in reverse. Minimum payment is a spoon against a snowbank. A focused payment is a shovel. A balance transfer can be a temporary snowplow, but only if the transfer fee, deadline, and behavior change all make sense. Consolidation is not magic. Lower APR helps, but the habit that created the balance has to be locked out or the old card simply refills.",
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_011.png",
+      "visual_description": "phone purchase buttons everywhere"
+    },
+    {
+      "beat_id": 12,
+      "start": 392.25,
+      "end": 401.8,
+      "duration": 9.550000000000011,
+      "speaker": "LAURA",
+      "text": "So what would you actually do this week, without pretending everyone has a giant surplus?",
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_012.png",
+      "visual_description": "lifeboat becomes house"
+    },
+    {
+      "beat_id": 13,
+      "start": 402.3,
+      "end": 453.95,
+      "duration": 51.64999999999998,
+      "speaker": "JOHN",
+      "text": "Four steps. First, write the real balance, APR, minimum, and due date in one place. Second, freeze new spending on that card while it is in payoff mode. Third, choose a fixed payment above the minimum and keep it fixed even as the minimum falls. That fixed-payment trick is powerful because every month more of the same payment goes to principal. Fourth, if credit and discipline allow, compare a balance transfer or personal loan only after checking fees and deadlines.",
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_013.png",
+      "visual_description": "$5000 at 24 APR graph"
+    },
+    {
+      "beat_id": 14,
+      "start": 454.09999999999997,
+      "end": 498.47499999999997,
+      "duration": 44.375,
+      "speaker": "JOHN",
+      "text": "Then pick a method. Avalanche means extra money goes to the highest APR first, which is mathematically strongest. Snowball means extra money goes to the smallest balance first, which can be emotionally strongest. The right method is the one you will actually finish. But never let the minimum-payment number choose your strategy for you. That number works for the lender's system, not your freedom.",
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_014.png",
+      "visual_description": "spoon vs shovel snowbank"
+    },
+    {
+      "beat_id": 15,
+      "start": 498.62499999999994,
+      "end": 535.525,
+      "duration": 36.900000000000034,
+      "speaker": "JOHN",
+      "text": "There is also a credit-score wrinkle. Paying on time matters. Utilization matters too: a high balance compared with the card limit can weigh on your score. Paying down the balance can help that pressure. But chasing points while paying interest is usually losing the game. Rewards are confetti. Interest is the invoice.",
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_015.png",
+      "visual_description": "balance transfer snowplow caution"
+    },
+    {
+      "beat_id": 16,
+      "start": 536.125,
+      "end": 544.425,
+      "duration": 8.299999999999955,
+      "speaker": "LAURA",
+      "text": "What about people who use one card to pay another or keep opening new ones?",
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_016.png",
+      "visual_description": "four step payoff checklist"
+    },
+    {
+      "beat_id": 17,
+      "start": 544.4749999999999,
+      "end": 592.0749999999999,
+      "duration": 47.60000000000002,
+      "speaker": "JOHN",
+      "text": "That is the smoke alarm. If one debt needs another debt to breathe, pause and get help early. A nonprofit credit counselor, hardship plan, or direct call to the issuer can be less glamorous than a hack video, but it can stop the spiral. And if the balance came from a true emergency, the follow-up goal is not guilt. It is building a small emergency buffer so the next surprise does not land on twenty-four percent interest.",
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_017.png",
+      "visual_description": "avalanche vs snowball"
+    },
+    {
+      "beat_id": 18,
+      "start": 592.675,
+      "end": 627.8,
+      "duration": 35.125,
+      "speaker": "JOHN",
+      "text": "Here is the reframe I want you to keep. The minimum payment is not a moral grade. It is a warning label. It says you have kept the account alive, but the debt is still renting space in your future paycheck. Every dollar above the minimum is not just a dollar. It is a little eviction notice for future interest.",
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_018.png",
+      "visual_description": "utilization gauge rewards vs interest"
+    },
+    {
+      "beat_id": 19,
+      "start": 628.4,
+      "end": 638.4,
+      "duration": 10.0,
+      "speaker": "LAURA",
+      "text": "So the goal is not to fear credit cards. It is to stop letting the card write the timeline.",
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_019.png",
+      "visual_description": "debt smoke alarm help"
+    },
+    {
+      "beat_id": 20,
+      "start": 638.4499999999999,
+      "end": 676.475,
+      "duration": 38.02500000000009,
+      "speaker": "JOHN",
+      "text": "Exactly. If this helped, write down one card, one APR, and one fixed payment before you watch the next video. Not personalized financial advice, just a clean starting line. Because the quietest money gap is the one that looks like only twenty-five dollars due today, while tomorrow is quietly billed for the rest.",
+      "frame": "/root/.openclaw/workspace/youtube-automation-finance/videos/credit-card-minimum-payment-trap/v5_chatgpt_stick_figure_full/frames/frame_020.png",
+      "visual_description": "warning label future paycheck"
+    }
+  ]
+}

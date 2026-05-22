@@ -1,0 +1,14 @@
+{
+  "john_voice": "am_michael",
+  "laura_voice": "af_bella",
+  "engine": "kokoro",
+  "rejected_not_used": [
+    "af_heart"
+  ],
+  "reason": "Masala selected this corrected pair from Finance V5 voice auditions.",
+  "john_voice_status": "approved_by_masala_2026-05-21",
+  "john_voice_role": "older male / John",
+  "laura_voice_status": "approved_by_masala_2026-05-21_corrected_from_af_nova",
+  "notes": "Finance V5 approved voice pair from auditions: John am_michael, Laura af_bella. Masala corrected earlier af_nova selection.",
+  "laura_voice_role": "younger woman / Laura"
+}

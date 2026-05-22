@@ -1,0 +1,570 @@
+{
+  "project": "the-experiment-where-ordinary-people-obeyed-a-stranger",
+  "generated_at_utc": "2026-05-20T12:03:28Z",
+  "range": "beat_001 through beat_043",
+  "output_dir": "full_video_prep/approved_frames_clean_regen/",
+  "count": 43,
+  "missing": [],
+  "requirements": "fresh single full-frame 16:9 documentary-style PNGs; no collage/split/panels/text/logos; no cropped heads/headless bodies; complete visible subjects; historically grounded Milgram/Yale/1960s tone when relevant",
+  "entries": [
+    {
+      "beat": "beat_001",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_001.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_001---dc86457d-71a6-4687-bd93-118d2951cd89.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "de516559ce0cc7e193922c8ed93ed6afc8ad2b9da99a097ff405a720cc8db320"
+    },
+    {
+      "beat": "beat_002",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_002.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_002---91725e1c-431f-42f1-a501-c83c140f2777.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "3c080818f6afaaac51692825e0628754f322fd202780168b9f282be0f8533a88"
+    },
+    {
+      "beat": "beat_003",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_003.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_003---69b3f9e4-a4bf-4e3a-af9d-0d13b9a1d691.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "741c0178636f021310497b6439a76ba9ae6ece0b8e25f5c0711de664301cfbc9"
+    },
+    {
+      "beat": "beat_004",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_004.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_004---6ce3a6f7-7527-486d-9e81-7a061937b403.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "c329214c19c3f106b0a0c3280d0d287818119b6b304da744652119c17cecd30c"
+    },
+    {
+      "beat": "beat_005",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_005.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_005---c6cf8870-5244-4bf5-8dfa-8067362fe872.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "803d04a9c431f639dbcd420e171a66ec5906e9eec57913f51d5d253563dba93f"
+    },
+    {
+      "beat": "beat_006",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_006.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_006---614c0dc6-cb15-423d-8664-edf7389b4b00.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "70ede82c54000259a0fe0e4b8c07e69c884bec721d1e878eab44c7824c4ee7f9"
+    },
+    {
+      "beat": "beat_007",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_007.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_007---d3c87823-ac77-4e10-b354-9cca0a3279c7.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "ac4db5dfeac5a985528630d0c8b8d97e4e42afd167806437174cc519c53ac210"
+    },
+    {
+      "beat": "beat_008",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_008.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_008---57eb0879-6906-4fb1-a7b3-fc6a65055f53.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "42b21d9ed8749ee81d7e796991a21c4a35f5824d1d49d93457f2f0bb0bea92a4"
+    },
+    {
+      "beat": "beat_009",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_009.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_009---45d25cc7-6a76-42f3-9fef-4496717ca057.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "39bc4aeece807d126ffe9f2961a9f42951bfd64b26998249d875bf29322800d3"
+    },
+    {
+      "beat": "beat_010",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_010.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_010---ec20f500-4466-4b4a-894e-e81dffec1028.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "72ec5f8575e90248890070c148a63f5d67623b336a1acce47f1265e051d04f59"
+    },
+    {
+      "beat": "beat_011",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_011.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_011---060e33ab-d56d-49ac-8013-990e300791a7.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "cc056fe2f0e13756a92a3c5dc080a01612784a56eaa47553f61bf327f91fb064"
+    },
+    {
+      "beat": "beat_012",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_012.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_012---3687eb8c-c33c-4d6b-a414-7e35a52094a0.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "4271d345873696e829db7d9ee53652ce04ee7b5b72ddca7cbbac6d883bd701e0"
+    },
+    {
+      "beat": "beat_013",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_013.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_013---3cdff42a-9c7e-46eb-8ee6-ca69dca4ab47.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "d40a8bfe8b2b1970ee6e5cf281d0c4fae0a9479494d06153df6b153fc3a43f47"
+    },
+    {
+      "beat": "beat_014",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_014.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_014---11122d5f-d48e-41e5-83c9-083ee7c3ff3f.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "46db11383cdbfa480dc24ed81a6c60c614bb0c8eb50102ed5a26846127cf9dd8"
+    },
+    {
+      "beat": "beat_015",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_015.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_015---e8a73a23-9a28-4209-9680-6ab77e213024.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "43e6c882ce0a8b8cb25dcb8594e645533bb130840626fc79062a56705b7bee3a"
+    },
+    {
+      "beat": "beat_016",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_016.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_016---7a1fae95-3171-4069-96f6-12d75923bfba.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "65ff6d46bcd50a0a95f74b832c1d3f059cc3485324fcd664b8a14ef3d71d2151"
+    },
+    {
+      "beat": "beat_017",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_017.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_017---9ea22a28-542b-4eb8-add1-55fedb5c467f.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "11accd788ea51670bcec1d99e8622df40c71721da981f36cc71bda819990a762"
+    },
+    {
+      "beat": "beat_018",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_018.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_018---c03197e8-8ab4-4b09-98e8-f96985c000ba.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "b7a1dddfe4620138c693c3b4e275caa7780f1f95edbf3b4971dcc6d28509c89a"
+    },
+    {
+      "beat": "beat_019",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_019.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_019---86e095e1-a52d-497c-bd93-d8246fcbd5dd.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "9cde31db21dbf9de0eccb8d7a0dc0ef4bf1cf8d9f9f7285815989fe58562aea7"
+    },
+    {
+      "beat": "beat_020",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_020.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_020---ad5d13a0-0638-4851-b780-0e2246153b4e.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "0bfb08576c31064c6133ebbec015accf6b5e993c6888842ca967b197196e2bd9"
+    },
+    {
+      "beat": "beat_021",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_021.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_021---f631af3c-a188-4947-a53e-e231ab951a5b.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "27775f57b488c5a2e6340fb8739b43606dbd6325719c559ecfee8d39f5218f99"
+    },
+    {
+      "beat": "beat_022",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_022.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_022---2ed626f6-f4db-42fe-8fdc-2e3ad0d12b49.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "bbbd5d479c4c80cd2a583c05cd1ad63ff12774aa9543eb76507a605f12450b25"
+    },
+    {
+      "beat": "beat_023",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_023.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_023---0f65ea6b-e572-4b27-9934-aade5fadae66.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "fdf448597ca2c560673d58dae3c2aad5932e700fbdadb4cd61147a122b338c80"
+    },
+    {
+      "beat": "beat_024",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_024.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_024---74c1b310-6735-4fd1-b3d7-1148e0c3d25b.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "381bc471ef1e7c8b4ebc996782b0ea1dba8780a665efc75c74ff127766f725c9"
+    },
+    {
+      "beat": "beat_025",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_025.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_025---7602611f-cfad-4f6a-84a8-49f41045ba45.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "5aa65c0abee0b3eda0bb4e27404593d6b049f9efda329a3d704148961b8f6061"
+    },
+    {
+      "beat": "beat_026",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_026.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_026---621feab7-f06c-4f09-801d-31d1b6a105ee.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "132608639452f96c2651d20cd1430ae4cee3b00239566d3026b280e12cba0139"
+    },
+    {
+      "beat": "beat_027",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_027.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_027---e7c62837-0d03-4c6a-ab60-de7ac00f429d.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "7f6a5062e1afed56858697c54232958a33d2cf569951d0b7ac2fcb8937d6c23c"
+    },
+    {
+      "beat": "beat_028",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_028.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_028---33a80c8d-7892-4e04-a6c3-72c18ea2cad2.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "91adc268224d737f9ad5c5e2070102a8cd341a8ebbf6721336e573b2d54c3084"
+    },
+    {
+      "beat": "beat_029",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_029.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_029---e73b249d-98f9-4bda-b8fd-d991f2349406.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "0c99a303a83c77339184a62c678b79b506cb5e9bfbfd5c886e912cab6832e952"
+    },
+    {
+      "beat": "beat_030",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_030.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_030---4c116153-83e4-4014-9d19-8628b893cc75.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "302d28f89161a535f3289ea89eec59b03d642f3da209e8c1c62ee6ce31711256"
+    },
+    {
+      "beat": "beat_031",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_031.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_031---6b866624-4e4f-42f9-bdc3-ff6b252c5ad6.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "944c6dc16687a95c3c00927e0710eef5bf21a4fa11e1e6712c11db38378a2b09"
+    },
+    {
+      "beat": "beat_032",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_032.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_032---7459b174-a93c-4ada-b52b-b8897e0885bb.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "3dfbd8872a5a1087d5c3e20e3350ff198b94c2821a6e5fedcbdd9c31c807ae5e"
+    },
+    {
+      "beat": "beat_033",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_033.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_033---71827f86-1c39-4b6a-b00e-ca0e18c42fdd.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "0a210367fec130fc7028965a833b8c547f743f1d7017216260e243d674e57a38"
+    },
+    {
+      "beat": "beat_034",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_034.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_034---d60ab5aa-4d9d-46c2-bcc5-8fde9cd9c18f.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "ccc0ed60bed6c603b7adb96ac658dfaf173922e323842df0d8513f4b05217ad0"
+    },
+    {
+      "beat": "beat_035",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_035.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_035---08c37f05-a623-4c57-b9d3-7b752894254d.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "881a26577bdc01db93b581392fbad22589b3ed7186f06e11753a5c5c51a8e9fb"
+    },
+    {
+      "beat": "beat_036",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_036.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_036---15373804-b4b8-4e71-8067-003ec857c545.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "d926f064fec133d643d6d65344ff286886c24188d270655d6599f7cbcf82073e"
+    },
+    {
+      "beat": "beat_037",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_037.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_037---813d1e07-475f-4ef1-b98f-9b333c80a1bc.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "48dd61cb587dadf91e5948864fc9e715a9b0a5264537ab1b124cfd337e854a46"
+    },
+    {
+      "beat": "beat_038",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_038.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_038---353b1d43-165b-42e9-84f5-b9dce064dfcc.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "4afe3e89a3ff8c6c9a9f205ef9bd8a4c42d0aff4a60fbddc714453b7b8c3288e"
+    },
+    {
+      "beat": "beat_039",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_039.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_039---0c72b4fc-579a-44b9-8a4d-a5b6d9c36cdd.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "27377ce13d215f57df24eeff2e476dcfedc9f802c08c7cc29f189c899087c9db"
+    },
+    {
+      "beat": "beat_040",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_040.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_040---3eca6116-80cb-4b05-b24a-6b5a93a06471.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "b6b6644479de01207ef766aaa4fd8c3ba1dc108cfc6d0e790cdb4b9badc0de3e"
+    },
+    {
+      "beat": "beat_041",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_041.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_041---98e3f647-488a-4298-ae23-5bf763dc2563.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "02cf0d48b476965409d36a1b9be35f081dabf1ea2cfa46c1ae4819d2a556c17d"
+    },
+    {
+      "beat": "beat_042",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_042.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_042---ee6fa26e-1c03-4ad9-bc60-21f91680835c.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "37a4de57f2b59227c1e445e7297746de6c98ed192663f90f0197a05540dc7b1c"
+    },
+    {
+      "beat": "beat_043",
+      "output": "full_video_prep/approved_frames_clean_regen/beat_043.png",
+      "source_media": "/root/.openclaw/media/tool-image-generation/beat_043---a91efe5d-5b36-4af6-81f2-1724afeeb558.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "normalized_with_ffmpeg_pad_no_crop": false,
+      "qa_status": "PASS",
+      "qa_method": "image analysis before acceptance; file dimension verification by PNG header",
+      "sha256": "4bc6933a8885e2308de6ec6071018984f47ad1c5697e38364b4bc3362027162e"
+    }
+  ]
+}

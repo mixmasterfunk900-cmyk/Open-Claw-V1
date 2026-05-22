@@ -1,0 +1,1 @@
+PASS: Script visual alignment QA. 80 beat objectives map to audio timing and generated scene objectives; each beat has one full-frame 16:9 image, no contact-sheet/collage/split-panel scene asset is intentionally used.

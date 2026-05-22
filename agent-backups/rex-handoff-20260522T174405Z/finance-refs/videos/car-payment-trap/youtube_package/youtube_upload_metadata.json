@@ -1,0 +1,91 @@
+{
+  "slug": "car-payment-trap",
+  "recommended_title": "The Car Payment Trap Is Eating Your Paycheck",
+  "title_options": [
+    "The Car Payment Trap Is Eating Your Paycheck",
+    "The $700 Payment Nobody Warned You About",
+    "The Monthly Payment Trick Keeping People Broke",
+    "Why Your Car Payment Feels Affordable \u2014 Until It Isn\u2019t",
+    "The Car Loan Trap That Eats Your Paycheck",
+    "Your Car Loan Has a Finish Line Problem",
+    "Why Your Car Keeps You Broke",
+    "The Hidden Cost Behind \u201cAffordable\u201d Car Payments",
+    "Stop Shopping by Monthly Payment",
+    "The 7 Questions to Ask Before Financing a Car"
+  ],
+  "description_file": "YOUTUBE_UPLOAD_DOCS.md",
+  "hashtags": [
+    "#PersonalFinance",
+    "#CarLoan",
+    "#AutoLoan",
+    "#MoneyGap",
+    "#FinancialLiteracy"
+  ],
+  "tags": [
+    "personal finance",
+    "car payment",
+    "car loan",
+    "auto loan",
+    "auto financing",
+    "car debt",
+    "debt trap",
+    "monthly payment",
+    "car buying tips",
+    "buying a car",
+    "used car loan",
+    "new car loan",
+    "negative equity",
+    "upside down car loan",
+    "auto loan interest",
+    "car insurance cost",
+    "total cost of ownership",
+    "financial literacy",
+    "budgeting",
+    "money mistakes",
+    "paycheck",
+    "middle class money",
+    "debt free journey",
+    "personal finance tips",
+    "dealership tricks",
+    "car dealership",
+    "loan term",
+    "72 month loan",
+    "finance explainer",
+    "Laura and John Money Gap"
+  ],
+  "thumbnail_options": [
+    {
+      "option": 1,
+      "hook": "CAR TRAP",
+      "with_text": "thumbnails/car-payment-trap-thumb-01-with-text.png",
+      "without_text": "thumbnails/car-payment-trap-thumb-01-no-text-1280x720.png"
+    },
+    {
+      "option": 2,
+      "hook": "$700?",
+      "with_text": "thumbnails/car-payment-trap-thumb-02-with-text.png",
+      "without_text": "thumbnails/car-payment-trap-thumb-02-no-text-1280x720.png"
+    },
+    {
+      "option": 3,
+      "hook": "NO EXIT",
+      "with_text": "thumbnails/car-payment-trap-thumb-03-with-text.png",
+      "without_text": "thumbnails/car-payment-trap-thumb-03-no-text-1280x720.png"
+    },
+    {
+      "option": 4,
+      "hook": "PAYMENT TRICK",
+      "with_text": "thumbnails/car-payment-trap-thumb-04-with-text.png",
+      "without_text": "thumbnails/car-payment-trap-thumb-04-no-text-1280x720.png"
+    },
+    {
+      "option": 5,
+      "hook": "BROKE CAR",
+      "with_text": "thumbnails/car-payment-trap-thumb-05-with-text.png",
+      "without_text": "thumbnails/car-payment-trap-thumb-05-no-text-1280x720.png"
+    }
+  ],
+  "final_video": "../renders/car-payment-trap_clean_master.mp4",
+  "vibe_zone_video": "/root/.openclaw/workspace/vibe-zone/media/practice/youtube-automation/finance-content/car-payment-trap/car-payment-trap_burned_captions_review.mp4",
+  "status": "PACKAGE_READY_LOCAL_AND_VIBE_ZONE"
+}

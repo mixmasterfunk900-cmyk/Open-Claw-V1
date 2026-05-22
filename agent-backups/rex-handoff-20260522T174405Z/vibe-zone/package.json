@@ -1,0 +1,47 @@
+{
+  "name": "vibe-zone",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "api": "node server/server.mjs",
+    "dev:full": "node scripts/dev-full.mjs",
+    "pipeline:finish-upload": "node scripts/finish-upload-pipeline.mjs",
+    "clip:test-second": "node scripts/render-stream2-second-clip.mjs",
+    "clip:review": "node scripts/review-render.mjs",
+    "start": "node server/server.mjs",
+    "media:cleanup-unused": "node scripts/cleanup-unused-media.mjs",
+    "media:cleanup-unused:apply": "node scripts/cleanup-unused-media.mjs --apply",
+    "caption:qa": "node scripts/check-caption-qa.mjs",
+    "radar:smoke": "node scripts/test-twitter-radar.mjs",
+    "radar:static": "node scripts/test-twitter-radar-static.mjs",
+    "radar:test": "npm run radar:static && npm run radar:smoke",
+    "social-bridge:static": "node scripts/test-social-bridge-static.mjs",
+    "dog:sop": "node scripts/check-dog-content-sop.mjs",
+    "dog:production": "npm run dog:sop && node scripts/check-dog-production-ready.mjs",
+    "experiment:sop": "node scripts/check-experiment-where-sop.mjs",
+    "experiment:production": "npm run experiment:sop"
+  },
+  "dependencies": {
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^24.12.3",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "eslint": "^10.3.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.6.0",
+    "typescript": "~6.0.2",
+    "typescript-eslint": "^8.59.2",
+    "vite": "^8.0.12"
+  }
+}

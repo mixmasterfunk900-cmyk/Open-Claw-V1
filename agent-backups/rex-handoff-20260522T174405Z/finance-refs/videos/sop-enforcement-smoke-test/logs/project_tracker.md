@@ -1,0 +1,5 @@
+# Project Tracker
+
+| phase | status | owner | artifact | completed_at |
+|---|---|---|---|---|
+| init | complete | Director | production_manifest.json | 2026-05-21T17:59:17.816372+00:00 |

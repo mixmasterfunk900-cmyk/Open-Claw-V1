@@ -1,0 +1,23 @@
+GENERATE beat_022 attempt 1
+port=codex-responses requestedModel=gpt-image-2 responsesModel=gpt-5.5 timeoutMs=240000
+{
+  "ok": true,
+  "capability": "image.generate",
+  "transport": "local",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "attempts": [],
+  "outputs": [
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-children-were-taught-to-fear/full_video_prep/approved_frames_draft/beat_022.png",
+      "mimeType": "image/png",
+      "size": 3361261,
+      "width": 2048,
+      "height": 1152,
+      "revisedPrompt": "Sparse melancholic 2D hand-drawn doodle illustration in The Experiment Channel style only. Rough pencil line art, near-black lines, muted pale tan, warm grey, and faded blue-grey palette, flat lighting, wide negative space, minimal environment, no bright colors, no saturated colors, no logos, no watermarks. Handmade sketchbook aesthetic, not photo, not 3D, not anime.\n\nBeat 022: historically suggestive, emotionally restrained scene. Composition: close-up emphasis on infant Albert’s oversized hollow dark-circled eyes and curled vulnerable posture, very small child in simple one-piece pale clothing, placed low and off-center in a large blank background. Behind and above, John B. Watson appears as a tall severe shadowed male researcher silhouette in dark sketch lines, partly cropped, with a loose paper/manifesto motif: a single pale sheet held or floating near him. Rayner may be implied faintly as a quiet adult researcher in the far background, barely present. White rat small and harmless-looking, subtly placed near the infant but not threatening. Make Watson feel like an imposing abstract scientific figure, not violent. Include only one tiny handwritten term/date on the paper if readable: “1913” in very small handwriting. Hollow dark-circled eyes on every character. Same line weight and palette throughout. Lots of blank background, visually distinct from nearby frames, melancholic, non-graphic."
+    }
+  ],
+  "ignoredOverrides": []
+}
+
+OK beat_022 3361261

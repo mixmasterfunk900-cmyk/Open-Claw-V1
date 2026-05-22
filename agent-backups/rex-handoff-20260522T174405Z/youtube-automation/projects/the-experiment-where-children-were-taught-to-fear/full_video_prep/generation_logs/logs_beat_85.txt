@@ -1,0 +1,20 @@
+GENERATE beat_085 attempt 1
+lity": "image.generate",
+  "transport": "local",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "attempts": [],
+  "outputs": [
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-children-were-taught-to-fear/full_video_prep/approved_frames_draft/beat_085.png",
+      "mimeType": "image/png",
+      "size": 3427924,
+      "width": 2048,
+      "height": 1152,
+      "revisedPrompt": "Sparse melancholic 2D hand-drawn doodle illustration in The Experiment Channel style only. Rough pencil line art, near-black lines, muted pale tan, warm grey, faded blue-grey palette, flat lighting, wide negative space, minimal environment, no bright colours, no saturated colours, no logos, no watermarks, no readable text. Handmade sketchbook aesthetic, not photo, not 3D, not anime.\n\nBeat 085 scene: empty early psychology lab space suggested only by a faint floor line and pale wall wash. A single white furry feared-object symbol is isolated in the center of the composition—ambiguous between a harmless small white rat and a soft furry object—small, vulnerable, and non-threatening. Around it, faint emotional echo lines and ghostly pale silhouettes of other white furry shapes radiate subtly in the negative space, suggesting fear generalizing across similar white furry objects. Little Albert appears very small at far edge of frame, seated low, wearing simple one-piece pale clothing, oversized hollow dark-circled eyes, withdrawn posture, looking toward the isolated object. Watson is not prominent, only a faint tall severe researcher silhouette far in background in dark sketch lines; Rayner barely indicated as quiet adult researcher shadow. Keep all characters with hollow dark-circled eyes where visible. Composition sparse, melancholic, non-graphic, historically suggestive, emotionally restrained, visually distinct as single object isolated in negative space with faint emotional echo lines. No readable text."
+    }
+  ],
+  "ignoredOverrides": []
+}
+
+OK beat_085 3427924

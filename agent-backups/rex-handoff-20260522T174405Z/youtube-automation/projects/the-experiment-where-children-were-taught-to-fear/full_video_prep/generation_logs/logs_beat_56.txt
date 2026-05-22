@@ -1,0 +1,23 @@
+GENERATE beat_056 attempt 1
+0
+{
+  "ok": true,
+  "capability": "image.generate",
+  "transport": "local",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "attempts": [],
+  "outputs": [
+    {
+      "path": "/root/.openclaw/workspace/youtube-automation/projects/the-experiment-where-children-were-taught-to-fear/full_video_prep/approved_frames_draft/beat_056.png",
+      "mimeType": "image/png",
+      "size": 4111786,
+      "width": 2048,
+      "height": 1152,
+      "revisedPrompt": "Sparse melancholic 2D hand-drawn doodle illustration in The Experiment Channel style. Rough pencil line art, near-black uneven sketch lines, muted pale tan, warm grey, faded blue-grey palette, flat lighting, wide negative space, minimal environment, handmade sketchbook aesthetic. No bright colors, no saturated colors, no logos, no watermarks, no readable text.\n\nBeat 056: observational fear learning. Abstract association chain composition made from simple drawn objects connected by one thin wavering line, visually distinct from normal scene frames. In a minimal research setting suggested only by a faint floor line and a small plain observation box outline. Two rhesus monkeys drawn simply and melancholically, both with oversized hollow dark-circled eyes: one monkey on the left recoils quietly with hunched shoulders and small trembling marks, the other monkey on the right watches the first with a subdued fearful posture. Between/near them is a harmless symbolic snake: a simple flat curved snake silhouette or toy-like snake shape, non-graphic, not menacing, just a minimal symbol. The thin association line connects snake symbol -> reacting monkey -> watching monkey, like a fragile thought chain. Empty space dominates. Emotion restrained, historically suggestive, non-graphic. Maintain continuity style: same rough line weight and palette as sequence; infant Albert not present, Watson/Rayner/white rat not present unless only implied by absent continuity. Not photo, not 3D, not anime."
+    }
+  ],
+  "ignoredOverrides": []
+}
+
+OK beat_056 4111786

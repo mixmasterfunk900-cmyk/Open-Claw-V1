@@ -1,0 +1,30 @@
+{
+  "status": "qa_failed_repair_required",
+  "created_utc": "2026-05-22T16:31:00Z",
+  "basis": "40-sample rendered contact sheet visual QA using OpenClaw image analysis; full frame count/render technical checks passed, but quality gate failed for dense text/off-style clutter.",
+  "sample_sheet": "qa/render_visual_audit_sample_sheet_40_labeled.jpg",
+  "frames_to_regenerate": [
+    {"frame_id":"frame_007","timestamp":"00:00:34","reason":"large dark TOTAL COST blob/off-style versus clean cream stick-figure scene"},
+    {"frame_id":"frame_024","timestamp":"00:01:59","reason":"dense/small text on payment board"},
+    {"frame_id":"frame_038","timestamp":"00:03:07","reason":"too many small labels/text; cluttered metaphor"},
+    {"frame_id":"frame_041","timestamp":"00:03:24","reason":"dense tiny calendar/checklist text"},
+    {"frame_id":"frame_058","timestamp":"00:04:49","reason":"dense unreadable checklist/text block"},
+    {"frame_id":"frame_085","timestamp":"00:07:05","reason":"crowded bills/forms with tiny text"},
+    {"frame_id":"frame_089","timestamp":"00:07:22","reason":"crowded composition and small text"},
+    {"frame_id":"frame_092","timestamp":"00:07:39","reason":"dense tiny pricing/loan cards"},
+    {"frame_id":"frame_102","timestamp":"00:08:30","reason":"multiple small panels/cards with unreadable text"},
+    {"frame_id":"frame_106","timestamp":"00:08:47","reason":"crowded scene with many small labels"},
+    {"frame_id":"frame_126","timestamp":"00:10:29","reason":"messy/cropped composition, scribbly off-style text"},
+    {"frame_id":"frame_130","timestamp":"00:10:46","reason":"dense icon stack/text; visually cluttered"}
+  ],
+  "regeneration_rules": [
+    "OpenAI/ChatGPT image generation only for final replacement frames",
+    "simple black marker stick-figure finance explainer",
+    "warm cream/white background",
+    "John tiny blue tie, Laura teal scarf when present",
+    "no realism/editorial cartoon/3D drift",
+    "no panels/collages/contact sheets",
+    "no dense or tiny text; use zero text if possible, otherwise max 1-2 large readable words",
+    "one clean full-frame scene per beat"
+  ]
+}

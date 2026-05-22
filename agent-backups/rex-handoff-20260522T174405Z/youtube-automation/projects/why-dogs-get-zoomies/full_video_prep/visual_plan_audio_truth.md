@@ -1,0 +1,120 @@
+# why-dogs-get-zoomies audio-truth visual plan
+beats: 117
+
+- beat_001 `beat_001.png` Your dog suddenly loses their mind. One second, they are normal. The next second, they are sprinting
+- beat_002 `beat_002.png` through the house like a tiny furry race car. Around the sofa, across the rug, back
+- beat_003 `beat_003.png` through the hallway. One impossible turn in the kitchen. Then another lap for no clear reason.
+- beat_004 `beat_004.png` Their body is curved, their eyes are bright. Their legs are moving faster than the floor can emotionally handle
+- beat_005 `beat_005.png` and you are standing there wondering if your dog has been possessed by pure Wi -Fi signal.
+- beat_006 `beat_006.png` Then it stops. Just like that. They pant. They look at you. Maybe they grab a toy.
+- beat_007 `beat_007.png` Maybe they collapse on the floor as if nothing unusual happened. These are the zoomies.
+- beat_008 `beat_008.png` The more formal term is frenetic random activity periods or fraps.
+- beat_009 `beat_009.png` Which is a very serious scientific phrase for your dog briefly becoming a living pinball.
+- beat_010 `beat_010.png` Most people explain zoomies in one sentence. They say, my dog is just crazy.
+- beat_011 `beat_011.png` Or my dog needs to burn energy. And sometimes, yes, energy is part of it.
+- beat_012 `beat_012.png` But the truth is more interesting than that. Because zoomies are not only about how much energy
+- beat_013 `beat_013.png` a dog has. They are about what kind of energy it is, where it came from, and whether the dog
+- beat_014 `beat_014.png` can come back down afterward. Most of the time, zoomies are normal.
+- beat_015 `beat_015.png` They are not proof your dog is badly trained. They are not proof your dog is trying to annoy you.
+- beat_016 `beat_016.png` They are not usually a medical mystery. But they are not completely meaningless either.
+- beat_017 `beat_017.png` Zoomies are often a release. A release of energy. A release of excitement.
+- beat_018 `beat_018.png` A release of stress. A release of frustration. A release of being asked to hold still when
+- beat_019 `beat_019.png` the body really wanted to move. To understand them, stop looking only at the running.
+- beat_020 `beat_020.png` Look at what happened before the running. Because zoomies are rarely random to the nervous system.
+- beat_021 `beat_021.png` They only look random to us because we notice the explosion more than the build up. Think of your dog like a
+- beat_022 `beat_022.png` battery. Energy goes in. Waiting goes in. Excitement goes in.
+- beat_023 `beat_023.png` Noise goes in. Frustration goes in. Restraint goes in. A bath goes in.
+- beat_024 `beat_024.png` A vet visit goes in. A boring afternoon goes in. A visitor arriving goes in.
+- beat_025 `beat_025.png` At some point, the body wants to discharge. Humans may discharge by sighing, pacing,
+- beat_026 `beat_026.png` scrolling, talking or going for a run. Dogs often discharge with their whole body.
+- beat_027 `beat_027.png` They shake. They stretch. They play bow. They sprint. They loop.
+- beat_028 `beat_028.png` They zoom. That is why zoomies often happen after confinement. A dog comes out of a crate.
+- beat_029 `beat_029.png` A dog gets released from a car. A puppy has been trying very hard to behave in the living room.
+- beat_030 `beat_030.png` A young dog has been waiting while humans talked for too long. The moment the space opens, the body says,
+- beat_031 `beat_031.png` finally. Not finally, I will walk politely in a straight line.
+- beat_032 `beat_032.png` Finally, I will become weather. This is also why zoomies after a bath are so common.
+- beat_033 `beat_033.png` People joke that dogs are angry about being clean. Sometimes the smell change may be part of it.
+- beat_034 `beat_034.png` But a bath is also a huge sensory event. Water on the body. Hands holding still.
+- beat_035 `beat_035.png` Soaps smells. Slippery floors. Towel pressure. Temperature changes.
+- beat_036 `beat_036.png` Being controlled in a small space. Even a dog who tolerates baths may leave the bathroom
+- beat_037 `beat_037.png` loaded with sensation. When the restraint ends, movement pours out.
+- beat_038 `beat_038.png` The zoomies say, I survived the weird wet ritual. And now I need my body back.
+- beat_039 `beat_039.png` Zoomies can happen after grooming for the same reason. After a vet visit, after a training session,
+- beat_040 `beat_040.png` after anything that requires a dog to suppress impulses, cooperate, wait, and hold themselves
+- beat_041 `beat_041.png` together. The body keeps score. Then the body runs. But zoomies are not only
+- beat_042 `beat_042.png` stress release. They can also be joy. You come home and your dog explodes into loops.
+- beat_043 `beat_043.png` The leash appears and they sprint in circles. A friend dog arrives and suddenly the garden becomes a
+- beat_044 `beat_044.png` racetrack. Snow falls. Fresh grass appears. A toy squeaks at exactly
+- beat_045 `beat_045.png` the right emotional frequency. The dog is not escaping pressure. The dog is
+- beat_046 `beat_046.png` expressing delight. Too much good feeling to stand still. That is one of the reasons zoomies
+- beat_047 `beat_047.png` are funny to humans. They are emotion made visible. A feeling so big,
+- beat_048 `beat_048.png` it needs corners. There is also the evening version. A puppy seems fine all day.
+- beat_049 `beat_049.png` Then at night, they transform into a tiny chaos machine. People call this the witching
+- beat_050 `beat_050.png` hour. Often the puppy is not being evil. They are tired, overstimulated,
+- beat_051 `beat_051.png` under -skilled at settling. Maybe they needed more naps. Maybe they had too much activity and not
+- beat_052 `beat_052.png` enough decompression. Maybe the household got loud right when their brain was running out of battery.
+- beat_053 `beat_053.png` Young dogs can look wild when they are actually exhausted. That is important. Because the answer
+- beat_054 `beat_054.png` to every zoomie is not more exercise. Sometimes the answer is safer movement.
+- beat_055 `beat_055.png` Sometimes it is a karma routine. Sometimes it is a chew, a toilet break, dimmer lights,
+- beat_056 `beat_056.png` and sleep. If you only add more stimulation to an overstimulated dog, you may
+- beat_057 `beat_057.png` pour fuel on the fire. Then there are post -poop zoomies. A dog finishes their business
+- beat_058 `beat_058.png` and suddenly runs like they have been personally freed from taxation. There may be relief.
+- beat_059 `beat_059.png` There may be excitement. There may be habit. There may be the simple physical feeling of being lighter
+- beat_060 `beat_060.png` and ready to move. We do not need to pretend every version has one grand explanation.
+- beat_061 `beat_061.png` The useful point is that the trigger matters. After poop, after bath, after waiting,
+- beat_062 `beat_062.png` after fear, after play, after being alone, after getting released into open
+- beat_063 `beat_063.png` space, the zoomie is the visible part of a hidden buildup. So when should you worry?
+- beat_064 `beat_064.png` Look at the body quality. Happy zoomies are usually loose. The dog curves.
+- beat_065 `beat_065.png` The tail is free. The mouth may be open. They may play bow. They dodge around you
+- beat_066 `beat_066.png` rather than slam into you. They can hear you eventually. They settle afterward.
+- beat_067 `beat_067.png` The episode is brief. Stress movement looks different. The body may be stiff.
+- beat_068 `beat_068.png` The tail may be tucked. The dog may look panicked rather than playful. They may crash into
+- beat_069 `beat_069.png` things. They may not recover. They may repeat the behavior compulsively.
+- beat_070 `beat_070.png` It may happen around fear triggers. That is when you stop laughing and start asking what the dog is
+- beat_071 `beat_071.png` coping with. A dog who runs joyfully after a bath needs a safe landing zone.
+- beat_072 `beat_072.png` A dog who bolts in panic after a bath needs the bath itself made less scary.
+- beat_073 `beat_073.png` A dog who zooms in the yard needs space. A dog who zooms on slippery floors near stairs
+- beat_074 `beat_074.png` needs management before injury happens. Safety is the first rule.
+- beat_075 `beat_075.png` Do not chase a zooming dog toward a road. Do not create a game that teaches them to run faster through dangerous
+- beat_076 `beat_076.png` spaces. Block stairs if needed. Clear obstacles. Use a yard, hallway
+- beat_077 `beat_077.png` matting, or safe room when you know a trigger is coming. If post bath zoomies happen every time,
+- beat_078 `beat_078.png` plan them. Open the bathroom door only when the route is safe. Have towels down.
+- beat_079 `beat_079.png` Keep other pets and small children out of the collision zone. Let the dog discharge without turning the house into
+- beat_080 `beat_080.png` a demolition derby. And if evening zoomies are constant, zoom out from the moment.
+- beat_081 `beat_081.png` Did the dog get enough sniffing today? Not just steps. Did they get enough rest?
+- beat_082 `beat_082.png` Were they asked to behave for too long? Did they have legal outlets for chewing, chasing, tugging,
+- beat_083 `beat_083.png` searching, and thinking? A dog's nervous system does not only need exercise.
+- beat_084 `beat_084.png` It needs the right rhythm of activity and recovery. That rhythm is where many households accidentally
+- beat_085 `beat_085.png` fail. They understimulate the dog all day, then overstimulate the dog at night.
+- beat_086 `beat_086.png` Or they exercise the dog physically, but never give them mental decompression. Or they keep a
+- beat_087 `beat_087.png` puppy awake too long and mistake exhaustion for rebellion. Zoomies can be a clue that the day's rhythm
+- beat_088 `beat_088.png` needs adjustment. Not always. Sometimes a zoomie is just a zoomie.
+- beat_089 `beat_089.png` But when it happens predictably, listen to the pattern. The funniest thing about zoomies is that humans often
+- beat_090 `beat_090.png` ask, how do I stop this? But the better question is, should I stop this?
+- beat_091 `beat_091.png` If the dog is loose, safe, joyful, and able to settle, you may not need
+- beat_092 `beat_092.png` to stop it. You may just need to protect the space. Movement is part of being a dog.
+- beat_093 `beat_093.png` Joyful physical release is not a behavior problem. It is a living body doing living body things.
+- beat_094 `beat_094.png` But if the zoomies are dangerous, panicked, obsessive, or impossible to interrupt over time,
+- beat_095 `beat_095.png` then the goal is not to punish the running. The goal is to understand the pressure underneath it.
+- beat_096 `beat_096.png` Too much energy, too much stress, too little sleep, too much restraint, too
+- beat_097 `beat_097.png` little safe outlet. Too many scary events. The running is the smoke.
+- beat_098 `beat_098.png` Find the fire. A useful owner trick is to keep a zoomie diary for one week, not a dramatic one,
+- beat_099 `beat_099.png` just a quick pattern check. What time did it happen? What happened 10 minutes before?
+- beat_100 `beat_100.png` Was the dog tired, excited, wet, confined, frustrated, or overstimulated?
+- beat_101 `beat_101.png` Did they settle afterward? Did the movement look loose or tense? After a few days,
+- beat_102 `beat_102.png` the behavior that looked random often becomes obvious. Maybe every zoomie happens after the evening walk because
+- beat_103 `beat_103.png` the walk is too exciting and ends abruptly. Maybe it happens before bed because the puppy has been awake
+- beat_104 `beat_104.png` too long. Maybe it happens after baths because the bathroom routine is stressful.
+- beat_105 `beat_105.png` Maybe it happens after being alone because the dog needs decompression before expecting calm.
+- beat_106 `beat_106.png` That diary turns chaos into a training plan. You do not have to guess whether your dog needs more
+- beat_107 `beat_107.png` exercise, less stimulation, more sleep, or a safer outlet. The pattern starts
+- beat_108 `beat_108.png` telling you. So the next time your dog launches across the room and performs three illegal turns around
+- beat_109 `beat_109.png` the coffee table, do not just ask, why are you insane? Ask what came before.
+- beat_110 `beat_110.png` Were they excited, released, stressed, over tired, joyful, unsafe?
+- beat_111 `beat_111.png` Because zoomies are not meaningless chaos. They are a message from the nervous system.
+- beat_112 `beat_112.png` Most of the time, that message is simple. I had too much in me. Now I need to run it out.
+- beat_113 `beat_113.png` And in the next video, we are going to look at another behavior humans read wrong all the time.
+- beat_114 `beat_114.png` The guilty look. That face your dog gives you when there is a chewed shoe, a tipped bin,
+- beat_115 `beat_115.png` or a shredded tissue on the floor. Because just like zoomies are not always random madness,
+- beat_116 `beat_116.png` the guilty look is not always guilt. So next, we are going to look at what your dog may actually
+- beat_117 `beat_117.png` be saying when they look guilty and why that face can trick owners into the wrong training response.

@@ -1,0 +1,13 @@
+GENERATE beat_079 attempt 1
+s/the-experiment-where-children-were-taught-to-fear/full_video_prep/approved_frames_draft/beat_079.png",
+      "mimeType": "image/png",
+      "size": 3763479,
+      "width": 2048,
+      "height": 1152,
+      "revisedPrompt": "Sparse melancholic 2D hand-drawn doodle illustration in The Experiment Channel style. Rough pencil line art, near-black lines, muted pale tan, warm grey, faded blue-grey palette only; flat lighting, wide negative space, minimal environment, no bright or saturated colours, no logos, no watermarks, no readable text. Handmade sketchbook aesthetic, not photo, not 3D, not anime.\n\nBeat 079: distant hallway or doorway framing a laboratory as an unsafe space, symbolic of learned fear, association, memory, and a childhood nervous system; the difficulty of undoing learned threat, extinction not erasing the original association but adding a new layer over it. Composition: viewer stands far down a bare hallway looking through a dark doorway into a small sparse lab room. Inside, infant Albert appears very small and vulnerable, seated low in the room in simple one-piece pale clothing, oversized hollow dark-circled eyes, still and withdrawn. A small harmless-looking white rat is nearby but separated by negative space. Watson, a tall severe male researcher drawn with dark sketch lines, stands rigidly in the background/doorway shadow; Rayner, quiet adult researcher, stands slightly behind or to the side, subdued and still. Symbolic visual layer: faint translucent overlapping pencil outlines or ghostly arcs between the child, rat, doorway, and researchers suggesting memory associations layered over the scene, without text. Minimal props: maybe a simple table edge or chair silhouette, no readable labels. Distant framing, doorway as a heavy dark border, laboratory feels unsafe but non-graphic and emotionally restrained. Preserve continuity: same line weight and palette across all characters, hollow eyes on every character."
+    }
+  ],
+  "ignoredOverrides": []
+}
+
+OK beat_079 3763479

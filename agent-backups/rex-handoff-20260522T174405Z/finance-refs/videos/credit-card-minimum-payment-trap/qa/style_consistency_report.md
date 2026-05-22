@@ -1,0 +1,1 @@
+PASS: Style lock QA. All scene assets use cohesive 2D cartoon explainer style: warm flat colors, rounded shapes, dark outlines. No photorealism, 3D, anime, painterly realism, or semi-realistic editorial style accepted.
